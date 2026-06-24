@@ -3,7 +3,7 @@
 > Autogeneroitu `scripts/generate-skills-md.mjs`-skriptillä `.claude-plugin/marketplace.json`:sta
 > ja kunkin `SKILL.md`:n frontmatterista. Älä muokkaa käsin – aja skripti uudelleen.
 
-Markkinapaikalla on **24 plugaria** ja **77 skilliä**. Asennus: ks. [QUICKSTART.md](QUICKSTART.md).
+Markkinapaikalla on **24 plugaria** ja **78 skilliä**. Asennus: ks. [QUICKSTART.md](QUICKSTART.md).
 
 ## Juristi – perusta
 
@@ -20,6 +20,7 @@ Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykälävi
 | [`oikeustutkimus`](juristi/skills/oikeustutkimus/SKILL.md) | Suomalaisen voimassa olevan lainsäädännön ja oikeuskäytännön haku, lukeminen ja oikea viittaaminen oik.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun tarvitaan ajantasaista lakitekstiä, pykälän sisältö, KKO:n tai KHO:n ennakkopää… |
 | [`selkokielistaja`](juristi/skills/selkokielistaja/SKILL.md) | Juridisen tekstin selittäminen selkeällä yleiskielellä maallikolle — asiakkaalle, päämiehelle tai muulle ei-juristille. Käytä tätä skilliä, kun pykälä, sopimusehto, päätös, lausunto tai kirjelmä pitää avata ymmärrettävään muotoon, kun asia… |
 | [`suomen-kieli`](juristi/skills/suomen-kieli/SKILL.md) | Suomen kielen oikeinkirjoitus-, kielioppi- ja tyyliohjeistus verkkosivujen, dokumenttien ja muun sisällön tuottamiseen ja tarkastamiseen. Käytä tätä skilliä AINA kun kirjoitat tai tuotat suomenkielistä tekstiä, tarkistat suomenkielistä sis… |
+| [`taulukkokatsaus`](juristi/skills/taulukkokatsaus/SKILL.md) | Monen asiakirjan rinnakkaisvertailu tai yhden asiakirjan rakenteinen taulukointi niin, että jokainen solu on lähteistetty asiakirjan kohtaan. Käytä tätä skilliä, kun samantyyppisiä asiakirjoja pitää verrata taulukkona (rivi per asiakirja,… |
 | [`toimeksianto`](juristi/skills/toimeksianto/SKILL.md) | Uuden toimeksiannon, jutun tai asian aloitus ja aineiston haltuunotto suomalaisessa juridisessa työssä. Käytä tätä skilliä AINA kun käyttäjä aloittaa uuden toimeksiannon tai jutun, tuo asiakirjan tai asiakirjanipun käsiteltäväksi, pyytää j… |
 
 ## Lainvalmistelu
