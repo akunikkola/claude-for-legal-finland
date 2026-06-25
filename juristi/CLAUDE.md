@@ -23,7 +23,7 @@ Kun tuotat merkittävän juridisen tuotoksen (sopimus, lausunto, muistio, valitu
 
 Suomen lainsäädäntö muuttuu jatkuvasti, ja mallin muisti vanhenee ja sekoittaa pykäliä. **Älä koskaan lainaa säädöstekstiä, pykälänumeroa tai oikeustapauksen sisältöä pelkästään muistista, jos se voidaan tarkistaa.**
 
-- Kun käytettävissä on **oik.ai- tai Finlex-MCP** (`get_legislation`, `search_decisions`, `get_decision`), hae säädös ja oikeuskäytäntö sieltä. Tämä on koko `oikeustutkimus`-skillin ydin.
+- Kun käytettävissä on **oik.ai- tai laki.ai-MCP** (tai muu vastaava Finlex-MCP), hae säädös ja oikeuskäytäntö sieltä. Tämä on koko `oikeustutkimus`-skillin ydin; työkalut ja konnektorien erot on dokumentoitu tiedostoon `skills/oikeustutkimus/references/tyokalut.md`.
 - Jos MCP ei ole käytettävissä etkä voi tarkistaa lähdettä: **merkitse jokainen muistinvarainen lainkohta selvästi** — `[muistinvarainen — tarkista Finlexistä]` — äläkä esitä sitä varmistettuna.
 - Tarkista aina, että laki on **voimassa** (ei kumottu/muutettu) ja ettei kyse ole vanhasta versiosta. Huomioi siirtymäsäännökset.
 - Älä keksi pykäliä, säädösnumeroita tai ratkaisutunnuksia. Jos et tiedä etkä voi tarkistaa, sano se.

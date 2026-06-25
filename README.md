@@ -11,19 +11,23 @@ Selailtava yleiskatsaus koko kokoelmasta:
 **[akunikkola.github.io/claude-for-legal-finland](https://akunikkola.github.io/claude-for-legal-finland/)**
 
 > [!IMPORTANT]
-> **Jokainen tuotos on tarkistettava luonnos – ei oikeudellista neuvontaa eikä
-> juristin korvaaja.** Vastuun lopputuloksesta kantaa pätevä ihminen. Plugarit on
-> rakennettu tämän mukaisesti: laki ja oikeuskäytäntö tarkistetaan lähteestä eikä
-> muistista, jokaiseen viittaukseen tulee lähdemerkintä, jurisdiktio-oletukset
-> pidetään näkyvissä, ja ennen kuin mitään lähetetään tai allekirjoitetaan, asian
-> varmistaa ihminen. Suojan tuottavat **mekanismit** – lähteen varmistus,
-> kolmiportainen varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen
-> tarkistusportti – eivät tämä huomautus. Mekanismit on koottu tiedostoihin
+> **Jokainen tuotos on tarkistettava luonnos. Kyse ei ole oikeudellisesta
+> neuvonnasta, eikä tämä kokoelma tai sen sisältämät ominaisuudet korvaa
+> juristia.** Vastuun lopputuloksesta kantaa aina käyttäjä, ja käyttöä
+> suositellaan ainoastaan kouluttautuneille oikeudellisen alan ammattilaisille.
+> Plugarit on rakennettu tämän mukaisesti: laki ja oikeuskäytäntö tarkistetaan
+> lähteestä eikä muistista, jokaiseen viittaukseen tulee lähdemerkintä,
+> jurisdiktio-oletukset pidetään näkyvissä, ja ennen kuin mitään lähetetään tai
+> allekirjoitetaan, asian varmistaa ihminen. Suojan tuottavat **mekanismit** –
+> lähteen varmistus, kolmiportainen varmuusmerkintä, premissien tarkistus,
+> negatiivirajaus ja ihmisen tarkistusportti. Mekanismit on koottu tiedostoihin
 > [`references/viittaustyyli.md`](references/viittaustyyli.md) ja
 > [`references/vastuu-ja-tietoturva.md`](references/vastuu-ja-tietoturva.md).
 >
-> Tämä on yhteisön avoin hanke, ei viranomais- tai asianajopalvelu, eikä se edusta
-> minkään organisaation virallista oikeudellista kantaa.
+> Tämä on yhteisön avoin hanke, ei viranomais-, lakiasiain- tai asianajopalvelu,
+> eikä se edusta minkään organisaation virallista oikeudellista kantaa. Kuka
+> tahansa voi kontribuoida hankkeeseen omat skill-tiedostonsa ja plugarinsa,
+> joista on ollut todistettavaa hyötyä omassa työssä.
 
 ## Idea
 
@@ -31,7 +35,7 @@ Suomalainen juridinen työ poikkeaa angloamerikkalaisesta: civil law -järjestel
 Finlexin säädöskanta, hallituksen esitykset (HE) tulkinta-aineistona, KKO:n ja
 KHO:n ennakkopäätökset, pakottava lainsäädäntö ja tarkka lakikieli. Tämä kokoelma
 tuo nämä **aidot lähteet** Clauden työn pohjaksi ja kytkeytyy suoraan **Finlexiin**
-ja **oik.ai:hin**.
+sekä oikeuslähde-MCP:hen – **oik.ai:hin** tai **laki.ai:hin**.
 
 Rakenne mukailee Anthropicin claude-for-legalia. Markkinapaikka
 ([`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json)) listaa
@@ -40,7 +44,8 @@ käytäntöaluekohtaiset plugarit, ja jokainen plugari sisältää:
 - **skillit** (`skills/<nimi>/SKILL.md`) – varsinaisen osaamisen ja työnkulun,
 - **jaetut suojaukset** (`CLAUDE.md`) – varaverkon, joka pätee silloinkin kun
   skill ei lataudu,
-- **datakonnektorit** (`.mcp.json`) – kytkennät Finlexiin ja oik.ai:hin,
+- **datakonnektorit** (`.mcp.json`) – kytkennät oikeuslähde-MCP:hen (oik.ai tai laki.ai)
+  sekä dokumenttiplugareissa **Adeuun** (Word-asiakirjojen redline natiiveina jälkimuutoksina),
 - osa plugareista myös **agentteja** (`agents/<nimi>.md`) – delegoitavia työvaiheita.
 
 Agentteja on kuusi: viitteiden adversariaalinen tarkistus (`lahdetarkastaja`),
@@ -65,7 +70,7 @@ mekanismia valvoo tätä:
 
 ## Plugarit
 
-Kaikki 20 plugaria ovat valmiita ja asennettavissa erikseen.
+Kaikki 24 plugaria ovat valmiita ja asennettavissa erikseen.
 
 | Plugari | Mitä kattaa |
 |---|---|

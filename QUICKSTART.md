@@ -44,18 +44,34 @@ mistä tahansa kansiosta.
 - **Cowork:** käynnistä sovellus uudelleen. **Tämä vaihe on pakollinen** – plugari
   ei ole päällä ennen uudelleenkäynnistystä.
 
-## 4. Liitä oik.ai (suositeltava)
+## 4. Liitä lähdekonnektori (oik.ai tai laki.ai)
 
 `juristi`-plugarin `oikeustutkimus`-skill hakee voimassa olevan lain ja
-oikeuskäytännön oik.ai-MCP:stä. Liittäminen riippuu ympäristöstä:
+oikeuskäytännön suomalaisesta oikeuslähde-MCP:stä. Tuettuna on **kaksi
+vaihtoehtoa – valitse jompikumpi** (tai mikä tahansa yhteensopiva Finlex-MCP):
 
-- **Cowork / Claude Desktop / Claude.ai:** **Asetukset → Connectors → Add custom
-  connector** → URL `https://oik.ai/mcp` → kirjaudu (OAuth). Käyttö edellyttää
-  oik.ai-tiliä.
+**Vaihtoehto A – oik.ai** (plugarien `.mcp.json`:n oletus)
+
+- **Cowork / Claude Desktop / Claude.ai:** Asetukset → Connectors → Add custom
+  connector → URL `https://oik.ai/mcp` → kirjaudu (OAuth).
 - **Claude Code:** plugarin `.mcp.json` viittaa oik.ai:hin valmiiksi; hyväksy
-  konnektori ja suorita kirjautuminen pyydettäessä.
+  konnektori ja kirjaudu pyydettäessä.
 
-Ilman MCP-yhteyttä skillit toimivat yhä, mutta merkitsevät lakiviittaukset
+**Vaihtoehto B – laki.ai** (Finlex, hallituksen esitykset, KKO/KHO/HO/HAO/MAO/TT/VAKO
+ja Verohallinnon ohjeet; ilmainen tunnus syntyy ensimmäisellä kirjautumisella)
+
+- **Cowork / Claude Desktop / Claude.ai:** Asetukset → Connectors → Add custom
+  connector → URL `https://api.laki.ai/mcp/claude` → kirjaudu (OAuth).
+  Ohjeet: <https://laki.ai/fi/claude>.
+- **Claude Code:** korvaa plugarin `.mcp.json`:n `oik-ai`-konnektori tällä:
+
+  ```json
+  "laki-ai": { "type": "http", "url": "https://api.laki.ai/mcp/claude" }
+  ```
+
+Molemmat tuovat saman: ajantasaisen lain ja oikeuskäytännön lähteestä – vain
+työkalujen nimet eroavat, ja `oikeustutkimus`-skill osaa kummatkin. Ilman
+MCP-yhteyttä skillit toimivat yhä, mutta merkitsevät lakiviittaukset
 muistinvaraisiksi ja kehottavat tarkistamaan ne Finlexistä.
 
 **Paikalliset MCP:t (ei tiliä):** osa plugareista käyttää paikallisia, npx:llä käynnistyviä

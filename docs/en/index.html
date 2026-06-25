@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claude for Legal Finland — 24 plugaria suomalaiseen oikeustyöhön</title>
-<meta name="description" content="Suomalainen vastine Anthropicin Claude for Legal -lisäosalle: avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. Reaaliaikainen lähdetarkastus, kolmiportainen varmuusmerkintä ja human-in-the-loop. 24 plugaria, 77 skilliä.">
-<!-- Open Graph / sosiaalisen median jakokortti -->
+<title>Claude for Legal Finland — 24 plugins for Finnish legal work</title>
+<meta name="description" content="A Finnish counterpart to Anthropic's Claude for Legal: open-source skills, agents and guardrails for legal professionals. Real-time source-checking, three-tier certainty labelling and human-in-the-loop. 24 plugins, 77 skills.">
+<!-- Open Graph / social share card -->
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fi_FI">
-<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fi_FI">
 <meta property="og:site_name" content="Claude for Legal Finland">
-<meta property="og:url" content="https://akunikkola.github.io/claude-for-legal-finland/">
-<meta property="og:title" content="Claude for Legal Finland — suomalainen vastine Claude for Legalille">
-<meta property="og:description" content="Avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. Reaaliaikainen lähdetarkastus, kolmiportainen varmuusmerkintä ja human-in-the-loop. 24 plugaria, 77 skilliä.">
-<meta property="og:image" content="https://akunikkola.github.io/claude-for-legal-finland/og-image.png">
+<meta property="og:url" content="https://akunikkola.github.io/claude-for-legal-finland/en/">
+<meta property="og:title" content="Claude for Legal Finland — a Finnish counterpart to Claude for Legal">
+<meta property="og:description" content="Open-source skills, agents and guardrails for legal professionals. Real-time source-checking, three-tier certainty labelling and human-in-the-loop. 24 plugins, 77 skills.">
+<meta property="og:image" content="https://akunikkola.github.io/claude-for-legal-finland/og-image-en.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Claude for Legal Finland — 24 plugaria, 77 skilliä, 6 agenttia, 106 varmistettua säädöstä">
+<meta property="og:image:alt" content="Claude for Legal Finland — 24 plugins, 77 skills, 6 agents, 106 verified statutes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Claude for Legal Finland — suomalainen vastine Claude for Legalille">
-<meta name="twitter:description" content="Avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. 24 plugaria, 77 skilliä, kaikki säädökset varmistettu Finlexistä.">
-<meta name="twitter:image" content="https://akunikkola.github.io/claude-for-legal-finland/og-image.png">
+<meta name="twitter:title" content="Claude for Legal Finland — a Finnish counterpart to Claude for Legal">
+<meta name="twitter:description" content="Open-source skills, agents and guardrails for legal professionals. 24 plugins, 77 skills, every statute verified against Finlex.">
+<meta name="twitter:image" content="https://akunikkola.github.io/claude-for-legal-finland/og-image-en.png">
 <link rel="alternate" hreflang="fi" href="https://akunikkola.github.io/claude-for-legal-finland/">
 <link rel="alternate" hreflang="en" href="https://akunikkola.github.io/claude-for-legal-finland/en/">
 <link rel="alternate" hreflang="x-default" href="https://akunikkola.github.io/claude-for-legal-finland/">
@@ -51,14 +51,12 @@
       linear-gradient(rgba(20,23,28,.045) 1px, transparent 1px),
       linear-gradient(90deg, rgba(20,23,28,.045) 1px, transparent 1px);
     background-size:100% 100%, 30px 30px, 30px 30px;
-    background-position:0 0, 0 0, 0 0;
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
   a{color:inherit;text-decoration:none}
   svg{display:block}
 
-  /* ── icon sizing ── */
   .ic{width:20px;height:20px;stroke:currentColor;stroke-width:1.7;fill:none;
     stroke-linecap:round;stroke-linejoin:round;flex:none}
   .ic-sm{width:16px;height:16px}
@@ -73,7 +71,7 @@
   .langtoggle a{color:var(--ink-soft);transition:background .15s ease,color .15s ease}
   .langtoggle a:hover{background:var(--lime-soft);color:var(--ink)}
 
-  /* ── Hero / repo card ── */
+  /* Hero / repo card */
   header{padding:40px 0 18px}
   .repocard{background:var(--card);border:1px solid var(--line);border-radius:24px;
     box-shadow:var(--shadow-l);padding:40px 40px 34px;position:relative;overflow:hidden}
@@ -87,14 +85,12 @@
   .repopath h1 .name{color:var(--ink);font-weight:700}
   .glyph{width:64px;height:64px;border-radius:18px;background:var(--lime);flex:none;
     display:flex;align-items:center;justify-content:center;
-    box-shadow:0 6px 16px -4px rgba(169,221,43,.6);transform:rotate(0deg)}
+    box-shadow:0 6px 16px -4px rgba(169,221,43,.6)}
   .glyph span{font-size:38px;font-weight:700;color:var(--ink);line-height:1}
   .tagline{margin-top:26px;font-size:clamp(22px,3vw,30px);font-weight:600;
-    letter-spacing:-.015em;line-height:1.18;max-width:none}
-  .tagline .brk{display:inline}
-  @media(max-width:560px){.tagline .brk{display:none}}
+    letter-spacing:-.015em;line-height:1.18;max-width:22ch}
   .hl{background:linear-gradient(transparent 62%, var(--lime) 62%);padding:0 .06em}
-  .lead{margin-top:14px;font-size:17px;color:var(--ink-soft);max-width:56ch}
+  .lead{margin-top:14px;font-size:17px;color:var(--ink-soft);max-width:58ch}
   .metarow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
   .chip{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.02em;
     padding:5px 11px;border-radius:999px;background:var(--lime);color:var(--ink)}
@@ -117,7 +113,6 @@
   .btn.primary{background:var(--lime);border-color:var(--lime);color:var(--ink)}
   .btn.primary:hover{background:#cff560}
 
-  /* ── Sections ── */
   section{padding:46px 0}
   .head{display:flex;align-items:center;gap:13px;margin-bottom:26px}
   .head .tag{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.04em;
@@ -125,7 +120,6 @@
   .head h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.015em}
   .head .rule{flex:1;height:1px;background:var(--line)}
 
-  /* Mechanisms */
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
   .mech{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
     padding:22px;box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
@@ -136,7 +130,6 @@
   .mech h3{font-size:16.5px;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
   .mech p{font-size:14px;color:var(--ink-soft);line-height:1.5}
 
-  /* Plugins */
   .group{margin-bottom:28px}
   .group-label{display:flex;align-items:center;gap:9px;margin-bottom:13px}
   .group-label .dot{width:8px;height:8px;border-radius:3px;background:var(--lime-deep)}
@@ -155,7 +148,6 @@
   .laws span{font-family:var(--mono);font-size:11px;color:#5d7a16;background:var(--lime-soft);
     padding:2px 8px;border-radius:6px}
 
-  /* Agents */
   .agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:13px}
   .agent{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;
     box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
@@ -169,7 +161,6 @@
     text-transform:uppercase;color:var(--ink-faint);margin-top:1px}
   .agent p{font-size:13.5px;color:var(--ink-soft);line-height:1.5}
 
-  /* Flow */
   .flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
   @media(max-width:880px){.flow{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:460px){.flow{grid-template-columns:1fr}}
@@ -184,7 +175,6 @@
   .step.human b{color:#fff}.step.human span{color:#b9c1cb}
   .step.human .n{background:var(--lime)}
 
-  /* Footer */
   footer{padding:42px 0 64px}
   .install{background:var(--ink);border-radius:var(--r);padding:22px 24px;overflow-x:auto;
     box-shadow:var(--shadow-m);position:relative}
@@ -246,7 +236,7 @@
 <header>
   <div class="wrap">
     <div class="langbar">
-      <div class="langtoggle"><span class="on">FI</span><a href="en/" hreflang="en">EN</a></div>
+      <div class="langtoggle"><a href="../" hreflang="fi">FI</a><span class="on">EN</span></div>
     </div>
     <div class="repocard fade">
       <div class="rc-top">
@@ -257,43 +247,42 @@
         <div class="glyph" aria-hidden="true"><span>§</span></div>
       </div>
 
-      <p class="tagline">Suomalainen vastine Anthropicin <br class="brk"><span class="hl">”Claude for Legal”</span> -lisäosalle.</p>
-      <p class="lead">Avoimen lähdekoodin skillit, agentit ja suojaukset, jotka tekevät Claudesta
-        tehokkaamman ja paremman apurin suomalaiselle oikeudellisen alan ammattilaiselle. Kaikki
-        ominaisuudet on rakennettu reaaliaikaisen lähdetarkastuksen ehdoilla, kolmiportaisella
-        varmuusmerkinnällä ja ihmisen tarkistusportilla (ns. ”human-in-the-loop”).</p>
+      <p class="tagline">A Finnish counterpart to Anthropic’s <span class="hl">“Claude for Legal”</span>.</p>
+      <p class="lead">Open-source skills, agents and guardrails that make Claude a sharper, better
+        assistant for Finnish legal professionals. Every feature is built on real-time
+        source-checking, three-tier certainty labelling and a human-in-the-loop review gate.</p>
 
       <div class="metarow">
         <span class="chip">v1.1.0</span>
         <span class="chip ghost">MIT</span>
-        <span class="chip ghost">Finlex · oik.ai · laki.ai · KKO/KHO</span>
+        <span class="chip ghost">Finlex · oik.ai · laki.ai · case law</span>
       </div>
 
       <div class="stats">
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></div>
-          <b>24</b><span>plugaria</span>
+          <b>24</b><span>plugins</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18 14l.7 1.9L20.6 17l-1.9.7L18 19.6l-.7-1.9L15.4 17l1.9-.7z"/></svg></div>
-          <b>77</b><span>skilliä</span>
+          <b>77</b><span>skills</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="2.5"/><path d="M12 8V4.5"/><circle cx="12" cy="4" r="1.2"/><path d="M9.2 13h.01M14.8 13h.01"/></svg></div>
-          <b>6</b><span>agenttia</span>
+          <b>6</b><span>agents</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M8.7 12l2.2 2.2 4.4-4.4"/></svg></div>
-          <b>106</b><span>säädöstä varmistettu</span>
+          <b>106</b><span>statutes verified</span>
         </div>
       </div>
 
       <div class="cta">
         <a class="btn primary" href="https://github.com/akunikkola/claude-for-legal-finland">
           <svg class="ic ic-sm" viewBox="0 0 16 16" fill="currentColor" stroke="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          Avaa GitHubissa
+          Open on GitHub
         </a>
-        <a class="btn" href="#asennus">Asennus
+        <a class="btn" href="#install">Install
           <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </a>
       </div>
@@ -301,215 +290,213 @@
   </div>
 </header>
 
-<!-- ── MEKANISMIT ── -->
+<!-- ── MECHANISMS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">01</span><h2>Suoja syntyy mekanismeista</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">01</span><h2>Protection comes from mechanisms</h2><span class="rule"></span></div>
     <div class="grid4">
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H13l3 3v11.5c0 .8-.7 1.5-1.5 1.5h-9C4.7 20 4 19.3 4 18.5z"/><path d="M8 11h6M8 14.5h6M8 7.5h3"/></svg></div>
-        <h3>Lähteestä, ei muistista</h3>
-        <p>Säädökset ja oikeuskäytäntö haetaan Finlexistä sekä oikeuslähde-MCP:stä (oik.ai tai laki.ai). Jokainen repon säädösnumero on varmistettu lähteestä ennen julkaisua.</p>
+        <h3>From the source, not from memory</h3>
+        <p>Statutes and case law are fetched from Finlex and a legal-source MCP (oik.ai or laki.ai). Every statute number in the repo is verified against the source before release.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h10M4 12h10M4 18h6"/><path d="M17.5 16.5l2 2 3-3.5"/></svg></div>
-        <h3>Kolmiportainen varmuus</h3>
-        <p>Varmistettu · Tarkistettava · Älä käytä — jokainen viittaus ja laskelma kantaa varmuusmerkintänsä omalla rivillään.</p>
+        <h3>Three-tier certainty</h3>
+        <p>Verified · To be checked · Do not use — every citation and calculation carries its certainty label on its own line.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg></div>
-        <h3>Negatiivirajaus</h3>
-        <p>Jokainen skill kertoo, mitä se EI tee: ei kartelliapua, ei todisteiden hävitystä, ei keksittyjä pykäliä, ei rikoksen peittelyä.</p>
+        <h3>Negative scoping</h3>
+        <p>Every skill states what it does NOT do: no cartel help, no destroying evidence, no invented statutes, no covering up crime.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.3"/><path d="M4 19c.5-3.3 2.9-5 6-5"/><path d="M14.5 15.5l2 2 4-4"/></svg></div>
-        <h3>Ihmisen tarkistusportti</h3>
-        <p>Jokainen tuotos on luonnos. Pätevä ihminen tarkistaa, päättää ja kantaa vastuun — työkalu nopeuttaa tarkistusta, ei korvaa sitä.</p>
+        <h3>Human review gate</h3>
+        <p>Every output is a draft. A qualified human checks, decides and bears responsibility — the tool speeds up review, it does not replace it.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── PLUGARIT ── -->
+<!-- ── PLUGINS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">02</span><h2>Plugarit oikeudenaloittain</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">02</span><h2>Plugins by practice area</h2><span class="rule"></span></div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Perusta — asenna aina</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Foundation — always install</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>juristi</h4><span class="meta">8 skilliä · 2 agenttia</span></div>
-          <p>Lakikieli, oikeustutkimus, asiakirjan tarkistus, toimeksiannon haltuunotto, suomen kieli, käytäntöprofiili sekä selkokielistäjä ja oikeustapausten referointi.</p>
+        <div class="card"><div class="row"><h4>juristi</h4><span class="meta">8 skills · 2 agents</span></div>
+          <p>Legal language, legal research, document review, matter intake, Finnish-language checks, a house-style profile, plus a plain-language explainer and case-law summariser.</p>
           <div class="laws"><span>Finlex</span><span>oik.ai</span><span>150/1930</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Liikejuridiikka</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Business law</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>sopimukset</h4><span class="meta">2 + agentti</span></div><p>Laatiminen lausekekirjastolla ja riskikäynti vihreä/keltainen/punainen; poikkeamat talon linjasta.</p><div class="laws"><span>OikTL 228/1929</span><span>KSL 38/1978</span></div></div>
-        <div class="card"><div class="row"><h4>yhtiöoikeus</h4><span class="meta">3 + agentti</span></div><p>Hallinto ja varojenjaon kaksoistesti, osakassopimukset, yritysjärjestelyt ja due diligence.</p><div class="laws"><span>OYL 624/2006</span><span>564/2023</span></div></div>
-        <div class="card"><div class="row"><h4>kilpailuoikeus</h4><span class="meta">3 skilliä</span></div><p>Kilpailunrajoitukset, yrityskauppavalvonta, compliance ja dawn raid -valmius.</p><div class="laws"><span>948/2011</span><span>SEUT 101–102</span></div></div>
-        <div class="card"><div class="row"><h4>pankki ja rahoitus</h4><span class="meta">3 skilliä</span></div><p>Rahoitussopimukset ja vakuudet, rahanpesun estäminen, arvopaperimarkkinat.</p><div class="laws"><span>622/1947</span><span>444/2017</span><span>MAR</span></div></div>
-        <div class="card"><div class="row"><h4>immateriaalioikeus</h4><span class="meta">3 skilliä</span></div><p>Tavaramerkki ja toiminimi, tekijänoikeus DSM-uudistuksineen, liikesalaisuudet.</p><div class="laws"><span>544/2019</span><span>404/1961</span><span>595/2018</span></div></div>
-        <div class="card"><div class="row"><h4>verotus</h4><span class="meta">3 skilliä</span></div><p>Verotusmenettely ja muutoksenhaku, yritysverotus, arvonlisäverotus.</p><div class="laws"><span>VML 1558/1995</span><span>EVL</span><span>AVL</span></div></div>
-        <div class="card"><div class="row"><h4>insolvenssi</h4><span class="meta">3 skilliä</span></div><p>Menettelyn valinta, konkurssi velkojan ja velallisen silmin, perintä ja ulosotto.</p><div class="laws"><span>120/2004</span><span>47/1993</span><span>705/2007</span></div></div>
+        <div class="card"><div class="row"><h4>sopimukset</h4><span class="meta">2 + agent</span></div><p>Drafting with a clause library and a green/yellow/red risk pass; deviations from house policy.</p><div class="laws"><span>OikTL 228/1929</span><span>KSL 38/1978</span></div></div>
+        <div class="card"><div class="row"><h4>yhtiöoikeus</h4><span class="meta">3 + agent</span></div><p>Governance and the two-pronged distribution test, shareholder agreements, M&amp;A and due diligence.</p><div class="laws"><span>OYL 624/2006</span><span>564/2023</span></div></div>
+        <div class="card"><div class="row"><h4>kilpailuoikeus</h4><span class="meta">3 skills</span></div><p>Restrictive practices, merger control, compliance and dawn-raid readiness.</p><div class="laws"><span>948/2011</span><span>TFEU 101–102</span></div></div>
+        <div class="card"><div class="row"><h4>pankki ja rahoitus</h4><span class="meta">3 skills</span></div><p>Finance agreements and collateral, anti-money-laundering, securities markets.</p><div class="laws"><span>622/1947</span><span>444/2017</span><span>MAR</span></div></div>
+        <div class="card"><div class="row"><h4>immateriaalioikeus</h4><span class="meta">3 skills</span></div><p>Trademarks and trade names, copyright with the DSM reform, trade secrets.</p><div class="laws"><span>544/2019</span><span>404/1961</span><span>595/2018</span></div></div>
+        <div class="card"><div class="row"><h4>verotus</h4><span class="meta">3 skills</span></div><p>Tax procedure and appeals, business taxation, VAT.</p><div class="laws"><span>VML 1558/1995</span><span>EVL</span><span>AVL</span></div></div>
+        <div class="card"><div class="row"><h4>insolvenssi</h4><span class="meta">3 skills</span></div><p>Choosing the procedure, bankruptcy from creditor and debtor sides, debt collection and enforcement.</p><div class="laws"><span>120/2004</span><span>47/1993</span><span>705/2007</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Arki, perhe ja kuluttaja</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Everyday, family &amp; consumer</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>perhe- ja perintöoikeus</h4><span class="meta">4 skilliä</span></div><p>Avioehto ja ositus, lapsen huolto ja elatus, perintö, testamentti ja lakiosa sekä edunvalvonta. Lapsen etu ja turvallisuus edellä.</p><div class="laws"><span>AL 234/1929</span><span>PK 40/1965</span></div></div>
-        <div class="card"><div class="row"><h4>kuluttajaoikeus</h4><span class="meta">3 skilliä</span></div><p>Kuluttajakaupan virhevastuu, etämyynti ja peruuttaminen, kuluttajariita ja hyvä perintätapa. Pakottava kuluttajan hyväksi.</p><div class="laws"><span>KSL 38/1978</span><span>513/1999</span></div></div>
+        <div class="card"><div class="row"><h4>perhe- ja perintöoikeus</h4><span class="meta">4 skills</span></div><p>Prenups and division of property, child custody and maintenance, inheritance, wills and the forced share, plus guardianship. The child’s best interest and safety first.</p><div class="laws"><span>AL 234/1929</span><span>PK 40/1965</span></div></div>
+        <div class="card"><div class="row"><h4>kuluttajaoikeus</h4><span class="meta">3 skills</span></div><p>Consumer-sale defect liability, distance selling and withdrawal, consumer disputes and fair debt collection. Mandatory in the consumer’s favour.</p><div class="laws"><span>KSL 38/1978</span><span>513/1999</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Ihmiset ja työ</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>People &amp; work</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skilliä</span></div><p>Työsopimus, päättämisen riskiluokitus, yhteistoiminta ja muutosneuvottelut.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
-        <div class="card"><div class="row"><h4>ulkomaalaisoikeus</h4><span class="meta">3 skilliä</span></div><p>Työperusteiset luvat, työnantajan varmistusvastuu, EU- ja perheperusteinen oleskelu.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
+        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skills</span></div><p>Employment contracts, termination risk grading, co-operation and change negotiations.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
+        <div class="card"><div class="row"><h4>ulkomaalaisoikeus</h4><span class="meta">3 skills</span></div><p>Work-based residence permits, the employer’s verification duty, EU and family-based residence.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Rikos ja riidat</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Crime &amp; disputes</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>riidanratkaisu</h4><span class="meta">4 + agentti</span></div><p>Haastehakemus, todistelu, muutoksenhaku ja vahingonkorvauksen yleiset opit.</p><div class="laws"><span>OK 4/1734</span><span>VahL 412/1974</span></div></div>
-        <div class="card"><div class="row"><h4>rikosprosessi</h4><span class="meta">3 skilliä</span></div><p>Esitutkinta ja pakkokeinot, syyte ja puolustus, asianomistajan vaatimukset.</p><div class="laws"><span>ROL 689/1997</span><span>ETL</span><span>PKL</span></div></div>
-        <div class="card"><div class="row"><h4>rikosoikeus</h4><span class="meta">3 skilliä</span></div><p>Aineellinen rikosoikeus: rikosvastuun perusteet, rikostyypit ja rangaistuksen määrääminen. Puolustuksen ja asianomistajan näkökulma.</p><div class="laws"><span>RL 39/1889</span></div></div>
+        <div class="card"><div class="row"><h4>riidanratkaisu</h4><span class="meta">4 + agent</span></div><p>Statement of claim, evidence, appeals and the general doctrine of damages.</p><div class="laws"><span>OK 4/1734</span><span>VahL 412/1974</span></div></div>
+        <div class="card"><div class="row"><h4>rikosprosessi</h4><span class="meta">3 skills</span></div><p>Pre-trial investigation and coercive measures, charge and defence, the injured party’s claims.</p><div class="laws"><span>ROL 689/1997</span><span>ETL</span><span>PKL</span></div></div>
+        <div class="card"><div class="row"><h4>rikosoikeus</h4><span class="meta">3 skills</span></div><p>Substantive criminal law: the basis of criminal liability, offence types and sentencing. Defence and injured-party perspective.</p><div class="laws"><span>RL 39/1889</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Julkinen sektori ja sääntely</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Public sector &amp; regulation</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>hallinto-oikeus</h4><span class="meta">3 + agentti</span></div><p>Hallintopäätös, muutoksenhaku, julkisuus ja tietopyynnöt — salassapitoarvio agenttina.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
-        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skilliä</span></div><p>Suunnittelu ja menettelyt, tarjouspyyntö ja tarjous molemmin puolin, MAO-muutoksenhaku.</p><div class="laws"><span>1397/2016</span></div></div>
-        <div class="card"><div class="row"><h4>lainvalmistelu</h4><span class="meta">4 skilliä</span></div><p>Lainkirjoittajan opas, HELO, prosessiopas ja lakikieli — varmistetuin johtolausein.</p><div class="laws"><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
-        <div class="card"><div class="row"><h4>lausunnot</h4><span class="meta">1 skilli</span></div><p>Lausunto lakiehdotukseen 7-vaiheisella työnkululla, vaikutusarviointi mukana.</p><div class="laws"><span>Lausuntopalvelu.fi</span></div></div>
-        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skilliä</span></div><p>Käsittelyn arviointi ja DPIA, selosteet, rekisteröidyn pyynnöt sekä PII Shield -anonymisointi.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
-        <div class="card"><div class="row"><h4>tekoälysääntely</h4><span class="meta">3 skilliä</span></div><p>AI Actin riskiluokittelu, velvoitteet roolin mukaan, määräajat ja FRIA — deterministinen MCP.</p><div class="laws"><span>(EU) 2024/1689</span></div></div>
-        <div class="card"><div class="row"><h4>kaksikielisyys (FI/SV)</h4><span class="meta">2 skilliä</span></div><p>Oikeuskielen kääntäminen vakiintunein termein virallisista lähteistä sekä kielelliset oikeudet ja viranomaisen velvoitteet.</p><div class="laws"><span>Kielilaki 423/2003</span><span>PL 17 §</span></div></div>
+        <div class="card"><div class="row"><h4>hallinto-oikeus</h4><span class="meta">3 + agent</span></div><p>Administrative decisions, appeals, transparency and information requests — secrecy assessment as an agent.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
+        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skills</span></div><p>Planning and procedures, the invitation to tender and the tender on both sides, appeals to the Market Court.</p><div class="laws"><span>1397/2016</span></div></div>
+        <div class="card"><div class="row"><h4>lainvalmistelu</h4><span class="meta">4 skills</span></div><p>The legislative-drafting guide, HE drafting instructions, the process guide and legal language — with verified enacting clauses.</p><div class="laws"><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
+        <div class="card"><div class="row"><h4>lausunnot</h4><span class="meta">1 skill</span></div><p>A statement on a bill via a 7-step workflow, with impact assessment.</p><div class="laws"><span>Lausuntopalvelu.fi</span></div></div>
+        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skills</span></div><p>Processing assessment and DPIA, privacy notices, data-subject requests, plus PII Shield anonymisation.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
+        <div class="card"><div class="row"><h4>tekoälysääntely</h4><span class="meta">3 skills</span></div><p>AI Act risk classification, obligations by role, deadlines and FRIA — a deterministic MCP.</p><div class="laws"><span>(EU) 2024/1689</span></div></div>
+        <div class="card"><div class="row"><h4>kaksikielisyys (FI/SV)</h4><span class="meta">2 skills</span></div><p>Translating legal language with established terms from official sources, plus language rights and authority obligations.</p><div class="laws"><span>Language Act 423/2003</span><span>Constitution s. 17</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Omaisuus ja ympäristö</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Property &amp; environment</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>kiinteistöt ja asuminen</h4><span class="meta">4 skilliä</span></div><p>Kiinteistö- ja asuntokauppa virheineen, taloyhtiö, vuokrasopimukset.</p><div class="laws"><span>MK 540/1995</span><span>AOYL 1599/2009</span></div></div>
-        <div class="card"><div class="row"><h4>ympäristö ja kaavoitus</h4><span class="meta">3 skilliä</span></div><p>Ympäristöluvat ja valvonta, kaavoitus ja uusi rakentamislupa, ympäristövastuut ja -DD.</p><div class="laws"><span>YSL 527/2014</span><span>751/2023</span><span>LVV 2026</span></div></div>
+        <div class="card"><div class="row"><h4>kiinteistöt ja asuminen</h4><span class="meta">4 skills</span></div><p>Real-estate and apartment sales with defects, housing companies, leases.</p><div class="laws"><span>MK 540/1995</span><span>AOYL 1599/2009</span></div></div>
+        <div class="card"><div class="row"><h4>ympäristö ja kaavoitus</h4><span class="meta">3 skills</span></div><p>Environmental permits and supervision, land use and the new building permit, environmental liability and DD.</p><div class="laws"><span>YSL 527/2014</span><span>751/2023</span><span>LVV 2026</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── AGENTIT ── -->
+<!-- ── AGENTS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">03</span><h2>Agentit — delegoitavat työvaiheet</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">03</span><h2>Agents — delegable work steps</h2><span class="rule"></span></div>
     <div class="agents">
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></div><div class="nm"><b>Lähdetarkastaja</b><span>juristi</span></div></div><p>Olettaa jokaisen viittauksen vääräksi, kunnes lähde todistaa toisin. Palauttaa varmistustaulukon korjausehdotuksineen — ajetaan jokaiselle ulos lähtevälle asiakirjalle.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div class="nm"><b>Määräaikaskanneri</b><span>juristi</span></div></div><p>Skannaa aineiston kaikki määräajat, laskee varovaisuusperiaatteella molemmilla lähtöpäivillä ja nostaa kiireellisimmät ensin. Kalenterivastuu jää ihmiselle.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M5 7v8c0 1.5 3 3 7 3s7-1.5 7-3V7"/></svg></div><div class="nm"><b>Vastapuoli</b><span>riidanratkaisu</span></div></div><p>Vastapuolen avustajan simulaattori: hyökkää kirjelmääsi vastaan tosissaan ja palauttaa heikkoustaulukon, vahvuudet ja top 3 -korjaukset ennen jättämistä.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="nm"><b>Aineistokartoittaja</b><span>yhtiöoikeus</span></div></div><p>Inventoi datahuoneen DD-alueittain, tuottaa aukkolistan valmiina tietopyyntönä ja punaiset liput priorisointia varten. Inventaario — ei oikeudellinen arvio.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12.5l2 2 4-4"/></svg></div><div class="nm"><b>Poikkeamatarkastaja</b><span>sopimukset</span></div></div><p>Vertaa luonnosta talon riskilinjauksiin lauseke lausekkeelta ja osoittaa eskaloitavat. Pysähtyy, jos mittatikkua ei ole — ei keksi markkinakäytäntöä.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M12 9v3M12 15h.01"/></svg></div><div class="nm"><b>Salassapitoarvioija</b><span>hallinto-oikeus</span></div></div><p>Valmistelee julkisuusarvion kohta kohdalta säännösperusteineen ja tuottaa peittoehdotuksen. Osittainen julkisuus pääsääntönä; viranhaltija päättää.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></div><div class="nm"><b>Source checker</b><span>juristi · lahdetarkastaja</span></div></div><p>Assumes every citation is wrong until the source proves otherwise. Returns a verification table with fix suggestions — run it on every document that goes out.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div class="nm"><b>Deadline scanner</b><span>juristi · maaraaikaskanneri</span></div></div><p>Scans every deadline in the material, calculates them on the cautious principle from both possible start dates, and surfaces the most urgent first. Calendar responsibility stays with the human.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M5 7v8c0 1.5 3 3 7 3s7-1.5 7-3V7"/></svg></div><div class="nm"><b>Opposing counsel</b><span>riidanratkaisu · vastapuoli</span></div></div><p>A simulator of the other side’s counsel: attacks your brief in earnest and returns a weakness table, your strengths and the top 3 fixes before filing.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="nm"><b>Data-room mapper</b><span>yhtiöoikeus · aineistokartoittaja</span></div></div><p>Inventories the data room by DD area, produces a gap list ready as an information request and red flags for prioritisation. An inventory — not a legal assessment.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12.5l2 2 4-4"/></svg></div><div class="nm"><b>Deviation checker</b><span>sopimukset · poikkeamatarkastaja</span></div></div><p>Compares a draft against house risk policy clause by clause and points out what to escalate. Stops if there is no yardstick — it does not invent “market practice”.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M12 9v3M12 15h.01"/></svg></div><div class="nm"><b>Secrecy assessor</b><span>hallinto-oikeus · salassapitoarvioija</span></div></div><p>Prepares a transparency assessment point by point with statutory grounds and produces a redaction proposal. Partial disclosure as the rule; the official decides.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ── TYÖNKULKU ── -->
+<!-- ── WORKFLOW ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">04</span><h2>Aineistosta ihmisen päätökseen</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">04</span><h2>From the material to a human decision</h2><span class="rule"></span></div>
     <div class="flow">
-      <div class="step"><div class="n">1</div><b>Aineisto sisään</b><span>hiljaisen latauksen protokolla</span></div>
-      <div class="step"><div class="n">2</div><b>Määräajat</b><span>maaraaikaskanneri + toimeksianto</span></div>
-      <div class="step"><div class="n">3</div><b>Substanssi</b><span>oikeudenalan skillit + oikeustutkimus</span></div>
-      <div class="step"><div class="n">4</div><b>Vastapaine</b><span>vastapuoli · poikkeamatarkastaja</span></div>
-      <div class="step"><div class="n">5</div><b>Viitteet</b><span>lahdetarkastaja varmistaa</span></div>
-      <div class="step human"><div class="n">6</div><b>Ihminen päättää</b><span>tarkistaa, hyväksyy, vastaa</span></div>
+      <div class="step"><div class="n">1</div><b>Material in</b><span>silent-load protocol</span></div>
+      <div class="step"><div class="n">2</div><b>Deadlines</b><span>maaraaikaskanneri + toimeksianto</span></div>
+      <div class="step"><div class="n">3</div><b>Substance</b><span>practice-area skills + oikeustutkimus</span></div>
+      <div class="step"><div class="n">4</div><b>Counter-pressure</b><span>vastapuoli · poikkeamatarkastaja</span></div>
+      <div class="step"><div class="n">5</div><b>Citations</b><span>lahdetarkastaja verifies</span></div>
+      <div class="step human"><div class="n">6</div><b>The human decides</b><span>checks, approves, takes responsibility</span></div>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer id="asennus">
+<footer id="install">
   <div class="wrap">
-    <div class="head"><span class="tag">05</span><h2>Asennus ja käyttöönotto</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">05</span><h2>Installation &amp; onboarding</h2><span class="rule"></span></div>
     <div class="install">
       <div class="label"><span class="dotrow"><i></i><i></i><i></i></span> claude code · cowork</div>
 <pre><span class="c">/plugin</span> marketplace add akunikkola/claude-for-legal-finland
-<span class="c">/plugin</span> install juristi@claude-for-legal-finland   <span class="muted"># + oman alan plugarit</span></pre>
+<span class="c">/plugin</span> install juristi@claude-for-legal-finland   <span class="muted"># + your practice-area plugins</span></pre>
     </div>
 
     <div class="conn">
-      <div class="conn-title">Liittimet (MCP)</div>
+      <div class="conn-title">Connectors (MCP)</div>
       <div class="conn-items">
-        <div class="conn-item"><b>oik.ai / laki.ai</b><span>Suomen oikeuslähteet: Finlex, oikeuskäytäntö ja esityöt. Vaatii tilin (OAuth).</span></div>
-        <div class="conn-item"><b>Adeu</b><span>Word-asiakirjojen (.docx) muokkaus natiiveina jälkimuutoksina (Track Changes) – luonnoksen redline. Paikallinen, ei tiliä.</span></div>
-        <div class="conn-item"><b>EU AI Act MCP</b><span>Deterministinen tekoälyasetuksen riskiluokittelu (tekoälysääntely-plugari). Paikallinen, ei tiliä.</span></div>
+        <div class="conn-item"><b>oik.ai / laki.ai</b><span>Finnish legal sources: Finlex, case law and travaux préparatoires. Account required (OAuth).</span></div>
+        <div class="conn-item"><b>Adeu</b><span>Edit Word (.docx) documents as native tracked changes — redline a draft. Local, no account.</span></div>
+        <div class="conn-item"><b>EU AI Act MCP</b><span>Deterministic AI Act risk classification (tekoälysääntely plugin). Local, no account.</span></div>
       </div>
     </div>
 
     <div class="foot-grid">
       <div class="panel">
-        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg> Organisaatiokäyttöön</h3>
-        <p>Ennen tuotantokäyttöä: aineistolinjaus, käsittelysopimus (GDPR 28 art), anonymisointi
-          työnkulkuna (PII Shield) ja nimetty tarkistusketju — <code>references/kayttoonotto-toimistossa.md</code>.
-          Talon tapa kirjataan <code>kaytantoprofiili</code>-skillillä; pilotointi esimerkkiaineistoilla,
-          joissa on arviointikriteerit.</p>
+        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg> For organisations</h3>
+        <p>Before production use: a data policy, a processing agreement (GDPR Art. 28), anonymisation
+          as a workflow (PII Shield) and a named review chain — <code>references/kayttoonotto-toimistossa.md</code>.
+          House conventions are recorded with the <code>kaytantoprofiili</code> skill; pilot with the
+          example datasets, which include assessment criteria.</p>
       </div>
       <div class="panel">
-        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M8 7h8M8 11h6"/></svg> Lähteet ja ylläpito</h3>
+        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M8 7h8M8 11h6"/></svg> Sources &amp; upkeep</h3>
         <ul>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="https://github.com/akunikkola/claude-for-legal-finland">github.com/akunikkola/claude-for-legal-finland</a></li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Releaset: plugarikohtaiset ZIPit (v0.1.0–v1.1.0)</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Säädösvahti: kuukausittain 106/106 täsmää Finlexiin</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI-validaattori jokaisessa muutoksessa</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Releases: per-plugin ZIPs (v0.1.0–v1.1.0)</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Statute watch: monthly, 106/106 match Finlex</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI validator on every change</li>
         </ul>
       </div>
     </div>
 
     <div class="join">
       <div class="join-text">
-        <h3>Osallistu hankkeeseen</h3>
-        <p>Avoin yhteisöhanke – kuka tahansa on tervetullut mukaan joko sisällöntuottajana (omat skillit ja plugarit, joista on ollut todistettavaa hyötyä työssäsi) tai hankkeen tukijana.</p>
+        <h3>Get involved</h3>
+        <p>An open community project — everyone is welcome to join, either as a contributor (your own skills and plugins that have proven useful in your work) or as a sponsor.</p>
       </div>
       <div class="join-cta">
-        <a class="btn dark" href="https://github.com/akunikkola/claude-for-legal-finland/blob/main/CONTRIBUTING.md">
+        <a class="btn dark" href="https://github.com/akunikkola/claude-for-legal-finland">
           <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/></svg>
-          Tuota sisältöä
+          Contribute
         </a>
-        <a class="btn" href="mailto:aku@wearelegit.ai?subject=Claude%20for%20Legal%20Finland%20%E2%80%93%20tuki%2Fsponsorointi">
+        <a class="btn" href="mailto:aku@wearelegit.ai?subject=Claude%20for%20Legal%20Finland%20%E2%80%93%20sponsoring">
           <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 21s-6.7-4.35-9.1-8.5C1.2 9.3 2.7 5.5 6.2 5.5c1.9 0 3.1 1.1 3.8 2.1.7-1 1.9-2.1 3.8-2.1 3.5 0 5 3.8 3.3 7C18.7 16.65 12 21 12 21z"/></svg>
-          Tue hanketta
+          Sponsor the project
         </a>
       </div>
     </div>
 
     <div class="notice">
-      <p><b>Jokainen tuotos on tarkistettava luonnos. Kyse ei ole oikeudellisesta neuvonnasta,
-        eikä tämä kokoelma tai sen sisältämät ominaisuudet korvaa juristia.</b> Vastuun
-        lopputuloksesta kantaa aina käyttäjä, ja käyttöä suositellaan ainoastaan kouluttautuneille
-        oikeudellisen alan ammattilaisille. Plugarit on rakennettu tämän mukaisesti: laki ja
-        oikeuskäytäntö tarkistetaan lähteestä eikä muistista, jokaiseen viittaukseen tulee
-        lähdemerkintä, jurisdiktio-oletukset pidetään näkyvissä, ja ennen kuin mitään lähetetään tai
-        allekirjoitetaan, asian varmistaa ihminen. Suojan tuottavat mekanismit — lähteen varmistus,
-        kolmiportainen varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen
-        tarkistusportti. Mekanismit on koottu tiedostoihin <a href="https://github.com/akunikkola/claude-for-legal-finland/blob/main/references/viittaustyyli.md">references/viittaustyyli.md</a>
-        ja <a href="https://github.com/akunikkola/claude-for-legal-finland/blob/main/references/vastuu-ja-tietoturva.md">references/vastuu-ja-tietoturva.md</a>.</p>
-      <p>Tämä on yhteisön avoin hanke, ei viranomais-, lakiasiain- tai asianajopalvelu, eikä se
-        edusta minkään organisaation virallista oikeudellista kantaa. Kuka tahansa voi kontribuoida
-        hankkeeseen omat skill-tiedostonsa ja plugarinsa, joista on ollut todistettavaa hyötyä
-        omassa työssä.</p>
+      <p><b>Every output is a draft for review. This is not legal advice, and neither this collection
+        nor its features replace a lawyer.</b> The user always bears responsibility for the outcome,
+        and use is recommended only for trained legal professionals. The plugins are built
+        accordingly: law and case law are checked against the source rather than from memory, every
+        citation carries a source mark, jurisdiction assumptions are kept visible, and before
+        anything is sent or signed a human verifies it. Protection comes from mechanisms — source
+        verification, three-tier certainty labelling, premise checking, negative scoping and the
+        human review gate. The mechanisms are collected in <a href="https://github.com/akunikkola/claude-for-legal-finland/blob/main/references/viittaustyyli.md">references/viittaustyyli.md</a>
+        and <a href="https://github.com/akunikkola/claude-for-legal-finland/blob/main/references/vastuu-ja-tietoturva.md">references/vastuu-ja-tietoturva.md</a>.</p>
+      <p>This is an open community project — not an authority, legal or attorney service — and it does
+        not represent any organisation’s official legal position. Anyone can contribute their own
+        skill files and plugins that have proven useful in their own work.</p>
     </div>
 
     <div class="base">
       <span>MIT © 2026 Aku Nikkola</span>
-      <span>Suomalainen vastine Anthropicin claude-for-legalille</span>
+      <span>A Finnish counterpart to Anthropic’s claude-for-legal</span>
     </div>
   </div>
 </footer>

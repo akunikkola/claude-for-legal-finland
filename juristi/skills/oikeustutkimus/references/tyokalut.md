@@ -37,6 +37,20 @@ Parametri: `document_path` (`search_decisions`-tuloksesta).
 
 Lue aina koko ratkaisu, kun lopputulos tai perustelut ovat olennaisia. Poimi: asian laatu, oikeuskysymys, lopputulos, keskeiset perustelut ja sovelletut lainkohdat. Hakukatkelma yksinään voi johtaa harhaan.
 
+## laki.ai-MCP -työkalut (vaihtoehtoinen konnektori)
+
+Jos lähdekonnektorina on **laki.ai** (MCP-osoite `https://api.laki.ai/mcp/claude`, OAuth-kirjautuminen) oik.ai:n sijaan, työnkulku on sama mutta työkalut eri nimillä. laki.ai kattaa Finlexin säädökset, hallituksen esitykset (1980→), oikeuskäytännön (KKO, KHO, HO, HAO, MAO, TT, VAKO) ja Verohallinnon syventävät vero-ohjeet.
+
+| laki.ai-työkalu | Vastine oik.ai:ssa | Käyttö |
+|---|---|---|
+| `search_legal_sources` | `search_decisions` (laajempi) | Hae säädökset, oikeuskäytäntö, esityöt ja Verohallinnon ohjeet hakusanoilla. |
+| `read_document` | `get_legislation` / `get_decision` | Avaa säädöksen, ratkaisun tai HE:n koko teksti. |
+| `get_table_of_contents` | — | Selaa lähteen luku- ja pykälärakennetta oikean kohdan paikantamiseksi. |
+| `search_within_documents` | — | Hae täsmätermejä tunnetuista lähteistä. |
+| `get_statute_section_history` | — | Lue pykälän versiohistoria ja aiemmat sanamuodot — hyödyllinen ajantasaisuuden ja muutosten tarkistuksessa. |
+
+Sama kuri pätee konnektorista riippumatta: lue varsinainen teksti, älä hakukatkelmaa; varmista ajantasaisuus (laki.ai:lla `get_statute_section_history` auttaa); merkitse lähde — `(laki.ai)`. Asennus: juuren `QUICKSTART.md` ja <https://laki.ai/fi/claude>.
+
 ## Ratkaisutunnusten lukeminen
 - `KKO:2024:15` — korkeimman oikeuden ennakkopäätös (yleiset tuomioistuimet: rikos-, riita- ja hakemusasiat).
 - `KHO:2023:42` — korkeimman hallinto-oikeuden ennakkopäätös (hallintoasiat: verotus, ympäristö, kaavoitus, sote jne.).

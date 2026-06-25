@@ -2,7 +2,7 @@
 name: oikeustutkimus
 description: >
   Suomalaisen voimassa olevan lainsäädännön ja oikeuskäytännön haku, lukeminen ja
-  oikea viittaaminen oik.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun
+  oikea viittaaminen oik.ai-, laki.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun
   tarvitaan ajantasaista lakitekstiä, pykälän sisältö, KKO:n tai KHO:n ennakkopäätös,
   hovioikeuden, markkinaoikeuden, työtuomioistuimen tai vakuutusoikeuden ratkaisu,
   hallituksen esityksen perusteluja, tai kun käyttäjä kysyy "mitä laki sanoo",
@@ -22,7 +22,7 @@ Tämä skill varmistaa, että juridiset väitteet perustuvat **todelliseen, voim
 
 ## Käytettävät työkalut
 
-Tämä skill käyttää **oik.ai-MCP:tä** (tai vastaavaa Finlex-MCP:tä). Tarkemmat hakustrategiat ja vianetsintä: lue `references/tyokalut.md`.
+Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:tä** (tai muuta vastaavaa Finlex-MCP:tä). Molemmat tuovat saman: ajantasaisen lain, oikeuskäytännön ja esityöt lähteestä — vain työkalujen nimet eroavat. Käytä sitä konnektoria, joka on liitettynä. Tarkemmat hakustrategiat, työkalut ja laki.ai-vastineet: lue `references/tyokalut.md`. Asennus: juuren `QUICKSTART.md`.
 
 | Työkalu | Käyttö |
 |---|---|
@@ -60,7 +60,7 @@ Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../juristi/r
 - **Hallituksen esitys**: *HE 268/2014 vp, s. 145*
 
 ### 5. Merkitse lähde
-Liitä jokaiseen lainattuun pykälään ja ratkaisuun lähdemerkintä: `(oik.ai)` tai `(Finlex, ajantasainen)`. Erota selvästi:
+Liitä jokaiseen lainattuun pykälään ja ratkaisuun lähdemerkintä: `(oik.ai)`, `(laki.ai)` tai `(Finlex, ajantasainen)`. Erota selvästi:
 - mikä on **suora sisältö lähteestä**,
 - mikä on **sinun tulkintasi/yhteenvetosi**, ja
 - mikä vaatii **asiantuntijan vahvistuksen** (`[varmista — juristin arvioitava]`).
