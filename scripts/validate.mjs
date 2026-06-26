@@ -14,7 +14,7 @@
 // markkinapaikan rikkovat ja hiljaa hajoavat virheet ennen julkaisua.
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
-import { join, dirname, relative, resolve } from 'node:path';
+import { basename, join, dirname, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -65,7 +65,7 @@ function parseFrontmatter(file) {
     err(file, 'SKILL.md ei ala YAML-frontmatterilla (---).');
     return null;
   }
-  const lines = text.split('\n');
+  const lines = text.replace(/\r\n?/g, '\n').split('\n');
   // etsi sulkeva '---'
   let end = -1;
   for (let i = 1; i < lines.length; i++) {
@@ -167,7 +167,7 @@ for (const name of pluginNames) {
   const skillsDir = join(ROOT, name, 'skills');
   if (!existsSync(skillsDir)) { warn(skillsDir, `plugarilla ${name} ei ole skills/-hakemistoa.`); continue; }
   for (const sdir of listDirs(skillsDir)) {
-    const skillName = sdir.split('/').pop();
+    const skillName = basename(sdir);
     const skillMd = join(sdir, 'SKILL.md');
     if (!existsSync(skillMd)) { err(sdir, 'SKILL.md puuttuu skill-hakemistosta.'); continue; }
     skillCount++;

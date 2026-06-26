@@ -1,0 +1,33 @@
+{
+  "name": "kaksikielisyys",
+  "version": "0.1.0",
+  "description": "Suomi–ruotsi-kaksikielisyys juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003).",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/kaksikielisyys",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "kaksikielisyys"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kaksikielisyys (FI/SV)",
+    "shortDescription": "Suomi–ruotsi-kaksikielisyys juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valt…",
+    "longDescription": "Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Kaksikielisyys (FI/SV) -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

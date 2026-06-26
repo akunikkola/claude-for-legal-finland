@@ -1,0 +1,33 @@
+{
+  "name": "insolvenssi",
+  "version": "0.1.0",
+  "description": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi, yrityssaneeraus, velkajärjestely), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/insolvenssi",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "insolvenssi"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Insolvenssi",
+    "shortDescription": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi, yrityssaneeraus, velkajärjestely), konkurssimenettely velkojan…",
+    "longDescription": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi 120/2004, yrityssaneeraus 47/1993, velkajärjestely 57/1993), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Insolvenssi -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

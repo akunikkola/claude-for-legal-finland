@@ -1,0 +1,33 @@
+{
+  "name": "rikosprosessi",
+  "version": "0.1.0",
+  "description": "Suomen rikosprosessi ammattilaisille: esitutkinta ja pakkokeinot (805/2011 ja 806/2011), syyte ja puolustus (ROL 689/1997) sekä asianomistajan asema ja yksityisoikeudelliset vaatimukset. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/rikosprosessi",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "rikosprosessi"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rikosprosessi",
+    "shortDescription": "Suomen rikosprosessi ammattilaisille: esitutkinta ja pakkokeinot (805/2011 ja 806/2011), syyte ja puolustus (ROL 689/1997) sekä asianomistajan asema ja yksityi…",
+    "longDescription": "Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja 806/2011) kuulusteluvalmistautumisineen ja loppulausuntoineen, syyte ja vastaus tuomioesitysmenettelyineen (ROL 689/1997) sekä asianomistajan vaatimukset ja rikosvahinkokorvaus. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Rikosprosessi -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

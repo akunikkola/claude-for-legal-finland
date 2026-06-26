@@ -1,0 +1,33 @@
+{
+  "name": "ulkomaalaisoikeus",
+  "version": "0.1.0",
+  "description": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat (ulkomaalaislaki 301/2004), työnantajan velvollisuudet ja seuraamukset sekä EU-kansalaisen, perheenjäsenen ja pysyvän oleskelun kysymykset kansalaisuuteen asti.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/ulkomaalaisoikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "ulkomaalaisoikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Ulkomaalaisoikeus",
+    "shortDescription": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat (ulkomaalaislaki 301/2004), työnantajan velvollisuudet ja seuraamu…",
+    "longDescription": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat saatavuusharkintoineen (ulkomaalaislaki 301/2004), työnantajan varmistusvelvollisuudet ja seuraamukset, lähetetyt työntekijät (447/2016) sekä EU-oleskelu, perheenyhdistäminen, pysyvä lupa ja kansalaisuus (359/2003).",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Ulkomaalaisoikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "sopimukset",
+  "version": "0.1.0",
+  "description": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/sopimukset",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "sopimukset"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sopimukset",
+    "shortDescription": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen r…",
+    "longDescription": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Sopimukset -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

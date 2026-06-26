@@ -1,0 +1,33 @@
+{
+  "name": "kiinteistot-ja-asuminen",
+  "version": "0.1.0",
+  "description": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökauppa ja kirjaamisasiat (maakaari 540/1995), asuntokauppa virhevastuineen (843/1994), asunto-osakeyhtiön kunnossapito ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/kiinteistot-ja-asuminen",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "kiinteistot-ja-asuminen"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kiinteistöt ja asuminen",
+    "shortDescription": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökauppa ja kirjaamisasiat (maakaari 540/1995), asuntokauppa virhevastuineen (843/1994), asunto-osakeyhtiön kunnos…",
+    "longDescription": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukset ja virhevastuu (maakaari 540/1995), asuntokauppa RS-järjestelmineen ja reklamaatioineen (843/1994), asunto-osakeyhtiön kunnossapitovastuu ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset pakottavuuseroineen.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Kiinteistöt ja asuminen -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "kilpailuoikeus",
+  "version": "0.1.0",
+  "description": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta sekä kilpailu-compliance ja KKV:n tarkastuksiin varautuminen.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/kilpailuoikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "kilpailuoikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kilpailuoikeus",
+    "shortDescription": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppava…",
+    "longDescription": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö itsearviointikehikoineen (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta täytäntöönpanokieltoineen sekä compliance-ohjelmat, tietojenvaihdon pelisäännöt ja dawn raid -valmius.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Kilpailuoikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

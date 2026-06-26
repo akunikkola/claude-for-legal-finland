@@ -1,0 +1,33 @@
+{
+  "name": "pankki-ja-rahoitus",
+  "version": "0.1.0",
+  "description": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset ja vakuudet (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun ja terrorismin rahoittamisen estäminen (444/2017) sekä arvopaperimarkkinasääntely ja listayhtiön velvoitteet (AML 746/2012, MAR).",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/pankki-ja-rahoitus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "pankki-ja-rahoitus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Pankki ja rahoitus",
+    "shortDescription": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset ja vakuudet (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun ja terrorismin rahoittamisen estämi…",
+    "longDescription": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspaketit julkivarmistuksineen (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun estämisen compliance (444/2017) sekä listayhtiön tiedonantovelvollisuus ja sisäpiirihallinto (AML 746/2012, MAR).",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Pankki ja rahoitus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

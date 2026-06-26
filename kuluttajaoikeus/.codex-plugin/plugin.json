@@ -1,0 +1,33 @@
+{
+  "name": "kuluttajaoikeus",
+  "version": "0.1.0",
+  "description": "Suomen kuluttajaoikeus (kuluttajansuojalaki 38/1978): kuluttajan oikeudet tavaran ja palvelun virhetilanteissa, koti- ja etämyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999).",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/kuluttajaoikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "kuluttajaoikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kuluttajaoikeus",
+    "shortDescription": "Suomen kuluttajaoikeus (kuluttajansuojalaki 38/1978): kuluttajan oikeudet tavaran ja palvelun virhetilanteissa, koti- ja etämyynnin peruuttamisoikeus ja tiedon…",
+    "longDescription": "Suomen kuluttajaoikeus elinkeinonharjoittajan ja kuluttajan välisessä kaupassa (kuluttajansuojalaki 38/1978): tavaran ja palvelun virhevastuu ja oikaisukeinot, etä- ja kotimyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999). Pakottava kuluttajan hyväksi.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Kuluttajaoikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

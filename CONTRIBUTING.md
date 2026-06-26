@@ -47,9 +47,15 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
 4. Päivitä plugarin README ja tarvittaessa juuren `marketplace.json`.
 5. **Päivitä skill-indeksi:** `node scripts/generate-skills-md.mjs` (kirjoittaa
    `SKILLS.md`:n marketplace.json:sta ja frontmattereista – älä muokkaa SKILLS.md:tä käsin).
-6. **Aja validaattori ennen pushia:** `node scripts/validate.mjs` (sama portti ajetaan
-   CI:ssä jokaisessa pushissa ja PR:ssä). Sen on oltava vihreä. CI tarkistaa myös, että
-   SKILLS.md on ajan tasalla.
+6. **Päivitä Codex-manifestit:** `node scripts/generate-codex.mjs`, jos skillin
+   metadata, MCP-riippuvuudet tai markkinapaikka muuttuvat. Älä muokkaa generoituja
+   `.codex-plugin/plugin.json`- tai `agents/openai.yaml`-tiedostoja käsin.
+7. **Aja validaattori ja testit ennen pushia:**
+   - `node scripts/validate.mjs`
+   - `node --test tests/*.test.mjs`
+
+CI ajaa samat tarkistukset ja varmistaa lisäksi, että `SKILLS.md` ja
+Codex-manifestit ovat ajan tasalla.
 
 ## Lisenssi
 

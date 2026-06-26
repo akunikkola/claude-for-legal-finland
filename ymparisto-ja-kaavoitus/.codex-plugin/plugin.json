@@ -1,0 +1,33 @@
+{
+  "name": "ymparisto-ja-kaavoitus",
+  "version": "0.1.0",
+  "description": "Suomen ympäristö- ja kaavoitusoikeus: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen uuden rakentamislain (751/2023) ja alueidenkäyttölain mukaan sekä ympäristövastuut transaktioissa. Huomioi 2026 aluehallintouudistuksen (Lupa- ja valvontavirasto).",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/ymparisto-ja-kaavoitus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "ymparisto-ja-kaavoitus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Ympäristö ja kaavoitus",
+    "shortDescription": "Suomen ympäristö- ja kaavoitusoikeus: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen uuden rakentamislain (751/2023) ja alueidenkäyttölai…",
+    "longDescription": "Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen (alueidenkäyttölaki ja rakentamislaki 751/2023 uusine lupineen) sekä ympäristövastuut ja ympäristö-DD transaktioissa. Huomioi 2026 viranomaisuudistuksen (Lupa- ja valvontavirasto).",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Ympäristö ja kaavoitus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

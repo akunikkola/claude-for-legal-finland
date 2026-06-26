@@ -1,0 +1,33 @@
+{
+  "name": "immateriaalioikeus",
+  "version": "0.1.0",
+  "description": "Suomen immateriaalioikeus: tavaramerkki ja toiminimi (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen (404/1961) ja liikesalaisuudet (595/2018) — rekisteröinti, loukkausarvio, lisensointi ja suojastrategia.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/immateriaalioikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "immateriaalioikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Immateriaalioikeus",
+    "shortDescription": "Suomen immateriaalioikeus: tavaramerkki ja toiminimi (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen (404/1961) ja liikesalaisuudet (595/2018) — rekis…",
+    "longDescription": "Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannusvaara-arvio (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen ja lisensointi (404/1961) sekä liikesalaisuuksien suojaohjelma ja loukkaustilanteet (595/2018). Markkinaoikeus, PRH ja EUIPO -kytkennät.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Immateriaalioikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

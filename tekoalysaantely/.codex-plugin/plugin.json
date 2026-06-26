@@ -1,0 +1,33 @@
+{
+  "name": "tekoalysaantely",
+  "version": "0.1.0",
+  "description": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen suomalaisessa kontekstissa: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/tekoalysaantely",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "tekoalysaantely"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tekoälysääntely",
+    "shortDescription": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen suomalaisessa kontekstissa: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja risk…",
+    "longDescription": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Tekoälysääntely -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "hallinto-oikeus",
+  "version": "0.1.0",
+  "description": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku — oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) — sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/hallinto-oikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "hallinto-oikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Hallinto-oikeus",
+    "shortDescription": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku — oikaisuvaatimus ja valitus (laki o…",
+    "longDescription": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku – oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) – sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Hallinto-oikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

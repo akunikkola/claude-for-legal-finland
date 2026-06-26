@@ -1,0 +1,33 @@
+{
+  "name": "rikosoikeus",
+  "version": "0.1.0",
+  "description": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889) avustajan, asianomistajan ja compliancen näkökulmasta: rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, osallisuus, yritys, vastuuvapausperusteet), keskeiset rikostyypit tunnusmerkistöineen sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Ei avusteta rikoksen tekemisessä eikä peittelyssä.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/rikosoikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "rikosoikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rikosoikeus (aineellinen)",
+    "shortDescription": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889) avustajan, asianomistajan ja compliancen näkökulmasta: rikosvastuun yleiset edellytykset (laillisuusperiaate…",
+    "longDescription": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Rikosoikeus (aineellinen) -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

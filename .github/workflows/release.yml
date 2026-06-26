@@ -36,7 +36,21 @@ jobs:
           node-version: '24'
 
       - name: Validoi ennen pakkausta
-        run: node scripts/validate.mjs
+        run: |
+          node scripts/generate-codex.mjs
+          git diff --exit-code -- .agents/plugins/marketplace.json '*/.codex-plugin/plugin.json' '*/.codex-plugin/mcp.json' '*/.mcp.json' '*/skills/*/agents/openai.yaml' || {
+            echo "Codex-manifestit eivät ole ajan tasalla. Aja: node scripts/generate-codex.mjs"
+            exit 1
+          }
+          untracked="$(git ls-files --others --exclude-standard -- .agents/plugins/marketplace.json '*/.codex-plugin/plugin.json' '*/.codex-plugin/mcp.json' '*/.mcp.json' '*/skills/*/agents/openai.yaml')"
+          if [ -n "$untracked" ]; then
+            echo "Codex-generointi loi commitista puuttuvia tiedostoja:"
+            echo "$untracked"
+            echo "Aja: node scripts/generate-codex.mjs ja lisää tiedostot committiin."
+            exit 1
+          fi
+          node scripts/validate.mjs
+          node --test tests/*.test.mjs
 
       - name: Lue plugarit marketplace.json:sta
         id: plugins

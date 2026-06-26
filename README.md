@@ -7,6 +7,11 @@ juridisessa työssä: lakikieli, pykäläviittaukset ja oikeuslähteet
 
 **24 plugaria · 78 skilliä · 6 agenttia · kytkennät Finlexiin ja oik.ai:hin · [MIT](LICENSE)**
 
+Kokoelma sisältää myös Codex-yhteensopivat manifestit ja repo-markkinapaikan.
+Ne generoidaan nykyisestä Claude-pluginmetadatasta komennolla
+`node scripts/generate-codex.mjs`, jotta sama skill-sisältö toimii sekä
+Claudessa että Codexissa. Käyttöönotto: [CODEX.md](CODEX.md).
+
 Selailtava yleiskatsaus koko kokoelmasta:
 **[akunikkola.github.io/claude-for-legal-finland](https://akunikkola.github.io/claude-for-legal-finland/)**
 
@@ -109,6 +114,7 @@ Lyhin polku: lisää markkinapaikka ja asenna haluamasi plugari.
 ```
 
 Tarkemmat ohjeet ovat tiedostossa [QUICKSTART.md](QUICKSTART.md).
+Codex-käyttöönotto on tiedostossa [CODEX.md](CODEX.md).
 
 Organisaatiokäyttöön tee ensin
 [`references/kayttoonotto-toimistossa.md`](references/kayttoonotto-toimistossa.md)-oppaan

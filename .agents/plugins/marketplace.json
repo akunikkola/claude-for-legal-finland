@@ -1,0 +1,296 @@
+{
+  "name": "legal-for-finland",
+  "interface": {
+    "displayName": "Legal for Finland"
+  },
+  "plugins": [
+    {
+      "name": "juristi",
+      "source": {
+        "source": "local",
+        "path": "./juristi"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "lainvalmistelu",
+      "source": {
+        "source": "local",
+        "path": "./lainvalmistelu"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "lausunnot",
+      "source": {
+        "source": "local",
+        "path": "./lausunnot"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "sopimukset",
+      "source": {
+        "source": "local",
+        "path": "./sopimukset"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "tietosuoja",
+      "source": {
+        "source": "local",
+        "path": "./tietosuoja"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "tekoalysaantely",
+      "source": {
+        "source": "local",
+        "path": "./tekoalysaantely"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "tyooikeus",
+      "source": {
+        "source": "local",
+        "path": "./tyooikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "hallinto-oikeus",
+      "source": {
+        "source": "local",
+        "path": "./hallinto-oikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "riidanratkaisu",
+      "source": {
+        "source": "local",
+        "path": "./riidanratkaisu"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "yhtiooikeus",
+      "source": {
+        "source": "local",
+        "path": "./yhtiooikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "insolvenssi",
+      "source": {
+        "source": "local",
+        "path": "./insolvenssi"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "immateriaalioikeus",
+      "source": {
+        "source": "local",
+        "path": "./immateriaalioikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "verotus",
+      "source": {
+        "source": "local",
+        "path": "./verotus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "julkiset-hankinnat",
+      "source": {
+        "source": "local",
+        "path": "./julkiset-hankinnat"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "rikosprosessi",
+      "source": {
+        "source": "local",
+        "path": "./rikosprosessi"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "ymparisto-ja-kaavoitus",
+      "source": {
+        "source": "local",
+        "path": "./ymparisto-ja-kaavoitus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "kiinteistot-ja-asuminen",
+      "source": {
+        "source": "local",
+        "path": "./kiinteistot-ja-asuminen"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "kilpailuoikeus",
+      "source": {
+        "source": "local",
+        "path": "./kilpailuoikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "pankki-ja-rahoitus",
+      "source": {
+        "source": "local",
+        "path": "./pankki-ja-rahoitus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "ulkomaalaisoikeus",
+      "source": {
+        "source": "local",
+        "path": "./ulkomaalaisoikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "perhe-ja-perinto",
+      "source": {
+        "source": "local",
+        "path": "./perhe-ja-perinto"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "kuluttajaoikeus",
+      "source": {
+        "source": "local",
+        "path": "./kuluttajaoikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "rikosoikeus",
+      "source": {
+        "source": "local",
+        "path": "./rikosoikeus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    },
+    {
+      "name": "kaksikielisyys",
+      "source": {
+        "source": "local",
+        "path": "./kaksikielisyys"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Legal"
+    }
+  ]
+}

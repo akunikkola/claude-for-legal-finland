@@ -1,0 +1,33 @@
+{
+  "name": "yhtiooikeus",
+  "version": "0.1.0",
+  "description": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset ja yritysjärjestelyt.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/yhtiooikeus",
+  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "yhtiooikeus"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Yhtiöoikeus",
+    "shortDescription": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset ja yritysjärjestelyt.",
+    "longDescription": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Yhtiöoikeus -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

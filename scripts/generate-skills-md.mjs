@@ -5,7 +5,7 @@
 // Aja: node scripts/generate-skills-md.mjs
 
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from 'node:fs';
-import { join, dirname, resolve } from 'node:path';
+import { basename, join, dirname, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -13,7 +13,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 function fmValue(file, key) {
   const text = readFileSync(file, 'utf8');
   if (!text.startsWith('---')) return '';
-  const lines = text.split('\n');
+  const lines = text.replace(/\r\n?/g, '\n').split('\n');
   let end = -1;
   for (let i = 1; i < lines.length; i++) if (lines[i].trim() === '---') { end = i; break; }
   if (end === -1) return '';
@@ -61,9 +61,9 @@ for (const p of mp.plugins) {
     for (const d of skillDirs) {
       const md = join(d, 'SKILL.md');
       if (!existsSync(md)) continue;
-      const name = fmValue(md, 'name') || d.split('/').pop();
+      const name = fmValue(md, 'name') || basename(d);
       const desc = trunc(fmValue(md, 'description'));
-      const relPath = md.replace(ROOT + '/', '');
+      const relPath = relative(ROOT, md).replace(/\\/g, '/');
       rows.push(`| [\`${name}\`](${relPath}) | ${desc} |`);
       totalSkills++;
     }
