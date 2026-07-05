@@ -7,12 +7,12 @@ dependencies:
   tools:
     - type: "mcp"
       value: "oik-ai"
-      description: "Suomalainen lainsäädäntö, oikeuskäytäntö ja oikeuslähteet."
+      description: "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö."
       transport: "streamable_http"
       url: "https://oik.ai/mcp"
     - type: "mcp"
       value: "eu-ai-act"
-      description: "Paikallinen EU AI Act -MCP riskiluokitteluun, velvoitteisiin ja määräaikoihin."
+      description: "Avoin (MIT), deterministinen MCP EU:n tekoälyasetukseen (asetus (EU) 2024/1689): riskiluokittelu, velvoitteet, määräajat, seuraamukset, GPAI-kynnys ja FRIA — E…"
       transport: "stdio"
       command: "npx"
       args:

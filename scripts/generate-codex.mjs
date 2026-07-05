@@ -12,22 +12,27 @@ import {
   existsSync,
   mkdirSync,
   readFileSync,
-  readdirSync,
-  statSync,
   unlinkSync,
   writeFileSync,
 } from 'node:fs';
-import { basename, dirname, join, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { basename, dirname, join } from 'node:path';
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const REPOSITORY = 'https://github.com/akunikkola/claude-for-legal-finland';
-const MARKETPLACE_NAME = 'legal-for-finland';
-const MARKETPLACE_DISPLAY_NAME = 'Legal for Finland';
+import {
+  MARKETPLACE_DISPLAY_NAME,
+  MARKETPLACE_NAME,
+  REPOSITORY,
+  ROOT,
+  listDirs,
+  oneLine,
+  parseFrontmatter,
+  readJSON as readJSONFile,
+  truncate,
+} from './lib.mjs';
+
 const CATEGORY = 'Legal';
 
 function readJSON(path) {
-  return JSON.parse(readFileSync(join(ROOT, path), 'utf8'));
+  return readJSONFile(join(ROOT, path));
 }
 
 function writeJSON(path, value) {
@@ -42,128 +47,78 @@ function writeText(path, value) {
   writeFileSync(fullPath, value);
 }
 
-function truncate(text, maxLength) {
-  if (!text || text.length <= maxLength) return text || '';
-  return `${text.slice(0, maxLength - 1).trimEnd()}…`;
-}
-
-function oneLine(text) {
-  return String(text || '').replace(/\s+/g, ' ').trim();
-}
-
-function listDirs(path) {
-  if (!existsSync(path)) return [];
-  return readdirSync(path)
-    .filter((name) => !name.startsWith('.'))
-    .map((name) => join(path, name))
-    .filter((entry) => statSync(entry).isDirectory());
-}
-
 function serverMapFromClaudeMcp(path) {
   const value = readJSON(path);
   return value.mcpServers || value.mcp_servers || value;
 }
 
 function readSkillMetadata(skillText, fallbackName) {
-  const normalizedSkillText = skillText.replace(/\r\n?/g, '\n');
-  const metadata = {
-    name: fallbackName,
-    description: fallbackName,
-  };
-
-  if (!normalizedSkillText.startsWith('---\n')) return metadata;
-
-  const end = normalizedSkillText.indexOf('\n---', 4);
-  if (end === -1) return metadata;
-
-  const frontmatter = normalizedSkillText.slice(4, end).split('\n');
-
-  for (let index = 0; index < frontmatter.length; index += 1) {
-    const line = frontmatter[index];
-    const nameMatch = line.match(/^name:\s*(.+)\s*$/);
-    if (nameMatch) {
-      metadata.name = nameMatch[1].replace(/^["']|["']$/g, '').trim() || fallbackName;
-      continue;
-    }
-
-    const descriptionMatch = line.match(/^description:\s*(.*)\s*$/);
-    if (!descriptionMatch) continue;
-
-    const inline = descriptionMatch[1].trim();
-    if (inline && !/^[>|][+-]?$/.test(inline)) {
-      metadata.description = inline.replace(/^["']|["']$/g, '').trim();
-      continue;
-    }
-
-    const parts = [];
-    for (let cursor = index + 1; cursor < frontmatter.length; cursor += 1) {
-      const next = frontmatter[cursor];
-      if (/^\S/.test(next)) break;
-      const value = next.trim();
-      if (value) parts.push(value);
-      index = cursor;
-    }
-    if (parts.length > 0) {
-      metadata.description = oneLine(parts.join(' '));
-    }
-  }
-
-  metadata.description = oneLine(metadata.description) || metadata.name;
-  return metadata;
+  const { values } = parseFrontmatter(skillText);
+  const name = values.name || fallbackName;
+  return { name, description: values.description || name };
 }
+
+// Codexin työkaluriippuvuudet päätellään SKILL.md-tekstistä näillä säännöillä.
+// Uusi MCP-palvelin tai poikkeus: lisää rivi tähän tauluun — itse
+// tunnistuslogiikkaa ei tarvitse muokata.
+const DEPENDENCY_RULES = [
+  {
+    server: 'oik-ai',
+    keywords: [
+      'oik.ai',
+      'finlex-mcp',
+      'oikeustutkimus',
+      'hankintalaki',
+      'osakeyhtiölaki',
+      'osakeyhtiolaki',
+      'oyl ',
+      'oiktl',
+      'tarkista laki lähteestä',
+      'tarkista laki lahteesta',
+    ],
+    // suomen-kieli mainitsee oikeuslähteet vain esimerkkinä — ei MCP-tarvetta.
+    skipSkills: ['juristi/skills/suomen-kieli'],
+  },
+  {
+    server: 'adeu',
+    keywords: ['adeu'],
+    skipSkills: [],
+  },
+  {
+    server: 'eu-ai-act',
+    keywords: ['eu ai act', 'euaiact', 'tekoälyasetuksen', 'tekoalyasetuksen'],
+    skipSkills: [],
+  },
+];
 
 function detectSkillDependencies(skillText, serverNames, skillPath) {
   const text = skillText.toLocaleLowerCase('fi-FI');
-  const dependencies = [];
-  const skipOikAi = skillPath === 'juristi/skills/suomen-kieli';
-
-  if (
-    !skipOikAi &&
-    serverNames.includes('oik-ai') &&
-    (
-      text.includes('oik.ai') ||
-      text.includes('finlex-mcp') ||
-      text.includes('oikeustutkimus') ||
-      text.includes('hankintalaki') ||
-      text.includes('osakeyhtiölaki') ||
-      text.includes('osakeyhtiolaki') ||
-      text.includes('oyl ') ||
-      text.includes('oiktl') ||
-      text.includes('tarkista laki lähteestä') ||
-      text.includes('tarkista laki lahteesta')
-    )
-  ) {
-    dependencies.push('oik-ai');
-  }
-
-  if (serverNames.includes('adeu') && text.includes('adeu')) {
-    dependencies.push('adeu');
-  }
-
-  if (
-    serverNames.includes('eu-ai-act') &&
-    (
-      text.includes('eu ai act') ||
-      text.includes('euaiact') ||
-      text.includes('tekoälyasetuksen') ||
-      text.includes('tekoalyasetuksen')
-    )
-  ) {
-    dependencies.push('eu-ai-act');
-  }
-
-  return dependencies;
+  return DEPENDENCY_RULES
+    .filter((rule) =>
+      serverNames.includes(rule.server) &&
+      !rule.skipSkills.includes(skillPath) &&
+      rule.keywords.some((keyword) => text.includes(keyword)))
+    .map((rule) => rule.server);
 }
 
 function yamlQuote(value) {
-  return `"${String(value).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
+  return `"${String(value)
+    .replace(/\\/g, '\\\\')
+    .replace(/"/g, '\\"')
+    .replace(/\r?\n/g, '\\n')}"`;
+}
+
+// Riippuvuuskuvaus johdetaan plugarin .mcp.json-palvelinmäärittelystä
+// (ensimmäinen virke), jotta kuvauksella on yksi lähde eikä generaattoriin
+// kerry palvelinkohtaisia vakiotekstejä.
+function firstSentence(text) {
+  const match = text.match(/^.*?[.!?](?=\s|$)/);
+  return match ? match[0] : text;
 }
 
 function dependencyDescription(name, server) {
-  if (name === 'oik-ai') return 'Suomalainen lainsäädäntö, oikeuskäytäntö ja oikeuslähteet.';
-  if (name === 'adeu') return 'Paikallinen Word-asiakirjojen luku ja natiivien jälkimuutosten kirjoitus.';
-  if (name === 'eu-ai-act') return 'Paikallinen EU AI Act -MCP riskiluokitteluun, velvoitteisiin ja määräaikoihin.';
-  return server.description || name;
+  const source = oneLine(server.description || server.title || name);
+  return truncate(firstSentence(source), 160);
 }
 
 function renderOpenAIYaml(dependencies, serverMap, skillMetadata) {
@@ -183,7 +138,7 @@ function renderOpenAIYaml(dependencies, serverMap, skillMetadata) {
     lines.push(`      value: ${yamlQuote(name)}`);
     lines.push(`      description: ${yamlQuote(dependencyDescription(name, server))}`);
 
-    if (server.type === 'http' || server.url) {
+    if (server.url) {
       lines.push('      transport: "streamable_http"');
       lines.push(`      url: ${yamlQuote(server.url)}`);
     } else if (server.command) {

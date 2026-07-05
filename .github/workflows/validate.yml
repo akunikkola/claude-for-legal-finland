@@ -26,28 +26,8 @@ jobs:
       - name: Validoi rakenne ja frontmatter
         run: node scripts/validate.mjs
 
-      - name: Tarkista että SKILLS.md on ajan tasalla
-        run: |
-          node scripts/generate-skills-md.mjs
-          git diff --exit-code SKILLS.md || {
-            echo "SKILLS.md ei ole ajan tasalla. Aja: node scripts/generate-skills-md.mjs"
-            exit 1
-          }
-
-      - name: Tarkista että Codex-manifestit ovat ajan tasalla
-        run: |
-          node scripts/generate-codex.mjs
-          git diff --exit-code -- .agents/plugins/marketplace.json '*/.codex-plugin/plugin.json' '*/.codex-plugin/mcp.json' '*/.mcp.json' '*/skills/*/agents/openai.yaml' || {
-            echo "Codex-manifestit eivät ole ajan tasalla. Aja: node scripts/generate-codex.mjs"
-            exit 1
-          }
-          untracked="$(git ls-files --others --exclude-standard -- .agents/plugins/marketplace.json '*/.codex-plugin/plugin.json' '*/.codex-plugin/mcp.json' '*/.mcp.json' '*/skills/*/agents/openai.yaml')"
-          if [ -n "$untracked" ]; then
-            echo "Codex-generointi loi commitista puuttuvia tiedostoja:"
-            echo "$untracked"
-            echo "Aja: node scripts/generate-codex.mjs ja lisää tiedostot committiin."
-            exit 1
-          fi
+      - name: Tarkista että generoidut tiedostot ovat ajan tasalla
+        run: bash scripts/check-generated.sh
 
       - name: Aja Node-testit
         run: node --test tests/*.test.mjs

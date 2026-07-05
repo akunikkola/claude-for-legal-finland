@@ -15,9 +15,13 @@
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { basename, join, dirname, relative, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+import {
+  ROOT,
+  listDirs,
+  parseFrontmatter as parseFrontmatterText,
+  readJSON as readJSONStrict,
+} from './lib.mjs';
 
 const errors = [];
 const warnings = [];
@@ -39,68 +43,28 @@ const ZERO_WIDTH = /[​-‍﻿⁠]/;
 const BIDI = /[‪-‮⁦-⁩]/;
 const CYRILLIC = /[Ѐ-ӿ]/;
 
-function listDirs(dir) {
-  if (!existsSync(dir)) return [];
-  return readdirSync(dir)
-    .filter((n) => !n.startsWith('.'))
-    .map((n) => join(dir, n))
-    .filter((p) => statSync(p).isDirectory());
-}
-
 function readJSON(file) {
   try {
-    return JSON.parse(readFileSync(file, 'utf8'));
+    return readJSONStrict(file);
   } catch (e) {
     err(file, `JSON ei jäsenny: ${e.message}`);
     return null;
   }
 }
 
-// Poimii frontmatterin (alkaa '---' ensimmäisellä rivillä) ja palauttaa
-// top-level-avaimet sekä yksinkertaistetun name/description-arvon.
-// Tukee tyylejä: name: arvo | description: "arvo" | description: > (folded).
+// Jäsennys on jaettu lib.mjs:ssä (sama toteutus generaattoreissa ja testeissä);
+// tämä kääre raportoi puuttuvan tai sulkemattoman frontmatterin virheenä.
 function parseFrontmatter(file) {
-  const text = readFileSync(file, 'utf8');
-  if (!text.startsWith('---')) {
+  const fm = parseFrontmatterText(readFileSync(file, 'utf8'));
+  if (fm.error === 'missing') {
     err(file, 'SKILL.md ei ala YAML-frontmatterilla (---).');
     return null;
   }
-  const lines = text.replace(/\r\n?/g, '\n').split('\n');
-  // etsi sulkeva '---'
-  let end = -1;
-  for (let i = 1; i < lines.length; i++) {
-    if (lines[i].trim() === '---') { end = i; break; }
-  }
-  if (end === -1) {
+  if (fm.error === 'unclosed') {
     err(file, 'Frontmatteria ei suljeta (--- puuttuu).');
     return null;
   }
-  const fmLines = lines.slice(1, end);
-  const topKeys = [];
-  const values = {};
-  for (let i = 0; i < fmLines.length; i++) {
-    const line = fmLines[i];
-    const m = line.match(/^([A-Za-z][\w-]*):(.*)$/); // top-level (ei sisennystä)
-    if (!m) continue;
-    const key = m[1];
-    topKeys.push(key);
-    let val = m[2].trim();
-    if (val === '>' || val === '|' || val === '>-' || val === '|-') {
-      // folded/literal block: kerää sisennetyt rivit
-      const block = [];
-      for (let j = i + 1; j < fmLines.length; j++) {
-        if (/^\s+\S/.test(fmLines[j]) || fmLines[j].trim() === '') {
-          block.push(fmLines[j].trim());
-        } else break;
-      }
-      val = block.join(' ').replace(/\s+/g, ' ').trim();
-    } else {
-      // poista ympäröivät lainausmerkit
-      val = val.replace(/^["']/, '').replace(/["']$/, '');
-    }
-    values[key] = val;
-  }
-  return { topKeys, values };
+  return fm;
 }
 
 function checkUnicode(file, text, label) {

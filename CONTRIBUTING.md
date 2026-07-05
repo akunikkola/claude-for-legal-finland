@@ -45,17 +45,17 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
    **vain `name` ja `description`** – ei muita kenttiä. `name` = kebab-case = kansion nimi.
 3. Jaa yksityiskohdat tarvittaessa `references/`-tiedostoihin ja lue ne Read-työkalulla.
 4. Päivitä plugarin README ja tarvittaessa juuren `marketplace.json`.
-5. **Päivitä skill-indeksi:** `node scripts/generate-skills-md.mjs` (kirjoittaa
-   `SKILLS.md`:n marketplace.json:sta ja frontmattereista – älä muokkaa SKILLS.md:tä käsin).
-6. **Päivitä Codex-manifestit:** `node scripts/generate-codex.mjs`, jos skillin
-   metadata, MCP-riippuvuudet tai markkinapaikka muuttuvat. Älä muokkaa generoituja
-   `.codex-plugin/plugin.json`- tai `agents/openai.yaml`-tiedostoja käsin.
-7. **Aja validaattori ja testit ennen pushia:**
+5. **Päivitä generoidut tiedostot:** `bash scripts/check-generated.sh` ajaa
+   molemmat generaattorit (`generate-skills-md.mjs` → `SKILLS.md`,
+   `generate-codex.mjs` → Codex-manifestit) ja varmistaa, ettei mitään jäänyt
+   committaamatta. Älä muokkaa generoituja tiedostoja (`SKILLS.md`,
+   `.codex-plugin/plugin.json`, `agents/openai.yaml`) käsin.
+6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
    - `node --test tests/*.test.mjs`
 
-CI ajaa samat tarkistukset ja varmistaa lisäksi, että `SKILLS.md` ja
-Codex-manifestit ovat ajan tasalla.
+CI ajaa täsmälleen samat tarkistukset (`check-generated.sh` + validaattori +
+testit), joten paikallisesti vihreä tarkoittaa vihreää myös CI:ssä.
 
 ## Lisenssi
 

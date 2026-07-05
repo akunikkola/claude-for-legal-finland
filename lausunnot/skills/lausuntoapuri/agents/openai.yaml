@@ -7,12 +7,12 @@ dependencies:
   tools:
     - type: "mcp"
       value: "oik-ai"
-      description: "Suomalainen lainsäädäntö, oikeuskäytäntö ja oikeuslähteet."
+      description: "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö ohjelmallisesti."
       transport: "streamable_http"
       url: "https://oik.ai/mcp"
     - type: "mcp"
       value: "adeu"
-      description: "Paikallinen Word-asiakirjojen luku ja natiivien jälkimuutosten kirjoitus."
+      description: "Word-dokumenttien (.docx) ei-tuhoava redlineäminen."
       transport: "stdio"
       command: "npx"
       args:
