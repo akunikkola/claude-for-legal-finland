@@ -383,14 +383,6 @@
       "nimi": "Laki lapsen elatuksesta"
     },
     {
-      "numero": "11/2015",
-      "nimi": "Isyyslaki"
-    },
-    {
-      "numero": "253/2018",
-      "nimi": "Äitiyslaki"
-    },
-    {
       "numero": "40/1965",
       "nimi": "Perintökaari"
     },
@@ -425,6 +417,10 @@
     {
       "numero": "424/2003",
       "nimi": "Laki julkisyhteisöjen henkilöstöltä vaadittavasta kielitaidosta"
+    },
+    {
+      "numero": "775/2022",
+      "nimi": "Vanhemmuuslaki"
     }
   ]
 }
