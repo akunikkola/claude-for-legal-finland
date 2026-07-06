@@ -53,6 +53,10 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
 6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
    - `node --test tests/*.test.mjs`
+7. **Jos muutit skillin `description`-kenttää**, aja triggeritestit
+   (`bash evals/aja-triggeritestit.sh`, ks. [evals/README.md](evals/README.md)) —
+   kuvaus on skillin triggeröitymisen ainoa signaali, ja huono muotoilu
+   hukkaa skillin hiljaa. Huom: ajaa oikeita mallikutsuja (ei CI:hin).
 
 CI ajaa täsmälleen samat tarkistukset (`check-generated.sh` + validaattori +
 testit), joten paikallisesti vihreä tarkoittaa vihreää myös CI:ssä.

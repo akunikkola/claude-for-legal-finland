@@ -1,0 +1,80 @@
+{
+  "kuvaus": "Triggeritestien skenaariot: prompt ja skill, jonka odotetaan triggeröityvän, kun plugari on ladattu --plugin-dir-lipulla. Ajo: bash evals/aja-triggeritestit.sh. tunnettu_hukka = skenaario, jonka tiedetään ohittavan skillin headless-tilassa (kesäkuun 2026 evaluointi) — raportoidaan varoituksena, ei virheenä.",
+  "skenaariot": [
+    {
+      "id": "pikakorjaus-viittaus",
+      "plugari": "juristi",
+      "odotettu_skill": "juristi",
+      "prompt": "Korjaa tämä viittaus oikeaan muotoon: \"kuntalain 410/2015 pykälässä 7 sanotaan, että...\"",
+      "huomio": "Regressiovahti: ohitti skillin kesäkuussa 2026, minkä jälkeen kuvaukseen lisättiin pikatehtävälause. Jos tämä hukkuu taas, kuvausmuutos ei riitä."
+    },
+    {
+      "id": "asiakirja-mista-aloitan",
+      "plugari": "juristi",
+      "odotettu_skill": "toimeksianto",
+      "prompt": "Sain tänään postissa haasteen käräjäoikeudesta. Mistä aloitan?",
+      "tunnettu_hukka": true,
+      "huomio": "Tunnettu headless-hukka: malli vastaa suoraan skilliä kutsumatta. Interaktiivisessa käytössä triggeröityy paremmin. Vaarallisin hukka — toimeksianto kartoittaa määräajat ensin."
+    },
+    {
+      "id": "pykalan-sisalto-lahteesta",
+      "plugari": "juristi",
+      "odotettu_skill": "oikeustutkimus",
+      "prompt": "Mitä työsopimuslain 3 luvun 5 § sanoo kilpailukiellosta? Tarkista voimassa oleva sanamuoto."
+    },
+    {
+      "id": "selkokielistys-asiakkaalle",
+      "plugari": "juristi",
+      "odotettu_skill": "selkokielistaja",
+      "prompt": "Selitä tämä sopimusehto asiakkaalleni selkokielellä: \"Sopijapuoli vastaa välillisistä vahingoista vain, mikäli vahinko on aiheutettu törkeällä huolimattomuudella tai tahallisesti.\""
+    },
+    {
+      "id": "ratkaisun-referointi",
+      "plugari": "juristi",
+      "odotettu_skill": "oikeustapaus-referointi",
+      "prompt": "Referoi korkeimman oikeuden tuore ennakkopäätös työsuhteen purkamisesta ja poimi siitä ratio decidendi omaa juttuamme varten."
+    },
+    {
+      "id": "lausunnon-tarkistus",
+      "plugari": "juristi",
+      "odotettu_skill": "asiakirjan-tarkistus",
+      "prompt": "Tarkista tämä lausuntoluonnos ennen kuin lähetän sen ministeriölle — etsi riskit ja aukot."
+    },
+    {
+      "id": "koeaikapurku",
+      "plugari": "tyooikeus",
+      "odotettu_skill": "tyosuhteen-paattaminen",
+      "prompt": "Työnantajani purki työsuhteeni koeajalla tekstiviestillä ilman perusteluja. Oliko tämä laillista?"
+    },
+    {
+      "id": "nda-riskit",
+      "plugari": "sopimukset",
+      "odotettu_skill": "sopimuksen-tarkistus",
+      "prompt": "Käy tämä salassapitosopimus läpi ja kerro, mitkä ehdot ovat meille riskialttiita."
+    },
+    {
+      "id": "testamentti-lakiosa",
+      "plugari": "perhe-ja-perinto",
+      "odotettu_skill": "perinto-ja-testamentti",
+      "prompt": "Haluan laatia testamentin, jossa lapseni saavat vain lakiosansa ja loput menee puolisolleni."
+    },
+    {
+      "id": "rakennuslupavalitus",
+      "plugari": "hallinto-oikeus",
+      "odotettu_skill": "muutoksenhaku",
+      "prompt": "Kunta hylkäsi rakennuslupahakemukseni. Miten ja missä ajassa voin valittaa päätöksestä?"
+    },
+    {
+      "id": "konserniavustus",
+      "plugari": "verotus",
+      "odotettu_skill": "yritysverotus",
+      "prompt": "Miten konserniavustus käsitellään emoyhtiön ja tytäryhtiön verotuksessa?"
+    },
+    {
+      "id": "ai-act-riskiluokka",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-luokittelu",
+      "prompt": "Onko rekrytoinnin esikarsintaan käyttämämme tekoälyjärjestelmä korkean riskin järjestelmä EU:n tekoälyasetuksen mukaan?"
+    }
+  ]
+}
