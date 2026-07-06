@@ -31,6 +31,8 @@ koskeva KKO-käytäntö lähteestä. **Testamentin muotovaatimukset** (kirjallin
 muoto ja kaksi esteetöntä todistajaa yhtä aikaa läsnä) tarkistetaan aina
 laista — muotovirhe voi tehdä testamentin pätemättömäksi.
 
+> **Pohja:** [`pohjat/testamentti.md`](../../pohjat/testamentti.md) — testamentin luuranko muotomuistilistoineen (määrämuotoinen asiakirja).
+
 ## Vaihe 1: Perimysjärjestys ilman testamenttia
 
 1. **Parenteelit** (perintökaaren perimysjärjestys): ensin rintaperilliset

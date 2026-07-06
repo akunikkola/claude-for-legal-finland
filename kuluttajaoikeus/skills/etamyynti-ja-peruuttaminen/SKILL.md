@@ -31,6 +31,8 @@ koskevat luvut **`juristi:oikeustutkimus`-skillillä** — lukurakenne on
 muuttunut EU-uudistuksissa. Peruuttamisajan pituus, poikkeukset ja
 tiedonantovelvollisuuden sisältö aina laista; KKV:n ohjeet kkv.fi:stä.
 
+> **Pohja:** [`pohjat/peruuttamisilmoitus.md`](../../pohjat/peruuttamisilmoitus.md) — peruuttamisilmoituksen rakenteellinen luuranko.
+
 ## Vaihe 1: Onko kyse etä- tai kotimyynnistä?
 
 - **Etämyynti**: sopimus tehdään etäviestimellä ilman osapuolten

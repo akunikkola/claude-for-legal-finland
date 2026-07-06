@@ -37,6 +37,8 @@ selvittämiseksi. **Allekirjoitus** (asianosainen tai laatija; laatijan ammatti 
 > Tarkista voimassa oleva sanamuoto ja mahdolliset muutokset `juristi:oikeustutkimus`-skillillä
 > ennen lopullista käyttöä; summaariset (riidattomat) asiat voivat noudattaa kevyempää menettelyä.
 
+> **Pohja:** [`pohjat/haastehakemus.md`](../../pohjat/haastehakemus.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/mallipohjat-standardi.md`](../../../references/mallipohjat-standardi.md).
+
 ## Työnkulku
 
 1. **Selvitä asia:** mitä vaaditaan ja keneltä, mihin vaatimus perustuu, mitä todisteita on, mikä käräjäoikeus on toimivaltainen (vastaajan kotipaikka tai muu peruste).

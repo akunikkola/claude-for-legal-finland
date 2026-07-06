@@ -24,6 +24,8 @@ joten määräaika on varmistettava heti.
   (joka voi muuttaa määräaikaa, valituslupaa tai valitustietä) **`juristi:oikeustutkimus`-skillillä**.
   **Älä esitä määräaikaa muistista** — hae se ja merkitse lähde; jos et voi tarkistaa, merkitse `[tarkista määräaika]`.
 
+> **Pohja:** [`pohjat/oikaisuvaatimus.md`](../../pohjat/oikaisuvaatimus.md) — oikaisuvaatimuksen rakenteellinen luuranko (määräaika ensin).
+
 ## Vaihe 1: Tunnista oikea muutoksenhakutie
 - **Oikaisuvaatimus** — monessa asiassa pakollinen ensivaihe samalle viranomaiselle ennen valitusta. Tarkista, edellyttääkö asia ensin oikaisuvaatimusta.
 - **Hallintovalitus hallinto-oikeuteen** — pääsääntöinen tie hallintopäätökseen; valitusperusteet laajat (laillisuus + tarkoituksenmukaisuus, ellei rajattu).

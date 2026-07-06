@@ -36,6 +36,8 @@ Tarkista, että myyjä on elinkeinonharjoittaja ja ostaja kuluttaja
 (B2C). Jos kyse on yksityishenkilöiden välisestä kaupasta tai B2B:stä,
 sovelletaan kauppalakia ja yleistä sopimusoikeutta → `sopimukset`.
 
+> **Pohja:** [`pohjat/reklamaatio.md`](../../pohjat/reklamaatio.md) — reklamaation rakenteellinen luuranko.
+
 ## Vaihe 1: Onko virhe?
 
 1. **Virheen käsite**: tavara/palvelu ei vastaa sovittua, lain
