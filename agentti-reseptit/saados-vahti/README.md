@@ -15,6 +15,11 @@ referenssit nojaavat varmistettuihin säädösnumeroihin, ja saados-vahti
 kertoo, kun jokin niistä muuttuu (vrt. rakentamislaki 751/2023, joka
 korvasi MRL:n rakentamisosan, ja LVV-uudistus 2026).
 
+> **Katvealue:** nimivertailu ei huomaa kumoamista — kumotun lain nimi ei
+> muutu Finlexissä (vrt. isyyslaki 11/2015, jonka vanhemmuuslaki 775/2022
+> kumosi nimeä muuttamatta). Sen kattaa
+> [`viittausauditointi`](../viittausauditointi/)-resepti.
+
 ## Ohjaustapahtuma (esimerkki)
 
 `Tarkista säädösluettelon <polku/seuranta.md> säädösten muutokset ajalta <YYYY-MM-DD>–<YYYY-MM-DD>`

@@ -12,6 +12,7 @@ tarkoitus.
 | [`maaraaika-vahti`](maaraaika-vahti/) | Asiakirja-/kalenterilähde määräajoista (valitusaika, kanteen vanhentuminen, YT-ajat, GDPR-vastausaika) | aineisto-lukija · maaraaika-laskija · **varoitus-kirjoittaja** |
 | [`ennakkopaatos-vahti`](ennakkopaatos-vahti/) | Uudet KKO/KHO/MAO/TT/VakO-ratkaisut määritellyistä aiheista (oik.ai/Finlex-MCP) | ratkaisu-hakija · relevanssi-arvioija · **kooste-kirjoittaja** |
 | [`saados-vahti`](saados-vahti/) | Nimettyjen säädösten muutokset, voimaantulot ja vireillä olevat HE:t | saados-tarkkailija · vaikutus-analysoija · **raportti-kirjoittaja** |
+| [`viittausauditointi`](viittausauditointi/) | Tämän repon omat säädös- ja ratkaisuviittaukset (kumoutumiset, tunnuskollisiot, paikkamerkkikuri) — neljännesvuosittain | inventaarioskripti · lahdetarkastaja-erät · ihminen korjaa |
 
 **Lihavoidulla** leaf-agentilla on ainoana `Write`-oikeus.
 
