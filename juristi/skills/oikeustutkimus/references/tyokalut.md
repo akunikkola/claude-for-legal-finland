@@ -52,9 +52,9 @@ Jos lähdekonnektorina on **laki.ai** (MCP-osoite `https://api.laki.ai/mcp/claud
 Sama kuri pätee konnektorista riippumatta: lue varsinainen teksti, älä hakukatkelmaa; varmista ajantasaisuus (laki.ai:lla `get_statute_section_history` auttaa); merkitse lähde — `(laki.ai)`. Asennus: juuren `QUICKSTART.md` ja <https://laki.ai/fi/claude>.
 
 ## Ratkaisutunnusten lukeminen
-- `KKO:2024:15` — korkeimman oikeuden ennakkopäätös (yleiset tuomioistuimet: rikos-, riita- ja hakemusasiat).
-- `KHO:2023:42` — korkeimman hallinto-oikeuden ennakkopäätös (hallintoasiat: verotus, ympäristö, kaavoitus, sote jne.).
-- Ennen vuotta 2000: `KKO 1998:15`, `KHO 1999:72`.
+- `KKO:VVVV:NN` — korkeimman oikeuden ennakkopäätös (yleiset tuomioistuimet: rikos-, riita- ja hakemusasiat).
+- `KHO:VVVV:NN` — korkeimman hallinto-oikeuden ennakkopäätös (hallintoasiat: verotus, ympäristö, kaavoitus, sote jne.).
+- Ennen vuotta 2000 välilyönnillä: `KKO VVVV:NN`, `KHO VVVV:NN`.
 - Alempien tuomioistuinten ratkaisut eivät ole prejudikaatteja; viittaa niihin tuomioistuimen, päivämäärän ja diaarinumeron kanssa.
 
 ## Kun haku ei tuota tulosta

@@ -65,7 +65,7 @@ Noudata vakiintuneita muotoja (yksityiskohdat: `skills/juristi/references/viitta
 
 - Säädös ensimaininnalla nimi + numero: kuntalain (410/2015) 7 §:ssä.
 - §-merkki ja numero aina yhdessä; taivutus kaksoispisteellä (§:n, §:ssä, §:ään).
-- Ennakkopäätökset: KKO:2024:15, KHO:2023:42. Hallituksen esitys: HE 268/2014 vp, s. 145.
+- Ennakkopäätökset: KKO:VVVV:NN, KHO:VVVV:NN (paikkamerkit — täytä vain tarkistetulla tunnuksella). Hallituksen esitys: HE 268/2014 vp, s. 145.
 - Lakien nimet pienellä alkukirjaimella (kuntalaki, rikoslaki).
 
 ---

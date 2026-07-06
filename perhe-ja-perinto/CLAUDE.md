@@ -70,8 +70,8 @@ henkilötietoja tarpeettomasti työkaluun. Ks. [`references/vastuu-ja-tietoturva
 Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
 oikeuskäytäntö (KKO:n ennakkopäätökset osituksesta, lakiosasta, testamentin
 tulkinnasta ja huollosta) lähteestä. Perheoikeus on muuttunut paljon
-(mm. isyys- ja äitiyslaki, avioliittolain sukupuolineutraalius) — varmista
-voimassa oleva tila.
+(mm. vanhemmuuslaki 775/2022 korvasi isyys- ja äitiyslain vuoden 2023
+alusta, avioliittolain sukupuolineutraalius) — varmista voimassa oleva tila.
 
 ## Jaetut standardit
 

@@ -3,8 +3,8 @@ name: lapsen-asema-ja-elatus
 description: >
   Lapsen huolto, asuminen, tapaaminen ja elatus Suomessa (laki lapsen
   huollosta ja tapaamisoikeudesta 361/1983 ja laki lapsen elatuksesta
-  704/1975) sekä vanhemmuuden vahvistaminen (isyyslaki 11/2015 ja
-  äitiyslaki 253/2018). Käytä tätä skilliä, kun jäsennetään
+  704/1975) sekä vanhemmuuden vahvistaminen (vanhemmuuslaki
+  775/2022). Käytä tätä skilliä, kun jäsennetään
   huoltojärjestelyä, laaditaan tai arvioidaan huolto-, asumis-,
   tapaamis- tai elatussopimusta, lasketaan elatusavun suuruutta tai
   selvitetään vanhemmuutta. Triggeröi sanoista: lapsen huolto,
@@ -44,8 +44,10 @@ hae voimassa oleva ohje lähteestä, älä laske muistinvaraisesti.
 
 - Onko vanhemmuus (isyys/äitiys) vahvistettu? Ilman vahvistettua
   vanhemmuutta ei synny huolto- eikä elatusvelvollisuutta.
-- Vanhemmuuden tunnustaminen ja vahvistaminen (11/2015, 253/2018) —
-  selvittäminen lastenvalvojan luona; riitatilanteessa tuomioistuin.
+- Vanhemmuuden tunnustaminen ja vahvistaminen (vanhemmuuslaki
+  775/2022; kumosi isyyslain 11/2015 ja äitiyslain 253/2018
+  1.1.2023 alkaen) — selvittäminen lastenvalvojan luona;
+  riitatilanteessa tuomioistuin.
 - Tämä vaihe edeltää huolto- ja elatuskysymyksiä.
 
 ## Vaihe 2: Huolto ja asuminen

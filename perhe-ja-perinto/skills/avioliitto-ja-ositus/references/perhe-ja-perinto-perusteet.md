@@ -13,8 +13,7 @@ tarkka sanamuoto ja kaikki määräajat haetaan käytössä lähteestä
 | Laki avopuolisoiden yhteistalouden purkamisesta | 26/2011 | Avopuolison määritelmä, omaisuuden erottelu, hyvitys |
 | Laki lapsen huollosta ja tapaamisoikeudesta | 361/1983 | Huolto, asuminen, tapaaminen, vuoroasuminen |
 | Laki lapsen elatuksesta | 704/1975 | Elatusvelvollisuus, elatusapu, elatussopimus |
-| Isyyslaki | 11/2015 | Isyyden selvittäminen, tunnustaminen ja vahvistaminen |
-| Äitiyslaki | 253/2018 | Äitiyden vahvistaminen (synnyttäneen rinnalla) |
+| Vanhemmuuslaki | 775/2022 | Vanhemmuuden (isyys ja äitiys) selvittäminen, tunnustaminen ja vahvistaminen. Kumosi isyyslain 11/2015 ja äitiyslain 253/2018 vuoden 2023 alusta |
 | Perintökaari | 40/1965 | Lakimääräinen perimys, lakiosa, testamentti, pesänselvitys, jako |
 | Laki holhoustoimesta | 442/1999 | Edunvalvonta, edunvalvojan tehtävät ja valvonta (DVV) |
 | Laki edunvalvontavaltuutuksesta | 648/2007 | Ennakoiva valtuutus oman edunvalvonnan varalle |

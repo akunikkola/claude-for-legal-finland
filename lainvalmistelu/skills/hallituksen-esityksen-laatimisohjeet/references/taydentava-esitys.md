@@ -72,8 +72,8 @@ Taustassa on selkeästi osoitettava:
 - Miksi täydennys on tarpeellinen
 - Mitä puutteita tai ongelmia havaittu
 
-**Esimerkki:**
-"Hallitus antoi eduskunnalle esityksen HE 23/2020 koskien kuluttajansuojalakia. Lakia säädettäessä ilmaantui kuitenkin muutamia teknisiä puutteita, joita tämä esitys korjaa. Lisäksi soveltamiskäytännössä havaitut ongelmat vaativat selkeyttävää lainsäädäntöä."
+**Esimerkki** (havainnollistava malli, tunnus paikkamerkki):
+"Hallitus antoi eduskunnalle esityksen HE n/vvvv vp koskien kuluttajansuojalakia. Lakia säädettäessä ilmaantui kuitenkin muutamia teknisiä puutteita, joita tämä esitys korjaa. Lisäksi soveltamiskäytännössä havaitut ongelmat vaativat selkeyttävää lainsäädäntöä."
 
 #### Nykytila-osio
 
@@ -205,8 +205,8 @@ Tassa tulee selkeästi osoittaa aiemman hallituksen esityksen tai lain tausta ja
 - Miksi täydennys on tarpeellinen
 - Aiemman lain vaikutukset käytännössä
 
-**Esimerkki:**
-"Hallitus antoi eduskunnalle esityksen HE 45/2019 koskien opetuslainsäädännön muuttamista. Lakia säädettäessä eduskunta hyväksyi sen pääosin hallituksen ehdotuksella. Laki tuli voimaan 1.1.2020. Käytännön soveltamisessa on kuitenkin ilmaantunut muutamia seikkaisia tulkintaongelmia, jotka vaativat selkeyttävää lainsäädäntöä."
+**Esimerkki** (havainnollistava malli, tunnus paikkamerkki):
+"Hallitus antoi eduskunnalle esityksen HE n/vvvv vp koskien opetuslainsäädännön muuttamista. Lakia säädettäessä eduskunta hyväksyi sen pääosin hallituksen ehdotuksella. Laki tuli voimaan 1.1.2020. Käytännön soveltamisessa on kuitenkin ilmaantunut muutamia seikkaisia tulkintaongelmia, jotka vaativat selkeyttävää lainsäädäntöä."
 
 #### 1.2 Valmistelu
 
@@ -305,7 +305,7 @@ Säännöskohtaiset perustelut kirjoitetaan normaalisti, mutta viittaukset aiemp
 
 **Esimerkki:**
 "Pykälä 7 (muutettu)
-Pykälää ehdotetaan muutettavaksi siten, että poistetaan soveltamisessa ilmaantuneet epäselvyydet. Aiemmassa esityksessä HE 45/2019 todettiin, että 'palvelu' tarkoittaa... Käytännössä on kuitenkin ilmaantunut, että soveltajat tulkitsevat termiä eri tavoin. Ehdotetun muutoksen tarkoituksena on selkeyteen säännöstä lisäämällä tarkempi määritelmä."
+Pykälää ehdotetaan muutettavaksi siten, että poistetaan soveltamisessa ilmaantuneet epäselvyydet. Aiemmassa esityksessä HE n/vvvv vp todettiin, että 'palvelu' tarkoittaa... Käytännössä on kuitenkin ilmaantunut, että soveltajat tulkitsevat termiä eri tavoin. Ehdotetun muutoksen tarkoituksena on selkeyteen säännöstä lisäämällä tarkempi määritelmä."
 
 ## Rinnakkaistekstien muodot
 
@@ -372,7 +372,7 @@ vanhan version hakeminen vaatii erillisen dokumentin.
 ### Aiemman esityksen viittaaminen
 
 - Ole selkeä viittauksissa aiempaan esitykseen tai lakiin
-- Käytä viitteestä yleistä muotoa (esim. "HE 45/2019" tai "Laki valtion liikennelain muuttamisesta")
+- Käytä viitteestä yleistä muotoa (esim. "HE n/vvvv vp" tai "Laki valtion liikennelain muuttamisesta")
 
 ### Ongelmakohtien dokumentointi
 

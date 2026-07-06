@@ -39,8 +39,8 @@ Juridisen työn laatu riippuu siitä, että sovelletaan **voimassa olevaa** laki
 **Oikeuskäytännön hakeminen:**
 
 1. Hae Finlexin oikeuskäytännöstä asiasanoilla, lainkohdan numerolla tai ratkaisun tunnuksella
-2. KKO:n ennakkopäätökset tunnistetaan vuoden ja juoksevan numeron perusteella: KKO:2024:1
-3. KHO:n ennakkopäätökset vastaavasti: KHO:2024:1
+2. KKO:n ennakkopäätökset tunnistetaan vuoden ja juoksevan numeron perusteella: KKO:VVVV:NN
+3. KHO:n ennakkopäätökset vastaavasti: KHO:VVVV:NN
 4. Hae myös hakusanoilla, jotka kuvaavat oikeudellista kysymystä (esim. "sopimusrikkomus vahingonkorvaus")
 5. Tarkista, onko ratkaisun jälkeen tullut uudempaa oikeuskäytäntöä, joka muuttaa tulkintaa
 
@@ -52,18 +52,19 @@ Juridisen työn laatu riippuu siitä, että sovelletaan **voimassa olevaa** laki
 
 ## Viittaaminen oikeuskäytäntöön
 
-**KKO:n ja KHO:n ennakkopäätökset:**
+**KKO:n ja KHO:n ennakkopäätökset** (muotomallit — tunnus on paikkamerkki,
+älä käytä mallia aidolla tunnuksella tarkistamatta ratkaisua lähteestä):
 
 ```
-Korkein oikeus on ratkaisussaan KKO:2024:15 katsonut, että...
-Korkeimman hallinto-oikeuden ratkaisun KHO:2023:42 mukaan...
+Korkein oikeus on ratkaisussaan KKO:VVVV:NN katsonut, että...
+Korkeimman hallinto-oikeuden ratkaisun KHO:VVVV:NN mukaan...
 ```
 
-**Vanhempi käytäntö (ennen vuotta 2000):**
+**Vanhempi käytäntö (ennen vuotta 2000, välilyönti kaksoispisteen sijaan):**
 
 ```
-KKO 1998:15
-KHO 1999:72
+KKO VVVV:NN
+KHO VVVV:NN
 ```
 
 **Hovioikeuden tai hallinto-oikeuden ratkaisu (ei prejudikaatti):**

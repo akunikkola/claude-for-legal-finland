@@ -61,7 +61,8 @@ on oikeasta, ajantasaisesta versiosta. Huomioi siirtymäsäännökset.
 - Lakien nimet pienellä alkukirjaimella: *kuntalaki, rikoslaki*.
 
 **Oikeuskäytäntö** – ratkaisutunnus täsmällisesti:
-- Korkein oikeus: `KKO:2024:15`. Korkein hallinto-oikeus: `KHO:2023:42`.
+- Korkein oikeus: `KKO:VVVV:NN`. Korkein hallinto-oikeus: `KHO:VVVV:NN`
+  (vuosi nelinumeroisena, juokseva numero ilman etunollia).
 - Hovioikeus, markkinaoikeus, työtuomioistuin, vakuutusoikeus: kunkin
   vakiintunut tunnusmuoto; jollei ennakkopäätösnumeroa, käytä diaarinumeroa
   ja antopäivää.

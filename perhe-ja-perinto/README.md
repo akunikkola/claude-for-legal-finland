@@ -16,7 +16,7 @@ varautuminen.
 | Skill | Mitä tekee |
 |---|---|
 | **avioliitto-ja-ositus** | Avioehtosopimus, ositus ja omaisuuden erottelu avioerossa ja kuolintapauksessa (avioliittolaki 234/1929), avio-osan ja tasingon laskenta, osituksen sovittelu sekä avopuolisoiden yhteistalouden purku ja hyvitys (26/2011). Sisältää perhe- ja perintöoikeuden perusteiden referenssin. |
-| **lapsen-asema-ja-elatus** | Lapsen huolto, asuminen, vuoroasuminen ja tapaaminen lapsen edun pohjalta (361/1983), elatusavun arviointi OM:n ohjeella ja elatussopimus (704/1975) sekä vanhemmuuden vahvistaminen (isyyslaki 11/2015 ja äitiyslaki 253/2018). Turvallisuushuoli käy järjestelyjen edelle. |
+| **lapsen-asema-ja-elatus** | Lapsen huolto, asuminen, vuoroasuminen ja tapaaminen lapsen edun pohjalta (361/1983), elatusavun arviointi OM:n ohjeella ja elatussopimus (704/1975) sekä vanhemmuuden vahvistaminen (vanhemmuuslaki 775/2022). Turvallisuushuoli käy järjestelyjen edelle. |
 | **perinto-ja-testamentti** | Perimysjärjestys, lesken asema, testamentin laatiminen ja tulkinta, rintaperillisen lakiosa, perunkirjoitus, pesänselvitys ja perinnönjako (perintökaari 40/1965). Sisältää perintökaaren perusteiden referenssin. |
 | **edunvalvonta-ja-edunvalvontavaltuutus** | Ennakoiva edunvalvontavaltuutus (648/2007) ja käytössä oleva edunvalvonta (holhoustoimilaki 442/1999): tarpeen arviointi, edunvalvojan tehtävät, luvanvaraiset toimet, tilivelvollisuus ja eturistiriidan edellyttämä edunvalvojan sijainen. |
 
@@ -25,7 +25,8 @@ varautuminen.
 Lähteestä (Finlex) varmistettu: **avioliittolaki (234/1929)**, **laki
 avopuolisoiden yhteistalouden purkamisesta (26/2011)**, **laki lapsen huollosta
 ja tapaamisoikeudesta (361/1983)**, **laki lapsen elatuksesta (704/1975)**,
-**isyyslaki (11/2015)**, **äitiyslaki (253/2018)**, **perintökaari (40/1965)**,
+**vanhemmuuslaki (775/2022)** — kumosi isyyslain (11/2015) ja äitiyslain
+(253/2018) 1.1.2023 alkaen —, **perintökaari (40/1965)**,
 **laki holhoustoimesta (442/1999)** ja **laki edunvalvontavaltuutuksesta
 (648/2007)**. Pykälien sanamuoto, määräajat ja lakiosan laskenta tarkistetaan
 käytössä `juristi:oikeustutkimus`-skillillä.

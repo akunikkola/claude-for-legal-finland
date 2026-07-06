@@ -53,7 +53,7 @@ asuinhuoneiston vuokrauksessa.
 ## Työsopimukset
 
 Työsopimuslaki (55/2001). Kilpailukielto: 3 luvun 5 §; korvausvelvollisuutta
-muutettiin lailla 744/2022 (työnantajan korvattava kilpailukiellon ajalta;
+muutettiin lailla 1018/2021 (työnantajan korvattava kilpailukiellon ajalta;
 enintään 6 kk → vähintään 40 % palkasta, yli 6 kk → vähintään 60 %).
 Korvauksen ja keston lainmukaisuus on tason 2 arvio.
 

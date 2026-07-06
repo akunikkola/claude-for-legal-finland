@@ -79,7 +79,7 @@ Täytä taulukko solu kerrallaan ja anna jokaiselle solulle arvo, lähde ja luot
 Erota selvästi se, mitä voidaan luotettavasti todeta asiakirjasta, siitä, mitä on tarkistettava lähteestä.
 
 - **Taso 1 — mitä asiakirja sanoo (korkea luottamus).** Solun arvo on poimittu asiakirjasta. Tämä on skillin ydinalue.
-- **Taso 2 — onko ehto pätevä tai lainmukainen (vaatii lähteen).** Jos taulukkoon halutaan sarake "lainmukainen?" tai "pätevä?", **älä arvioi sitä muistista.** Käytä `oikeustutkimus`-skilliä (oik.ai/Finlex) ja merkitse solu `luottamus: matala` ja lähteeksi tarkistus, tai jätä arvio erilliseen löydökseen. Esim. työsopimusten kilpailukieltosarakkeessa "kestää lain" on tason 2 kysymys (työsopimuslaki 55/2001, 3 luvun 5 §; korvausvelvollisuus 744/2022) — taulukoi ehdon *sisältö* tasolla 1, mutta pätevyysarvio tasolla 2.
+- **Taso 2 — onko ehto pätevä tai lainmukainen (vaatii lähteen).** Jos taulukkoon halutaan sarake "lainmukainen?" tai "pätevä?", **älä arvioi sitä muistista.** Käytä `oikeustutkimus`-skilliä (oik.ai/Finlex) ja merkitse solu `luottamus: matala` ja lähteeksi tarkistus, tai jätä arvio erilliseen löydökseen. Esim. työsopimusten kilpailukieltosarakkeessa "kestää lain" on tason 2 kysymys (työsopimuslaki 55/2001, 3 luvun 5 §; korvausvelvollisuus lisätty lailla 1018/2021) — taulukoi ehdon *sisältö* tasolla 1, mutta pätevyysarvio tasolla 2.
 
 ---
 

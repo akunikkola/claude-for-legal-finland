@@ -34,7 +34,7 @@ keksi sisältöä.
 
 ## Vaihe 1: Tunnistetiedot
 
-- **Ratkaisutunnus** oikeassa muodossa (KKO:2024:15, KHO:2023:42), antopäivä,
+- **Ratkaisutunnus** oikeassa muodossa (KKO:VVVV:NN, KHO:VVVV:NN), antopäivä,
   tuomioistuin ja kokoonpano (esim. täysistunto, jaosto) sekä mahdollinen
   äänestys (äänestysratkaisu).
 

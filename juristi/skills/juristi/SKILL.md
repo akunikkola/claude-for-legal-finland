@@ -94,7 +94,7 @@ Kun kirjoitat tai tarkistat juridista tekstiä, käy läpi:
 ### Lähteet ja ajantasaisuus
 - Onko viitattu voimassa olevaan lakiin (ei kumottuun tai muutettuun)?
 - Onko Finlexin ajantasainen versio tarkistettu?
-- Onko oikeuskäytännön viittauksissa käytetty oikeaa tunnusmuotoa (KKO:2024:1)?
+- Onko oikeuskäytännön viittauksissa käytetty oikeaa tunnusmuotoa (KKO:VVVV:NN)?
 - Onko HE:n numero ja vuosi oikein?
 - Onko huomioitu mahdolliset siirtymäsäännökset?
 
