@@ -10,10 +10,10 @@ juridisessa työssä: lakikieli, pykäläviittaukset ja oikeuslähteet
 Kokoelma sisältää myös Codex-yhteensopivat manifestit ja repo-markkinapaikan.
 Ne generoidaan nykyisestä Claude-pluginmetadatasta komennolla
 `node scripts/generate-codex.mjs`, jotta sama skill-sisältö toimii sekä
-Claudessa että Codexissa. Käyttöönotto: [CODEX.md](CODEX.md).
+Claudessa että Codexissa. Käyttöönotto: [AGENTS.md](AGENTS.md).
 
 Selailtava yleiskatsaus koko kokoelmasta:
-**[akunikkola.github.io/claude-for-legal-finland](https://akunikkola.github.io/claude-for-legal-finland/)**
+**[ragmha.github.io/agent-skills-for-finnish-law](https://ragmha.github.io/agent-skills-for-finnish-law/)**
 
 > [!IMPORTANT]
 > **Jokainen tuotos on tarkistettava luonnos. Kyse ei ole oikeudellisesta
@@ -109,12 +109,12 @@ Kaikki 24 plugaria ovat valmiita ja asennettavissa erikseen.
 Lyhin polku: lisää markkinapaikka ja asenna haluamasi plugari.
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install juristi@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install juristi@agent-skills-for-finnish-law
 ```
 
 Tarkemmat ohjeet ovat tiedostossa [QUICKSTART.md](QUICKSTART.md).
-Codex-käyttöönotto on tiedostossa [CODEX.md](CODEX.md).
+Codex-käyttöönotto on tiedostossa [AGENTS.md](AGENTS.md).
 
 Organisaatiokäyttöön tee ensin
 [`references/kayttoonotto-toimistossa.md`](references/kayttoonotto-toimistossa.md)-oppaan

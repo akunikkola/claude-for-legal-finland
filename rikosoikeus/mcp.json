@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "oik-ai": {
+      "type": "http",
+      "url": "https://oik.ai/mcp",
+      "title": "oik.ai",
+      "description": "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö. Rikosoikeudessa: tarkista rikoslain (39/1889) voimassa oleva tunnusmerkistö, rangaistusasteikko ja vanhentumisaika sekä KKO:n ratkaisukäytäntö (mm. tahallisuus, rangaistuksen mittaaminen). Rikoslakia muutetaan jatkuvasti — varmista aina lähteestä. Käyttö edellyttää oik.ai-tiliä (OAuth liitettäessä)."
+    }
+  },
+  "recommendedCategories": [
+    "legal-research",
+    "legislation",
+    "case-law",
+    "criminal-law"
+  ]
+}

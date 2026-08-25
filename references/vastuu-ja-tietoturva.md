@@ -1,6 +1,6 @@
 # Vastuu, ammattietiikka ja tietoturva
 
-**Versio 1.0 – 4.6.2026.** Tämä on koko `claude-for-legal-finland`
+**Versio 1.0 – 4.6.2026.** Tämä on koko `agent-skills-for-finnish-law`
 -markkinapaikan jaettu vastuu- ja tietoturvastandardi. Se täydentää
 [`references/viittaustyyli.md`](viittaustyyli.md) -lähdestandardia.
 

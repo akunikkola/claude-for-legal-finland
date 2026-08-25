@@ -4,7 +4,7 @@ Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan.
 
 > **Sopimusluonnos ja riskiarvio ovat tarkistettavia luonnoksia – ei oikeudellista
 > neuvontaa.** Suuririskinen tai 🔴 PUNAINEN sopimus kuuluu juristin arvioitavaksi.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -32,8 +32,8 @@ Sisältö nojaa lähteestä (oik.ai/Finlex) varmistettuihin säädöksiin: oikeu
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install sopimukset@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install sopimukset@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

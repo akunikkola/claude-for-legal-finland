@@ -3,7 +3,7 @@ name: kaytantoprofiili
 description: >
   Plugarikokoelman räätälöinti organisaation omiin käytäntöihin. Käytä
   tätä skilliä, kun käyttäjä haluaa mukauttaa, konfiguroida tai
-  personoida claude-for-legal-finland-plugarit oman toimiston,
+  personoida agent-skills-for-finnish-law-plugarit oman toimiston,
   yrityksen, viraston tai kunnan käytäntöihin: vakiolausekkeet ja
   mallipohjat, riskilinjaukset, sovellettavat työehtosopimukset, talon
   kirjoitustyyli, toimialarajaukset tai vakiomuotoilut. Triggeröi

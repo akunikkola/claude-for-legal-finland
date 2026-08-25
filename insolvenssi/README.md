@@ -6,7 +6,7 @@ velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja
 
 > **Arviot ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Määräajat ovat tässä lajissa kohtalokkaita: jokainen päivämäärä varmistetaan
-> lähteestä ja kalenterivastuu on ihmisellä. Katso [`CLAUDE.md`](CLAUDE.md).
+> lähteestä ja kalenterivastuu on ihmisellä. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -40,8 +40,8 @@ sisällöt ja määräajat tarkistetaan käytössä `juristi:oikeustutkimus`-ski
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install insolvenssi@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install insolvenssi@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

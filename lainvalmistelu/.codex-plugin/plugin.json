@@ -5,8 +5,8 @@
   "author": {
     "name": "Aku Nikkola"
   },
-  "homepage": "https://github.com/akunikkola/claude-for-legal-finland/tree/main/lainvalmistelu",
-  "repository": "https://github.com/akunikkola/claude-for-legal-finland",
+  "homepage": "https://github.com/ragmha/agent-skills-for-finnish-law/tree/main/lainvalmistelu",
+  "repository": "https://github.com/ragmha/agent-skills-for-finnish-law",
   "license": "MIT",
   "keywords": [
     "legal",

@@ -9,7 +9,7 @@ hyvä perintätapa.
 > Kuluttajansuojalaki on **pakottava kuluttajan hyväksi**: ehto, joka heikentää
 > kuluttajan lakisääteisiä oikeuksia, on mitätön. Laki muuttuu tiheään
 > EU-direktiivien myötä, joten luvut, määräajat ja perintäkulujen enimmäismäärät
-> haetaan aina lähteestä. Katso [`CLAUDE.md`](CLAUDE.md).
+> haetaan aina lähteestä. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -40,8 +40,8 @@ tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä ja kkv.fi:stä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install kuluttajaoikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install kuluttajaoikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

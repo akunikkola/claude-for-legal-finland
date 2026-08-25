@@ -6,7 +6,7 @@ syyte ja puolustus sekä asianomistajan asema yksityisoikeudellisine vaatimuksin
 > **Tuotokset ovat avustajan työn tukea – ei oikeudellista neuvontaa eikä
 > puolustautumisohjeita ilman avustajaa.** Syyttömyysolettama ja
 > itsekriminointisuoja ohjaavat kaikkea; todisteiden hävittämistä tai todistajiin
-> vaikuttamista ei avusteta missään muodossa. Katso [`CLAUDE.md`](CLAUDE.md).
+> vaikuttamista ei avusteta missään muodossa. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -39,8 +39,8 @@ edellytykset tarkistetaan aina käytössä `juristi:oikeustutkimus`-skillillä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install rikosprosessi@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install rikosprosessi@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

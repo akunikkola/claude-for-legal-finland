@@ -5,9 +5,10 @@ name: Julkaise plugari-ZIPit
 #   https://github.com/<owner>/<repo>/releases/latest/download/<plugari>.zip
 # Hyödyllinen ei-teknisille käyttäjille (asennus "Install from .zip").
 #
-# HUOM: jokainen ZIP sisältää koko plugarin (skills/, CLAUDE.md, references/,
-# .mcp.json, .claude-plugin/) jotta asennus on täydellinen. Tarkista asennuksen
-# toimivuus kohdeympäristössä ennen laajaa julkaisua.
+# HUOM: jokainen ZIP sisältää koko plugarin (skills/, AGENTS.md, references/,
+# mcp.json, .mcp.json, plugin.json, .claude-plugin/, .codex-plugin/) jotta
+# asennus on täydellinen. Tarkista asennuksen toimivuus kohdeympäristössä
+# ennen laajaa julkaisua.
 
 on:
   push:
@@ -46,7 +47,7 @@ jobs:
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, pathlib
-          m = json.loads(pathlib.Path('.claude-plugin/marketplace.json').read_text())
+          m = json.loads(pathlib.Path('marketplace.json').read_text())
           print('names=' + ' '.join(p['name'] for p in m['plugins']))
           PY
 
@@ -57,7 +58,7 @@ jobs:
             echo "Pakataan $plugin.zip"
             (cd "$plugin" && zip -rq "../dist/${plugin}.zip" . -x '*.DS_Store' '__pycache__/*' '*.pyc')
           done
-          cp .claude-plugin/marketplace.json dist/marketplace.json
+          cp marketplace.json dist/marketplace.json
           # Koko kokoelma yhtenä pakettina
           (cd dist && zip -rq "kaikki-plugarit.zip" ./*.zip marketplace.json)
           ls -lh dist

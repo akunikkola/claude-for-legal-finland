@@ -7,7 +7,7 @@ rekisteröintistrategia, loukkausarvio, lisensointi ja sopimuskytkennät.
 > **Arviot ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Plugari ei näe rekistereitä (PRH, EUIPO, WIPO) eikä siksi koskaan vahvista, että
 > merkki on vapaa tai keksintö uusi – se tuottaa hakustrategian ihmiselle.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -41,8 +41,8 @@ sisällöt tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install immateriaalioikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install immateriaalioikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

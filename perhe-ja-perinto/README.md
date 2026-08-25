@@ -9,7 +9,7 @@ varautuminen.
 > Lapsen etu ratkaisee lasta koskevat asiat, ja turvallisuushuoli käy
 > järjestelyjen edelle. Muotovaatimukset, määräajat ja verot haetaan aina
 > lähteestä, eikä molempia osapuolia voi edustaa ristiriidassa. Perintö- ja
-> lahjavero kuuluvat `verotus`-plugariin. Katso [`CLAUDE.md`](CLAUDE.md).
+> lahjavero kuuluvat `verotus`-plugariin. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -44,8 +44,8 @@ käytössä `juristi:oikeustutkimus`-skillillä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install perhe-ja-perinto@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install perhe-ja-perinto@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

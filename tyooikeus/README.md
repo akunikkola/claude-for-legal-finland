@@ -4,7 +4,7 @@ Suomen työoikeus työsuhteen elinkaaren keskeisiin tilanteisiin: sopimus, pää
 yhteistoiminta. Pakottavan lainsäädännön ja työehtosopimusten (TES) ehdoilla.
 
 > **Luonnokset ja riskiarviot ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Päättämispäätös kuuluu työnantajalle; 🔴-tapaukset työoikeusjuristille. Katso [`CLAUDE.md`](CLAUDE.md).
+> Päättämispäätös kuuluu työnantajalle; 🔴-tapaukset työoikeusjuristille. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -29,8 +29,8 @@ yhdenvertaisuus-, tasa-arvolaki ym.) ja niiden numerot tarkistetaan `juristi:oik
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install tyooikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install tyooikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

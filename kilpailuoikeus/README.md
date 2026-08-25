@@ -7,7 +7,7 @@ yrityskauppavalvonta sekä compliance ja tarkastuksiin varautuminen.
 > **Arviot ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Kartelliavustusta ei anneta missään muodossa; laillinen polku epäilyttävässä
 > tilanteessa on menettelyn lopettaminen ja leniency-harkinta. Raja-arvot ja
-> prosentit haetaan aina lähteestä. Katso [`CLAUDE.md`](CLAUDE.md).
+> prosentit haetaan aina lähteestä. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -40,8 +40,8 @@ ryhmäpoikkeusasetukset (EUR-Lex; voimassa olevat versiot tarkistetaan käytöss
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install kilpailuoikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install kilpailuoikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

@@ -7,7 +7,7 @@ arvonlisäverotus.
 > **Analyysit ja luonnokset ovat tarkistettavia – ei veroneuvontaa.**
 > Verokannat, euromäärät ja määräajat muuttuvat vuosittain, joten ne haetaan aina
 > lähteestä eikä muistista. Aidosti tulkinnanvaraisessa asiassa oikea väline on
-> sitova ennakkoratkaisu. Katso [`CLAUDE.md`](CLAUDE.md).
+> sitova ennakkoratkaisu. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -43,8 +43,8 @@ vero.fi:stä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install verotus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install verotus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

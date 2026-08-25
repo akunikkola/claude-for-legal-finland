@@ -4,7 +4,7 @@ EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") noudattaminen suomalais
 kontekstissa.
 
 > **Riskiluokittelu, velvoitteet, sakkolaskelmat ja FRIA-luonnokset ovat tarkistettavia
-> ensiarvioita – ei oikeudellista neuvontaa.** Katso [`CLAUDE.md`](CLAUDE.md).
+> ensiarvioita – ei oikeudellista neuvontaa.** Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -31,8 +31,8 @@ kontekstissa.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install tekoalysaantely@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install tekoalysaantely@agent-skills-for-finnish-law
 ```
 
 EU AI Act -MCP käynnistyy automaattisesti npx:llä (vaatii Node.js:n). oik.ai-konnektori:

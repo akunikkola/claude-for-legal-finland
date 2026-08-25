@@ -1,0 +1,226 @@
+{
+  "name": "agent-skills-for-finnish-law",
+  "displayName": "Agent Skills for Finnish Law",
+  "description": "Avoimen lähdekoodin skillit ja plugarit, jotka auttavat juristeja ja muita oikeudellisten asioiden parissa työskenteleviä Suomessa hyödyntämään Claudea – suomalaisen oikeuden, lakikielen ja oikeuslähteiden (Finlex, oik.ai, KKO/KHO, HE) ehdoilla. Suomalainen vastine Anthropicin claude-for-legal-kokoelmalle.",
+  "owner": {
+    "name": "Aku Nikkola"
+  },
+  "plugins": [
+    {
+      "name": "juristi",
+      "displayName": "Juristi – perusta",
+      "source": "./juristi",
+      "description": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykäläviittaukset, suomen kielen oikeinkirjoitus, oikeustutkimus voimassa olevasta laista ja oikeuskäytännöstä (Finlex/oik.ai-MCP), sekä juridisen asiakirjan monivaiheinen tarkistus. Pohja, johon muut käytäntöaluekohtaiset plugarit nojaavat.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "lainvalmistelu",
+      "displayName": "Lainvalmistelu",
+      "source": "./lainvalmistelu",
+      "description": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "lausunnot",
+      "displayName": "Lausunnot",
+      "source": "./lausunnot",
+      "description": "Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "sopimukset",
+      "displayName": "Sopimukset",
+      "source": "./sopimukset",
+      "description": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "tietosuoja",
+      "displayName": "Tietosuoja",
+      "source": "./tietosuoja",
+      "description": "Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "tekoalysaantely",
+      "displayName": "Tekoälysääntely",
+      "source": "./tekoalysaantely",
+      "description": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "tyooikeus",
+      "displayName": "Työoikeus",
+      "source": "./tyooikeus",
+      "description": "Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "hallinto-oikeus",
+      "displayName": "Hallinto-oikeus",
+      "source": "./hallinto-oikeus",
+      "description": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku – oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) – sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "riidanratkaisu",
+      "displayName": "Riidanratkaisu",
+      "source": "./riidanratkaisu",
+      "description": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa).",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "yhtiooikeus",
+      "displayName": "Yhtiöoikeus",
+      "source": "./yhtiooikeus",
+      "description": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "insolvenssi",
+      "displayName": "Insolvenssi",
+      "source": "./insolvenssi",
+      "description": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi 120/2004, yrityssaneeraus 47/1993, velkajärjestely 57/1993), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "immateriaalioikeus",
+      "displayName": "Immateriaalioikeus",
+      "source": "./immateriaalioikeus",
+      "description": "Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannusvaara-arvio (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen ja lisensointi (404/1961) sekä liikesalaisuuksien suojaohjelma ja loukkaustilanteet (595/2018). Markkinaoikeus, PRH ja EUIPO -kytkennät.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "verotus",
+      "displayName": "Verotus",
+      "source": "./verotus",
+      "description": "Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimuksesta KHO:hon (VML 1558/1995), yritysverotus konserniavustuksineen ja yritysjärjestelyineen (EVL 360/1968) sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä; tulkinnanvaraisissa ennakkoratkaisu.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "julkiset-hankinnat",
+      "displayName": "Julkiset hankinnat",
+      "source": "./julkiset-hankinnat",
+      "description": "Julkiset hankinnat hankintalain (1397/2016) mukaan sekä hankintayksikön että tarjoajan näkökulmasta: suunnittelu ja menettelyn valinta kynnysarvoineen, tarjouspyyntö ja tarjouspyynnönmukainen tarjous sekä hankintapäätös, hankintaoikaisu ja valitus markkinaoikeuteen seuraamuksineen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "rikosprosessi",
+      "displayName": "Rikosprosessi",
+      "source": "./rikosprosessi",
+      "description": "Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja 806/2011) kuulusteluvalmistautumisineen ja loppulausuntoineen, syyte ja vastaus tuomioesitysmenettelyineen (ROL 689/1997) sekä asianomistajan vaatimukset ja rikosvahinkokorvaus. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "ymparisto-ja-kaavoitus",
+      "displayName": "Ympäristö ja kaavoitus",
+      "source": "./ymparisto-ja-kaavoitus",
+      "description": "Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen (alueidenkäyttölaki ja rakentamislaki 751/2023 uusine lupineen) sekä ympäristövastuut ja ympäristö-DD transaktioissa. Huomioi 2026 viranomaisuudistuksen (Lupa- ja valvontavirasto).",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "kiinteistot-ja-asuminen",
+      "displayName": "Kiinteistöt ja asuminen",
+      "source": "./kiinteistot-ja-asuminen",
+      "description": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukset ja virhevastuu (maakaari 540/1995), asuntokauppa RS-järjestelmineen ja reklamaatioineen (843/1994), asunto-osakeyhtiön kunnossapitovastuu ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset pakottavuuseroineen.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "kilpailuoikeus",
+      "displayName": "Kilpailuoikeus",
+      "source": "./kilpailuoikeus",
+      "description": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö itsearviointikehikoineen (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta täytäntöönpanokieltoineen sekä compliance-ohjelmat, tietojenvaihdon pelisäännöt ja dawn raid -valmius.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "pankki-ja-rahoitus",
+      "displayName": "Pankki ja rahoitus",
+      "source": "./pankki-ja-rahoitus",
+      "description": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspaketit julkivarmistuksineen (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun estämisen compliance (444/2017) sekä listayhtiön tiedonantovelvollisuus ja sisäpiirihallinto (AML 746/2012, MAR).",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "ulkomaalaisoikeus",
+      "displayName": "Ulkomaalaisoikeus",
+      "source": "./ulkomaalaisoikeus",
+      "description": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat saatavuusharkintoineen (ulkomaalaislaki 301/2004), työnantajan varmistusvelvollisuudet ja seuraamukset, lähetetyt työntekijät (447/2016) sekä EU-oleskelu, perheenyhdistäminen, pysyvä lupa ja kansalaisuus (359/2003).",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "perhe-ja-perinto",
+      "displayName": "Perhe- ja perintöoikeus",
+      "source": "./perhe-ja-perinto",
+      "description": "Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhteet ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361/1983 ja 704/1975), perimys, testamentti ja lakiosa (perintökaari 40/1965) sekä edunvalvonta ja edunvalvontavaltuutus (442/1999 ja 648/2007). Lapsen etu ja turvallisuus edellä; verot lähteestä.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "kuluttajaoikeus",
+      "displayName": "Kuluttajaoikeus",
+      "source": "./kuluttajaoikeus",
+      "description": "Suomen kuluttajaoikeus elinkeinonharjoittajan ja kuluttajan välisessä kaupassa (kuluttajansuojalaki 38/1978): tavaran ja palvelun virhevastuu ja oikaisukeinot, etä- ja kotimyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999). Pakottava kuluttajan hyväksi.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "rikosoikeus",
+      "displayName": "Rikosoikeus (aineellinen)",
+      "source": "./rikosoikeus",
+      "description": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    },
+    {
+      "name": "kaksikielisyys",
+      "displayName": "Kaksikielisyys (FI/SV)",
+      "source": "./kaksikielisyys",
+      "description": "Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.",
+      "author": {
+        "name": "Aku Nikkola"
+      }
+    }
+  ]
+}

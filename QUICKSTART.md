@@ -7,24 +7,24 @@ datakonnektorit (oik.ai) lisätään lisäksi asetuksista.
 ## 1. Lisää markkinapaikka
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
 ```
 
 tai kehityskäytössä paikallisesta polusta:
 
 ```
-/plugin marketplace add /polku/claude-for-legal-finland
+/plugin marketplace add /polku/agent-skills-for-finnish-law
 ```
 
 ## 2. Asenna plugari – valitse user scope
 
 ```
-/plugin install juristi@claude-for-legal-finland
+/plugin install juristi@agent-skills-for-finnish-law
 ```
 
 `juristi` on läpileikkaava perusta, joka kannattaa asentaa aina. Sen päälle
 asennetaan oman alan plugarit samalla kaavalla
-(`<plugari>@claude-for-legal-finland`): `lainvalmistelu`, `lausunnot`,
+(`<plugari>@agent-skills-for-finnish-law`): `lainvalmistelu`, `lausunnot`,
 `sopimukset`, `tyooikeus`, `tietosuoja`, `tekoalysaantely`, `hallinto-oikeus`,
 `riidanratkaisu`, `yhtiooikeus`, `insolvenssi`, `immateriaalioikeus`,
 `verotus`, `julkiset-hankinnat`, `rikosprosessi`, `ymparisto-ja-kaavoitus`,

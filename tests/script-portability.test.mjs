@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 function copyRepoFixture() {
-  const fixtureRoot = mkdtempSync(join(tmpdir(), 'legal-for-finland-'));
+  const fixtureRoot = mkdtempSync(join(tmpdir(), 'agent-skills-for-finnish-law-'));
   cpSync(ROOT, fixtureRoot, {
     recursive: true,
     filter: (source) => {

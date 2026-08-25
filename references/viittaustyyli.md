@@ -1,6 +1,6 @@
 # Viittaus- ja lähdestandardi
 
-**Versio 1.0 – 4.6.2026.** Tämä on koko `claude-for-legal-finland`
+**Versio 1.0 – 4.6.2026.** Tämä on koko `agent-skills-for-finnish-law`
 -markkinapaikan **jaettu, sitova lähdestandardi.** Jokaisen plugarin
 `CLAUDE.md` viittaa tähän, ja jokainen skill noudattaa tätä, kun se viittaa
 säädökseen, oikeuskäytäntöön tai esitöihin.

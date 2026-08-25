@@ -1,14 +1,18 @@
 #!/usr/bin/env node
-// Rakenne- ja laatuvalidaattori claude-for-legal-finland -markkinapaikalle.
+// Rakenne- ja laatuvalidaattori agent-skills-for-finnish-law -kokoelmalle.
 // Riippuvuudeton (vain Node:n vakiokirjasto). Aja: node scripts/validate.mjs
 //
 // Tarkistaa:
-//  - marketplace.json  <->  jokaisen plugarin .claude-plugin/plugin.json yhtenäisyys
+//  - marketplace.json  <->  jokaisen plugarin plugin.json yhtenäisyys
+//  - mcp.json: palvelimella on joko url (http) tai command (stdio)
 //  - SKILL.md-frontmatter: vain name + description; kebab-case; kansio == name
 //  - description: ei tyhjä, <= 1024 merkkiä, ei "numero,numero" (Cowork-validaattorin ansa)
 //  - plugin.json: semver-versio, kebab-case name, description ilman "numero,numero"
 //  - kuolleet suhteelliset markdown-linkit (.md-tiedostoissa)
 //  - näkymättömät / harhaanjohtavat unicode-merkit (zero-width, bidi, kyrilliset homoglyfit)
+//
+// Lähde on neutraali marketplace.json ja <plugari>/plugin.json; Claude- ja
+// Codex-manifestit ovat generoituja adaptereita (scripts/generate-codex.mjs).
 //
 // Tämä portti on "henkivakuutus": se ei korvaa lähdekuria, vaan estää
 // markkinapaikan rikkovat ja hiljaa hajoavat virheet ennen julkaisua.
@@ -74,10 +78,10 @@ function checkUnicode(file, text, label) {
 }
 
 // ---------------------------------------------------------------------------
-// 1. marketplace.json + plugin.json -yhtenäisyys
+// 1. marketplace.json + plugin.json -yhtenäisyys (neutraalit lähteet)
 // ---------------------------------------------------------------------------
 
-const mpPath = join(ROOT, '.claude-plugin', 'marketplace.json');
+const mpPath = join(ROOT, 'marketplace.json');
 let pluginNames = [];
 if (!existsSync(mpPath)) {
   err(mpPath, 'marketplace.json puuttuu.');
@@ -98,22 +102,49 @@ if (!existsSync(mpPath)) {
           const dir = join(ROOT, p.source);
           if (!existsSync(dir)) err(mpPath, `${p.name}: source-hakemistoa ei ole: ${p.source}`);
         }
+        if (!p.displayName) err(mpPath, `${p.name}: displayName puuttuu.`);
         if (!p.description) err(mpPath, `${p.name}: description puuttuu.`);
         else {
           if (DIGIT_COMMA.test(p.description)) err(where, 'description sisältää "numero,numero" (Cowork-ansa).');
           if (p.description.length > 1024) err(where, `description liian pitkä (${p.description.length} > 1024).`);
           checkUnicode(mpPath, p.description, `${p.name} description`);
         }
-        // ristiintarkista plugin.json
-        const pjPath = join(ROOT, p.source || '', '.claude-plugin', 'plugin.json');
+
+        // ristiintarkista neutraali plugin.json
+        const pjPath = join(ROOT, p.source || '', 'plugin.json');
         if (existsSync(pjPath)) {
           const pj = readJSON(pjPath);
           if (pj) {
             if (pj.name !== p.name) err(pjPath, `plugin.json name (${pj.name}) != marketplace name (${p.name}).`);
-            if (pj.version && !SEMVER.test(pj.version)) err(pjPath, `version ei ole semver: ${pj.version}`);
-            if (pj.description && DIGIT_COMMA.test(pj.description)) err(pjPath, 'description sisältää "numero,numero" (Cowork-ansa).');
+            if (pj.displayName !== p.displayName) {
+              err(pjPath, `plugin.json displayName (${pj.displayName}) != marketplace displayName (${p.displayName}).`);
+            }
+            if (!pj.version || !SEMVER.test(pj.version)) err(pjPath, `version ei ole semver: ${pj.version}`);
+            if (!pj.description) err(pjPath, 'description puuttuu.');
+            else if (DIGIT_COMMA.test(pj.description)) err(pjPath, 'description sisältää "numero,numero" (Cowork-ansa).');
           }
-        } else err(mpPath, `${p.name}: .claude-plugin/plugin.json puuttuu.`);
+        } else err(mpPath, `${p.name}: plugin.json puuttuu.`);
+
+        // neutraali MCP-lähde: stdio ja http ovat toisensa poissulkevat
+        const mcpPath = join(ROOT, p.source || '', 'mcp.json');
+        if (existsSync(mcpPath)) {
+          const mcp = readJSON(mcpPath);
+          if (mcp) {
+            const servers = mcp.mcpServers;
+            if (!servers || typeof servers !== 'object') {
+              err(mcpPath, 'mcpServers puuttuu tai ei ole objekti.');
+            } else {
+              for (const [name, server] of Object.entries(servers)) {
+                if (!server.url && !server.command) {
+                  err(mcpPath, `palvelimella '${name}' ei ole url- eikä command-kenttää.`);
+                }
+                if (server.url && server.command) {
+                  err(mcpPath, `palvelimella '${name}' on sekä url että command — valitse yksi.`);
+                }
+              }
+            }
+          }
+        }
       }
       pluginNames = mp.plugins.map((p) => p.name);
     }
@@ -196,7 +227,7 @@ for (const md of walkMd(ROOT)) {
 // Raportti
 // ---------------------------------------------------------------------------
 
-console.log(`\nclaude-for-legal-finland — validaattori`);
+console.log(`\nagent-skills-for-finnish-law — validaattori`);
 console.log(`  plugareita: ${pluginNames.length}, skillejä: ${skillCount}\n`);
 
 for (const w of warnings) console.log(`  ⚠︎  ${w.file}: ${w.msg}`);

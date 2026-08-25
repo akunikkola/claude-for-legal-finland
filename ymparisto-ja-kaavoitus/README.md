@@ -8,7 +8,7 @@ rakentaminen sekä ympäristövastuut transaktioissa – uudistuneen lainsääd�
 > **Luonnokset ja analyysit ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Ala on täynnä tuoreita kokonaisuudistuksia, joissa mallin muisti pettää –
 > säädösnimet, viranomaiset ja kynnykset tarkistetaan aina lähteestä.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -42,8 +42,8 @@ Valviran (varmistettu valtioneuvoston ja LVV:n lähteistä).
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install ymparisto-ja-kaavoitus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install ymparisto-ja-kaavoitus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

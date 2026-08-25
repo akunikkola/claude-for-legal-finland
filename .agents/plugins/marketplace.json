@@ -1,7 +1,7 @@
 {
-  "name": "legal-for-finland",
+  "name": "agent-skills-for-finnish-law",
   "interface": {
-    "displayName": "Legal for Finland"
+    "displayName": "Agent Skills for Finnish Law"
   },
   "plugins": [
     {

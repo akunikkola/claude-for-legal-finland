@@ -4,7 +4,7 @@ Suomen hallinto-oikeus ja julkishallinto: hallintopäätökset, muutoksenhaku ja
 asiakirjajulkisuus.
 
 > **Luonnokset ja arviot ovat tarkistettavia – ei oikeudellista neuvontaa.** Viranomainen
-> vastaa päätöksestään. Katso [`CLAUDE.md`](CLAUDE.md).
+> vastaa päätöksestään. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -35,8 +35,8 @@ hallintoasioissa (808/2019)** (korvasi hallintolainkäyttölain 586/1996) ja **j
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install hallinto-oikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install hallinto-oikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

@@ -1,0 +1,9 @@
+{
+  "name": "juristi",
+  "displayName": "Juristi – perusta",
+  "version": "0.1.0",
+  "description": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli, pykäläviittaukset, suomen kieli, oikeustutkimus (Finlex/oik.ai) ja juridisen asiakirjan tarkistus.",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

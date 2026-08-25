@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "oik-ai": {
+      "type": "http",
+      "url": "https://oik.ai/mcp",
+      "title": "oik.ai",
+      "description": "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö ohjelmallisesti. Säädösvalmistelussa: tarkista muutettavan lain voimassa oleva sanamuoto, etsi liittyvät säännökset ja niihin tehtävät seurannaismuutokset sekä relevantti oikeuskäytäntö. Käyttö edellyttää oik.ai-tiliä (OAuth-kirjautuminen liitettäessä)."
+    }
+  },
+  "recommendedCategories": [
+    "legal-research",
+    "legislation",
+    "case-law",
+    "documents"
+  ]
+}

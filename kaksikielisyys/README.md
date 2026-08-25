@@ -10,7 +10,7 @@ ja oikeustermien vastineet ovat virallisia — ei vapaasti käännettäviä.
 > käännöksen tekee auktorisoitu kääntäjä. Oikeustermiä ei keksitä, vaan käytetään
 > vakiintunutta vastinetta virallisesta lähteestä (Finlexin rinnakkaisteksti,
 > valtioneuvoston termipankki). Saamen kielen oikeudet ovat oma kokonaisuutensa.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -38,8 +38,8 @@ käytössä Finlexin rinnakkaistekstistä ja virallisista termilähteistä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install kaksikielisyys@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install kaksikielisyys@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

@@ -5,7 +5,7 @@ käytäntöaluekohtaiset plugarit (lainvalmistelu, lausunnot, sopimukset, työoi
 tietosuoja, hallinto-oikeus, riidanratkaisu) nojaavat.
 
 > **Jokainen tuotos on tarkistettava luonnos – ei oikeudellista neuvontaa.** Lopullisen
-> vastuun kantaa sitä käyttävä ihminen. Katso [`CLAUDE.md`](CLAUDE.md).
+> vastuun kantaa sitä käyttävä ihminen. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -45,7 +45,7 @@ Lisää tämä repo markkinapaikkana ja ota plugari käyttöön Claude Codessa:
 
 ```
 /plugin marketplace add <repo-url tai polku>
-/plugin install juristi@claude-for-legal-finland
+/plugin install juristi@agent-skills-for-finnish-law
 ```
 
 Liitä sen jälkeen oik.ai-konnektori (custom connector → URL `https://oik.ai/mcp` → kirjaudu).

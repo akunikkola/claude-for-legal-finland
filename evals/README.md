@@ -69,7 +69,7 @@ Puhtaassa ympäristössä (`CLAUDE_CONFIG_DIR=$(mktemp -d)`):
 
 ```sh
 claude plugin marketplace add <repon polku>
-claude plugin install juristi@legal-for-finland --scope user
+claude plugin install juristi@agent-skills-for-finnish-law --scope user
 ```
 
 **Huom:** kirjautuminen ei seuraa config-hakemistoon (macOS-avainnippu),

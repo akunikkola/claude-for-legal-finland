@@ -7,7 +7,7 @@ Markkinapaikalla on **24 plugaria** ja **78 skilliä**. Asennus: ks. [QUICKSTART
 
 ## Juristi – perusta
 
-`/plugin install juristi@claude-for-legal-finland` – [`./juristi/`](./juristi/)
+`/plugin install juristi@agent-skills-for-finnish-law` – [`./juristi/`](./juristi/)
 
 Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykäläviittaukset, suomen kielen oikeinkirjoitus, oikeustutkimus voimassa olevasta laista ja oikeuskäytännöstä (Finlex/oik.ai-MCP), sekä juridisen asiakirjan monivaiheinen tarkistus. Pohja, johon muut käytäntöaluekohtaiset plugarit nojaavat.
 
@@ -15,7 +15,7 @@ Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykälävi
 |---|---|
 | [`asiakirjan-tarkistus`](juristi/skills/asiakirjan-tarkistus/SKILL.md) | Juridisen asiakirjan järjestelmällinen monivaiheinen laaduntarkistus suomalaisessa kontekstissa. Käytä tätä skilliä, kun juridinen asiakirja pitää tarkistaa ennen käyttöä: sopimus, lausunto, valitus, hallintopäätös, muistio, sopimusluonnos… |
 | [`juristi`](juristi/skills/juristi/SKILL.md) | Suomalaisen oikeuden ja lakikielen yleisapuri. Käytä tätä skilliä AINA kun käyttäjä työskentelee lakien, pykälien, säädösten, sopimusten tai muiden juridisten dokumenttien kanssa – riippumatta siitä, onko käyttäjä juristi vai ei. Triggeröi… |
-| [`kaytantoprofiili`](juristi/skills/kaytantoprofiili/SKILL.md) | Plugarikokoelman räätälöinti organisaation omiin käytäntöihin. Käytä tätä skilliä, kun käyttäjä haluaa mukauttaa, konfiguroida tai personoida claude-for-legal-finland-plugarit oman toimiston, yrityksen, viraston tai kunnan käytäntöihin: va… |
+| [`kaytantoprofiili`](juristi/skills/kaytantoprofiili/SKILL.md) | Plugarikokoelman räätälöinti organisaation omiin käytäntöihin. Käytä tätä skilliä, kun käyttäjä haluaa mukauttaa, konfiguroida tai personoida agent-skills-for-finnish-law-plugarit oman toimiston, yrityksen, viraston tai kunnan käytäntöihin… |
 | [`oikeustapaus-referointi`](juristi/skills/oikeustapaus-referointi/SKILL.md) | Tuomioistuinratkaisun jäsentäminen ja referointi: ennakkopäätöksen tai muun ratkaisun olennaisen sisällön poiminta rakenteiseen muotoon (tunnistetiedot, oikeuskysymys, faktat, lopputulos, perustelujen ydin eli ratio, merkitys). Käytä tätä… |
 | [`oikeustutkimus`](juristi/skills/oikeustutkimus/SKILL.md) | Suomalaisen voimassa olevan lainsäädännön ja oikeuskäytännön haku, lukeminen ja oikea viittaaminen oik.ai-, laki.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun tarvitaan ajantasaista lakitekstiä, pykälän sisältö, KKO:n tai KHO:n… |
 | [`selkokielistaja`](juristi/skills/selkokielistaja/SKILL.md) | Juridisen tekstin selittäminen selkeällä yleiskielellä maallikolle — asiakkaalle, päämiehelle tai muulle ei-juristille. Käytä tätä skilliä, kun pykälä, sopimusehto, päätös, lausunto tai kirjelmä pitää avata ymmärrettävään muotoon, kun asia… |
@@ -25,7 +25,7 @@ Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykälävi
 
 ## Lainvalmistelu
 
-`/plugin install lainvalmistelu@claude-for-legal-finland` – [`./lainvalmistelu/`](./lainvalmistelu/)
+`/plugin install lainvalmistelu@agent-skills-for-finnish-law` – [`./lainvalmistelu/`](./lainvalmistelu/)
 
 Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.
 
@@ -38,7 +38,7 @@ Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, 
 
 ## Lausunnot
 
-`/plugin install lausunnot@claude-for-legal-finland` – [`./lausunnot/`](./lausunnot/)
+`/plugin install lausunnot@agent-skills-for-finnish-law` – [`./lausunnot/`](./lausunnot/)
 
 Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.
 
@@ -48,7 +48,7 @@ Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyys
 
 ## Sopimukset
 
-`/plugin install sopimukset@claude-for-legal-finland` – [`./sopimukset/`](./sopimukset/)
+`/plugin install sopimukset@agent-skills-for-finnish-law` – [`./sopimukset/`](./sopimukset/)
 
 Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.
 
@@ -59,7 +59,7 @@ Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja
 
 ## Tietosuoja
 
-`/plugin install tietosuoja@claude-for-legal-finland` – [`./tietosuoja/`](./tietosuoja/)
+`/plugin install tietosuoja@agent-skills-for-finnish-law` – [`./tietosuoja/`](./tietosuoja/)
 
 Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.
 
@@ -71,7 +71,7 @@ Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja 
 
 ## Tekoälysääntely
 
-`/plugin install tekoalysaantely@claude-for-legal-finland` – [`./tekoalysaantely/`](./tekoalysaantely/)
+`/plugin install tekoalysaantely@agent-skills-for-finnish-law` – [`./tekoalysaantely/`](./tekoalysaantely/)
 
 EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.
 
@@ -83,7 +83,7 @@ EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyj�
 
 ## Työoikeus
 
-`/plugin install tyooikeus@claude-for-legal-finland` – [`./tyooikeus/`](./tyooikeus/)
+`/plugin install tyooikeus@agent-skills-for-finnish-law` – [`./tyooikeus/`](./tyooikeus/)
 
 Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.
 
@@ -95,7 +95,7 @@ Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/20
 
 ## Hallinto-oikeus
 
-`/plugin install hallinto-oikeus@claude-for-legal-finland` – [`./hallinto-oikeus/`](./hallinto-oikeus/)
+`/plugin install hallinto-oikeus@agent-skills-for-finnish-law` – [`./hallinto-oikeus/`](./hallinto-oikeus/)
 
 Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku – oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) – sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).
 
@@ -107,7 +107,7 @@ Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tar
 
 ## Riidanratkaisu
 
-`/plugin install riidanratkaisu@claude-for-legal-finland` – [`./riidanratkaisu/`](./riidanratkaisu/)
+`/plugin install riidanratkaisu@agent-skills-for-finnish-law` – [`./riidanratkaisu/`](./riidanratkaisu/)
 
 Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa).
 
@@ -120,7 +120,7 @@ Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/17
 
 ## Yhtiöoikeus
 
-`/plugin install yhtiooikeus@claude-for-legal-finland` – [`./yhtiooikeus/`](./yhtiooikeus/)
+`/plugin install yhtiooikeus@agent-skills-for-finnish-law` – [`./yhtiooikeus/`](./yhtiooikeus/)
 
 Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.
 
@@ -132,7 +132,7 @@ Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiö
 
 ## Insolvenssi
 
-`/plugin install insolvenssi@claude-for-legal-finland` – [`./insolvenssi/`](./insolvenssi/)
+`/plugin install insolvenssi@agent-skills-for-finnish-law` – [`./insolvenssi/`](./insolvenssi/)
 
 Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi 120/2004, yrityssaneeraus 47/1993, velkajärjestely 57/1993), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.
 
@@ -144,7 +144,7 @@ Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn val
 
 ## Immateriaalioikeus
 
-`/plugin install immateriaalioikeus@claude-for-legal-finland` – [`./immateriaalioikeus/`](./immateriaalioikeus/)
+`/plugin install immateriaalioikeus@agent-skills-for-finnish-law` – [`./immateriaalioikeus/`](./immateriaalioikeus/)
 
 Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannusvaara-arvio (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen ja lisensointi (404/1961) sekä liikesalaisuuksien suojaohjelma ja loukkaustilanteet (595/2018). Markkinaoikeus, PRH ja EUIPO -kytkennät.
 
@@ -156,7 +156,7 @@ Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannu
 
 ## Verotus
 
-`/plugin install verotus@claude-for-legal-finland` – [`./verotus/`](./verotus/)
+`/plugin install verotus@agent-skills-for-finnish-law` – [`./verotus/`](./verotus/)
 
 Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimuksesta KHO:hon (VML 1558/1995), yritysverotus konserniavustuksineen ja yritysjärjestelyineen (EVL 360/1968) sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä; tulkinnanvaraisissa ennakkoratkaisu.
 
@@ -168,7 +168,7 @@ Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimu
 
 ## Julkiset hankinnat
 
-`/plugin install julkiset-hankinnat@claude-for-legal-finland` – [`./julkiset-hankinnat/`](./julkiset-hankinnat/)
+`/plugin install julkiset-hankinnat@agent-skills-for-finnish-law` – [`./julkiset-hankinnat/`](./julkiset-hankinnat/)
 
 Julkiset hankinnat hankintalain (1397/2016) mukaan sekä hankintayksikön että tarjoajan näkökulmasta: suunnittelu ja menettelyn valinta kynnysarvoineen, tarjouspyyntö ja tarjouspyynnönmukainen tarjous sekä hankintapäätös, hankintaoikaisu ja valitus markkinaoikeuteen seuraamuksineen.
 
@@ -180,7 +180,7 @@ Julkiset hankinnat hankintalain (1397/2016) mukaan sekä hankintayksikön että 
 
 ## Rikosprosessi
 
-`/plugin install rikosprosessi@claude-for-legal-finland` – [`./rikosprosessi/`](./rikosprosessi/)
+`/plugin install rikosprosessi@agent-skills-for-finnish-law` – [`./rikosprosessi/`](./rikosprosessi/)
 
 Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja 806/2011) kuulusteluvalmistautumisineen ja loppulausuntoineen, syyte ja vastaus tuomioesitysmenettelyineen (ROL 689/1997) sekä asianomistajan vaatimukset ja rikosvahinkokorvaus. Syyttömyysolettaman ja avustajan käytön ehdoilla.
 
@@ -192,7 +192,7 @@ Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja
 
 ## Ympäristö ja kaavoitus
 
-`/plugin install ymparisto-ja-kaavoitus@claude-for-legal-finland` – [`./ymparisto-ja-kaavoitus/`](./ymparisto-ja-kaavoitus/)
+`/plugin install ymparisto-ja-kaavoitus@agent-skills-for-finnish-law` – [`./ymparisto-ja-kaavoitus/`](./ymparisto-ja-kaavoitus/)
 
 Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen (alueidenkäyttölaki ja rakentamislaki 751/2023 uusine lupineen) sekä ympäristövastuut ja ympäristö-DD transaktioissa. Huomioi 2026 viranomaisuudistuksen (Lupa- ja valvontavirasto).
 
@@ -204,7 +204,7 @@ Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ymp
 
 ## Kiinteistöt ja asuminen
 
-`/plugin install kiinteistot-ja-asuminen@claude-for-legal-finland` – [`./kiinteistot-ja-asuminen/`](./kiinteistot-ja-asuminen/)
+`/plugin install kiinteistot-ja-asuminen@agent-skills-for-finnish-law` – [`./kiinteistot-ja-asuminen/`](./kiinteistot-ja-asuminen/)
 
 Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukset ja virhevastuu (maakaari 540/1995), asuntokauppa RS-järjestelmineen ja reklamaatioineen (843/1994), asunto-osakeyhtiön kunnossapitovastuu ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset pakottavuuseroineen.
 
@@ -217,7 +217,7 @@ Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukse
 
 ## Kilpailuoikeus
 
-`/plugin install kilpailuoikeus@claude-for-legal-finland` – [`./kilpailuoikeus/`](./kilpailuoikeus/)
+`/plugin install kilpailuoikeus@agent-skills-for-finnish-law` – [`./kilpailuoikeus/`](./kilpailuoikeus/)
 
 Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö itsearviointikehikoineen (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta täytäntöönpanokieltoineen sekä compliance-ohjelmat, tietojenvaihdon pelisäännöt ja dawn raid -valmius.
 
@@ -229,7 +229,7 @@ Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän 
 
 ## Pankki ja rahoitus
 
-`/plugin install pankki-ja-rahoitus@claude-for-legal-finland` – [`./pankki-ja-rahoitus/`](./pankki-ja-rahoitus/)
+`/plugin install pankki-ja-rahoitus@agent-skills-for-finnish-law` – [`./pankki-ja-rahoitus/`](./pankki-ja-rahoitus/)
 
 Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspaketit julkivarmistuksineen (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun estämisen compliance (444/2017) sekä listayhtiön tiedonantovelvollisuus ja sisäpiirihallinto (AML 746/2012, MAR).
 
@@ -241,7 +241,7 @@ Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspa
 
 ## Ulkomaalaisoikeus
 
-`/plugin install ulkomaalaisoikeus@claude-for-legal-finland` – [`./ulkomaalaisoikeus/`](./ulkomaalaisoikeus/)
+`/plugin install ulkomaalaisoikeus@agent-skills-for-finnish-law` – [`./ulkomaalaisoikeus/`](./ulkomaalaisoikeus/)
 
 Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat saatavuusharkintoineen (ulkomaalaislaki 301/2004), työnantajan varmistusvelvollisuudet ja seuraamukset, lähetetyt työntekijät (447/2016) sekä EU-oleskelu, perheenyhdistäminen, pysyvä lupa ja kansalaisuus (359/2003).
 
@@ -253,7 +253,7 @@ Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteis
 
 ## Perhe- ja perintöoikeus
 
-`/plugin install perhe-ja-perinto@claude-for-legal-finland` – [`./perhe-ja-perinto/`](./perhe-ja-perinto/)
+`/plugin install perhe-ja-perinto@agent-skills-for-finnish-law` – [`./perhe-ja-perinto/`](./perhe-ja-perinto/)
 
 Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhteet ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361/1983 ja 704/1975), perimys, testamentti ja lakiosa (perintökaari 40/1965) sekä edunvalvonta ja edunvalvontavaltuutus (442/1999 ja 648/2007). Lapsen etu ja turvallisuus edellä; verot lähteestä.
 
@@ -266,7 +266,7 @@ Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhtee
 
 ## Kuluttajaoikeus
 
-`/plugin install kuluttajaoikeus@claude-for-legal-finland` – [`./kuluttajaoikeus/`](./kuluttajaoikeus/)
+`/plugin install kuluttajaoikeus@agent-skills-for-finnish-law` – [`./kuluttajaoikeus/`](./kuluttajaoikeus/)
 
 Suomen kuluttajaoikeus elinkeinonharjoittajan ja kuluttajan välisessä kaupassa (kuluttajansuojalaki 38/1978): tavaran ja palvelun virhevastuu ja oikaisukeinot, etä- ja kotimyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999). Pakottava kuluttajan hyväksi.
 
@@ -278,7 +278,7 @@ Suomen kuluttajaoikeus elinkeinonharjoittajan ja kuluttajan välisessä kaupassa
 
 ## Rikosoikeus (aineellinen)
 
-`/plugin install rikosoikeus@claude-for-legal-finland` – [`./rikosoikeus/`](./rikosoikeus/)
+`/plugin install rikosoikeus@agent-skills-for-finnish-law` – [`./rikosoikeus/`](./rikosoikeus/)
 
 Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.
 
@@ -290,7 +290,7 @@ Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellyt
 
 ## Kaksikielisyys (FI/SV)
 
-`/plugin install kaksikielisyys@claude-for-legal-finland` – [`./kaksikielisyys/`](./kaksikielisyys/)
+`/plugin install kaksikielisyys@agent-skills-for-finnish-law` – [`./kaksikielisyys/`](./kaksikielisyys/)
 
 Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.
 

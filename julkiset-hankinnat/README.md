@@ -7,7 +7,7 @@ tarjouspyyntö ja tarjous sekä hankintapäätös ja muutoksenhaku.
 > **Luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Kynnysarvot ja määräajat muuttuvat; ne haetaan aina lähteestä. Odotusaika ja
 > valitusajat ovat prekluusiivisia – kalenterivastuu on ihmisellä.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -41,8 +41,8 @@ euromäärät tarkistetaan käytössä lähteestä (Finlex, Hilma, TEM).
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install julkiset-hankinnat@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install julkiset-hankinnat@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

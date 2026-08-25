@@ -8,7 +8,7 @@ perheenjäsenen ja pysyvän oleskelun polut kansalaisuuteen asti.
 > Ulkomaalaislain kokonaisuudistus on valmisteilla ja tulorajat, määräajat ja
 > käsittelyajat muuttuvat tiheään – ne haetaan aina lähteestä (Finlex, migri.fi).
 > Kansainvälisen suojelun asioita tämä plugari ei kata.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -40,8 +40,8 @@ käsittelyajat ja lupatyyppien yksityiskohdat tarkistetaan käytössä
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install ulkomaalaisoikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install ulkomaalaisoikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

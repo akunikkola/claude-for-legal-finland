@@ -6,7 +6,7 @@ Osakeyhtiölain (624/2006) ehdoilla.
 
 > **Luonnokset ja vaiheistukset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Yhtiöoikeudelliset toimet ja rekisteri-ilmoitukset tekee ihminen; veroseikat
-> veroasiantuntijalle. Katso [`CLAUDE.md`](CLAUDE.md).
+> veroasiantuntijalle. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -42,8 +42,8 @@ kommandiittiyhtiöstä (389/1988)**, **osuuskuntalaki (421/2013)** ja **tilintar
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install yhtiooikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install yhtiooikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

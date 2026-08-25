@@ -4,7 +4,7 @@ Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin minkä tahansa lausunno
 näkökulmasta: kunta, kaupunki, kuntayhtymä, virasto, järjestö tai yritys.
 
 > **Lausunto on luonnos, jonka lausunnonantajan vastuuhenkilö tarkistaa ja hyväksyy.**
-> Arvovalinnat jätetään päättäjille. Katso [`CLAUDE.md`](CLAUDE.md).
+> Arvovalinnat jätetään päättäjille. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -27,8 +27,8 @@ käytäntöprofiiliin.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install lausunnot@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install lausunnot@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

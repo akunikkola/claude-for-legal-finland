@@ -4,7 +4,7 @@ Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/17
 vireillepano, todistelu ja muutoksenhaku.
 
 > **Luonnokset ja arviot ovat tarkistettavia – ei oikeudellista neuvontaa eikä arvio
-> menestymisestä.** Toimeksiannon hoitava asianajaja vastaa lopputuloksesta. Katso [`CLAUDE.md`](CLAUDE.md).
+> menestymisestä.** Toimeksiannon hoitava asianajaja vastaa lopputuloksesta. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -36,8 +36,8 @@ muut säädökset (mm. laki välimiesmenettelystä 967/1992) tarkistetaan `juris
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install riidanratkaisu@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install riidanratkaisu@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

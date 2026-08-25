@@ -8,7 +8,7 @@ arvopaperimarkkinasääntely.
 > sijoitusneuvontaa.** Rahoitussääntely on EU-vetoista ja muuttuu nopeasti –
 > säännökset, korkokatot ja kynnysarvot haetaan aina lähteestä. Sisäpiiritiedon
 > väärinkäyttöä tai rahanpesua ei avusteta missään muodossa.
-> Katso [`CLAUDE.md`](CLAUDE.md).
+> Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -42,8 +42,8 @@ käytössä EUR-Lexistä ja Finanssivalvonnan ohjeista.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install pankki-ja-rahoitus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install pankki-ja-rahoitus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

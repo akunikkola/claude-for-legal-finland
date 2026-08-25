@@ -7,7 +7,7 @@ asuin- ja liikehuoneistojen vuokrasuhteet.
 > **Luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
 > Kiinteistön kauppa on määrämuotoinen, reklamaatioajat ovat armottomia ja
 > kiinteistö/asunto-osake-rajanveto ratkaisee sovellettavan lain – nämä on
-> leivottu suojauksiin. Katso [`CLAUDE.md`](CLAUDE.md).
+> leivottu suojauksiin. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -44,8 +44,8 @@ tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install kiinteistot-ja-asuminen@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install kiinteistot-ja-asuminen@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

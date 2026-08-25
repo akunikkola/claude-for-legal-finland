@@ -9,9 +9,9 @@ import { fileURLToPath } from 'node:url';
 
 export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
-export const REPOSITORY = 'https://github.com/akunikkola/claude-for-legal-finland';
-export const MARKETPLACE_NAME = 'legal-for-finland';
-export const MARKETPLACE_DISPLAY_NAME = 'Legal for Finland';
+export const REPOSITORY = 'https://github.com/ragmha/agent-skills-for-finnish-law';
+export const MARKETPLACE_NAME = 'agent-skills-for-finnish-law';
+export const MARKETPLACE_DISPLAY_NAME = 'Agent Skills for Finnish Law';
 
 export function listDirs(dir) {
   if (!existsSync(dir)) return [];

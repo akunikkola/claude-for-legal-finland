@@ -10,7 +10,7 @@ kattaa menettelyn (esitutkinta, pakkokeinot, syyte, asianomistajan asema).
 > **Se ei avusta rikoksen suunnittelussa, tekemisessä eikä peittelyssä** (todisteet,
 > todistajaan vaikuttaminen). Laillisuusperiaate ja syyttömyysolettama ovat
 > lähtökohtia; asteikot ja vanhentumisajat haetaan aina lähteestä. Vakavassa
-> rikosepäilyssä ohjaa pätevän avustajan puoleen. Katso [`CLAUDE.md`](CLAUDE.md).
+> rikosepäilyssä ohjaa pätevän avustajan puoleen. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -39,8 +39,8 @@ käytössä `juristi:oikeustutkimus`-skillillä; rikoslakia muutetaan jatkuvasti
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install rikosoikeus@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install rikosoikeus@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

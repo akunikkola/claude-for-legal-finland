@@ -5,7 +5,7 @@ esityksen laatiminen, rakenne, lakikieli ja valmisteluprosessi. Skillit perustuv
 virallisiin oppaisiin.
 
 > **Jokainen tuotos on valmisteleva luonnos, jonka valmistelusta vastaava taho
-> tarkistaa – ei virallinen säädös eikä oikeudellinen kanta.** Katso [`CLAUDE.md`](CLAUDE.md).
+> tarkistaa – ei virallinen säädös eikä oikeudellinen kanta.** Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -25,8 +25,8 @@ virallisiin oppaisiin.
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install lainvalmistelu@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install lainvalmistelu@agent-skills-for-finnish-law
 ```
 
 Suositus: asenna myös `juristi`-plugari, joka tarjoaa läpileikkaavan oikeustutkimuksen

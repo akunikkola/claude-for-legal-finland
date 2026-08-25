@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Varmistaa, että generoidut tiedostot ovat ajan tasalla työpuussa:
 #  - SKILLS.md (scripts/generate-skills-md.mjs)
-#  - Codex-manifestit (scripts/generate-codex.mjs)
+#  - harnessiadapterit (scripts/generate-codex.mjs): Claude- ja Codex-
+#    markkinapaikat, plugarimanifestit, .mcp.json-kuoret ja openai.yamlit
+# Lähteet ovat marketplace.json, <plugari>/plugin.json ja <plugari>/mcp.json.
 # Sama tarkistus ajetaan CI:ssä (validate.yml, release.yml) ja sen voi ajaa
 # paikallisesti ennen committia: bash scripts/check-generated.sh
 set -euo pipefail
@@ -13,7 +15,9 @@ git diff --exit-code -- SKILLS.md || {
 }
 
 CODEX_PATHS=(
+  .claude-plugin/marketplace.json
   .agents/plugins/marketplace.json
+  '*/.claude-plugin/plugin.json'
   '*/.codex-plugin/plugin.json'
   '*/.codex-plugin/mcp.json'
   '*/.mcp.json'
@@ -22,12 +26,12 @@ CODEX_PATHS=(
 
 node scripts/generate-codex.mjs
 git diff --exit-code -- "${CODEX_PATHS[@]}" || {
-  echo "Codex-manifestit eivät ole ajan tasalla. Aja: node scripts/generate-codex.mjs"
+  echo "Adapterit eivät ole ajan tasalla. Aja: node scripts/generate-codex.mjs"
   exit 1
 }
 untracked="$(git ls-files --others --exclude-standard -- "${CODEX_PATHS[@]}")"
 if [ -n "$untracked" ]; then
-  echo "Codex-generointi loi commitista puuttuvia tiedostoja:"
+  echo "Adapterien generointi loi commitista puuttuvia tiedostoja:"
   echo "$untracked"
   echo "Aja: node scripts/generate-codex.mjs ja lisää tiedostot committiin."
   exit 1

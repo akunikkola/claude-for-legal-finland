@@ -5,7 +5,7 @@ GDPR) ja kansallisen tietosuojalain (1050/2018) mukaan.
 
 > **Arviot, selosteet ja vastausluonnokset ovat tarkistettavia luonnoksia – ei
 > oikeudellista neuvontaa.** Korkean riskin käsittely, arkaluonteiset tiedot ja DPIA:t
-> kuuluvat tietosuojavastaavan/juristin arvioon. Katso [`CLAUDE.md`](CLAUDE.md).
+> kuuluvat tietosuojavastaavan/juristin arvioon. Katso [`AGENTS.md`](AGENTS.md).
 
 ## Skillit
 
@@ -62,8 +62,8 @@ claude mcp add pii-shield --transport stdio -- node /ABSOLUUTTINEN/POLKU/PII-Shi
 ## Asennus
 
 ```
-/plugin marketplace add akunikkola/claude-for-legal-finland
-/plugin install tietosuoja@claude-for-legal-finland
+/plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install tietosuoja@agent-skills-for-finnish-law
 ```
 
 oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).

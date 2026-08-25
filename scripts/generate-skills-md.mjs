@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generoi SKILLS.md — selattava hakemisto kaikista plugareista ja skilleistä.
-// Lukee .claude-plugin/marketplace.json (plugarijärjestys) ja kunkin
+// Lukee marketplace.json (plugarijärjestys) ja kunkin
 // SKILL.md:n frontmatterin. Idempotentti: ylikirjoittaa SKILLS.md:n.
 // Aja: node scripts/generate-skills-md.mjs
 
@@ -15,7 +15,7 @@ function fmValue(file, key) {
 
 const trunc = (s, n = 240) => truncate(s, n);
 
-const mp = readJSON(join(ROOT, '.claude-plugin', 'marketplace.json'));
+const mp = readJSON(join(ROOT, 'marketplace.json'));
 
 let out = `# Skillit\n\n`;
 out += `> Autogeneroitu \`scripts/generate-skills-md.mjs\`-skriptillä \`.claude-plugin/marketplace.json\`:sta\n`;
