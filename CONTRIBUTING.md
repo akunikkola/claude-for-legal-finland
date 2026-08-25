@@ -53,6 +53,9 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
 6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
    - `node scripts/check-output-language.mjs`
+   - `node scripts/check-safety-mechanisms.mjs`
+   - `node scripts/check-citations.mjs`
+   - `node scripts/check-descriptions.mjs`
    - `node --test tests/*.test.mjs`
 7. **Jos muutit skillin `description`-kenttää**, aja triggeritestit
    (`bash evals/run-trigger-tests.sh`, ks. [evals/README.md](evals/README.md)) —

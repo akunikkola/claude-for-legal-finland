@@ -1,0 +1,631 @@
+{
+  "description": "Per-file counts of the safety mechanisms that carry this repository's safety properties: disclaimers, inline certainty flags, risk colour coding, three-tier certainty markers and human-review gates. Matched by Finnish OR English form, so the count survives translation while a deletion does not. AGENTS.md: \"Every disclaimer stays. Translate, never delete.\" Regenerate only when a mechanism is INTENTIONALLY removed, and say why in the commit.",
+  "takenAt": "2026-08-25",
+  "files": {
+    "administrative-law/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "administrative-law/README.md": {
+      "certainty-tier": 1
+    },
+    "administrative-law/skills/administrative-appeal/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "administrative-law/skills/administrative-decision/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "administrative-law/skills/public-access-and-information-requests/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "human-review-gate": 1
+    },
+    "administrative-law/templates/request-for-rectification.md": {
+      "certainty-tier": 1
+    },
+    "agent-recipes/precedent-watch/README.md": {
+      "certainty-tier": 1
+    },
+    "agent-recipes/README.md": {
+      "certainty-tier": 1
+    },
+    "agent-recipes/statute-watch/README.md": {
+      "certainty-tier": 1
+    },
+    "AGENTS.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 1,
+      "human-review-gate": 1
+    },
+    "ai-regulation/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "ai-regulation/skills/ai-classification/references/ai-act-fundamentals.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "ai-regulation/skills/ai-classification/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "ai-regulation/skills/ai-compliance/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "ai-regulation/skills/ai-obligations/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "banking-and-finance/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "banking-and-finance/README.md": {
+      "certainty-tier": 1
+    },
+    "banking-and-finance/skills/anti-money-laundering/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "banking-and-finance/skills/financing-and-collateral/references/finance-fundamentals.md": {
+      "certainty-flag": 1
+    },
+    "banking-and-finance/skills/financing-and-collateral/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "banking-and-finance/skills/securities-markets/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 5
+    },
+    "bilingual-legal-language/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "bilingual-legal-language/README.md": {
+      "certainty-tier": 1
+    },
+    "bilingual-legal-language/skills/language-rights-and-obligations/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "bilingual-legal-language/skills/legal-translation/references/bilingual-language-fundamentals.md": {
+      "certainty-tier": 1
+    },
+    "bilingual-legal-language/skills/legal-translation/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 1
+    },
+    "company-law/AGENTS.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 3,
+      "human-review-gate": 1
+    },
+    "company-law/README.md": {
+      "certainty-tier": 2
+    },
+    "company-law/skills/corporate-governance/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 2
+    },
+    "company-law/skills/corporate-transactions/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "company-law/skills/shareholders-agreement/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "risk-colour": 2
+    },
+    "competition-law/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "competition-law/README.md": {
+      "certainty-tier": 1
+    },
+    "competition-law/skills/competition-compliance/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "competition-law/skills/merger-control/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 6
+    },
+    "competition-law/skills/restrictive-practices/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "consumer-law/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "consumer-law/README.md": {
+      "certainty-tier": 1
+    },
+    "consumer-law/skills/consumer-disputes-and-collection/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "consumer-law/skills/consumer-sales-liability/references/consumer-law-fundamentals.md": {
+      "certainty-tier": 1
+    },
+    "consumer-law/skills/consumer-sales-liability/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "consumer-law/skills/distance-selling-and-withdrawal/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "consumer-law/templates/complaint-notice.md": {
+      "certainty-tier": 1
+    },
+    "consumer-law/templates/withdrawal-notice.md": {
+      "certainty-tier": 1
+    },
+    "contracts/AGENTS.md": {
+      "certainty-flag": 1,
+      "risk-colour": 1,
+      "certainty-tier": 3,
+      "human-review-gate": 1
+    },
+    "contracts/README.md": {
+      "risk-colour": 3,
+      "certainty-tier": 1
+    },
+    "contracts/skills/contract-drafting/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "risk-colour": 1,
+      "certainty-tier": 2
+    },
+    "contracts/skills/contract-review/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "risk-colour": 6,
+      "certainty-tier": 1,
+      "human-review-gate": 1
+    },
+    "CONTRIBUTING.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 1,
+      "human-review-gate": 1
+    },
+    "criminal-law/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "criminal-law/README.md": {
+      "certainty-tier": 2
+    },
+    "criminal-law/skills/criminal-liability-basics/references/criminal-law-fundamentals.md": {
+      "certainty-tier": 1
+    },
+    "criminal-law/skills/criminal-liability-basics/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 1
+    },
+    "criminal-law/skills/principal-offences/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 1
+    },
+    "criminal-law/skills/sentencing/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "criminal-procedure/AGENTS.md": {
+      "certainty-tier": 2
+    },
+    "criminal-procedure/README.md": {
+      "certainty-tier": 1
+    },
+    "criminal-procedure/skills/charges-and-response/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "criminal-procedure/skills/injured-party-rights/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "data-protection/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 2
+    },
+    "data-protection/README.md": {
+      "certainty-tier": 1
+    },
+    "data-protection/skills/data-protection-assessment/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "data-protection/skills/data-subject-requests/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "data-protection/skills/privacy-notice/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 2
+    },
+    "dispute-resolution/agents/opposing-counsel.md": {
+      "certainty-flag": 1
+    },
+    "dispute-resolution/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "dispute-resolution/README.md": {
+      "certainty-tier": 1
+    },
+    "dispute-resolution/skills/appeal-against-judgment/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3,
+      "certainty-tier": 2
+    },
+    "dispute-resolution/skills/damages/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "dispute-resolution/skills/evidence/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "dispute-resolution/skills/statement-of-claim/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 2
+    },
+    "dispute-resolution/templates/statement-of-claim.md": {
+      "certainty-tier": 2
+    },
+    "employment-law/AGENTS.md": {
+      "certainty-flag": 2,
+      "risk-colour": 1,
+      "certainty-tier": 3,
+      "human-review-gate": 1
+    },
+    "employment-law/README.md": {
+      "certainty-tier": 1
+    },
+    "employment-law/skills/change-negotiations/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "employment-law/skills/employment-contract/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "employment-law/skills/termination-of-employment/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "risk-colour": 2
+    },
+    "environment-and-planning/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 2
+    },
+    "environment-and-planning/README.md": {
+      "certainty-tier": 2
+    },
+    "environment-and-planning/skills/environmental-liability/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "environment-and-planning/skills/environmental-permits-and-supervision/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "environment-and-planning/skills/land-use-planning-and-construction/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "evals/README.md": {
+      "certainty-flag": 2
+    },
+    "examples/fixed-term-employment-ending/04-assessment-criteria.md": {
+      "certainty-flag": 2
+    },
+    "examples/ma-due-diligence/03-assessment-criteria.md": {
+      "certainty-flag": 1
+    },
+    "examples/residential-sale-defect/04-assessment-criteria.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "family-and-inheritance/AGENTS.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 3,
+      "human-review-gate": 2
+    },
+    "family-and-inheritance/README.md": {
+      "certainty-tier": 1
+    },
+    "family-and-inheritance/skills/child-status-and-maintenance/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "family-and-inheritance/skills/guardianship-and-powers-of-attorney/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "family-and-inheritance/skills/inheritance-and-wills/references/inheritance-code-fundamentals.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "family-and-inheritance/skills/inheritance-and-wills/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 6
+    },
+    "family-and-inheritance/skills/marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "family-and-inheritance/skills/marriage-and-division-of-property/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 4
+    },
+    "family-and-inheritance/templates/will.md": {
+      "certainty-tier": 1
+    },
+    "immigration-law/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 2
+    },
+    "immigration-law/README.md": {
+      "certainty-tier": 1
+    },
+    "immigration-law/skills/employer-obligations/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "immigration-law/skills/eu-and-family-based-residence/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 7,
+      "certainty-tier": 1
+    },
+    "immigration-law/skills/work-based-residence-permits/references/immigration-law-fundamentals.md": {
+      "certainty-flag": 1
+    },
+    "immigration-law/skills/work-based-residence-permits/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 6
+    },
+    "insolvency/AGENTS.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "insolvency/README.md": {
+      "certainty-tier": 1
+    },
+    "insolvency/skills/bankruptcy-proceedings/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "insolvency/skills/debt-collection/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "insolvency/skills/insolvency-assessment/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3,
+      "certainty-tier": 1
+    },
+    "intellectual-property/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 2
+    },
+    "intellectual-property/README.md": {
+      "certainty-tier": 1
+    },
+    "intellectual-property/skills/copyright/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 1
+    },
+    "intellectual-property/skills/trade-secrets/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "human-review-gate": 1
+    },
+    "intellectual-property/skills/trademarks-and-trade-names/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "legal-core/agents/deadline-scanner.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 1
+    },
+    "legal-core/agents/source-checker.md": {
+      "certainty-tier": 10
+    },
+    "legal-core/AGENTS.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 3,
+      "human-review-gate": 2
+    },
+    "legal-core/README.md": {
+      "certainty-tier": 3
+    },
+    "legal-core/skills/case-summarization/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 1
+    },
+    "legal-core/skills/document-review/SKILL.md": {
+      "disclaimer": 2,
+      "certainty-tier": 4
+    },
+    "legal-core/skills/engagement-intake/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 3
+    },
+    "legal-core/skills/legal-research/references/tools.md": {
+      "certainty-flag": 1
+    },
+    "legal-core/skills/legal-research/SKILL.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 1,
+      "human-review-gate": 1
+    },
+    "legal-core/skills/legal-writing/SKILL.md": {
+      "certainty-tier": 1
+    },
+    "legal-core/skills/plain-language/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-tier": 1
+    },
+    "legal-core/skills/practice-profile/SKILL.md": {
+      "disclaimer": 1
+    },
+    "legal-core/skills/tabular-review/references/column-templates.md": {
+      "certainty-tier": 1
+    },
+    "legal-core/skills/tabular-review/SKILL.md": {
+      "disclaimer": 2,
+      "certainty-tier": 3
+    },
+    "legislative-consultation/AGENTS.md": {
+      "certainty-tier": 2
+    },
+    "legislative-consultation/skills/consultation-statement-assistant/SKILL.md": {
+      "disclaimer": 1
+    },
+    "legislative-drafting/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/references/enacting-formula.md": {
+      "certainty-tier": 6
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/references/types-of-statutes.md": {
+      "certainty-tier": 1
+    },
+    "legislative-drafting/skills/legislative-process-guide/references/decision-making-and-parliament.md": {
+      "certainty-tier": 2
+    },
+    "public-procurement/AGENTS.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "public-procurement/README.md": {
+      "certainty-tier": 1
+    },
+    "public-procurement/skills/award-decision-and-remedies/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 4
+    },
+    "public-procurement/skills/procurement-planning/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "public-procurement/skills/tender-documents-and-bids/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "human-review-gate": 1
+    },
+    "QUICKSTART.md": {
+      "certainty-tier": 1
+    },
+    "README.md": {
+      "certainty-tier": 1
+    },
+    "real-estate-and-housing/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 2
+    },
+    "real-estate-and-housing/README.md": {
+      "certainty-tier": 1
+    },
+    "real-estate-and-housing/skills/housing-company/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "human-review-gate": 1
+    },
+    "real-estate-and-housing/skills/lease-agreements/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2,
+      "certainty-tier": 1
+    },
+    "real-estate-and-housing/skills/real-property-conveyance/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "real-estate-and-housing/skills/residential-property-sale/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "references/citation-style.md": {
+      "certainty-flag": 3,
+      "certainty-tier": 5,
+      "human-review-gate": 1
+    },
+    "references/firm-adoption.md": {
+      "certainty-flag": 1,
+      "certainty-tier": 3
+    },
+    "references/glossary.md": {
+      "disclaimer": 3,
+      "certainty-flag": 8,
+      "risk-colour": 5,
+      "certainty-tier": 5,
+      "human-review-gate": 2
+    },
+    "references/liability-and-security.md": {
+      "certainty-tier": 3
+    },
+    "references/template-standards.md": {
+      "certainty-tier": 2
+    },
+    "taxation/AGENTS.md": {
+      "certainty-flag": 2,
+      "certainty-tier": 2,
+      "human-review-gate": 1
+    },
+    "taxation/README.md": {
+      "certainty-tier": 1
+    },
+    "taxation/skills/corporate-taxation/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 2
+    },
+    "taxation/skills/tax-procedure-and-appeals/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    },
+    "taxation/skills/value-added-tax/SKILL.md": {
+      "disclaimer": 1,
+      "certainty-flag": 3
+    }
+  }
+}

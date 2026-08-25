@@ -69,6 +69,16 @@ schema — an `mcpServers` map of stdio (`command`, `args`) or http (`url`) entr
 `mcp.json` holds. `.mcp.json` exists only because Claude Code looks for that exact filename at
 plugin root, so it is generated rather than authored.
 
+**Why keep the plugin adapters at all?** The Agent Skills spec needs none of them — a conforming
+harness works by copying skill directories. The adapters are kept for one reason that is not
+convenience: `.mcp.json` is what wires Claude Code to the oik.ai/Finlex MCP server. That connection
+is the premise of this collection — "never quote a statute from memory when it can be verified."
+Without it a user installs the skills, gets no source verification, and the model silently falls
+back to memory, which looks like it is working. The adapters are also generated, so the marginal
+cost of keeping them is one script rather than 150 hand-maintained files. Supporting a third
+harness means adding a function to `scripts/generate-adapters.mjs`, not restructuring the
+repository.
+
 ---
 
 ## Commands

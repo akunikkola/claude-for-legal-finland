@@ -29,6 +29,9 @@ jobs:
       - name: Tarkista tuotoskielen ilmoitukset
         run: node scripts/check-output-language.mjs
 
+      - name: Tarkista turvamekanismien eheys
+        run: node scripts/check-safety-mechanisms.mjs
+
       - name: Tarkista viittausten eheys
         run: node scripts/check-citations.mjs
 
