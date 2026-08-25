@@ -16,17 +16,27 @@ description: >
 
 Tämä skill auttaa nimen ja merkin suojastrategiassa, rekisteröinnin
 valmistelussa ja loukkaustilanteissa. Perusteet ja keinovalikoima:
-`references/ipr-perusteet.md` — lue se tehtävän alussa.
+`references/ip-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. **Skill ei näe rekistereitä** eikä koskaan
 > vahvista, että nimi tai merkki on vapaa — se tuottaa hakustrategian
-> ihmiselle. Katso `immateriaalioikeus/CLAUDE.md`.
+> ihmiselle. Katso `intellectual-property/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae tavaramerkkilain (544/2019) ja toiminimilain (128/1979) sovellettavat
-säännökset, määräajat ja menettelyt **`juristi:oikeustutkimus`-skillillä**.
+säännökset, määräajat ja menettelyt **`legal-core:legal-research`-skillillä**.
 Älä viittaa vanhaan tavaramerkkilakiin (7/1964) voimassa olevana.
 Oikeuskäytäntö: markkinaoikeus (MAO), KKO ja EU-tavaramerkissä EUIPO:n
 valituslautakunnat ja EU-tuomioistuin.
@@ -69,7 +79,7 @@ kokonaisharkintaa.
 
 **Oma oikeus loukattu:** dokumentoi loukkaus → varmista oman oikeuden
 voimassaolo ja kattavuus → keinot järjestyksessä
-(`references/ipr-perusteet.md`): varoituskirje → neuvottelu/lisenssi →
+(`references/ip-fundamentals.md`): varoituskirje → neuvottelu/lisenssi →
 kanne markkinaoikeudessa (kielto, hyvitys, vahingonkorvaus,
 turvaamistoimi). Varoituskirjeluonnos: yksilöi oikeus, loukkaus, vaatimus
 ja määräaika — vältä liioiteltuja uhkauksia.

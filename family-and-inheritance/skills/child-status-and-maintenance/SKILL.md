@@ -17,12 +17,22 @@ description: >
 
 Tämä skill jäsentää lapsen huoltoa, asumista, tapaamista ja elatusta
 koskevat järjestelyt **lapsen edun** lähtökohdasta. Perheoikeuden
-kartta ja käsitteet: `../avioliitto-ja-ositus/references/perhe-ja-perinto-perusteet.md`.
+kartta ja käsitteet: `../marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ja laskelmat ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Ratkaiseva peruste on lapsen etu, ja
 > turvallisuushuoli käy järjestelyjen edelle. Katso
-> `perhe-ja-perinto/CLAUDE.md`.
+> `family-and-inheritance/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Turvallisuus ensin
 
@@ -34,7 +44,7 @@ ehdoton — se ei jousta kummankaan vanhemman toiveiden vuoksi.
 
 ## Tarkista laki ja oikeuskäytäntö lähteestä
 
-Hae lakien 361/1983 ja 704/1975 säännökset **`juristi:oikeustutkimus`-skillillä**.
+Hae lakien 361/1983 ja 704/1975 säännökset **`legal-core:legal-research`-skillillä**.
 Lapsen edun arviointia, vuoroasumista ja tapaamisen toteuttamista
 koskeva KKO-käytäntö lähteestä. Elatusavun laskennassa käytetään
 **oikeusministeriön ohjetta elatusavun suuruuden arvioimiseksi** —

@@ -20,7 +20,7 @@ vaatii, ilman että olennaisia varauksia katoaa.
 
 > **Vastuuvapaus:** selkokielistys on tarkistettava luonnos — ei
 > oikeudellista neuvontaa. Yksinkertaistaminen ei saa muuttua
-> virheelliseksi neuvoksi. Katso `juristi/CLAUDE.md`.
+> virheelliseksi neuvoksi. Katso `legal-core/AGENTS.md`.
 
 ## Periaate: selkeämpi, ei väärä
 
@@ -53,7 +53,7 @@ sanotaan myös selkokielellä — yksinkertaistettu varmuus on harhaanjohtava.
 
 Säilytä juridisesti ratkaisevat erot (esim. "saa" vs. "on velvollinen",
 "voidaan" vs. "on"). Jos pykälä tai ehto haetaan lähteestä, käytä
-`oikeustutkimus`-skilliä — älä selitä muistinvaraista sisältöä varmana.
+`legal-research`-skilliä — älä selitä muistinvaraista sisältöä varmana.
 
 ## Vaihe 3: Kirjoita selkeästi
 
@@ -63,7 +63,7 @@ Säilytä juridisesti ratkaisevat erot (esim. "saa" vs. "on velvollinen",
   sijaan, kun se sopii.
 - **Jäsennä**: lyhyt yhteenveto ensin, sitten "mitä sinun pitää tehdä",
   "mihin mennessä", "mitä jos et toimi".
-- Noudata suomen kielen oikeinkirjoitusta → `juristi:suomen-kieli`.
+- Noudata suomen kielen oikeinkirjoitusta → `legal-core:finnish-language`.
 - Säilytä tarvittaessa alkuperäinen pykälä- tai ehtoviittaus sulkeissa,
   jotta lukija löytää lähteen.
 
@@ -86,7 +86,7 @@ oikeellisuuden kustannuksella.**
 - **Ei poista olennaisia ehtoja, varauksia tai määräaikoja** selkeyden
   nimissä.
 - **Ei muuta selitystä neuvoksi** ilman juristin vastuuta.
-- **Ei selitä muistinvaraista lainsisältöä varmana** → `oikeustutkimus`.
+- **Ei selitä muistinvaraista lainsisältöä varmana** → `legal-research`.
 - **Ei tuota virallista saavutettavaa selkokieltä** ilman sen
   kriteerien noudattamista.
 

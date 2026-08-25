@@ -24,12 +24,12 @@ Lähteestä (Finlex) varmistettu: **laki oikeudenkäynnistä rikosasioissa
 **oikeusapulaki (257/2002)**, **vahingonkorvauslaki (412/1974)**,
 **rikosvahinkolaki (1204/2005)** ja **laki lähestymiskiellosta (898/1998)**.
 Tunnusmerkistöt, rangaistusasteikot, vanhentumisajat ja pakkokeinojen
-edellytykset tarkistetaan aina käytössä `juristi:oikeustutkimus`-skillillä.
+edellytykset tarkistetaan aina käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (KKO:n ennakkopäätökset),
-  `toimeksianto` (esteellisyys, määräaikaskannaus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (KKO:n ennakkopäätökset),
+  `engagement-intake` (esteellisyys, määräaikaskannaus) ja `document-review`.
 - **`dispute-resolution`-plugari** – todistelun yleiset opit (OK 17 luku) ja
   tuomion muutoksenhaun mekaniikka.
 - **`data-protection`-plugari** – rikostuomioihin ja rikkomuksiin liittyvien

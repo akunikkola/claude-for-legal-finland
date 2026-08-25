@@ -29,8 +29,8 @@ ryhmäpoikkeusasetukset (EUR-Lex; voimassa olevat versiot tarkistetaan käytöss
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (MAO:n, KHO:n ja EU-tuomioistuimen
-  käytäntö) ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (MAO:n, KHO:n ja EU-tuomioistuimen
+  käytäntö) ja `engagement-intake`.
 - **`company-law`-plugari** – yrityskauppavalvonta osana yritysjärjestelyä.
 - **`public-procurement`-plugari** – tarjouskartellit ja tarjousyhteistyön rajat.
 - **`contracts`-plugari** – jakelu-, lisenssi- ja yhteistyösopimusten

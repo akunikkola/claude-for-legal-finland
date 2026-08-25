@@ -17,18 +17,28 @@ description: >
 
 Tämä skill jäsentää yrityskauppavalvonnan kilpailulain (948/2011)
 4 luvun (otsikko vahvistettu) ja EU:n sulautuma-asetuksen mukaan.
-Perusteet: `../kilpailunrajoitukset/references/kilpailuoikeus-perusteet.md`.
+Perusteet: `../restrictive-practices/references/competition-law-fundamentals.md`.
 Transaktion kokonaisuus (DD, kauppakirja, closing) →
-`yhtiooikeus:yritysjarjestelyt`; tämä skill kattaa kilpailuosion.
+`company-law:corporate-transactions`; tämä skill kattaa kilpailuosion.
 
 > **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. **Liikevaihtorajat muuttuivat viimeksi 2023 —
-> älä käytä muistinvaraisia rajoja.** Katso `kilpailuoikeus/CLAUDE.md`.
+> älä käytä muistinvaraisia rajoja.** Katso `competition-law/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista rajat ja menettely lähteestä
 
 Hae kilpailulain 4 luvun säännökset ja **voimassa olevat
-liikevaihtorajat** **`juristi:oikeustutkimus`-skillillä** ja KKV:n
+liikevaihtorajat** **`legal-core:legal-research`-skillillä** ja KKV:n
 ohjeista `[tarkista]`. EU-tason rajat sulautuma-asetuksesta
 (EUR-Lex). KKV:n ratkaisukäytäntö ja MAO/KHO-linjaukset lähteestä.
 
@@ -82,7 +92,7 @@ ohjeista `[tarkista]`. EU-tason rajat sulautuma-asetuksesta
 - **Kielto**: MAO voi KKV:n esityksestä kieltää kaupan — harvinaista
   mutta mahdollista; muutoksenhaku KHO:hon.
 - Kauppakirjan ehdollisuus: clearance closing-ehtona →
-  `yhtiooikeus:yritysjarjestelyt`.
+  `company-law:corporate-transactions`.
 
 ## Liitännäisrajoitukset
 
@@ -90,7 +100,7 @@ Kauppaan liittyvät kilpailukiellot ja muut liitännäisrajoitukset
 (myyjän kilpailukielto, rekrytointikiellot, toimitussopimukset)
 arvioidaan suoraan liitännäisrajoitusperiaatteiden mukaan — kestot ja
 laajuudet komission tiedonannosta `[tarkista]`; ylimenevä osa on
-tavallista kilpailunrajoitusarviointia → `kilpailunrajoitukset`.
+tavallista kilpailunrajoitusarviointia → `restrictive-practices`.
 
 ## Mitä tämä skill EI tee
 

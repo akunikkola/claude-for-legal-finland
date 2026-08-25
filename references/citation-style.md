@@ -13,7 +13,7 @@ säädökseen, oikeuskäytäntöön tai esitöihin.
 
 Yksityiskohtaiset suomen kielen ja pykäläviittausten säännöt ovat
 `legal-core`-plugarissa: [`legal-core/skills/legal-writing/references/citations.md`](../legal-core/skills/legal-writing/references/citations.md)
-ja [`.../lahteet.md`](../legal-core/skills/legal-writing/references/sources.md). Tämä
+ja [`.../sources.md`](../legal-core/skills/legal-writing/references/sources.md). Tämä
 tiedosto on niiden yläpuolella oleva **yhteinen minimistandardi**.
 
 ---

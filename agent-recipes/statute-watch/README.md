@@ -18,7 +18,7 @@ korvasi MRL:n rakentamisosan, ja LVV-uudistus 2026).
 > **Katvealue:** nimivertailu ei huomaa kumoamista — kumotun lain nimi ei
 > muutu Finlexissä (vrt. isyyslaki 11/2015, jonka vanhemmuuslaki 775/2022
 > kumosi nimeä muuttamatta). Sen kattaa
-> [`viittausauditointi`](../citation-audit/)-resepti.
+> [`citation-audit`](../citation-audit/)-resepti.
 
 ## Ohjaustapahtuma (esimerkki)
 
@@ -55,7 +55,7 @@ korvasi MRL:n rakentamisosan, ja LVV-uudistus 2026).
 
 - **Ei tulkitse muutoksen sisältöä** — se kertoo, että säännös muuttui ja
   milloin; mitä muutos tarkoittaa, arvioi ihminen (tai erillinen
-  `juristi:oikeustutkimus`-istunto lähteestä).
+  `legal-core:legal-research`-istunto lähteestä).
 - **Ei muokkaa pohjia, ohjeita tai skillejä itse** — se ehdottaa
   tarkistusta.
 - **Ei keksi säädös- tai HE-numeroita.** Vain MCP:n palauttamat numerot

@@ -2,7 +2,7 @@
 
 Tiivistelmä riita-asian ratkaisemisesta yleisissä tuomioistuimissa. **Tarkista pykälien
 voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
-`juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ennen viittausta.**
+`legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
 
 ## Tuomioistuinrakenne (yleiset tuomioistuimet)
 - **Käräjäoikeus** — ensimmäinen aste riita- ja rikosasioissa.
@@ -21,7 +21,7 @@ laissa 665/2005.
   KKO:hon ja valituslupa (**30 luku**).
 - **Tuomioistuinlaki (673/2016)** — tuomioistuimet ja tuomarit.
 
-**Tarkista säädösnumero `oikeustutkimus`-skillillä ennen viittausta:**
+**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
 - **Laki oikeudenkäynnistä rikosasioissa (ROL)** — rikosprosessi (tämä plugari keskittyy riita-asioihin).
 - **Laki välimiesmenettelystä (967/1992)** — välimiesmenettely (ks. ADR alla).
 - Vanhentumislainsäädäntö (esim. velan vanhentuminen) — kanteen nostamisen määräajat.
@@ -46,6 +46,6 @@ laissa 665/2005.
 - Punnitse aina, onko sovinto tai ADR asiakkaan etu ennen kannetta.
 
 ## Oikeuskäytäntö
-Hae relevantit ennakkopäätökset `oikeustutkimus`-skillillä (court "Korkein oikeus",
+Hae relevantit ennakkopäätökset `legal-research`-skillillä (court "Korkein oikeus",
 "Hovioikeudet"). Tunnukset: KKO:2024:xx; hovioikeuden tuomio yksilöidään tuomioistuimen,
 päivämäärän ja diaarinumeron mukaan.

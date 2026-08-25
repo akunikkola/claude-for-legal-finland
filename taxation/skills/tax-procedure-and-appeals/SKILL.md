@@ -18,17 +18,27 @@ description: >
 
 Tämä skill jäsentää verotusmenettelyn vaiheet ja laatii muutoksenhaun
 asiakirjaluonnokset. Perusteet ja muutoksenhaun portaat:
-`references/verotus-perusteet.md` — lue se tehtävän alussa.
+`references/tax-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei veroneuvontaa.
 > Määräajat ja euromäärät haetaan lähteestä; kalenterivastuu ja
-> ilmoitusvastuu ovat ihmisellä. Katso `verotus/CLAUDE.md`.
+> ilmoitusvastuu ovat ihmisellä. Katso `taxation/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja määräajat lähteestä
 
 Hae VML:n (1558/1995) sovellettavat säännökset ja **erityisesti
 määräajat** (oikaisuvaatimus VML 64 §, valitusajat, Verohallinnon
-muutosvaltuudet) **`juristi:oikeustutkimus`-skillillä**. Verovuosi
+muutosvaltuudet) **`legal-core:legal-research`-skillillä**. Verovuosi
 ratkaisee sovellettavan version — tarkista, minkä vuoden verotuksesta on
 kyse. KHO:n vuosikirjakäytäntö haetaan lähteestä tunnuksineen.
 
@@ -76,7 +86,7 @@ varaudu vastapuoleen.
 
 ## Vaihe 4: Valitus hallinto-oikeuteen ja KHO:hon
 
-- Hallintoprosessin yleiset opit: `hallinto-oikeus:muutoksenhaku`
+- Hallintoprosessin yleiset opit: `administrative-law:administrative-appeal`
   (808/2019). Tämä skill tuo verospesifit osat: vaatimusten
   veroperusteinen yksilöinti, näyttötaakan jako, KHO:n
   valituslupaperusteet verotuksessa.

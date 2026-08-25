@@ -17,15 +17,22 @@ description: >
 
 Tämä skill jäsentää liikesalaisuuden suojan ja loukkaustilanteet
 liikesalaisuuslain (595/2018) mukaan. Perusteet:
-`../tavaramerkki-ja-toiminimi/references/ipr-perusteet.md`.
+`../trademarks-and-trade-names/references/ip-fundamentals.md`.
 
 > **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Katso `immateriaalioikeus/CLAUDE.md`.
+> oikeudellista neuvontaa. Katso `intellectual-property/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae liikesalaisuuslain määritelmät, loukkaussäännökset ja oikeuskeinot
-**`juristi:oikeustutkimus`-skillillä**; työntekijäulottuvuudessa myös
+**`legal-core:legal-research`-skillillä**; työntekijäulottuvuudessa myös
 työsopimuslain lojaliteetti- ja kilpailusäännökset sekä rikoslain
 yritysvakoilua ja yrityssalaisuuden rikkomista koskevat säännökset
 (tarkista lähteestä).
@@ -58,7 +65,7 @@ Tuota organisaatiolle tarkistuslista ja dokumentaatiopohja:
 - **Sopimukset** — NDA:t (kumppanit, neuvottelut, DD), työsopimusten
   salassapitoehdot (kesto myös työsuhteen jälkeen — kohtuullisuus),
   alihankkijaketju. Lausekemekaniikka:
-  `sopimukset:sopimuksen-laatiminen`.
+  `contracts:contract-drafting`.
 - **Prosessit** — perehdytys, lähtötarkistuslista (laitteet, pääsyt,
   muistutus velvoitteista), tietoturva.
 - **Strategiavalinta** — liikesalaisuus vs. patentointi: patentti
@@ -91,7 +98,7 @@ Tuota organisaatiolle tarkistuslista ja dokumentaatiopohja:
 Yleisin käytännön tapaus — käy läpi molemmista näkökulmista:
 
 - **Työnantaja**: mitä tietoa henkilöllä oli, mitkä sopimusehdot
-  sitovat (salassapito, kilpailukielto → `tyooikeus:tyosopimus`),
+  sitovat (salassapito, kilpailukielto → `employment-law:employment-contract`),
   lähtötarkistus tehty?, todisteet ennen syytöksiä.
 - **Työntekijä/uusi työnantaja**: ammattitaito vs. liikesalaisuus
   -rajanveto, mitä saa käyttää, riskien minimointi uudessa roolissa

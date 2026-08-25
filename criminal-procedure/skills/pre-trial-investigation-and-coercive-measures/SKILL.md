@@ -17,19 +17,29 @@ description: >
 
 Tämä skill jäsentää esitutkintavaiheen ja pakkokeinotilanteet avustajan
 näkökulmasta. Perusteet, prosessikaari ja pakkokeinokartta:
-`references/rikosprosessi-perusteet.md` — lue se tehtävän alussa.
+`references/criminal-procedure-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** tuotokset ovat avustajan työn tukea — ei
 > puolustautumisohjeita ilman avustajaa. Jos käyttäjä on itse epäiltynä
 > ilman avustajaa: **ensimmäinen neuvo on hankkia avustaja ennen
 > kuulustelua** (oikeusapu 257/2002; puolustajan määrääminen ROL:n
-> mukaan). Katso `rikosprosessi/CLAUDE.md` — erityisesti negatiivirajaus
+> mukaan). Katso `criminal-procedure/AGENTS.md` — erityisesti negatiivirajaus
 > ja itsekriminointisuoja.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae ETL:n ja PKL:n säännökset (kuulustelun menettely, pakkokeinojen
-edellytykset, määräajat) **`juristi:oikeustutkimus`-skillillä**. Epäillyn
+edellytykset, määräajat) **`legal-core:legal-research`-skillillä**. Epäillyn
 rikoksen tunnusmerkistö ja asteikko haetaan rikoslaista (39/1889)
 lähteestä — asteikko vaikuttaa pakkokeinojen käytettävyyteen.
 
@@ -40,7 +50,7 @@ lähteestä — asteikko vaikuttaa pakkokeinojen käytettävyyteen.
   todistajana kuultavalla ei ole samoja oikeuksia).
 - **Missä vaiheessa tutkinta on?** Vapaudenmenetys käynnissä?
   Vangitsemiskäsittely tulossa `[ajat — tarkista lähteestä]`?
-- **Määräajat ja kiireellisyys** → `juristi:toimeksianto`
+- **Määräajat ja kiireellisyys** → `legal-core:engagement-intake`
   (määräaikaskannaus, esteellisyysmuistilista — useamman epäillyn
   edustaminen vaatii eturistiriita-arvion).
 
@@ -53,7 +63,7 @@ Jäsennä avustajalle (älä rakenna kertomusta päämiehen puolesta):
 - **Linjavalinta on päämiehen ja avustajan** — kertomus, vaikeneminen
   tai osittainen lausuma; skill listaa kunkin oikeudelliset seuraukset
   (mm. tunnustuksen vaikutus, ks. tuomioesitys →
-  `syyte-ja-vastaus`).
+  `charges-and-response`).
 - **Mitä EI tehdä**: kertomusten sovittaminen muiden kanssa, todisteisiin
   koskeminen, yhteydenotot todistajiin — kieltäydy avustamasta näissä ja
   kerro rikosoikeudellinen riski.
@@ -95,7 +105,7 @@ Kun pakkokeino on käytetty tai uhkaa:
 - Rikosilmoituksen täydentäminen ja yksilöinti; asianomistajan
   kuulusteluun valmistautuminen.
 - **Vaatimusten varhainen kirjaaminen**: korvausvaatimusten perusteet ja
-  pyyntö syyttäjälle vaatimuksen ajamisesta → `asianomistajan-asema`.
+  pyyntö syyttäjälle vaatimuksen ajamisesta → `injured-party-rights`.
 - Avustajan ja tukihenkilön määräämisen edellytykset lähteestä.
 
 ## Mitä tämä skill EI tee

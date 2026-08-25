@@ -1,7 +1,7 @@
 {
   "description": "Single source of truth for the Finnish -> English rename. Consumed by scripts/apply-rename.mjs (git mv + reference rewriting) and by scripts/check-upstream-drift.mjs (mapping upstream paths onto fork paths). Rules are applied by longest-prefix match, so a file rule always wins over its parent directory rule.",
   "forkedFrom": {
-    "repository": "https://github.com/akunikkola/agent-skills-for-finnish-law",
+    "repository": "https://github.com/akunikkola/claude-for-legal-finland",
     "commit": "6294330"
   },
   "counts": {
@@ -11,22 +11,22 @@
   },
   "identifiers": [
     {
-      "from": "agent-skills-for-finnish-law",
+      "from": "claude-for-legal-finland",
       "to": "agent-skills-for-finnish-law",
       "note": "marketplace id"
     },
     {
-      "from": "agent-skills-for-finnish-law",
+      "from": "legal-for-finland",
       "to": "agent-skills-for-finnish-law",
       "note": "stale Codex id — was already inconsistent with marketplace.json"
     },
     {
-      "from": "Agent Skills for Finnish Law",
+      "from": "Legal for Finland",
       "to": "Agent Skills for Finnish Law",
       "note": "display name"
     },
     {
-      "from": "akunikkola/agent-skills-for-finnish-law",
+      "from": "akunikkola/claude-for-legal-finland",
       "to": "ragmha/agent-skills-for-finnish-law",
       "note": "repository slug"
     }
@@ -76,656 +76,656 @@
   ],
   "paths": [
     {
-      "from": "legal-core/skills/legal-writing/references/sources.md",
+      "from": "juristi/skills/juristi/references/lahteet.md",
       "to": "legal-core/skills/legal-writing/references/sources.md"
     },
     {
-      "from": "legal-core/skills/legal-writing/references/legal-language.md",
+      "from": "juristi/skills/juristi/references/lakikieli.md",
       "to": "legal-core/skills/legal-writing/references/legal-language.md"
     },
     {
-      "from": "legal-core/skills/legal-writing/references/structure.md",
+      "from": "juristi/skills/juristi/references/rakenne.md",
       "to": "legal-core/skills/legal-writing/references/structure.md"
     },
     {
-      "from": "legal-core/skills/legal-writing/references/contracts.md",
+      "from": "juristi/skills/juristi/references/sopimukset.md",
       "to": "legal-core/skills/legal-writing/references/contracts.md"
     },
     {
-      "from": "legal-core/skills/legal-writing/references/finnish-language.md",
+      "from": "juristi/skills/juristi/references/suomen-kieli.md",
       "to": "legal-core/skills/legal-writing/references/finnish-language.md"
     },
     {
-      "from": "legal-core/skills/legal-writing/references/citations.md",
+      "from": "juristi/skills/juristi/references/viittaukset.md",
       "to": "legal-core/skills/legal-writing/references/citations.md"
     },
     {
-      "from": "legal-core/skills/legal-research/references/tools.md",
+      "from": "juristi/skills/oikeustutkimus/references/tyokalut.md",
       "to": "legal-core/skills/legal-research/references/tools.md"
     },
     {
-      "from": "legal-core/skills/tabular-review/references/column-templates.md",
+      "from": "juristi/skills/taulukkokatsaus/references/sarakemallit.md",
       "to": "legal-core/skills/tabular-review/references/column-templates.md"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines/references/basic-structure.md",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet/references/perusrakenne.md",
       "to": "legislative-drafting/skills/government-bill-guidelines/references/basic-structure.md"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines/references/model-structures.md",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet/references/mallirakenteet.md",
       "to": "legislative-drafting/skills/government-bill-guidelines/references/model-structures.md"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines/references/eu-derived.md",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet/references/eu-taustainen.md",
       "to": "legislative-drafting/skills/government-bill-guidelines/references/eu-derived.md"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines/references/treaty-derived.md",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet/references/valtiosopimustaustainen.md",
       "to": "legislative-drafting/skills/government-bill-guidelines/references/treaty-derived.md"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines/references/supplementary-bill.md",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet/references/taydentava-esitys.md",
       "to": "legislative-drafting/skills/government-bill-guidelines/references/supplementary-bill.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual/references/types-of-statutes.md",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas/references/saadosten-lajit.md",
       "to": "legislative-drafting/skills/legislative-drafting-manual/references/types-of-statutes.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual/references/statute-structure.md",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas/references/saadosten-rakenne.md",
       "to": "legislative-drafting/skills/legislative-drafting-manual/references/statute-structure.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual/references/legal-language.md",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas/references/lakikieli.md",
       "to": "legislative-drafting/skills/legislative-drafting-manual/references/legal-language.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual/references/citation.md",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas/references/viittaaminen.md",
       "to": "legislative-drafting/skills/legislative-drafting-manual/references/citation.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual/references/enacting-formula.md",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas/references/johtolause.md",
       "to": "legislative-drafting/skills/legislative-drafting-manual/references/enacting-formula.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/preliminary-preparation.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/esivalmistelu.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/preliminary-preparation.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/basic-preparation.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/perusvalmistelu.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/basic-preparation.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/consultation-round.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/lausuntomenettely.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/consultation-round.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/further-preparation.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/jatkovalmistelu.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/further-preparation.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/decision-making-and-parliament.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/paatoksenteko-ja-eduskunta.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/decision-making-and-parliament.md"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide/references/implementation.md",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas/references/taytantoonpano.md",
       "to": "legislative-drafting/skills/legislative-process-guide/references/implementation.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/lausunnon-rakenne.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure-examples.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/lausunnon-rakenne-esimerkit.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure-examples.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/respondent-profile.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/lausunnonantajan-profiili.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/respondent-profile.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/writing-guidelines.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/kirjoitusohjeet.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/writing-guidelines.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/analysis-tools.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/analyysin-tyokalut.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/analysis-tools.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/impact-assessment.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/vaikutusarviointi.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/impact-assessment.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/information-sources.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/tietolahteet.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/information-sources.md"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant/references/lausuntopalvelu-guide.md",
+      "from": "lausunnot/skills/lausuntoapuri/references/lausuntopalvelu-ohje.md",
       "to": "legislative-consultation/skills/consultation-statement-assistant/references/lausuntopalvelu-guide.md"
     },
     {
-      "from": "contracts/skills/contract-drafting/references/contract-law.md",
+      "from": "sopimukset/skills/sopimuksen-laatiminen/references/sopimusoikeus.md",
       "to": "contracts/skills/contract-drafting/references/contract-law.md"
     },
     {
-      "from": "contracts/skills/contract-drafting/references/contract-clauses.md",
+      "from": "sopimukset/skills/sopimuksen-laatiminen/references/sopimuslausekkeet.md",
       "to": "contracts/skills/contract-drafting/references/contract-clauses.md"
     },
     {
-      "from": "administrative-law/skills/administrative-decision/references/administrative-law-fundamentals.md",
+      "from": "hallinto-oikeus/skills/hallintopaatos/references/hallinto-oikeus-perusteet.md",
       "to": "administrative-law/skills/administrative-decision/references/administrative-law-fundamentals.md"
     },
     {
-      "from": "intellectual-property/skills/trademarks-and-trade-names/references/ip-fundamentals.md",
+      "from": "immateriaalioikeus/skills/tavaramerkki-ja-toiminimi/references/ipr-perusteet.md",
       "to": "intellectual-property/skills/trademarks-and-trade-names/references/ip-fundamentals.md"
     },
     {
-      "from": "insolvency/skills/insolvency-assessment/references/insolvency-fundamentals.md",
+      "from": "insolvenssi/skills/maksukyvyttomyysarvio/references/insolvenssi-perusteet.md",
       "to": "insolvency/skills/insolvency-assessment/references/insolvency-fundamentals.md"
     },
     {
-      "from": "public-procurement/skills/procurement-planning/references/procurement-fundamentals.md",
+      "from": "julkiset-hankinnat/skills/hankinnan-suunnittelu/references/hankinnat-perusteet.md",
       "to": "public-procurement/skills/procurement-planning/references/procurement-fundamentals.md"
     },
     {
-      "from": "bilingual-legal-language/skills/legal-translation/references/bilingual-language-fundamentals.md",
+      "from": "kaksikielisyys/skills/oikeuskielen-kaantaminen/references/kaksikielisyys-perusteet.md",
       "to": "bilingual-legal-language/skills/legal-translation/references/bilingual-language-fundamentals.md"
     },
     {
-      "from": "real-estate-and-housing/skills/real-property-conveyance/references/real-property-fundamentals.md",
+      "from": "kiinteistot-ja-asuminen/skills/kiinteistokauppa/references/kiinteisto-perusteet.md",
       "to": "real-estate-and-housing/skills/real-property-conveyance/references/real-property-fundamentals.md"
     },
     {
-      "from": "competition-law/skills/restrictive-practices/references/competition-law-fundamentals.md",
+      "from": "kilpailuoikeus/skills/kilpailunrajoitukset/references/kilpailuoikeus-perusteet.md",
       "to": "competition-law/skills/restrictive-practices/references/competition-law-fundamentals.md"
     },
     {
-      "from": "consumer-law/skills/consumer-sales-liability/references/consumer-law-fundamentals.md",
+      "from": "kuluttajaoikeus/skills/kuluttajakaupan-virhevastuu/references/kuluttajaoikeus-perusteet.md",
       "to": "consumer-law/skills/consumer-sales-liability/references/consumer-law-fundamentals.md"
     },
     {
-      "from": "banking-and-finance/skills/financing-and-collateral/references/finance-fundamentals.md",
+      "from": "pankki-ja-rahoitus/skills/rahoitus-ja-vakuudet/references/rahoitus-perusteet.md",
       "to": "banking-and-finance/skills/financing-and-collateral/references/finance-fundamentals.md"
     },
     {
-      "from": "family-and-inheritance/skills/marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md",
+      "from": "perhe-ja-perinto/skills/avioliitto-ja-ositus/references/perhe-ja-perinto-perusteet.md",
       "to": "family-and-inheritance/skills/marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md"
     },
     {
-      "from": "family-and-inheritance/skills/inheritance-and-wills/references/inheritance-code-fundamentals.md",
+      "from": "perhe-ja-perinto/skills/perinto-ja-testamentti/references/perintokaari-perusteet.md",
       "to": "family-and-inheritance/skills/inheritance-and-wills/references/inheritance-code-fundamentals.md"
     },
     {
-      "from": "dispute-resolution/skills/statement-of-claim/references/dispute-resolution-fundamentals.md",
+      "from": "riidanratkaisu/skills/haastehakemus/references/riidanratkaisu-perusteet.md",
       "to": "dispute-resolution/skills/statement-of-claim/references/dispute-resolution-fundamentals.md"
     },
     {
-      "from": "criminal-law/skills/criminal-liability-basics/references/criminal-law-fundamentals.md",
+      "from": "rikosoikeus/skills/rikosvastuun-perusteet/references/rikosoikeus-perusteet.md",
       "to": "criminal-law/skills/criminal-liability-basics/references/criminal-law-fundamentals.md"
     },
     {
-      "from": "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md",
+      "from": "rikosprosessi/skills/esitutkinta-ja-pakkokeinot/references/rikosprosessi-perusteet.md",
       "to": "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md"
     },
     {
-      "from": "ai-regulation/skills/ai-classification/references/ai-act-fundamentals.md",
+      "from": "tekoalysaantely/skills/tekoaly-luokittelu/references/ai-act-perusteet.md",
       "to": "ai-regulation/skills/ai-classification/references/ai-act-fundamentals.md"
     },
     {
-      "from": "data-protection/skills/data-protection-assessment/references/data-protection-fundamentals.md",
+      "from": "tietosuoja/skills/tietosuoja-arviointi/references/tietosuoja-perusteet.md",
       "to": "data-protection/skills/data-protection-assessment/references/data-protection-fundamentals.md"
     },
     {
-      "from": "employment-law/skills/employment-contract/references/employment-law-fundamentals.md",
+      "from": "tyooikeus/skills/tyosopimus/references/tyooikeus-perusteet.md",
       "to": "employment-law/skills/employment-contract/references/employment-law-fundamentals.md"
     },
     {
-      "from": "immigration-law/skills/work-based-residence-permits/references/immigration-law-fundamentals.md",
+      "from": "ulkomaalaisoikeus/skills/tyoperusteiset-oleskeluluvat/references/ulkomaalaisoikeus-perusteet.md",
       "to": "immigration-law/skills/work-based-residence-permits/references/immigration-law-fundamentals.md"
     },
     {
-      "from": "taxation/skills/tax-procedure-and-appeals/references/tax-fundamentals.md",
+      "from": "verotus/skills/verotusmenettely-ja-muutoksenhaku/references/verotus-perusteet.md",
       "to": "taxation/skills/tax-procedure-and-appeals/references/tax-fundamentals.md"
     },
     {
-      "from": "company-law/skills/corporate-governance/references/company-law-fundamentals.md",
+      "from": "yhtiooikeus/skills/yhtion-hallinto/references/yhtiooikeus-perusteet.md",
       "to": "company-law/skills/corporate-governance/references/company-law-fundamentals.md"
     },
     {
-      "from": "environment-and-planning/skills/environmental-permits-and-supervision/references/environmental-law-fundamentals.md",
+      "from": "ymparisto-ja-kaavoitus/skills/ymparistolupa-ja-valvonta/references/ymparisto-perusteet.md",
       "to": "environment-and-planning/skills/environmental-permits-and-supervision/references/environmental-law-fundamentals.md"
     },
     {
-      "from": "examples/residential-sale-defect/01-engagement.md",
+      "from": "esimerkkiaineistot/asuntokauppa-virhe/01-toimeksianto.md",
       "to": "examples/residential-sale-defect/01-engagement.md"
     },
     {
-      "from": "examples/residential-sale-defect/02-condition-survey-extract.md",
+      "from": "esimerkkiaineistot/asuntokauppa-virhe/02-kuntotarkastusraportti-ote.md",
       "to": "examples/residential-sale-defect/02-condition-survey-extract.md"
     },
     {
-      "from": "examples/residential-sale-defect/03-property-manager-certificate-extract.md",
+      "from": "esimerkkiaineistot/asuntokauppa-virhe/03-isannoitsijantodistus-ote.md",
       "to": "examples/residential-sale-defect/03-property-manager-certificate-extract.md"
     },
     {
-      "from": "examples/residential-sale-defect/04-assessment-criteria.md",
+      "from": "esimerkkiaineistot/asuntokauppa-virhe/04-arviointikriteerit.md",
       "to": "examples/residential-sale-defect/04-assessment-criteria.md"
     },
     {
-      "from": "examples/fixed-term-employment-ending/01-engagement.md",
+      "from": "esimerkkiaineistot/maaraaikainen-tyosuhde-paattyy/01-toimeksianto.md",
       "to": "examples/fixed-term-employment-ending/01-engagement.md"
     },
     {
-      "from": "examples/fixed-term-employment-ending/02-employment-contract-extract.md",
+      "from": "esimerkkiaineistot/maaraaikainen-tyosuhde-paattyy/02-tyosopimus-ote.md",
       "to": "examples/fixed-term-employment-ending/02-employment-contract-extract.md"
     },
     {
-      "from": "examples/fixed-term-employment-ending/03-email-hr.md",
+      "from": "esimerkkiaineistot/maaraaikainen-tyosuhde-paattyy/03-sahkoposti-hr.md",
       "to": "examples/fixed-term-employment-ending/03-email-hr.md"
     },
     {
-      "from": "examples/fixed-term-employment-ending/04-assessment-criteria.md",
+      "from": "esimerkkiaineistot/maaraaikainen-tyosuhde-paattyy/04-arviointikriteerit.md",
       "to": "examples/fixed-term-employment-ending/04-assessment-criteria.md"
     },
     {
-      "from": "examples/ma-due-diligence/01-engagement.md",
+      "from": "esimerkkiaineistot/yrityskauppa-dd/01-toimeksianto.md",
       "to": "examples/ma-due-diligence/01-engagement.md"
     },
     {
-      "from": "examples/ma-due-diligence/02-target-memorandum.md",
+      "from": "esimerkkiaineistot/yrityskauppa-dd/02-kohdemuistio.md",
       "to": "examples/ma-due-diligence/02-target-memorandum.md"
     },
     {
-      "from": "examples/ma-due-diligence/03-assessment-criteria.md",
+      "from": "esimerkkiaineistot/yrityskauppa-dd/03-arviointikriteerit.md",
       "to": "examples/ma-due-diligence/03-assessment-criteria.md"
     },
     {
-      "from": "agent-recipes/precedent-watch/agent.yaml",
+      "from": "agentti-reseptit/ennakkopaatos-vahti/agentti.yaml",
       "to": "agent-recipes/precedent-watch/agent.yaml"
     },
     {
-      "from": "agent-recipes/deadline-watch/agent.yaml",
+      "from": "agentti-reseptit/maaraaika-vahti/agentti.yaml",
       "to": "agent-recipes/deadline-watch/agent.yaml"
     },
     {
-      "from": "agent-recipes/statute-watch/agent.yaml",
+      "from": "agentti-reseptit/saados-vahti/agentti.yaml",
       "to": "agent-recipes/statute-watch/agent.yaml"
     },
     {
-      "from": "administrative-law/templates/request-for-rectification.md",
+      "from": "hallinto-oikeus/pohjat/oikaisuvaatimus.md",
       "to": "administrative-law/templates/request-for-rectification.md",
       "note": "pohjat -> templates"
     },
     {
-      "from": "consumer-law/templates/complaint-notice.md",
+      "from": "kuluttajaoikeus/pohjat/reklamaatio.md",
       "to": "consumer-law/templates/complaint-notice.md",
       "note": "pohjat -> templates"
     },
     {
-      "from": "consumer-law/templates/withdrawal-notice.md",
+      "from": "kuluttajaoikeus/pohjat/peruuttamisilmoitus.md",
       "to": "consumer-law/templates/withdrawal-notice.md",
       "note": "pohjat -> templates"
     },
     {
-      "from": "family-and-inheritance/templates/will.md",
+      "from": "perhe-ja-perinto/pohjat/testamentti.md",
       "to": "family-and-inheritance/templates/will.md",
       "note": "pohjat -> templates"
     },
     {
-      "from": "dispute-resolution/templates/statement-of-claim.md",
+      "from": "riidanratkaisu/pohjat/haastehakemus.md",
       "to": "dispute-resolution/templates/statement-of-claim.md",
       "note": "pohjat -> templates"
     },
     {
-      "from": "legal-core/agents/source-checker.md",
+      "from": "juristi/agents/lahdetarkastaja.md",
       "to": "legal-core/agents/source-checker.md"
     },
     {
-      "from": "legal-core/agents/deadline-scanner.md",
+      "from": "juristi/agents/maaraaikaskanneri.md",
       "to": "legal-core/agents/deadline-scanner.md"
     },
     {
-      "from": "administrative-law/agents/confidentiality-assessor.md",
+      "from": "hallinto-oikeus/agents/salassapitoarvioija.md",
       "to": "administrative-law/agents/confidentiality-assessor.md"
     },
     {
-      "from": "dispute-resolution/agents/opposing-counsel.md",
+      "from": "riidanratkaisu/agents/vastapuoli.md",
       "to": "dispute-resolution/agents/opposing-counsel.md"
     },
     {
-      "from": "contracts/agents/deviation-checker.md",
+      "from": "sopimukset/agents/poikkeamatarkastaja.md",
       "to": "contracts/agents/deviation-checker.md"
     },
     {
-      "from": "company-law/agents/material-mapper.md",
+      "from": "yhtiooikeus/agents/aineistokartoittaja.md",
       "to": "company-law/agents/material-mapper.md"
     },
     {
-      "from": "legal-core/skills/document-review",
+      "from": "juristi/skills/asiakirjan-tarkistus",
       "to": "legal-core/skills/document-review"
     },
     {
-      "from": "legal-core/skills/legal-writing",
+      "from": "juristi/skills/juristi",
       "to": "legal-core/skills/legal-writing"
     },
     {
-      "from": "legal-core/skills/practice-profile",
+      "from": "juristi/skills/kaytantoprofiili",
       "to": "legal-core/skills/practice-profile"
     },
     {
-      "from": "legal-core/skills/case-summarization",
+      "from": "juristi/skills/oikeustapaus-referointi",
       "to": "legal-core/skills/case-summarization"
     },
     {
-      "from": "legal-core/skills/legal-research",
+      "from": "juristi/skills/oikeustutkimus",
       "to": "legal-core/skills/legal-research"
     },
     {
-      "from": "legal-core/skills/plain-language",
+      "from": "juristi/skills/selkokielistaja",
       "to": "legal-core/skills/plain-language"
     },
     {
-      "from": "legal-core/skills/finnish-language",
+      "from": "juristi/skills/suomen-kieli",
       "to": "legal-core/skills/finnish-language"
     },
     {
-      "from": "legal-core/skills/tabular-review",
+      "from": "juristi/skills/taulukkokatsaus",
       "to": "legal-core/skills/tabular-review"
     },
     {
-      "from": "legal-core/skills/engagement-intake",
+      "from": "juristi/skills/toimeksianto",
       "to": "legal-core/skills/engagement-intake"
     },
     {
-      "from": "legislative-drafting/skills/government-bill-guidelines",
+      "from": "lainvalmistelu/skills/hallituksen-esityksen-laatimisohjeet",
       "to": "legislative-drafting/skills/government-bill-guidelines"
     },
     {
-      "from": "legislative-drafting/skills/legislative-drafting-manual",
+      "from": "lainvalmistelu/skills/lainkirjoittajan-opas",
       "to": "legislative-drafting/skills/legislative-drafting-manual"
     },
     {
-      "from": "legislative-drafting/skills/legislative-process-guide",
+      "from": "lainvalmistelu/skills/lainvalmistelun-prosessiopas",
       "to": "legislative-drafting/skills/legislative-process-guide"
     },
     {
-      "from": "legislative-drafting/skills/legal-language-guide",
+      "from": "lainvalmistelu/skills/lakikieli-opas",
       "to": "legislative-drafting/skills/legal-language-guide"
     },
     {
-      "from": "legislative-consultation/skills/consultation-statement-assistant",
+      "from": "lausunnot/skills/lausuntoapuri",
       "to": "legislative-consultation/skills/consultation-statement-assistant"
     },
     {
-      "from": "contracts/skills/contract-drafting",
+      "from": "sopimukset/skills/sopimuksen-laatiminen",
       "to": "contracts/skills/contract-drafting"
     },
     {
-      "from": "contracts/skills/contract-review",
+      "from": "sopimukset/skills/sopimuksen-tarkistus",
       "to": "contracts/skills/contract-review"
     },
     {
-      "from": "data-protection/skills/data-subject-requests",
+      "from": "tietosuoja/skills/rekisteroidyn-pyynnot",
       "to": "data-protection/skills/data-subject-requests"
     },
     {
-      "from": "data-protection/skills/data-protection-assessment",
+      "from": "tietosuoja/skills/tietosuoja-arviointi",
       "to": "data-protection/skills/data-protection-assessment"
     },
     {
-      "from": "data-protection/skills/privacy-notice",
+      "from": "tietosuoja/skills/tietosuojaseloste",
       "to": "data-protection/skills/privacy-notice"
     },
     {
-      "from": "ai-regulation/skills/ai-classification",
+      "from": "tekoalysaantely/skills/tekoaly-luokittelu",
       "to": "ai-regulation/skills/ai-classification"
     },
     {
-      "from": "ai-regulation/skills/ai-compliance",
+      "from": "tekoalysaantely/skills/tekoaly-vaatimustenmukaisuus",
       "to": "ai-regulation/skills/ai-compliance"
     },
     {
-      "from": "ai-regulation/skills/ai-obligations",
+      "from": "tekoalysaantely/skills/tekoaly-velvoitteet",
       "to": "ai-regulation/skills/ai-obligations"
     },
     {
-      "from": "employment-law/skills/employment-contract",
+      "from": "tyooikeus/skills/tyosopimus",
       "to": "employment-law/skills/employment-contract"
     },
     {
-      "from": "employment-law/skills/termination-of-employment",
+      "from": "tyooikeus/skills/tyosuhteen-paattaminen",
       "to": "employment-law/skills/termination-of-employment"
     },
     {
-      "from": "employment-law/skills/change-negotiations",
+      "from": "tyooikeus/skills/yhteistoiminta",
       "to": "employment-law/skills/change-negotiations"
     },
     {
-      "from": "administrative-law/skills/administrative-decision",
+      "from": "hallinto-oikeus/skills/hallintopaatos",
       "to": "administrative-law/skills/administrative-decision"
     },
     {
-      "from": "administrative-law/skills/public-access-and-information-requests",
+      "from": "hallinto-oikeus/skills/julkisuus-ja-tietopyynnot",
       "to": "administrative-law/skills/public-access-and-information-requests"
     },
     {
-      "from": "administrative-law/skills/administrative-appeal",
+      "from": "hallinto-oikeus/skills/muutoksenhaku",
       "to": "administrative-law/skills/administrative-appeal"
     },
     {
-      "from": "dispute-resolution/skills/statement-of-claim",
+      "from": "riidanratkaisu/skills/haastehakemus",
       "to": "dispute-resolution/skills/statement-of-claim"
     },
     {
-      "from": "dispute-resolution/skills/appeal-against-judgment",
+      "from": "riidanratkaisu/skills/muutoksenhaku-tuomioon",
       "to": "dispute-resolution/skills/appeal-against-judgment"
     },
     {
-      "from": "dispute-resolution/skills/evidence",
+      "from": "riidanratkaisu/skills/todistelu",
       "to": "dispute-resolution/skills/evidence"
     },
     {
-      "from": "dispute-resolution/skills/damages",
+      "from": "riidanratkaisu/skills/vahingonkorvaus",
       "to": "dispute-resolution/skills/damages"
     },
     {
-      "from": "company-law/skills/shareholders-agreement",
+      "from": "yhtiooikeus/skills/osakassopimus",
       "to": "company-law/skills/shareholders-agreement"
     },
     {
-      "from": "company-law/skills/corporate-governance",
+      "from": "yhtiooikeus/skills/yhtion-hallinto",
       "to": "company-law/skills/corporate-governance"
     },
     {
-      "from": "company-law/skills/corporate-transactions",
+      "from": "yhtiooikeus/skills/yritysjarjestelyt",
       "to": "company-law/skills/corporate-transactions"
     },
     {
-      "from": "insolvency/skills/bankruptcy-proceedings",
+      "from": "insolvenssi/skills/konkurssimenettely",
       "to": "insolvency/skills/bankruptcy-proceedings"
     },
     {
-      "from": "insolvency/skills/insolvency-assessment",
+      "from": "insolvenssi/skills/maksukyvyttomyysarvio",
       "to": "insolvency/skills/insolvency-assessment"
     },
     {
-      "from": "insolvency/skills/debt-collection",
+      "from": "insolvenssi/skills/saatavien-perinta",
       "to": "insolvency/skills/debt-collection"
     },
     {
-      "from": "intellectual-property/skills/trade-secrets",
+      "from": "immateriaalioikeus/skills/liikesalaisuudet",
       "to": "intellectual-property/skills/trade-secrets"
     },
     {
-      "from": "intellectual-property/skills/trademarks-and-trade-names",
+      "from": "immateriaalioikeus/skills/tavaramerkki-ja-toiminimi",
       "to": "intellectual-property/skills/trademarks-and-trade-names"
     },
     {
-      "from": "intellectual-property/skills/copyright",
+      "from": "immateriaalioikeus/skills/tekijanoikeus",
       "to": "intellectual-property/skills/copyright"
     },
     {
-      "from": "taxation/skills/value-added-tax",
+      "from": "verotus/skills/arvonlisaverotus",
       "to": "taxation/skills/value-added-tax"
     },
     {
-      "from": "taxation/skills/tax-procedure-and-appeals",
+      "from": "verotus/skills/verotusmenettely-ja-muutoksenhaku",
       "to": "taxation/skills/tax-procedure-and-appeals"
     },
     {
-      "from": "taxation/skills/corporate-taxation",
+      "from": "verotus/skills/yritysverotus",
       "to": "taxation/skills/corporate-taxation"
     },
     {
-      "from": "public-procurement/skills/procurement-planning",
+      "from": "julkiset-hankinnat/skills/hankinnan-suunnittelu",
       "to": "public-procurement/skills/procurement-planning"
     },
     {
-      "from": "public-procurement/skills/award-decision-and-remedies",
+      "from": "julkiset-hankinnat/skills/hankintapaatos-ja-muutoksenhaku",
       "to": "public-procurement/skills/award-decision-and-remedies"
     },
     {
-      "from": "public-procurement/skills/tender-documents-and-bids",
+      "from": "julkiset-hankinnat/skills/tarjouspyynto-ja-tarjous",
       "to": "public-procurement/skills/tender-documents-and-bids"
     },
     {
-      "from": "criminal-procedure/skills/injured-party-rights",
+      "from": "rikosprosessi/skills/asianomistajan-asema",
       "to": "criminal-procedure/skills/injured-party-rights"
     },
     {
-      "from": "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures",
+      "from": "rikosprosessi/skills/esitutkinta-ja-pakkokeinot",
       "to": "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures"
     },
     {
-      "from": "criminal-procedure/skills/charges-and-response",
+      "from": "rikosprosessi/skills/syyte-ja-vastaus",
       "to": "criminal-procedure/skills/charges-and-response"
     },
     {
-      "from": "environment-and-planning/skills/land-use-planning-and-construction",
+      "from": "ymparisto-ja-kaavoitus/skills/kaavoitus-ja-rakentaminen",
       "to": "environment-and-planning/skills/land-use-planning-and-construction"
     },
     {
-      "from": "environment-and-planning/skills/environmental-permits-and-supervision",
+      "from": "ymparisto-ja-kaavoitus/skills/ymparistolupa-ja-valvonta",
       "to": "environment-and-planning/skills/environmental-permits-and-supervision"
     },
     {
-      "from": "environment-and-planning/skills/environmental-liability",
+      "from": "ymparisto-ja-kaavoitus/skills/ymparistovastuut",
       "to": "environment-and-planning/skills/environmental-liability"
     },
     {
-      "from": "real-estate-and-housing/skills/housing-company",
+      "from": "kiinteistot-ja-asuminen/skills/asunto-osakeyhtio",
       "to": "real-estate-and-housing/skills/housing-company"
     },
     {
-      "from": "real-estate-and-housing/skills/residential-property-sale",
+      "from": "kiinteistot-ja-asuminen/skills/asuntokauppa",
       "to": "real-estate-and-housing/skills/residential-property-sale"
     },
     {
-      "from": "real-estate-and-housing/skills/real-property-conveyance",
+      "from": "kiinteistot-ja-asuminen/skills/kiinteistokauppa",
       "to": "real-estate-and-housing/skills/real-property-conveyance"
     },
     {
-      "from": "real-estate-and-housing/skills/lease-agreements",
+      "from": "kiinteistot-ja-asuminen/skills/vuokrasopimukset",
       "to": "real-estate-and-housing/skills/lease-agreements"
     },
     {
-      "from": "competition-law/skills/competition-compliance",
+      "from": "kilpailuoikeus/skills/kilpailu-compliance",
       "to": "competition-law/skills/competition-compliance"
     },
     {
-      "from": "competition-law/skills/restrictive-practices",
+      "from": "kilpailuoikeus/skills/kilpailunrajoitukset",
       "to": "competition-law/skills/restrictive-practices"
     },
     {
-      "from": "competition-law/skills/merger-control",
+      "from": "kilpailuoikeus/skills/yrityskauppavalvonta",
       "to": "competition-law/skills/merger-control"
     },
     {
-      "from": "banking-and-finance/skills/securities-markets",
+      "from": "pankki-ja-rahoitus/skills/arvopaperimarkkinat",
       "to": "banking-and-finance/skills/securities-markets"
     },
     {
-      "from": "banking-and-finance/skills/anti-money-laundering",
+      "from": "pankki-ja-rahoitus/skills/rahanpesun-estaminen",
       "to": "banking-and-finance/skills/anti-money-laundering"
     },
     {
-      "from": "banking-and-finance/skills/financing-and-collateral",
+      "from": "pankki-ja-rahoitus/skills/rahoitus-ja-vakuudet",
       "to": "banking-and-finance/skills/financing-and-collateral"
     },
     {
-      "from": "immigration-law/skills/eu-and-family-based-residence",
+      "from": "ulkomaalaisoikeus/skills/eu-ja-perheperusteinen-oleskelu",
       "to": "immigration-law/skills/eu-and-family-based-residence"
     },
     {
-      "from": "immigration-law/skills/employer-obligations",
+      "from": "ulkomaalaisoikeus/skills/tyonantajan-velvollisuudet",
       "to": "immigration-law/skills/employer-obligations"
     },
     {
-      "from": "immigration-law/skills/work-based-residence-permits",
+      "from": "ulkomaalaisoikeus/skills/tyoperusteiset-oleskeluluvat",
       "to": "immigration-law/skills/work-based-residence-permits"
     },
     {
-      "from": "family-and-inheritance/skills/marriage-and-division-of-property",
+      "from": "perhe-ja-perinto/skills/avioliitto-ja-ositus",
       "to": "family-and-inheritance/skills/marriage-and-division-of-property"
     },
     {
-      "from": "family-and-inheritance/skills/guardianship-and-powers-of-attorney",
+      "from": "perhe-ja-perinto/skills/edunvalvonta-ja-edunvalvontavaltuutus",
       "to": "family-and-inheritance/skills/guardianship-and-powers-of-attorney"
     },
     {
-      "from": "family-and-inheritance/skills/child-status-and-maintenance",
+      "from": "perhe-ja-perinto/skills/lapsen-asema-ja-elatus",
       "to": "family-and-inheritance/skills/child-status-and-maintenance"
     },
     {
-      "from": "family-and-inheritance/skills/inheritance-and-wills",
+      "from": "perhe-ja-perinto/skills/perinto-ja-testamentti",
       "to": "family-and-inheritance/skills/inheritance-and-wills"
     },
     {
-      "from": "consumer-law/skills/distance-selling-and-withdrawal",
+      "from": "kuluttajaoikeus/skills/etamyynti-ja-peruuttaminen",
       "to": "consumer-law/skills/distance-selling-and-withdrawal"
     },
     {
-      "from": "consumer-law/skills/consumer-sales-liability",
+      "from": "kuluttajaoikeus/skills/kuluttajakaupan-virhevastuu",
       "to": "consumer-law/skills/consumer-sales-liability"
     },
     {
-      "from": "consumer-law/skills/consumer-disputes-and-collection",
+      "from": "kuluttajaoikeus/skills/kuluttajariita-ja-perinta",
       "to": "consumer-law/skills/consumer-disputes-and-collection"
     },
     {
-      "from": "criminal-law/skills/principal-offences",
+      "from": "rikosoikeus/skills/keskeiset-rikostyypit",
       "to": "criminal-law/skills/principal-offences"
     },
     {
-      "from": "criminal-law/skills/sentencing",
+      "from": "rikosoikeus/skills/rangaistuksen-maaraaminen",
       "to": "criminal-law/skills/sentencing"
     },
     {
-      "from": "criminal-law/skills/criminal-liability-basics",
+      "from": "rikosoikeus/skills/rikosvastuun-perusteet",
       "to": "criminal-law/skills/criminal-liability-basics"
     },
     {
-      "from": "bilingual-legal-language/skills/language-rights-and-obligations",
+      "from": "kaksikielisyys/skills/kielelliset-oikeudet-ja-velvoitteet",
       "to": "bilingual-legal-language/skills/language-rights-and-obligations"
     },
     {
-      "from": "bilingual-legal-language/skills/legal-translation",
+      "from": "kaksikielisyys/skills/oikeuskielen-kaantaminen",
       "to": "bilingual-legal-language/skills/legal-translation"
     },
     {
-      "from": "agent-recipes/precedent-watch",
+      "from": "agentti-reseptit/ennakkopaatos-vahti",
       "to": "agent-recipes/precedent-watch"
     },
     {
-      "from": "agent-recipes/deadline-watch",
+      "from": "agentti-reseptit/maaraaika-vahti",
       "to": "agent-recipes/deadline-watch"
     },
     {
-      "from": "agent-recipes/statute-watch",
+      "from": "agentti-reseptit/saados-vahti",
       "to": "agent-recipes/statute-watch"
     },
     {
-      "from": "agent-recipes/citation-audit",
+      "from": "agentti-reseptit/viittausauditointi",
       "to": "agent-recipes/citation-audit"
     },
     {
@@ -733,15 +733,15 @@
       "to": "agent-recipes"
     },
     {
-      "from": "examples/residential-sale-defect",
+      "from": "esimerkkiaineistot/asuntokauppa-virhe",
       "to": "examples/residential-sale-defect"
     },
     {
-      "from": "examples/fixed-term-employment-ending",
+      "from": "esimerkkiaineistot/maaraaikainen-tyosuhde-paattyy",
       "to": "examples/fixed-term-employment-ending"
     },
     {
-      "from": "examples/ma-due-diligence",
+      "from": "esimerkkiaineistot/yrityskauppa-dd",
       "to": "examples/ma-due-diligence"
     },
     {
@@ -749,7 +749,7 @@
       "to": "examples"
     },
     {
-      "from": "tracking/statutes.json",
+      "from": "seuranta/saadokset.json",
       "to": "tracking/statutes.json"
     },
     {
@@ -757,47 +757,47 @@
       "to": "tracking"
     },
     {
-      "from": "references/firm-adoption.md",
+      "from": "references/kayttoonotto-toimistossa.md",
       "to": "references/firm-adoption.md"
     },
     {
-      "from": "references/template-standards.md",
+      "from": "references/mallipohjat-standardi.md",
       "to": "references/template-standards.md"
     },
     {
-      "from": "references/liability-and-security.md",
+      "from": "references/vastuu-ja-tietoturva.md",
       "to": "references/liability-and-security.md"
     },
     {
-      "from": "references/citation-style.md",
+      "from": "references/viittaustyyli.md",
       "to": "references/citation-style.md"
     },
     {
-      "from": "evals/run-trigger-tests.sh",
+      "from": "evals/aja-triggeritestit.sh",
       "to": "evals/run-trigger-tests.sh"
     },
     {
-      "from": "evals/scenarios.json",
+      "from": "evals/skenaariot.json",
       "to": "evals/scenarios.json"
     },
     {
-      "from": "scripts/check-statutes.mjs",
+      "from": "scripts/tarkista-saadokset.mjs",
       "to": "scripts/check-statutes.mjs"
     },
     {
-      "from": "scripts/citation-inventory.mjs",
+      "from": "scripts/viittausinventaario.mjs",
       "to": "scripts/citation-inventory.mjs"
     },
     {
-      "from": "scripts/generate-adapters.mjs",
+      "from": "scripts/generate-codex.mjs",
       "to": "scripts/generate-adapters.mjs"
     },
     {
-      "from": "tests/adapters.test.mjs",
+      "from": "tests/codex-compat.test.mjs",
       "to": "tests/adapters.test.mjs"
     },
     {
-      "from": ".github/workflows/statute-watch.yml",
+      "from": ".github/workflows/saadosvahti.yml",
       "to": ".github/workflows/statute-watch.yml"
     },
     {

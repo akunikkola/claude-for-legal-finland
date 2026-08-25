@@ -21,7 +21,7 @@ Selvitä aina sovellettava **työehtosopimus** (yleissitova tai normaalisitova).
 
 ## Lähteestä, ei muistista — ja huomioi lakimuutokset
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex). Erityisesti:
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex). Erityisesti:
 - **Yhteistoimintalaki on 1333/2021** (vahvistettu lähteestä) — se **korvasi vanhan YT-lain 334/2007**. Älä viittaa 334/2007:ään voimassa olevana.
 - **Kilpailukieltosääntely uudistui 2022** (korvausvelvollisuus) — tarkista voimassa oleva työsopimuslain 3 luvun säännös.
 - Älä esitä **irtisanomisaikoja, määräaikoja, kokorajoja tai neuvotteluaikoja** muistista — hae ne lähteestä. Merkitse tarkistamaton `[tarkista]`.

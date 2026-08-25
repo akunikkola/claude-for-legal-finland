@@ -18,7 +18,7 @@ Tee kirjallinen linjaus kolmeen koriin:
 | Kielletty | erityisen arkaluonteiset tiedot, aineisto jonka käsittelyyn ei ole oikeutta | ei koskaan |
 
 Kirjaa linjaus organisaation ohjeeseen ja
-`juristi:kaytantoprofiili`-skillillä käytäntöprofiiliin.
+`legal-core:practice-profile`-skillillä käytäntöprofiiliin.
 
 ## 2. Sopimus- ja salassapitoperusta kuntoon
 
@@ -51,7 +51,7 @@ Kirjaa linjaus organisaation ohjeeseen ja
 - Periaate: **vain tarvittavat konnektorit** – älä kytke työkaluun
   järjestelmiä, joita skillit eivät tarvitse. Agenttiresepteissä
   noudata lukija/analysoija/kirjoittaja-mallia
-  ([`../agentti-reseptit/README.md`](../agent-recipes/README.md)).
+  ([`../agent-recipes/README.md`](../agent-recipes/README.md)).
 
 ## 5. Ihmisen tarkistusportti – nimeä se
 
@@ -69,7 +69,7 @@ Jokainen tuotos on tarkistettava luonnos. Tee siitä prosessi:
 ## 6. Räätälöinti ja pilotointi
 
 1. Asenna `legal-core` + 2–3 omaa ydinaluetta – älä kaikkea kerralla.
-2. Aja `juristi:kaytantoprofiili` ja kirjaa talon linjaukset.
+2. Aja `legal-core:practice-profile` ja kirjaa talon linjaukset.
 3. Pilotoi [`esimerkkiaineistoilla`](../examples/) ennen
    oikeaa aineistoa – niissä on arviointikriteerit, joilla näet,
    toimivatko skillit odotetusti omassa ympäristössäsi.

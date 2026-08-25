@@ -17,16 +17,26 @@ description: >
 
 Tämä skill auttaa osakeyhtiön elinkaaren hallintotilanteissa osakeyhtiölain
 (624/2006) mukaan. Perusteet ja OYL:n varmistettu lukukartta:
-`references/yhtiooikeus-perusteet.md` — lue se tehtävän alussa.
+`references/company-law-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** tuotokset ovat tarkistettavia luonnoksia — ei
 > oikeudellista neuvontaa. Yhtiöoikeudelliset päätökset tekevät toimielimet
-> ja ilmoitukset allekirjoittaa ihminen. Katso `yhtiooikeus/CLAUDE.md`.
+> ja ilmoitukset allekirjoittaa ihminen. Katso `company-law/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae OYL:n sovellettava säännös (pykälätaso, määräajat, enemmistövaatimukset)
-**`juristi:oikeustutkimus`-skillillä** ennen kuin esität sen varmistettuna.
+**`legal-core:legal-research`-skillillä** ennen kuin esität sen varmistettuna.
 Lukutason rakenne on varmistettu referenssissä; pykälien sisältö muuttuu.
 
 ## Perustaminen
@@ -75,7 +85,7 @@ Lukutason rakenne on varmistettu referenssissä; pykälien sisältö muuttuu.
 
 ## Varojenjako
 
-Käy **aina** läpi kaksoistesti (`references/yhtiooikeus-perusteet.md`):
+Käy **aina** läpi kaksoistesti (`references/company-law-fundamentals.md`):
 
 1. **Tasetesti** — jakokelpoiset varat vahvistetusta tilinpäätöksestä.
 2. **Maksukykytesti (OYL 13:2, vahvistettu)** — arvio ja sen dokumentointi

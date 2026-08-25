@@ -7,6 +7,16 @@ description: Hallituksen esitysten laatimisohjeet (HELO) - Opas hallituksen esit
 
 **Opas hyvien esitysten kirjoittamiseen**
 
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
+
 ## Yleiskatsaus
 
 Hallituksen esitysten laatimisohjeet (HELO) on oikeusministeriön julkaisema kattava opas hallituksen esitysten kirjoittamiseen. Opas on tarkoitettu kaikille hallituksen esitysten valmistelusta vastaaville viranomaisille ja niiden avustajille.
@@ -91,17 +101,17 @@ Hallituksen esityksillä voi olla erilaisia rakenteita riippuen niiden pohjasta:
 ### 1. Perusrakenteinen esitys
 Yksinkertainen rakenne, jota käytetään useimmissa tapauksissa.
 
-**Katso:** `references/perusrakenne.md`
+**Katso:** `references/basic-structure.md`
 
 ### 2. EU-taustainen esitys
 Käytetään, kun hallituksen esitys pohjautuu EU-direktiiviin tai -asetukseen.
 
-**Katso:** `references/eu-taustainen.md`
+**Katso:** `references/eu-derived.md`
 
 ### 3. Valtiosopimustaustainen esitys
 Käytetään, kun hallituksen esitys pohjautuu kansainväliseen sopimukseen tai muuhun valtiosopimukseen.
 
-**Katso:** `references/valtiosopimustaustainen.md`
+**Katso:** `references/treaty-derived.md`
 
 ### 4. Monitaustainen esitys
 Käytetään, kun hallituksen esityksellä on useita pohjia.
@@ -109,13 +119,13 @@ Käytetään, kun hallituksen esityksellä on useita pohjia.
 ### 5. Täydentävä esitys
 Käytetään, kun esitys täydentää aiemmin käsiteltyä asiaa.
 
-**Katso:** `references/taydentava-esitys.md`
+**Katso:** `references/supplementary-bill.md`
 
 ## Mallirakenteet
 
 Hallituksen esityksen rakenteiden yleiskatsaus ja valinnan perusteet löytyvät tästä dokumentista:
 
-**Katso:** `references/mallirakenteet.md`
+**Katso:** `references/model-structures.md`
 
 ## Hakemistot ja viitemateriaali
 
@@ -135,7 +145,7 @@ Yksityiskohtainen opas perusrakenteisen hallituksen esityksen laaditaan varten, 
 - 11 Suhde muihin esityksiin
 - 12 Suhde perustuslakiin ja säätämisjärjestys
 
-**Katso:** `references/perusrakenne.md`
+**Katso:** `references/basic-structure.md`
 
 ### EU-taustainen hallituksen esitys
 
@@ -146,7 +156,7 @@ Kun hallituksen esitys pohjautuu EU-säädökseen (direktiivi tai asetus), käyt
 - EU-säädöksen tavoitteet ja pääasiallinen sisältö
 - Ehdotukset ja niiden vaikutukset EU-kontekstissa
 
-**Katso:** `references/eu-taustainen.md`
+**Katso:** `references/eu-derived.md`
 
 ### Valtiosopimustaustainen hallituksen esitys
 
@@ -156,7 +166,7 @@ Kun hallituksen esitys pohjautuu valtiosopimukseen tai muuhun kansainväliseen s
 - Sopimuksen hyväksymisprosessi
 - Sopimuksen ratifiointi ja voimaantulo
 
-**Katso:** `references/valtiosopimustaustainen.md`
+**Katso:** `references/treaty-derived.md`
 
 ## Tärkeät ohjeet
 

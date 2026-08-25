@@ -3,7 +3,7 @@
 Plugarin yhteinen kartta: rikosvastuun rakenne, käsitteet ja rajat. **Rikoslain
 (39/1889) nimi ja numero on varmistettu Finlexistä** (ajantasaversion
 asiakirjatunnus 18890039001); tunnusmerkistöt, rangaistusasteikot ja
-vanhentumisajat haetaan käytössä lähteestä (`juristi:oikeustutkimus`).
+vanhentumisajat haetaan käytössä lähteestä (`legal-core:legal-research`).
 
 ## Ehdoton rajaus
 
@@ -11,7 +11,7 @@ Tämä plugari palvelee **ymmärtämistä, puolustusta, asianomistajan asemaa ja
 compliancea** — ei rikoksen tekemistä tai peittelyä. Rikoksen suunnittelu,
 tunnusmerkistön kiertäminen "jäämättä kiinni", todisteiden hävittäminen ja
 todistajaan vaikuttaminen ovat ehdottomasti pois rajattuja (ks.
-`rikosoikeus/CLAUDE.md`).
+`criminal-law/AGENTS.md`).
 
 ## Rikoslain rakenne
 

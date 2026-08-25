@@ -18,13 +18,13 @@ mitkä lausekkeet ovat riskialttiita ja miksi.
 
 > **Vastuuvapaus:** tämä on riskiarvio tarkistettavaksi — ei oikeudellista neuvontaa
 > eikä lopullinen kanta sopimuksen pätevyydestä. Suuririskinen tai PUNAINEN sopimus
-> kuuluu juristin arvioitavaksi ennen allekirjoitusta. Katso `sopimukset/CLAUDE.md`.
+> kuuluu juristin arvioitavaksi ennen allekirjoitusta. Katso `contracts/AGENTS.md`.
 
 ## Pohjatieto
 
-- Sopimusoikeuden perusteet ja keskeiset lait: `../sopimuksen-laatiminen/references/sopimusoikeus.md`.
-- Lakiviittausten tarkistus: `legal-core`-plugarin `oikeustutkimus`-skill (oik.ai/Finlex). Tarkista keskeiset säädös- ja pykäläviittaukset lähteestä.
-- Perusteellinen rakenteellinen läpikäynti: `legal-core`-plugarin `asiakirjan-tarkistus`-skill (8 vaihetta). Tämä skill keskittyy sopimuskohtaiseen sisältöriskiin.
+- Sopimusoikeuden perusteet ja keskeiset lait: `../contract-drafting/references/contract-law.md`.
+- Lakiviittausten tarkistus: `legal-core`-plugarin `legal-research`-skill (oik.ai/Finlex). Tarkista keskeiset säädös- ja pykäläviittaukset lähteestä.
+- Perusteellinen rakenteellinen läpikäynti: `legal-core`-plugarin `document-review`-skill (8 vaihetta). Tämä skill keskittyy sopimuskohtaiseen sisältöriskiin.
 
 ---
 
@@ -67,7 +67,7 @@ Sovittelun yleislippu: räikeän yksipuolinen ehto heikomman osapuolen vahingoks
 Tuota:
 1. **Luokitus** (🟢/🟡/🔴) ja yhden lauseen perustelu.
 2. **Keskeiset löydökset** taulukkona: lauseke · riski · vakavuus · korjausehdotus.
-3. **Konkreettiset muutosehdotukset** kriittisimpiin kohtiin (valmis korvaava muotoilu, ks. `../sopimuksen-laatiminen/references/sopimuslausekkeet.md`).
+3. **Konkreettiset muutosehdotukset** kriittisimpiin kohtiin (valmis korvaava muotoilu, ks. `../contract-drafting/references/contract-clauses.md`).
 4. **Mitä vaatii juristin arvion** — merkitse `[varmista — juristin arvioitava]`.
 
 Liitä jokaiseen lakiviittaukseen lähde ja merkitse tulkinnanvaraiset kohdat. Älä esitä
@@ -84,7 +84,7 @@ tutussa Track Changes -muodossa. Aseta `author_name` selkeästi.
 - **Ei päätä, voiko sopimuksen allekirjoittaa.** Antaa lausekekohtaisen riskiarvion ja luokituksen; 🔴 PUNAINEN ja lopullinen kanta sopimuksen pätevyydestä kuuluvat juristin arvioon ennen allekirjoitusta.
 - **Ei korvaa juristin tarkistusta eikä kanna vastuuta arviosta.** Tämä on tarkistettava riskiarvio, ei oikeudellista neuvontaa.
 - **Ei vahvista sovellettavan lain pykäliä muistista.** Oikeustoimilain 36 §:n, kuluttajansuojalain ym. säädösnumero ja sanamuoto tarkistetaan lähteestä; tulkinnanvaraiset kohdat merkitään.
-- **Ei tee perusteellista rakenteellista läpikäyntiä.** Keskittyy sopimuskohtaiseen sisältöriskiin; 8-vaiheinen kielen-, rakenteen- ja viittaustarkistus kuuluu `legal-core`-plugarin `asiakirjan-tarkistus`-skillille.
+- **Ei tee perusteellista rakenteellista läpikäyntiä.** Keskittyy sopimuskohtaiseen sisältöriskiin; 8-vaiheinen kielen-, rakenteen- ja viittaustarkistus kuuluu `legal-core`-plugarin `document-review`-skillille.
 - **Ei laadi sopimusta tai puuttuvia lausekkeita alusta.** Arvioi olemassa olevaa tekstiä ja ehdottaa korvaavia muotoiluja; uuden sopimuksen rakentaminen kuuluu laatimis-skillille.
 - **Ei korvaa riidan ratkaisua.** Jos sopimus on jo riitautunut tai rikottu, prosessuaaliset toimet kuuluvat riidanratkaisun materiaaliin.
 

@@ -17,12 +17,12 @@ oikeutta** — perusteeton tai virheellisesti toteutettu päättäminen johtaa k
 
 > **Vastuuvapaus:** tämä on riskiarvio tarkistettavaksi — ei oikeudellista neuvontaa eikä
 > lopullinen kanta päättämisen laillisuudesta. Päättämispäätös kuuluu työnantajalle ja sen
-> oikeudellinen arvio työoikeusjuristille. Katso `tyooikeus/CLAUDE.md`. Perusteet:
-> `../tyosopimus/references/tyooikeus-perusteet.md`.
+> oikeudellinen arvio työoikeusjuristille. Katso `employment-law/AGENTS.md`. Perusteet:
+> `../employment-contract/references/employment-law-fundamentals.md`.
 
 ## Tarkista laki ja TES lähteestä
 Hae työsopimuslain (55/2001) päättämissäännökset ja irtisanomisajat sekä sovellettavan
-TES:n määräykset **`juristi:oikeustutkimus`-skillillä**. Hae tarvittaessa relevantti
+TES:n määräykset **`legal-core:legal-research`-skillillä**. Hae tarvittaessa relevantti
 oikeuskäytäntö (esim. KKO, Työtuomioistuin). Älä arvioi muistinvaraisesti.
 
 ## Vaihe 1: Tunnista päättämistapa ja peruste
@@ -50,7 +50,7 @@ ja erityissuoja erillisenä kysymyksenä, vaikka purku näyttäisi kariutuvan jo
 - Onko **varoitus** annettu (henkilöperusteinen, kun edellytetään)?
 - Onko työntekijää **kuultu** ennen päätöstä?
 - Onko **muutosneuvottelut** (yhteistoimintalaki 1333/2021) käyty, jos kyse on
-  kollektiiviperusteesta ja yritys ylittää kokorajan? → `yhteistoiminta`-skill.
+  kollektiiviperusteesta ja yritys ylittää kokorajan? → `change-negotiations`-skill.
 - Onko **työn tarjoamis-/koulutusvelvollisuus** selvitetty (kollektiiviperuste)?
 - Onko **irtisanomisaikaa** noudatettu (laki/TES)?
 - Onko päätös tehty määräajassa (purku) ja annettu kirjallisesti perusteluineen pyydettäessä?
@@ -64,7 +64,7 @@ ja erityissuoja erillisenä kysymyksenä, vaikka purku näyttäisi kariutuvan jo
 ## Vaihe 4: Raportoi
 Tuota: luokitus + perustelu, päättämistapa ja sovellettu peruste, menettelytarkistuslista
 (tehty/puuttuu), irtisanomisaika, sekä konkreettiset korjaavat toimet. Liitä lähteet
-(säädös + pykälä `oikeustutkimus`-skillillä, TES nimettynä, mahdollinen oikeuskäytäntö) ja
+(säädös + pykälä `legal-research`-skillillä, TES nimettynä, mahdollinen oikeuskäytäntö) ja
 merkitse tulkinnanvaraiset `[varmista — työoikeusjuristin arvioitava]`. Älä esitä laillisuutta
 lopullisena johtopäätöksenä.
 
@@ -75,14 +75,14 @@ muokkaus jälkimuutoksin: `adeu`-MCP), mutta vasta kun peruste ja menettely on a
 
 - **Ei tee päättämispäätöstä eikä valitse strategiaa.** Päätös ja vastuu kuuluvat työnantajalle; oikeudellinen arvio työoikeusjuristille.
 - **Ei vahvista irtisanomisaikoja eikä määräaikoja sitovasti.** Ne haetaan laista ja sovellettavasta TES:stä ja tarkistetaan tapauskohtaisesti — älä luota tämän skillin muistinvaraiseen lukuun.
-- **Ei korvaa muutosneuvotteluja eikä arvioi YT-menettelyn sisältöä** — se kuuluu `yhteistoiminta`-skilliin.
+- **Ei korvaa muutosneuvotteluja eikä arvioi YT-menettelyn sisältöä** — se kuuluu `change-negotiations`-skilliin.
 - **Ei anna lopullista syrjintä- tai erityissuoja-arviota.** Syrjintäepäily ja erityissuojatun ryhmän tilanne (raskaus/perhevapaa, luottamusmies) nostavat riskin ja kuuluvat juristille.
 - **Ei laadi valmista päättämiskirjettä** ennen kuin peruste ja menettely on arvioitu — luonnos voi muuten vakiinnuttaa virheellisen perusteen.
 - **Ei arvioi muiden maiden työoikeutta.** Vain Suomen työoikeus; rajat ylittävissä tilanteissa sano se.
 
 ## Jatka tästä
 
-- Kollektiiviperuste ja yritys ylittää YT-kokorajan → `/tyooikeus:yhteistoiminta`
-- Lakitekstin, irtisanomisaikojen ja oikeuskäytännön tarkistus lähteestä → `/juristi:oikeustutkimus`
-- Päättämiskirjeen tai -ilmoituksen luonnoksen laaduntarkistus → `/juristi:asiakirjan-tarkistus`
-- Jos päättämisestä syntyy riita ja harkitaan kannetta yleisessä tuomioistuimessa → `/riidanratkaisu:haastehakemus` (huom: työehtosopimuksen tulkintariita käsitellään työtuomioistuimessa, ei tämän skillin alaa)
+- Kollektiiviperuste ja yritys ylittää YT-kokorajan → `/employment-law:change-negotiations`
+- Lakitekstin, irtisanomisaikojen ja oikeuskäytännön tarkistus lähteestä → `/legal-core:legal-research`
+- Päättämiskirjeen tai -ilmoituksen luonnoksen laaduntarkistus → `/legal-core:document-review`
+- Jos päättämisestä syntyy riita ja harkitaan kannetta yleisessä tuomioistuimessa → `/dispute-resolution:statement-of-claim` (huom: työehtosopimuksen tulkintariita käsitellään työtuomioistuimessa, ei tämän skillin alaa)

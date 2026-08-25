@@ -10,7 +10,7 @@ Pohja on **rakenteellinen luuranko**: otsikot, pakolliset osat ja
 täyttöohjeet. Se **ei sisällä valmista lakitekstiä, pykäläsitaatteja eikä
 vakiolausekkeita**, jotka houkuttelisivat käyttämään muistinvaraista
 sisältöä sellaisenaan. Sisältö tuotetaan skillillä, joka hakee lainkohdat
-lähteestä (`juristi:oikeustutkimus`) — pohja kertoo vain, *mitä osia*
+lähteestä (`legal-core:legal-research`) — pohja kertoo vain, *mitä osia*
 asiakirjassa on oltava ja *mistä* kunkin osan sisältö varmistetaan.
 
 ## Kenttäkonventiot
@@ -46,6 +46,6 @@ asiakirjassa on oltava ja *mistä* kunkin osan sisältö varmistetaan.
 - Pohja ei ota kantaa sisältöön eikä strategiaan — se estää *puuttuvan
   osan*, ei väärää sisältöä.
 - Ei asiakas- tai organisaatiokohtaisia vakiotekstejä pohjiin;
-  ne kuuluvat käytäntöprofiiliin (`juristi:kaytantoprofiili`).
+  ne kuuluvat käytäntöprofiiliin (`legal-core:practice-profile`).
 - Pohjien viittauksissa noudatetaan [`citation-style.md`](citation-style.md):tä
   (paikkamerkit, kolmiportainen varmuus).

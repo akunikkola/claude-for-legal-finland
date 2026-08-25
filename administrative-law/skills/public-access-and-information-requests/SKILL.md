@@ -17,11 +17,18 @@ ovat julkisia, jollei laissa erikseen toisin säädetä (vahvistettu lähteestä
 
 > **Vastuuvapaus:** arvio/vastausluonnos tarkistettavaksi — ei oikeudellista neuvontaa.
 > Kielteinen päätös ja salassapitoarvio kuuluvat viranomaiselle ja tarvittaessa juristille.
-> Katso `hallinto-oikeus/CLAUDE.md`. Perusteet: `../hallintopaatos/references/hallinto-oikeus-perusteet.md`.
+> Katso `administrative-law/AGENTS.md`. Perusteet: `../administrative-decision/references/administrative-law-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 Hae julkisuuslain (621/1999) salassapitoperusteet, määräajat ja menettely sekä mahdolliset
-erityislain salassapitosäännökset **`juristi:oikeustutkimus`-skillillä**. Älä esitä
+erityislain salassapitosäännökset **`legal-core:legal-research`-skillillä**. Älä esitä
 salassapitoperustetta tai määräaikaa muistista.
 
 ## Vaihe 1: Tunnista pyyntö
@@ -34,7 +41,7 @@ salassapitoperustetta tai määräaikaa muistista.
 - **Osittainen julkisuus:** jos osa on salassa pidettävää, luovutetaan julkinen osa (peitetään salassa pidettävät kohdat). Henkilötietojen osalta huomioi tietosuoja (→ `data-protection`-plugari); julkisuus ja tietosuoja on sovitettava yhteen, eivät automaattisesti syrjäytä toisiaan.
 
 ## Vaihe 3: Vastaa määräajassa
-Tietopyyntöön on vastattava **viivytyksettä** julkisuuslaissa säädetyssä ajassa (hae täsmällinen määräaika lähteestä). Jos pyyntö evätään tai luovutus viivästyy, asia on saatettava pyynnöstä viranomaisen ratkaistavaksi ja annettava **valituskelpoinen päätös** muutoksenhakuohjauksineen (→ `muutoksenhaku`-skill).
+Tietopyyntöön on vastattava **viivytyksettä** julkisuuslaissa säädetyssä ajassa (hae täsmällinen määräaika lähteestä). Jos pyyntö evätään tai luovutus viivästyy, asia on saatettava pyynnöstä viranomaisen ratkaistavaksi ja annettava **valituskelpoinen päätös** muutoksenhakuohjauksineen (→ `administrative-appeal`-skill).
 
 ## Vaihe 4: Laadi vastaus
 - **Myönteinen:** luovuta asiakirja (tarvittaessa osittain, salassa pidettävät kohdat peitettyinä) ja kuvaa mitä luovutettiin.
@@ -54,7 +61,7 @@ anonymisointia (`data-protection`-plugarin PII Shield -ohje).
 - **Ei vahvista salassapitoperustetta eikä vastausmääräaikaa muistista.** Ne haetaan lähteestä (julkisuuslaki 621/1999 + erityislakien salassapitosäännökset) erityislaeittain.
 - **Ei tee lopullista henkilötietojen luovutusarviota.** Julkisuuden ja tietosuojan yhteensovittaminen on tehtävä tapauskohtaisesti; rekisteröidyn oikeudet ja luovutuksen oikeusperuste kuuluvat tietosuoja-arviointiin.
 - **Ei anonymisoi asiakirjaa itse** — varsinaisen henkilötietojen peittämisen tekee PII Shield (`data-protection`-plugari).
-- **Ei laadi tietopyynnön epäämisestä tehtävän valituksen** sisältöä; se kuuluu `muutoksenhaku`-skilliin.
+- **Ei laadi tietopyynnön epäämisestä tehtävän valituksen** sisältöä; se kuuluu `administrative-appeal`-skilliin.
 - **Vain Suomen julkisuuslainsäädäntö.** Ei kata muiden maiden tiedonsaantisääntelyä eikä yksityisten tahojen tietopyyntöjä toisilta yksityisiltä.
 
 ## Jatka tästä

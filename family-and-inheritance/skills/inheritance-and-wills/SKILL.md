@@ -15,23 +15,33 @@ description: >
 # Perintö ja testamentti — perimys, lakiosa ja jäämistön käsittely
 
 Tämä skill jäsentää perimyksen, testamentin ja jäämistön käsittelyn.
-Perintöoikeuden käsitteet ja rakenne: `references/perintokaari-perusteet.md`
+Perintöoikeuden käsitteet ja rakenne: `references/inheritance-code-fundamentals.md`
 — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ja jäsennykset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Testamentin muoto, määräajat ja verot
 > tarkistetaan lähteestä; perintövero ei kuulu tähän. Katso
-> `perhe-ja-perinto/CLAUDE.md`.
+> `family-and-inheritance/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja oikeuskäytäntö lähteestä
 
-Hae perintökaaren (40/1965) säännökset **`juristi:oikeustutkimus`-skillillä**.
+Hae perintökaaren (40/1965) säännökset **`legal-core:legal-research`-skillillä**.
 Testamentin tulkintaa, lakiosaa, lesken asemaa ja jaon moitetta
 koskeva KKO-käytäntö lähteestä. **Testamentin muotovaatimukset** (kirjallinen
 muoto ja kaksi esteetöntä todistajaa yhtä aikaa läsnä) tarkistetaan aina
 laista — muotovirhe voi tehdä testamentin pätemättömäksi.
 
-> **Pohja:** [`pohjat/testamentti.md`](../../templates/will.md) — testamentin luuranko muotomuistilistoineen (määrämuotoinen asiakirja).
+> **Pohja:** [`pohjat/will.md`](../../templates/will.md) — testamentin luuranko muotomuistilistoineen (määrämuotoinen asiakirja).
 
 ## Vaihe 1: Perimysjärjestys ilman testamenttia
 
@@ -81,7 +91,7 @@ laista — muotovirhe voi tehdä testamentin pätemättömäksi.
 ## Vaihe 5: Ositus ja perinnönjako
 
 - **Kuolintapauksessa ensin ositus** eloonjääneen puolison kanssa
-  (→ `avioliitto-ja-ositus`), **sitten perinnönjako** perillisten
+  (→ `marriage-and-division-of-property`), **sitten perinnönjako** perillisten
   kesken. Pidä vaiheet erillään.
 - Sopimusjako (osakkaiden yksimielisyys, muotovaatimus) tai
   pesänjakajan toimittama jako riitatilanteessa.

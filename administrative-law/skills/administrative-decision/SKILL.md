@@ -17,11 +17,21 @@ johtaa päätöksen kumoamiseen** muutoksenhaussa, joten menettely on yhtä tär
 aineellinen ratkaisu.
 
 > **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa. Viranomainen
-> vastaa päätöksestään. Katso `hallinto-oikeus/CLAUDE.md`. Perusteet: `references/hallinto-oikeus-perusteet.md`.
+> vastaa päätöksestään. Katso `administrative-law/AGENTS.md`. Perusteet: `references/administrative-law-fundamentals.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja toimivalta lähteestä
 Hae hallintolain (434/2003) ja sovellettavan **erityislain** (joka antaa toimivallan ja
-aineelliset edellytykset) säännökset **`juristi:oikeustutkimus`-skillillä**. Tarkista myös
+aineelliset edellytykset) säännökset **`legal-core:legal-research`-skillillä**. Tarkista myös
 viranomaisen toimivalta (kuntalaki 410/2015, johtosäännöt) — hallintopäätös ilman toimivaltaa
 on pätemätön.
 
@@ -42,12 +52,12 @@ asiallisiin perusteisiin, ei epäasiallisiin vaikuttimiin.
 - **Yksilöinti:** päättävä viranomainen, asia, asianosaiset, ratkaisu.
 - **Perustelu:** päätös on **perusteltava** — mitkä seikat ja selvitykset ovat vaikuttaneet ja mitä säännöksiä on sovellettu. Puutteellinen perustelu on kumoamisriski.
 - **Sovelletut säännökset:** nimettävä (säädös + pykälä), tarkistettuna lähteestä.
-- **Muutoksenhakuohjaus:** liitettävä oikea ohjaus — oikaisuvaatimus vai valitus, mihin, missä ajassa, miten (ks. `muutoksenhaku`-skill). Väärä tai puuttuva ohjaus on virhe.
+- **Muutoksenhakuohjaus:** liitettävä oikea ohjaus — oikaisuvaatimus vai valitus, mihin, missä ajassa, miten (ks. `administrative-appeal`-skill). Väärä tai puuttuva ohjaus on virhe.
 - **Tiedoksianto:** miten ja milloin päätös annetaan tiedoksi (vaikuttaa muutoksenhakuajan alkuun).
 
 ## Työnkulku
 1. Selvitä: asia, asianosaiset, sovellettava erityislaki ja toimivaltaperuste, mitä on jo tehty (kuuleminen, selvitykset).
-2. Hae säännökset `oikeustutkimus`-skillillä.
+2. Hae säännökset `legal-research`-skillillä.
 3. Laadi tai tarkista päätös yllä olevan listan mukaan. Nosta esiin menettelyvirheet (kuulematta jättäminen, esteellisyys, puuttuva perustelu/ohjaus) → kumoamisriski.
 4. Tuota päätös (uusi: `docx`-skill; olemassa olevan muokkaus jälkimuutoksin: `adeu`-MCP). Merkitse täydennettävät kohdat ja `[varmista — hallinto-oikeudellisen asiantuntijan arvioitava]`.
 
@@ -60,8 +70,8 @@ mahdolliset kumoamisriskit.
 - **Ei tee viranomaispäätöstä eikä korvaa viranomaisen vastuuta.** Tuottaa tarkistettavan luonnoksen; viranomainen vastaa päätöksestään ja sen laillisuudesta.
 - **Ei vahvista toimivaltaperusteita eikä määräaikoja muistista.** Toimivalta (erityislaki, kuntalaki 410/2015, johtosäännöt) ja muutoksenhaun määräajat haetaan lähteestä erityislaeittain.
 - **Ei ratkaise aineellista oikeuskysymystä lopullisesti.** Tulkinnanvaraiset edellytykset ja näytön arviointi kuuluvat hallinto-oikeudellisen asiantuntijan vastuulle.
-- **Ei laadi muutoksenhakua eikä arvioi valituksen menestymistä** — se kuuluu `muutoksenhaku`-skilliin.
-- **Ei tee julkisuus- tai salassapitoratkaisua** päätökseen liittyvistä asiakirjoista; se kuuluu `julkisuus-ja-tietopyynnot`-skilliin.
+- **Ei laadi muutoksenhakua eikä arvioi valituksen menestymistä** — se kuuluu `administrative-appeal`-skilliin.
+- **Ei tee julkisuus- tai salassapitoratkaisua** päätökseen liittyvistä asiakirjoista; se kuuluu `public-access-and-information-requests`-skilliin.
 - **Vain Suomen hallinto-oikeus.** Ei sovellu muiden maiden hallintomenettelyyn eikä yksityisoikeudellisiin asioihin.
 
 ## Jatka tästä

@@ -29,7 +29,7 @@ Vastuuta **ei voi pätevästi rajoittaa tahallisuuden tai törkeän huolimattomu
 
 ## Lakiviittaukset lähteestä
 
-Tarkista sovellettavan lain (kauppalaki 355/1987, kuluttajansuojalaki 38/1978, korkolaki, vahingonkorvauslaki ym.) voimassa oleva sanamuoto ja säädösnumero **`legal-core`-plugarin `oikeustutkimus`-skillillä** ennen viittausta. Älä keksi säädös- tai pykälänumeroita; merkitse tarkistamaton viittaus `[muistinvarainen — tarkista]`.
+Tarkista sovellettavan lain (kauppalaki 355/1987, kuluttajansuojalaki 38/1978, korkolaki, vahingonkorvauslaki ym.) voimassa oleva sanamuoto ja säädösnumero **`legal-core`-plugarin `legal-research`-skillillä** ennen viittausta. Älä keksi säädös- tai pykälänumeroita; merkitse tarkistamaton viittaus `[muistinvarainen — tarkista]`.
 
 ## Jaetut standardit
 

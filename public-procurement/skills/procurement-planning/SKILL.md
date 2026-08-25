@@ -18,15 +18,25 @@ description: >
 
 Tämä skill jäsentää hankinnan suunnitteluvaiheen päätökset hankintalain
 (1397/2016) mukaan. Perusteet, menettelykartta ja periaatteet:
-`references/hankinnat-perusteet.md` — lue se tehtävän alussa.
+`references/procurement-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** suunnitelmat ja luonnokset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Hankintapäätökset tekee toimivaltainen
-> viranomainen. Katso `julkiset-hankinnat/CLAUDE.md`.
+> viranomainen. Katso `public-procurement/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja kynnysarvot lähteestä
 
-Hae hankintalain säännökset **`juristi:oikeustutkimus`-skillillä** ja
+Hae hankintalain säännökset **`legal-core:legal-research`-skillillä** ja
 **voimassa olevat kynnysarvot lähteestä** (Finlex, Hilma, TEM) — EU-arvot
 tarkistetaan kahden vuoden välein. Erityisaloilla (vesi, energia,
 liikenne, posti) tarkista ensin, sovelletaanko erityisalojen
@@ -66,7 +76,7 @@ osallistujat, tietopyyntö (RFI) ja sen julkaisu Hilmassa.
 
 ## Vaihe 4: Menettelyn valinta
 
-Käy menettelykartta (`references/hankinnat-perusteet.md`) läpi hankinnan
+Käy menettelykartta (`references/procurement-fundamentals.md`) läpi hankinnan
 luonteen mukaan ja perustele valinta:
 
 - **Avoin tai rajoitettu** — selkeät, määriteltävissä olevat hankinnat.

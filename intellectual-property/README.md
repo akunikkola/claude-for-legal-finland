@@ -26,12 +26,12 @@ tekstin- ja tiedonlouhinta) ja 40 b §:n tietokoneohjelmien työsuhdesiirrosta �
 (221/1971)**, **laki hyödyllisyysmallioikeudesta (800/1991)**, **toiminimilaki
 (128/1979)**, **laki sopimattomasta menettelystä elinkeinotoiminnassa (1061/1978)**
 ja **laki oikeudesta työntekijän tekemiin keksintöihin (656/1967)**. Pykälätason
-sisällöt tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
+sisällöt tarkistetaan käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (markkinaoikeuden ja KKO:n käytäntö),
-  `asiakirjan-tarkistus` ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (markkinaoikeuden ja KKO:n käytäntö),
+  `document-review` ja `engagement-intake`.
 - **`contracts`-plugari** – lisenssi-, NDA- ja siirtosopimusten mekaniikka.
 - **`employment-law`-plugari** – työsuhteessa syntyvät oikeudet ja kilpailukielto.
 - **`company-law`-plugari** – IPR yritysjärjestelyjen due diligencessä.

@@ -16,15 +16,25 @@ määräajassa. **Muutoksenhakuaika on ehdoton** — myöhästynyt valitus jäte
 joten määräaika on varmistettava heti.
 
 > **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa. Katso
-> `hallinto-oikeus/CLAUDE.md`. Perusteet: `../hallintopaatos/references/hallinto-oikeus-perusteet.md`.
+> `administrative-law/AGENTS.md`. Perusteet: `../administrative-decision/references/administrative-law-fundamentals.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista muutoksenhakutie, määräaika ja laki lähteestä
 - Lue **päätöksen muutoksenhakuohjaus** ensin — se kertoo tien, kohteen ja määräajan.
 - Vahvista laki oikeudenkäynnistä hallintoasioissa (808/2019) ja sovellettava **erityislaki**
-  (joka voi muuttaa määräaikaa, valituslupaa tai valitustietä) **`juristi:oikeustutkimus`-skillillä**.
+  (joka voi muuttaa määräaikaa, valituslupaa tai valitustietä) **`legal-core:legal-research`-skillillä**.
   **Älä esitä määräaikaa muistista** — hae se ja merkitse lähde; jos et voi tarkistaa, merkitse `[tarkista määräaika]`.
 
-> **Pohja:** [`pohjat/oikaisuvaatimus.md`](../../templates/request-for-rectification.md) — oikaisuvaatimuksen rakenteellinen luuranko (määräaika ensin).
+> **Pohja:** [`pohjat/request-for-rectification.md`](../../templates/request-for-rectification.md) — oikaisuvaatimuksen rakenteellinen luuranko (määräaika ensin).
 
 ## Vaihe 1: Tunnista oikea muutoksenhakutie
 - **Oikaisuvaatimus** — monessa asiassa pakollinen ensivaihe samalle viranomaiselle ennen valitusta. Tarkista, edellyttääkö asia ensin oikaisuvaatimusta.
@@ -48,7 +58,7 @@ Sisällytä (tarkista täsmälliset sisältövaatimukset 808/2019:stä):
 Tuota oikaisuvaatimus-/valitusluonnos sekä **muutoksenhaun tarkistuslista** (tie, määräaika
 lähteineen, valitusoikeus, sisältövaatimukset, liitteet, toimitustapa). Merkitse
 `[varmista — määräaika ja valituslupa tarkistettava]` ja korosta määräajan ehdottomuutta.
-Liitä lähteet (808/2019 + erityislaki + mahdollinen KHO-käytäntö `oikeustutkimus`-skillillä).
+Liitä lähteet (808/2019 + erityislaki + mahdollinen KHO-käytäntö `legal-research`-skillillä).
 
 Asiakirjan voi tuottaa `docx`-skillillä (uusi) tai muokata olemassa olevaa `adeu`-MCP:llä
 (jälkimuutokset). Älä esitä menestymisen todennäköisyyttä lopullisena arviona.
@@ -57,7 +67,7 @@ Asiakirjan voi tuottaa `docx`-skillillä (uusi) tai muokata olemassa olevaa `ade
 - **Ei tee viranomaisen tai tuomioistuimen päätöstä eikä korvaa asiamiehen/asiantuntijan vastuuta.** Tuottaa tarkistettavan oikaisuvaatimus- tai valitusluonnoksen.
 - **Ei vahvista valitusaikaa, valitustietä tai valitusluvan tarvetta muistista.** Ne haetaan lähteestä erityislaeittain (laki oikeudenkäynnistä hallintoasioissa 808/2019 + erityislaki); myöhästynyt valitus jätetään tutkimatta.
 - **Ei arvioi valituksen menestymisen todennäköisyyttä lopullisena kantana.** Tulkinta ja näytön riittävyys kuuluvat asiantuntijalle.
-- **Ei laadi alkuperäistä hallintopäätöstä** — se kuuluu `hallintopaatos`-skilliin.
+- **Ei laadi alkuperäistä hallintopäätöstä** — se kuuluu `administrative-decision`-skilliin.
 - **Ei viittaa kumottuun hallintolainkäyttölakiin (586/1996)** voimassa olevana; voimassa on 808/2019.
 - **Vain Suomen hallintoprosessi.** Ei kata yleisten tuomioistuinten muutoksenhakua (siviili-/rikosasiat) eikä muiden maiden prosessia.
 

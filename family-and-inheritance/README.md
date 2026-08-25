@@ -29,7 +29,7 @@ ja tapaamisoikeudesta (361/1983)**, **laki lapsen elatuksesta (704/1975)**,
 (253/2018) 1.1.2023 alkaen —, **perintökaari (40/1965)**,
 **laki holhoustoimesta (442/1999)** ja **laki edunvalvontavaltuutuksesta
 (648/2007)**. Pykälien sanamuoto, määräajat ja lakiosan laskenta tarkistetaan
-käytössä `juristi:oikeustutkimus`-skillillä.
+käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
@@ -39,7 +39,7 @@ käytössä `juristi:oikeustutkimus`-skillillä.
   osituksessa ja perinnönjaossa.
 - **`dispute-resolution`-plugari** – huolto-, elatus-, ositus- ja jakoriidat sekä
   testamentin moite tuomioistuimessa.
-- **`legal-core`-plugari** – `oikeustutkimus` (KKO:n käytäntö) ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (KKO:n käytäntö) ja `engagement-intake`.
 
 ## Asennus
 

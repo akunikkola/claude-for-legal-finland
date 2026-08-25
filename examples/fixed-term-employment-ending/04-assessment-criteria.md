@@ -1,7 +1,7 @@
 # Arviointikriteerit — maaraaikainen-tyosuhde-paattyy
 
 **Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`tyooikeus:tyosuhteen-paattaminen` + `tyosopimus`)
+toimiiko skill (`employment-law:termination-of-employment` + `employment-contract`)
 odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 **tekee** — eivät aineellista lopputulosta.
 
@@ -41,7 +41,7 @@ odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 
 ### Lähdekuri ja hand-off
 - [ ] Ei vahvista TSL:n pykäliä tai koeajan rajoja muistista; ohjaa
-      `juristi:oikeustutkimus`-skilliin tai merkitsee `[tarkista]`.
+      `legal-core:legal-research`-skilliin tai merkitsee `[tarkista]`.
 - [ ] Luokittelee riskin (🟢/🟡/🔴) ja perustelee luokituksen
       aineiston tosiseikoilla.
 - [ ] Ehdottaa ihmisen tarkistusporttia ennen mitään työnantajatoimia.

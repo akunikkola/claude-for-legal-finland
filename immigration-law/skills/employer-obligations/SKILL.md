@@ -18,12 +18,12 @@ description: >
 
 Tämä skill rakentaa työnantajan compliance-prosessin ulkomaalaisen
 työvoiman käyttöön ja jäsentää seuraamustilanteet. Perusteet:
-`../tyoperusteiset-oleskeluluvat/references/ulkomaalaisoikeus-perusteet.md`.
+`../work-based-residence-permits/references/immigration-law-fundamentals.md`.
 
 > **Vastuuvapaus:** prosessit ja listat ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Työnantajan vastuu on ankara —
 > "en tiennyt" ei riitä, jos varmistus laiminlyötiin. Katso
-> `ulkomaalaisoikeus/CLAUDE.md` (mm. negatiivirajaus: luvattoman työn
+> `immigration-law/AGENTS.md` (mm. negatiivirajaus: luvattoman työn
 > tai hyväksikäytön järjestelyä ei avusteta).
 
 ## Tarkista laki lähteestä
@@ -31,7 +31,7 @@ työvoiman käyttöön ja jäsentää seuraamustilanteet. Perusteet:
 Hae UlkL:n työnantajavelvoitteet ja seuraamussäännökset
 (seuraamusmaksu — laissa, vahvistettu) sekä rikoslain säännökset
 (luvattoman ulkomaisen työvoiman käyttö, kiskonnantapainen
-työsyrjintä) **`juristi:oikeustutkimus`-skillillä**. Lähetetyt
+työsyrjintä) **`legal-core:legal-research`-skillillä**. Lähetetyt
 työntekijät: 447/2016. Työsuojeluviranomaisen ohjeet `[tarkista]`.
 
 ## Varmistusprosessi — rakenna ja dokumentoi
@@ -48,7 +48,7 @@ työntekijät: 447/2016. Työsuojeluviranomaisen ohjeet `[tarkista]`.
    mukaiset ilmoitukset (mm. TTOL-työntekijän ehdot, luottamusmiehen
    informointi) lähteestä.
 4. **Seuranta**: lupien päättymispäivät kalenteriin
-   (→ `juristi:toimeksianto` / `agent-recipes/deadline-watch`);
+   (→ `legal-core:engagement-intake` / `agent-recipes/deadline-watch`);
    jatkolupaprosessi käyntiin ajoissa; olosuhdemuutosten
    (tehtävä, palkka) vaikutus lupaan arvioidaan ennen muutosta.
 5. **Ehdot kuntoon**: palkka ja ehdot vähintään TES:n/lain tasolla —
@@ -65,7 +65,7 @@ työntekijät: 447/2016. Työsuojeluviranomaisen ohjeet `[tarkista]`.
   ilmoitus työsuojeluviranomaiselle, edustajan asettaminen,
   vähimmäisehdot Suomen lain ja TES:n mukaan, vastuut
   tilaajalle — tarkista ketju sopimuksiin (→
-  `sopimukset:sopimuksen-laatiminen`: lähetettyjen ehdot ja
+  `contracts:contract-drafting`: lähetettyjen ehdot ja
   dokumentaatiovaatimukset alihankintasopimukseen).
 
 ## Seuraamustilanne
@@ -81,7 +81,7 @@ Jos selvityspyyntö tai epäily on jo käsillä:
 3. **Vastaus viranomaiselle**: tosiseikat ja dokumentoitu
    varmistusprosessi; korjaavat toimet heti (työnteon keskeytys jos
    oikeutta ei ole, prosessin korjaus).
-4. Epäily rikoksesta → `rikosprosessi:esitutkinta-ja-pakkokeinot`.
+4. Epäily rikoksesta → `criminal-procedure:pre-trial-investigation-and-coercive-measures`.
 
 ## Mitä tämä skill EI tee
 

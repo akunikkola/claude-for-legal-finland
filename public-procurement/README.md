@@ -30,8 +30,8 @@ euromäärät tarkistetaan käytössä lähteestä (Finlex, Hilma, TEM).
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (MAO:n ja KHO:n hankintakäytäntö),
-  `asiakirjan-tarkistus` ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (MAO:n ja KHO:n hankintakäytäntö),
+  `document-review` ja `engagement-intake`.
 - **`administrative-law`-plugari** – julkisuuslaki ja asiakirjapyynnöt
   hankinnoissa; hankintayksikön päätöksenteko on julkista vallankäyttöä.
 - **`contracts`-plugari** – hankintasopimuksen lausekkeet.

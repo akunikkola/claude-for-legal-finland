@@ -15,8 +15,8 @@ Tämä skill tukee vaatimustenmukaisuuden ajoitusta ja riskien arviointia EU:n
 tekoälyasetuksen mukaan.
 
 > **Vastuuvapaus:** tarkistettavaa ensiarviota — ei oikeudellista neuvontaa. Sakkojen ja
-> luokittelun lopullinen arvio kuuluu asiantuntijalle. Katso `tekoalysaantely/CLAUDE.md`.
-> Perusteet: `../tekoaly-luokittelu/references/ai-act-perusteet.md`.
+> luokittelun lopullinen arvio kuuluu asiantuntijalle. Katso `ai-regulation/AGENTS.md`.
+> Perusteet: `../ai-classification/references/ai-act-fundamentals.md`.
 
 ## Käytä EU AI Act -MCP:tä — älä arvaa lukuja äläkä päiviä
 

@@ -4,7 +4,7 @@
 tarkistettu Finlexistä; tekijänoikeuslain osalta on lisäksi vahvistettu,
 että laki sisältää DSM-direktiivin muutokset ja 40 b §:n. Pykälätason
 sisällöt, määräajat ja maksut tarkistetaan käyttöhetkellä
-`juristi:oikeustutkimus`-skillillä ja viranomaislähteistä (PRH, EUIPO).
+`legal-core:legal-research`-skillillä ja viranomaislähteistä (PRH, EUIPO).
 
 ## Suojamuodot ja säädökset
 

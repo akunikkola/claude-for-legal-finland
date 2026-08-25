@@ -10,7 +10,7 @@ Jokainen plugari sisältää kaksi ohjekerrosta:
 
 1. **`<plugari>/skills/<skill>/SKILL.md`** – mitä tämä skill tekee, vaihe vaiheelta.
    Kapea, tehtäväkohtainen rakenne.
-2. **`<plugari>/CLAUDE.md`** – jaetut suojaukset ja käytäntöprofiili. Lähdemerkintä,
+2. **`<plugari>/AGENTS.md`** – jaetut suojaukset ja käytäntöprofiili. Lähdemerkintä,
    ajantasaisuuden pakko, premissien tarkistus, vastuuvapaus, jurisdiktio näkyviin.
    Laaja, plugaritason turvaverkko.
 
@@ -30,7 +30,7 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
   käytä sitä. Muistinvaraiset väitteet merkitään selvästi.
 - **Vastuuvapaus pidetään.** Tuotos on aina tarkistettava luonnos; ihminen vastaa.
 - **Kieli kunnossa.** Suomenkieliset skillit noudattavat suomen kielen ja lakikielen
-  sääntöjä (ks. `legal-core`-plugarin `suomen-kieli`- ja `legal-core`-skillit).
+  sääntöjä (ks. `legal-core`-plugarin `finnish-language`- ja `legal-core`-skillit).
 
 - **Noudata jaettua viittausstandardia.** Säädös-, oikeuskäytäntö- ja
   esityöviittauksissa: [`references/citation-style.md`](references/citation-style.md)

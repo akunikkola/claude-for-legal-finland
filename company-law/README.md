@@ -28,12 +28,12 @@ Lähteestä (Finlex) varmistettu: **osakeyhtiölaki (624/2006)** lukurakenteinee
 keskeisine periaatteineen (1:5, 1:7, 1:8, 13:2), **kaupparekisterilaki (564/2023)**
 (korvasi vanhan 129/1979), **kilpailulaki (948/2011)**, **laki avoimesta yhtiöstä ja
 kommandiittiyhtiöstä (389/1988)**, **osuuskuntalaki (421/2013)** ja **tilintarkastuslaki
-(1141/2015)**. Pykälätason sisällöt tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
+(1141/2015)**. Pykälätason sisällöt tarkistetaan käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (lain ja oikeuskäytännön tarkistus),
-  `asiakirjan-tarkistus` ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (lain ja oikeuskäytännön tarkistus),
+  `document-review` ja `engagement-intake`.
 - **`contracts`-plugari** – yleinen sopimusmekaniikka (osakassopimus ja kauppakirja
   ovat sopimuksia: OikTL 228/1929, kohtuullistaminen 36 §).
 - **`employment-law`-plugari** – liikkeen luovutus ja henkilöstö yritysjärjestelyissä.

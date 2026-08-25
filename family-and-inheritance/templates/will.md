@@ -1,13 +1,20 @@
 # Pohja: testamentti
 
 Rakenteellinen luuranko testamentille. Käyttävä skill:
-[`perinto-ja-testamentti`](../skills/inheritance-and-wills/SKILL.md).
+[`inheritance-and-wills`](../skills/inheritance-and-wills/SKILL.md).
 Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
 
 > ⚠️ **Määrämuotoinen asiakirja.** Muotovirhe voi tehdä testamentista
 > pätemättömän, eikä tätä pohjaa saa käyttää tarkistamatta muotovaatimuksia
 > lähteestä. Käy muotomuistilista (alla) läpi skillin kanssa ennen
 > allekirjoitusta, ja huomioi rintaperillisen **lakiosa** (pakottava).
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ---
 
@@ -57,7 +64,7 @@ molempien meidän ollessa yhtä aikaa läsnä:
 ## Muotomuistilista ennen allekirjoitusta
 
 Jokainen kohta tarkistetaan lähteestä (perintökaari 40/1965, 10 luku —
-`juristi:oikeustutkimus`), ei muistista:
+`legal-core:legal-research`), ei muistista:
 
 - [ ] Testamentti on kirjallinen
 - [ ] Kaksi todistajaa, jotka ovat **esteettömiä** [esteettömyysperusteet —

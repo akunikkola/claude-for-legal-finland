@@ -25,11 +25,11 @@ vireillepano, todistelu ja muutoksenhaku.
 
 Lähteestä (oik.ai/Finlex) varmistettu: **oikeudenkäymiskaari (4/1734)** – mm. haastehakemuksen
 sisältö (5:2 §) haettu sanatarkasti – ja **tuomioistuinlaki (673/2016)**. Aineellinen laki ja
-muut säädökset (mm. laki välimiesmenettelystä 967/1992) tarkistetaan `juristi:oikeustutkimus`-skillillä.
+muut säädökset (mm. laki välimiesmenettelystä 967/1992) tarkistetaan `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (prosessisäännökset, aineellinen laki ja KKO/hovioikeus-käytäntö) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (prosessisäännökset, aineellinen laki ja KKO/hovioikeus-käytäntö) ja `document-review`.
 - **`contracts`-plugari** – sopimusriitojen aineellinen pohja.
 - **`data-protection`-plugari** – aineiston anonymisointi (PII Shield) ennen käsittelyä.
 

@@ -25,7 +25,7 @@ Lähteestä (Finlex) varmistettu: **kuluttajansuojalaki (38/1978)**, **laki
 kuluttajariitalautakunnasta (8/2007)**, **laki Kilpailu- ja kuluttajavirastosta
 (661/2012)**, **laki saatavien perinnästä (513/1999)** ja **korkolaki
 (633/1982)**. Lukujen sisältö, määräajat ja perintäkulujen enimmäismäärät
-tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä ja kkv.fi:stä.
+tarkistetaan käytössä `legal-core:legal-research`-skillillä ja kkv.fi:stä.
 
 ## Liittyy
 
@@ -35,7 +35,7 @@ tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä ja kkv.fi:stä.
   yleisesti.
 - **`dispute-resolution`-plugari** – riidan vieminen käräjäoikeuteen.
 - **`data-protection`-plugari** – suoramarkkinointi ja henkilötietojen käsittely.
-- **`legal-core`-plugari** – `oikeustutkimus` (lautakunnan ja KKO:n käytäntö).
+- **`legal-core`-plugari** – `legal-research` (lautakunnan ja KKO:n käytäntö).
 
 ## Asennus
 

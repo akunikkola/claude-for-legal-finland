@@ -18,15 +18,15 @@ description: >
 Tämä skill jäsentää arvonlisäverokysymykset arvonlisäverolain (1501/1993)
 mukaan. Menettely (ilmoittaminen, korjaaminen, muutoksenhaku) kulkee
 oma-aloitteisten verojen verotusmenettelylain (768/2016) mukaan.
-Perusteet: `../verotusmenettely-ja-muutoksenhaku/references/verotus-perusteet.md`.
+Perusteet: `../tax-procedure-and-appeals/references/tax-fundamentals.md`.
 
 > **Vastuuvapaus:** analyysit ovat tarkistettavia — ei veroneuvontaa.
 > **Verokannat ja rajat haetaan aina lähteestä** — ne ovat muuttuneet
-> viime vuosina useasti. Katso `verotus/CLAUDE.md`.
+> viime vuosina useasti. Katso `taxation/AGENTS.md`.
 
 ## Tarkista laki ja verokannat lähteestä
 
-Hae AVL:n säännökset **`juristi:oikeustutkimus`-skillillä** ja voimassa
+Hae AVL:n säännökset **`legal-core:legal-research`-skillillä** ja voimassa
 olevat **verokannat, alarajat ja vähäisen toiminnan rajat vero.fi:stä**
 — älä koskaan muistista. EU-tasolla arvonlisäverodirektiivi ja EU-tuomioistuimen
 käytäntö ohjaavat tulkintaa — nosta EU-kytkös esiin rajat ylittävissä
@@ -79,7 +79,7 @@ suosittele kokonaistarkastelua ja tarvittaessa ennakkoratkaisua.
 - **Virheen oma-aloitteinen korjaaminen** lieventää seuraamuksia —
   jäsennä korjauspolku (verokauden oikaisu vs. ilmoituksen korjaus).
 - Muutoksenhaku: oikaisuvaatimus ja valitus →
-  `verotusmenettely-ja-muutoksenhaku`.
+  `tax-procedure-and-appeals`.
 
 ## Mitä tämä skill EI tee
 

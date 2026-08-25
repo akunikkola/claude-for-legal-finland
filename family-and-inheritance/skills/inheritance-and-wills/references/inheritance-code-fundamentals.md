@@ -3,7 +3,7 @@
 Käsitteellinen kartta perimykseen, testamenttiin ja jäämistön käsittelyyn.
 **Perintökaaren (40/1965) nimi ja numero on varmistettu Finlexistä**; pykälien
 sanamuoto, määräajat ja lakiosan laskenta haetaan käytössä lähteestä
-(`juristi:oikeustutkimus`).
+(`legal-core:legal-research`).
 
 ## Perimysjärjestys (parenteeliperiaate)
 
@@ -55,11 +55,11 @@ sanamuoto, määräajat ja lakiosan laskenta haetaan käytössä lähteestä
 
 ## Kytkennät
 
-- **Ositus ennen perinnönjakoa** → `avioliitto-ja-ositus`.
+- **Ositus ennen perinnönjakoa** → `marriage-and-division-of-property`.
 - **Perintö- ja lahjavero** → `taxation`-plugari ja Verohallinto. Älä laske
   veroja tässä.
 - **Alaikäinen tai toimintakyvytön osakas** → edunvalvonta
-  (`edunvalvonta-ja-edunvalvontavaltuutus`); eturistiriita voi vaatia
+  (`guardianship-and-powers-of-attorney`); eturistiriita voi vaatia
   edunvalvojan sijaisen.
 - **Riidat** (testamentin tai jaon moite, pesänjakajan määräys) →
   `dispute-resolution`.

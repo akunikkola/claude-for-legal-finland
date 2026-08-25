@@ -50,12 +50,12 @@ Aidosti epävarmoissa rakenteissa kerro mahdollisuus keskustella KKV:n kanssa.
 
 Sama käyttäjä voi olla eri rooleissa: ostaja/myyjä yrityskaupassa, kantelija tai
 kohde, hankintayksikkö tai tarjoaja. Selvitä rooli heti ja pidä toimeksiannot
-erillään (→ `juristi:toimeksianto`, esteellisyys). Tarjousyhteistyön rajat
+erillään (→ `legal-core:engagement-intake`, esteellisyys). Tarjousyhteistyön rajat
 hankinnoissa: ks. myös `public-procurement`.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 ratkaisukäytäntö (markkinaoikeus, KHO, EU-tuomioistuin, komission päätökset)
 lähteestä tunnuksineen. KKV:n suuntaviivat ja tiedotteet ovat viranomaiskantoja,
 eivät lakia — erottele.

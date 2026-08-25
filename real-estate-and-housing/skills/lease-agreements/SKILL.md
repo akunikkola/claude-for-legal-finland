@@ -19,17 +19,24 @@ Tämä skill jäsentää vuokrasuhteen elinkaaren molemmista näkökulmista
 (vuokranantaja ja vuokralainen). **Ensimmäinen rajanveto:
 asuinhuoneisto (AHVL 481/1995) vai liikehuoneisto (LHVL 482/1995)** —
 käyttötarkoitus ratkaisee, ja lakien pakottavuus eroaa olennaisesti.
-Perusteet: `../kiinteistokauppa/references/kiinteisto-perusteet.md`.
+Perusteet: `../real-property-conveyance/references/real-property-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. AHVL sisältää pakottavia säännöksiä vuokralaisen suojaksi —
 > niiden vastainen ehto on tehoton. Katso
-> `kiinteistot-ja-asuminen/CLAUDE.md`.
+> `real-estate-and-housing/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae AHVL:n/LHVL:n säännökset (irtisanomisajat, vakuuden enimmäismäärä,
-purkuperusteet, korotusmenettely) **`juristi:oikeustutkimus`-skillillä**
+purkuperusteet, korotusmenettely) **`legal-core:legal-research`-skillillä**
 — älä muistista. Tarkista kummasta laista on kyse ja mikä on
 pakottavaa: AHVL suojaa vuokralaista laajasti, LHVL on pitkälti
 tahdonvaltainen.
@@ -55,7 +62,7 @@ Käy ainakin nämä läpi (molemmissa sopimustyypeissä):
 5. **Kunnossapito ja muutostyöt** — AHVL:n olettama vs. sovittu;
    liiketiloissa vastuunjako ja kuntoluokitus sovitaan vapaammin.
 6. **Liikehuoneiston erityisehdot** — käyttötarkoitus ja
-   kilpailusuoja, ALV-status (hakeutuminen → `verotus:arvonlisaverotus`),
+   kilpailusuoja, ALV-status (hakeutuminen → `taxation:value-added-tax`),
    ylläpitovuokran erittely, ali- ja jälleenvuokrausoikeus,
    lunastus-/jatko-optiot, sopimussakko.
 
@@ -76,7 +83,7 @@ Käy ainakin nämä läpi (molemmissa sopimustyypeissä):
 | **Irtisanominen** | toistaiseksi voimassa oleva | irtisanomisajat lähteestä (AHVL: pituus riippuu osapuolesta ja kestosta); asuinhuoneistossa vuokranantajan irtisanomiselle hyvän tavan vaatimukset ja vuokralaisen suoja — lähteestä |
 | **Purkaminen** | olennainen sopimusrikkomus (rästit, häiriö, käyttötarkoituksen vastaisuus) | purkuperusteet lähteestä; **varoitus yleensä ensin** — ilman sitä purku kaatuu |
 | **Määräajan päättyminen** | määräaikainen | ei jatkamisvelvollisuutta; hiljainen jatkuminen sovittava/estettävä |
-| **Häätö** | vuokralainen ei poistu | tuomio + ulosotto → `insolvenssi:saatavien-perinta` ja `riidanratkaisu:haastehakemus`; omatoiminen häätö on kielletty |
+| **Häätö** | vuokralainen ei poistu | tuomio + ulosotto → `insolvency:debt-collection` ja `dispute-resolution:statement-of-claim`; omatoiminen häätö on kielletty |
 
 Rästitilanteessa jäsennä kokonaisuus: maksusuunnitelma vs. purku,
 vakuuden käyttö, perintä — ja asumisneuvonnan mahdollisuus

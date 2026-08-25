@@ -20,9 +20,16 @@ osakeyhtiölakia (624/2006) ja yhtiöjärjestystä, mutta sitoo vain
 osapuoliaan.
 
 > **Vastuuvapaus:** luonnokset ja riskiarviot ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Katso `yhtiooikeus/CLAUDE.md`. Yhtiöoikeuden
-> perusteet: `../yhtion-hallinto/references/yhtiooikeus-perusteet.md`.
+> oikeudellista neuvontaa. Katso `company-law/AGENTS.md`. Yhtiöoikeuden
+> perusteet: `../corporate-governance/references/company-law-fundamentals.md`.
 > Yleinen sopimusmekaniikka ja lausekekirjasto: `contracts`-plugari.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Kolme instrumenttia — pidä työnjako kirkkaana
 
@@ -71,7 +78,7 @@ liittymissitoumusta (adherence) — varmista mekanismi.
 ## Riskitarkistus (olemassa oleva sopimus)
 
 Käy sopimus lausekkeittain läpi ja luokittele
-(`sopimukset:sopimuksen-tarkistus`-skillin tapaan):
+(`contracts:contract-review`-skillin tapaan):
 
 - **🟢 VIHREÄ** — tasapainoinen, täytäntöönpantavissa, oikeassa
   instrumentissa.

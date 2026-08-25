@@ -62,7 +62,7 @@ rajoittamaton) tarkistetaan lupatyypistä ja päätöksestä — ei oleteta.
 5. **Jatkolupa** ennen edellisen päättymistä — hakuvaiheen
    työnteko-oikeuden jatkuminen (edellytykset lähteestä).
 6. Kielteisestä päätöksestä valitus hallinto-oikeuteen →
-   `hallinto-oikeus:muutoksenhaku`.
+   `administrative-law:administrative-appeal`.
 
 ## Tyypilliset riskipisteet
 

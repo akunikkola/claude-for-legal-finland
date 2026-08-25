@@ -21,11 +21,11 @@ Prosessissa **määräajat ovat ehdottomia** ja menettelyvaiheet sitovia:
 - **Tyytymättömyyden ilmoitus** käräjäoikeudessa ennen valitusta hovioikeuteen — laiminlyönti voi estää valituksen.
 - **Jatkokäsittelylupa** (hovioikeus, OK 25 a luku) ja **valituslupa** (KKO, OK 30 luku) — tunnista ja perustele lupaperusteet.
 - **Kanteen vanhentuminen** ja muut prekluusiot.
-Hae kaikki määräajat, lupaperusteet ja sisältövaatimukset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex). Älä esitä niitä muistista — merkitse tarkistamaton `[tarkista]`.
+Hae kaikki määräajat, lupaperusteet ja sisältövaatimukset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex). Älä esitä niitä muistista — merkitse tarkistamaton `[tarkista]`.
 
 ## Lähteestä, ei muistista
 
-Vahvistettu lähteestä: prosessin yleislaki on **oikeudenkäymiskaari (4/1734)** ja tuomioistuimet **tuomioistuinlaki (673/2016)**. Hae sovellettavat luvut/pykälät ja aineellinen laki lähteestä. Älä keksi pykälä- tai ratkaisutunnuksia; oikeuskäytäntö haetaan `oikeustutkimus`-skillillä (KKO, hovioikeudet).
+Vahvistettu lähteestä: prosessin yleislaki on **oikeudenkäymiskaari (4/1734)** ja tuomioistuimet **tuomioistuinlaki (673/2016)**. Hae sovellettavat luvut/pykälät ja aineellinen laki lähteestä. Älä keksi pykälä- tai ratkaisutunnuksia; oikeuskäytäntö haetaan `legal-research`-skillillä (KKO, hovioikeudet).
 
 ## Punnitse sovinto ja ADR
 
@@ -33,7 +33,7 @@ Ennen kannetta ja sen aikana arvioi, olisiko **sovinto, tuomioistuinsovittelu ta
 
 ## Luottamuksellisuus
 
-Käsiteltävä aineisto voi sisältää arkaluonteisia henkilötietoja ja liikesalaisuuksia. Harkitse anonymisointia ennen analyysiä (→ `data-protection`-plugarin PII Shield -ohje) ja tarkista, kenelle tuotos menee (`juristi/CLAUDE.md` → luottamuksellisuus).
+Käsiteltävä aineisto voi sisältää arkaluonteisia henkilötietoja ja liikesalaisuuksia. Harkitse anonymisointia ennen analyysiä (→ `data-protection`-plugarin PII Shield -ohje) ja tarkista, kenelle tuotos menee (`legal-core/AGENTS.md` → luottamuksellisuus).
 
 ## Jaetut standardit
 

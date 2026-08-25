@@ -8,7 +8,7 @@ konkreettisemmat vaikutusarviot.
 > **Ohje skillille:** jos tämä profiili on täyttämättä, kysy käyttäjältä keskeiset
 > tiedot (organisaation tyyppi, koko, toimiala/painopisteet, resurssitilanne, erityispiirteet)
 > ennen vaikutusten arviointia. Älä keksi lukuja — merkitse arviot `[arvio — varmista]`.
-> Tämän voi myös tallentaa pysyvästi plugarin käytäntöprofiiliin (`lausunnot/CLAUDE.md`).
+> Tämän voi myös tallentaa pysyvästi plugarin käytäntöprofiiliin (`legislative-consultation/AGENTS.md`).
 
 ## Perustiedot
 

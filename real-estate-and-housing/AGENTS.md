@@ -55,7 +55,7 @@ tahdonvaltainen — kerro ero. Tarkista pakottavuus lähteestä ennen ehdon laat
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex):
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex):
 virhesäännökset, määräajat, kunnossapitovastuun jakautuminen (AOYL ja yhtiöjärjestys),
 vuokrankorotuksen ja päättämisen edellytykset. KKO:n laaja virhe- ja
 reklamaatiokäytäntö haetaan lähteestä tunnuksineen. Rekisteritiedot (lainhuuto,

@@ -23,19 +23,29 @@ suuren osan lainsäädännöstä käytännössä.
 > ja hyväksyy. Arvolatautuneet ja poliittiset kannanotot jätetään päättäjien
 > täydennettäväksi, jos niistä on erimielisyyttä. Lakiviittaukset tarkistetaan lähteestä.
 
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
+
 ---
 
 ## Lausunnonantajan profiili
 
-Lue `references/lausunnonantajan-profiili.md`. Jos profiili on täyttämättä, kysy
+Lue `references/respondent-profile.md`. Jos profiili on täyttämättä, kysy
 käyttäjältä keskeiset tiedot (organisaation tyyppi, koko, toimiala, resurssit,
 erityispiirteet) ennen vaikutusten arviointia — vaikutusarvio on yhtä hyvä kuin sen
-taustatiedot. Profiilin voi tallentaa pysyvästi plugarin käytäntöprofiiliin (`lausunnot/CLAUDE.md`).
+taustatiedot. Profiilin voi tallentaa pysyvästi plugarin käytäntöprofiiliin (`legislative-consultation/AGENTS.md`).
 
 ## Voimassa olevan lain ja oikeuskäytännön tarkistus
 
 Aina kun lausunto vertaa ehdotusta voimassa olevaan lakiin tai viittaa pykälään,
-**käytä `legal-core`-plugarin `oikeustutkimus`-skilliä** ja hae voimassa oleva sanamuoto
+**käytä `legal-core`-plugarin `legal-research`-skilliä** ja hae voimassa oleva sanamuoto
 oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista. Tämä on lausunnon
 uskottavuuden kannalta olennaista.
 
@@ -55,25 +65,25 @@ kirjoita neutraalin asiantuntevasti ja jätä arvovalinnat täydennettäväksi.
 
 ### Vaihe 1: Lähtötietojen kerääminen
 Jos materiaaleja ei ole, etsi ne (`WebSearch`/`WebFetch`; tarkemmat ohjeet
-`references/tietolahteet.md` ja `references/lausuntopalvelu-ohje.md`):
+`references/information-sources.md` ja `references/lausuntopalvelu-guide.md`):
 1. **HE-luonnos / lakiehdotusteksti** — ensisijaisesti Lausuntopalvelu.fi, vaihtoehtoisesti valtioneuvosto.fi tai eduskunta.fi.
-2. **Voimassa oleva laki** — `oikeustutkimus`-skill (oik.ai/Finlex).
+2. **Voimassa oleva laki** — `legal-research`-skill (oik.ai/Finlex).
 3. **Kuntaliiton / kattojärjestön lausunto** — sektorin yhteinen näkemys.
 4. **Vastaavien lausunnonantajien lausunnot** — vertailupohja.
 5. **Lausuntopyynnön erityiskysymykset** — mihin ministeriö toivoo vastausta.
 
 ### Vaihe 2: Lakiehdotuksen analyysi
-Analysoi järjestelmällisesti (työkalut: `references/analyysin-tyokalut.md`) ja tuota
+Analysoi järjestelmällisesti (työkalut: `references/analysis-tools.md`) ja tuota
 tiivistelmä ennen kirjoittamista.
 - **Yleiskuva:** mitä lakia muutetaan ja miksi, keskeiset muutokset, tavoitteet HE:n mukaan.
-- **Vaikutusten tunnistaminen** (kattava kehikko: `references/vaikutusarviointi.md`): taloudelliset, hallinnolliset, palvelu-, henkilöstö-, aikataulu-, tietojärjestelmä- ja kohderyhmävaikutukset. Priorisoi lakiuudistuksen kannalta olennaisimmat.
+- **Vaikutusten tunnistaminen** (kattava kehikko: `references/impact-assessment.md`): taloudelliset, hallinnolliset, palvelu-, henkilöstö-, aikataulu-, tietojärjestelmä- ja kohderyhmävaikutukset. Priorisoi lakiuudistuksen kannalta olennaisimmat.
 - **Lausunnonantajan erityispiirteet:** suhteuta vaikutukset profiiliin.
 
 ### Vaihe 3: Muiden lausuntojen analyysi
 Hae ja tiivistä keskeiset näkemykset (kattojärjestö, vertaisorganisaatiot, alueelliset toimijat, asiantuntijat). Tunnista: missä laaja yhteisymmärrys, missä erimielisyyttä, mitä huolia oma viiteryhmä nostaa, onko jotain jäänyt huomaamatta. Tuota yhteenveto käyttäjälle.
 
 ### Vaihe 4: Lausunnon laatiminen
-Laadi lausunto (rakenneopas: `references/lausunnon-rakenne.md`, esimerkit: `references/lausunnon-rakenne-esimerkit.md`):
+Laadi lausunto (rakenneopas: `references/statement-structure.md`, esimerkit: `references/statement-structure-examples.md`):
 1. **Yleistä** — kiitos lausuntomahdollisuudesta, lyhyt yleisarvio.
 2. **Yleiset huomiot** — tavoitteiden arviointi, kokonaisvaikutus, viiteryhmän näkökulma.
 3. **Yksityiskohtaiset huomiot** — pykälä-/lukukohtaiset kommentit: mitä ehdotetaan → miten vaikuttaa → mitä tilalle.
@@ -81,18 +91,18 @@ Laadi lausunto (rakenneopas: `references/lausunnon-rakenne.md`, esimerkit: `refe
 5. **Toimeenpanon haasteet** — käytännön toteutettavuus, aikataulu, resurssit.
 6. **Yhteenveto ja keskeiset esitykset** — 3–7 kannanottoa, konkreettiset muutosesitykset lakitekstiin.
 
-Kirjoitustyyli (tarkemmin `references/kirjoitusohjeet.md`): asiallinen ja rakentava, jokainen kannanotto perusteltu konkreettisesti (esimerkein ja luvuin), pykäläviittaukset tarkasti, vastustamisen rinnalle aina vaihtoehto, lausuntopyynnön erityiskysymyksiin vastataan suoraan ja otsikoidusti.
+Kirjoitustyyli (tarkemmin `references/writing-guidelines.md`): asiallinen ja rakentava, jokainen kannanotto perusteltu konkreettisesti (esimerkein ja luvuin), pykäläviittaukset tarkasti, vastustamisen rinnalle aina vaihtoehto, lausuntopyynnön erityiskysymyksiin vastataan suoraan ja otsikoidusti.
 
 ### Vaihe 5: Tarkistus ja viimeistely
-- **Sisältö:** vastaavatko kommentit lausuntopyynnön kysymyksiin? Ovatko pykäläviittaukset, lakien nimet ja numerot oikein (tarkistettu `oikeustutkimus`-skillillä)? Ovatko euroarviot realistisia? Onko keskeiset vaikutukset käsitelty?
+- **Sisältö:** vastaavatko kommentit lausuntopyynnön kysymyksiin? Ovatko pykäläviittaukset, lakien nimet ja numerot oikein (tarkistettu `legal-research`-skillillä)? Ovatko euroarviot realistisia? Onko keskeiset vaikutukset käsitelty?
 - **Rakenne:** johdonmukainen rakenne; yhteenveto linjassa yksityiskohtien kanssa; taloudelliset arviot tukevat kannanottoja.
 - **Sävy:** asiallinen ja rakentava; muutosesitykset selkeitä ja toteuttamiskelpoisia.
 - **Käytäntö:** lausunnonantajan virallinen nimi oikein; viitetiedot (diaarinumero, lausuntopyynnön tunnus) oikein; mitta sopiva (3–15 sivua).
 
-Hyödynnä tarvittaessa `legal-core`-plugarin `asiakirjan-tarkistus`-skilliä perusteelliseen tarkistukseen.
+Hyödynnä tarvittaessa `legal-core`-plugarin `document-review`-skilliä perusteelliseen tarkistukseen.
 
 ### Vaihe 6: Lähettäminen ja seuranta
-Ohjeista käyttäjää (yksityiskohdat `references/lausuntopalvelu-ohje.md`): lausunnot toimitetaan pääsääntöisesti Lausuntopalvelu.fi:n kautta tai lausuntopyynnössä ilmoitettuun osoitteeseen; tarkista allekirjoitustarve ja muoto. Seuraa uudistuksen etenemistä eduskunta.fi:stä — valiokuntien mietinnöistä näkee, huomioitiinko lausunnon kannat.
+Ohjeista käyttäjää (yksityiskohdat `references/lausuntopalvelu-guide.md`): lausunnot toimitetaan pääsääntöisesti Lausuntopalvelu.fi:n kautta tai lausuntopyynnössä ilmoitettuun osoitteeseen; tarkista allekirjoitustarve ja muoto. Seuraa uudistuksen etenemistä eduskunta.fi:stä — valiokuntien mietinnöistä näkee, huomioitiinko lausunnon kannat.
 
 ---
 
@@ -115,21 +125,21 @@ Luo **uusi** lausunto Word-dokumenttina (.docx), jotta käyttäjä voi muokata s
 
 | Tiedosto | Sisältö | Milloin lukea |
 |---|---|---|
-| `references/lausunnonantajan-profiili.md` | Lausunnonantajan taustatiedot (mallipohja) | Vaikutuksia arvioitaessa (vaihe 2) |
-| `references/analyysin-tyokalut.md` | Lakiehdotuksen analyysin työkalut | Analyysissä (vaihe 2) |
-| `references/vaikutusarviointi.md` | Vaikutusten arviointikehikko | Vaikutuksia arvioitaessa (vaihe 2) |
-| `references/tietolahteet.md` | Verkkolähteet ja hakuohjeet | Tiedonhaussa (vaihe 1) |
-| `references/lausuntopalvelu-ohje.md` | Lausuntopalvelu.fi:n käyttö ja lähettäminen | Tiedonhaussa ja lähettäessä (vaiheet 1, 6) |
-| `references/lausunnon-rakenne.md` | Lausunnon rakenneopas | Kirjoittaessa (vaihe 4) |
-| `references/lausunnon-rakenne-esimerkit.md` | Esimerkkejä lausunnon osista | Kirjoittaessa (vaihe 4) |
-| `references/kirjoitusohjeet.md` | Lakikielen ja lausunnon kirjoitustyyli | Viimeistelyssä (vaihe 5) |
+| `references/respondent-profile.md` | Lausunnonantajan taustatiedot (mallipohja) | Vaikutuksia arvioitaessa (vaihe 2) |
+| `references/analysis-tools.md` | Lakiehdotuksen analyysin työkalut | Analyysissä (vaihe 2) |
+| `references/impact-assessment.md` | Vaikutusten arviointikehikko | Vaikutuksia arvioitaessa (vaihe 2) |
+| `references/information-sources.md` | Verkkolähteet ja hakuohjeet | Tiedonhaussa (vaihe 1) |
+| `references/lausuntopalvelu-guide.md` | Lausuntopalvelu.fi:n käyttö ja lähettäminen | Tiedonhaussa ja lähettäessä (vaiheet 1, 6) |
+| `references/statement-structure.md` | Lausunnon rakenneopas | Kirjoittaessa (vaihe 4) |
+| `references/statement-structure-examples.md` | Esimerkkejä lausunnon osista | Kirjoittaessa (vaihe 4) |
+| `references/writing-guidelines.md` | Lakikielen ja lausunnon kirjoitustyyli | Viimeistelyssä (vaihe 5) |
 
 ---
 
 ## Mitä tämä skill EI tee
 
 - **Ei päätä organisaation kantaa.** Tuottaa lausuntoluonnoksen, jonka lausunnonantajan vastuuhenkilö tarkistaa ja hyväksyy ennen lähettämistä.
-- **Ei vahvista lakiviittauksia eikä vaikutuslukuja muistista.** Voimassa olevat pykälät tarkistetaan lähteestä (`oikeustutkimus`-skill) ja euro- ja muut arviot merkitään selvästi arvioiksi (`[arvio — varmista organisaation taloushallinnosta]`).
+- **Ei vahvista lakiviittauksia eikä vaikutuslukuja muistista.** Voimassa olevat pykälät tarkistetaan lähteestä (`legal-research`-skill) ja euro- ja muut arviot merkitään selvästi arvioiksi (`[arvio — varmista organisaation taloushallinnosta]`).
 - **Ei esitä poliittista kannanottoa varmistettuna.** Arvolatautuneet linjaukset jätetään päättäjien täydennettäväksi; jos asiasta on erimielisyyttä, kirjoitetaan neutraalin asiantuntevasti.
 - **Ei esitä muutosesitystä sitovaan EU-sääntelyyn.** Erottaa pakollisen EU-pohjaisen sääntelyn kansallisesta liikkumavarasta ja kohdistaa esitykset vain kansalliseen toimeenpanoon.
 - **Ei lähetä lausuntoa.** Ohjeistaa lähettämisessä (Lausuntopalvelu.fi tai ilmoitettu osoite), mutta varsinaisen jättämisen ja allekirjoituksen tekee käyttäjä.

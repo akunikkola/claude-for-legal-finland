@@ -58,7 +58,7 @@ perusteineen — päätöksen tekee virkavastuulla toimiva ihminen.
    luovutusversiota).
 4. Muistutus: kielteinen tai osittain kielteinen vastaus on
    perusteltava ja siihen liitetään muutoksenhakuohjaus →
-   `hallinto-oikeus:julkisuus-ja-tietopyynnot`.
+   `administrative-law:public-access-and-information-requests`.
 
 ## Rajat
 

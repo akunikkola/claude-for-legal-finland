@@ -16,18 +16,18 @@ description: >
 # Rahoitus ja vakuudet — sopimukset, vakuuspaketti ja riskit
 
 Tämä skill jäsentää rahoitussopimukset ja vakuusjärjestelyt. Perusteet,
-vakuuskartta ja riskipisteet: `references/rahoitus-perusteet.md` — lue
+vakuuskartta ja riskipisteet: `references/finance-fundamentals.md` — lue
 se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa eikä luotto- tai sijoituspäätöksiä. Katso
-> `pankki-ja-rahoitus/CLAUDE.md` — mm. toimiluvanvaraisuus tarkistetaan
+> `banking-and-finance/AGENTS.md` — mm. toimiluvanvaraisuus tarkistetaan
 > ensin, jos käyttäjä itse antaa luottoja.
 
 ## Tarkista laki lähteestä
 
 Hae velkakirjalain (622/1947), korkolain (633/1982) ja takauslain
-(361/1999) säännökset **`juristi:oikeustutkimus`-skillillä**;
+(361/1999) säännökset **`legal-core:legal-research`-skillillä**;
 viitekorko ja kuluttajaluottojen rajat `[tarkista — Suomen
 Pankki/lähde]`. KKO:n vakuus- ja takauskäytäntö lähteestä.
 
@@ -36,7 +36,7 @@ Pankki/lähde]`. KKO:n vakuus- ja takauskäytäntö lähteestä.
 - **Osapuolet ja roolit**: velallinen, velkoja(t), takaajat,
   pantinantajat — konsernissa myös se, kuka saa vastikkeen
   (ylävakuudet ja OYL:n lähipiiri-/varojenjakokytkös →
-  `yhtiooikeus:yhtion-hallinto`).
+  `company-law:corporate-governance`).
 - **Heikomman suoja**: kuluttaja (KSL:n pakottavat luottosäännökset)
   tai **yksityistakaaja/yksityinen pantinantaja** (361/1999 pakottava
   suoja: tiedonanto ennen sitoumusta, ilmoitukset velan hoidosta,
@@ -74,7 +74,7 @@ Käy ainakin nämä läpi (laadinnassa ja tarkistuksessa):
 3. **Etuoikeusjärjestys** — vakuuksien keskinäinen järjestys ja
    yrityskiinnityksen asema konkurssissa (1578/1992 → `insolvency`).
 4. **Takaisinsaantiriski** — vakuus vanhasta velasta tai lähellä
-   maksukyvyttömyyttä (758/1991) → `insolvenssi:maksukyvyttomyysarvio`.
+   maksukyvyttömyyttä (758/1991) → `insolvency:insolvency-assessment`.
 5. **Vakuusagentti ja syndikaatti** — agentin valtuudet,
    päätöksentekokynnykset, vakuuksien jakaminen.
 
@@ -84,7 +84,7 @@ Kovenanttirikkomus tai maksuviivästys: tosiasiat ensin (onko rikkomus
 todella tapahtunut laskentaperusteen mukaan), sitten porras
 (waiver-pyyntö ja -dokumentaatio, standstill, uudelleenjärjestely) —
 ja jos velallinen on maksukyvytön, koko paketti →
-`insolvenssi:maksukyvyttomyysarvio` (velkojan näkökulma: vakuuksien
+`insolvency:insolvency-assessment` (velkojan näkökulma: vakuuksien
 realisointi vs. saneeraus).
 
 ## Mitä tämä skill EI tee
@@ -98,7 +98,7 @@ realisointi vs. saneeraus).
 - **Ei suunnittele toimilupavaatimuksen kiertämistä** — luvanvaraisuus
   selvitetään ensin (CLAUDE.md).
 - **Ei korvaa vero- tai kirjanpitoarviota** (korkovähennysrajoitukset
-  → `verotus:yritysverotus`).
+  → `taxation:corporate-taxation`).
 
 ## Jatka tästä
 

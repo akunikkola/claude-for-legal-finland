@@ -81,7 +81,7 @@ Tämä opas kertoo, mistä löytää tarvittavat materiaalit lausunnon laatimist
 
 **Hakuohjeet:**
 - URL: `https://www.kuntaliitto.fi/`
-- Lausunnot: `https://www.kuntaliitto.fi/lausunnot`
+- Lausunnot: `https://www.kuntaliitto.fi/legislative-consultation`
 - WebSearch-haku: `site:kuntaliitto.fi [lain nimi] lausunto`
 
 ## Toissijaiset lähteet
@@ -106,7 +106,7 @@ Tämä opas kertoo, mistä löytää tarvittavat materiaalit lausunnon laatimist
 
 ### Oikeusministeriö – Lainvalmistelu
 
-- URL: `https://oikeusministerio.fi/lainvalmistelu`
+- URL: `https://oikeusministerio.fi/legislative-drafting`
 - Säädösvalmistelun yleisohjeet
 - Kuulemisopas: `https://kuulemisopas.finlex.fi/`
 

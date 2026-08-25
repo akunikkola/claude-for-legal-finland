@@ -22,7 +22,7 @@ ennen lähettämistä. Skill ei päätä organisaation kantaa.
 Lausunnon uskottavuus rakentuu täsmällisille lakiviittauksille. Kun lausunto vertaa
 ehdotusta voimassa olevaan lakiin tai viittaa pykälään:
 
-- **Käytä `legal-core`-plugarin `oikeustutkimus`-skilliä** ja hae voimassa oleva sanamuoto oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista.
+- **Käytä `legal-core`-plugarin `legal-research`-skilliä** ja hae voimassa oleva sanamuoto oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista.
 - Erota selvästi **voimassa oleva oikeus**, **ehdotettu muutos** ja **lausunnonantajan kanta**.
 - Älä keksi säädös-, pykälä- tai HE-numeroita.
 
@@ -33,7 +33,7 @@ ehdotusta voimassa olevaan lakiin tai viittaa pykälään:
 Taloudelliset ja muut vaikutusluvut ovat lausunnon vahvin argumentti — ja samalla altein virhelähde.
 
 - Merkitse arvioidut luvut selvästi: `[arvio — varmista organisaation taloushallinnosta]`. Älä esitä arvioitua euromäärää varmistettuna lukuna.
-- Suhteuta vaikutukset lausunnonantajan profiiliin (`references/lausunnonantajan-profiili.md`). Jos profiili puuttuu, kysy taustatiedot — älä keksi organisaation kokoa, taloutta tai resursseja.
+- Suhteuta vaikutukset lausunnonantajan profiiliin (`references/respondent-profile.md`). Jos profiili puuttuu, kysy taustatiedot — älä keksi organisaation kokoa, taloutta tai resursseja.
 - Vastustamisen rinnalle aina konkreettinen vaihtoehto.
 
 ---

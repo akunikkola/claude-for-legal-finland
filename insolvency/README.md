@@ -24,11 +24,11 @@ saneerausmenettelyn – **laki yksityishenkilön velkajärjestelystä (57/1993)*
 **ulosottokaari (705/2007)**, **laki velan vanhentumisesta (728/2003)**, **laki
 saatavien perinnästä (513/1999)**, **laki velkojien maksunsaantijärjestyksestä
 (1578/1992)** ja **laki takaisinsaannista konkurssipesään (758/1991)**. Pykälätason
-sisällöt ja määräajat tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
+sisällöt ja määräajat tarkistetaan käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus`, `asiakirjan-tarkistus` ja `toimeksianto`
+- **`legal-core`-plugari** – `legal-research`, `document-review` ja `engagement-intake`
   (määräaikaskannaus).
 - **`company-law`-plugari** – johdon vastuu ja varojenjaon maksukykytesti
   kriisiyhtiössä.

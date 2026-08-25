@@ -18,18 +18,18 @@ description: >
 
 Tämä skill jäsentää yksilön kielelliset oikeudet ja viranomaisen
 kielelliset velvoitteet. Lähteet ja käsitteet:
-`../oikeuskielen-kaantaminen/references/kaksikielisyys-perusteet.md`.
+`../legal-translation/references/bilingual-language-fundamentals.md`.
 
 > **Vastuuvapaus:** arvio on tarkistettava luonnos — ei oikeudellista
 > neuvontaa. Velvoitteet ja määräajat tarkistetaan kielilaista ja
 > perustuslaista lähteestä. Saamen kieli on oma kokonaisuutensa. Katso
-> `kaksikielisyys/CLAUDE.md`.
+> `bilingual-legal-language/AGENTS.md`.
 
 ## Tarkista säännökset lähteestä
 
 Hae kielilain (423/2003), perustuslain (731/1999) 17 §:n,
 kielitaitolain (424/2003) ja tarvittaessa saamen kielilain (1086/2003)
-säännökset **`juristi:oikeustutkimus`-skillillä**. Soveltamiskäytäntö
+säännökset **`legal-core:legal-research`-skillillä**. Soveltamiskäytäntö
 (mm. kielelliset oikeudet hallinto- ja tuomioistuinmenettelyssä)
 lähteestä.
 
@@ -89,7 +89,7 @@ kohdat ja tarkistustarpeet.
 - **Ei esitä viranomaisen velvoitetta tai määräaikaa muistista** —
   kielilaista ja perustuslaista lähteestä.
 - **Ei rinnasta saamen kieltä ruotsiin** — oma sääntelynsä.
-- **Ei tuota virallista käännöstä** → `oikeuskielen-kaantaminen` ja
+- **Ei tuota virallista käännöstä** → `legal-translation` ja
   auktorisoitu kääntäjä.
 - **Ei ratkaise kielellisten oikeuksien loukkausta** — se voi edetä
   hallintomenettelyssä tai valvonnassa (mm. oikeusasiamies).

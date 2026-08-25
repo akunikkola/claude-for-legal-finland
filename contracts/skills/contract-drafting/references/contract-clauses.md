@@ -2,7 +2,7 @@
 
 Mallilausekkeita yleisimpiin sopimuksen kohtiin. **Nämä ovat lähtökohtia, eivät valmiita
 ratkaisuja** — sovita sopimustyyppiin, osapuolten asemaan ja riskeihin. Tarkista
-lakiviittaukset `oikeustutkimus`-skillillä. Hakasulkeet `[ ]` merkitsevät täydennettävää.
+lakiviittaukset `legal-research`-skillillä. Hakasulkeet `[ ]` merkitsevät täydennettävää.
 
 ## Osapuolet
 
@@ -30,7 +30,7 @@ voimassa olevan verokannan mukaisesti. Toimittaja laskuttaa [laskutusperuste].
 Maksuaika on [14] päivää laskun päiväyksestä. Viivästyskorko määräytyy korkolain
 mukaan.
 ```
-*Huom: tarkista viivästyskoron peruste korkolaista `oikeustutkimus`-skillillä.*
+*Huom: tarkista viivästyskoron peruste korkolaista `legal-research`-skillillä.*
 
 ## Salassapito
 

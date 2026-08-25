@@ -14,14 +14,14 @@ näkökulmasta: kunta, kaupunki, kuntayhtymä, virasto, järjestö tai yritys.
 
 ## Lausunnonantajan profiili
 
-`references/lausunnonantajan-profiili.md` on tyhjä mallipohja. Täytä oman organisaatiosi
+`references/respondent-profile.md` on tyhjä mallipohja. Täytä oman organisaatiosi
 tiedot (tyyppi, koko, toimiala, resurssit, erityispiirteet), niin vaikutusarviot
 suhteutetaan juuri siihen. Voit myös tallentaa tiedot pysyvästi `CLAUDE.md`:n
 käytäntöprofiiliin.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (voimassa olevan lain ja oikeuskäytännön haku oik.ai/Finlexistä, jota lausuntoapuri käyttää vertailussa) ja `asiakirjan-tarkistus` (lausunnon perusteellinen tarkistus).
+- **`legal-core`-plugari** – `legal-research` (voimassa olevan lain ja oikeuskäytännön haku oik.ai/Finlexistä, jota lausuntoapuri käyttää vertailussa) ja `document-review` (lausunnon perusteellinen tarkistus).
 - **`legislative-drafting`-plugari** – säädösvalmistelun puoli; lausunnot ovat valmisteluprosessin toinen pää.
 
 ## Asennus

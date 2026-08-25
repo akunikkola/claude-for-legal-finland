@@ -18,7 +18,14 @@ edellytyksiä ja poikkeuksia.
 
 > **Vastuuvapaus:** vastausluonnos tarkistettavaksi — ei oikeudellista neuvontaa.
 > Kielteinen päätös ja monitulkintainen poikkeus kuuluvat tietosuojavastaavan/juristin
-> arvioon. Perusteet: `../tietosuoja-arviointi/references/tietosuoja-perusteet.md`.
+> arvioon. Perusteet: `../data-protection-assessment/references/data-protection-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ---
 
@@ -48,7 +55,7 @@ viivästyksestä ja syystä kuukauden kuluessa. Toimenpiteet ovat lähtökohtais
 | **Automatisoidut päätökset** | 22 | Oikeus olla joutumatta pelkkään automaattiseen käsittelyyn perustuvan, oikeusvaikutuksia aiheuttavan päätöksen kohteeksi (poikkeuksin). |
 
 Tarkista kansalliset täsmennykset ja mahdolliset erityislain poikkeukset (tietosuojalaki
-1050/2018; toimialakohtainen laki) `legal-core`-plugarin `oikeustutkimus`-skillillä.
+1050/2018; toimialakohtainen laki) `legal-core`-plugarin `legal-research`-skillillä.
 
 ## Vaihe 4: Laadi vastaus
 
@@ -56,7 +63,7 @@ Tarkista kansalliset täsmennykset ja mahdolliset erityislain poikkeukset (tieto
 - **Kielteinen tai osittainen:** perustele, mihin poikkeukseen päätös perustuu, ja kerro rekisteröidylle **oikeus tehdä valitus tietosuojavaltuutetun toimistolle** sekä oikeussuojakeinot. Älä kieltäydy ilman perustetta.
 - **Ilmeisen perusteeton tai kohtuuton (etenkin toistuva) pyyntö:** voidaan periä kohtuullinen maksu tai kieltäytyä (12(5) art) — mutta tämä on poikkeus, jota on käytettävä varoen ja perustellen.
 
-Kirjoita vastaus asiallisesti ja selkokielisesti (`juristi:suomen-kieli`). Tuota
+Kirjoita vastaus asiallisesti ja selkokielisesti (`legal-core:finnish-language`). Tuota
 vastausluonnos ja tarvittaessa toimenpidelistaus. Merkitse `[varmista — tietosuojavastaavan
 arvioitava]` kohtiin, joissa poikkeuksen soveltuminen on tulkinnanvaraista.
 
@@ -64,7 +71,7 @@ arvioitava]` kohtiin, joissa poikkeuksen soveltuminen on tulkinnanvaraista.
 
 Jos pyyntö paljastaa laajemman ongelman (esim. tietoja säilytetty liian kauan, peruste
 puuttuu), nosta se esiin — yksittäinen pyyntö voi olla oire käsittelyn puutteesta, jonka
-korjaaminen kuuluu `tietosuoja-arviointi`-skillille.
+korjaaminen kuuluu `data-protection-assessment`-skillille.
 
 ## Mitä tämä skill EI tee
 

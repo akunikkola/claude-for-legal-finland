@@ -19,17 +19,27 @@ description: >
 
 Tämä skill jäsentää rikosasian syytteen nostamisesta tuomioon (ROL
 689/1997). Perusteet ja prosessikaari:
-`../esitutkinta-ja-pakkokeinot/references/rikosprosessi-perusteet.md`.
+`../pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md`.
 
 > **Vastuuvapaus:** tuotokset ovat avustajan työn tukea — ei
 > puolustautumisohjeita ilman avustajaa eikä ennustetta lopputuloksesta.
-> Katso `rikosprosessi/CLAUDE.md` (syyttömyysolettama, negatiivirajaus).
+> Katso `criminal-procedure/AGENTS.md` (syyttömyysolettama, negatiivirajaus).
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae ROL:n säännökset, syytteessä mainitun rikoksen **tunnusmerkistö ja
 asteikko rikoslaista** sekä KKO:n ennakkopäätökset näyttökynnyksestä ja
-mittaamisesta **`juristi:oikeustutkimus`-skillillä**. Syyteoikeuden
+mittaamisesta **`legal-core:legal-research`-skillillä**. Syyteoikeuden
 vanhentuminen tarkistetaan rikoslaista lähteestä — se on
 ehdoton prosessinedellytys.
 
@@ -42,7 +52,7 @@ Jäsennä, mihin syyttäjä on päätynyt ja mitä siitä seuraa:
   syyteoikeutta) tai harkinnanvarainen (vähäisyys, kohtuus ym. —
   perusteet lähteestä). Asianomistajan keinot: muutosharkintapyyntö
   valtakunnansyyttäjälle ja **toissijainen syyteoikeus** →
-  `asianomistajan-asema`.
+  `injured-party-rights`.
 - **Tuomioesitys (ROL 5 b luku, olemassaolo vahvistettu)** —
   tunnustamisoikeudenkäynti: tunnustus ja lievennetty
   rangaistusasteikko; soveltamisala, edellytykset ja asianomistajan
@@ -87,7 +97,7 @@ Laadi vastaus tuomioistuimen pyytämässä muodossa:
 
 ## Todistelu (OK 17 luku)
 
-Yleiset opit: `riidanratkaisu:todistelu` (todistustaakka, näyttökynnys,
+Yleiset opit: `dispute-resolution:evidence` (todistustaakka, näyttökynnys,
 hyödyntämiskielto). Rikosspesifit korostukset: syyttäjän todistustaakka
 ja **in dubio pro reo**, vastaajan oikeus olla myötävaikuttamatta,
 läheisen vaitiolo-oikeus, anonyymi todistelu ja esitutkintakertomuksen
@@ -109,7 +119,7 @@ käytön rajat pääkäsittelyssä (edellytykset lähteestä).
 Tyytymättömyyden ilmoitus ja valitus määräajoissa `[tarkista
 lähteestä]`; jatkokäsittelyluvan tarve hovioikeudessa (soveltamisala
 lähteestä) ja KKO:n valituslupa. Mekaniikka:
-`riidanratkaisu:muutoksenhaku-tuomioon` — rikosasian erot (mm.
+`dispute-resolution:appeal-against-judgment` — rikosasian erot (mm.
 reformatio in pejus -kielto syyttäjän tyytyessä) tarkistetaan
 lähteestä.
 
@@ -125,7 +135,7 @@ lähteestä.
 - **Ei vahvista asteikkoja, vanhentumis- tai muutoksenhakuaikoja
   muistista** — lähteestä tai `[tarkista]`.
 - **Ei hoida asianomistajan vaatimuksia vastaajan asiassa** —
-  eturistiriita; ks. `asianomistajan-asema` ja CLAUDE.md.
+  eturistiriita; ks. `injured-party-rights` ja CLAUDE.md.
 
 ## Jatka tästä
 

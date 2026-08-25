@@ -31,12 +31,12 @@ tietosuoja, hallinto-oikeus, riidanratkaisu) nojaavat.
 ## Tietolähteet (`.mcp.json`)
 
 - **oik.ai** (`https://oik.ai/mcp`) – suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö ohjelmallisesti. Vaatii oik.ai-tilin; liitettäessä OAuth-kirjautuminen.
-- **Adeu** ([`@adeu/mcp-server`](https://github.com/dealfluence/adeu)) – Word-dokumenttien (.docx) ei-tuhoava redlineäminen natiiveina jälkimuutoksina (Track Changes). `asiakirjan-tarkistus` käyttää sitä olemassa olevan .docx:n lukemiseen ja korjausten viemiseen. Pyörii paikallisesti npx:llä, ei vaadi tiliä.
+- **Adeu** ([`@adeu/mcp-server`](https://github.com/dealfluence/adeu)) – Word-dokumenttien (.docx) ei-tuhoava redlineäminen natiiveina jälkimuutoksina (Track Changes). `document-review` käyttää sitä olemassa olevan .docx:n lukemiseen ja korjausten viemiseen. Pyörii paikallisesti npx:llä, ei vaadi tiliä.
 
 - **laki.ai** (`https://api.laki.ai/mcp/claude`) – vaihtoehtoinen suomalainen oikeuslähde-MCP: Finlexin säädökset, hallituksen esitykset, oikeuskäytäntö (KKO, KHO, HO, HAO, MAO, TT, VAKO) ja Verohallinnon ohjeet. OAuth-kirjautuminen; ilmainen tunnus syntyy ensimmäisellä kirjautumisella. Ohjeet: <https://laki.ai/fi/claude>.
 
 Käytä **joko oik.ai:ta tai laki.ai:ta** (tai muuta yhteensopivaa Finlex-MCP:tä) –
-`oikeustutkimus`-skill osaa molemmat. Konnektorin valinta ja asennus: juuren
+`legal-research`-skill osaa molemmat. Konnektorin valinta ja asennus: juuren
 [QUICKSTART.md](../QUICKSTART.md).
 
 ## Asennus

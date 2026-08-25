@@ -35,7 +35,7 @@ Säädösmuutosta laadittaessa on tunnettava **voimassa oleva** sanamuoto täsm�
 
 ## Lakikieli ja säädöskielen vaatimukset
 
-Säädöskieli on tarkkaa ja yhdenmukaista. Noudata Lainkirjoittajan oppaan ja lakikielen ohjeita (skillit `lainkirjoittajan-opas`, `lakikieli-opas`):
+Säädöskieli on tarkkaa ja yhdenmukaista. Noudata Lainkirjoittajan oppaan ja lakikielen ohjeita (skillit `legislative-drafting-manual`, `legal-language-guide`):
 
 - Yleiskielisyys, tarkkuus, yhdenmukaisuus, selkeys.
 - Samasta asiasta aina sama termi — ei synonyymeja.

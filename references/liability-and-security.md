@@ -19,7 +19,7 @@ ja vähäisin.
 
 1. **Lähteen varmistus.** Säädös ja oikeuskäytäntö haetaan lähteestä (oik.ai/
    Finlex), ei mallin muistista. Ks. plugarien `CLAUDE.md` ja
-   `juristi:oikeustutkimus`.
+   `legal-core:legal-research`.
 2. **Kolmiportainen varmuusmerkintä.** Jokainen väite on joko *Varmistettu*,
    *Tarkistettava* tai *Älä käytä* – ja merkintä näkyy numeron vieressä.
    Ks. [`citation-style.md`](citation-style.md).

@@ -18,18 +18,28 @@ description: >
 
 Tämä skill jäsentää oleskelun polut työlupien ulkopuolella:
 EU-kansalaiset, perheenjäsenet, pysyvä oleskelu ja kansalaisuus.
-Perusteet: `../tyoperusteiset-oleskeluluvat/references/ulkomaalaisoikeus-perusteet.md`.
+Perusteet: `../work-based-residence-permits/references/immigration-law-fundamentals.md`.
 
 > **Vastuuvapaus:** jäsennykset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Edellytykset (toimeentulorajat, asumisajat) muuttuvat —
 > kaikki luvut `[tarkista — migri.fi/Finlex]`. Katso
-> `ulkomaalaisoikeus/CLAUDE.md`. Kansainvälinen suojelu ei kuulu tähän
+> `immigration-law/AGENTS.md`. Kansainvälinen suojelu ei kuulu tähän
 > plugariin.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae UlkL:n (301/2004) ja kansalaisuuslain (359/2003) säännökset
-**`juristi:oikeustutkimus`-skillillä**; toimeentulorajat ja
+**`legal-core:legal-research`-skillillä**; toimeentulorajat ja
 asumisaikalaskenta Migrin ohjeista `[tarkista]`. KHO:n käytäntö
 (perhe-elämän suoja, toimeentulopoikkeukset, asumisajan katkokset)
 lähteestä.
@@ -45,7 +55,7 @@ lähteestä.
   sovelletaan.
 - Pohjoismaiden kansalaisten erityisasema (rekisteröinti DVV:ssä).
 - Työnantajalle: EU-kansalaisen työnteko-oikeus on välitön —
-  varmistusvelvollisuus silti → `tyonantajan-velvollisuudet`.
+  varmistusvelvollisuus silti → `employer-obligations`.
 
 ## Perheenyhdistäminen (kolmannen maan kansalaiset)
 

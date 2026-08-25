@@ -4,7 +4,7 @@
 mainitut säädösnumerot, säädösten nimenmuutokset ja viranomaisuudistus on
 tarkistettu. Luvanvaraisuuskynnykset, määräajat ja menettelyjen
 yksityiskohdat tarkistetaan aina käyttöhetkellä
-`juristi:oikeustutkimus`-skillillä.
+`legal-core:legal-research`-skillillä.
 
 ## Keskeiset säädökset — huomaa tuoreet uudistukset
 
@@ -80,7 +80,7 @@ Ympäristö- ja vesiasioiden valitukset on perinteisesti keskitetty
 alueellisiin hallinto-oikeuksiin; jatkovalitus KHO:hon (valituslupa).
 **Tarkista reitit ja valitusajat lähteestä** — viranomaisuudistuksen
 siirtymäsäännökset voivat vaikuttaa. Yleiset opit:
-`hallinto-oikeus:muutoksenhaku`.
+`administrative-law:administrative-appeal`.
 
 ## Tyypilliset riskipisteet
 

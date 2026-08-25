@@ -44,7 +44,7 @@ aiheista tai toimeksiannoista se voi vaikuttaa.
 Jokainen rivi sisältää lähdemerkinnän. Kooste ei referoi ratkaisun
 oikeusohjetta — se kertoo, **että** ratkaisu on olemassa ja **miksi** se
 voi olla relevantti. Oikeusohjeen lukeminen ja tulkinta kuuluu ihmiselle
-(tai erilliselle `juristi:oikeustutkimus`-istunnolle).
+(tai erilliselle `legal-core:legal-research`-istunnolle).
 
 ## Mitä tämä EI tee
 

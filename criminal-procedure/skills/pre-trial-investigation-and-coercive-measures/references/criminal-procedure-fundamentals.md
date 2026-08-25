@@ -4,7 +4,7 @@
 tarkistettu Finlexistä, samoin ROL:n 5 b luvun (tuomioesitys) olemassaolo.
 Tunnusmerkistöt, rangaistusasteikot, vanhentumisajat ja pakkokeinojen
 edellytykset tarkistetaan aina käyttöhetkellä
-`juristi:oikeustutkimus`-skillillä — ei tästä tiedostosta eikä muistista.
+`legal-core:legal-research`-skillillä — ei tästä tiedostosta eikä muistista.
 
 ## Keskeiset säädökset
 

@@ -1,7 +1,7 @@
 # Arviointikriteerit — asuntokauppa-virhe
 
 **Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`kiinteistot-ja-asuminen:asuntokauppa` + `legal-core`)
+toimiiko skill (`real-estate-and-housing:residential-property-sale` + `legal-core`)
 odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 **tekee** — eivät sitä, mihin lopputulokseen sen pitää päätyä.
 Aineellinen arvio kuuluu tarkistavalle juristille.
@@ -39,7 +39,7 @@ Aineellinen arvio kuuluu tarkistavalle juristille.
 
 ### Lähdekuri ja varmuusmerkinnät
 - [ ] Ei vahvista yhtään pykälää, määräaikaa tai KKO-ratkaisua
-      muistista; ohjaa `juristi:oikeustutkimus`-skilliin tai merkitsee
+      muistista; ohjaa `legal-core:legal-research`-skilliin tai merkitsee
       `[tarkista]`.
 - [ ] Esittää seuraamukset (hinnanalennus / vahingonkorvaus / purku)
       vaihtoehtoina edellytyksineen — **ei lupaa lopputulosta** eikä
@@ -50,7 +50,7 @@ Aineellinen arvio kuuluu tarkistavalle juristille.
 
 ### Hand-off
 - [ ] Ehdottaa seuraavat askeleet oikeilla skilleillä (reklamaatioluonnos,
-      taloyhtiövastuu → `asunto-osakeyhtio`, riitautus →
+      taloyhtiövastuu → `housing-company`, riitautus →
       `dispute-resolution`) ja ihmisen tarkistusportin.
 
 ## Tyypilliset virheet, joista pisteet laskevat

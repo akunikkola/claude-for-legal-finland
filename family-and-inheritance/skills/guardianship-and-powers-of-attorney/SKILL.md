@@ -16,17 +16,27 @@ description: >
 # Edunvalvonta ja edunvalvontavaltuutus — varautuminen ja tehtävät
 
 Tämä skill jäsentää edunvalvonnan ja ennakoivan varautumisen. Perheoikeuden
-kartta: `../avioliitto-ja-ositus/references/perhe-ja-perinto-perusteet.md`.
+kartta: `../marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ja jäsennykset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Vahvistamisen ja valvonnan tekee Digi- ja
 > väestötietovirasto (DVV) tai käräjäoikeus. Katso
-> `perhe-ja-perinto/CLAUDE.md`.
+> `family-and-inheritance/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae holhoustoimilain (442/1999) ja edunvalvontavaltuutuslain (648/2007)
-säännökset **`juristi:oikeustutkimus`-skillillä**. Edunvalvojan
+säännökset **`legal-core:legal-research`-skillillä**. Edunvalvojan
 kelpoisuutta, lupa-asioita ja valtuutuksen voimaantuloa koskeva käytäntö
 lähteestä. Muoto- ja menettelyvaatimukset aina laista.
 
@@ -83,7 +93,7 @@ Selvitä aina kummasta on kyse — menettely ja asiakirja ovat eri.
 ## Vaihe 4: Kytkös perintöön ja perheasioihin
 
 - Kuolinpesässä, jossa osakkaana on alaikäinen tai edunvalvonnassa
-  oleva, tarkista lupa- ja sijaistarpeet → `perinto-ja-testamentti`.
+  oleva, tarkista lupa- ja sijaistarpeet → `inheritance-and-wills`.
 - Edunvalvontavaltuutus on osa **jäämistö- ja varautumissuunnittelua**
   testamentin ja mahdollisen hoitotahdon rinnalla.
 

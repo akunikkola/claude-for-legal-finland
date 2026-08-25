@@ -16,18 +16,28 @@ description: >
 
 Tämä skill jäsentää kiinteistökaupan valmistelun, toteutuksen ja
 virhetilanteet maakaaren (540/1995) mukaan. Perusteet ja
-kiinteistö/asunto-osake-rajanveto: `references/kiinteisto-perusteet.md` —
+kiinteistö/asunto-osake-rajanveto: `references/real-property-fundamentals.md` —
 lue se tehtävän alussa. Jos kohde onkin asunto-osake →
-`asuntokauppa`-skill.
+`residential-property-sale`-skill.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Kaupanvahvistus, allekirjoitukset ja kirjaamishakemukset
-> ovat ihmisen vastuulla. Katso `kiinteistot-ja-asuminen/CLAUDE.md`.
+> ovat ihmisen vastuulla. Katso `real-estate-and-housing/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae maakaaren säännökset (muotovaatimus, virheet, määräajat,
-kirjaamisvelvollisuudet) **`juristi:oikeustutkimus`-skillillä** ja KKO:n
+kirjaamisvelvollisuudet) **`legal-core:legal-research`-skillillä** ja KKO:n
 virhe- ja reklamaatiokäytäntö lähteestä. Varainsiirtoveron prosentti ja
 ilmoitusvelvollisuus → `taxation` ja vero.fi `[tarkista]`.
 
@@ -44,8 +54,8 @@ ilmoitusvelvollisuus → `taxation` ja vero.fi `[tarkista]`.
    hallussa?), kirjatut erityiset oikeudet, rasitteet,
    yhteisalueosuudet, tieoikeudet.
 4. **Kaava ja luvat**: käyttötarkoitus, rakennusoikeus, luvattomat
-   rakennelmat → `ymparisto-ja-kaavoitus:kaavoitus-ja-rakentaminen`;
-   pilaantuneen maaperän riski → `ymparisto-ja-kaavoitus:ymparistovastuut`.
+   rakennelmat → `environment-and-planning:land-use-planning-and-construction`;
+   pilaantuneen maaperän riski → `environment-and-planning:environmental-liability`.
 
 ## Vaihe 2: Kauppakirjan laatiminen
 
@@ -73,7 +83,7 @@ ilmoitusvelvollisuus → `taxation` ja vero.fi `[tarkista]`.
 - Panttikirjojen siirto ja uudet kiinnitykset; varainsiirtoveron
   suorittaminen lainhuudon edellytyksenä.
 - Laadi kirjausten tarkistuslista päivämäärineen →
-  `juristi:toimeksianto` (määräaikataulukko).
+  `legal-core:engagement-intake` (määräaikataulukko).
 
 ## Vaihe 4: Virhetilanne
 
@@ -91,7 +101,7 @@ ilmoitusvelvollisuus → `taxation` ja vero.fi `[tarkista]`.
 4. **Seuraamukset**: hinnanalennus (laskentatapa lähteestä),
    vahingonkorvaus (tuottamus; salaisessa virheessä ei korvausta —
    tarkista), purku (olennaisuuskynnys korkea). Riitautus →
-   `riidanratkaisu:haastehakemus`.
+   `dispute-resolution:statement-of-claim`.
 
 ## Mitä tämä skill EI tee
 

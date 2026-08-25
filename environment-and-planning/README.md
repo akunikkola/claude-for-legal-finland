@@ -32,8 +32,8 @@ Valviran (varmistettu valtioneuvoston ja LVV:n lähteistä).
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (KHO ja Vaasan HaO), `toimeksianto`
-  (osallistumis- ja valitusaikojen skannaus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (KHO ja Vaasan HaO), `engagement-intake`
+  (osallistumis- ja valitusaikojen skannaus) ja `document-review`.
 - **`administrative-law`-plugari** – lupa- ja kaavapäätökset ovat hallintopäätöksiä;
   muutoksenhaun yleiset opit (808/2019).
 - **`company-law`-plugari** – ympäristö-DD osana yritysjärjestelyä.

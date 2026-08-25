@@ -1,7 +1,7 @@
 # Pohja: oikaisuvaatimus
 
 Rakenteellinen luuranko oikaisuvaatimukselle viranomaisen päätökseen.
-Käyttävä skill: [`muutoksenhaku`](../skills/administrative-appeal/SKILL.md) —
+Käyttävä skill: [`administrative-appeal`](../skills/administrative-appeal/SKILL.md) —
 tarkista ensin skillin kautta, onko oikaisuvaatimus oikea muutoksenhakutie
 tässä asiassa. Konventiot:
 [`references/template-standards.md`](../../references/template-standards.md).
@@ -15,6 +15,16 @@ tässä asiassa. Konventiot:
 
 **Vastaanottaja:** [viranomainen, jolle oikaisuvaatimus osoitetaan —
 päätöksen ohjeen mukaan]
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## OIKAISUVAATIMUS
 

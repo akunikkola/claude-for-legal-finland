@@ -51,9 +51,9 @@ aukkolistan ja nostat esiin sen, mikä vaatii ihmisen silmät ensin.
 3. **Aukkolista** = valmis tietopyyntölistan pohja vastapuolelle.
 4. **Punaiset liput** -taulukko: havainto, sijainti (tiedosto + kohta),
    miksi vaatii juristin huomion, ehdotettu jatkoskilli
-   (esim. `yhtiooikeus:yritysjarjestelyt`,
-   `ymparisto-ja-kaavoitus:ymparistovastuut`,
-   `kilpailuoikeus:yrityskauppavalvonta`).
+   (esim. `company-law:corporate-transactions`,
+   `environment-and-planning:environmental-liability`,
+   `competition-law:merger-control`).
 
 ## Rajat
 

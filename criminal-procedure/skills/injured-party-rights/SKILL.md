@@ -17,18 +17,28 @@ description: >
 # Asianomistajan asema — vaatimukset ja oikeudet
 
 Tämä skill jäsentää asianomistajan oikeudet ja laatii vaatimusluonnokset.
-Perusteet: `../esitutkinta-ja-pakkokeinot/references/rikosprosessi-perusteet.md`.
+Perusteet: `../pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat avustajan ja asianomistajan
 > tarkistettavia — ei oikeudellista neuvontaa. Korvausmäärät perustellaan
-> lähteistä, ei muistista. Katso `rikosprosessi/CLAUDE.md`.
+> lähteistä, ei muistista. Katso `criminal-procedure/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae ROL:n asianomistajaa koskevat säännökset, vahingonkorvauslain
 (412/1974) korvausperusteet, rikosvahinkolain (1204/2005) edellytykset
 ja määräajat sekä Henkilövahinkoasiain neuvottelukunnan suositukset ja
-KKO:n korvauskäytäntö **`juristi:oikeustutkimus`-skillillä** ja
+KKO:n korvauskäytäntö **`legal-core:legal-research`-skillillä** ja
 virallislähteistä.
 
 ## Vaihe 1: Asema ja strategia
@@ -61,7 +71,7 @@ virallislähteistä.
    vertailuratkaisut lähteestä `[määrätaso — tarkista lähteestä]`;
    korko vaatimukseen (korkolain mukainen — tarkista).
 4. **Vaatimus tuomiossa ≠ raha tilillä** — tuomion täytäntöönpano
-   ulosotossa (→ `insolvenssi:saatavien-perinta`) ja seuraava kohta.
+   ulosotossa (→ `insolvency:debt-collection`) ja seuraava kohta.
 
 ## Vaihe 3: Rikosvahinkolain korvaus (1204/2005)
 

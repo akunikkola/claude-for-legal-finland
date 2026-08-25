@@ -64,7 +64,7 @@ vastuuvapausperusteet.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 KKO:n ratkaisukäytäntö lähteestä. Prosessi (esitutkinta, pakkokeinot, syyte,
 asianomistajan asema oikeudenkäynnissä) kuuluu **`criminal-procedure`-plugariin**.
 

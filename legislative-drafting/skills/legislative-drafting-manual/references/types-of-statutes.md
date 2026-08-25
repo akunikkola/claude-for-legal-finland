@@ -97,7 +97,7 @@ vanhan säädöksen aikaisia tilanteita kohdellaan.
 4. Laki julkaistaan Suomen säädöskokoelmassa ja tulee voimaan siinä
    säädettynä ajankohtana (perustuslaki 79 §).
 
-Yksityiskohdat: skill `lainvalmistelun-prosessiopas`.
+Yksityiskohdat: skill `legislative-process-guide`.
 
 ## Lukulähde
 

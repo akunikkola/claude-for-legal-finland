@@ -21,11 +21,11 @@ ratkaisun varsinaiseen tekstiin**, ei muistiin eikä otsikkotietoon yksin.
 
 > **Vastuuvapaus:** referaatti on tarkistettava luonnos — ei
 > oikeudellista neuvontaa. Ratkaisun sisältöä ei esitetä muistista.
-> Katso `juristi/CLAUDE.md`.
+> Katso `legal-core/AGENTS.md`.
 
 ## Hae ratkaisu lähteestä ensin
 
-Hae ratkaisun **varsinainen teksti** `juristi:oikeustutkimus`-skillillä
+Hae ratkaisun **varsinainen teksti** `legal-core:legal-research`-skillillä
 (oik.ai/Finlex, `get_decision`/`search_decisions`) tai lue käyttäjän
 toimittama ratkaisu. **Älä referoi ratkaisua pelkän tunnuksen tai
 muistikuvan perusteella** — ratkaisuselosteen otsikko (headnote) ei ole
@@ -74,7 +74,7 @@ keksi sisältöä.
   sidoksissa sen kysymyksenasetteluun.
 - **Onko ratkaisu yhä ajantasainen?** Lainsäädäntö on voinut muuttua
   ratkaisun jälkeen — tarkista, ettei oikeusohje perustu kumottuun
-  säännökseen (`oikeustutkimus`).
+  säännökseen (`legal-research`).
 
 ## Vaihe 7: Koottu referaatti
 

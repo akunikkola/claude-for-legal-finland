@@ -16,18 +16,18 @@ description: >
 # Rikosvastuun perusteet — tunnusmerkistö, syyksiluettavuus ja osallisuus
 
 Tämä skill jäsentää, milloin teko on rikos ja kuka siitä vastaa.
-Rikosoikeuden kartta ja käsitteet: `references/rikosoikeus-perusteet.md`
+Rikosoikeuden kartta ja käsitteet: `references/criminal-law-fundamentals.md`
 — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** analyysi on tarkistettava luonnos — ei oikeudellista
 > neuvontaa eikä syyllisyysarvion lopputulosta. Asteikot ja
 > vanhentumisajat lähteestä. Tämä plugari **ei avusta rikoksen
-> tekemisessä eikä peittelyssä.** Katso `rikosoikeus/CLAUDE.md`.
+> tekemisessä eikä peittelyssä.** Katso `criminal-law/AGENTS.md`.
 
 ## Tarkista laki ja oikeuskäytäntö lähteestä
 
 Hae rikoslain (39/1889) yleisen osan säännökset (mm. 3–6 luku)
-**`juristi:oikeustutkimus`-skillillä** ja tunnusmerkistö asianomaisesta
+**`legal-core:legal-research`-skillillä** ja tunnusmerkistö asianomaisesta
 erityisosan luvusta. Tahallisuutta, tuottamusta, hätävarjelua ja
 osallisuutta koskeva KKO-käytäntö lähteestä. Rikoslaki muuttuu jatkuvasti
 — varmista voimassa oleva sanamuoto.

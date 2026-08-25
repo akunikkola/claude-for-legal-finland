@@ -38,7 +38,7 @@ lähteestä (2026-06)** — älä käytä vanhentuneita nimiä tai numeroita:
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex):
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex):
 luvanvaraisuuskynnykset (YSL:n laitosluettelo), lupamääräysten perusteet,
 osallistumis- ja muistutusajat, valitusajat ja -oikeudet. KHO:n ja Vaasan HaO:n
 ratkaisukäytäntö haetaan lähteestä tunnuksineen.
@@ -48,7 +48,7 @@ ratkaisukäytäntö haetaan lähteestä tunnuksineen.
 Kuulutusajat, muistutusten ja mielipiteiden määräpäivät sekä valitusajat ovat
 ehdottomia — ohitettua osallistumisikkunaa ei saa takaisin. Jokainen päivämäärä
 `[mallin laskelma — tarkista]` ja kalenterivastuu ihmisellä →
-`juristi:toimeksianto` (määräaikaskannaus).
+`legal-core:engagement-intake` (määräaikaskannaus).
 
 ## EU-oikeus on tässä aina läsnä
 

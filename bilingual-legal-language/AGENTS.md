@@ -46,7 +46,7 @@ lähteestä tai merkitse `[tarkista]`.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 termien vakiintunut käyttö ratkaisuista lähteestä. Erota toisistaan säädöksen
 todistusvoimainen ruotsinkielinen teksti ja vapaa käännös.
 

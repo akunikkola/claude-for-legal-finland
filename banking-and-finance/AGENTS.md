@@ -56,7 +56,7 @@ asema ennen ehtojen laatimista.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 EU-sääntely EUR-Lexistä; Finanssivalvonnan määräykset ja ohjeet (MOK) ovat
 sitovaa alemman tason sääntelyä — erottele laki, Fivan määräys ja Fivan ohje.
 Viitekorot, korkokatot ja kynnysarvot aina lähteestä `[tarkista]`.

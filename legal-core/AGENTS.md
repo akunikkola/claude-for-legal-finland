@@ -23,7 +23,7 @@ Kun tuotat merkittävän juridisen tuotoksen (sopimus, lausunto, muistio, valitu
 
 Suomen lainsäädäntö muuttuu jatkuvasti, ja mallin muisti vanhenee ja sekoittaa pykäliä. **Älä koskaan lainaa säädöstekstiä, pykälänumeroa tai oikeustapauksen sisältöä pelkästään muistista, jos se voidaan tarkistaa.**
 
-- Kun käytettävissä on **oik.ai- tai laki.ai-MCP** (tai muu vastaava Finlex-MCP), hae säädös ja oikeuskäytäntö sieltä. Tämä on koko `oikeustutkimus`-skillin ydin; työkalut ja konnektorien erot on dokumentoitu tiedostoon `skills/oikeustutkimus/references/tyokalut.md`.
+- Kun käytettävissä on **oik.ai- tai laki.ai-MCP** (tai muu vastaava Finlex-MCP), hae säädös ja oikeuskäytäntö sieltä. Tämä on koko `legal-research`-skillin ydin; työkalut ja konnektorien erot on dokumentoitu tiedostoon `skills/legal-research/references/tools.md`.
 - Jos MCP ei ole käytettävissä etkä voi tarkistaa lähdettä: **merkitse jokainen muistinvarainen lainkohta selvästi** — `[muistinvarainen — tarkista Finlexistä]` — äläkä esitä sitä varmistettuna.
 - Tarkista aina, että laki on **voimassa** (ei kumottu/muutettu) ja ettei kyse ole vanhasta versiosta. Huomioi siirtymäsäännökset.
 - Älä keksi pykäliä, säädösnumeroita tai ratkaisutunnuksia. Jos et tiedä etkä voi tarkistaa, sano se.
@@ -61,7 +61,7 @@ Käyttäjä voi esittää oikeudellisen faktan, joka on virheellinen ("laki x ki
 
 ## Sitaattikuri — oikeat suomalaiset viittausmuodot
 
-Noudata vakiintuneita muotoja (yksityiskohdat: `skills/juristi/references/viittaukset.md` ja `.../lahteet.md`):
+Noudata vakiintuneita muotoja (yksityiskohdat: `skills/legal-core/references/citations.md` ja `.../sources.md`):
 
 - Säädös ensimaininnalla nimi + numero: kuntalain (410/2015) 7 §:ssä.
 - §-merkki ja numero aina yhdessä; taivutus kaksoispisteellä (§:n, §:ssä, §:ään).

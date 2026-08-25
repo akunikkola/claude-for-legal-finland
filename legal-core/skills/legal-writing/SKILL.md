@@ -18,14 +18,14 @@ Tämän skillin yksityiskohtaiset ohjeet on jaettu referenssitiedostoihin. **Lue
 
 | Referenssi | Tiedosto | Käytä kun |
 |---|---|---|
-| Säädösten rakenne | `references/rakenne.md` | Käyttäjä kysyy säädöksen rakenteesta, hierarkiasta, pykälien numeroinnista, momenteista, lukujen tai pykälien otsikoista, säädöksen nimikkeestä |
-| Pykäläviittaukset | `references/viittaukset.md` | Käyttäjä muotoilee viittauksen pykälään, momenttiin tai säädökseen, tai tarkistaa viittauksen oikeellisuutta |
-| Lakikieli ja suomen kieli | `references/lakikieli.md` | Käyttäjä kirjoittaa tai tarkistaa juridista tekstiä, kysyy kirjoitussäännöistä, yhdyssanoista, pilkutuksesta tai lakikielen tyylistä |
-| Sopimukset | `references/sopimukset.md` | Käyttäjä laatii, tarkistaa tai analysoi sopimusta tai muuta juridista asiakirjaa |
-| Lähteet ja oikeuskäytäntö | `references/lahteet.md` | Käyttäjä etsii ajantasaista lakia, oikeuskäytäntöä, hallituksen esityksiä tai tarvitsee viittausmuotoja oikeuslähteisiin |
-| Suomen kieli | `references/suomen-kieli.md` | Juridisen suomen pikaohje: juridiset yhdyssanat, pykälämerkinnät, alkukirjaimet, tekstilajikohtaiset numero- ja lyhennesäännöt, tekoälyn tyyppivirheet. Kattava kielentarkistus: skill `suomen-kieli` |
+| Säädösten rakenne | `references/structure.md` | Käyttäjä kysyy säädöksen rakenteesta, hierarkiasta, pykälien numeroinnista, momenteista, lukujen tai pykälien otsikoista, säädöksen nimikkeestä |
+| Pykäläviittaukset | `references/citations.md` | Käyttäjä muotoilee viittauksen pykälään, momenttiin tai säädökseen, tai tarkistaa viittauksen oikeellisuutta |
+| Lakikieli ja suomen kieli | `references/legal-language.md` | Käyttäjä kirjoittaa tai tarkistaa juridista tekstiä, kysyy kirjoitussäännöistä, yhdyssanoista, pilkutuksesta tai lakikielen tyylistä |
+| Sopimukset | `references/contracts.md` | Käyttäjä laatii, tarkistaa tai analysoi sopimusta tai muuta juridista asiakirjaa |
+| Lähteet ja oikeuskäytäntö | `references/sources.md` | Käyttäjä etsii ajantasaista lakia, oikeuskäytäntöä, hallituksen esityksiä tai tarvitsee viittausmuotoja oikeuslähteisiin |
+| Suomen kieli | `references/finnish-language.md` | Juridisen suomen pikaohje: juridiset yhdyssanat, pykälämerkinnät, alkukirjaimet, tekstilajikohtaiset numero- ja lyhennesäännöt, tekoälyn tyyppivirheet. Kattava kielentarkistus: skill `finnish-language` |
 
-**Ohje:** Lue yksi tai useampi referenssitiedosto tehtävän alussa. Useimmissa tehtävissä riittää 1–2 referenssiä. Lue kaikki vain, jos tehtävä on laaja (esim. kokonaisen säädöstekstin tarkistus). Lue `references/suomen-kieli.md` aina kun tuotat tai tarkistat suomenkielistä juridista tekstiä; perusteellisessa kielentarkistuksessa käytä lisäksi skilliä `suomen-kieli`.
+**Ohje:** Lue yksi tai useampi referenssitiedosto tehtävän alussa. Useimmissa tehtävissä riittää 1–2 referenssiä. Lue kaikki vain, jos tehtävä on laaja (esim. kokonaisen säädöstekstin tarkistus). Lue `references/finnish-language.md` aina kun tuotat tai tarkistat suomenkielistä juridista tekstiä; perusteellisessa kielentarkistuksessa käytä lisäksi skilliä `finnish-language`.
 
 ---
 
@@ -103,7 +103,7 @@ Kun kirjoitat tai tarkistat juridista tekstiä, käy läpi:
 ## Mitä tämä skill EI tee
 
 - **Ei korvaa pätevän juristin tarkistusta eikä kanna vastuuta lopputuloksesta.** Tuotos on tarkistettava luonnos; lopullisen oikeudellisen arvion ja vastuun kantaa ihminen.
-- **Ei vahvista pykäliä, säädösnumeroita eikä ratkaisutunnuksia muistista.** Tämän skillin pikaohjeet koskevat viittausten *muotoa* — sisältö ja ajantasaisuus on aina haettava lähteestä (`oikeustutkimus`).
+- **Ei vahvista pykäliä, säädösnumeroita eikä ratkaisutunnuksia muistista.** Tämän skillin pikaohjeet koskevat viittausten *muotoa* — sisältö ja ajantasaisuus on aina haettava lähteestä (`legal-research`).
 - **Ei tee lopullista oikeudellista johtopäätöstä eikä anna oikeudellista neuvontaa.** Tulkinta ja riskiarvio esitetään tarkistettavana, ei sitovana kannanottona.
 - **Ei kata muiden maiden oikeutta.** Vain Suomen oikeus (ja relevantti EU-oikeus erikseen nostettuna); muista jurisdiktioista on sanottava, ettei tämä kata niitä.
 - **Ei laadi valmista asiakirjaa loppuun asti yksin.** Skill opastaa kielen, rakenteen ja viittausten kanssa; varsinainen sopimus, lausunto tai valitus syntyy aihekohtaisilla skilleillä ja ihmisen ohjauksessa.

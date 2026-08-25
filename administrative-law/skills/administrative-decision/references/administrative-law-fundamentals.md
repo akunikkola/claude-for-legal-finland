@@ -2,7 +2,7 @@
 
 Tiivistelmä julkishallinnon ja hallintomenettelyn kannalta keskeisistä laeista ja
 periaatteista. **Tarkista pykälien voimassa oleva sanamuoto ja muut kuin alla vahvistetut
-säädösnumerot `juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ennen viittausta.**
+säädösnumerot `legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
 
 ## Perusperiaatteet
 - **Hallinnon lainalaisuus:** viranomainen saa käyttää vain laissa annettua toimivaltaa, ja toiminnan on perustuttava lakiin.
@@ -16,7 +16,7 @@ säädösnumerot `juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ennen viitt
 - **Laki oikeudenkäynnistä hallintoasioissa (808/2019)** — hallintoprosessi: valitus hallinto-oikeuteen ja korkeimpaan hallinto-oikeuteen, valitusoikeus, määräajat, valituslupa. **Korvasi vanhan hallintolainkäyttölain (586/1996).**
 - **Laki viranomaisten toiminnan julkisuudesta (julkisuuslaki, 621/1999)** — asiakirjajulkisuus, salassapito, tietopyyntöön vastaaminen.
 
-**Tarkista säädösnumero `oikeustutkimus`-skillillä ennen viittausta:**
+**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
 - **Kuntalaki (410/2015)** — kunnan toimielimet, toimivalta ja sen siirto, kunnallisvalitus ja oikaisuvaatimus kunnallisasioissa.
 - **Hallintolainkäytön erityislait** ja toimialakohtaiset lait (esim. sosiaalihuolto, rakentaminen, ympäristö, verotus) — antavat aineelliset edellytykset ja usein erityiset muutoksenhakusäännöt.
 - **Tietosuojalaki (1050/2018)** ja tietosuoja-asetus — henkilötietojen osalta (julkisuus vs. tietosuoja, ks. `data-protection`-plugari).
@@ -31,4 +31,4 @@ säädösnumerot `juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ennen viitt
 ## Valvonta ja laillisuusvalvonta
 - **Eduskunnan oikeusasiamies** (oikeusasiamies.fi) ja **valtioneuvoston oikeuskansleri** (okv.fi) — ylimmät laillisuusvalvojat; ratkaisukäytäntö ohjaa hyvää hallintoa.
 - **Aluehallintovirastot (AVI)** ja sektorikohtaiset valvojat.
-- Hae relevantti oikeuskäytäntö `oikeustutkimus`-skillillä (esim. court "Korkein hallinto-oikeus", "Hallinto-oikeudet").
+- Hae relevantti oikeuskäytäntö `legal-research`-skillillä (esim. court "Korkein hallinto-oikeus", "Hallinto-oikeudet").

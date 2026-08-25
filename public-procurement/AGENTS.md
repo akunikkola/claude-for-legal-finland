@@ -53,11 +53,11 @@ Hankinta-asiakirjoihin sovelletaan julkisuuslakia (621/1999): tarjousvertailun
 julkisuus, liikesalaisuusmerkinnät ja asianosaisjulkisuus jännitteineen.
 Ohjeista tarjoajaa merkitsemään liikesalaisuudet perustellusti (kaikki ei ole
 liikesalaisuutta) ja hankintayksikköä käsittelemään pyynnöt julkisuuslain
-mukaisesti → `hallinto-oikeus:julkisuus-ja-tietopyynnot`.
+mukaisesti → `administrative-law:public-access-and-information-requests`.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 markkinaoikeuden (MAO) sekä KHO:n ratkaisukäytäntö lähteestä. Hankintaoikeudessa
 MAO:n linjaukset täsmentävät lakia jatkuvasti — älä referoi ratkaisuja muistista.
 

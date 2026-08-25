@@ -18,11 +18,11 @@ yhteistoiminta. Pakottavan lainsäädännön ja työehtosopimusten (TES) ehdoill
 
 Lähteestä (oik.ai/Finlex) varmistettu: **työsopimuslaki (55/2001)** ja **yhteistoimintalaki
 (1333/2021)** (korvasi vanhan YT-lain 334/2007). Muut lait (työaika-, vuosiloma-,
-yhdenvertaisuus-, tasa-arvolaki ym.) ja niiden numerot tarkistetaan `juristi:oikeustutkimus`-skillillä.
+yhdenvertaisuus-, tasa-arvolaki ym.) ja niiden numerot tarkistetaan `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (lain ja oikeuskäytännön, mm. Työtuomioistuin, tarkistus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (lain ja oikeuskäytännön, mm. Työtuomioistuin, tarkistus) ja `document-review`.
 - **`contracts`-plugari** – yleinen sopimusmekaniikka työsopimuksen pohjana.
 - **`data-protection`-plugari** – työntekijöiden henkilötiedot (laki yksityisyyden suojasta työelämässä 759/2004).
 

@@ -3,7 +3,7 @@
 Tämä on **juridisen tekstin kielenhuollon pikaohje**. Kattavat yleiset
 oikeinkirjoitus- ja kielioppisäännöt (yhdyssanat, pilkutus, alkukirjaimet,
 lyhenteet, numerot, lauserakenne) ovat tämän plugarin omassa skillissä —
-lue [`../../suomen-kieli/SKILL.md`](../../finnish-language/SKILL.md), kun teet
+lue [`../../finnish-language/SKILL.md`](../../finnish-language/SKILL.md), kun teet
 perusteellisen kielentarkistuksen. Tähän tiedostoon on koottu vain se, mikä
 on juridisessa tekstissä erityistä tai erityisen virhealtista.
 
@@ -83,7 +83,7 @@ eikä "Virheistä vastataan...". (Ks. `legal-language.md`.)
 6. **Tyyli** — anglismit, mahtipontisuus, virkepituus, passiivi.
 
 Perusteellinen tarkistus ja säännöt yksityiskohtineen:
-[`../../suomen-kieli/SKILL.md`](../../finnish-language/SKILL.md).
+[`../../finnish-language/SKILL.md`](../../finnish-language/SKILL.md).
 
 ## 8. Viitteet
 

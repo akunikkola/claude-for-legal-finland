@@ -4,7 +4,7 @@
 tarkistettu Finlexistä, samoin se, että yrityssaneerauslaki sisältää 2022
 uudistuksen mukaiset varhaisen ja perusmuotoisen saneerausmenettelyn.
 Pykälätason sisällöt, edellytykset ja määräajat tarkistetaan aina
-käyttöhetkellä `juristi:oikeustutkimus`-skillillä.
+käyttöhetkellä `legal-core:legal-research`-skillillä.
 
 ## Keskeiset säädökset
 

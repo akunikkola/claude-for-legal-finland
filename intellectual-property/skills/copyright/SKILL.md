@@ -18,15 +18,15 @@ description: >
 Tämä skill jäsentää tekijänoikeuskysymykset tekijänoikeuslain (404/1961)
 mukaan. Laki sisältää DSM-direktiivin muutokset (vahvistettu lähteestä) —
 muistinvarainen tieto vanhasta laista on epäluotettavaa. Perusteet:
-`../tavaramerkki-ja-toiminimi/references/ipr-perusteet.md`.
+`../trademarks-and-trade-names/references/ip-fundamentals.md`.
 
 > **Vastuuvapaus:** arviot ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Teoskynnys ja loukkaus ovat viime kädessä tuomioistuimen
-> kokonaisharkintaa. Katso `immateriaalioikeus/CLAUDE.md`.
+> kokonaisharkintaa. Katso `intellectual-property/AGENTS.md`.
 
 ## Tarkista laki lähteestä
 
-Hae sovellettavat säännökset **`juristi:oikeustutkimus`-skillillä** —
+Hae sovellettavat säännökset **`legal-core:legal-research`-skillillä** —
 tekijänoikeuslakia on muutettu usein (mm. DSM-muutokset:
 verkkosisällönjakopalvelut, tekstin- ja tiedonlouhinta, opetuskäyttö).
 Tekijänoikeusneuvoston lausunnot ovat keskeinen tulkinta-aineisto —
@@ -67,7 +67,7 @@ Kun laadit tai arvioit lisenssiä tai siirtoa, määritä ainakin:
   -ehtojen merkitys. Lisenssien yksityiskohdat lisenssitekstistä, ei
   muistista.
 
-Sopimusmekaniikka: `sopimukset:sopimuksen-laatiminen`; Word-redline:
+Sopimusmekaniikka: `contracts:contract-drafting`; Word-redline:
 `adeu`-MCP.
 
 ## Luvallinen käyttö ilman lupaa
@@ -106,7 +106,7 @@ suoja (puhtaasti generoitu aineisto ei lähtökohtaisesti ylitä
 teoskynnystä ilman ihmisen luovaa panosta — tulkinnanvarainen, merkitse
 epävarmuus), (3) tuotoksen mahdollinen loukkaavuus suhteessa olemassa
 oleviin teoksiin. GPAI-mallien läpinäkyvyysvelvoitteet →
-`tekoalysaantely:tekoaly-velvoitteet`.
+`ai-regulation:ai-obligations`.
 
 ## Mitä tämä skill EI tee
 

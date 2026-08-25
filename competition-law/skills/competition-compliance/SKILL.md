@@ -18,16 +18,23 @@ description: >
 
 Tämä skill rakentaa ennaltaehkäisyn: compliance-ohjelman,
 pelisäännöt ja tarkastusvalmiuden. Perusteet ja rikkomustyypit:
-`../kilpailunrajoitukset/references/kilpailuoikeus-perusteet.md`.
+`../restrictive-practices/references/competition-law-fundamentals.md`.
 
 > **Vastuuvapaus:** ohjeluonnokset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Compliance-ohjelma ei suojaa, ellei sitä
-> noudateta ja valvota. Katso `kilpailuoikeus/CLAUDE.md`.
+> noudateta ja valvota. Katso `competition-law/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista lähteet
 
 Hae kilpailulain menettelysäännökset (tarkastusvaltuudet 5 luvusta)
-**`juristi:oikeustutkimus`-skillillä** ja KKV:n ohjeet
+**`legal-core:legal-research`-skillillä** ja KKV:n ohjeet
 (tarkastukset, leniency) `[tarkista]`. Komission tarkastuskäytäntö
 EU-asioissa erikseen.
 
@@ -85,7 +92,7 @@ markkinaperusteinen hinnoittelu, kirjanpidon eriyttäminen ja
 yhtiöittämisvelvollisuus kilpailutilanteessa markkinoilla —
 edellytykset lähteestä. KKV:n ensisijainen keino on neuvottelu,
 viime kädessä kielto. Kytkös kuntayhtiöihin →
-`yhtiooikeus:yhtion-hallinto`.
+`company-law:corporate-governance`.
 
 ## Mitä tämä skill EI tee
 

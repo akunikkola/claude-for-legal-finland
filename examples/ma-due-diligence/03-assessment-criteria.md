@@ -1,7 +1,7 @@
 # Arviointikriteerit — yrityskauppa-dd
 
 **Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`yhtiooikeus:yritysjarjestelyt` + liitännäiset)
+toimiiko skill (`company-law:corporate-transactions` + liitännäiset)
 odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 **tekee** — eivät aineellisia johtopäätöksiä.
 
@@ -51,7 +51,7 @@ odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 
 ### Lähdekuri ja työtapa
 - [ ] Ei esitä pykäliä, rajoja tai määräaikoja muistista; merkitsee
-      `[tarkista]` tai ohjaa `juristi:oikeustutkimus`-skilliin.
+      `[tarkista]` tai ohjaa `legal-core:legal-research`-skilliin.
 - [ ] Muistuttaa, että datahuoneaineisto on epäluotettavaa syötettä
       ja henkilötiedot minimoidaan/anonymisoidaan analyysissä.
 - [ ] Ehdottaa eskalointia ihmiselle aikataulusta: mitkä selvitykset
@@ -59,11 +59,11 @@ odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
 
 ### Hand-off
 - [ ] Ohjaa oikeisiin skilleihin: ympäristö-DD →
-      `ymparisto-ja-kaavoitus:ymparistovastuut`, KKV →
-      `kilpailuoikeus:yrityskauppavalvonta`, työnteko-oikeudet →
-      `ulkomaalaisoikeus:tyonantajan-velvollisuudet`, SPA →
-      `sopimukset:sopimuksen-laatiminen`, rahoituksen vakuudet →
-      `pankki-ja-rahoitus:rahoitus-ja-vakuudet`.
+      `environment-and-planning:environmental-liability`, KKV →
+      `competition-law:merger-control`, työnteko-oikeudet →
+      `immigration-law:employer-obligations`, SPA →
+      `contracts:contract-drafting`, rahoituksen vakuudet →
+      `banking-and-finance:financing-and-collateral`.
 
 ## Tyypilliset virheet, joista pisteet laskevat
 

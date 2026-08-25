@@ -17,18 +17,18 @@ description: >
 
 Tämä skill jäsentää, mikä seuraamus teosta voi seurata ja miten se
 mitataan. Rikosoikeuden kartta:
-`../rikosvastuun-perusteet/references/rikosoikeus-perusteet.md`.
+`../criminal-liability-basics/references/criminal-law-fundamentals.md`.
 
 > **Vastuuvapaus:** arvio on tarkistettava luonnos — ei oikeudellista
 > neuvontaa eikä ennustetta tuomiosta. **Asteikot, päiväsakon määrä ja
 > vanhentumisajat aina lähteestä**, ei muistista. Katso
-> `rikosoikeus/CLAUDE.md`.
+> `criminal-law/AGENTS.md`.
 
 ## Tarkista laki ja oikeuskäytäntö lähteestä
 
 Hae rikoslain rangaistuksen määräämistä (mm. 6 luku), seuraamuksia,
 menettämisseuraamusta (mm. 10 luku) ja vanhentumista (mm. 8 luku)
-koskevat säännökset **`juristi:oikeustutkimus`-skillillä** sekä nimikkeen
+koskevat säännökset **`legal-core:legal-research`-skillillä** sekä nimikkeen
 oma asteikko erityisosasta. Rangaistuskäytäntöä koskeva KKO-linja
 lähteestä. Sakon ja rikesakon määräämisestä on oma lakinsa (754/2010).
 
@@ -83,7 +83,7 @@ lähteestä. Sakon ja rikesakon määräämisestä on oma lakinsa (754/2010).
   (mm. laajennettu hyödyn menettäminen) lähteestä.
 - **Liitännäisseuraamukset**: esim. liiketoimintakielto, ajokielto,
   vahingonkorvaus (siviilivaade rikosasiassa →
-  `riidanratkaisu:vahingonkorvaus`).
+  `dispute-resolution:damages`).
 
 ## Vaihe 7: Vanhentuminen
 

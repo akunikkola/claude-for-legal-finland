@@ -19,7 +19,7 @@ Tietosuoja-arvio, seloste ja vastausluonnos ovat **tarkistettavia luonnoksia** �
 
 ## Lähteestä, ei muistista
 
-Tarkista kansallisen lain pykälät **`legal-core`-plugarin `oikeustutkimus`-skillillä** (oik.ai/Finlex)
+Tarkista kansallisen lain pykälät **`legal-core`-plugarin `legal-research`-skillillä** (oik.ai/Finlex)
 ja GDPR-artiklat EUR-Lexistä ennen viittausta. Älä keksi pykälä- tai artiklanumeroita.
 Merkitse tarkistamaton viittaus `[muistinvarainen — tarkista]`.
 

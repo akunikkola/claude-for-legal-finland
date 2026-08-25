@@ -21,18 +21,28 @@ Tämä skill jäsentää kaavoituksen ja rakentamisen lupakysymykset.
 rakentamisen osalta vanhan MRL:n, ja jäljelle jäänyt laki on nyt
 nimeltään **alueidenkäyttölaki** (132/1999) — molemmat vahvistettu
 lähteestä. Perusteet:
-`../ymparistolupa-ja-valvonta/references/ymparisto-perusteet.md`.
+`../environmental-permits-and-supervision/references/environmental-law-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ja arviot ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Rakennushankkeen tekninen suunnittelu kuuluu
 > suunnittelijoille; kaavatulkinnan vahvistaa viime kädessä
 > rakennusvalvonta tai tuomioistuin. Katso
-> `ymparisto-ja-kaavoitus/CLAUDE.md`.
+> `environment-and-planning/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae alueidenkäyttölain ja rakentamislain säännökset
-**`juristi:oikeustutkimus`-skillillä**: rakentamisluvan kynnys,
+**`legal-core:legal-research`-skillillä**: rakentamisluvan kynnys,
 lupaedellytykset kaava-alueella ja sen ulkopuolella, poikkeamisen
 edellytykset ja valitusajat. **Älä käytä vanhoja käsitteitä**
 (rakennuslupa, toimenpidelupa) voimassa olevina — uusi järjestelmä:

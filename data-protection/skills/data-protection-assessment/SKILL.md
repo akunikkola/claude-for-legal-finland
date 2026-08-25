@@ -21,10 +21,10 @@ sovelletaan lisäksi **lakia yksityisyyden suojasta työelämässä (759/2004)**
 
 > **Vastuuvapaus:** tämä on tarkistettava arvio, ei oikeudellista neuvontaa. Korkean
 > riskin käsittely, arkaluonteiset tiedot ja DPIA:t kuuluvat tietosuojavastaavan ja
-> tarvittaessa juristin arvioitaviksi. Katso `tietosuoja/CLAUDE.md`.
+> tarvittaessa juristin arvioitaviksi. Katso `data-protection/AGENTS.md`.
 
-Perusteet ja artiklat tiivistettynä: lue `references/tietosuoja-perusteet.md`. Tarkista
-kansallisen lain pykälät `legal-core`-plugarin `oikeustutkimus`-skillillä; GDPR-artiklat
+Perusteet ja artiklat tiivistettynä: lue `references/data-protection-fundamentals.md`. Tarkista
+kansallisen lain pykälät `legal-core`-plugarin `legal-research`-skillillä; GDPR-artiklat
 EUR-Lexistä.
 
 ---
@@ -48,7 +48,7 @@ Jokaisella käsittelyllä on oltava vähintään yksi peruste:
 - **Yleinen etu / julkinen valta** (6(1)(e)) — viranomaistoiminta.
 - **Oikeutettu etu** (6(1)(f)) — edellyttää tasapainotestiä; ei sovellu viranomaisen tehtävien hoitoon.
 
-**Arkaluonteiset tiedot (9 art):** käsittely lähtökohtaisesti kielletty, ellei jokin 9(2) poikkeus sovellu (esim. nimenomainen suostumus, työoikeuden velvoitteet, tärkeä yleinen etu). Tarkista myös tietosuojalain (1050/2018) kansalliset täsmennykset `oikeustutkimus`-skillillä.
+**Arkaluonteiset tiedot (9 art):** käsittely lähtökohtaisesti kielletty, ellei jokin 9(2) poikkeus sovellu (esim. nimenomainen suostumus, työoikeuden velvoitteet, tärkeä yleinen etu). Tarkista myös tietosuojalain (1050/2018) kansalliset täsmennykset `legal-research`-skillillä.
 
 Merkitse valittu peruste ja perustele. Jos peruste on suostumus tai oikeutettu etu, dokumentoi vapaaehtoisuus / tasapainotesti.
 
@@ -72,7 +72,7 @@ Tuota tiivis arvio:
 1. **Saako käsitellä?** Peruste (6/9 art) ja perustelu.
 2. **Periaatteiden täyttyminen** ja havaitut puutteet.
 3. **DPIA-tarve:** kyllä / ei / rajatapaus + perustelu.
-4. **Seuraavat toimet:** mitä on dokumentoitava (seloste käsittelytoimista 30 art → `tietosuojaseloste`-skill), informoitava (13–14 art) ja mitä vaatii tietosuojavastaavan/juristin arvion (`[varmista]`).
+4. **Seuraavat toimet:** mitä on dokumentoitava (seloste käsittelytoimista 30 art → `privacy-notice`-skill), informoitava (13–14 art) ja mitä vaatii tietosuojavastaavan/juristin arvion (`[varmista]`).
 
 ## Mitä tämä skill EI tee
 

@@ -20,7 +20,7 @@ GDPR) ja kansallisen tietosuojalain (1050/2018) mukaan.
 Lähteestä (oik.ai/Finlex) varmistettu: **tietosuojalaki (1050/2018)** täsmentää ja
 täydentää **EU:n tietosuoja-asetusta (2016/679)**; työelämässä sovelletaan **lakia
 yksityisyyden suojasta työelämässä (759/2004)**. GDPR-artiklat: EUR-Lex. Kansallisen lain
-pykälät tarkistetaan `juristi:oikeustutkimus`-skillillä.
+pykälät tarkistetaan `legal-core:legal-research`-skillillä.
 
 ## Suositeltu työkalu: PII Shield (anonymisointi)
 
@@ -57,7 +57,7 @@ claude mcp add pii-shield --transport stdio -- node /ABSOLUUTTINEN/POLKU/PII-Shi
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (kansallisen lain tarkistus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (kansallisen lain tarkistus) ja `document-review`.
 
 ## Asennus
 

@@ -18,18 +18,18 @@ description: >
 
 Tämä skill jäsentää taloyhtiön ja osakkaan suhteen
 asunto-osakeyhtiölain (1599/2009) mukaan. Perusteet:
-`../kiinteistokauppa/references/kiinteisto-perusteet.md`. Yhtiöoikeuden
+`../real-property-conveyance/references/real-property-fundamentals.md`. Yhtiöoikeuden
 yleiset opit (johdon vastuu, kokousmenettely) ovat sukua
-osakeyhtiölle → `yhtiooikeus:yhtion-hallinto`, mutta AOYL on oma
+osakeyhtiölle → `company-law:corporate-governance`, mutta AOYL on oma
 lakinsa — älä sovella OYL:ää suoraan.
 
 > **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Yhtiön päätökset tekevät sen toimielimet.
-> Katso `kiinteistot-ja-asuminen/CLAUDE.md`.
+> Katso `real-estate-and-housing/AGENTS.md`.
 
 ## Tarkista laki JA yhtiöjärjestys
 
-Hae AOYL:n säännökset **`juristi:oikeustutkimus`-skillillä** — ja
+Hae AOYL:n säännökset **`legal-core:legal-research`-skillillä** — ja
 muista, että **yhtiöjärjestys voi poiketa lain olettamasäännöksistä**
 (mm. kunnossapitovastuu, vastikeperusteet, lunastuslauseke). Analyysi
 ilman yhtiöjärjestystä on puolivalmis: pyydä se käyttäjältä äläkä
@@ -82,7 +82,7 @@ oleta sisältöä.
   (vastikerästit, häiriö) — varoitusmenettely, määräajat ja kesto
   lähteestä; vuokraus yhtiön lukuun. Raskain keino — käy kevyemmät
   ensin.
-- Rästien perintä → `insolvenssi:saatavien-perinta`.
+- Rästien perintä → `insolvency:debt-collection`.
 
 ## Hallituksen ja isännöitsijän vastuu
 
@@ -90,7 +90,7 @@ Huolellisuusvelvollisuus ja vahingonkorvausvastuu (AOYL:n omat
 säännökset — lähteestä); tyypilliset riskit: kunnossapidon laiminlyönti,
 yhdenvertaisuuden loukkaus, puutteellinen valmistelu. Dokumentoitu
 päätöksenteko on paras suoja — sama oppi kuin
-`yhtiooikeus:yhtion-hallinto`-skillissä.
+`company-law:corporate-governance`-skillissä.
 
 ## Mitä tämä skill EI tee
 

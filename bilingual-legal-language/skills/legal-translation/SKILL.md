@@ -16,17 +16,17 @@ description: >
 
 Tämä skill tukee juridisen tekstin kääntämistä suomen ja ruotsin välillä
 niin, että oikeudellinen merkitys säilyy. Termistö ja viralliset lähteet:
-`references/kaksikielisyys-perusteet.md` — lue se tehtävän alussa.
+`references/bilingual-language-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** käännös on tarkistettava luonnos — ei oikeudellista
 > neuvontaa eikä virallinen käännös. Virallisen käännöksen tekee
 > auktorisoitu kääntäjä. **Älä keksi termiä — käytä vakiintunutta
-> vastinetta lähteestä.** Katso `kaksikielisyys/CLAUDE.md`.
+> vastinetta lähteestä.** Katso `bilingual-legal-language/AGENTS.md`.
 
 ## Tarkista termit ja säädösnimet lähteestä
 
 Säädöksen **virallinen ruotsinkielinen nimi ja sanamuoto** Finlexin
-rinnakkaistekstistä (`juristi:oikeustutkimus`). Termien vakiintuneet
+rinnakkaistekstistä (`legal-core:legal-research`). Termien vakiintuneet
 vastineet valtioneuvoston termipankista (Valter), Sanastokeskuksen
 TEPA:sta ja Kotuksen ohjeista. Älä esitä keksittyä tai sanasanaista
 vastinetta varmana.
@@ -63,7 +63,7 @@ vastinetta varmana.
 
 - Noudata kohdekielen oikeuskielen konventioita (lauserakenne,
   passiivin käyttö, yhdyssanat). Suomen kielen tarkistus →
-  `juristi:suomen-kieli`; ruotsin osalta nojaa virallisiin ruotsin
+  `legal-core:finnish-language`; ruotsin osalta nojaa virallisiin ruotsin
   kielenhuolto-ohjeisiin (Kotus / statsrådets svenska språknämnd).
 - Pidä numerot, päivämäärät ja viittausmuodot kohdekielen mukaisina.
 

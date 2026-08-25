@@ -25,7 +25,7 @@ kattaa menettelyn (esitutkinta, pakkokeinot, syyte, asianomistajan asema).
 Lähteestä (Finlex) varmistettu: **rikoslaki (39/1889)** — ajantasaversion
 asiakirjatunnus 18890039001 — sekä **laki sakon ja rikesakon määräämisestä
 (754/2010)**. Tunnusmerkistöt, rangaistusasteikot ja vanhentumisajat tarkistetaan
-käytössä `juristi:oikeustutkimus`-skillillä; rikoslakia muutetaan jatkuvasti.
+käytössä `legal-core:legal-research`-skillillä; rikoslakia muutetaan jatkuvasti.
 
 ## Liittyy
 
@@ -34,7 +34,7 @@ käytössä `juristi:oikeustutkimus`-skillillä; rikoslakia muutetaan jatkuvasti
 - **`dispute-resolution`-plugari** – rikoksesta johtuva vahingonkorvaus.
 - **`taxation`-, `company-law`- ja `banking-and-finance`-plugarit** – talousrikosten
   siviili- ja sääntelykytkennät.
-- **`legal-core`-plugari** – `oikeustutkimus` (KKO:n käytäntö) ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (KKO:n käytäntö) ja `engagement-intake`.
 
 ## Asennus
 

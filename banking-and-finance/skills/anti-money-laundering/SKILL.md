@@ -17,17 +17,24 @@ description: >
 
 Tämä skill jäsentää rahanpesulain (444/2017) velvoitteet ja rakentaa
 ilmoitusvelvollisen compliance-ohjelman. Perusteet:
-`../rahoitus-ja-vakuudet/references/rahoitus-perusteet.md`.
+`../financing-and-collateral/references/finance-fundamentals.md`.
 
 > **Vastuuvapaus:** ohjelma- ja prosessiluonnokset ovat tarkistettavia —
 > ei oikeudellista neuvontaa. **Rahanpesun toteuttamista ei avusteta
 > missään muodossa** — ja huomaa, että myös oikeudelliset
 > palveluntarjoajat ovat eräissä toimeksiannoissa itse
-> ilmoitusvelvollisia. Katso `pankki-ja-rahoitus/CLAUDE.md`.
+> ilmoitusvelvollisia. Katso `banking-and-finance/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja EU-paketti lähteestä
 
-Hae 444/2017:n säännökset **`juristi:oikeustutkimus`-skillillä**. EU:n
+Hae 444/2017:n säännökset **`legal-core:legal-research`-skillillä**. EU:n
 AML-sääntely on uudistumassa asetuspohjaiseksi (AML-paketti, AMLA) —
 **tarkista voimassa oleva kerros lähteestä** ennen kuin kuvaat
 velvoitteen; kansallinen laki muuttuu paketin myötä.

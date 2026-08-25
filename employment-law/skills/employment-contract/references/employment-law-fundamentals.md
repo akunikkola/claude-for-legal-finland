@@ -2,7 +2,7 @@
 
 Tiivistelmä työsuhteen kannalta keskeisistä laeista ja periaatteista. **Tarkista pykälien
 voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
-`juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ennen viittausta.**
+`legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
 
 ## Perusperiaatteet
 - **Pakottavuus työntekijän hyväksi:** työlainsäädäntö on pääosin pakottavaa; työntekijän
@@ -21,9 +21,9 @@ voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
   koeaika, työnantajan ja työntekijän velvollisuudet, lomauttaminen, irtisanominen ja purku,
   kilpailukielto (2 luku 5 §).
 - **Yhteistoimintalaki (1333/2021)** — yhteistoiminta ja muutosneuvottelut (korvasi vanhan
-  YT-lain 334/2007). Ks. `yhteistoiminta`-skill.
+  YT-lain 334/2007). Ks. `change-negotiations`-skill.
 
-**Tarkista säädösnumero `oikeustutkimus`-skillillä ennen viittausta:**
+**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
 - **Työaikalaki** — säännöllinen työaika, ylityö, lepoajat (uudistui 2019).
 - **Vuosilomalaki** — loman ansainta ja lomakorvaus.
 - **Yhdenvertaisuuslaki** — syrjinnän kielto ja yhdenvertaisuuden edistäminen.
@@ -49,5 +49,5 @@ voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
 - **Työsuojeluviranomainen** (aluehallintovirasto) valvoo työsuojelua ja monia työsuhteen ehtoja.
 - **Yhdenvertaisuusvaltuutettu** ja **tasa-arvovaltuutettu** syrjintäkysymyksissä.
 - **Työtuomioistuin** ratkaisee TES:n tulkintaa koskevat riidat; muut työsuhderiidat
-  yleisissä tuomioistuimissa. Hae relevantti oikeuskäytäntö `oikeustutkimus`-skillillä
+  yleisissä tuomioistuimissa. Hae relevantti oikeuskäytäntö `legal-research`-skillillä
   (esim. court "Työtuomioistuin").

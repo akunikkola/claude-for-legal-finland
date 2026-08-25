@@ -18,16 +18,16 @@ description: >
 
 Tämä skill jäsentää yritysverotuksen kysymykset elinkeinoverolain
 (360/1968) ja verotusmenettelylain riskisäännösten valossa. Perusteet:
-`../verotusmenettely-ja-muutoksenhaku/references/verotus-perusteet.md`.
+`../tax-procedure-and-appeals/references/tax-fundamentals.md`.
 
 > **Vastuuvapaus:** analyysit ovat tarkistettavia — ei veroneuvontaa.
 > Verokannat ja euromäärät aina lähteestä. Merkittävässä järjestelyssä
-> oikea väline on ennakkoratkaisu. Katso `verotus/CLAUDE.md`.
+> oikea väline on ennakkoratkaisu. Katso `taxation/AGENTS.md`.
 
 ## Tarkista laki lähteestä
 
 Hae EVL:n, TVL:n ja VML:n sovellettavat säännökset
-**`juristi:oikeustutkimus`-skillillä** ja KHO:n käytäntö lähteestä.
+**`legal-core:legal-research`-skillillä** ja KHO:n käytäntö lähteestä.
 Yritysverotuksessa KHO:n vuosikirjaratkaisut ja Verohallinnon syventävät
 ohjeet täsmentävät lähes jokaista rajanvetoa — erottele laki, KHO ja
 Verohallinnon kanta toisistaan.
@@ -73,7 +73,7 @@ liiketoimintasiirtoa ja osakevaihtoa:
   veroedun saaminen, edut voidaan evätä — dokumentoi liiketaloudelliset
   perusteet ennen toteutusta.
 - Yhtiöoikeudellinen menettely (OYL 16–17 luku) kulkee rinnalla →
-  `yhtiooikeus:yritysjarjestelyt`; varainsiirtoverokysymykset (931/1996)
+  `company-law:corporate-transactions`; varainsiirtoverokysymykset (931/1996)
   tarkistetaan erikseen.
 - Suosi **ennakkoratkaisua** ennen merkittävää järjestelyä.
 
@@ -88,7 +88,7 @@ liiketoimintasiirtoa ja osakevaihtoa:
   järjestelyn liiketaloudellisista perusteista; sarjatoimet arvioidaan
   kokonaisuutena.
 - **Osingonjako** — yhtiöoikeudellinen laillisuus ensin
-  (`yhtiooikeus:yhtion-hallinto`), sitten verokohtelu (listaamaton/
+  (`company-law:corporate-governance`), sitten verokohtelu (listaamaton/
   listattu, matemaattinen arvo — laskentaparametrit vero.fi:stä).
 
 ## Sukupolvenvaihdos

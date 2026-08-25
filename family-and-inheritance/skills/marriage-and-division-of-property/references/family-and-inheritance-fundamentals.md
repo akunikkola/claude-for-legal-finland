@@ -3,7 +3,7 @@
 Tämä referenssi on plugarin yhteinen kartta: keskeiset käsitteet, säädökset ja
 sudenkuopat. **Säädösten nimet ja numerot on varmistettu Finlexistä**; pykälien
 tarkka sanamuoto ja kaikki määräajat haetaan käytössä lähteestä
-(`juristi:oikeustutkimus`, oik.ai/Finlex).
+(`legal-core:legal-research`, oik.ai/Finlex).
 
 ## Varmistetut säädökset (perusta)
 

@@ -42,7 +42,7 @@ Verohallintoa.
 
 ## Lähteestä, ei muistista — KHO ja KVL mukaan lukien
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 vero-oikeuskäytäntö (KHO:n vuosikirjaratkaisut, KVL:n ennakkoratkaisut) lähteestä.
 Vero-oikeudessa oikeuskäytäntö täsmentää lakia poikkeuksellisen paljon — älä referoi
 ratkaisuja muistista. Vero.fi:n syventävät ohjeet ovat Verohallinnon kanta, eivät

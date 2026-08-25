@@ -32,7 +32,7 @@ Tekoälyasetus **ei korvaa** tietosuoja-asetusta. Profilointi, automaattinen pä
 
 ## Kansallinen kerros muotoutuu — älä keksi
 
-EU-asetuksena tekoälyasetus on Suomessa suoraan sovellettava, mutta **kansalliset toimivaltaiset viranomaiset, menettelyt ja mahdollinen täydentävä lainsäädäntö ovat muotoutumassa.** Älä esitä viranomaisnimeämisiä tai kansallisia säännöksiä varmistettuina. Tarkista voimassa oleva tilanne `juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ja viranomaisten virallisilta sivuilta; merkitse epävarmat kohdat `[varmista — kansallinen sääntely muotoutumassa]`.
+EU-asetuksena tekoälyasetus on Suomessa suoraan sovellettava, mutta **kansalliset toimivaltaiset viranomaiset, menettelyt ja mahdollinen täydentävä lainsäädäntö ovat muotoutumassa.** Älä esitä viranomaisnimeämisiä tai kansallisia säännöksiä varmistettuina. Tarkista voimassa oleva tilanne `legal-core:legal-research`-skillillä (oik.ai/Finlex) ja viranomaisten virallisilta sivuilta; merkitse epävarmat kohdat `[varmista — kansallinen sääntely muotoutumassa]`.
 
 ## Jaetut standardit
 

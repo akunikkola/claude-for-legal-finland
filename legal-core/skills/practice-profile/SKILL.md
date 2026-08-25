@@ -37,7 +37,7 @@ yhdessä paikassa eikä sitä tarvitse toistaa joka kehotteessa.
 3. **Ei salaisuuksia profiiliin.** Asiakasnimiä, käynnissä olevien
    toimeksiantojen tietoja tai henkilötietoja ei tallenneta —
    profiili on pysyväisluonteinen konfiguraatio, ei juttukansio
-   (juttukohtaiset tiedot → `toimeksianto`-skillin työtila).
+   (juttukohtaiset tiedot → `engagement-intake`-skillin työtila).
 4. **Versioi.** Profiilimuutos on muutos plugarin tiedostoon —
    suosittele git-versiointia tai päivämäärämerkintää.
 

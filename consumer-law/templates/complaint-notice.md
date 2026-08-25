@@ -1,7 +1,7 @@
 # Pohja: reklamaatio (tavaran tai palvelun virhe)
 
 Rakenteellinen luuranko kuluttajan virheilmoitukselle myyjälle. Käyttävä
-skill: [`kuluttajakaupan-virhevastuu`](../skills/consumer-sales-liability/SKILL.md).
+skill: [`consumer-sales-liability`](../skills/consumer-sales-liability/SKILL.md).
 Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
 
 <!-- ohje: reklamaatio on tehtävä kohtuullisessa ajassa virheen
@@ -13,6 +13,13 @@ Konventiot: [`references/template-standards.md`](../../references/template-stand
 **Vastaanottaja:** [myyjän/palveluntarjoajan nimi ja osoite tai sähköposti]
 
 **Lähettäjä:** [kuluttajan nimi ja yhteystiedot]
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## REKLAMAATIO
 

@@ -16,16 +16,26 @@ description: >
 
 Tämä skill jäsentää avioliiton varallisuussuhteet ja niiden
 purkautumisen. Perheoikeuden kartta, käsitteet ja sudenkuopat:
-`references/perhe-ja-perinto-perusteet.md` — lue se tehtävän alussa.
+`references/family-and-inheritance-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ja laskelmat ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Muotovaatimukset, määräajat ja verot
-> tarkistetaan lähteestä. Katso `perhe-ja-perinto/CLAUDE.md`.
+> tarkistetaan lähteestä. Katso `family-and-inheritance/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja oikeuskäytäntö lähteestä
 
 Hae avioliittolain (234/1929) ja avoliittolain (26/2011) säännökset
-**`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex). Osituksen
+**`legal-core:legal-research`-skillillä** (oik.ai/Finlex). Osituksen
 sovittelua, avio-oikeuden ulkopuolista omaisuutta ja avopuolison
 hyvitystä koskeva KKO-käytäntö lähteestä. Muotovaatimukset
 (avioehdon ja ositussopimuksen pätevyys) aina laista.
@@ -39,7 +49,7 @@ hyvitystä koskeva KKO-käytäntö lähteestä. Muotovaatimukset
    Älä sekoita näitä — peruskäsitteet ovat eri.
 2. **Mikä purkaa varallisuussuhteen?** Avioero vai toisen puolison
    kuolema? Kuolintapauksessa ositus ja perintö kytkeytyvät
-   (lesken asema, tasinkoprivilegi) → `perinto-ja-testamentti`.
+   (lesken asema, tasinkoprivilegi) → `inheritance-and-wills`.
 3. **Onko avioehtoa tai muita sopimuksia?** Avioehdon sisältö ja
    pätevyys (muoto, rekisteröinti) ratkaisevat avio-oikeuden laajuuden.
 

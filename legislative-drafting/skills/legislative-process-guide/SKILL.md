@@ -115,8 +115,8 @@ korjaustarpeita.
 - **Lainvalmistelun prosessiopas**: https://lainvalmistelu.finlex.fi/
 - **Säädösvalmistelun kuulemisopas** — kuulemisen ohjeistus
 - **Hallituksen esitysten laatimisohjeet (HELO)** — ks. skill
-  `hallituksen-esityksen-laatimisohjeet`
-- **Lainkirjoittajan opas** — ks. skill `lainkirjoittajan-opas`
+  `government-bill-guidelines`
+- **Lainkirjoittajan opas** — ks. skill `legislative-drafting-manual`
 - **Hankeikkuna** — valtioneuvoston hanketietopalvelu
 - **Otakantaa.fi** ja **Lausuntopalvelu.fi** — kuulemisen palvelut
 - **Finlex** — säädökset ja esityöt

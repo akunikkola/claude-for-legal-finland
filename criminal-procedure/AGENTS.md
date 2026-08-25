@@ -37,7 +37,7 @@ puolustajalle.
 
 ## Lähteestä, ei muistista — erityisesti asteikot ja määräajat
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex):
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex):
 rangaistusasteikot, syyteoikeuden vanhentumisajat (rikoslain säännökset),
 pakkokeinojen edellytykset ja määräajat (mm. vangitsemiskäsittelyn ajat),
 muutoksenhakuajat. **Älä koskaan esitä asteikkoa tai vanhentumisaikaa muistista** —
@@ -57,7 +57,7 @@ README) — rikosasioissa tämä on erityisen tärkeää (GDPR 10 artikla).
 
 Sama avustaja ei voi edustaa epäiltyä ja asianomistajaa samassa asiassa, eikä
 useita epäiltyjä, joiden edut ovat ristiriidassa. Kun käyttäjän rooli vaihtuu tai
-on epäselvä, pysähdy ja selvitä → `juristi:toimeksianto` (esteellisyysmuistilista).
+on epäselvä, pysähdy ja selvitä → `legal-core:engagement-intake` (esteellisyysmuistilista).
 
 ## Jaetut standardit
 

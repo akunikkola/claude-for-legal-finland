@@ -18,11 +18,18 @@ description: >
 Tämä skill jäsentää saatavan perinnän vaiheet ja tuottaa luonnokset
 (muistutus, maksuvaatimus, katkaisuilmoitus, maksusopimus) molempien
 osapuolten näkökulmasta. Perusteet:
-`../maksukyvyttomyysarvio/references/insolvenssi-perusteet.md`.
+`../insolvency-assessment/references/insolvency-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Lähettämisestä ja määräajoista vastaa ihminen. Katso
-> `insolvenssi/CLAUDE.md`.
+> `insolvency/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Vaihe 0: Saatavan kunto
 
@@ -34,7 +41,7 @@ Ennen perintätoimia varmista premissit:
 - **Riitainen vai riidaton?** Riitautettua saatavaa ei saa periä
   perintälain mukaisella vapaaehtoisella perinnällä kuluttajalta —
   riitainen saatava ratkaistaan oikeudenkäynnissä →
-  `riidanratkaisu:haastehakemus`.
+  `dispute-resolution:statement-of-claim`.
 - **Vanhentuminen (728/2003)** — yleinen vanhentumisaika on kolme vuotta
   ja se on katkaistavissa; tarkista erityisajat (tuomion jälkeinen,
   lopullinen vanhentuminen, ulosottoperusteen määräaika) lähteestä.
@@ -58,12 +65,12 @@ Ennen perintätoimia varmista premissit:
 
 - **Riidaton saatava**: summaarinen haastehakemus käräjäoikeuteen →
   yksipuolinen tuomio → ulosottoperuste. Luonnostelu:
-  `riidanratkaisu:haastehakemus` (summaarinen muoto).
+  `dispute-resolution:statement-of-claim` (summaarinen muoto).
 - **Riitainen saatava**: täysimittainen riita-asia →
   `dispute-resolution`-plugari.
 - Arvioi kuluriski suhteessa saatavan määrään ja velallisen maksukykyyn —
   tuomio maksukyvyttömältä ei tuota suoritusta (→
-  `maksukyvyttomyysarvio`).
+  `insolvency-assessment`).
 
 ## Vaihe 3: Ulosotto (705/2007)
 
@@ -81,7 +88,7 @@ Ennen perintätoimia varmista premissit:
 
 Jos velallisella on useita velkojia ja pysyvä maksukyvyttömyys,
 yksittäinen perintäjärjestely ei riitä → ohjaa
-`maksukyvyttomyysarvio`-skilliin (yritys: saneeraus/konkurssi;
+`insolvency-assessment`-skilliin (yritys: saneeraus/konkurssi;
 yksityishenkilö: velkajärjestely + talous- ja velkaneuvonta).
 
 ## Mitä tämä skill EI tee

@@ -17,18 +17,25 @@ description: >
 
 Tämä skill jäsentää asunto-osakkeiden kaupan asuntokauppalain (843/1994)
 mukaan. Perusteet ja kiinteistö/asunto-osake-rajanveto:
-`../kiinteistokauppa/references/kiinteisto-perusteet.md`. Jos kohde on
-kiinteistö → `kiinteistokauppa`-skill; taloyhtiösuhteen kysymykset →
-`asunto-osakeyhtio`-skill.
+`../real-property-conveyance/references/real-property-fundamentals.md`. Jos kohde on
+kiinteistö → `real-property-conveyance`-skill; taloyhtiösuhteen kysymykset →
+`housing-company`-skill.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Katso `kiinteistot-ja-asuminen/CLAUDE.md`. Kuluttajakaupassa
+> neuvontaa. Katso `real-estate-and-housing/AGENTS.md`. Kuluttajakaupassa
 > asuntokauppalain suoja on pakottavaa — tarkista pakottavuus lähteestä.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae asuntokauppalain säännökset (virhe, reklamaatio, vastuuajat,
-RS-suoja) **`juristi:oikeustutkimus`-skillillä** ja KKO:n sekä
+RS-suoja) **`legal-core:legal-research`-skillillä** ja KKO:n sekä
 kuluttajariitalautakunnan käytäntö lähteestä. Kaupan tyypin tunnistus
 ohjaa kaiken: **rakentamisvaihe / uusi asunto / käytetty asunto** —
 kullakin oma virhesäännöstönsä.
@@ -66,7 +73,7 @@ kullakin oma virhesäännöstönsä.
 5. **Kunnossapitovastuun jako** (märkätilavaurioissa keskeinen):
    tarkistetaan asunto-osakeyhtiölaista **ja yhtiöjärjestyksestä** —
    älä jaa vastuuta yhtiön ja osakkaan välillä näkemättä
-   yhtiöjärjestystä → `asunto-osakeyhtio`-skill.
+   yhtiöjärjestystä → `housing-company`-skill.
 
 ## Reklamaatio ja seuraamukset
 

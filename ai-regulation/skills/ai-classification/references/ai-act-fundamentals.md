@@ -2,7 +2,7 @@
 
 Tiivistelmä luokittelun ja velvoitteiden kannalta keskeisistä asioista. **Tarkista
 artiklat `eu-ai-act`-MCP:n työkalulla `euaiact_get_article` (EUR-Lex-linkit) ja kansallinen
-sääntely `juristi:oikeustutkimus`-skillillä ennen kuin nojaat niihin.**
+sääntely `legal-core:legal-research`-skillillä ennen kuin nojaat niihin.**
 
 ## Sovellettava sääntely
 - **EU:n tekoälyasetus, asetus (EU) 2024/1689 ("AI Act")** — suoraan sovellettava EU-asetus.
@@ -45,7 +45,7 @@ arkaluonteiset tiedot (9 art) tulevat usein samaan aikaan arvioitaviksi. → `da
 EU-asetuksena tekoälyasetus on Suomessa suoraan sovellettava. **Kansallinen täytäntöönpano
 (toimivaltaiset valvontaviranomaiset, menettelyt, mahdolliset täydentävät säännökset) on
 muotoutumassa — älä esitä viranomaisnimeämisiä tai kansallisia säännöksiä varmistettuina.**
-Tarkista voimassa oleva tilanne `juristi:oikeustutkimus`-skillillä (oik.ai/Finlex) ja
+Tarkista voimassa oleva tilanne `legal-core:legal-research`-skillillä (oik.ai/Finlex) ja
 viranomaisten virallisilta sivuilta, ja merkitse epävarmat kohdat `[varmista — kansallinen
 sääntely muotoutumassa]`. Huomioi myös toimialakohtainen valvonta (esim. rahoitusala,
 terveydenhuolto, tietosuoja).

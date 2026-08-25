@@ -18,7 +18,7 @@ ihminen. Merkitse tulkinnanvaraiset `[varmista — juristin arvioitava]`.
 
 Ulkomaalaislakia (301/2004) on muutettu sadoilla laeilla, ja **lain
 kokonaisuudistus on valmisteilla** — tarkista aina voimassa oleva tila
-(`juristi:oikeustutkimus`, Finlex, Migri). Tulorajat, käsittelyajat,
+(`legal-core:legal-research`, Finlex, Migri). Tulorajat, käsittelyajat,
 lupatyyppien edellytykset ja työnteko-oikeuden laajuus muuttuvat tiheään:
 **älä koskaan esitä tulorajaa, määräaikaa tai käsittelyaikaa muistista** —
 hae Migrin sivuilta tai laista ja merkitse ajankohta, tai `[tarkista — migri.fi]`.
@@ -50,7 +50,7 @@ Palautuskiellon ehdottomuus mainitaan aina, kun maastapoistaminen on esillä.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 käytäntö KHO:n ratkaisuista lähteestä. Migrin ohjeet ja käsittelyaikatiedot
 ovat viranomaistietoa (migri.fi, EnterFinland) — erottele laki ja
 viranomaiskäytäntö.

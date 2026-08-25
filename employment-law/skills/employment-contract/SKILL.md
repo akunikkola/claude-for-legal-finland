@@ -17,7 +17,14 @@ työntekijän hyväksi**, ja työehtosopimukset (TES) asettavat vähimmäisehtoj
 voi poiketa työntekijän vahingoksi.
 
 > **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa.
-> Katso `tyooikeus/CLAUDE.md`. Perusteet: `references/tyooikeus-perusteet.md`.
+> Katso `employment-law/AGENTS.md`. Perusteet: `references/employment-law-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista pakottava sääntely ja TES ensin
 
@@ -25,7 +32,7 @@ voi poiketa työntekijän vahingoksi.
   TES. TES voi määrätä palkasta, työajasta, lomista ym. työsopimusta sitovammin. Älä laadi
   ehtoa, joka alittaa TES:n tai pakottavan lain vähimmäistason työntekijän vahingoksi.
 - Tarkista työsopimuslain (55/2001) ja muiden lakien voimassa olevat säännökset
-  **`legal-core`-plugarin `oikeustutkimus`-skillillä** (oik.ai/Finlex). Yleinen sopimusmekaniikka:
+  **`legal-core`-plugarin `legal-research`-skillillä** (oik.ai/Finlex). Yleinen sopimusmekaniikka:
   `contracts`-plugari.
 
 ## Työsopimuksen keskeiset ehdot
@@ -36,10 +43,10 @@ Käy läpi vähintään:
 3. **Sopimuksen kesto:** toistaiseksi voimassa oleva vai **määräaikainen**. Määräaikaisuus edellyttää **perusteltua syytä** (työsopimuslaki 55/2001); toistuvat määräaikaiset ilman perustetta voidaan katsoa toistaiseksi voimassa olevaksi. Työnantajan aloitteesta tehty perusteeton määräaikaisuus on riski → merkitse.
 4. **Koeaika:** sallittu laissa säädetyissä rajoissa; pituus ja ehdot tarkistettava lähteestä. Koeajan kuluessa sopimus voidaan purkaa kevyemmin, mutta ei syrjivin tai epäasiallisin perustein.
 5. **Palkka** ja palkanmaksukausi (huomioi TES:n vähimmäispalkka).
-6. **Työaika** (työaikalaki) ja **vuosiloma** (vuosilomalaki) — tarkista numerot `oikeustutkimus`-skillillä.
+6. **Työaika** (työaikalaki) ja **vuosiloma** (vuosilomalaki) — tarkista numerot `legal-research`-skillillä.
 7. **Kilpailukieltosopimus:** sallittu vain **erityisen painavasta syystä**, rajoitettu kestoltaan, ja siitä on pääsääntöisesti maksettava **korvaus** (työsopimuslain 2022 uudistuksen jälkeen). Perusteeton tai liian laaja kilpailukielto on osin tehoton → merkitse ja tarkista voimassa oleva säännös lähteestä.
 8. **Salassapito**, immateriaalioikeudet ja muut ehdot.
-9. **Irtisanomisajat** (laki/TES) ja päättämisen perusteet (ks. `tyosuhteen-paattaminen`-skill).
+9. **Irtisanomisajat** (laki/TES) ja päättämisen perusteet (ks. `termination-of-employment`-skill).
 
 ## Työnkulku
 
@@ -48,7 +55,7 @@ Käy läpi vähintään:
 
 ## Raportoi
 
-Tuota sopimus/arvio lähdemerkinnöin (säädös + pykälä tarkistettuna `oikeustutkimus`-skillillä,
+Tuota sopimus/arvio lähdemerkinnöin (säädös + pykälä tarkistettuna `legal-research`-skillillä,
 sovellettava TES nimettynä). Erota selvästi pakottava vähimmäistaso, TES-ehto ja
 sopimusvapauden piiriin kuuluva ehto.
 

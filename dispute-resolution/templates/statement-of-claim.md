@@ -1,7 +1,7 @@
 # Pohja: haastehakemus
 
 Rakenteellinen luuranko riita-asian haastehakemukselle. Käyttävä skill:
-[`haastehakemus`](../skills/statement-of-claim/SKILL.md) — pakollisten osien
+[`statement-of-claim`](../skills/statement-of-claim/SKILL.md) — pakollisten osien
 luettelo on varmistettu oikeudenkäymiskaaren 5 luvun 2 §:stä (ks. skill).
 Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
 
@@ -11,6 +11,16 @@ Konventiot: [`references/template-standards.md`](../../references/template-stand
 ---
 
 **[Käräjäoikeuden nimi]** (pakollinen)
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## HAASTEHAKEMUS
 

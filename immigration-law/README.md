@@ -25,13 +25,13 @@ työntekijän oleskelulupa, erityisasiantuntija, sininen kortti, kasvuyrittäjä
 työnantajan velvollisuudet ja seuraamusmaksu – **laki työntekijöiden
 lähettämisestä (447/2016)** ja **kansalaisuuslaki (359/2003)**. Tulorajat,
 käsittelyajat ja lupatyyppien yksityiskohdat tarkistetaan käytössä
-`juristi:oikeustutkimus`-skillillä ja migri.fi:stä.
+`legal-core:legal-research`-skillillä ja migri.fi:stä.
 
 ## Liittyy
 
 - **`employment-law`-plugari** – työsuhteen ehdot ovat samat kuin suomalaisella
   (TES, pakottava työlainsäädäntö); alipalkkaus on myös lupariski.
-- **`legal-core`-plugari** – `oikeustutkimus` (KHO:n käytäntö) ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` (KHO:n käytäntö) ja `engagement-intake`.
 - **`administrative-law`-plugari** – Migrin päätökset ovat hallintopäätöksiä:
   muutoksenhaku (808/2019).
 - **`criminal-procedure`-plugari** – luvattoman ulkomaisen työvoiman käytön

@@ -18,17 +18,27 @@ description: >
 
 Tämä skill jäsentää ympäristöllisten lupien ja valvonnan tilanteet.
 Perusteet, lupakartta ja viranomaiskenttä 2026:
-`references/ymparisto-perusteet.md` — lue se tehtävän alussa.
+`references/environmental-law-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Teknis-luonnontieteelliset selvitykset (päästöt, melu,
-> luonto) tekee alan konsultti. Katso `ymparisto-ja-kaavoitus/CLAUDE.md`
+> luonto) tekee alan konsultti. Katso `environment-and-planning/AGENTS.md`
 > — erityisesti uudistuneet säädösnimet ja viranomaiset (LVV 2026).
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja viranomainen lähteestä
 
 Hae YSL:n (527/2014) säännökset ja **luvanvaraisuuden laitosluettelo**
-**`juristi:oikeustutkimus`-skillillä** — kynnykset muuttuvat. Toimivalta
+**`legal-core:legal-research`-skillillä** — kynnykset muuttuvat. Toimivalta
 (LVV vs. kunnan ympäristönsuojeluviranomainen) ja vireillä olevien
 asioiden siirtymäsäännökset tarkistetaan lähteestä — älä ohjaa AVI:in
 tai ELY-keskukseen, ne lakkasivat 2025 lopussa.
@@ -69,7 +79,7 @@ tai ELY-keskukseen, ne lakkasivat 2025 lopussa.
 - **Valitus lupapäätöksestä**: valitusoikeus (asianosaiset, järjestöt,
   viranomaiset — lähteestä), keskitetty muutoksenhaku (Vaasan HaO
   ympäristö- ja vesiasioissa — reitti ja ajat lähteestä). Yleiset opit:
-  `hallinto-oikeus:muutoksenhaku`.
+  `administrative-law:administrative-appeal`.
 
 ## Vaihe 4: Valvonta ja hallintopakko
 
@@ -81,7 +91,7 @@ Kun valvoja puuttuu toimintaan:
 2. **Vastauksen jäsennys**: tosiseikat ja tekninen selvitys erikseen
    oikeudellisesta arviosta; korjaavat toimet ja aikataulu; älä
    kaunistele tarkkailutuloksia — se on itsenäinen rikosriski
-   (→ `ymparistovastuut`).
+   (→ `environmental-liability`).
 3. **Oikeusturva**: hallintopakkopäätöksen muutoksenhaku, kuuleminen,
    suhteellisuus.
 

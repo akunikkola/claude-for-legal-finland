@@ -2,7 +2,7 @@
 
 Tämä referenssi kokoaa sopimuksen laatimisen kannalta keskeiset Suomen sopimusoikeuden
 periaatteet ja lait. **Tarkista pykälien voimassa oleva sanamuoto ja muut kuin alla
-vahvistetut säädösnumerot `legal-core`-plugarin `oikeustutkimus`-skillillä (oik.ai/Finlex)
+vahvistetut säädösnumerot `legal-core`-plugarin `legal-research`-skillillä (oik.ai/Finlex)
 ennen kuin viittaat niihin sopimuksessa.**
 
 ## Perusperiaatteet
@@ -21,7 +21,7 @@ ennen kuin viittaat niihin sopimuksessa.**
 - **Kauppalaki, 355/1987** — irtaimen omaisuuden kauppa elinkeinonharjoittajien välillä ja yksityisten kesken (ei kuluttajakauppaa). Tahdonvaltainen: sovelletaan, jollei toisin sovita. Sääntelee mm. tavaran luovutusta, virhettä, viivästystä ja seuraamuksia.
 - **Kuluttajansuojalaki, 38/1978** — pakottava sääntely kuluttajan ja elinkeinonharjoittajan välisissä kulutushyödykesopimuksissa. Kuluttajan vahingoksi poikkeavat ehdot ovat pääsääntöisesti pätemättömiä. Sopimusehtojen kohtuuttomuus arvioidaan kuluttajansuojalain mukaan (oikeustoimilain 36 §:n sijaan).
 
-**Tarkista säädösnumero `oikeustutkimus`-skillillä ennen viittausta** (yleisesti käytettyjä, mutta varmista voimassaolo ja numero):
+**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta** (yleisesti käytettyjä, mutta varmista voimassaolo ja numero):
 
 - **Korkolaki** — viivästyskorko ja sen määräytyminen maksun viivästyessä.
 - **Vahingonkorvauslaki** — yleinen vahingonkorvausvastuu (huom: sopimusvastuu määräytyy ensisijaisesti sopimuksen ja sopimusoikeuden mukaan).

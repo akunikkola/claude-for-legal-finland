@@ -67,7 +67,7 @@ henkilötietoja tarpeettomasti työkaluun. Ks. [`references/liability-and-securi
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex) ja
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
 oikeuskäytäntö (KKO:n ennakkopäätökset osituksesta, lakiosasta, testamentin
 tulkinnasta ja huollosta) lähteestä. Perheoikeus on muuttunut paljon
 (mm. vanhemmuuslaki 775/2022 korvasi isyys- ja äitiyslain vuoden 2023

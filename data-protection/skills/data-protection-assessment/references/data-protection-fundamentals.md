@@ -1,7 +1,7 @@
 # Tietosuojan perusteet — GDPR ja kansallinen sääntely
 
 Tiivistelmä käsittelyn arvioinnin kannalta keskeisistä säännöistä. **Tarkista GDPR-artiklat
-EUR-Lexistä ja kansallisen lain pykälät `oikeustutkimus`-skillillä (oik.ai/Finlex) ennen
+EUR-Lexistä ja kansallisen lain pykälät `legal-research`-skillillä (oik.ai/Finlex) ennen
 kuin viittaat niihin.**
 
 ## Sovellettava sääntely
@@ -11,7 +11,7 @@ kuin viittaat niihin.**
 - **Tietosuojalaki (1050/2018)** — täsmentää ja täydentää tietosuoja-asetusta kansallisesti (mm. käsittelyn oikeusperusteiden kansalliset täsmennykset, ikäraja lapsen suostumukselle tietoyhteiskunnan palveluissa, tietosuojavaltuutettu).
 - **Laki yksityisyyden suojasta työelämässä (759/2004)** — työntekijöiden henkilötietojen käsittely; pakottavaa, työnantajaa sitovaa sääntelyä (mm. tarpeellisuusvaatimus, mistä tietoja saa kerätä, kameravalvonta, sähköpostin käsittely).
 
-Muu mahdollisesti relevantti (tarkista numero `oikeustutkimus`-skillillä): laki sähköisen
+Muu mahdollisesti relevantti (tarkista numero `legal-research`-skillillä): laki sähköisen
 viestinnän palveluista; viranomaisten toiminnan julkisuuslaki; toimialakohtainen erityislaki
 (esim. potilastiedot, sosiaalihuolto).
 
@@ -39,7 +39,7 @@ Käsittely lähtökohtaisesti kielletty ilman 9(2) poikkeusta. Rikostiedoilla om
 Informointi (13–14) · tarkastusoikeus (15) · oikaisu (16) · poisto / "oikeus tulla
 unohdetuksi" (17) · käsittelyn rajoittaminen (18) · siirto-oikeus (20) · vastustamisoikeus
 (21) · automatisoidut yksittäispäätökset ja profilointi (22). Määräaika pyyntöihin: ks.
-`rekisteroidyn-pyynnot`-skill.
+`data-subject-requests`-skill.
 
 ## Velvoitteet
 - **Seloste käsittelytoimista (30 art)** — rekisterinpitäjän ja käsittelijän dokumentaatio.

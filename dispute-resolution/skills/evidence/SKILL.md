@@ -16,12 +16,12 @@ vallitsee **vapaa todistelu ja vapaa todistusharkinta** (oikeudenkäymiskaaren 1
 rajoituksin) — ratkaisevaa on, kuka kantaa näyttötaakan ja saadaanko teemat näytettyä toteen.
 
 > **Vastuuvapaus:** arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä arvio näytön
-> riittävyydestä lopullisesti. Katso `riidanratkaisu/CLAUDE.md`. Perusteet:
-> `../haastehakemus/references/riidanratkaisu-perusteet.md`.
+> riittävyydestä lopullisesti. Katso `dispute-resolution/AGENTS.md`. Perusteet:
+> `../statement-of-claim/references/dispute-resolution-fundamentals.md`.
 
 ## Tarkista säännökset lähteestä
 Hae oikeudenkäymiskaaren 17 luvun säännökset (näyttötaakka, todistuskeinot, todistamis- ja
-hyödyntämiskiellot) **`juristi:oikeustutkimus`-skillillä**. Älä esitä todistelun rajoituksia
+hyödyntämiskiellot) **`legal-core:legal-research`-skillillä**. Älä esitä todistelun rajoituksia
 tai näyttökynnyksiä muistinvaraisesti.
 
 ## Vaihe 1: Jäsennä riitaiset seikat ja näyttötaakka

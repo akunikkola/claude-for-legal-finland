@@ -17,11 +17,21 @@ description: >
 
 Tämä skill palvelee sekä tarjouspyynnön laatijaa että tarjoajaa.
 **Selvitä ensin, kumpaa käyttäjä edustaa**, ja käytä vastaavaa osiota.
-Perusteet: `../hankinnan-suunnittelu/references/hankinnat-perusteet.md`.
+Perusteet: `../procurement-planning/references/procurement-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Katso `julkiset-hankinnat/CLAUDE.md`. Määräajat ja
+> neuvontaa. Katso `public-procurement/AGENTS.md`. Määräajat ja
 > euromäärät lähteestä.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Hankintayksikölle: tarjouspyynnön laatiminen
 
@@ -41,7 +51,7 @@ Perusteet: `../hankinnan-suunnittelu/references/hankinnat-perusteet.md`.
    hinta-laatusuhde. Painoarvot ja alakriteerit ilmoitetaan etukäteen;
    vertailla saa **vain ilmoitetuilla perusteilla**.
 5. **Sopimusehdot** — luonnos mukaan tarjouspyyntöön
-   (→ `sopimukset:sopimuksen-laatiminen`); maksuehdot, sanktiot,
+   (→ `contracts:contract-drafting`); maksuehdot, sanktiot,
    option käyttö.
 6. **Muotoseikat** — määräaika, toimitustapa, kysymykset ja vastaukset,
    osatarjoukset ja vaihtoehtoiset tarjoukset (sallittu/kielletty).

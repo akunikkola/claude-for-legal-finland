@@ -29,7 +29,7 @@ käytössä EUR-Lexistä ja Finanssivalvonnan ohjeista.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` ja `toimeksianto`.
+- **`legal-core`-plugari** – `legal-research` ja `engagement-intake`.
 - **`contracts`-plugari** – rahoitussopimus on sopimus: yleinen mekaniikka ja
   kohtuullistaminen.
 - **`company-law`-plugari** – rahoituskierrokset, pääomalaina (OYL 12 luku),

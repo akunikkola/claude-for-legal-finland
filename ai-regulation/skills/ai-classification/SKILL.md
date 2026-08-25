@@ -18,7 +18,7 @@ roolin (tarjoaja/käyttöönottaja) ja relevantit artiklat.
 
 > **Vastuuvapaus:** tämä on ensiarvio tarkistettavaksi — ei oikeudellista neuvontaa.
 > Lopullinen luokittelu ja vaatimustenmukaisuuspäätökset kuuluvat asiantuntijalle.
-> Katso `tekoalysaantely/CLAUDE.md`.
+> Katso `ai-regulation/AGENTS.md`.
 
 ## Käytä EU AI Act -MCP:tä
 
@@ -38,7 +38,7 @@ Tämä skill nojaa **`eu-ai-act`-MCP:hen** (lexbeam, deterministinen, EUR-Lex-po
 - Resurssit `euaiact://annex/iii` ja `euaiact://risk-levels` antavat täydet kategoriat.
 
 Jos MCP ei ole käytettävissä, kerro se ja merkitse arvio `[ei voitu tarkistaa lähteestä]`.
-Perusteet ja Suomi-kerros: lue `references/ai-act-perusteet.md`.
+Perusteet ja Suomi-kerros: lue `references/ai-act-fundamentals.md`.
 
 ---
 
@@ -59,12 +59,12 @@ luokittelu jää epävarmaksi.
 - **🚫 Kielletty (5 art)** — esim. tietyt manipuloivat, sosiaalisen pisteytyksen tai
   kielletyn biometrisen tunnistuksen käytöt. → Järjestelmää ei saa tarjota/ottaa käyttöön.
 - **⚠️ Korkea riski (6 art + Annex III tai Annex I)** — laajat velvoitteet (9–17 art,
-  käyttöönottajalle 26–27 art). → Ohjaa `tekoaly-velvoitteet`-skilliin.
+  käyttöönottajalle 26–27 art). → Ohjaa `ai-obligations`-skilliin.
 - **ℹ️ Rajoitettu riski (50 art)** — läpinäkyvyysvelvoitteet (esim. chatbotista on
   kerrottava käyttäjälle, synteettinen sisältö merkittävä).
 - **✅ Minimaalinen riski** — ei erityisvelvoitteita; vapaaehtoiset käytännesäännöt.
 - **GPAI (51–56 art)** — yleiskäyttöiset tekoälymallit: tarkista systeeminen riski
-  `euaiact_check_gpai_systemic_risk`-työkalulla (`tekoaly-vaatimustenmukaisuus`-skill).
+  `euaiact_check_gpai_systemic_risk`-työkalulla (`ai-compliance`-skill).
 
 Huomaa **yleinen tekoälylukutaitovelvoite (4 art)**, joka koskee kaikkia tarjoajia ja
 käyttöönottajia riskiluokasta riippumatta.
@@ -80,12 +80,12 @@ arvioitava]`. Jos kyse on 6(3)-poikkeuksesta, perusta kanta `euaiact_assess_art6
 - **Tietosuoja:** jos järjestelmä käsittelee henkilötietoja tai tekee profilointia/
   automaattisia päätöksiä, ohjaa myös `data-protection`-plugariin (GDPR 22 art, DPIA).
 - **Kansallinen kerros:** Suomen valvontaviranomaiset ja kansallinen täytäntöönpano →
-  `references/ai-act-perusteet.md`; tarkista voimassa oleva tilanne `juristi:oikeustutkimus`-skillillä.
+  `references/ai-act-fundamentals.md`; tarkista voimassa oleva tilanne `legal-core:legal-research`-skillillä.
 
 ## Mitä tämä skill EI tee
 
 - **Ei tee lopullista riskiluokittelua.** Antaa ensiarvion sovellettavasta luokasta, Annex III -kategoriasta ja roolista; sitova luokittelu kuuluu asiantuntijalle.
-- **Ei laske määräpäiviä eikä sakkoja muistista.** Soveltamisen siirtymäajat ja seuraamusten enimmäismäärät haetaan eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `tekoaly-vaatimustenmukaisuus`.
+- **Ei laske määräpäiviä eikä sakkoja muistista.** Soveltamisen siirtymäajat ja seuraamusten enimmäismäärät haetaan eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `ai-compliance`.
 - **Ei vahvista kansallisia viranomaisnimeämisiä.** Suomen toimivaltaiset valvontaviranomaiset ja täydentävä kansallinen sääntely ovat muotoutumassa — merkitse `[varmista — kansallinen sääntely muotoutumassa]`.
 - **Ei ratkaise 6(3)-poikkeusta oletuksella.** "Ei merkittävää riskiä" -poikkeus kuuluu käydä läpi `euaiact_assess_art6_3_exception`-työkalulla; profilointia tekeviin järjestelmiin se ei sovellu.
 - **Ei kokoa velvoitelistoja eikä Annex IV -dokumentaatiota.** Luokka selvitetään tässä; velvoitteet roolin mukaan kuuluvat erilliseen skilliin.

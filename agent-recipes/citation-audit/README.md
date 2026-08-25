@@ -13,7 +13,7 @@ ne ratkaisusta jotain, mitä ei ole tarkistettu.
 
 ## Miksi säädösvahti ei riitä
 
-[`saados-vahti`](../statute-watch/) ja CI:n kuukausiajo
+[`statute-watch`](../statute-watch/) ja CI:n kuukausiajo
 (`.github/workflows/statute-watch.yml`) vertaavat rekisterin säädösten
 **nimiä** Finlexiin. Se huomaa nimenmuutoksen (MRL → alueidenkäyttölaki),
 mutta **ei kumoamista**: kumotun lain nimi ei muutu Finlexissä. Heinäkuun

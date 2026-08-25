@@ -17,18 +17,18 @@ description: >
 
 Tämä skill auttaa tunnistamaan, mihin rikosnimikkeeseen teko mahdollisesti
 sopii, ja erottamaan tekomuodot ja lähirikokset. Rikosoikeuden kartta:
-`../rikosvastuun-perusteet/references/rikosoikeus-perusteet.md`.
+`../criminal-liability-basics/references/criminal-law-fundamentals.md`.
 
 > **Vastuuvapaus:** analyysi on tarkistettava luonnos — ei oikeudellista
 > neuvontaa. Tunnusmerkistöt ja asteikot tarkistetaan lähteestä;
 > rikoslaki muuttuu jatkuvasti. Tämä plugari **ei avusta rikoksen
-> tekemisessä eikä peittelyssä.** Katso `rikosoikeus/CLAUDE.md`.
+> tekemisessä eikä peittelyssä.** Katso `criminal-law/AGENTS.md`.
 
 ## Tarkista tunnusmerkistö lähteestä — aina
 
 Tämä skill antaa **jäsennyksen**, ei tunnusmerkistön sanamuotoa. Hae
 kunkin nimikkeen voimassa oleva tunnusmerkistö, tekomuodot ja asteikko
-rikoslain oikeasta luvusta **`juristi:oikeustutkimus`-skillillä** ja
+rikoslain oikeasta luvusta **`legal-core:legal-research`-skillillä** ja
 rajanvetoa koskeva KKO-käytäntö lähteestä. **Seksuaalirikosten luku
 uudistettiin kokonaan 2023 (suostumusperusteiseksi)** — älä käytä
 vanhentunutta jäsennystä.
@@ -57,7 +57,7 @@ Hahmota teon ydin ja kohde, ja kartoita mahdolliset nimikkeet
 ## Vaihe 2: Tunnusmerkistön erittely
 
 Valitulle nimikkeelle: käy objektiiviset tunnusmerkit ja vaadittu
-syyksiluettavuus läpi (→ `rikosvastuun-perusteet`). Tarkista, täyttyykö
+syyksiluettavuus läpi (→ `criminal-liability-basics`). Tarkista, täyttyykö
 jokainen tekijä vai jääkö jokin näytön tai tulkinnan varaan.
 
 ## Vaihe 3: Tekomuoto — lievä, perus vai törkeä

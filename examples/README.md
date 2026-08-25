@@ -45,8 +45,8 @@ se on arvioijan, ei arvioitavan, työkalu.
 
 Avaa aineiston kansio, anna tiedostot Claudelle ja pyydä esim.:
 
-- "Arvioi tämän koeaikapurun perusteet ja menettely" → `tyooikeus:tyosuhteen-paattaminen`
-- "Onko tämä määräaikaisuus pätevä?" → `tyooikeus:tyosopimus`
+- "Arvioi tämän koeaikapurun perusteet ja menettely" → `employment-law:termination-of-employment`
+- "Onko tämä määräaikaisuus pätevä?" → `employment-law:employment-contract`
 - "Tarkista tämä työsopimusote riskien varalta"
 
 Huomaa ristiriidat aineistossa – hyvä tuotos nostaa ne esiin sen sijaan,

@@ -16,16 +16,23 @@ description: >
 
 Tämä skill jäsentää kuluttajan oikeudet, kun ostettu tavara tai palvelu
 on virheellinen. Kuluttajaoikeuden kartta ja käsitteet:
-`references/kuluttajaoikeus-perusteet.md` — lue se tehtävän alussa.
+`references/consumer-law-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. KSL on pakottava kuluttajan hyväksi; määräajat ja takuun
-> kesto tarkistetaan lähteestä. Katso `kuluttajaoikeus/CLAUDE.md`.
+> kesto tarkistetaan lähteestä. Katso `consumer-law/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja ratkaisukäytäntö lähteestä
 
 Hae KSL:n (38/1978) virhe- ja seuraamussäännökset oikeasta luvusta
-**`juristi:oikeustutkimus`-skillillä** — lukurakenne on muuttunut
+**`legal-core:legal-research`-skillillä** — lukurakenne on muuttunut
 EU-uudistuksissa (tavarankauppa, digitaalinen sisältö ja palvelut),
 joten varmista voimassa oleva luku. Kuluttajariitalautakunnan
 ratkaisut vastaavista tapauksista lähteestä.
@@ -36,7 +43,7 @@ Tarkista, että myyjä on elinkeinonharjoittaja ja ostaja kuluttaja
 (B2C). Jos kyse on yksityishenkilöiden välisestä kaupasta tai B2B:stä,
 sovelletaan kauppalakia ja yleistä sopimusoikeutta → `contracts`.
 
-> **Pohja:** [`pohjat/reklamaatio.md`](../../templates/complaint-notice.md) — reklamaation rakenteellinen luuranko.
+> **Pohja:** [`pohjat/complaint-notice.md`](../../templates/complaint-notice.md) — reklamaation rakenteellinen luuranko.
 
 ## Vaihe 1: Onko virhe?
 
@@ -84,7 +91,7 @@ tarkistuksen lähteestä.
 ## Vaihe 5: Jos myyjä kiistää
 
 - Ohjaa kuluttaja maksuttomaan neuvontaan (kuluttajaneuvonta/KKV) ja
-  tarvittaessa kuluttajariitalautakuntaan → `kuluttajariita-ja-perinta`.
+  tarvittaessa kuluttajariitalautakuntaan → `consumer-disputes-and-collection`.
 - Elinkeinonharjoittajan vastinetta laadittaessa: arvioi virheväite
   rehellisesti; pakottavia oikeuksia ei voi kiistää sopimusehdolla.
 

@@ -20,13 +20,20 @@ Tämä skill laatii kaksi eri asiakirjaa, jotka usein sekoitetaan:
 Selvitä ensin **kumpaa asiakirjaa** käyttäjä tarvitsee (tai molempia).
 
 > **Vastuuvapaus:** luonnos tarkistettavaksi — ei oikeudellista neuvontaa. Lakiviittaukset
-> tarkistetaan lähteestä. Perusteet: `../tietosuoja-arviointi/references/tietosuoja-perusteet.md`.
+> tarkistetaan lähteestä. Perusteet: `../data-protection-assessment/references/data-protection-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ---
 
 ## A. Tietosuojaseloste (informointi, 13–14 art)
 
-Kerää käsittelyn tiedot (hyödynnä tarvittaessa `tietosuoja-arviointi`-skilliä) ja laadi
+Kerää käsittelyn tiedot (hyödynnä tarvittaessa `data-protection-assessment`-skilliä) ja laadi
 seloste, joka sisältää vähintään:
 
 1. **Rekisterinpitäjä** ja yhteystiedot (sekä tietosuojavastaavan yhteystiedot, jos nimetty).
@@ -41,7 +48,7 @@ seloste, joka sisältää vähintään:
 10. **Automaattinen päätöksenteko / profilointi** (22 art) ja sen logiikka, jos sellaista on.
 
 **Kirjoita selkokielellä** — informoinnin on oltava tiivis, läpinäkyvä, ymmärrettävä ja
-helposti saatavilla (12 art). Käytä `legal-core`-plugarin `suomen-kieli`-skilliä kielen
+helposti saatavilla (12 art). Käytä `legal-core`-plugarin `finnish-language`-skilliä kielen
 selkeyteen. Vältä juridista jargonia; selitä käsittely konkreettisesti.
 
 ## B. Seloste käsittelytoimista (30 art)
@@ -70,7 +77,7 @@ seloste. Lisää: *"Luonnos — tarkistettava ennen julkaisua/käyttöä."*
 
 - **Ei korvaa tietosuojavastaavan tai juristin arviota.** Selosteen oikeudellinen riittävyys ja julkaisukelpoisuus on tarkistettava asiantuntijalla.
 - **Ei vahvista GDPR-artikloja (12–14, 30 art) tai tietosuojalain pykäliä muistista.** Lakiviittaukset ja kansalliset täsmennykset tarkistetaan lähteestä.
-- **Ei määritä käsittelyperustetta eikä arvioi DPIA-tarvetta** — seloste edellyttää, että nämä on jo selvitetty (`tietosuoja-arviointi`).
+- **Ei määritä käsittelyperustetta eikä arvioi DPIA-tarvetta** — seloste edellyttää, että nämä on jo selvitetty (`data-protection-assessment`).
 - **Ei korvaa tietoturvan tai säilytysaikojen tosiasiallista määrittelyä.** Kirjaa selosteeseen vain ne tiedot, jotka käyttäjä antaa; ei keksi säilytysaikoja eikä turvatoimia.
 - **Ei tee ilmoitusta valvontaviranomaiselle puolestasi.** Seloste käsittelytoimista esitetään tietosuojavaltuutetun toimistolle vain pyydettäessä — tämä skill ei toimita sitä.
 - **Ei arvioi pienen organisaation 30(5) art -poikkeuksen soveltumista** ilman erillistä tarkistusta — poikkeus on kapea.

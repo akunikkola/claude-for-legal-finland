@@ -20,16 +20,16 @@ description: >
 Tämä skill jäsentää kilpailunrajoitusten arvioinnin kilpailulain
 (948/2011) 2 luvun ja SEUT 101–102 artiklan mukaan. Perusteet,
 rikkomustyypit ja seuraamuskartta:
-`references/kilpailuoikeus-perusteet.md` — lue se tehtävän alussa.
+`references/competition-law-fundamentals.md` — lue se tehtävän alussa.
 
 > **Vastuuvapaus:** arviot ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Katso `kilpailuoikeus/CLAUDE.md` — erityisesti ehdoton
+> neuvontaa. Katso `competition-law/AGENTS.md` — erityisesti ehdoton
 > negatiivirajaus: kartelliavustusta ei anneta, laillinen polku on
 > lopettaminen ja leniency.
 
 ## Tarkista laki ja ryhmäpoikkeukset lähteestä
 
-Hae kilpailulain säännökset **`juristi:oikeustutkimus`-skillillä** ja
+Hae kilpailulain säännökset **`legal-core:legal-research`-skillillä** ja
 **voimassa olevat ryhmäpoikkeusasetukset raja-arvoineen EUR-Lexistä**
 — ne uudistuvat määräajoin. Ratkaisukäytäntö (MAO, KHO,
 EU-tuomioistuin, komissio) lähteestä tunnuksineen.
@@ -56,7 +56,7 @@ EU-tuomioistuin, komissio) lähteestä tunnuksineen.
 - **Sallittu yhteistyö**: T&K, erikoistuminen, yhteishankinnat,
   standardointi — ryhmäpoikkeusten ja suuntaviivojen edellytyksin
   (markkinaosuusrajat lähteestä). Yhteistarjoukset →
-  `julkiset-hankinnat:tarjouspyynto-ja-tarjous`.
+  `public-procurement:tender-documents-and-bids`.
 
 ## Vaihe 3: Vertikaaliset järjestelyt
 
@@ -69,7 +69,7 @@ EU-tuomioistuin, komissio) lähteestä tunnuksineen.
   `[tarkista]`; dokumentoi arvio.
 - Tyypilliset lausekkeet: yksinmyynti, valikoiva jakelu,
   kilpailukielto (kesto!), pariteettilausekkeet — käy lauseke
-  kerrallaan (kytkös `sopimukset:sopimuksen-tarkistus`-metodiin).
+  kerrallaan (kytkös `contracts:contract-review`-metodiin).
 
 ## Vaihe 4: Määräävä markkina-asema
 
@@ -92,7 +92,7 @@ EU-tuomioistuin, komissio) lähteestä tunnuksineen.
 - **Vahingonkorvaus (1077/2016)**: kantajan ja vastaajan asetelmat —
   rikkomuspäätöksen sitovuus, ylihinnan arviointi ja siirtäminen,
   vanhentumisajat lähteestä. Kanne yleisessä tuomioistuimessa →
-  `riidanratkaisu:haastehakemus`.
+  `dispute-resolution:statement-of-claim`.
 
 ## Mitä tämä skill EI tee
 
@@ -105,7 +105,7 @@ EU-tuomioistuin, komissio) lähteestä tunnuksineen.
 - **Ei anna "clearancea"** — itsearvio ei sido viranomaista; aidosti
   epävarmoissa keskustelu KKV:n kanssa.
 - **Ei korvaa yrityskauppa-arviota** — se on oma menettelynsä →
-  `yrityskauppavalvonta`.
+  `merger-control`.
 
 ## Jatka tästä
 

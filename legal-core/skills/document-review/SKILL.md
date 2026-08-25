@@ -14,15 +14,15 @@ description: >
 
 Tämä skill tarkistaa juridisen asiakirjan järjestelmällisesti useassa vaiheessa. Tavoite on löytää virheet, aukot ja riskit ennen kuin asiakirja otetaan käyttöön. **Perusteellisuus menee nopeuden edelle** — huolellinen tarkistus säästää moninkertaisesti ajan, jonka se vie.
 
-> **Vastuuvapaus:** tämä on laadunvarmistuksen apuväline, joka **täydentää** mutta ei korvaa ihmisen oikeudellista harkintaa. Lopullisen arvion asiakirjan laadusta, riskin hyväksymisestä ja käyttöönotosta tekee aina pätevä ihminen. Katso `juristi/CLAUDE.md` → *Vastuuvapaus*.
+> **Vastuuvapaus:** tämä on laadunvarmistuksen apuväline, joka **täydentää** mutta ei korvaa ihmisen oikeudellista harkintaa. Lopullisen arvion asiakirjan laadusta, riskin hyväksymisestä ja käyttöönotosta tekee aina pätevä ihminen. Katso `legal-core/AGENTS.md` → *Vastuuvapaus*.
 
 ---
 
 ## Lähdetarkistus on pakollinen
 
-Aina kun asiakirja viittaa lakiin, pykälään tai oikeuskäytäntöön ja viittauksen oikeellisuus on olennainen, **käytä `oikeustutkimus`-skilliä** ja tarkista lainkohta oik.ai-/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista. Jos lähdettä ei voi tarkistaa, merkitse löydös `[ei voitu tarkistaa lähteestä]`.
+Aina kun asiakirja viittaa lakiin, pykälään tai oikeuskäytäntöön ja viittauksen oikeellisuus on olennainen, **käytä `legal-research`-skilliä** ja tarkista lainkohta oik.ai-/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista. Jos lähdettä ei voi tarkistaa, merkitse löydös `[ei voitu tarkistaa lähteestä]`.
 
-Koko asiakirjan viitteiden kertatarkistukseen voi käyttää tämän plugarin **`lahdetarkastaja`-agenttia** (`agents/lahdetarkastaja.md`): se poimii kaikki viittaukset, verifioi ne lähteestä ja palauttaa tarkistustaulukon (✅/⚠️/❌) — hyvä ajaa erillisenä vaiheena ennen asiakirjan lähettämistä.
+Koko asiakirjan viitteiden kertatarkistukseen voi käyttää tämän plugarin **`lahdetarkastaja`-agenttia** (`agents/source-checker.md`): se poimii kaikki viittaukset, verifioi ne lähteestä ja palauttaa tarkistustaulukon (✅/⚠️/❌) — hyvä ajaa erillisenä vaiheena ennen asiakirjan lähettämistä.
 
 ## Word-dokumentit (.docx)
 
@@ -76,7 +76,7 @@ Palveleeko asiakirjan muoto ja rakenne todellista käyttöä?
 ## Vaihe 3 — Kielen ja ilmaisun selkeys
 
 Tunnista kielelliset ongelmat ennen sisällön tarkistusta (korjaukset muuttavat tekstiä).
-- **Käytä `legal-core`-skilliä ja sen referenssejä** (`references/lakikieli.md`, `references/suomen-kieli.md`): yhdyssanat, pilkutus, pykäläviittausten muoto, 3-3-3-sääntö, johdonmukainen termistö.
+- **Käytä `legal-core`-skilliä ja sen referenssejä** (`references/legal-language.md`, `references/finnish-language.md`): yhdyssanat, pilkutus, pykäläviittausten muoto, 3-3-3-sääntö, johdonmukainen termistö.
 - **Monitulkintaisuus**: epämääräiset ilmaukset ("kohtuullinen aika", "viipymättä", "olennainen") — onko ne määritelty tai sidottu kontekstiin?
 - **Johdonmukainen termistö**: samasta asiasta sama termi, ei synonyymeja. Vaihteleva termi luo tulkintariidan.
 - **Vääräperäinen täsmällisyys**: lupaako teksti tarkkuutta, jota ei voi toteuttaa ("24 tunnin kuluessa", kun todellinen kyky on 2–3 arkipäivää)? Näyttävätkö esimerkkiluettelot tyhjentäviltä, vaikka ovat vain esimerkkejä (lisää "muun muassa")?
@@ -104,7 +104,7 @@ Jaa kahteen tasoon sen mukaan, mitä voidaan luotettavasti tarkistaa.
 - **Ajantasaisuus**: viittaako asiakirja kumottuun lakiin, vanhentuneeseen standardiin, lakkautettuun viranomaiseen tai vanhaan nimeen (esim. ennen organisaatiouudistusta)?
 
 ### Taso 2 — ulkoiset oikeuslähteet (vaatii tarkistuksen lähteestä)
-**Tarkista nämä `oikeustutkimus`-skillillä (oik.ai/Finlex), älä muistista:**
+**Tarkista nämä `legal-research`-skillillä (oik.ai/Finlex), älä muistista:**
 - Lakiviittaukset: onko säädösnumero, pykälä ja momentti oikein ja voimassa?
 - Oikeustapausviittaukset: onko ratkaisutunnus oikea ja tukeeko ratkaisu väitettä?
 - Pakottava lainsäädäntö: onko ehto ristiriidassa pakottavan säännöksen kanssa (esim. työsopimuslaki, kuluttajansuojalaki)?
@@ -133,7 +133,7 @@ Merkitse jokainen lähteestä tarkistettava kohta löydökseksi, jossa `LUOTTAMU
 
 **Kaikki tämän vaiheen löydökset ovat riskisignaaleja, jotka vaativat asiantuntijan arvion — eivät lopullisia oikeudellisia johtopäätöksiä.**
 
-- **Pätevyys ja täytäntöönpanokelpoisuus**: voiko ehto olla pätemätön tai sovitteluun johtava? Suomalaisia kiinnekohtia: oikeustoimilain (228/1929) 36 §:n kohtuullistaminen, pakottava kuluttajansuoja, työoikeuden pakottavuus, kilpailukieltojen rajat, sopimussakon kohtuullisuus. **Tarkista relevantit säännökset `oikeustutkimus`-skillillä.**
+- **Pätevyys ja täytäntöönpanokelpoisuus**: voiko ehto olla pätemätön tai sovitteluun johtava? Suomalaisia kiinnekohtia: oikeustoimilain (228/1929) 36 §:n kohtuullistaminen, pakottava kuluttajansuoja, työoikeuden pakottavuus, kilpailukieltojen rajat, sopimussakon kohtuullisuus. **Tarkista relevantit säännökset `legal-research`-skillillä.**
 - **Loogiset ja ehdolliset virheet**:
   - "Jos X niin Y" -rakenteet, joissa ehto on poistettu tai mahdoton.
   - "Molemminpuolinen" velvoite, joka ei tosiasiassa ole symmetrinen.
@@ -198,7 +198,7 @@ oikeudellista harkintaa. Käyttäjä vastaa lopputuloksesta.
 ## Mitä tämä skill EI tee
 
 - **Ei korvaa pätevän ihmisen lopullista tarkistusta eikä kanna vastuuta asiakirjan käyttöönotosta.** Skill nostaa esiin löydökset; riskin hyväksymisen ja hyväksynnän tekee aina ihminen.
-- **Ei vahvista lakiviittauksia, ratkaisutunnuksia eikä HE-numeroita muistista.** Tason 2 löydökset tarkistetaan `oikeustutkimus`-skillillä lähteestä; muuten ne merkitään `[ei voitu tarkistaa lähteestä]`.
+- **Ei vahvista lakiviittauksia, ratkaisutunnuksia eikä HE-numeroita muistista.** Tason 2 löydökset tarkistetaan `legal-research`-skillillä lähteestä; muuten ne merkitään `[ei voitu tarkistaa lähteestä]`.
 - **Ei tee lopullisia oikeudellisia johtopäätöksiä.** Vaiheen 7 havainnot ovat riskisignaaleja, jotka vaativat asiantuntijan arvion — eivät päätöksiä pätevyydestä tai täytäntöönpanokelpoisuudesta.
 - **Ei laadi eikä korjaa asiakirjaa puolestasi.** Se tunnistaa virheet, aukot ja riskit ja ehdottaa korjauksia; varsinaisen laatimisen tekee aihekohtainen skill ja ihminen.
 - **Ei takaa, että kaikki riskit löytyvät.** Perusteellisuudesta huolimatta tarkistus on apuväline, ei kattavuustakuu; tärkeimmät kohdat vaativat asiantuntijan silmän.

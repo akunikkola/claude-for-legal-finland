@@ -18,20 +18,27 @@ description: >
 Tämä skill jäsentää etä- ja kotimyynnin pelisäännöt: ennen sopimusta
 annettavat tiedot, kuluttajan peruuttamisoikeus ja markkinoinnin
 lainmukaisuus. Kuluttajaoikeuden kartta:
-`../kuluttajakaupan-virhevastuu/references/kuluttajaoikeus-perusteet.md`.
+`../consumer-sales-liability/references/consumer-law-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Peruuttamisaika ja poikkeukset tarkistetaan lähteestä.
-> Katso `kuluttajaoikeus/CLAUDE.md`.
+> Katso `consumer-law/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae KSL:n etä- ja kotimyyntiä, peruuttamisoikeutta ja markkinointia
-koskevat luvut **`juristi:oikeustutkimus`-skillillä** — lukurakenne on
+koskevat luvut **`legal-core:legal-research`-skillillä** — lukurakenne on
 muuttunut EU-uudistuksissa. Peruuttamisajan pituus, poikkeukset ja
 tiedonantovelvollisuuden sisältö aina laista; KKV:n ohjeet kkv.fi:stä.
 
-> **Pohja:** [`pohjat/peruuttamisilmoitus.md`](../../templates/withdrawal-notice.md) — peruuttamisilmoituksen rakenteellinen luuranko.
+> **Pohja:** [`pohjat/withdrawal-notice.md`](../../templates/withdrawal-notice.md) — peruuttamisilmoituksen rakenteellinen luuranko.
 
 ## Vaihe 1: Onko kyse etä- tai kotimyynnistä?
 

@@ -27,12 +27,12 @@ virhetyypit laatu-, vallinta- ja oikeudellinen virhe – **asuntokauppalaki
 vuokrauksesta (481/1995)**, **laki liikehuoneiston vuokrauksesta (482/1995)**,
 **laki kiinteistöjen ja vuokrahuoneistojen välityksestä (1074/2000)** ja
 **kiinteistönmuodostamislaki (554/1995)**. Pykälätason sisällöt ja määräajat
-tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä.
+tarkistetaan käytössä `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (KKO:n virhe- ja reklamaatiokäytäntö),
-  `toimeksianto` (reklamaatioaikojen skannaus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (KKO:n virhe- ja reklamaatiokäytäntö),
+  `engagement-intake` (reklamaatioaikojen skannaus) ja `document-review`.
 - **`contracts`-plugari** – yleinen sopimusmekaniikka kauppakirjan ja
   vuokrasopimuksen pohjana.
 - **`environment-and-planning`-plugari** – kaavatilanne, rakentamisluvat ja

@@ -23,11 +23,11 @@ Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan.
 
 Sisältö nojaa lähteestä (oik.ai/Finlex) varmistettuihin säädöksiin: oikeustoimilaki
 (228/1929, mm. 36 §:n kohtuullistaminen), kauppalaki (355/1987) ja kuluttajansuojalaki
-(38/1978). Muut säädösviittaukset on tarkistettava `juristi:oikeustutkimus`-skillillä.
+(38/1978). Muut säädösviittaukset on tarkistettava `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (lakiviittausten tarkistus lähteestä) ja `asiakirjan-tarkistus` (perusteellinen monivaiheinen läpikäynti).
+- **`legal-core`-plugari** – `legal-research` (lakiviittausten tarkistus lähteestä) ja `document-review` (perusteellinen monivaiheinen läpikäynti).
 
 ## Asennus
 

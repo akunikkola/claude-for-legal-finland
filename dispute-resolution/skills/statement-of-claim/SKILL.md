@@ -17,7 +17,17 @@ vireille käräjäoikeudessa.
 
 > **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä
 > arvio menestymisestä. Asianajollinen vastuu on toimeksiannon hoitavalla. Katso
-> `riidanratkaisu/CLAUDE.md`. Perusteet: `references/riidanratkaisu-perusteet.md`.
+> `dispute-resolution/AGENTS.md`. Perusteet: `references/dispute-resolution-fundamentals.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Pakollinen sisältö (oikeudenkäymiskaari 5 luku 2 §)
 
@@ -34,15 +44,15 @@ asiamiehen yhteystiedot, **prosessiosoite** (postiosoite kutsuja ja ilmoituksia 
 puhelinnumerot. Jos vastaajan yhteystietoja ei tiedetä, kerrottava mitä on tehty niiden
 selvittämiseksi. **Allekirjoitus** (asianosainen tai laatija; laatijan ammatti ja asuinpaikka).
 
-> Tarkista voimassa oleva sanamuoto ja mahdolliset muutokset `juristi:oikeustutkimus`-skillillä
+> Tarkista voimassa oleva sanamuoto ja mahdolliset muutokset `legal-core:legal-research`-skillillä
 > ennen lopullista käyttöä; summaariset (riidattomat) asiat voivat noudattaa kevyempää menettelyä.
 
-> **Pohja:** [`pohjat/haastehakemus.md`](../../templates/statement-of-claim.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/template-standards.md`](../../../references/template-standards.md).
+> **Pohja:** [`pohjat/statement-of-claim.md`](../../templates/statement-of-claim.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/template-standards.md`](../../../references/template-standards.md).
 
 ## Työnkulku
 
 1. **Selvitä asia:** mitä vaaditaan ja keneltä, mihin vaatimus perustuu, mitä todisteita on, mikä käräjäoikeus on toimivaltainen (vastaajan kotipaikka tai muu peruste).
-2. **Tarkista oikeustila lähteestä:** hae aineelliset säännökset (sopimus-, vahingonkorvaus- ym. oikeus) ja niitä tukeva oikeuskäytäntö `oikeustutkimus`-skillillä. Vaatimuksen on nojattava oikeustosiseikkoihin ja oikeusperusteeseen.
+2. **Tarkista oikeustila lähteestä:** hae aineelliset säännökset (sopimus-, vahingonkorvaus- ym. oikeus) ja niitä tukeva oikeuskäytäntö `legal-research`-skillillä. Vaatimuksen on nojattava oikeustosiseikkoihin ja oikeusperusteeseen.
 3. **Laadi haastehakemus** yllä olevan rakenteen mukaan:
    - Vaatimukset numeroituna ja täsmällisinä.
    - Perusteet jäsenneltyinä (tapahtumat → oikeudellinen peruste).
@@ -59,7 +69,7 @@ jälkimuutoksin: `adeu`-MCP). Merkitse täydennettävät kohdat hakasulkein ja
 ## Raportoi
 
 Tuota haastehakemus + tarkistuslista (OK 5:2 §:n kohdat tehty/puuttuu) lähdemerkinnöin
-(aineellinen laki + pykälä `oikeustutkimus`-skillillä, mahdollinen oikeuskäytäntö). Muistuta
+(aineellinen laki + pykälä `legal-research`-skillillä, mahdollinen oikeuskäytäntö). Muistuta
 määräajoista ja vanhentumisesta (tarkista vanhentumisaika lähteestä, jos relevantti).
 
 ## Mitä tämä skill EI tee

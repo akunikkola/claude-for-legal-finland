@@ -31,7 +31,7 @@ Laiton varojenjako synnyttää palautus- ja vahingonkorvausvastuun.
 
 ## Lähteestä, ei muistista — ja huomioi lakimuutokset
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex). Erityisesti:
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex). Erityisesti:
 - **Kaupparekisterilaki on 564/2023** (vahvistettu lähteestä) — se korvasi vanhan
   kaupparekisterilain (129/1979). Älä viittaa vanhaan voimassa olevana.
 - **Yksityisellä osakeyhtiöllä ei ole vähimmäisosakepääomaa** (vaatimus poistettu 2019);

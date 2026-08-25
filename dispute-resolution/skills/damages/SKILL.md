@@ -19,21 +19,21 @@ description: >
 Tämä skill jäsentää vahingonkorvausvastuun yleiset opit
 (vahingonkorvauslaki 412/1974) molemmista näkökulmista: vaatijan ja
 vastaajan. Prosessi (kanne, todistelu) → tämän plugarin muut skillit;
-rikokseen perustuva korvaus → `rikosprosessi:asianomistajan-asema`.
+rikokseen perustuva korvaus → `criminal-procedure:injured-party-rights`.
 
 > **Vastuuvapaus:** arviot ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Korvausmäärät perustellaan lähteistä (KKO,
 > Henkilövahinkoasiain neuvottelukunta), ei muistista. Katso
-> `riidanratkaisu/CLAUDE.md`.
+> `dispute-resolution/AGENTS.md`.
 
 ## Tarkista laki lähteestä
 
 Hae VahL:n (412/1974) säännökset ja sovellettavan erityislain
-vastuusäännökset **`juristi:oikeustutkimus`-skillillä**; KKO:n
+vastuusäännökset **`legal-core:legal-research`-skillillä**; KKO:n
 käytäntö (tuottamusarviointi, syy-yhteys, määrät) lähteestä
 tunnuksineen. Vanhentuminen (728/2003: kolme vuotta tiedosta —
 erityisajat lähteestä) tarkistetaan heti →
-`insolvenssi:saatavien-perinta` katkaisumekaniikka.
+`insolvency:debt-collection` katkaisumekaniikka.
 
 ## Vaihe 0: Mikä vastuuperuste?
 
@@ -42,13 +42,13 @@ Rajanveto ohjaa koko analyysin — käy järjestyksessä:
 1. **Sopimusvastuu** — osapuolten välillä on sopimus: vastuu
    määräytyy sopimuksen ja sopimustyyppilain mukaan (ekskulpaatio-
    eli käännetty todistustaakka tyypillisesti; vastuunrajoitukset
-   pätevät rajoissaan) → `sopimukset:sopimuksen-tarkistus`.
+   pätevät rajoissaan) → `contracts:contract-review`.
    **VahL ei pääsääntöisesti sovellu sopimussuhteeseen.**
 2. **Deliktivastuu (VahL)** — ei sopimussuhdetta: tuottamusvastuu
    pääsääntönä.
 3. **Ankara vastuu** — erityislait ilman tuottumusedellytystä:
    tuotevastuulaki (694/1990), ympäristövahingot (737/1994 →
-   `ymparisto-ja-kaavoitus:ymparistovastuut`), liikennevakuutus,
+   `environment-and-planning:environmental-liability`), liikennevakuutus,
    potilasvahingot ym. — tarkista soveltuva erityislaki ensin; se
    syrjäyttää yleiset opit.
 
@@ -76,7 +76,7 @@ Jäsennä ja dokumentoi jokainen erikseen:
 
 - **Täyden korvauksen periaate** ja rikastumiskielto; vaatijan
   velvollisuus rajoittaa vahinkoa.
-- Henkilövahingot: erät kuten `rikosprosessi:asianomistajan-asema`
+- Henkilövahingot: erät kuten `criminal-procedure:injured-party-rights`
   -skillissä (Henkilövahinkoasiain neuvottelukunnan suositukset
   lähteestä).
 - Esinevahinko: korjauskulut vs. arvonalennus vs. käypä arvo;
@@ -94,7 +94,7 @@ Jäsennä ja dokumentoi jokainen erikseen:
    `[tarkista]`. Moni juttu ratkeaa vakuutusyhtiön
    korvauskäsittelyssä — FINE ja lautakunnat vaihtoehtoina.
 3. **Sovinto vai kanne** — kuluriski suhteessa intressiin ja näytön
-   vahvuuteen → `haastehakemus` ja `todistelu`-skillit.
+   vahvuuteen → `statement-of-claim` ja `evidence`-skillit.
 
 ## Mitä tämä skill EI tee
 

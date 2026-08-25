@@ -20,7 +20,7 @@ Tämä skill jäsentää listayhtiön ja sen neuvonantajien
 arvopaperimarkkinaoikeudelliset velvoitteet. Sääntelypohja:
 arvopaperimarkkinalaki (746/2012) + suoraan sovellettava EU-sääntely
 (MAR, esiteasetus) + Fivan määräykset ja Nasdaq Helsingin säännöt.
-Perusteet: `../rahoitus-ja-vakuudet/references/rahoitus-perusteet.md`.
+Perusteet: `../financing-and-collateral/references/finance-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa eikä sijoitusneuvontaa. **Sisäpiiritiedon väärinkäyttöä ei
@@ -32,7 +32,7 @@ Perusteet: `../rahoitus-ja-vakuudet/references/rahoitus-perusteet.md`.
 Kolme kerrosta, tarkista kaikki: **AML 746/2012** (Finlex), **EU-asetukset**
 (MAR, esiteasetus — EUR-Lex, ml. ESMA:n ohjeet) ja **Fivan määräykset ja
 ohjeet sekä pörssin säännöt** `[tarkista]`. Käytä
-`juristi:oikeustutkimus`-skilliä kansalliseen lakiin; EU-tekstit ja
+`legal-core:legal-research`-skilliä kansalliseen lakiin; EU-tekstit ja
 kynnysarvot lähteestä.
 
 ## Sisäpiiritiedon hallinta (MAR)
@@ -75,7 +75,7 @@ kynnysarvot lähteestä.
 - **Esite** — milloin vaaditaan ja poikkeukset (esiteasetus,
   kynnysarvot lähteestä); kansallinen perustietoasiakirja pienissä
   anneissa `[tarkista]`. Listautumisen due diligence →
-  `yhtiooikeus:yritysjarjestelyt`-runko + markkinaspesifit.
+  `company-law:corporate-transactions`-runko + markkinaspesifit.
 - **Julkinen ostotarjous** (AML + ostotarjouskoodi):
   tarjousvelvollisuusraja, tarjousvastike ja -asiakirja,
   tasapuolinen kohtelu — yksityiskohdat lähteestä;

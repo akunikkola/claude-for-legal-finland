@@ -5,7 +5,7 @@ maakaaren keskeiset käsitteet (kaupanvahvistaja, sähköinen
 kaupankäyntijärjestelmä, lainhuuto, kiinnitys, laatu-/vallinta-/oikeudellinen
 virhe) on tarkistettu Finlexistä. Pykälätason sisällöt, määräajat ja
 viranomaiskäytännöt tarkistetaan aina käyttöhetkellä
-`juristi:oikeustutkimus`-skillillä.
+`legal-core:legal-research`-skillillä.
 
 ## Keskeiset säädökset
 

@@ -16,12 +16,22 @@ määräajassa. **Muutoksenhaku alkaa jo käräjäoikeudessa tyytymättömyyden 
 sen laiminlyönti voi estää valituksen, joten ajoitus on kriittinen.
 
 > **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä arvio
-> menestymisestä. Katso `riidanratkaisu/CLAUDE.md`. Perusteet:
-> `../haastehakemus/references/riidanratkaisu-perusteet.md`.
+> menestymisestä. Katso `dispute-resolution/AGENTS.md`. Perusteet:
+> `../statement-of-claim/references/dispute-resolution-fundamentals.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista menettely, määräajat ja luvat lähteestä
 Hae oikeudenkäymiskaaren muutoksenhakusäännökset (käräjäoikeudesta hovioikeuteen: 25 luku ja
-jatkokäsittelylupa 25 a luku; KKO ja valituslupa 30 luku) **`juristi:oikeustutkimus`-
+jatkokäsittelylupa 25 a luku; KKO ja valituslupa 30 luku) **`legal-core:legal-research`-
 skillillä**. **Älä esitä määräaikoja tai lupaperusteita muistista** — hae ne ja merkitse
 lähde; jos et voi tarkistaa, merkitse `[tarkista määräaika / lupaperuste]`.
 

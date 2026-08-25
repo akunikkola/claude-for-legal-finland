@@ -3,7 +3,7 @@
 **Vahvistettu lähteestä (Finlex, 2026-06):** alla mainitut säädösnumerot,
 osakeyhtiölain lukurakenne ja sanatarkat periaatesäännökset on tarkistettu
 Finlexistä. Pykälätason sisällöt, määräajat ja menettelyvaatimukset
-tarkistetaan aina käyttöhetkellä `juristi:oikeustutkimus`-skillillä.
+tarkistetaan aina käyttöhetkellä `legal-core:legal-research`-skillillä.
 
 ## Keskeiset säädökset
 

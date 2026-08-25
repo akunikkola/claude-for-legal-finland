@@ -23,7 +23,7 @@ muistilista** (mitä haetaan, mistä rekisteristä, millä luokilla) ihmisen teh
 
 ## Lähteestä, ei muistista — ja huomioi lakimuutokset
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex). Erityisesti:
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex). Erityisesti:
 - **Tavaramerkkilaki on 544/2019** — kokonaisuudistus; älä viittaa vanhaan
   tavaramerkkilakiin (7/1964) voimassa olevana.
 - **Tekijänoikeuslakiin (404/1961) on tehty DSM-direktiivin muutokset** (mm.

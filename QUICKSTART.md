@@ -46,7 +46,7 @@ mistä tahansa kansiosta.
 
 ## 4. Liitä lähdekonnektori (oik.ai tai laki.ai)
 
-`legal-core`-plugarin `oikeustutkimus`-skill hakee voimassa olevan lain ja
+`legal-core`-plugarin `legal-research`-skill hakee voimassa olevan lain ja
 oikeuskäytännön suomalaisesta oikeuslähde-MCP:stä. Tuettuna on **kaksi
 vaihtoehtoa – valitse jompikumpi** (tai mikä tahansa yhteensopiva Finlex-MCP):
 
@@ -70,7 +70,7 @@ ja Verohallinnon ohjeet; ilmainen tunnus syntyy ensimmäisellä kirjautumisella)
   ```
 
 Molemmat tuovat saman: ajantasaisen lain ja oikeuskäytännön lähteestä – vain
-työkalujen nimet eroavat, ja `oikeustutkimus`-skill osaa kummatkin. Ilman
+työkalujen nimet eroavat, ja `legal-research`-skill osaa kummatkin. Ilman
 MCP-yhteyttä skillit toimivat yhä, mutta merkitsevät lakiviittaukset
 muistinvaraisiksi ja kehottavat tarkistamaan ne Finlexistä.
 
@@ -81,13 +81,13 @@ redlineäminen jälkimuutoksina) dokumenttiplugareissa ja **EU AI Act** (`@lexbe
 
 ## 5. Kokeile
 
-- "Sain tämän asiakirjan, mitä teen?" → `toimeksianto` (määräaikaskannaus ensin)
-- "Tarkista tämä sopimus" → `asiakirjan-tarkistus`
-- "Mitä kuntalaki sanoo toimivallan siirrosta? Onko KHO-käytäntöä?" → `oikeustutkimus`
+- "Sain tämän asiakirjan, mitä teen?" → `engagement-intake` (määräaikaskannaus ensin)
+- "Tarkista tämä sopimus" → `document-review`
+- "Mitä kuntalaki sanoo toimivallan siirrosta? Onko KHO-käytäntöä?" → `legal-research`
 - "Korjaa tämän pykäläviittauksen muoto" → `legal-core`
 - "Laadi muutos kuntalain 7 §:ään ja sen perustelut HE-muotoon" → `legislative-drafting`
-- "Käy tämä osakassopimusluonnos läpi" → `osakassopimus`
-- "Asiakas ei maksa laskuja – mitä vaihtoehtoja?" → `saatavien-perinta` / `maksukyvyttomyysarvio`
+- "Käy tämä osakassopimusluonnos läpi" → `shareholders-agreement`
+- "Asiakas ei maksa laskuja – mitä vaihtoehtoja?" → `debt-collection` / `insolvency-assessment`
 
 ## Organisaatiokäyttöön
 
@@ -95,7 +95,7 @@ Ennen kuin viet työkaluun asiakas- tai toimeksiantoaineistoa, käy läpi
 [käyttöönotto-opas](references/firm-adoption.md): aineistolinjaus,
 käsittelysopimus (GDPR 28 art), anonymisointi (PII Shield), tarkistusketju ja
 pilotointi [esimerkkiaineistoilla](examples/). Talon käytännöt
-kirjataan `juristi:kaytantoprofiili`-skillillä.
+kirjataan `legal-core:practice-profile`-skillillä.
 
 ## Muista
 

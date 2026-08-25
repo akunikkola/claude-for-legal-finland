@@ -28,13 +28,13 @@ siirtohinnoitteluoikaisu, 32 § veronkorotus, 64 § oikaisuvaatimuksen määräa
 **varainsiirtoverolaki (931/1996)**, **perintö- ja lahjaverolaki (378/1940)**,
 **ennakkoperintälaki (1118/1996)**, **laki konserniavustuksesta verotuksessa
 (825/1986)** ja **laki Verohallinnosta (503/2010)**. Pykälätason sisällöt ja
-vuosittaiset arvot tarkistetaan käytössä `juristi:oikeustutkimus`-skillillä ja
+vuosittaiset arvot tarkistetaan käytössä `legal-core:legal-research`-skillillä ja
 vero.fi:stä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (KHO:n vero-oikeuskäytäntö) ja
-  `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (KHO:n vero-oikeuskäytäntö) ja
+  `document-review`.
 - **`company-law`-plugari** – varojenjaon yhtiöoikeudellinen laillisuus ja
   yritysjärjestelyjen yhtiöoikeudellinen menettely.
 - **`administrative-law`-plugari** – verovalitus on hallintoprosessia (808/2019).

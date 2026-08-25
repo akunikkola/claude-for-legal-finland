@@ -29,8 +29,8 @@ käytössä Finlexin rinnakkaistekstistä ja virallisista termilähteistä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `suomen-kieli` (suomen oikeinkirjoitus) ja
-  `oikeustutkimus` (säädöksen ruotsinkielinen teksti Finlexistä).
+- **`legal-core`-plugari** – `finnish-language` (suomen oikeinkirjoitus) ja
+  `legal-research` (säädöksen ruotsinkielinen teksti Finlexistä).
 - **`administrative-law`-plugari** – päätöksen kieli, tiedoksianto ja
   muutoksenhaku; kielellisten oikeuksien toteutuminen menettelyssä.
 - Kaikki muut plugarit – kaksikielistä asiakirjaa tai termistöä tarvittaessa.

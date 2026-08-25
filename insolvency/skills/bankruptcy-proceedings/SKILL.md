@@ -16,16 +16,26 @@ description: >
 
 Tämä skill jäsentää konkurssin vaiheet (konkurssilaki 120/2004) ja tuottaa
 tarkistuslistat velkojalle ja velalliselle. Perusteet:
-`../maksukyvyttomyysarvio/references/insolvenssi-perusteet.md`.
+`../insolvency-assessment/references/insolvency-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ja listat ovat tarkistettavia — ei
 > oikeudellista neuvontaa. Hakemukset ja valvonnat jättää ihminen
-> määräajassa; kalenterivastuu on ihmisellä. Katso `insolvenssi/CLAUDE.md`.
+> määräajassa; kalenterivastuu on ihmisellä. Katso `insolvency/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä
 
 Hae konkurssilain sovellettavat säännökset (edellytykset, määräajat,
-menettelyvaiheet) **`juristi:oikeustutkimus`-skillillä** ennen kuin esität
+menettelyvaiheet) **`legal-core:legal-research`-skillillä** ennen kuin esität
 ne varmistettuina. Tämä skill kuvaa rakenteen; pykälät ja ajat elävät.
 
 ## Menettelyn kaari

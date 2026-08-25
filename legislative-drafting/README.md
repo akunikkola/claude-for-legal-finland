@@ -30,4 +30,4 @@ virallisiin oppaisiin.
 ```
 
 Suositus: asenna myös `legal-core`-plugari, joka tarjoaa läpileikkaavan oikeustutkimuksen
-(`oikeustutkimus`) ja asiakirjan tarkistuksen.
+(`legal-research`) ja asiakirjan tarkistuksen.

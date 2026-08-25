@@ -25,7 +25,7 @@ Hallintomenettelyssä **menettelyvirhe voi johtaa päätöksen kumoamiseen**: ku
 
 ## Määräajat ja lähteet — älä arvaa
 
-Muutoksenhaun ja tietopyyntöjen **määräajat ovat ehdottomia** ja vaihtelevat erityislaeittain. **Hae määräaika, muutoksenhakutie ja valitusluvan tarve lähteestä** (`juristi:oikeustutkimus`), älä esitä muistista. Tarkista myös:
+Muutoksenhaun ja tietopyyntöjen **määräajat ovat ehdottomia** ja vaihtelevat erityislaeittain. **Hae määräaika, muutoksenhakutie ja valitusluvan tarve lähteestä** (`legal-core:legal-research`), älä esitä muistista. Tarkista myös:
 - **Hallintoprosessilaki on 808/2019** (vahvistettu) — se **korvasi hallintolainkäyttölain (586/1996)**. Älä viittaa 586/1996:een voimassa olevana.
 - Kunnallisasioissa voi olla oma muutoksenhakutie (kunnallisvalitus, kuntalaki 410/2015) ja rajatummat valitusperusteet.
 

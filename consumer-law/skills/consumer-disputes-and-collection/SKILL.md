@@ -18,15 +18,25 @@ description: >
 
 Tämä skill jäsentää kuluttajariidan ratkaisukanavat ja kuluttajasaatavan
 perinnän pelisäännöt. Kuluttajaoikeuden kartta:
-`../kuluttajakaupan-virhevastuu/references/kuluttajaoikeus-perusteet.md`.
+`../consumer-sales-liability/references/consumer-law-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Perintäkulujen enimmäismäärät ja määräajat tarkistetaan
-> lähteestä. Katso `kuluttajaoikeus/CLAUDE.md`.
+> lähteestä. Katso `consumer-law/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki ja käytäntö lähteestä
 
-Hae lakien 8/2007 ja 513/1999 säännökset **`juristi:oikeustutkimus`-skillillä**.
+Hae lakien 8/2007 ja 513/1999 säännökset **`legal-core:legal-research`-skillillä**.
 Kuluttajariitalautakunnan ratkaisusuositukset vastaavista asioista ja
 perintäkulujen enimmäismäärät lähteestä. KKV:n ja kuluttaja-asiamiehen
 linjaukset kkv.fi:stä.
@@ -36,7 +46,7 @@ linjaukset kkv.fi:stä.
 ### Vaihe 1: Suora yhteys ja neuvonta
 
 1. **Reklamaatio elinkeinonharjoittajalle ensin** — yksilöity vaatimus ja
-   vastausaika (→ `kuluttajakaupan-virhevastuu`).
+   vastausaika (→ `consumer-sales-liability`).
 2. **Kuluttajaneuvonta (KKV)** — maksuton sovitteluapu, jos vastaus ei
    tyydytä.
 
@@ -57,7 +67,7 @@ linjaukset kkv.fi:stä.
 
 ### Vaihe 3: Tuomioistuin
 
-- Sitova ratkaisu käräjäoikeudessa → `riidanratkaisu:haastehakemus`.
+- Sitova ratkaisu käräjäoikeudessa → `dispute-resolution:statement-of-claim`.
   Huomioi oikeudenkäyntikuluriski ja mahdollinen ryhmäkanne/-valitus
   erikseen. Lautakuntakäsittely ei estä tuomioistuinta.
 

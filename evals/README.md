@@ -5,7 +5,7 @@ toistettavan. Kaksi tasoa:
 
 1. **Triggeritestit** (tämä hakemisto): triggeröityykö oikea skill, kun
    käyttäjä esittää tyypillisen pyynnön?
-2. **Laatuarviointi** ([`../esimerkkiaineistot/`](../examples/)):
+2. **Laatuarviointi** ([`../examples/`](../examples/)):
    kun skill triggeröityy, onko tuotos arviointikriteerien mukainen?
 
 > **Kustannusvaroitus:** molemmat tasot ajavat oikeita mallikutsuja ja
@@ -44,7 +44,7 @@ systemaattisesti sekä Sonnet 4.6:lla että Opus 4.8:lla:
 | Skenaario | Tila | Huomio |
 |---|---|---|
 | Pikakorjaus ("korjaa tämä viittaus") | Kuvausta täsmennetty — skenaario `pikakorjaus-viittaus` toimii regressiovahtina | Jos hukkuu taas, pelkkä kuvausmuutos ei riitä |
-| "Sain asiakirjan, mistä aloitan" | **Avoin** — merkitty `tunnettu_hukka: true` | Vaarallisin hukka: `toimeksianto` kartoittaa määräajat ensin; suora vastaus voi hukata valitusajan. Plugarin CLAUDE.md toimii varaverkkona (määräajat huomattiin evaluoinnissa silti) |
+| "Sain asiakirjan, mistä aloitan" | **Avoin** — merkitty `tunnettu_hukka: true` | Vaarallisin hukka: `engagement-intake` kartoittaa määräajat ensin; suora vastaus voi hukata valitusajan. Plugarin CLAUDE.md toimii varaverkkona (määräajat huomattiin evaluoinnissa silti) |
 
 `tunnettu_hukka: true` -skenaariot raportoidaan varoituksena (⚠️), eivät
 virheenä — ne kertovat, onko tunnettu ongelma yhä olemassa. Kun hukka
@@ -53,7 +53,7 @@ saadaan korjattua, poista lippu, jolloin skenaariosta tulee regressiovahti.
 ## Laatuarviointi grader-agenteilla
 
 Kolme sotkuista harjoitusaineistoa arviointikriteereineen:
-[`../esimerkkiaineistot/`](../examples/). Resepti:
+[`../examples/`](../examples/). Resepti:
 
 1. Kopioi aineiston tiedostot työhakemistoon **ilman**
    `arviointikriteerit.md`-tiedostoa (malli ei saa nähdä kriteerejä).

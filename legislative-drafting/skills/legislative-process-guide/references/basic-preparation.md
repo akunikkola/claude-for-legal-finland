@@ -131,9 +131,9 @@ täytäntöönpano- ja seurantasuunnitelma.
 - **Otakantaa.fi** ja **Lausuntopalvelu.fi** — kuuleminen
 - **Hankeikkuna** ja **VAHVA** — hanke- ja asianhallinta
 - **HELO** — Hallituksen esitysten laatimisohjeet (ks. skill
-  `hallituksen-esityksen-laatimisohjeet`)
+  `government-bill-guidelines`)
 - **Lainkirjoittajan opas** — säädöstekniikka (ks. skill
-  `lainkirjoittajan-opas`)
+  `legislative-drafting-manual`)
 - Julkisuusperiaate valmistelussa: laki viranomaisten toiminnan
   julkisuudesta (621/1999) 19–20 § sekä asetus viranomaisten toiminnan
   julkisuudesta ja hyvästä tiedonhallintatavasta (1030/1999)

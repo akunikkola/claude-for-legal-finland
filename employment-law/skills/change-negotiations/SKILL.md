@@ -18,10 +18,17 @@ muutosneuvottelut. Älä viittaa kumottuun lakiin (334/2007) voimassa olevana.
 
 > **Vastuuvapaus:** tämä on tarkistettava arvio — ei oikeudellista neuvontaa. Menettelyn
 > oikeellisuus ja määräajat on vahvistettava lähteestä ja tarvittaessa työoikeusjuristilta.
-> Katso `tyooikeus/CLAUDE.md`. Perusteet: `../tyosopimus/references/tyooikeus-perusteet.md`.
+> Katso `employment-law/AGENTS.md`. Perusteet: `../employment-contract/references/employment-law-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista laki lähteestä — määräajat ja kokorajat ovat kiinteitä
-Hae yhteistoimintalain (1333/2021) voimassa olevat säännökset **`juristi:oikeustutkimus`-
+Hae yhteistoimintalain (1333/2021) voimassa olevat säännökset **`legal-core:legal-research`-
 skillillä** (soveltamisala/kokoraja, neuvotteluesityksen sisältö ja antoaika,
 neuvotteluajat, henkilöstön edustus). **Älä esitä kokorajaa, määräaikoja tai neuvotteluaikoja
 muistista** — hae ne ja merkitse lähde. Jos et voi tarkistaa, merkitse `[tarkista
@@ -45,18 +52,18 @@ Keskeiset vaiheet (tarkista täsmälliset sisällöt ja määräajat lähteestä
 2. **Tietojen antaminen** henkilöstön edustajille.
 3. **Neuvottelut** laissa säädetyn vähimmäisajan ja -sisällön mukaisesti; käsiteltävä myös vaihtoehtoja vähentämiselle.
 4. **Selvitys** neuvottelujen tuloksista ja päätöksistä.
-Vasta tämän jälkeen työnantaja voi tehdä päätöksen vähentämisestä → ks. `tyosuhteen-paattaminen`-skill.
+Vasta tämän jälkeen työnantaja voi tehdä päätöksen vähentämisestä → ks. `termination-of-employment`-skill.
 
 ## Työnkulku
 1. Selvitä: yrityksen henkilöstömäärä (soveltuuko laki?), suunniteltu toimenpide ja sen henkilöstövaikutukset, aikataulu, henkilöstön edustus.
-2. Hae sovellettavat säännökset ja määräajat `oikeustutkimus`-skillillä.
+2. Hae sovellettavat säännökset ja määräajat `legal-research`-skillillä.
 3. Tuota **menettelytarkistuslista** ja aikajana (neuvotteluesitys → tiedot → neuvottelut → selvitys → päätös), merkiten kunkin vaiheen lakiperusteen.
 4. Nosta riskit: liian aikainen päätös (ennen neuvotteluja) = olennainen virhe → korvausvastuu; puuttuva tai myöhässä annettu neuvotteluesitys; riittämätön neuvotteluaika. Merkitse `[varmista — työoikeusjuristin arvioitava]`.
 
 ## Raportoi
 Tuota tarkistuslista ja aikajana lähdemerkinnöin. Korosta, että muutosneuvottelut on
 **aidosti käytävä ennen päätöstä** — neuvottelu ei ole muodollisuus. Liitä viittaus
-`tyosuhteen-paattaminen`-skilliin, kun neuvottelut johtavat irtisanomisiin.
+`termination-of-employment`-skilliin, kun neuvottelut johtavat irtisanomisiin.
 
 ## Mitä tämä skill EI tee
 - **Ei korvaa työnantajan päätöstä eikä työoikeusjuristin arviota.** Tuottaa tarkistettavan menettelyarvion ja aikajanan, ei lopullista kantaa menettelyn laillisuudesta.

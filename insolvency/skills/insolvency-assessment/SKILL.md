@@ -16,12 +16,12 @@ description: >
 # Maksukyvyttömyysarvio — tilanteen jäsennys ja menettelyn valinta
 
 Tämä skill jäsentää maksukyvyttömyystilanteen ja vertailee menettelyt.
-Perusteet ja menettelykartta: `references/insolvenssi-perusteet.md` — lue
+Perusteet ja menettelykartta: `references/insolvency-fundamentals.md` — lue
 se tehtävän alussa.
 
 > **Vastuuvapaus:** arvio on tarkistettava jäsennys — ei oikeudellista
 > neuvontaa eikä kehotus hakeutua menettelyyn. Päätökset tekee velallinen
-> tai velkoja juristinsa kanssa. Katso `insolvenssi/CLAUDE.md` — erityisesti
+> tai velkoja juristinsa kanssa. Katso `insolvency/AGENTS.md` — erityisesti
 > negatiivirajaus: velkojien välttelyä ei avusteta.
 
 ## Vaihe 0: Kenen näkökulma ja mikä tilanne
@@ -52,7 +52,7 @@ Vertaile järjestyksessä kevyimmästä raskaimpaan:
    tarkistetaan lähteestä.
 4. **Konkurssi (120/2004)** — kun tervehdyttäminen ei ole realistista:
    hallittu alasajo ja velkojien yhdenvertainen jako →
-   `konkurssimenettely`-skill.
+   `bankruptcy-proceedings`-skill.
 
 Arvioi elinkelpoisuus rehellisesti: saneeraus ilman toimivaa
 liiketoimintaa siirtää konkurssia ja kasvattaa vastuita.
@@ -75,7 +75,7 @@ Kun yhtiö on maksukyvytön tai lähellä sitä, käy läpi ja raportoi:
 - **Takaisinsaantivaara (758/1991)**: poikkeukselliset maksut, vakuudet
   jälkikäteen, läheistoimet — peräytymisriski ja määräajat lähteestä.
 - **Varojenjako kielletty**, jos maksukykytesti (OYL 13:2) ei täyty →
-  `yhtiooikeus:yhtion-hallinto`.
+  `company-law:corporate-governance`.
 - **Johdon vahingonkorvausvastuu** (OYL 22 luku) velkojille syvenevässä
   kriisissä jatketusta tappiollisesta toiminnasta `[varmista —
   insolvenssijuristin arvioitava]`.

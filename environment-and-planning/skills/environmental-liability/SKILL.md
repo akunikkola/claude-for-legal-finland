@@ -19,18 +19,18 @@ description: >
 Tämä skill jäsentää ympäristövastuiden kolme kerrosta — julkisoikeudellinen
 puhdistus-/ennallistamisvastuu, yksityisoikeudellinen korvausvastuu ja
 rikosvastuu — sekä niiden hallinnan transaktioissa. Perusteet:
-`../ymparistolupa-ja-valvonta/references/ymparisto-perusteet.md`.
+`../environmental-permits-and-supervision/references/environmental-law-fundamentals.md`.
 
 > **Vastuuvapaus:** analyysit ovat tarkistettavia — ei oikeudellista
 > neuvontaa. Pilaantuneisuuden toteaa tekninen tutkimus, ei tämä skill.
-> Katso `ymparisto-ja-kaavoitus/CLAUDE.md` (mm. negatiivirajaus:
+> Katso `environment-and-planning/AGENTS.md` (mm. negatiivirajaus:
 > pilaantumistiedon panttaamista kaupassa ei avusteta).
 
 ## Tarkista laki lähteestä
 
 Hae YSL:n (527/2014) pilaantuneen maaperän vastuusäännökset,
 ympäristövahinkolain (737/1994) korvausperusteet ja rikoslain
-ympäristörikossäännökset **`juristi:oikeustutkimus`-skillillä**.
+ympäristörikossäännökset **`legal-core:legal-research`-skillillä**.
 Toimivaltainen viranomainen PIMA-asioissa tarkistetaan lähteestä
 (LVV 2026 — ei ELY).
 
@@ -71,12 +71,12 @@ ympäristörikkomus. Erityispiirteet: **yhteisösakko** yhteisölle,
 vastuun kohdentuminen organisaatiossa (tosiasiallinen päätösvalta),
 **menettämisseuraamus** (rikoshyöty = säästetyt kustannukset) ja
 valvontatulosten vääristelyn itsenäinen riski. Epäilytilanteessa →
-`rikosprosessi:esitutkinta-ja-pakkokeinot`.
+`criminal-procedure:pre-trial-investigation-and-coercive-measures`.
 
 ## Transaktiot: ympäristö-DD ja riskinjako
 
 Yrityskaupan tai kiinteistökaupan ympäristöosio (kytkös
-`yhtiooikeus:yritysjarjestelyt`-DD-runkoon):
+`company-law:corporate-transactions`-DD-runkoon):
 
 1. **Selvitä**: toimintahistoria (myös aiemmat toiminnot tontilla!),
    luvat ja niiden ehdot, tarkkailutulokset ja poikkeamat,
@@ -90,7 +90,7 @@ Yrityskaupan tai kiinteistökaupan ympäristöosio (kytkös
    erityisvastuulausekkeet (indemnity) tunnetuista riskeistä,
    vastuunrajaukset ja niiden suhde julkisoikeudelliseen vastuuseen —
    **viranomaisvastuuta ei voi sopia pois**, vain osapuolten välisen
-   taloudellisen jaon. → `sopimukset:sopimuksen-laatiminen`.
+   taloudellisen jaon. → `contracts:contract-drafting`.
 4. **Myyjän tiedonantovelvollisuus**: tunnetun pilaantumisen
    salaaminen on virheperuste ja voi siirtää vastuun takaisin —
    älä avusta salaamisessa.

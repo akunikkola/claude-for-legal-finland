@@ -20,14 +20,21 @@ työsuhteissa) ja kohtuullistamissäännöt asettavat rajat.
 
 > **Vastuuvapaus:** sopimusluonnos on tarkistettava ennen allekirjoitusta — ei
 > oikeudellista neuvontaa. Merkittävissä tai suuririskisissä sopimuksissa juristin
-> tarkistus on tarpeen. Katso `sopimukset/CLAUDE.md`.
+> tarkistus on tarpeen. Katso `contracts/AGENTS.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista sovellettava laki lähteestä
 
 Kun sopimus nojaa lakiin (kauppalaki, kuluttajansuojalaki, työsopimuslaki, korkolaki
-jne.) tai viittaat pykälään, **käytä `legal-core`-plugarin `oikeustutkimus`-skilliä** ja
+jne.) tai viittaat pykälään, **käytä `legal-core`-plugarin `legal-research`-skilliä** ja
 varmista voimassa oleva sanamuoto oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta
-muistista. Sopimusoikeuden perusteet ja keskeiset lait: lue `references/sopimusoikeus.md`.
+muistista. Sopimusoikeuden perusteet ja keskeiset lait: lue `references/contract-law.md`.
 
 ---
 
@@ -62,7 +69,7 @@ Käytä vakiintunutta rakennetta (sovita sopimustyyppiin):
 13. **Muut ehdot** — muutokset kirjallisesti, siirtäminen, ilmoitukset, sopimuksen liitteet ja pätevyysjärjestys.
 14. **Allekirjoitukset** — päiväys, kappalemäärä/sähköinen allekirjoitus.
 
-Valmiit, kommentoidut esimerkkilausekkeet: lue `references/sopimuslausekkeet.md`.
+Valmiit, kommentoidut esimerkkilausekkeet: lue `references/contract-clauses.md`.
 
 ## Vaihe 3: Laadinnan periaatteet
 
@@ -71,7 +78,7 @@ Valmiit, kommentoidut esimerkkilausekkeet: lue `references/sopimuslausekkeet.md`
 - **Johdonmukainen termistö:** samasta asiasta sama termi (käytä `legal-core`-skilliä kielen tarkistukseen).
 - **Tasapaino:** yksipuoliset ehdot voivat altistua kohtuullistamiselle (oikeustoimilain 228/1929 36 §) — erityisesti heikomman osapuolen vahingoksi. Kuluttajasopimuksessa kuluttajan vahingoksi poikkeavat ehdot voivat olla pätemättömiä.
 - **Vastuunrajoitus:** erota välitön ja välillinen vahinko, aseta vastuun yläraja selkeästi; huomaa, ettei vastuuta voi rajoittaa tahallisuuden tai törkeän huolimattomuuden osalta.
-- **Pykäläviittaukset:** käytä säädöskielen viittausmuotoja (`legal-core`-skill); tarkista numerot `oikeustutkimus`-skillillä.
+- **Pykäläviittaukset:** käytä säädöskielen viittausmuotoja (`legal-core`-skill); tarkista numerot `legal-research`-skillillä.
 
 ## Vaihe 4: Tulostemuoto
 
@@ -79,9 +86,9 @@ Tuota **uusi** sopimus muokattavana Word-dokumenttina (.docx) `docx`-skillillä 
 
 ## Vaihe 5: Suosittele tarkistusta
 
-Ehdota laajan tai suuririskisen sopimuksen kohdalla `sopimuksen-tarkistus`-skilliä
+Ehdota laajan tai suuririskisen sopimuksen kohdalla `contract-review`-skilliä
 (lausekekohtainen riskiarvio) ja perusteelliseen läpikäyntiin `legal-core`-plugarin
-`asiakirjan-tarkistus`-skilliä.
+`document-review`-skilliä.
 
 ## Mitä tämä skill EI tee
 

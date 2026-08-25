@@ -19,17 +19,27 @@ Tämä skill kattaa hankinnan loppuvaiheen: päätöksen, odotusajan,
 sopimuksen tekemisen, hankintaoikaisun ja markkinaoikeusprosessin —
 molemmista näkökulmista. Pykäläotsikot 123 §, 128–129 §, 132–133 § ja
 146 § on vahvistettu lähteestä. Perusteet:
-`../hankinnan-suunnittelu/references/hankinnat-perusteet.md`.
+`../procurement-planning/references/procurement-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa. **Valitusajat ja odotusaika ovat prekluusiivisia** —
 > jokainen päivämäärä `[mallin laskelma — tarkista]` ja kalenterivastuu
-> ihmisellä. Katso `julkiset-hankinnat/CLAUDE.md`.
+> ihmisellä. Katso `public-procurement/AGENTS.md`.
+
+## Output language
+
+Drafts may be produced in **English** for review, but the version actually **filed with the court
+or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
+documents). An English filing is not admissible. Always offer to produce the Finnish version, and
+state plainly that the English text is a working translation only.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Tarkista määräajat lähteestä
 
 Hae valitusajat, odotusajan pituus ja hankintaoikaisun määräajat
-**`juristi:oikeustutkimus`-skillillä** — älä muistista. MAO:n
+**`legal-core:legal-research`-skillillä** — älä muistista. MAO:n
 ratkaisukäytäntö haetaan lähteestä tunnuksineen.
 
 ## Hankintayksikölle: päätös ja sopimus
@@ -80,7 +90,7 @@ ratkaisukäytäntö haetaan lähteestä tunnuksineen.
    vaatimukset, täytäntöönpanoa koskevat vaatimukset.
 
 Jatkovalitus KHO:hon edellyttää valituslupaa →
-`hallinto-oikeus:muutoksenhaku` prosessin yleisiin oppeihin.
+`administrative-law:administrative-appeal` prosessin yleisiin oppeihin.
 
 ## Sopimuskauden muutokset
 

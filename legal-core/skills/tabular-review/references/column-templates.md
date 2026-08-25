@@ -1,6 +1,6 @@
 # Sarakemallit asiakirjatyypeittäin
 
-Lähtökohtaiset vertailusarakkeet `taulukkokatsaus`-skillin **Tila A:lle**
+Lähtökohtaiset vertailusarakkeet `tabular-review`-skillin **Tila A:lle**
 (monidokumenttivertailu, rivi per asiakirja). Mallit ovat **lähtökohta, eivät
 kaava** — räätälöi aineiston ja toimeksiannon mukaan. Jokainen solu saa silti
 aina **arvon, lähteen ja luottamustason**, ja puuttuva tieto merkitään
@@ -9,7 +9,7 @@ aina **arvon, lähteen ja luottamustason**, ja puuttuva tieto merkitään
 > **Lainkohtaviitteet ovat suuntaa-antavia kiinnekohtia**, jotka kertovat *miksi
 > sarake on olennainen ja mistä sen pätevyyttä tarkistetaan* — eivät
 > valmiita arvioita. Säädösten ja pykälien voimassaolo ja sisältö tarkistetaan
-> aina `oikeustutkimus`-skillillä (oik.ai/Finlex). Pätevyysarvio on tason 2
+> aina `legal-research`-skillillä (oik.ai/Finlex). Pätevyysarvio on tason 2
 > kysymys (ks. SKILL.md, Vaihe 3), ei tason 1 poiminta.
 
 ---

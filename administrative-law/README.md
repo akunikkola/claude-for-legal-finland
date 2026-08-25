@@ -24,11 +24,11 @@ asiakirjajulkisuus.
 
 Lähteestä (oik.ai/Finlex) varmistettu: **hallintolaki (434/2003)**, **laki oikeudenkäynnistä
 hallintoasioissa (808/2019)** (korvasi hallintolainkäyttölain 586/1996) ja **julkisuuslaki
-(621/1999)**. Erityislait ja kuntalaki (410/2015) tarkistetaan `juristi:oikeustutkimus`-skillillä.
+(621/1999)**. Erityislait ja kuntalaki (410/2015) tarkistetaan `legal-core:legal-research`-skillillä.
 
 ## Liittyy
 
-- **`legal-core`-plugari** – `oikeustutkimus` (lain ja KHO/hallinto-oikeus-käytännön tarkistus) ja `asiakirjan-tarkistus`.
+- **`legal-core`-plugari** – `legal-research` (lain ja KHO/hallinto-oikeus-käytännön tarkistus) ja `document-review`.
 - **`data-protection`-plugari** – julkisuuden ja henkilötietojen suojan yhteensovittaminen.
 - **`legislative-consultation`-plugari** – kunnan/viranomaisen lausunnot lakiehdotuksiin.
 

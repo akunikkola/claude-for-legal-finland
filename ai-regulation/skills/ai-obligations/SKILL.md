@@ -12,10 +12,17 @@ description: >
 # Tekoälyasetuksen velvoitteet roolin ja riskiluokan mukaan
 
 Tämä skill kokoaa tekoälyjärjestelmään kohdistuvat velvoitteet, kun riskiluokka on tiedossa
-(jos ei ole, käytä ensin `tekoaly-luokittelu`-skilliä).
+(jos ei ole, käytä ensin `ai-classification`-skilliä).
 
 > **Vastuuvapaus:** velvoitelistat ovat tarkistettavia luonnoksia — ei oikeudellista
-> neuvontaa. Katso `tekoalysaantely/CLAUDE.md`. Perusteet: `../tekoaly-luokittelu/references/ai-act-perusteet.md`.
+> neuvontaa. Katso `ai-regulation/AGENTS.md`. Perusteet: `../ai-classification/references/ai-act-fundamentals.md`.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Käytä EU AI Act -MCP:tä
 
@@ -55,7 +62,7 @@ organisaatiolla on jo ja mitä puuttuu. Tuota tarkistuslista.
 
 ### 4. GPAI-velvoitteet
 Yleiskäyttöisille malleille hae velvoitteet roolilla "provider" ja huomioi systeemisen
-riskin lisävelvoitteet (55 art) — tarkista kynnys `tekoaly-vaatimustenmukaisuus`-skillin
+riskin lisävelvoitteet (55 art) — tarkista kynnys `ai-compliance`-skillin
 `euaiact_check_gpai_systemic_risk`-työkalulla.
 
 ### 5. Raportoi
@@ -69,7 +76,7 @@ kansallisen kerroksen tarkistuksesta.
 
 - **Ei tee lopullista vaatimustenmukaisuuspäätöstä.** Kokoaa tarkistettavan velvoiteluonnoksen roolin ja riskiluokan mukaan; sitova arvio velvoitteiden täyttymisestä kuuluu asiantuntijalle.
 - **Ei määritä riskiluokkaa.** Edellyttää, että luokka ja rooli (tarjoaja/käyttöönottaja) ovat jo tiedossa — luokittelu tehdään erillisessä skillissä.
-- **Ei laske määräpäiviä eikä sakkoja muistista.** Velvoitteiden voimaantulon siirtymäajat ja rikkomusten enimmäisseuraamukset haetaan eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `tekoaly-vaatimustenmukaisuus`.
+- **Ei laske määräpäiviä eikä sakkoja muistista.** Velvoitteiden voimaantulon siirtymäajat ja rikkomusten enimmäisseuraamukset haetaan eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `ai-compliance`.
 - **Ei ratkaise GPAI-mallin systeemisen riskin kynnystä.** 10²⁵ FLOPs -kynnys ja 55 art lisävelvoitteet tarkistetaan `euaiact_check_gpai_systemic_risk`-työkalulla.
 - **Ei vahvista kansallisia viranomaisnimeämisiä eikä rekisteröinnin yksityiskohtia.** Suomen toimivaltaiset viranomaiset ja menettelyt ovat muotoutumassa — merkitse `[varmista — kansallinen sääntely muotoutumassa]`.
 - **Ei laadi teknistä dokumentaatiota puolestasi.** Tuottaa Annex IV -tarkistuslistan ja tunnistaa puuttuvat osat, mutta sisällön kirjoittaminen jää organisaatiolle.

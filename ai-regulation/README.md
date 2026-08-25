@@ -26,7 +26,7 @@ kontekstissa.
 ## Liittyy
 
 - **`data-protection`-plugari** – tekoälyasetus ja GDPR ovat rinnakkaisia (profilointi, automaattiset päätökset, DPIA).
-- **`legal-core`-plugari** – `oikeustutkimus` kansallisen kerroksen tarkistukseen.
+- **`legal-core`-plugari** – `legal-research` kansallisen kerroksen tarkistukseen.
 
 ## Asennus
 

@@ -59,7 +59,7 @@ perintätavan vaatimukset.
 
 ## Lähteestä, ei muistista
 
-Tarkista säännökset **`juristi:oikeustutkimus`-skillillä** (oik.ai/Finlex),
+Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex),
 kuluttajariitalautakunnan ratkaisukäytäntö ja kuluttaja-asiamiehen linjaukset
 lähteestä. KKV:n ja kuluttaja-asiamiehen ohjeet ovat viranomaislähteitä
 (kkv.fi) — erottele laki ja viranomaiskäytäntö.

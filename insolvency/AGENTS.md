@@ -18,7 +18,7 @@ tulkinnanvaraiset `[varmista — insolvenssijuristin arvioitava]`.
 
 Konkurssivalvonnan määräpäivä, takaisinsaannin määräajat, vanhentumisen katkaisu ja
 muutoksenhakuajat menetetään lopullisesti, jos ne ohitetaan. **Älä koskaan esitä
-määräaikaa muistista** — hae se lähteestä (`juristi:oikeustutkimus`) tai merkitse
+määräaikaa muistista** — hae se lähteestä (`legal-core:legal-research`) tai merkitse
 `[tarkista lähteestä]`. Jokainen laskettu päivämäärä: `[mallin laskelma — tarkista]`
 (laskennassa laki säädettyjen määräaikain laskemisesta 150/1930). Kalenterivastuu on
 nimetyllä ihmisellä.

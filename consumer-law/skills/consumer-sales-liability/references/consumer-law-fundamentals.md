@@ -3,7 +3,7 @@
 Plugarin yhteinen kartta: keskeiset käsitteet, säädökset ja sudenkuopat.
 **Säädösten nimet ja numerot on varmistettu Finlexistä**; lukujen sisältö,
 määräajat ja kulujen enimmäismäärät haetaan käytössä lähteestä
-(`juristi:oikeustutkimus`).
+(`legal-core:legal-research`).
 
 ## Varmistetut säädökset (perusta)
 

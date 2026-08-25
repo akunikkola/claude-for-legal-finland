@@ -16,13 +16,13 @@ description: >
 
 Tämä skill varmistaa, että juridiset väitteet perustuvat **todelliseen, voimassa olevaan** lakitekstiin ja **oikeisiin** tuomioistuinratkaisuihin — ei mallin muistiin. Suomen lainsäädäntö muuttuu jatkuvasti, ja muistinvaraiset pykälät ja ratkaisutunnukset menevät usein pieleen. Hae lähde aina kun voit.
 
-> **Perusperiaate:** ennen kuin lainaat pykälän, säädösnumeron tai oikeustapauksen, hae se lähteestä. Jos lähdettä ei ole saatavilla, merkitse väite muistinvaraiseksi äläkä esitä sitä varmistettuna. Katso `juristi/CLAUDE.md` → *Ajantasaisuuden pakko*.
+> **Perusperiaate:** ennen kuin lainaat pykälän, säädösnumeron tai oikeustapauksen, hae se lähteestä. Jos lähdettä ei ole saatavilla, merkitse väite muistinvaraiseksi äläkä esitä sitä varmistettuna. Katso `legal-core/AGENTS.md` → *Ajantasaisuuden pakko*.
 
 ---
 
 ## Käytettävät työkalut
 
-Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:tä** (tai muuta vastaavaa Finlex-MCP:tä). Molemmat tuovat saman: ajantasaisen lain, oikeuskäytännön ja esityöt lähteestä — vain työkalujen nimet eroavat. Käytä sitä konnektoria, joka on liitettynä. Tarkemmat hakustrategiat, työkalut ja laki.ai-vastineet: lue `references/tyokalut.md`. Asennus: juuren `QUICKSTART.md`.
+Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:tä** (tai muuta vastaavaa Finlex-MCP:tä). Molemmat tuovat saman: ajantasaisen lain, oikeuskäytännön ja esityöt lähteestä — vain työkalujen nimet eroavat. Käytä sitä konnektoria, joka on liitettynä. Tarkemmat hakustrategiat, työkalut ja laki.ai-vastineet: lue `references/tools.md`. Asennus: juuren `QUICKSTART.md`.
 
 | Työkalu | Käyttö |
 |---|---|
@@ -52,7 +52,7 @@ Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:t�
 - Huomioi: Finlexin/oik.ai:n ajantasainen versio voi olla muutaman viikon jäljessä uusimmista muutoksista. Jos asia on tuore, mainitse tämä varaus.
 
 ### 4. Viittaa oikein
-Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../juristi/references/viittaukset.md` ja `../juristi/references/lahteet.md`):
+Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../legal-core/references/citations.md` ja `../legal-core/references/sources.md`):
 
 - **Säädös**, ensimaininnalla nimi + numero: *kuntalain (410/2015) 7 §:n 1 momentin mukaan…*
 - **Ennakkopäätös**: *Korkein oikeus on ratkaisussaan KKO:VVVV:NN katsonut, että…* (tunnus paikkamerkki — täytä vain lähteestä tarkistetulla ratkaisulla)

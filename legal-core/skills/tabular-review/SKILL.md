@@ -19,7 +19,14 @@ description: >
 
 Tämä skill muuttaa joukon asiakirjoja taulukoksi, jota voi tarkistaa: **jokainen solu kertoo, mistä asiakirjan kohdasta se on otettu, ja kuinka varma poiminta on**. Lopputuote ei ole muistio vaan taulukko (tai useita) — kuten kokenut juristi tai notaari tekee sopimussalkun yhteenvedon, vuokra-abstraktin tai due diligence -matriisin.
 
-> **Vastuuvapaus:** taulukko on tarkistettava luonnos — ei oikeudellista neuvontaa. Se kertoo *mitä asiakirjoissa lukee*; sen, mitä siitä seuraa ja ovatko ehdot päteviä, arvioi pätevä ihminen. Katso `juristi/CLAUDE.md` → *Vastuuvapaus*.
+> **Vastuuvapaus:** taulukko on tarkistettava luonnos — ei oikeudellista neuvontaa. Se kertoo *mitä asiakirjoissa lukee*; sen, mitä siitä seuraa ja ovatko ehdot päteviä, arvioi pätevä ihminen. Katso `legal-core/AGENTS.md` → *Vastuuvapaus*.
+
+## Output language
+
+Drafts are produced in **English by default**. If the user asks for Finnish, produce Finnish.
+
+Keep the Finnish term alongside the English one for legally operative concepts on first use, for
+example `notice period (irtisanomisaika)`.
 
 ## Periaate: joka solu on lähteistetty
 
@@ -39,9 +46,9 @@ Lähdekuri on koko markkinapaikan ydin: ks. `references/citation-style.md` (kolm
 
 | Referenssi | Tiedosto | Käytä kun |
 |---|---|---|
-| Sarakemallit asiakirjatyypeittäin | `references/sarakemallit.md` | Suunnittelet sarakkeita tunnetulle asiakirjatyypille (vuokra-, työ-, toimittaja-, osakassopimus, kiinteistökauppa, hallintopäätös). Sisältää suomalaiset vertailukohdat ja lainkohtaviitteet. |
+| Sarakemallit asiakirjatyypeittäin | `references/column-templates.md` | Suunnittelet sarakkeita tunnetulle asiakirjatyypille (vuokra-, työ-, toimittaja-, osakassopimus, kiinteistökauppa, hallintopäätös). Sisältää suomalaiset vertailukohdat ja lainkohtaviitteet. |
 
-**Ohje:** kun vertailtava asiakirjatyyppi on tunnettu, lue `references/sarakemallit.md` ja räätälöi sieltä lähtevä sarakejoukko. Tuntemattomalle tyypille johda sarakkeet asiakirjasta itsestään (Vaihe 1).
+**Ohje:** kun vertailtava asiakirjatyyppi on tunnettu, lue `references/column-templates.md` ja räätälöi sieltä lähtevä sarakejoukko. Tuntemattomalle tyypille johda sarakkeet asiakirjasta itsestään (Vaihe 1).
 
 ---
 
@@ -55,7 +62,7 @@ Lähdekuri on koko markkinapaikan ydin: ks. `references/citation-style.md` (kolm
 
 ## Vaihe 1 — Skeeman löytäminen ja sarakkeiden suunnittelu
 
-- **Tila A:** määritä vertailtava asiakirjatyyppi ja valitse sarakkeet. Lue `references/sarakemallit.md`, jos tyyppi on siellä; muuten johda vertailukohdat siitä, mikä tässä asiakirjatyypissä on olennaista (osapuolet, kohde, kesto, irtisanominen, vastuut, sovellettava laki, riidanratkaisu).
+- **Tila A:** määritä vertailtava asiakirjatyyppi ja valitse sarakkeet. Lue `references/column-templates.md`, jos tyyppi on siellä; muuten johda vertailukohdat siitä, mikä tässä asiakirjatyypissä on olennaista (osapuolet, kohde, kesto, irtisanominen, vastuut, sovellettava laki, riidanratkaisu).
 - **Tila B:** käy asiakirja läpi ja tunnista **jokainen** taulukkomainen rakenne: numeroidut liitteet, jäsennellyt luettelot, lausekkeisiin sidotut mekaniikat (maksuerät, korotuskaavat). Ehdota kaikki tuotettavat taulukot ennen täyttöä.
 - **Uskolliset sarakeotsikot:** jos asiakirja käyttää termiä "vastike", älä nimeä saraketta "vuokraksi". Käytä asiakirjan termiä ja lisää määritelmärivi tarvittaessa.
 
@@ -79,7 +86,7 @@ Täytä taulukko solu kerrallaan ja anna jokaiselle solulle arvo, lähde ja luot
 Erota selvästi se, mitä voidaan luotettavasti todeta asiakirjasta, siitä, mitä on tarkistettava lähteestä.
 
 - **Taso 1 — mitä asiakirja sanoo (korkea luottamus).** Solun arvo on poimittu asiakirjasta. Tämä on skillin ydinalue.
-- **Taso 2 — onko ehto pätevä tai lainmukainen (vaatii lähteen).** Jos taulukkoon halutaan sarake "lainmukainen?" tai "pätevä?", **älä arvioi sitä muistista.** Käytä `oikeustutkimus`-skilliä (oik.ai/Finlex) ja merkitse solu `luottamus: matala` ja lähteeksi tarkistus, tai jätä arvio erilliseen löydökseen. Esim. työsopimusten kilpailukieltosarakkeessa "kestää lain" on tason 2 kysymys (työsopimuslaki 55/2001, 3 luvun 5 §; korvausvelvollisuus lisätty lailla 1018/2021) — taulukoi ehdon *sisältö* tasolla 1, mutta pätevyysarvio tasolla 2.
+- **Taso 2 — onko ehto pätevä tai lainmukainen (vaatii lähteen).** Jos taulukkoon halutaan sarake "lainmukainen?" tai "pätevä?", **älä arvioi sitä muistista.** Käytä `legal-research`-skilliä (oik.ai/Finlex) ja merkitse solu `luottamus: matala` ja lähteeksi tarkistus, tai jätä arvio erilliseen löydökseen. Esim. työsopimusten kilpailukieltosarakkeessa "kestää lain" on tason 2 kysymys (työsopimuslaki 55/2001, 3 luvun 5 §; korvausvelvollisuus lisätty lailla 1018/2021) — taulukoi ehdon *sisältö* tasolla 1, mutta pätevyysarvio tasolla 2.
 
 ---
 
@@ -137,7 +144,7 @@ Jos lähdeasiakirjat ovat Word-muodossa, käytä `adeu`-MCP:tä (kun saatavilla)
 ## Mitä tämä skill EI tee
 
 - **Ei jätä solua ilman lähdettä.** Joka solu viittaa asiakirjan kohtaan; puuttuva tieto on `ei mainittu`, ei tyhjä.
-- **Ei arvioi pätevyyttä tai lainmukaisuutta muistista.** Tason 2 sarakkeet tarkistetaan `oikeustutkimus`-skillillä tai merkitään tarkistettaviksi.
+- **Ei arvioi pätevyyttä tai lainmukaisuutta muistista.** Tason 2 sarakkeet tarkistetaan `legal-research`-skillillä tai merkitään tarkistettaviksi.
 - **Ei paisuta rivejä eikä keksi sarakkeita**, joita asiakirjat eivät tue.
 - **Ei tee lopullisia oikeudellisia johtopäätöksiä.** Poikkeamat ovat riskisignaaleja ihmisen arvioitaviksi.
 - **Ei korvaa yksittäisen asiakirjan syvätarkistusta** → /juristi:asiakirjan-tarkistus.
