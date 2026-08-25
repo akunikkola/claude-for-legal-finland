@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "juristi",
+      "name": "legal-core",
       "source": {
         "source": "local",
-        "path": "./juristi"
+        "path": "./legal-core"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -17,10 +17,10 @@
       "category": "Legal"
     },
     {
-      "name": "lainvalmistelu",
+      "name": "legislative-drafting",
       "source": {
         "source": "local",
-        "path": "./lainvalmistelu"
+        "path": "./legislative-drafting"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -29,10 +29,10 @@
       "category": "Legal"
     },
     {
-      "name": "lausunnot",
+      "name": "legislative-consultation",
       "source": {
         "source": "local",
-        "path": "./lausunnot"
+        "path": "./legislative-consultation"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -41,10 +41,10 @@
       "category": "Legal"
     },
     {
-      "name": "sopimukset",
+      "name": "contracts",
       "source": {
         "source": "local",
-        "path": "./sopimukset"
+        "path": "./contracts"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -53,10 +53,10 @@
       "category": "Legal"
     },
     {
-      "name": "tietosuoja",
+      "name": "data-protection",
       "source": {
         "source": "local",
-        "path": "./tietosuoja"
+        "path": "./data-protection"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -65,10 +65,10 @@
       "category": "Legal"
     },
     {
-      "name": "tekoalysaantely",
+      "name": "ai-regulation",
       "source": {
         "source": "local",
-        "path": "./tekoalysaantely"
+        "path": "./ai-regulation"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -77,10 +77,10 @@
       "category": "Legal"
     },
     {
-      "name": "tyooikeus",
+      "name": "employment-law",
       "source": {
         "source": "local",
-        "path": "./tyooikeus"
+        "path": "./employment-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -89,10 +89,10 @@
       "category": "Legal"
     },
     {
-      "name": "hallinto-oikeus",
+      "name": "administrative-law",
       "source": {
         "source": "local",
-        "path": "./hallinto-oikeus"
+        "path": "./administrative-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -101,10 +101,10 @@
       "category": "Legal"
     },
     {
-      "name": "riidanratkaisu",
+      "name": "dispute-resolution",
       "source": {
         "source": "local",
-        "path": "./riidanratkaisu"
+        "path": "./dispute-resolution"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -113,10 +113,10 @@
       "category": "Legal"
     },
     {
-      "name": "yhtiooikeus",
+      "name": "company-law",
       "source": {
         "source": "local",
-        "path": "./yhtiooikeus"
+        "path": "./company-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -125,10 +125,10 @@
       "category": "Legal"
     },
     {
-      "name": "insolvenssi",
+      "name": "insolvency",
       "source": {
         "source": "local",
-        "path": "./insolvenssi"
+        "path": "./insolvency"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -137,10 +137,10 @@
       "category": "Legal"
     },
     {
-      "name": "immateriaalioikeus",
+      "name": "intellectual-property",
       "source": {
         "source": "local",
-        "path": "./immateriaalioikeus"
+        "path": "./intellectual-property"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -149,10 +149,10 @@
       "category": "Legal"
     },
     {
-      "name": "verotus",
+      "name": "taxation",
       "source": {
         "source": "local",
-        "path": "./verotus"
+        "path": "./taxation"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -161,10 +161,10 @@
       "category": "Legal"
     },
     {
-      "name": "julkiset-hankinnat",
+      "name": "public-procurement",
       "source": {
         "source": "local",
-        "path": "./julkiset-hankinnat"
+        "path": "./public-procurement"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -173,10 +173,10 @@
       "category": "Legal"
     },
     {
-      "name": "rikosprosessi",
+      "name": "criminal-procedure",
       "source": {
         "source": "local",
-        "path": "./rikosprosessi"
+        "path": "./criminal-procedure"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -185,10 +185,10 @@
       "category": "Legal"
     },
     {
-      "name": "ymparisto-ja-kaavoitus",
+      "name": "environment-and-planning",
       "source": {
         "source": "local",
-        "path": "./ymparisto-ja-kaavoitus"
+        "path": "./environment-and-planning"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -197,10 +197,10 @@
       "category": "Legal"
     },
     {
-      "name": "kiinteistot-ja-asuminen",
+      "name": "real-estate-and-housing",
       "source": {
         "source": "local",
-        "path": "./kiinteistot-ja-asuminen"
+        "path": "./real-estate-and-housing"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -209,10 +209,10 @@
       "category": "Legal"
     },
     {
-      "name": "kilpailuoikeus",
+      "name": "competition-law",
       "source": {
         "source": "local",
-        "path": "./kilpailuoikeus"
+        "path": "./competition-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -221,10 +221,10 @@
       "category": "Legal"
     },
     {
-      "name": "pankki-ja-rahoitus",
+      "name": "banking-and-finance",
       "source": {
         "source": "local",
-        "path": "./pankki-ja-rahoitus"
+        "path": "./banking-and-finance"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -233,10 +233,10 @@
       "category": "Legal"
     },
     {
-      "name": "ulkomaalaisoikeus",
+      "name": "immigration-law",
       "source": {
         "source": "local",
-        "path": "./ulkomaalaisoikeus"
+        "path": "./immigration-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -245,10 +245,10 @@
       "category": "Legal"
     },
     {
-      "name": "perhe-ja-perinto",
+      "name": "family-and-inheritance",
       "source": {
         "source": "local",
-        "path": "./perhe-ja-perinto"
+        "path": "./family-and-inheritance"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -257,10 +257,10 @@
       "category": "Legal"
     },
     {
-      "name": "kuluttajaoikeus",
+      "name": "consumer-law",
       "source": {
         "source": "local",
-        "path": "./kuluttajaoikeus"
+        "path": "./consumer-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -269,10 +269,10 @@
       "category": "Legal"
     },
     {
-      "name": "rikosoikeus",
+      "name": "criminal-law",
       "source": {
         "source": "local",
-        "path": "./rikosoikeus"
+        "path": "./criminal-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -281,10 +281,10 @@
       "category": "Legal"
     },
     {
-      "name": "kaksikielisyys",
+      "name": "bilingual-legal-language",
       "source": {
         "source": "local",
-        "path": "./kaksikielisyys"
+        "path": "./bilingual-legal-language"
       },
       "policy": {
         "installation": "AVAILABLE",

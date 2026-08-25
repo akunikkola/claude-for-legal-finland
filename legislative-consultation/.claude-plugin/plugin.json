@@ -1,0 +1,8 @@
+{
+  "name": "legislative-consultation",
+  "version": "0.1.0",
+  "description": "Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

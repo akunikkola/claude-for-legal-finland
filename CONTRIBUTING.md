@@ -30,10 +30,10 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
   käytä sitä. Muistinvaraiset väitteet merkitään selvästi.
 - **Vastuuvapaus pidetään.** Tuotos on aina tarkistettava luonnos; ihminen vastaa.
 - **Kieli kunnossa.** Suomenkieliset skillit noudattavat suomen kielen ja lakikielen
-  sääntöjä (ks. `juristi`-plugarin `suomen-kieli`- ja `juristi`-skillit).
+  sääntöjä (ks. `legal-core`-plugarin `suomen-kieli`- ja `legal-core`-skillit).
 
 - **Noudata jaettua viittausstandardia.** Säädös-, oikeuskäytäntö- ja
-  esityöviittauksissa: [`references/viittaustyyli.md`](references/viittaustyyli.md)
+  esityöviittauksissa: [`references/citation-style.md`](references/citation-style.md)
   (kolmiportainen varmuusmerkintä, lähdehierarkia, ratkaisutunnusten muodot,
   esimerkkikuri). Älä koskaan väitä ratkaisun sisältöä ilman lähteestä tarkistusta.
 
@@ -47,14 +47,14 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
 4. Päivitä plugarin README ja tarvittaessa juuren `marketplace.json`.
 5. **Päivitä generoidut tiedostot:** `bash scripts/check-generated.sh` ajaa
    molemmat generaattorit (`generate-skills-md.mjs` → `SKILLS.md`,
-   `generate-codex.mjs` → Codex-manifestit) ja varmistaa, ettei mitään jäänyt
+   `generate-adapters.mjs` → Codex-manifestit) ja varmistaa, ettei mitään jäänyt
    committaamatta. Älä muokkaa generoituja tiedostoja (`SKILLS.md`,
    `.codex-plugin/plugin.json`, `agents/openai.yaml`) käsin.
 6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
    - `node --test tests/*.test.mjs`
 7. **Jos muutit skillin `description`-kenttää**, aja triggeritestit
-   (`bash evals/aja-triggeritestit.sh`, ks. [evals/README.md](evals/README.md)) —
+   (`bash evals/run-trigger-tests.sh`, ks. [evals/README.md](evals/README.md)) —
    kuvaus on skillin triggeröitymisen ainoa signaali, ja huono muotoilu
    hukkaa skillin hiljaa. Huom: ajaa oikeita mallikutsuja (ei CI:hin).
 8. **Jos tilastot muuttuvat** (plugari-, skilli- tai agenttimäärä,

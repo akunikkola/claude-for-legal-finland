@@ -1,0 +1,33 @@
+{
+  "name": "dispute-resolution",
+  "version": "0.1.0",
+  "description": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa). Sisältää vaihtoehtoisen riidanratkaisun perusteet.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/ragmha/agent-skills-for-finnish-law/tree/main/dispute-resolution",
+  "repository": "https://github.com/ragmha/agent-skills-for-finnish-law",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "dispute-resolution"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Riidanratkaisu",
+    "shortDescription": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutok…",
+    "longDescription": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa).",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Riidanratkaisu -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

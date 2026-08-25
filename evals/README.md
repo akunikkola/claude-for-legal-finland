@@ -5,7 +5,7 @@ toistettavan. Kaksi tasoa:
 
 1. **Triggeritestit** (tämä hakemisto): triggeröityykö oikea skill, kun
    käyttäjä esittää tyypillisen pyynnön?
-2. **Laatuarviointi** ([`../esimerkkiaineistot/`](../esimerkkiaineistot/)):
+2. **Laatuarviointi** ([`../esimerkkiaineistot/`](../examples/)):
    kun skill triggeröityy, onko tuotos arviointikriteerien mukainen?
 
 > **Kustannusvaroitus:** molemmat tasot ajavat oikeita mallikutsuja ja
@@ -15,12 +15,12 @@ toistettavan. Kaksi tasoa:
 ## Triggeritestit
 
 ```sh
-bash evals/aja-triggeritestit.sh                    # kaikki skenaariot
-bash evals/aja-triggeritestit.sh koeaikapurku       # yksi skenaario
-EVAL_MODEL=claude-sonnet-5 bash evals/aja-triggeritestit.sh
+bash evals/run-trigger-tests.sh                    # kaikki skenaariot
+bash evals/run-trigger-tests.sh koeaikapurku       # yksi skenaario
+EVAL_MODEL=claude-sonnet-5 bash evals/run-trigger-tests.sh
 ```
 
-Skenaariot ovat tiedostossa [`skenaariot.json`](skenaariot.json). Jokainen
+Skenaariot ovat tiedostossa [`scenarios.json`](scenarios.json). Jokainen
 skenaario lataa yhden plugarin `--plugin-dir`-lipulla, ajaa promptin
 headless-tilassa (`-p --output-format stream-json`) ja tarkistaa striimistä,
 kutsuiko malli odotettua skilliä (`tool_use`, `name == "Skill"`).
@@ -31,7 +31,7 @@ interaktiivisesti). Eristetyissä ympäristöissä headless-ajo kaatuu
 tunnistaa tämän ja keskeyttää selvällä virheellä sen sijaan, että
 raportoisi valheellisia triggerihukkia.
 
-**Skenaarion lisääminen:** lisää olio `skenaariot.json`-taulukkoon. Hyvä
+**Skenaarion lisääminen:** lisää olio `scenarios.json`-taulukkoon. Hyvä
 skenaario on käyttäjän oikea pyyntö (ei skillin nimen toistoa) — testin
 pointti on, että kuvaus nappaa aidon muotoilun.
 
@@ -53,7 +53,7 @@ saadaan korjattua, poista lippu, jolloin skenaariosta tulee regressiovahti.
 ## Laatuarviointi grader-agenteilla
 
 Kolme sotkuista harjoitusaineistoa arviointikriteereineen:
-[`../esimerkkiaineistot/`](../esimerkkiaineistot/). Resepti:
+[`../esimerkkiaineistot/`](../examples/). Resepti:
 
 1. Kopioi aineiston tiedostot työhakemistoon **ilman**
    `arviointikriteerit.md`-tiedostoa (malli ei saa nähdä kriteerejä).

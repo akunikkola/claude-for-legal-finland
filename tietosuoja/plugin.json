@@ -1,9 +1,0 @@
-{
-  "name": "tietosuoja",
-  "displayName": "Tietosuoja",
-  "version": "0.1.0",
-  "description": "Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.",
-  "author": {
-    "name": "Aku Nikkola"
-  }
-}

@@ -12,7 +12,7 @@
 //  - näkymättömät / harhaanjohtavat unicode-merkit (zero-width, bidi, kyrilliset homoglyfit)
 //
 // Lähde on neutraali marketplace.json ja <plugari>/plugin.json; Claude- ja
-// Codex-manifestit ovat generoituja adaptereita (scripts/generate-codex.mjs).
+// Codex-manifestit ovat generoituja adaptereita (scripts/generate-adapters.mjs).
 //
 // Tämä portti on "henkivakuutus": se ei korvaa lähdekuria, vaan estää
 // markkinapaikan rikkovat ja hiljaa hajoavat virheet ennen julkaisua.

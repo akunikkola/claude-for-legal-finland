@@ -1,0 +1,33 @@
+{
+  "name": "legislative-drafting",
+  "version": "0.1.0",
+  "description": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/ragmha/agent-skills-for-finnish-law/tree/main/legislative-drafting",
+  "repository": "https://github.com/ragmha/agent-skills-for-finnish-law",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "legislative-drafting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lainvalmistelu",
+    "shortDescription": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistel…",
+    "longDescription": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Lainvalmistelu -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -22,15 +22,15 @@ tai kehityskäytössä paikallisesta polusta:
 /plugin install juristi@agent-skills-for-finnish-law
 ```
 
-`juristi` on läpileikkaava perusta, joka kannattaa asentaa aina. Sen päälle
+`legal-core` on läpileikkaava perusta, joka kannattaa asentaa aina. Sen päälle
 asennetaan oman alan plugarit samalla kaavalla
-(`<plugari>@agent-skills-for-finnish-law`): `lainvalmistelu`, `lausunnot`,
-`sopimukset`, `tyooikeus`, `tietosuoja`, `tekoalysaantely`, `hallinto-oikeus`,
-`riidanratkaisu`, `yhtiooikeus`, `insolvenssi`, `immateriaalioikeus`,
-`verotus`, `julkiset-hankinnat`, `rikosprosessi`, `ymparisto-ja-kaavoitus`,
-`kiinteistot-ja-asuminen`, `kilpailuoikeus`, `pankki-ja-rahoitus`,
-`ulkomaalaisoikeus`, `perhe-ja-perinto`, `kuluttajaoikeus`, `rikosoikeus` ja
-`kaksikielisyys`.
+(`<plugari>@agent-skills-for-finnish-law`): `legislative-drafting`, `legislative-consultation`,
+`contracts`, `employment-law`, `data-protection`, `ai-regulation`, `administrative-law`,
+`dispute-resolution`, `company-law`, `insolvency`, `intellectual-property`,
+`taxation`, `public-procurement`, `criminal-procedure`, `environment-and-planning`,
+`real-estate-and-housing`, `competition-law`, `banking-and-finance`,
+`immigration-law`, `family-and-inheritance`, `consumer-law`, `criminal-law` ja
+`bilingual-legal-language`.
 Koko luettelo skilleineen: [SKILLS.md](SKILLS.md).
 
 Kun kysytään "this project / all projects", **valitse user scope.** Muuten plugari
@@ -46,7 +46,7 @@ mistä tahansa kansiosta.
 
 ## 4. Liitä lähdekonnektori (oik.ai tai laki.ai)
 
-`juristi`-plugarin `oikeustutkimus`-skill hakee voimassa olevan lain ja
+`legal-core`-plugarin `oikeustutkimus`-skill hakee voimassa olevan lain ja
 oikeuskäytännön suomalaisesta oikeuslähde-MCP:stä. Tuettuna on **kaksi
 vaihtoehtoa – valitse jompikumpi** (tai mikä tahansa yhteensopiva Finlex-MCP):
 
@@ -84,17 +84,17 @@ redlineäminen jälkimuutoksina) dokumenttiplugareissa ja **EU AI Act** (`@lexbe
 - "Sain tämän asiakirjan, mitä teen?" → `toimeksianto` (määräaikaskannaus ensin)
 - "Tarkista tämä sopimus" → `asiakirjan-tarkistus`
 - "Mitä kuntalaki sanoo toimivallan siirrosta? Onko KHO-käytäntöä?" → `oikeustutkimus`
-- "Korjaa tämän pykäläviittauksen muoto" → `juristi`
-- "Laadi muutos kuntalain 7 §:ään ja sen perustelut HE-muotoon" → `lainvalmistelu`
+- "Korjaa tämän pykäläviittauksen muoto" → `legal-core`
+- "Laadi muutos kuntalain 7 §:ään ja sen perustelut HE-muotoon" → `legislative-drafting`
 - "Käy tämä osakassopimusluonnos läpi" → `osakassopimus`
 - "Asiakas ei maksa laskuja – mitä vaihtoehtoja?" → `saatavien-perinta` / `maksukyvyttomyysarvio`
 
 ## Organisaatiokäyttöön
 
 Ennen kuin viet työkaluun asiakas- tai toimeksiantoaineistoa, käy läpi
-[käyttöönotto-opas](references/kayttoonotto-toimistossa.md): aineistolinjaus,
+[käyttöönotto-opas](references/firm-adoption.md): aineistolinjaus,
 käsittelysopimus (GDPR 28 art), anonymisointi (PII Shield), tarkistusketju ja
-pilotointi [esimerkkiaineistoilla](esimerkkiaineistot/). Talon käytännöt
+pilotointi [esimerkkiaineistoilla](examples/). Talon käytännöt
 kirjataan `juristi:kaytantoprofiili`-skillillä.
 
 ## Muista

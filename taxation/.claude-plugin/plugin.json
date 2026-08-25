@@ -1,0 +1,8 @@
+{
+  "name": "taxation",
+  "version": "0.1.0",
+  "description": "Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku (VML 1558/1995), yritysverotus (EVL 360/1968) yritysjärjestelyineen sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä — ei muistista.",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

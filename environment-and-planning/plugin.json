@@ -1,0 +1,9 @@
+{
+  "name": "environment-and-planning",
+  "displayName": "Ympäristö ja kaavoitus",
+  "version": "0.1.0",
+  "description": "Suomen ympäristö- ja kaavoitusoikeus: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen uuden rakentamislain (751/2023) ja alueidenkäyttölain mukaan sekä ympäristövastuut transaktioissa. Huomioi 2026 aluehallintouudistuksen (Lupa- ja valvontavirasto).",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "employment-law",
+  "displayName": "Työoikeus",
+  "version": "0.1.0",
+  "description": "Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

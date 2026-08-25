@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Varmistaa, että generoidut tiedostot ovat ajan tasalla työpuussa:
 #  - SKILLS.md (scripts/generate-skills-md.mjs)
-#  - harnessiadapterit (scripts/generate-codex.mjs): Claude- ja Codex-
+#  - harnessiadapterit (scripts/generate-adapters.mjs): Claude- ja Codex-
 #    markkinapaikat, plugarimanifestit, .mcp.json-kuoret ja openai.yamlit
 # Lähteet ovat marketplace.json, <plugari>/plugin.json ja <plugari>/mcp.json.
 # Sama tarkistus ajetaan CI:ssä (validate.yml, release.yml) ja sen voi ajaa
@@ -24,16 +24,16 @@ CODEX_PATHS=(
   '*/skills/*/agents/openai.yaml'
 )
 
-node scripts/generate-codex.mjs
+node scripts/generate-adapters.mjs
 git diff --exit-code -- "${CODEX_PATHS[@]}" || {
-  echo "Adapterit eivät ole ajan tasalla. Aja: node scripts/generate-codex.mjs"
+  echo "Adapterit eivät ole ajan tasalla. Aja: node scripts/generate-adapters.mjs"
   exit 1
 }
 untracked="$(git ls-files --others --exclude-standard -- "${CODEX_PATHS[@]}")"
 if [ -n "$untracked" ]; then
   echo "Adapterien generointi loi commitista puuttuvia tiedostoja:"
   echo "$untracked"
-  echo "Aja: node scripts/generate-codex.mjs ja lisää tiedostot committiin."
+  echo "Aja: node scripts/generate-adapters.mjs ja lisää tiedostot committiin."
   exit 1
 fi
 

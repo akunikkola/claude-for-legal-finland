@@ -1,9 +1,0 @@
-{
-  "name": "yhtiooikeus",
-  "displayName": "Yhtiöoikeus",
-  "version": "0.1.0",
-  "description": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset ja yritysjärjestelyt.",
-  "author": {
-    "name": "Aku Nikkola"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "name": "pankki-ja-rahoitus",
-  "displayName": "Pankki ja rahoitus",
-  "version": "0.1.0",
-  "description": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset ja vakuudet (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun ja terrorismin rahoittamisen estäminen (444/2017) sekä arvopaperimarkkinasääntely ja listayhtiön velvoitteet (AML 746/2012, MAR).",
-  "author": {
-    "name": "Aku Nikkola"
-  }
-}

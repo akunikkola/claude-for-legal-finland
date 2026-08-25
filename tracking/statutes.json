@@ -1,0 +1,426 @@
+{
+  "kuvaus": "Repon plugareissa varmistetuiksi merkityt säädökset. scripts/check-statutes.mjs vertaa kunkin numeron Finlex-otsikkoa odotettuun nimeen ja hälyttää, jos nimi muuttuu (vrt. MRL → alueidenkäyttölaki). Päivitä, kun plugariin lisätään uusi varmistettu säädös.",
+  "saadokset": [
+    {
+      "numero": "731/1999",
+      "nimi": "Suomen perustuslaki"
+    },
+    {
+      "numero": "410/2015",
+      "nimi": "Kuntalaki"
+    },
+    {
+      "numero": "434/2003",
+      "nimi": "Hallintolaki"
+    },
+    {
+      "numero": "808/2019",
+      "nimi": "Laki oikeudenkäynnistä hallintoasioissa"
+    },
+    {
+      "numero": "621/1999",
+      "nimi": "Laki viranomaisten toiminnan julkisuudesta"
+    },
+    {
+      "numero": "1030/1999",
+      "nimi": "Asetus viranomaisten toiminnan julkisuudesta"
+    },
+    {
+      "numero": "906/2019",
+      "nimi": "Laki julkisen hallinnon tiedonhallinnasta"
+    },
+    {
+      "numero": "55/2001",
+      "nimi": "Työsopimuslaki"
+    },
+    {
+      "numero": "1333/2021",
+      "nimi": "Yhteistoimintalaki"
+    },
+    {
+      "numero": "759/2004",
+      "nimi": "Laki yksityisyyden suojasta työelämässä"
+    },
+    {
+      "numero": "1050/2018",
+      "nimi": "Tietosuojalaki"
+    },
+    {
+      "numero": "228/1929",
+      "nimi": "Laki varallisuusoikeudellisista oikeustoimista"
+    },
+    {
+      "numero": "355/1987",
+      "nimi": "Kauppalaki"
+    },
+    {
+      "numero": "38/1978",
+      "nimi": "Kuluttajansuojalaki"
+    },
+    {
+      "numero": "967/1992",
+      "nimi": "Laki välimiesmenettelystä"
+    },
+    {
+      "numero": "673/2016",
+      "nimi": "Tuomioistuinlaki"
+    },
+    {
+      "numero": "665/2005",
+      "nimi": "Laki korkeimmasta oikeudesta"
+    },
+    {
+      "numero": "150/1930",
+      "nimi": "Laki säädettyjen määräaikain laskemisesta"
+    },
+    {
+      "numero": "624/2006",
+      "nimi": "Osakeyhtiölaki"
+    },
+    {
+      "numero": "564/2023",
+      "nimi": "Kaupparekisterilaki"
+    },
+    {
+      "numero": "389/1988",
+      "nimi": "Laki avoimesta yhtiöstä ja kommandiittiyhtiöstä"
+    },
+    {
+      "numero": "421/2013",
+      "nimi": "Osuuskuntalaki"
+    },
+    {
+      "numero": "1141/2015",
+      "nimi": "Tilintarkastuslaki"
+    },
+    {
+      "numero": "948/2011",
+      "nimi": "Kilpailulaki"
+    },
+    {
+      "numero": "1077/2016",
+      "nimi": "Laki kilpailuoikeudellisista vahingonkorvauksista"
+    },
+    {
+      "numero": "120/2004",
+      "nimi": "Konkurssilaki"
+    },
+    {
+      "numero": "47/1993",
+      "nimi": "Laki yrityksen saneerauksesta"
+    },
+    {
+      "numero": "57/1993",
+      "nimi": "Laki yksityishenkilön velkajärjestelystä"
+    },
+    {
+      "numero": "705/2007",
+      "nimi": "Ulosottokaari"
+    },
+    {
+      "numero": "728/2003",
+      "nimi": "Laki velan vanhentumisesta"
+    },
+    {
+      "numero": "513/1999",
+      "nimi": "Laki saatavien perinnästä"
+    },
+    {
+      "numero": "1578/1992",
+      "nimi": "Laki velkojien maksunsaantijärjestyksestä"
+    },
+    {
+      "numero": "758/1991",
+      "nimi": "Laki takaisinsaannista konkurssipesään"
+    },
+    {
+      "numero": "544/2019",
+      "nimi": "Tavaramerkkilaki"
+    },
+    {
+      "numero": "404/1961",
+      "nimi": "Tekijänoikeuslaki"
+    },
+    {
+      "numero": "550/1967",
+      "nimi": "Patenttilaki"
+    },
+    {
+      "numero": "595/2018",
+      "nimi": "Liikesalaisuuslaki"
+    },
+    {
+      "numero": "221/1971",
+      "nimi": "Mallioikeuslaki"
+    },
+    {
+      "numero": "1061/1978",
+      "nimi": "Laki sopimattomasta menettelystä elinkeinotoiminnassa"
+    },
+    {
+      "numero": "800/1991",
+      "nimi": "Laki hyödyllisyysmallioikeudesta"
+    },
+    {
+      "numero": "128/1979",
+      "nimi": "Toiminimilaki"
+    },
+    {
+      "numero": "656/1967",
+      "nimi": "Laki oikeudesta työntekijän tekemiin keksintöihin"
+    },
+    {
+      "numero": "1535/1992",
+      "nimi": "Tuloverolaki"
+    },
+    {
+      "numero": "360/1968",
+      "nimi": "Laki elinkeinotulon verottamisesta"
+    },
+    {
+      "numero": "1501/1993",
+      "nimi": "Arvonlisäverolaki"
+    },
+    {
+      "numero": "1558/1995",
+      "nimi": "Laki verotusmenettelystä"
+    },
+    {
+      "numero": "768/2016",
+      "nimi": "Laki oma-aloitteisten verojen verotusmenettelystä"
+    },
+    {
+      "numero": "931/1996",
+      "nimi": "Varainsiirtoverolaki"
+    },
+    {
+      "numero": "378/1940",
+      "nimi": "Perintö- ja lahjaverolaki"
+    },
+    {
+      "numero": "1118/1996",
+      "nimi": "Ennakkoperintälaki"
+    },
+    {
+      "numero": "825/1986",
+      "nimi": "Laki konserniavustuksesta verotuksessa"
+    },
+    {
+      "numero": "503/2010",
+      "nimi": "Laki Verohallinnosta"
+    },
+    {
+      "numero": "1397/2016",
+      "nimi": "Laki julkisista hankinnoista ja käyttöoikeussopimuksista"
+    },
+    {
+      "numero": "1398/2016",
+      "nimi": "Laki vesi- ja energiahuollon, liikenteen ja postipalvelujen"
+    },
+    {
+      "numero": "1531/2011",
+      "nimi": "Laki julkisista puolustus- ja turvallisuushankinnoista"
+    },
+    {
+      "numero": "689/1997",
+      "nimi": "Laki oikeudenkäynnistä rikosasioissa"
+    },
+    {
+      "numero": "805/2011",
+      "nimi": "Esitutkintalaki"
+    },
+    {
+      "numero": "806/2011",
+      "nimi": "Pakkokeinolaki"
+    },
+    {
+      "numero": "39/1889",
+      "nimi": "Rikoslaki",
+      "docId": "18890039001"
+    },
+    {
+      "numero": "257/2002",
+      "nimi": "Oikeusapulaki"
+    },
+    {
+      "numero": "412/1974",
+      "nimi": "Vahingonkorvauslaki"
+    },
+    {
+      "numero": "1204/2005",
+      "nimi": "Rikosvahinkolaki"
+    },
+    {
+      "numero": "898/1998",
+      "nimi": "Laki lähestymiskiellosta"
+    },
+    {
+      "numero": "527/2014",
+      "nimi": "Ympäristönsuojelulaki"
+    },
+    {
+      "numero": "132/1999",
+      "nimi": "Alueidenkäyttölaki"
+    },
+    {
+      "numero": "751/2023",
+      "nimi": "Rakentamislaki"
+    },
+    {
+      "numero": "9/2023",
+      "nimi": "Luonnonsuojelulaki"
+    },
+    {
+      "numero": "587/2011",
+      "nimi": "Vesilaki"
+    },
+    {
+      "numero": "646/2011",
+      "nimi": "Jätelaki"
+    },
+    {
+      "numero": "252/2017",
+      "nimi": "Laki ympäristövaikutusten arviointimenettelystä"
+    },
+    {
+      "numero": "737/1994",
+      "nimi": "Laki ympäristövahinkojen korvaamisesta"
+    },
+    {
+      "numero": "540/1995",
+      "nimi": "Maakaari"
+    },
+    {
+      "numero": "843/1994",
+      "nimi": "Asuntokauppalaki"
+    },
+    {
+      "numero": "481/1995",
+      "nimi": "Laki asuinhuoneiston vuokrauksesta"
+    },
+    {
+      "numero": "482/1995",
+      "nimi": "Laki liikehuoneiston vuokrauksesta"
+    },
+    {
+      "numero": "1599/2009",
+      "nimi": "Asunto-osakeyhtiölaki"
+    },
+    {
+      "numero": "1074/2000",
+      "nimi": "Laki kiinteistöjen ja vuokrahuoneistojen välityksestä"
+    },
+    {
+      "numero": "554/1995",
+      "nimi": "Kiinteistönmuodostamislaki"
+    },
+    {
+      "numero": "622/1947",
+      "nimi": "Velkakirjalaki"
+    },
+    {
+      "numero": "361/1999",
+      "nimi": "Laki takauksesta ja vierasvelkapanttauksesta"
+    },
+    {
+      "numero": "633/1982",
+      "nimi": "Korkolaki"
+    },
+    {
+      "numero": "444/2017",
+      "nimi": "Laki rahanpesun ja terrorismin rahoittamisen estämisestä"
+    },
+    {
+      "numero": "746/2012",
+      "nimi": "Arvopaperimarkkinalaki"
+    },
+    {
+      "numero": "610/2014",
+      "nimi": "Laki luottolaitostoiminnasta"
+    },
+    {
+      "numero": "301/2004",
+      "nimi": "Ulkomaalaislaki"
+    },
+    {
+      "numero": "447/2016",
+      "nimi": "Laki työntekijöiden lähettämisestä"
+    },
+    {
+      "numero": "359/2003",
+      "nimi": "Kansalaisuuslaki"
+    },
+    {
+      "numero": "694/1990",
+      "nimi": "Tuotevastuulaki"
+    },
+    {
+      "numero": "715/2011",
+      "nimi": "Laki luvan saaneista oikeudenkäyntiavustajista"
+    },
+    {
+      "numero": "496/1958",
+      "nimi": "Laki asianajajista"
+    },
+    {
+      "numero": "119/2001",
+      "nimi": "Vesihuoltolaki"
+    },
+    {
+      "numero": "234/1929",
+      "nimi": "Avioliittolaki"
+    },
+    {
+      "numero": "26/2011",
+      "nimi": "Laki avopuolisoiden yhteistalouden purkamisesta"
+    },
+    {
+      "numero": "361/1983",
+      "nimi": "Laki lapsen huollosta ja tapaamisoikeudesta"
+    },
+    {
+      "numero": "704/1975",
+      "nimi": "Laki lapsen elatuksesta"
+    },
+    {
+      "numero": "40/1965",
+      "nimi": "Perintökaari"
+    },
+    {
+      "numero": "442/1999",
+      "nimi": "Laki holhoustoimesta"
+    },
+    {
+      "numero": "648/2007",
+      "nimi": "Laki edunvalvontavaltuutuksesta"
+    },
+    {
+      "numero": "8/2007",
+      "nimi": "Laki kuluttajariitalautakunnasta"
+    },
+    {
+      "numero": "661/2012",
+      "nimi": "Laki Kilpailu- ja kuluttajavirastosta"
+    },
+    {
+      "numero": "754/2010",
+      "nimi": "Laki sakon ja rikesakon määräämisestä"
+    },
+    {
+      "numero": "423/2003",
+      "nimi": "Kielilaki"
+    },
+    {
+      "numero": "1086/2003",
+      "nimi": "Saamen kielilaki"
+    },
+    {
+      "numero": "424/2003",
+      "nimi": "Laki julkisyhteisöjen henkilöstöltä vaadittavasta kielitaidosta"
+    },
+    {
+      "numero": "775/2022",
+      "nimi": "Vanhemmuuslaki"
+    }
+  ]
+}

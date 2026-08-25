@@ -1,0 +1,23 @@
+name: Säädösvahti
+
+# Tarkistaa kuukausittain, että repon varmistetut säädökset ovat yhä
+# Finlexissä odotetuilla nimillään (tracking/statutes.json). Nimen
+# muutos kaataa ajon → issue/ilmoitus kertoo, mikä plugari on
+# vanhentumassa. Vrt. MRL → alueidenkäyttölaki, kaupparekisterilaki
+# 129/1979 → 564/2023.
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # kuukauden 1. päivä klo 06 UTC
+  workflow_dispatch:
+
+jobs:
+  tarkista:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+      - name: Tarkista säädösten nimet Finlexistä
+        run: node scripts/check-statutes.mjs

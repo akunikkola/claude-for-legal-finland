@@ -1,0 +1,33 @@
+{
+  "name": "legal-core",
+  "version": "0.1.0",
+  "description": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli, pykäläviittaukset, suomen kieli, oikeustutkimus (Finlex/oik.ai) ja juridisen asiakirjan tarkistus.",
+  "author": {
+    "name": "Aku Nikkola"
+  },
+  "homepage": "https://github.com/ragmha/agent-skills-for-finnish-law/tree/main/legal-core",
+  "repository": "https://github.com/ragmha/agent-skills-for-finnish-law",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "finland",
+    "finnish-law",
+    "legal-core"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Juristi – perusta",
+    "shortDescription": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli, pykäläviittaukset, suomen kieli, oikeustutkimus (Finlex/oik.ai) ja juridisen asiakirjan tarkis…",
+    "longDescription": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykäläviittaukset, suomen kielen oikeinkirjoitus, oikeustutkimus voimassa olevasta laista ja oikeuskäytännöstä (Finlex/oik.ai-MCP), sekä juridisen asiakirjan monivaiheinen tarkistus. Pohja, johon muut käytäntöaluekohtaiset plugarit nojaavat.",
+    "developerName": "Aku Nikkola",
+    "category": "Legal",
+    "capabilities": [
+      "Skills",
+      "MCP"
+    ],
+    "defaultPrompt": [
+      "Käytä Juristi – perusta -plugaria Suomen oikeuden tehtävään."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

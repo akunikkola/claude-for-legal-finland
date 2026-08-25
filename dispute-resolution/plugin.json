@@ -1,0 +1,9 @@
+{
+  "name": "dispute-resolution",
+  "displayName": "Riidanratkaisu",
+  "version": "0.1.0",
+  "description": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa). Sisältää vaihtoehtoisen riidanratkaisun perusteet.",
+  "author": {
+    "name": "Aku Nikkola"
+  }
+}

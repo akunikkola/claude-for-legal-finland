@@ -17,7 +17,7 @@ A collection of [Agent Skills](https://agentskills.io/specification.md) for Finn
 Finlex. Each domain is a self-contained bundle — copy `<domain>/skills/*` into any harness that
 reads the Agent Skills format and it works, with no plugin system required.
 
-This is a hard fork of [`akunikkola/claude-for-legal-finland`](https://github.com/akunikkola/claude-for-legal-finland),
+This is a hard fork of [`akunikkola/agent-skills-for-finnish-law`](https://github.com/akunikkola/agent-skills-for-finnish-law),
 translated to English and de-vendored. See **Fork provenance** below.
 
 ---
@@ -87,7 +87,7 @@ CI runs exactly these three, so locally green means green in CI.
 Generators:
 
 ```bash
-node scripts/generate-codex.mjs      # all harness adapters
+node scripts/generate-adapters.mjs      # all harness adapters
 node scripts/generate-skills-md.mjs  # SKILLS.md
 ```
 
@@ -139,7 +139,7 @@ node scripts/apply-rename.mjs --dry-run
 
 | | |
 |---|---|
-| Upstream | `https://github.com/akunikkola/claude-for-legal-finland` |
+| Upstream | `https://github.com/akunikkola/agent-skills-for-finnish-law` |
 | Forked at | `6294330` |
 | Last ported upstream commit | `6294330` |
 
@@ -171,7 +171,7 @@ commit. It is the only record of where the fork stands.
 ### Codex
 
 ```bash
-node scripts/generate-codex.mjs
+node scripts/generate-adapters.mjs
 codex plugin marketplace add .
 codex plugin add legal-core@agent-skills-for-finnish-law
 ```
