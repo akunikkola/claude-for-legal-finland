@@ -1,0 +1,934 @@
+{
+  "description": "Per-file multiset of citation tokens, taken before translation. scripts/check-citations.mjs diffs the live tree against this so a statute number, case identifier or preparatory-works reference that is dropped or altered during translation fails CI instead of shipping. Regenerate only when a citation is INTENTIONALLY changed, and say why in the commit.",
+  "takenAt": "2026-08-25",
+  "files": {
+    "administrative-law/agents/confidentiality-assessor.md": {
+      "621/1999": 2
+    },
+    "administrative-law/AGENTS.md": {
+      "410/2015": 2,
+      "434/2003": 1,
+      "808/2019": 1,
+      "586/1996": 2,
+      "621/1999": 1
+    },
+    "administrative-law/README.md": {
+      "434/2003": 2,
+      "808/2019": 2,
+      "621/1999": 3,
+      "586/1996": 1,
+      "410/2015": 1
+    },
+    "administrative-law/skills/administrative-appeal/SKILL.md": {
+      "808/2019": 6,
+      "423/2003": 1,
+      "410/2015": 1,
+      "586/1996": 1
+    },
+    "administrative-law/skills/administrative-decision/references/administrative-law-fundamentals.md": {
+      "434/2003": 2,
+      "808/2019": 2,
+      "586/1996": 1,
+      "621/1999": 1,
+      "410/2015": 1,
+      "1050/2018": 1
+    },
+    "administrative-law/skills/administrative-decision/SKILL.md": {
+      "434/2003": 4,
+      "423/2003": 1,
+      "410/2015": 2
+    },
+    "administrative-law/skills/public-access-and-information-requests/SKILL.md": {
+      "621/1999": 5
+    },
+    "administrative-law/templates/request-for-rectification.md": {
+      "423/2003": 1
+    },
+    "agent-recipes/citation-audit/README.md": {
+      "11/2015": 1,
+      "253/2018": 1,
+      "775/2022": 1
+    },
+    "agent-recipes/statute-watch/README.md": {
+      "55/2001": 3,
+      "1397/2016": 1,
+      "751/2023": 1,
+      "11/2015": 1,
+      "775/2022": 1
+    },
+    "AGENTS.md": {
+      "55/2001": 2,
+      "268/2014": 1,
+      "410/2015": 1,
+      "KKO:2019:42": 1,
+      "HE 268/2014 vp": 1
+    },
+    "banking-and-finance/AGENTS.md": {
+      "610/2014": 1,
+      "444/2017": 1,
+      "361/1999": 1
+    },
+    "banking-and-finance/README.md": {
+      "622/1947": 2,
+      "633/1982": 2,
+      "361/1999": 2,
+      "444/2017": 2,
+      "746/2012": 2,
+      "610/2014": 1
+    },
+    "banking-and-finance/skills/anti-money-laundering/SKILL.md": {
+      "444/2017": 3
+    },
+    "banking-and-finance/skills/financing-and-collateral/references/finance-fundamentals.md": {
+      "622/1947": 1,
+      "633/1982": 1,
+      "361/1999": 2,
+      "610/2014": 1,
+      "444/2017": 1,
+      "746/2012": 1,
+      "596/2014": 1,
+      "758/1991": 1
+    },
+    "banking-and-finance/skills/financing-and-collateral/SKILL.md": {
+      "622/1947": 2,
+      "633/1982": 2,
+      "361/1999": 2,
+      "1578/1992": 1,
+      "758/1991": 1
+    },
+    "banking-and-finance/skills/securities-markets/SKILL.md": {
+      "746/2012": 3
+    },
+    "bilingual-legal-language/AGENTS.md": {
+      "423/2003": 2,
+      "1086/2003": 1
+    },
+    "bilingual-legal-language/README.md": {
+      "423/2003": 2,
+      "731/1999": 2,
+      "424/2003": 2,
+      "1086/2003": 2
+    },
+    "bilingual-legal-language/skills/language-rights-and-obligations/SKILL.md": {
+      "423/2003": 2,
+      "731/1999": 2,
+      "424/2003": 3,
+      "1086/2003": 3
+    },
+    "bilingual-legal-language/skills/legal-translation/references/bilingual-language-fundamentals.md": {
+      "731/1999": 1,
+      "423/2003": 1,
+      "424/2003": 1,
+      "1086/2003": 1
+    },
+    "company-law/AGENTS.md": {
+      "624/2006": 1,
+      "564/2023": 1,
+      "129/1979": 1,
+      "1337/2022": 1
+    },
+    "company-law/README.md": {
+      "624/2006": 2,
+      "564/2023": 1,
+      "129/1979": 1,
+      "948/2011": 1,
+      "389/1988": 1,
+      "421/2013": 1,
+      "1141/2015": 1,
+      "228/1929": 1
+    },
+    "company-law/skills/corporate-governance/references/company-law-fundamentals.md": {
+      "624/2006": 1,
+      "564/2023": 2,
+      "129/1979": 1,
+      "389/1988": 3,
+      "421/2013": 2,
+      "1141/2015": 2,
+      "948/2011": 1,
+      "128/1979": 1,
+      "1337/2022": 1
+    },
+    "company-law/skills/corporate-governance/SKILL.md": {
+      "624/2006": 2,
+      "423/2003": 1,
+      "564/2023": 1,
+      "128/1979": 1
+    },
+    "company-law/skills/corporate-transactions/SKILL.md": {
+      "624/2006": 1,
+      "564/2023": 2,
+      "948/2011": 2,
+      "1337/2022": 1
+    },
+    "company-law/skills/shareholders-agreement/SKILL.md": {
+      "228/1929": 1,
+      "624/2006": 1,
+      "967/1992": 1
+    },
+    "competition-law/AGENTS.md": {
+      "948/2011": 1
+    },
+    "competition-law/README.md": {
+      "948/2011": 2,
+      "1077/2016": 2
+    },
+    "competition-law/skills/merger-control/SKILL.md": {
+      "948/2011": 2,
+      "423/2003": 1
+    },
+    "competition-law/skills/restrictive-practices/references/competition-law-fundamentals.md": {
+      "948/2011": 2,
+      "1077/2016": 4
+    },
+    "competition-law/skills/restrictive-practices/SKILL.md": {
+      "948/2011": 2,
+      "1077/2016": 1
+    },
+    "consumer-law/AGENTS.md": {
+      "38/1978": 1,
+      "355/1987": 1,
+      "513/1999": 1
+    },
+    "consumer-law/README.md": {
+      "38/1978": 2,
+      "8/2007": 2,
+      "513/1999": 2,
+      "633/1982": 2,
+      "661/2012": 1
+    },
+    "consumer-law/skills/consumer-disputes-and-collection/SKILL.md": {
+      "8/2007": 2,
+      "661/2012": 1,
+      "513/1999": 3,
+      "423/2003": 1,
+      "633/1982": 1
+    },
+    "consumer-law/skills/consumer-sales-liability/references/consumer-law-fundamentals.md": {
+      "38/1978": 1,
+      "8/2007": 2,
+      "661/2012": 2,
+      "513/1999": 1,
+      "633/1982": 1,
+      "355/1987": 1
+    },
+    "consumer-law/skills/consumer-sales-liability/SKILL.md": {
+      "38/1978": 2
+    },
+    "consumer-law/skills/distance-selling-and-withdrawal/SKILL.md": {
+      "38/1978": 1
+    },
+    "contracts/AGENTS.md": {
+      "38/1978": 2,
+      "228/1929": 1,
+      "355/1987": 1
+    },
+    "contracts/README.md": {
+      "228/1929": 1,
+      "355/1987": 1,
+      "38/1978": 1
+    },
+    "contracts/skills/contract-drafting/references/contract-clauses.md": {
+      "228/1929": 1
+    },
+    "contracts/skills/contract-drafting/references/contract-law.md": {
+      "228/1929": 2,
+      "355/1987": 1,
+      "38/1978": 1
+    },
+    "contracts/skills/contract-drafting/SKILL.md": {
+      "228/1929": 1
+    },
+    "contracts/skills/contract-review/SKILL.md": {
+      "38/1978": 1,
+      "228/1929": 2
+    },
+    "CONTRIBUTING.md": {
+      "410/2015": 1
+    },
+    "criminal-law/README.md": {
+      "754/2010": 1
+    },
+    "criminal-law/skills/sentencing/SKILL.md": {
+      "754/2010": 1
+    },
+    "criminal-procedure/AGENTS.md": {
+      "257/2002": 1
+    },
+    "criminal-procedure/README.md": {
+      "805/2011": 2,
+      "806/2011": 2,
+      "689/1997": 2,
+      "412/1974": 2,
+      "1204/2005": 2,
+      "898/1998": 2,
+      "257/2002": 1
+    },
+    "criminal-procedure/skills/charges-and-response/SKILL.md": {
+      "689/1997": 2,
+      "423/2003": 1
+    },
+    "criminal-procedure/skills/injured-party-rights/SKILL.md": {
+      "423/2003": 1,
+      "412/1974": 2,
+      "1204/2005": 2,
+      "257/2002": 1,
+      "898/1998": 1
+    },
+    "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md": {
+      "805/2011": 1,
+      "806/2011": 1,
+      "689/1997": 1,
+      "257/2002": 1,
+      "412/1974": 1,
+      "1204/2005": 1,
+      "898/1998": 1
+    },
+    "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/SKILL.md": {
+      "805/2011": 1,
+      "806/2011": 1,
+      "257/2002": 1,
+      "423/2003": 1
+    },
+    "data-protection/AGENTS.md": {
+      "1050/2018": 1,
+      "523/1999": 1,
+      "759/2004": 1
+    },
+    "data-protection/README.md": {
+      "1050/2018": 2,
+      "759/2004": 1
+    },
+    "data-protection/skills/data-protection-assessment/references/data-protection-fundamentals.md": {
+      "1050/2018": 1,
+      "759/2004": 1
+    },
+    "data-protection/skills/data-protection-assessment/SKILL.md": {
+      "1050/2018": 3,
+      "759/2004": 1
+    },
+    "data-protection/skills/data-subject-requests/SKILL.md": {
+      "1050/2018": 1
+    },
+    "data-protection/skills/privacy-notice/SKILL.md": {
+      "1050/2018": 1
+    },
+    "dispute-resolution/AGENTS.md": {
+      "673/2016": 1,
+      "967/1992": 1
+    },
+    "dispute-resolution/README.md": {
+      "412/1974": 1,
+      "673/2016": 1,
+      "967/1992": 1
+    },
+    "dispute-resolution/skills/appeal-against-judgment/SKILL.md": {
+      "423/2003": 1
+    },
+    "dispute-resolution/skills/damages/SKILL.md": {
+      "412/1974": 3,
+      "728/2003": 1,
+      "694/1990": 1,
+      "737/1994": 1,
+      "633/1982": 1
+    },
+    "dispute-resolution/skills/statement-of-claim/references/dispute-resolution-fundamentals.md": {
+      "673/2016": 2,
+      "665/2005": 1,
+      "967/1992": 2
+    },
+    "dispute-resolution/skills/statement-of-claim/SKILL.md": {
+      "423/2003": 1
+    },
+    "dispute-resolution/templates/statement-of-claim.md": {
+      "423/2003": 1
+    },
+    "employment-law/AGENTS.md": {
+      "1333/2021": 1,
+      "334/2007": 2
+    },
+    "employment-law/README.md": {
+      "55/2001": 2,
+      "1333/2021": 2,
+      "334/2007": 1,
+      "759/2004": 1
+    },
+    "employment-law/skills/change-negotiations/SKILL.md": {
+      "1333/2021": 5,
+      "334/2007": 3
+    },
+    "employment-law/skills/employment-contract/references/employment-law-fundamentals.md": {
+      "55/2001": 2,
+      "1333/2021": 2,
+      "334/2007": 1,
+      "759/2004": 1
+    },
+    "employment-law/skills/employment-contract/SKILL.md": {
+      "55/2001": 3
+    },
+    "employment-law/skills/termination-of-employment/SKILL.md": {
+      "55/2001": 2,
+      "1333/2021": 1
+    },
+    "environment-and-planning/AGENTS.md": {
+      "751/2023": 1,
+      "132/1999": 1,
+      "9/2023": 1,
+      "1096/1996": 1
+    },
+    "environment-and-planning/README.md": {
+      "751/2023": 3,
+      "9/2023": 2,
+      "527/2014": 2,
+      "252/2017": 2,
+      "132/1999": 2,
+      "737/1994": 2,
+      "1096/1996": 1,
+      "587/2011": 1,
+      "646/2011": 1,
+      "808/2019": 1
+    },
+    "environment-and-planning/skills/environmental-liability/SKILL.md": {
+      "527/2014": 2,
+      "737/1994": 3
+    },
+    "environment-and-planning/skills/environmental-permits-and-supervision/references/environmental-law-fundamentals.md": {
+      "527/2014": 1,
+      "132/1999": 1,
+      "751/2023": 3,
+      "9/2023": 2,
+      "1096/1996": 1,
+      "587/2011": 1,
+      "646/2011": 1,
+      "252/2017": 2,
+      "737/1994": 1
+    },
+    "environment-and-planning/skills/environmental-permits-and-supervision/SKILL.md": {
+      "527/2014": 2,
+      "423/2003": 1,
+      "587/2011": 1,
+      "252/2017": 1,
+      "9/2023": 1
+    },
+    "environment-and-planning/skills/land-use-planning-and-construction/SKILL.md": {
+      "132/1999": 2,
+      "751/2023": 3,
+      "423/2003": 1,
+      "410/2015": 1
+    },
+    "family-and-inheritance/AGENTS.md": {
+      "775/2022": 1
+    },
+    "family-and-inheritance/README.md": {
+      "234/1929": 2,
+      "26/2011": 2,
+      "361/1983": 2,
+      "704/1975": 2,
+      "775/2022": 2,
+      "40/1965": 2,
+      "648/2007": 2,
+      "442/1999": 2,
+      "11/2015": 1,
+      "253/2018": 1
+    },
+    "family-and-inheritance/skills/child-status-and-maintenance/SKILL.md": {
+      "361/1983": 2,
+      "704/1975": 2,
+      "775/2022": 2,
+      "423/2003": 1,
+      "11/2015": 1,
+      "253/2018": 1
+    },
+    "family-and-inheritance/skills/guardianship-and-powers-of-attorney/SKILL.md": {
+      "442/1999": 4,
+      "648/2007": 3,
+      "423/2003": 1
+    },
+    "family-and-inheritance/skills/inheritance-and-wills/references/inheritance-code-fundamentals.md": {
+      "40/1965": 1
+    },
+    "family-and-inheritance/skills/inheritance-and-wills/SKILL.md": {
+      "40/1965": 2,
+      "423/2003": 1
+    },
+    "family-and-inheritance/skills/marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md": {
+      "234/1929": 1,
+      "26/2011": 2,
+      "361/1983": 1,
+      "704/1975": 1,
+      "775/2022": 1,
+      "11/2015": 1,
+      "253/2018": 1,
+      "40/1965": 1,
+      "442/1999": 1,
+      "648/2007": 1
+    },
+    "family-and-inheritance/skills/marriage-and-division-of-property/SKILL.md": {
+      "234/1929": 2,
+      "26/2011": 3,
+      "423/2003": 1
+    },
+    "family-and-inheritance/templates/will.md": {
+      "40/1965": 1
+    },
+    "immigration-law/AGENTS.md": {
+      "301/2004": 1
+    },
+    "immigration-law/README.md": {
+      "301/2004": 2,
+      "447/2016": 2,
+      "359/2003": 2,
+      "808/2019": 1
+    },
+    "immigration-law/skills/employer-obligations/SKILL.md": {
+      "301/2004": 1,
+      "447/2016": 3
+    },
+    "immigration-law/skills/eu-and-family-based-residence/SKILL.md": {
+      "301/2004": 2,
+      "359/2003": 3,
+      "423/2003": 1
+    },
+    "immigration-law/skills/work-based-residence-permits/references/immigration-law-fundamentals.md": {
+      "301/2004": 1,
+      "447/2016": 1,
+      "359/2003": 1
+    },
+    "immigration-law/skills/work-based-residence-permits/SKILL.md": {
+      "301/2004": 2,
+      "423/2003": 1
+    },
+    "insolvency/AGENTS.md": {
+      "150/1930": 1,
+      "47/1993": 1,
+      "513/1999": 1,
+      "758/1991": 1,
+      "57/1993": 1
+    },
+    "insolvency/README.md": {
+      "47/1993": 2,
+      "57/1993": 2,
+      "120/2004": 2,
+      "1578/1992": 2,
+      "758/1991": 2,
+      "513/1999": 2,
+      "728/2003": 2,
+      "705/2007": 2
+    },
+    "insolvency/skills/bankruptcy-proceedings/SKILL.md": {
+      "120/2004": 2,
+      "423/2003": 1,
+      "1578/1992": 1,
+      "758/1991": 2
+    },
+    "insolvency/skills/debt-collection/SKILL.md": {
+      "513/1999": 2,
+      "728/2003": 2,
+      "705/2007": 2
+    },
+    "insolvency/skills/insolvency-assessment/references/insolvency-fundamentals.md": {
+      "120/2004": 2,
+      "47/1993": 3,
+      "57/1993": 2,
+      "705/2007": 2,
+      "728/2003": 2,
+      "513/1999": 1,
+      "1578/1992": 3,
+      "758/1991": 2,
+      "624/2006": 1
+    },
+    "insolvency/skills/insolvency-assessment/SKILL.md": {
+      "47/1993": 2,
+      "120/2004": 1,
+      "57/1993": 1,
+      "758/1991": 1
+    },
+    "intellectual-property/AGENTS.md": {
+      "544/2019": 1,
+      "7/1964": 1,
+      "404/1961": 1
+    },
+    "intellectual-property/README.md": {
+      "544/2019": 2,
+      "128/1979": 2,
+      "404/1961": 2,
+      "595/2018": 2,
+      "550/1967": 1,
+      "221/1971": 1,
+      "800/1991": 1,
+      "1061/1978": 1,
+      "656/1967": 1
+    },
+    "intellectual-property/skills/copyright/SKILL.md": {
+      "404/1961": 2
+    },
+    "intellectual-property/skills/trade-secrets/SKILL.md": {
+      "595/2018": 2
+    },
+    "intellectual-property/skills/trademarks-and-trade-names/references/ip-fundamentals.md": {
+      "544/2019": 1,
+      "128/1979": 1,
+      "404/1961": 1,
+      "550/1967": 1,
+      "800/1991": 1,
+      "221/1971": 1,
+      "595/2018": 1,
+      "1061/1978": 1,
+      "656/1967": 1,
+      "123/2025": 1,
+      "MAO:123/2025": 1
+    },
+    "intellectual-property/skills/trademarks-and-trade-names/SKILL.md": {
+      "544/2019": 2,
+      "128/1979": 2,
+      "423/2003": 1,
+      "7/1964": 1
+    },
+    "legal-core/agents/deadline-scanner.md": {
+      "150/1930": 1
+    },
+    "legal-core/agents/source-checker.md": {
+      "55/2001": 2,
+      "410/2015": 4,
+      "268/2014": 1,
+      "365/1995": 2,
+      "129/1979": 1,
+      "564/2023": 1,
+      "751/2023": 1,
+      "523/1999": 1,
+      "1050/2018": 1,
+      "334/2007": 1,
+      "1333/2021": 1,
+      "586/1996": 1,
+      "808/2019": 1,
+      "1096/1996": 1,
+      "9/2023": 1,
+      "KKO:2024:15": 1,
+      "KHO:2023:42": 1,
+      "MAO:123/24": 1,
+      "HE 268/2014 vp": 1
+    },
+    "legal-core/AGENTS.md": {
+      "410/2015": 2,
+      "268/2014": 1,
+      "HE 268/2014 vp": 1
+    },
+    "legal-core/README.md": {
+      "150/1930": 1
+    },
+    "legal-core/skills/document-review/SKILL.md": {
+      "228/1929": 1
+    },
+    "legal-core/skills/engagement-intake/SKILL.md": {
+      "715/2011": 1,
+      "150/1930": 1
+    },
+    "legal-core/skills/legal-research/references/tools.md": {
+      "410/2015": 1,
+      "KKO:2024:15": 1
+    },
+    "legal-core/skills/legal-research/SKILL.md": {
+      "410/2015": 2,
+      "268/2014": 1,
+      "KKO:2024:15": 2,
+      "HE 268/2014 vp": 1
+    },
+    "legal-core/skills/legal-writing/references/citations.md": {
+      "410/2015": 2,
+      "731/1999": 1
+    },
+    "legal-core/skills/legal-writing/references/finnish-language.md": {
+      "410/2015": 1
+    },
+    "legal-core/skills/legal-writing/references/sources.md": {
+      "410/2015": 1,
+      "268/2014": 3,
+      "456/2024": 1,
+      "HE 268/2014 vp": 2
+    },
+    "legal-core/skills/legal-writing/references/structure.md": {
+      "731/1999": 1,
+      "410/2015": 1
+    },
+    "legal-core/skills/legal-writing/SKILL.md": {
+      "365/1995": 1,
+      "410/2015": 2
+    },
+    "legal-core/skills/tabular-review/references/column-templates.md": {
+      "481/1995": 1,
+      "482/1995": 1,
+      "55/2001": 1,
+      "1018/2021": 1,
+      "624/2006": 1,
+      "540/1995": 1,
+      "843/1994": 1,
+      "434/2003": 1
+    },
+    "legal-core/skills/tabular-review/SKILL.md": {
+      "55/2001": 1,
+      "1018/2021": 1
+    },
+    "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure-examples.md": {
+      "1234/2024": 1,
+      "410/2015": 1,
+      "434/2003": 1
+    },
+    "legislative-consultation/skills/consultation-statement-assistant/references/writing-guidelines.md": {
+      "119/2001": 2,
+      "123/2025": 1,
+      "HE 123/2025 vp": 1
+    },
+    "legislative-consultation/skills/consultation-statement-assistant/SKILL.md": {
+      "423/2003": 1
+    },
+    "legislative-drafting/AGENTS.md": {
+      "410/2015": 1
+    },
+    "legislative-drafting/skills/government-bill-guidelines/SKILL.md": {
+      "423/2003": 1
+    },
+    "legislative-drafting/skills/legal-language-guide/SKILL.md": {
+      "1015/2014": 1,
+      "808/2019": 1
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/references/citation.md": {
+      "410/2015": 23,
+      "1301/2014": 1,
+      "419/2021": 1,
+      "434/2003": 1
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/references/enacting-formula.md": {
+      "731/1999": 2,
+      "410/2015": 1,
+      "1552/2011": 1,
+      "419/2021": 1,
+      "1156/1993": 1,
+      "1015/2014": 1,
+      "150/1992": 1,
+      "348/1994": 1,
+      "1055/2024": 1,
+      "1144/1991": 1,
+      "1556/1994": 1,
+      "68/2004": 1,
+      "1088/2024": 1,
+      "94/1919": 1
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/references/types-of-statutes.md": {
+      "731/1999": 2
+    },
+    "legislative-drafting/skills/legislative-drafting-manual/SKILL.md": {
+      "423/2003": 1,
+      "731/1999": 1
+    },
+    "legislative-drafting/skills/legislative-process-guide/references/basic-preparation.md": {
+      "906/2019": 2,
+      "621/1999": 1,
+      "1030/1999": 1
+    },
+    "legislative-drafting/skills/legislative-process-guide/references/decision-making-and-parliament.md": {
+      "731/1999": 2,
+      "262/2003": 1,
+      "40/2000": 2,
+      "188/2000": 1
+    },
+    "legislative-drafting/skills/legislative-process-guide/SKILL.md": {
+      "731/1999": 2
+    },
+    "public-procurement/AGENTS.md": {
+      "621/1999": 1
+    },
+    "public-procurement/README.md": {
+      "1397/2016": 2,
+      "1398/2016": 1,
+      "1531/2011": 1
+    },
+    "public-procurement/skills/award-decision-and-remedies/SKILL.md": {
+      "1397/2016": 1,
+      "423/2003": 1
+    },
+    "public-procurement/skills/procurement-planning/references/procurement-fundamentals.md": {
+      "1397/2016": 1,
+      "1398/2016": 1,
+      "1531/2011": 1,
+      "621/1999": 1,
+      "410/2015": 1,
+      "948/2011": 1
+    },
+    "public-procurement/skills/procurement-planning/SKILL.md": {
+      "1397/2016": 2,
+      "423/2003": 1,
+      "1398/2016": 1
+    },
+    "public-procurement/skills/tender-documents-and-bids/SKILL.md": {
+      "1397/2016": 1,
+      "423/2003": 1
+    },
+    "README.md": {
+      "55/2001": 1,
+      "1333/2021": 1,
+      "434/2003": 1,
+      "808/2019": 1,
+      "621/1999": 1,
+      "624/2006": 1,
+      "120/2004": 1,
+      "47/1993": 1,
+      "57/1993": 1,
+      "544/2019": 1,
+      "128/1979": 1,
+      "404/1961": 1,
+      "595/2018": 1,
+      "1558/1995": 1,
+      "360/1968": 1,
+      "1501/1993": 1,
+      "1397/2016": 1,
+      "805/2011": 1,
+      "806/2011": 1,
+      "689/1997": 1,
+      "527/2014": 1,
+      "751/2023": 1,
+      "540/1995": 1,
+      "843/1994": 1,
+      "1599/2009": 1,
+      "482/1995": 1,
+      "948/2011": 1,
+      "622/1947": 1,
+      "361/1999": 1,
+      "444/2017": 1,
+      "746/2012": 1,
+      "301/2004": 1,
+      "359/2003": 1,
+      "234/1929": 1,
+      "26/2011": 1,
+      "361/1983": 1,
+      "704/1975": 1,
+      "40/1965": 1,
+      "442/1999": 1,
+      "648/2007": 1,
+      "38/1978": 1,
+      "8/2007": 1,
+      "513/1999": 1,
+      "423/2003": 1,
+      "731/1999": 1,
+      "1086/2003": 1
+    },
+    "real-estate-and-housing/AGENTS.md": {
+      "540/1995": 1,
+      "843/1994": 2,
+      "1599/2009": 1,
+      "481/1995": 1,
+      "482/1995": 1
+    },
+    "real-estate-and-housing/README.md": {
+      "540/1995": 2,
+      "843/1994": 2,
+      "1599/2009": 2,
+      "481/1995": 2,
+      "482/1995": 2,
+      "1074/2000": 1,
+      "554/1995": 1
+    },
+    "real-estate-and-housing/skills/housing-company/SKILL.md": {
+      "1599/2009": 2
+    },
+    "real-estate-and-housing/skills/lease-agreements/SKILL.md": {
+      "481/1995": 2,
+      "482/1995": 2
+    },
+    "real-estate-and-housing/skills/real-property-conveyance/references/real-property-fundamentals.md": {
+      "540/1995": 1,
+      "843/1994": 1,
+      "1599/2009": 1,
+      "481/1995": 1,
+      "482/1995": 1,
+      "1074/2000": 1,
+      "554/1995": 1,
+      "931/1996": 1
+    },
+    "real-estate-and-housing/skills/real-property-conveyance/SKILL.md": {
+      "540/1995": 2,
+      "423/2003": 1,
+      "1074/2000": 1
+    },
+    "real-estate-and-housing/skills/residential-property-sale/SKILL.md": {
+      "843/1994": 2,
+      "1074/2000": 1
+    },
+    "references/citation-style.md": {
+      "410/2015": 2,
+      "268/2014": 1,
+      "KKO:2024:15": 1,
+      "HE 268/2014 vp": 1
+    },
+    "references/glossary.md": {
+      "423/2003": 3,
+      "55/2001": 4,
+      "410/2015": 2,
+      "268/2014": 1,
+      "731/1999": 1,
+      "434/2003": 1,
+      "1333/2021": 1,
+      "624/2006": 1,
+      "40/1965": 1,
+      "234/1929": 1,
+      "540/1995": 1,
+      "38/1978": 1,
+      "1397/2016": 1,
+      "948/2011": 1,
+      "1050/2018": 1,
+      "301/2004": 1,
+      "621/1999": 1,
+      "808/2019": 1,
+      "KKO:2019:42": 1,
+      "KHO:2021:7": 1,
+      "HE 268/2014 vp": 1
+    },
+    "references/liability-and-security.md": {
+      "496/1958": 1,
+      "715/2011": 1,
+      "1050/2018": 1,
+      "759/2004": 1
+    },
+    "references/output-language-matrix.md": {
+      "423/2003": 1
+    },
+    "taxation/README.md": {
+      "1558/1995": 2,
+      "360/1968": 2,
+      "825/1986": 2,
+      "1501/1993": 2,
+      "1535/1992": 1,
+      "768/2016": 1,
+      "931/1996": 1,
+      "378/1940": 1,
+      "1118/1996": 1,
+      "503/2010": 1,
+      "808/2019": 1
+    },
+    "taxation/skills/corporate-taxation/SKILL.md": {
+      "360/1968": 2,
+      "825/1986": 1,
+      "931/1996": 1,
+      "378/1940": 1
+    },
+    "taxation/skills/tax-procedure-and-appeals/references/tax-fundamentals.md": {
+      "1558/1995": 1,
+      "768/2016": 1,
+      "1535/1992": 1,
+      "360/1968": 1,
+      "1501/1993": 1,
+      "1118/1996": 2,
+      "931/1996": 2,
+      "378/1940": 2,
+      "825/1986": 1,
+      "503/2010": 1
+    },
+    "taxation/skills/tax-procedure-and-appeals/SKILL.md": {
+      "1558/1995": 2,
+      "423/2003": 1,
+      "808/2019": 1
+    },
+    "taxation/skills/value-added-tax/SKILL.md": {
+      "1501/1993": 2,
+      "768/2016": 2
+    }
+  }
+}

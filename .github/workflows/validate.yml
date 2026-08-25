@@ -29,6 +29,12 @@ jobs:
       - name: Tarkista tuotoskielen ilmoitukset
         run: node scripts/check-output-language.mjs
 
+      - name: Tarkista viittausten eheys
+        run: node scripts/check-citations.mjs
+
+      - name: Tarkista kuvaukset
+        run: node scripts/check-descriptions.mjs
+
       - name: Tarkista että generoidut tiedostot ovat ajan tasalla
         run: bash scripts/check-generated.sh
 
