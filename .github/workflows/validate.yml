@@ -26,6 +26,9 @@ jobs:
       - name: Validoi rakenne ja frontmatter
         run: node scripts/validate.mjs
 
+      - name: Tarkista tuotoskielen ilmoitukset
+        run: node scripts/check-output-language.mjs
+
       - name: Tarkista että generoidut tiedostot ovat ajan tasalla
         run: bash scripts/check-generated.sh
 

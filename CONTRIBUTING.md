@@ -52,6 +52,7 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
    `.codex-plugin/plugin.json`, `agents/openai.yaml`) käsin.
 6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
+   - `node scripts/check-output-language.mjs`
    - `node --test tests/*.test.mjs`
 7. **Jos muutit skillin `description`-kenttää**, aja triggeritestit
    (`bash evals/run-trigger-tests.sh`, ks. [evals/README.md](evals/README.md)) —

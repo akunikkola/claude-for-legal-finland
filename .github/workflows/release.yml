@@ -40,6 +40,7 @@ jobs:
         run: |
           bash scripts/check-generated.sh
           node scripts/validate.mjs
+          node scripts/check-output-language.mjs
           node --test tests/*.test.mjs
 
       - name: Lue plugarit marketplace.json:sta
