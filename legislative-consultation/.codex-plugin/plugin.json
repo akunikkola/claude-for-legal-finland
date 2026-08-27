@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Lausunnot",
+    "displayName": "Consultation statements",
     "shortDescription": "Drafting a consultation statement (lausunto) on a legislative reform or draft act: analysing the bill, assessing its impact from the respondent's point of view…",
-    "longDescription": "Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.",
+    "longDescription": "Drafting a statement on legislative reforms and draft acts: analysis of the proposal, impact assessment from the point of view of the body giving the statement, summarising other statements, and writing a reasoned statement. Suitable for municipalities, joint municipal authorities, agencies, organisations and companies.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Lausunnot -plugaria Suomen oikeuden tehtävään."
+      "Käytä Consultation statements -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

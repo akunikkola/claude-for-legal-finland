@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Insolvenssi",
+    "displayName": "Insolvency",
     "shortDescription": "Finnish insolvency law: assessing a situation of insolvency and choosing the procedure (bankruptcy under konkurssilaki 120/2004, restructuring of an enterprise…",
-    "longDescription": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi 120/2004, yrityssaneeraus 47/1993, velkajärjestely 57/1993), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+    "longDescription": "Finnish insolvency law: assessing a situation of insolvency and choosing the procedure (bankruptcy 120/2004, restructuring of enterprises 47/1993, adjustment of debts 57/1993), bankruptcy proceedings from the creditor’s and the debtor’s point of view, and debt collection, limitation and enforcement.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Insolvenssi -plugaria Suomen oikeuden tehtävään."
+      "Käytä Insolvency -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

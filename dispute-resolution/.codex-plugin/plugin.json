@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Riidanratkaisu",
+    "displayName": "Dispute resolution",
     "shortDescription": "Resolving a civil case in the general courts (oikeudenkäymiskaari 4/1734): drafting an application for a summons (haastehakemus), planning and assessing eviden…",
-    "longDescription": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa).",
+    "longDescription": "Resolving a civil dispute in the general courts (oikeudenkäymiskaari 4/1734): drafting the application for a summons, planning and assessing the evidence, and appealing against a judgment (the court of appeal and leave for continued consideration, the Supreme Court and leave to appeal).",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Riidanratkaisu -plugaria Suomen oikeuden tehtävään."
+      "Käytä Dispute resolution -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rikosoikeus (aineellinen)",
+    "displayName": "Criminal law (substantive)",
     "shortDescription": "Finnish substantive criminal law (Criminal Code, rikoslaki 39/1889) from the perspective of counsel, the injured party and compliance: the general conditions o…",
-    "longDescription": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.",
+    "longDescription": "Finnish substantive criminal law (rikoslaki 39/1889): the general conditions of criminal liability (the principle of legality, intent and negligence, grounds excluding liability, complicity, attempt), the elements and forms of the principal offences, and the determination of the sentence, forfeiture and limitation. Complements the criminal-procedure domain. It serves the defence, the injured party and compliance; it does not assist in committing or concealing an offence.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Rikosoikeus (aineellinen) -plugaria Suomen oikeuden tehtävään."
+      "Käytä Criminal law (substantive) -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

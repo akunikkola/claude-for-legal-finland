@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Yhtiöoikeus",
+    "displayName": "Company law",
     "shortDescription": "Finnish company law (osakeyhtiölaki 624/2006): incorporation and governance, directors' duties and liability, distribution of assets, shareholders' agreements…",
-    "longDescription": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.",
+    "longDescription": "Finnish company law (osakeyhtiölaki 624/2006): incorporation and governance, the general meeting and board work, the liability of management, the two-part test for distributing assets, drafting and risk-checking shareholders’ agreements, and corporate transactions with their due diligence lists.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Yhtiöoikeus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Company law -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

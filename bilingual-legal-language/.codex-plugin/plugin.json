@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Kaksikielisyys (FI/SV)",
+    "displayName": "Bilingual legal language (FI/SV)",
     "shortDescription": "Finnish–Swedish bilingualism in legal work: translating legal language and established FI↔SV terminology from official sources (Finlex parallel texts, the gove…",
-    "longDescription": "Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.",
+    "longDescription": "Support for Finnish–Swedish bilingualism in legal work: translating legal language and the established terminology FI↔SV from official sources (the parallel texts in Finlex, the Government Term Bank), and linguistic rights and the language obligations of an authority (kielilaki 423/2003, perustuslaki 731/1999 section 17, the Act on the Knowledge of Languages Required of Personnel in Public Bodies 424/2003 and the Sámi Language Act 1086/2003). A term is never invented; an official translation comes from an authorised translator.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Kaksikielisyys (FI/SV) -plugaria Suomen oikeuden tehtävään."
+      "Käytä Bilingual legal language (FI/SV) -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

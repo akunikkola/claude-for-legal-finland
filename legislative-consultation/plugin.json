@@ -1,6 +1,6 @@
 {
   "name": "legislative-consultation",
-  "displayName": "Lausunnot",
+  "displayName": "Consultation statements",
   "version": "0.1.0",
   "description": "Drafting a consultation statement (lausunto) on a legislative reform or draft act: analysing the bill, assessing its impact from the respondent's point of view, summarising other statements and writing a reasoned statement for lausuntopalvelu.fi. Suitable for municipalities and joint municipal authorities and agencies and associations and companies.",
   "author": {

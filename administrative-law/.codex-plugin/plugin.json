@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Hallinto-oikeus",
+    "displayName": "Administrative law",
     "shortDescription": "Finnish administrative law and public administration: drafting and reviewing an administrative decision (hallintolaki 434/2003), appeals — request for rectific…",
-    "longDescription": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku – oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) – sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).",
+    "longDescription": "Finnish administrative law and public administration: drafting and reviewing an administrative decision (hallintolaki 434/2003), appeals – request for rectification and appeal (laki oikeudenkäynnistä hallintoasioissa 808/2019) – and public access to documents and information requests (julkisuuslaki 621/1999).",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Hallinto-oikeus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Administrative law -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Kilpailuoikeus",
+    "displayName": "Competition law",
     "shortDescription": "Finnish and EU competition law: prohibited restrictions of competition and abuse of a dominant position (kilpailulaki 948/2011; SEUT Article 101 and Article 10…",
-    "longDescription": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö itsearviointikehikoineen (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta täytäntöönpanokieltoineen sekä compliance-ohjelmat, tietojenvaihdon pelisäännöt ja dawn raid -valmius.",
+    "longDescription": "Finnish and EU competition law: prohibited restrictions of competition and abuse of a dominant position with a self-assessment framework (kilpailulaki 948/2011, Articles 101 and 102 TFEU), merger control with the prohibition on implementation, and compliance programmes, the rules for exchanging information and readiness for a dawn raid.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Kilpailuoikeus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Competition law -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

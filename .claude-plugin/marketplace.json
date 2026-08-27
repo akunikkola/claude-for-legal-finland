@@ -8,216 +8,216 @@
   "plugins": [
     {
       "name": "legal-core",
-      "displayName": "Juristi – perusta",
+      "displayName": "Legal core",
       "source": "./legal-core",
-      "description": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykäläviittaukset, suomen kielen oikeinkirjoitus, oikeustutkimus voimassa olevasta laista ja oikeuskäytännöstä (Finlex/oik.ai-MCP), sekä juridisen asiakirjan monivaiheinen tarkistus. Pohja, johon muut käytäntöaluekohtaiset plugarit nojaavat.",
+      "description": "The cross-cutting foundation for Finnish legal work: legal language and section references, Finnish spelling, legal research into the law in force and into case law (Finlex/oik.ai MCP), and the multi-stage review of a legal document. The base that the other practice-area domains rely on.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "legislative-drafting",
-      "displayName": "Lainvalmistelu",
+      "displayName": "Legislative drafting",
       "source": "./legislative-drafting",
-      "description": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.",
+      "description": "An aid for drafting statutes: the Legislative Drafter’s Guide (the structure of statutes, language, cross-referencing, the enacting formula), the instructions for drafting government bills (HELO), the guide to the legislative process, and the symbols and inflected forms of statutory language. Based on the official guides.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "legislative-consultation",
-      "displayName": "Lausunnot",
+      "displayName": "Consultation statements",
       "source": "./legislative-consultation",
-      "description": "Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.",
+      "description": "Drafting a statement on legislative reforms and draft acts: analysis of the proposal, impact assessment from the point of view of the body giving the statement, summarising other statements, and writing a reasoned statement. Suitable for municipalities, joint municipal authorities, agencies, organisations and companies.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "contracts",
-      "displayName": "Sopimukset",
+      "displayName": "Contracts",
       "source": "./contracts",
-      "description": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.",
+      "description": "Drafting and reviewing contracts under Finnish law: the structure of a contract and an annotated clause library, the fundamentals of contract law, and a clause-by-clause risk assessment (GREEN/YELLOW/RED) with flags for adjustment and for mandatory law.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "data-protection",
-      "displayName": "Tietosuoja",
+      "displayName": "Data protection",
       "source": "./data-protection",
-      "description": "Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.",
+      "description": "Data protection in the processing of personal data under the EU General Data Protection Regulation (2016/679) and the Data Protection Act (1050/2018): assessing the processing and the need for a DPIA, the privacy notice and the record of processing activities, and responding to requests from data subjects.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "ai-regulation",
-      "displayName": "Tekoälysääntely",
+      "displayName": "AI regulation",
       "source": "./ai-regulation",
-      "description": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.",
+      "description": "Compliance with the EU AI Act (Regulation (EU) 2024/1689): risk classification of an AI system, the obligations by role and risk tier, and the deadlines, the penalties, the GPAI threshold and the fundamental rights impact assessment (FRIA). Built on the open deterministic EU AI Act MCP.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "employment-law",
-      "displayName": "Työoikeus",
+      "displayName": "Employment law",
       "source": "./employment-law",
-      "description": "Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.",
+      "description": "Finnish employment law: drafting and reviewing an employment contract (työsopimuslaki 55/2001), assessing the grounds and the procedure for terminating employment, and co-operation and change negotiations (yhteistoimintalaki 1333/2021). On the terms of mandatory legislation and collective agreements.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "administrative-law",
-      "displayName": "Hallinto-oikeus",
+      "displayName": "Administrative law",
       "source": "./administrative-law",
-      "description": "Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003), muutoksenhaku – oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019) – sekä asiakirjajulkisuus ja tietopyynnöt (julkisuuslaki 621/1999).",
+      "description": "Finnish administrative law and public administration: drafting and reviewing an administrative decision (hallintolaki 434/2003), appeals – request for rectification and appeal (laki oikeudenkäynnistä hallintoasioissa 808/2019) – and public access to documents and information requests (julkisuuslaki 621/1999).",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "dispute-resolution",
-      "displayName": "Riidanratkaisu",
+      "displayName": "Dispute resolution",
       "source": "./dispute-resolution",
-      "description": "Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemuksen laatiminen, todistelun suunnittelu ja arviointi sekä muutoksenhaku tuomioon (hovioikeus ja jatkokäsittelylupa, korkein oikeus ja valituslupa).",
+      "description": "Resolving a civil dispute in the general courts (oikeudenkäymiskaari 4/1734): drafting the application for a summons, planning and assessing the evidence, and appealing against a judgment (the court of appeal and leave for continued consideration, the Supreme Court and leave to appeal).",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "company-law",
-      "displayName": "Yhtiöoikeus",
+      "displayName": "Company law",
       "source": "./company-law",
-      "description": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.",
+      "description": "Finnish company law (osakeyhtiölaki 624/2006): incorporation and governance, the general meeting and board work, the liability of management, the two-part test for distributing assets, drafting and risk-checking shareholders’ agreements, and corporate transactions with their due diligence lists.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "insolvency",
-      "displayName": "Insolvenssi",
+      "displayName": "Insolvency",
       "source": "./insolvency",
-      "description": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi 120/2004, yrityssaneeraus 47/1993, velkajärjestely 57/1993), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+      "description": "Finnish insolvency law: assessing a situation of insolvency and choosing the procedure (bankruptcy 120/2004, restructuring of enterprises 47/1993, adjustment of debts 57/1993), bankruptcy proceedings from the creditor’s and the debtor’s point of view, and debt collection, limitation and enforcement.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "intellectual-property",
-      "displayName": "Immateriaalioikeus",
+      "displayName": "Intellectual property",
       "source": "./intellectual-property",
-      "description": "Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannusvaara-arvio (544/2019 ja 128/1979), tekijänoikeus DSM-uudistuksineen ja lisensointi (404/1961) sekä liikesalaisuuksien suojaohjelma ja loukkaustilanteet (595/2018). Markkinaoikeus, PRH ja EUIPO -kytkennät.",
+      "description": "Finnish intellectual property law: protection strategy and likelihood-of-confusion assessment for trade marks and trade names (544/2019 and 128/1979), copyright with the DSM reforms and licensing (404/1961), and the trade-secret protection programme and infringement situations (595/2018). Links to the Market Court, PRH and EUIPO.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "taxation",
-      "displayName": "Verotus",
+      "displayName": "Taxation",
       "source": "./taxation",
-      "description": "Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimuksesta KHO:hon (VML 1558/1995), yritysverotus konserniavustuksineen ja yritysjärjestelyineen (EVL 360/1968) sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä; tulkinnanvaraisissa ennakkoratkaisu.",
+      "description": "Finnish taxation for professionals: tax procedure and appeals from a request for rectification to KHO (VML 1558/1995), corporate taxation with group contributions and corporate restructurings (EVL 360/1968), and value added tax (AVL 1501/1993). Tax rates and euro amounts always from the source; an advance ruling where the matter is open to interpretation.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "public-procurement",
-      "displayName": "Julkiset hankinnat",
+      "displayName": "Public procurement",
       "source": "./public-procurement",
-      "description": "Julkiset hankinnat hankintalain (1397/2016) mukaan sekä hankintayksikön että tarjoajan näkökulmasta: suunnittelu ja menettelyn valinta kynnysarvoineen, tarjouspyyntö ja tarjouspyynnönmukainen tarjous sekä hankintapäätös, hankintaoikaisu ja valitus markkinaoikeuteen seuraamuksineen.",
+      "description": "Public procurement under the Public Procurement Act (1397/2016) from the point of view of both the contracting authority and the tenderer: planning and the choice of procedure with the thresholds, the invitation to tender and a compliant tender, and the award decision, procurement rectification and appeal to the Market Court with its sanctions.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "criminal-procedure",
-      "displayName": "Rikosprosessi",
+      "displayName": "Criminal procedure",
       "source": "./criminal-procedure",
-      "description": "Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja 806/2011) kuulusteluvalmistautumisineen ja loppulausuntoineen, syyte ja vastaus tuomioesitysmenettelyineen (ROL 689/1997) sekä asianomistajan vaatimukset ja rikosvahinkokorvaus. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+      "description": "Finnish criminal procedure for the work of counsel: pre-trial investigation and coercive measures (805/2011 and 806/2011) with preparation for questioning and the closing statement, the charge and the response with the judgment-proposal procedure (ROL 689/1997), and the injured party’s claims and criminal-injuries compensation. On the terms of the presumption of innocence and the use of counsel.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "environment-and-planning",
-      "displayName": "Ympäristö ja kaavoitus",
+      "displayName": "Environment and planning",
       "source": "./environment-and-planning",
-      "description": "Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen (alueidenkäyttölaki ja rakentamislaki 751/2023 uusine lupineen) sekä ympäristövastuut ja ympäristö-DD transaktioissa. Huomioi 2026 viranomaisuudistuksen (Lupa- ja valvontavirasto).",
+      "description": "Finnish environmental and planning law under the reformed legislation: environmental permits and supervision (YSL 527/2014), land use planning and building (the Land Use Act and the Building Act 751/2023 with their new permits), and environmental liabilities and environmental due diligence in transactions. Takes account of the 2026 authority reform (the Finnish Licensing and Supervision Agency).",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "real-estate-and-housing",
-      "displayName": "Kiinteistöt ja asuminen",
+      "displayName": "Real estate and housing",
       "source": "./real-estate-and-housing",
-      "description": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukset ja virhevastuu (maakaari 540/1995), asuntokauppa RS-järjestelmineen ja reklamaatioineen (843/1994), asunto-osakeyhtiön kunnossapitovastuu ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset pakottavuuseroineen.",
+      "description": "Finnish real estate and housing law: the prescribed form of a conveyance of real property, the registrations and liability for defects (maakaari 540/1995), the sale of a dwelling with the RS system and notices of defect (843/1994), the maintenance liability and governance of a housing company (1599/2009), and leases of residential and business premises with their differences in mandatory force.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "competition-law",
-      "displayName": "Kilpailuoikeus",
+      "displayName": "Competition law",
       "source": "./competition-law",
-      "description": "Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö itsearviointikehikoineen (kilpailulaki 948/2011, SEUT 101 ja 102 artikla), yrityskauppavalvonta täytäntöönpanokieltoineen sekä compliance-ohjelmat, tietojenvaihdon pelisäännöt ja dawn raid -valmius.",
+      "description": "Finnish and EU competition law: prohibited restrictions of competition and abuse of a dominant position with a self-assessment framework (kilpailulaki 948/2011, Articles 101 and 102 TFEU), merger control with the prohibition on implementation, and compliance programmes, the rules for exchanging information and readiness for a dawn raid.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "banking-and-finance",
-      "displayName": "Pankki ja rahoitus",
+      "displayName": "Banking and finance",
       "source": "./banking-and-finance",
-      "description": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspaketit julkivarmistuksineen (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun estämisen compliance (444/2017) sekä listayhtiön tiedonantovelvollisuus ja sisäpiirihallinto (AML 746/2012, MAR).",
+      "description": "Finnish banking and finance law: finance agreements with their covenants and collateral packages with their perfection (velkakirjalaki 622/1947, takauslaki 361/1999), anti-money-laundering compliance (444/2017), and the disclosure obligation and insider administration of a listed company (AML 746/2012, MAR).",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "immigration-law",
-      "displayName": "Ulkomaalaisoikeus",
+      "displayName": "Immigration law",
       "source": "./immigration-law",
-      "description": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat saatavuusharkintoineen (ulkomaalaislaki 301/2004), työnantajan varmistusvelvollisuudet ja seuraamukset, lähetetyt työntekijät (447/2016) sekä EU-oleskelu, perheenyhdistäminen, pysyvä lupa ja kansalaisuus (359/2003).",
+      "description": "Finnish immigration law from the point of view of the employer and of counsel: work-based residence permits with the labour market test (ulkomaalaislaki 301/2004), the employer’s verification duties and the sanctions, posted workers (447/2016), and EU residence, family reunification, a permanent permit and citizenship (359/2003).",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "family-and-inheritance",
-      "displayName": "Perhe- ja perintöoikeus",
+      "displayName": "Family and inheritance law",
       "source": "./family-and-inheritance",
-      "description": "Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhteet ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361/1983 ja 704/1975), perimys, testamentti ja lakiosa (perintökaari 40/1965) sekä edunvalvonta ja edunvalvontavaltuutus (442/1999 ja 648/2007). Lapsen etu ja turvallisuus edellä; verot lähteestä.",
+      "description": "Finnish family and inheritance law for everyday situations: the property relations of marriage and the division of matrimonial property (avioliittolaki 234/1929), the position of a cohabiting partner (26/2011), the custody of a child, contact and maintenance (361/1983 and 704/1975), succession, wills and the compulsory share (perintökaari 40/1965), and guardianship and continuing powers of attorney (442/1999 and 648/2007). The best interests and the safety of the child come first; taxes from the source.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "consumer-law",
-      "displayName": "Kuluttajaoikeus",
+      "displayName": "Consumer law",
       "source": "./consumer-law",
-      "description": "Suomen kuluttajaoikeus elinkeinonharjoittajan ja kuluttajan välisessä kaupassa (kuluttajansuojalaki 38/1978): tavaran ja palvelun virhevastuu ja oikaisukeinot, etä- ja kotimyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999). Pakottava kuluttajan hyväksi.",
+      "description": "Finnish consumer law in sales between a trader and a consumer (kuluttajansuojalaki 38/1978): liability for defects in goods and services and the remedies, the right of withdrawal and the information duties in distance and off-premises selling, unfair marketing, and the resolution of consumer disputes (the Consumer Disputes Board 8/2007 and KKV 661/2012) and good collection practice for a consumer debt (513/1999). Mandatory in the consumer’s favour.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "criminal-law",
-      "displayName": "Rikosoikeus (aineellinen)",
+      "displayName": "Criminal law (substantive)",
       "source": "./criminal-law",
-      "description": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.",
+      "description": "Finnish substantive criminal law (rikoslaki 39/1889): the general conditions of criminal liability (the principle of legality, intent and negligence, grounds excluding liability, complicity, attempt), the elements and forms of the principal offences, and the determination of the sentence, forfeiture and limitation. Complements the criminal-procedure domain. It serves the defence, the injured party and compliance; it does not assist in committing or concealing an offence.",
       "author": {
         "name": "Aku Nikkola"
       }
     },
     {
       "name": "bilingual-legal-language",
-      "displayName": "Kaksikielisyys (FI/SV)",
+      "displayName": "Bilingual legal language (FI/SV)",
       "source": "./bilingual-legal-language",
-      "description": "Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.",
+      "description": "Support for Finnish–Swedish bilingualism in legal work: translating legal language and the established terminology FI↔SV from official sources (the parallel texts in Finlex, the Government Term Bank), and linguistic rights and the language obligations of an authority (kielilaki 423/2003, perustuslaki 731/1999 section 17, the Act on the Knowledge of Languages Required of Personnel in Public Bodies 424/2003 and the Sámi Language Act 1086/2003). A term is never invented; an official translation comes from an authorised translator.",
       "author": {
         "name": "Aku Nikkola"
       }

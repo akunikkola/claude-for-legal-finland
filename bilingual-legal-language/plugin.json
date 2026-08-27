@@ -1,6 +1,6 @@
 {
   "name": "bilingual-legal-language",
-  "displayName": "Kaksikielisyys (FI/SV)",
+  "displayName": "Bilingual legal language (FI/SV)",
   "version": "0.1.0",
   "description": "Finnish–Swedish bilingualism in legal work: translating legal language and established FI↔SV terminology from official sources (Finlex parallel texts, the government term bank), and language rights and an authority's language obligations (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 and saamen kielilaki 1086/2003).",
   "author": {

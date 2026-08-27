@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Tietosuoja",
+    "displayName": "Data protection",
     "shortDescription": "Data protection in the processing of personal data under the EU General Data Protection Regulation (2016/679) and the Data Protection Act (tietosuojalaki 1050/…",
-    "longDescription": "Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.",
+    "longDescription": "Data protection in the processing of personal data under the EU General Data Protection Regulation (2016/679) and the Data Protection Act (1050/2018): assessing the processing and the need for a DPIA, the privacy notice and the record of processing activities, and responding to requests from data subjects.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Tietosuoja -plugaria Suomen oikeuden tehtävään."
+      "Käytä Data protection -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Sopimukset",
+    "displayName": "Contracts",
     "shortDescription": "Drafting and reviewing contracts under Finnish law: contract structure and an annotated clause library, the fundamentals of contract law, and a clause-by-claus…",
-    "longDescription": "Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja kommentoitu lausekekirjasto, sopimusoikeuden perusteet sekä lausekekohtainen riskiarvio (VIHREÄ/KELTAINEN/PUNAINEN) kohtuullistamis- ja pakottavan lain lippuineen.",
+    "longDescription": "Drafting and reviewing contracts under Finnish law: the structure of a contract and an annotated clause library, the fundamentals of contract law, and a clause-by-clause risk assessment (GREEN/YELLOW/RED) with flags for adjustment and for mandatory law.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Sopimukset -plugaria Suomen oikeuden tehtävään."
+      "Käytä Contracts -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

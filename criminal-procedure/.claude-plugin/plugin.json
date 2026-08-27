@@ -1,7 +1,7 @@
 {
   "name": "criminal-procedure",
   "version": "0.1.0",
-  "description": "Suomen rikosprosessi ammattilaisille: esitutkinta ja pakkokeinot (805/2011 ja 806/2011), syyte ja puolustus (ROL 689/1997) sekä asianomistajan asema ja yksityisoikeudelliset vaatimukset. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+  "description": "Finnish criminal procedure for professionals: pre-trial investigation and coercive measures (805/2011 and 806/2011), the charge and the defence (ROL 689/1997), and the position of the injured party and their civil claims. On the terms of the presumption of innocence and the use of counsel.",
   "author": {
     "name": "Aku Nikkola"
   }

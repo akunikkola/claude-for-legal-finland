@@ -1,6 +1,6 @@
 {
   "name": "dispute-resolution",
-  "displayName": "Riidanratkaisu",
+  "displayName": "Dispute resolution",
   "version": "0.1.0",
   "description": "Resolving a civil case in the general courts (oikeudenkäymiskaari 4/1734): drafting an application for a summons (haastehakemus), planning and assessing evidence, and appealing against a judgment (hovioikeus and leave for continued consideration, the Supreme Court and leave to appeal). Includes the fundamentals of alternative dispute resolution.",
   "author": {

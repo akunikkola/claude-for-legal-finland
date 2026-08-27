@@ -1,6 +1,6 @@
 {
   "name": "taxation",
-  "displayName": "Verotus",
+  "displayName": "Taxation",
   "version": "0.1.0",
   "description": "Finnish taxation for professionals: tax procedure and appeals (VML 1558/1995), corporate taxation (EVL 360/1968) including reorganisations, and value added tax (AVL 1501/1993). Tax rates and euro amounts always from the source — never from memory.",
   "author": {

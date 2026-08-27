@@ -1,7 +1,7 @@
 {
   "name": "criminal-procedure",
   "version": "0.1.0",
-  "description": "Suomen rikosprosessi ammattilaisille: esitutkinta ja pakkokeinot (805/2011 ja 806/2011), syyte ja puolustus (ROL 689/1997) sekä asianomistajan asema ja yksityisoikeudelliset vaatimukset. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+  "description": "Finnish criminal procedure for professionals: pre-trial investigation and coercive measures (805/2011 and 806/2011), the charge and the defence (ROL 689/1997), and the position of the injured party and their civil claims. On the terms of the presumption of innocence and the use of counsel.",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rikosprosessi",
-    "shortDescription": "Suomen rikosprosessi ammattilaisille: esitutkinta ja pakkokeinot (805/2011 ja 806/2011), syyte ja puolustus (ROL 689/1997) sekä asianomistajan asema ja yksityi…",
-    "longDescription": "Suomen rikosprosessi avustajan työhön: esitutkinta ja pakkokeinot (805/2011 ja 806/2011) kuulusteluvalmistautumisineen ja loppulausuntoineen, syyte ja vastaus tuomioesitysmenettelyineen (ROL 689/1997) sekä asianomistajan vaatimukset ja rikosvahinkokorvaus. Syyttömyysolettaman ja avustajan käytön ehdoilla.",
+    "displayName": "Criminal procedure",
+    "shortDescription": "Finnish criminal procedure for professionals: pre-trial investigation and coercive measures (805/2011 and 806/2011), the charge and the defence (ROL 689/1997),…",
+    "longDescription": "Finnish criminal procedure for the work of counsel: pre-trial investigation and coercive measures (805/2011 and 806/2011) with preparation for questioning and the closing statement, the charge and the response with the judgment-proposal procedure (ROL 689/1997), and the injured party’s claims and criminal-injuries compensation. On the terms of the presumption of innocence and the use of counsel.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Rikosprosessi -plugaria Suomen oikeuden tehtävään."
+      "Käytä Criminal procedure -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

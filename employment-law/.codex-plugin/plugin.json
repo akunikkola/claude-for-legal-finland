@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Työoikeus",
+    "displayName": "Employment law",
     "shortDescription": "Finnish employment law: drafting and reviewing an employment contract (Employment Contracts Act, työsopimuslaki 55/2001), assessing the grounds and procedure f…",
-    "longDescription": "Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.",
+    "longDescription": "Finnish employment law: drafting and reviewing an employment contract (työsopimuslaki 55/2001), assessing the grounds and the procedure for terminating employment, and co-operation and change negotiations (yhteistoimintalaki 1333/2021). On the terms of mandatory legislation and collective agreements.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Työoikeus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Employment law -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

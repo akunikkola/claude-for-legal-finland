@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Tekoälysääntely",
+    "displayName": "AI regulation",
     "shortDescription": "Compliance with the EU Artificial Intelligence Act (Regulation (EU) 2024/1689, the AI Act) in a Finnish context: risk classification of an AI system, the oblig…",
-    "longDescription": "EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.",
+    "longDescription": "Compliance with the EU AI Act (Regulation (EU) 2024/1689): risk classification of an AI system, the obligations by role and risk tier, and the deadlines, the penalties, the GPAI threshold and the fundamental rights impact assessment (FRIA). Built on the open deterministic EU AI Act MCP.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Tekoälysääntely -plugaria Suomen oikeuden tehtävään."
+      "Käytä AI regulation -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

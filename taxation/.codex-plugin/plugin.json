@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Verotus",
+    "displayName": "Taxation",
     "shortDescription": "Finnish taxation for professionals: tax procedure and appeals (VML 1558/1995), corporate taxation (EVL 360/1968) including reorganisations, and value added tax…",
-    "longDescription": "Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimuksesta KHO:hon (VML 1558/1995), yritysverotus konserniavustuksineen ja yritysjärjestelyineen (EVL 360/1968) sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä; tulkinnanvaraisissa ennakkoratkaisu.",
+    "longDescription": "Finnish taxation for professionals: tax procedure and appeals from a request for rectification to KHO (VML 1558/1995), corporate taxation with group contributions and corporate restructurings (EVL 360/1968), and value added tax (AVL 1501/1993). Tax rates and euro amounts always from the source; an advance ruling where the matter is open to interpretation.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Verotus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Taxation -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

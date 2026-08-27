@@ -1,6 +1,6 @@
 {
   "name": "environment-and-planning",
-  "displayName": "Ympäristö ja kaavoitus",
+  "displayName": "Environment and planning",
   "version": "0.1.0",
   "description": "Finnish environmental and planning law: environmental permits and supervision (ympäristönsuojelulaki 527/2014), land use planning and construction under the new Building Act (rakentamislaki 751/2023) and the Land Use Act, and environmental liabilities in transactions. Takes account of the 2026 reform of regional administration (Lupa- ja valvontavirasto).",
   "author": {

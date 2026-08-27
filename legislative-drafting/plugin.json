@@ -1,6 +1,6 @@
 {
   "name": "legislative-drafting",
-  "displayName": "Lainvalmistelu",
+  "displayName": "Legislative drafting",
   "version": "0.1.0",
   "description": "An assistant for Finnish legislative drafting: Lainkirjoittajan opas (statute structure and language and cross-referencing and the enacting formula), the government bill drafting instructions (HELO), the legislative process guide and the symbols and inflected forms of statutory language.",
   "author": {

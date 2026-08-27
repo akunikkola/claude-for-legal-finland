@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Kiinteistöt ja asuminen",
+    "displayName": "Real estate and housing",
     "shortDescription": "Finnish real property and housing law: conveyance of real property and registration of title (maakaari 540/1995), sale of housing-company shares and defect lia…",
-    "longDescription": "Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukset ja virhevastuu (maakaari 540/1995), asuntokauppa RS-järjestelmineen ja reklamaatioineen (843/1994), asunto-osakeyhtiön kunnossapitovastuu ja hallinto (1599/2009) sekä asuin- ja liikehuoneistojen vuokrasopimukset pakottavuuseroineen.",
+    "longDescription": "Finnish real estate and housing law: the prescribed form of a conveyance of real property, the registrations and liability for defects (maakaari 540/1995), the sale of a dwelling with the RS system and notices of defect (843/1994), the maintenance liability and governance of a housing company (1599/2009), and leases of residential and business premises with their differences in mandatory force.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Kiinteistöt ja asuminen -plugaria Suomen oikeuden tehtävään."
+      "Käytä Real estate and housing -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

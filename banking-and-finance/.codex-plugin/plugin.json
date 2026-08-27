@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Pankki ja rahoitus",
+    "displayName": "Banking and finance",
     "shortDescription": "Finnish banking and finance law: finance agreements and collateral (velkakirjalaki 622/1947; takauslaki 361/1999), preventing money laundering and terrorist fi…",
-    "longDescription": "Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspaketit julkivarmistuksineen (velkakirjalaki 622/1947, takauslaki 361/1999), rahanpesun estämisen compliance (444/2017) sekä listayhtiön tiedonantovelvollisuus ja sisäpiirihallinto (AML 746/2012, MAR).",
+    "longDescription": "Finnish banking and finance law: finance agreements with their covenants and collateral packages with their perfection (velkakirjalaki 622/1947, takauslaki 361/1999), anti-money-laundering compliance (444/2017), and the disclosure obligation and insider administration of a listed company (AML 746/2012, MAR).",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Pankki ja rahoitus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Banking and finance -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

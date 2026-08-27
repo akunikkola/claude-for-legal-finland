@@ -1,6 +1,6 @@
 {
   "name": "insolvency",
-  "displayName": "Insolvenssi",
+  "displayName": "Insolvency",
   "version": "0.1.0",
   "description": "Finnish insolvency law: assessing a situation of insolvency and choosing the procedure (bankruptcy under konkurssilaki 120/2004, restructuring of an enterprise under 47/1993, debt adjustment under 57/1993), the bankruptcy procedure from the creditor's and the debtor's point of view, and the collection of claims, limitation and enforcement.",
   "author": {

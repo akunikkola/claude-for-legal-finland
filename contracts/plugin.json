@@ -1,6 +1,6 @@
 {
   "name": "contracts",
-  "displayName": "Sopimukset",
+  "displayName": "Contracts",
   "version": "0.1.0",
   "description": "Drafting and reviewing contracts under Finnish law: contract structure and an annotated clause library, the fundamentals of contract law, and a clause-by-clause risk assessment (GREEN/YELLOW/RED) with flags for adjustment of unfair terms and for mandatory law.",
   "author": {

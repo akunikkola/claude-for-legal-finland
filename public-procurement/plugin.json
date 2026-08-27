@@ -1,6 +1,6 @@
 {
   "name": "public-procurement",
-  "displayName": "Julkiset hankinnat",
+  "displayName": "Public procurement",
   "version": "0.1.0",
   "description": "Public procurement in Finland (hankintalaki 1397/2016): planning the procurement and choosing the procedure, the invitation to tender and the tender from both points of view, and the award decision, procurement rectification and appeal to the Market Court.",
   "author": {

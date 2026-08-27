@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Lainvalmistelu",
+    "displayName": "Legislative drafting",
     "shortDescription": "An assistant for Finnish legislative drafting: Lainkirjoittajan opas (statute structure and language and cross-referencing and the enacting formula), the gover…",
-    "longDescription": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.",
+    "longDescription": "An aid for drafting statutes: the Legislative Drafter’s Guide (the structure of statutes, language, cross-referencing, the enacting formula), the instructions for drafting government bills (HELO), the guide to the legislative process, and the symbols and inflected forms of statutory language. Based on the official guides.",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Lainvalmistelu -plugaria Suomen oikeuden tehtävään."
+      "Käytä Legislative drafting -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

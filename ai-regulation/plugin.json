@@ -1,6 +1,6 @@
 {
   "name": "ai-regulation",
-  "displayName": "Tekoälysääntely",
+  "displayName": "AI regulation",
   "version": "0.1.0",
   "description": "Compliance with the EU Artificial Intelligence Act (Regulation (EU) 2024/1689, the AI Act) in a Finnish context: risk classification of an AI system, the obligations by role and risk class, and the deadlines, penalties, the GPAI threshold and the fundamental rights impact assessment (FRIA). Relies on an open and deterministic EU AI Act MCP.",
   "author": {

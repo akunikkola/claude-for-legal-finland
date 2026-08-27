@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Ympäristö ja kaavoitus",
+    "displayName": "Environment and planning",
     "shortDescription": "Finnish environmental and planning law: environmental permits and supervision (ympäristönsuojelulaki 527/2014), land use planning and construction under the ne…",
-    "longDescription": "Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ympäristöluvat ja valvonta (YSL 527/2014), kaavoitus ja rakentaminen (alueidenkäyttölaki ja rakentamislaki 751/2023 uusine lupineen) sekä ympäristövastuut ja ympäristö-DD transaktioissa. Huomioi 2026 viranomaisuudistuksen (Lupa- ja valvontavirasto).",
+    "longDescription": "Finnish environmental and planning law under the reformed legislation: environmental permits and supervision (YSL 527/2014), land use planning and building (the Land Use Act and the Building Act 751/2023 with their new permits), and environmental liabilities and environmental due diligence in transactions. Takes account of the 2026 authority reform (the Finnish Licensing and Supervision Agency).",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Ympäristö ja kaavoitus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Environment and planning -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"

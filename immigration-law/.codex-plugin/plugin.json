@@ -16,9 +16,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Ulkomaalaisoikeus",
+    "displayName": "Immigration law",
     "shortDescription": "Finnish immigration law from the perspective of the employer and of counsel: work-based residence permits (Aliens Act, ulkomaalaislaki 301/2004), the employer'…",
-    "longDescription": "Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset oleskeluluvat saatavuusharkintoineen (ulkomaalaislaki 301/2004), työnantajan varmistusvelvollisuudet ja seuraamukset, lähetetyt työntekijät (447/2016) sekä EU-oleskelu, perheenyhdistäminen, pysyvä lupa ja kansalaisuus (359/2003).",
+    "longDescription": "Finnish immigration law from the point of view of the employer and of counsel: work-based residence permits with the labour market test (ulkomaalaislaki 301/2004), the employer’s verification duties and the sanctions, posted workers (447/2016), and EU residence, family reunification, a permanent permit and citizenship (359/2003).",
     "developerName": "Aku Nikkola",
     "category": "Legal",
     "capabilities": [
@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Ulkomaalaisoikeus -plugaria Suomen oikeuden tehtävään."
+      "Käytä Immigration law -plugaria Suomen oikeuden tehtävään."
     ]
   },
   "mcpServers": "./.mcp.json"
