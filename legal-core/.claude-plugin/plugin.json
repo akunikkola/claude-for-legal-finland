@@ -1,7 +1,7 @@
 {
   "name": "legal-core",
   "version": "0.1.0",
-  "description": "Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli, pykäläviittaukset, suomen kieli, oikeustutkimus (Finlex/oik.ai) ja juridisen asiakirjan tarkistus.",
+  "description": "The cross-cutting foundation for Finnish legal work: legal language and section references, Finnish spelling, legal research into the law in force and case law (Finlex/oik.ai) and multi-stage review of a legal document.",
   "author": {
     "name": "Aku Nikkola"
   }

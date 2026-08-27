@@ -1,7 +1,7 @@
 {
   "name": "legislative-consultation",
   "version": "0.1.0",
-  "description": "Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyysi, vaikutusarviointi lausunnonantajan näkökulmasta, muiden lausuntojen tiivistäminen ja perustellun lausunnon kirjoittaminen. Soveltuu kunnille, kuntayhtymille, virastoille, järjestöille ja yrityksille.",
+  "description": "Drafting a consultation statement (lausunto) on a legislative reform or draft act: analysing the bill, assessing its impact from the respondent's point of view, summarising other statements and writing a reasoned statement for lausuntopalvelu.fi. Suitable for municipalities and joint municipal authorities and agencies and associations and companies.",
   "author": {
     "name": "Aku Nikkola"
   }

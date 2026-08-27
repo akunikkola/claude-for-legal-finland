@@ -1,7 +1,7 @@
 {
   "name": "bilingual-legal-language",
   "version": "0.1.0",
-  "description": "Suomi–ruotsi-kaksikielisyys juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003).",
+  "description": "Finnish–Swedish bilingualism in legal work: translating legal language and established FI↔SV terminology from official sources (Finlex parallel texts, the government term bank), and language rights and an authority's language obligations (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 and saamen kielilaki 1086/2003).",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Kaksikielisyys (FI/SV)",
-    "shortDescription": "Suomi–ruotsi-kaksikielisyys juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valt…",
+    "shortDescription": "Finnish–Swedish bilingualism in legal work: translating legal language and established FI↔SV terminology from official sources (Finlex parallel texts, the gove…",
     "longDescription": "Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen kääntäminen ja vakiintunut termistö FI↔SV virallisista lähteistä (Finlexin rinnakkaistekstit, valtioneuvoston termipankki) sekä kielelliset oikeudet ja viranomaisen kielelliset velvoitteet (kielilaki 423/2003, perustuslaki 731/1999 17 §, julkisyhteisöjen kielitaitolaki 424/2003 ja saamen kielilaki 1086/2003). Termiä ei keksitä; virallinen käännös auktorisoidulta kääntäjältä.",
     "developerName": "Aku Nikkola",
     "category": "Legal",

@@ -13,15 +13,15 @@ Läpileikkaava perusta suomalaiseen juridiseen työhön: lakikieli ja pykälävi
 
 | Skill | Kuvaus |
 |---|---|
-| [`case-summarization`](legal-core/skills/case-summarization/SKILL.md) | Tuomioistuinratkaisun jäsentäminen ja referointi: ennakkopäätöksen tai muun ratkaisun olennaisen sisällön poiminta rakenteiseen muotoon (tunnistetiedot, oikeuskysymys, faktat, lopputulos, perustelujen ydin eli ratio, merkitys). Käytä tätä… |
-| [`document-review`](legal-core/skills/document-review/SKILL.md) | Juridisen asiakirjan järjestelmällinen monivaiheinen laaduntarkistus suomalaisessa kontekstissa. Käytä tätä skilliä, kun juridinen asiakirja pitää tarkistaa ennen käyttöä: sopimus, lausunto, valitus, hallintopäätös, muistio, sopimusluonnos… |
-| [`engagement-intake`](legal-core/skills/engagement-intake/SKILL.md) | Uuden toimeksiannon, jutun tai asian aloitus ja aineiston haltuunotto suomalaisessa juridisessa työssä. Käytä tätä skilliä AINA kun käyttäjä aloittaa uuden toimeksiannon tai jutun, tuo asiakirjan tai asiakirjanipun käsiteltäväksi, pyytää j… |
-| [`finnish-language`](legal-core/skills/finnish-language/SKILL.md) | Suomen kielen oikeinkirjoitus-, kielioppi- ja tyyliohjeistus verkkosivujen, dokumenttien ja muun sisällön tuottamiseen ja tarkastamiseen. Käytä tätä skilliä AINA kun kirjoitat tai tuotat suomenkielistä tekstiä, tarkistat suomenkielistä sis… |
-| [`legal-research`](legal-core/skills/legal-research/SKILL.md) | Suomalaisen voimassa olevan lainsäädännön ja oikeuskäytännön haku, lukeminen ja oikea viittaaminen oik.ai-, laki.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun tarvitaan ajantasaista lakitekstiä, pykälän sisältö, KKO:n tai KHO:n… |
-| [`legal-writing`](legal-core/skills/legal-writing/SKILL.md) | Suomalaisen oikeuden ja lakikielen yleisapuri. Käytä tätä skilliä AINA kun käyttäjä työskentelee lakien, pykälien, säädösten, sopimusten tai muiden juridisten dokumenttien kanssa – riippumatta siitä, onko käyttäjä juristi vai ei. Triggeröi… |
-| [`plain-language`](legal-core/skills/plain-language/SKILL.md) | Juridisen tekstin selittäminen selkeällä yleiskielellä maallikolle — asiakkaalle, päämiehelle tai muulle ei-juristille. Käytä tätä skilliä, kun pykälä, sopimusehto, päätös, lausunto tai kirjelmä pitää avata ymmärrettävään muotoon, kun asia… |
-| [`practice-profile`](legal-core/skills/practice-profile/SKILL.md) | Plugarikokoelman räätälöinti organisaation omiin käytäntöihin. Käytä tätä skilliä, kun käyttäjä haluaa mukauttaa, konfiguroida tai personoida agent-skills-for-finnish-law-plugarit oman toimiston, yrityksen, viraston tai kunnan käytäntöihin… |
-| [`tabular-review`](legal-core/skills/tabular-review/SKILL.md) | Monen asiakirjan rinnakkaisvertailu tai yhden asiakirjan rakenteinen taulukointi niin, että jokainen solu on lähteistetty asiakirjan kohtaan. Käytä tätä skilliä, kun samantyyppisiä asiakirjoja pitää verrata taulukkona (rivi per asiakirja,… |
+| [`case-summarization`](legal-core/skills/case-summarization/SKILL.md) | Case summarization for Finnish court decisions: extracting the essential content of a precedent or other decision into a structured form (identifying details, legal question, facts, outcome, the core of the reasoning or ratio, significance… |
+| [`document-review`](legal-core/skills/document-review/SKILL.md) | Systematic multi-stage quality review of a legal document in the Finnish context. Use this skill when a legal document has to be reviewed before it is used: a contract, a statement, an appeal, an administrative decision, a memorandum, a dr… |
+| [`engagement-intake`](legal-core/skills/engagement-intake/SKILL.md) | Engagement intake for Finnish legal work: opening a new engagement or matter and taking control of the material. Use this skill ALWAYS when the user starts a new engagement, brings a document or a bundle of documents to be dealt with, asks… |
+| [`finnish-language`](legal-core/skills/finnish-language/SKILL.md) | Finnish spelling, grammar and style guidance for producing and checking Finnish-language content. Use this skill ALWAYS when you write or produce text in Finnish, check Finnish content, translate text into Finnish, create website content i… |
+| [`legal-research`](legal-core/skills/legal-research/SKILL.md) | Legal research into Finnish law: retrieving, reading and correctly citing the legislation in force and the case law through the oik.ai, laki.ai or Finlex MCP. Use this skill when you need up-to-date statutory text, the content of a section… |
+| [`legal-writing`](legal-core/skills/legal-writing/SKILL.md) | General assistant for Finnish law and legal writing. Use this skill ALWAYS when the user works with acts, sections, statutes, contracts or other legal documents — whether or not the user is a lawyer. It triggers when the user mentions a se… |
+| [`plain-language`](legal-core/skills/plain-language/SKILL.md) | Explaining Finnish legal text in clear plain language to a lay reader — a client, a principal or another non-lawyer. Use this skill when a section, a contract term, a decision, a statement or a written submission has to be opened up into a… |
+| [`practice-profile`](legal-core/skills/practice-profile/SKILL.md) | Tailoring the collection to an organisation's own standing practices. Use this skill when the user wants to adapt, configure or personalise the agent-skills-for-finnish-law domains to the practices of their own firm, company, agency or mun… |
+| [`tabular-review`](legal-core/skills/tabular-review/SKILL.md) | Tabular review of legal documents: side-by-side comparison of several documents or structured tabulation of a single document, so that every cell is sourced to a place in the document. Use this skill when documents of the same type have to… |
 
 ## Lainvalmistelu
 
@@ -31,10 +31,10 @@ Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, 
 
 | Skill | Kuvaus |
 |---|---|
-| [`government-bill-guidelines`](legislative-drafting/skills/government-bill-guidelines/SKILL.md) | Hallituksen esitysten laatimisohjeet (HELO) - Opas hallituksen esitysten kirjoittamiseen. Sisältää ohjeet perusrakenteen, EU-taustaisten, valtiosopimustaustaisten ja muiden hallituksen esitysten laatimiseen. |
-| [`legal-language-guide`](legislative-drafting/skills/legal-language-guide/SKILL.md) | Opas lakikielen merkkien ja taivutusmuotojen käyttöön suomalaisessa säädöstekstissä. Sisältää ohjeet pykälänmerkin, numeroiden, prosenttien, mittayksiköiden, rahayksiköiden, välimerkkien ja lyhenteiden käytöstä lakitekstissä. |
-| [`legislative-drafting-manual`](legislative-drafting/skills/legislative-drafting-manual/SKILL.md) | Kattava opas suomalaisen lainsäädännön laadintaan. Lainkirjoittajan opas sisältää keskeisiä ohjeita säädösten laadintaprosessista, rakenteesta, kielestä ja muusta sääntelystä. Hyödyllinen ressurssi lakimiehille, lainsäädäntöä valmistaville… |
-| [`legislative-process-guide`](legislative-drafting/skills/legislative-process-guide/SKILL.md) | Opas lainsäädännön valmisteluprosessista Suomessa. Sisältää kaikki vaiheet aloitteesta lain saattamiseen voimaan, mukaan lukien esivalmistelun, perusvalmistelun, lausuntomenettelyn ja jatkovalmistelun prosessit. |
+| [`government-bill-guidelines`](legislative-drafting/skills/government-bill-guidelines/SKILL.md) | Guidance for writing a Finnish government bill (hallituksen esitys) under the official drafting instructions HELO. Covers the standard reasoning structure from background and preparation through current state and objectives and proposals a… |
+| [`legal-language-guide`](legislative-drafting/skills/legal-language-guide/SKILL.md) | Guide to the symbols and inflected forms used in Finnish statutory and legal language (lakikieli), based on Lainkirjoittajan opas chapter 24.4. Covers the section symbol § and its Finnish inflection (2 §:ssä), ordinal numbers and dates, nu… |
+| [`legislative-drafting-manual`](legislative-drafting/skills/legislative-drafting-manual/SKILL.md) | Manual for drafting Finnish legislation, based on Lainkirjoittajan opas. Covers the hierarchy of norms under perustuslaki 731/1999, the types of statute (laki, asetus, määräys), statute structure (luku, pykälä, momentti), statutory languag… |
+| [`legislative-process-guide`](legislative-drafting/skills/legislative-process-guide/SKILL.md) | Guide to the Finnish legislative preparation process from initiative to entry into force, following Lainvalmistelun prosessiopas. Covers preliminary preparation (esivalmistelu), basic preparation (perusvalmistelu), the consultation round (… |
 
 ## Lausunnot
 
@@ -44,7 +44,7 @@ Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin: lakiehdotuksen analyys
 
 | Skill | Kuvaus |
 |---|---|
-| [`consultation-statement-assistant`](legislative-consultation/skills/consultation-statement-assistant/SKILL.md) | Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin minkä tahansa lausunnonantajan (kunta, kaupunki, kuntayhtymä, virasto, järjestö, yritys) näkökulmasta. Auttaa analysoimaan lakiehdotusta, vertaamaan sitä voimassa olevaan lakiin, tun… |
+| [`consultation-statement-assistant`](legislative-consultation/skills/consultation-statement-assistant/SKILL.md) | Drafting a consultation statement (lausunto) on a legislative reform or a draft act from any respondent's point of view: municipality, city, joint municipal authority, government agency, association or company. Helps analyse the bill, comp… |
 
 ## Sopimukset
 
@@ -54,8 +54,8 @@ Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja
 
 | Skill | Kuvaus |
 |---|---|
-| [`contract-drafting`](contracts/skills/contract-drafting/SKILL.md) | Sopimuksen laatiminen Suomen oikeuden mukaan: rakenne, keskeiset lausekkeet ja sopimusoikeuden perusteet. Käytä tätä skilliä, kun käyttäjä laatii, luonnostelee tai täydentää sopimusta – toimitus-, palvelu-, salassapito-, työ-, vuokra-, toi… |
-| [`contract-review`](contracts/skills/contract-review/SKILL.md) | Sopimuksen lausekekohtainen riskiarvio Suomen oikeuden mukaan ja luokittelu (VIHREÄ / KELTAINEN / PUNAINEN). Käytä tätä skilliä, kun käyttäjä haluaa tarkistaa, arvioida tai kommentoida saamaansa tai laatimaansa sopimusta, etsiä siitä riske… |
+| [`contract-drafting`](contracts/skills/contract-drafting/SKILL.md) | Drafting a contract under Finnish law: structure, the key clauses and the fundamentals of contract law. Use this skill when the user is drafting, outlining or completing a contract – supply, services, non-disclosure, employment, lease, eng… |
+| [`contract-review`](contracts/skills/contract-review/SKILL.md) | A clause-by-clause risk assessment of a contract under Finnish law, with a classification (GREEN / YELLOW / RED). Use this skill when the user wants to review, assess or comment on a contract they have received or drafted, to look for risk… |
 
 ## Tietosuoja
 
@@ -65,9 +65,9 @@ Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja 
 
 | Skill | Kuvaus |
 |---|---|
-| [`data-protection-assessment`](data-protection/skills/data-protection-assessment/SKILL.md) | Henkilötietojen käsittelyn tietosuoja-arviointi: käsittelyperuste, käsittelyn periaatteet ja vaikutustenarvioinnin (DPIA) tarve EU:n tietosuoja-asetuksen (2016/679) ja kansallisen tietosuojalain (1050/2018) mukaan. Käytä tätä skilliä, kun… |
-| [`data-subject-requests`](data-protection/skills/data-subject-requests/SKILL.md) | Rekisteröidyn oikeuksien toteuttaminen ja tietopyyntöihin vastaaminen EU:n tietosuoja-asetuksen (15–22 art) mukaan: tarkastusoikeus, oikaisu, poisto, käsittelyn rajoittaminen, siirto-oikeus, vastustaminen ja automatisoidut päätökset. Käytä… |
-| [`privacy-notice`](data-protection/skills/privacy-notice/SKILL.md) | Tietosuojaselosteen (informointi rekisteröidylle, GDPR 13–14 art) ja käsittelytoimien selosteen (GDPR 30 art) laatiminen EU:n tietosuoja-asetuksen ja tietosuojalain (1050/2018) mukaan. Käytä tätä skilliä, kun käyttäjä laatii tai päivittää… |
+| [`data-protection-assessment`](data-protection/skills/data-protection-assessment/SKILL.md) | A data protection assessment of the processing of personal data: the legal basis for processing, the principles of processing and whether a data protection impact assessment (DPIA) is needed under the EU General Data Protection Regulation… |
+| [`data-subject-requests`](data-protection/skills/data-subject-requests/SKILL.md) | Giving effect to the rights of the data subject and responding to their requests under the EU General Data Protection Regulation (Articles 15 to 22) and the Data Protection Act (tietosuojalaki 1050/2018): the right of access, rectification… |
+| [`privacy-notice`](data-protection/skills/privacy-notice/SKILL.md) | Drafting a privacy notice (tietosuojaseloste — the information given to the data subject, GDPR Articles 13 and 14) and a record of processing activities (GDPR Article 30) under the EU General Data Protection Regulation and the Data Protect… |
 
 ## Tekoälysääntely
 
@@ -77,9 +77,9 @@ EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyj�
 
 | Skill | Kuvaus |
 |---|---|
-| [`ai-classification`](ai-regulation/skills/ai-classification/SKILL.md) | Tekoälyjärjestelmän riskiluokittelu EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") mukaan: kielletty, korkea riski, rajoitettu riski (läpinäkyvyysvelvoitteet) vai minimaalinen riski. Käytä tätä skilliä, kun käyttäjä haluaa selvitt… |
-| [`ai-compliance`](ai-regulation/skills/ai-compliance/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) vaatimustenmukaisuuden tukitehtävät: soveltamisen määräajat ja siirtymäajat, seuraamusten (sakkojen) suuruus, GPAI-mallin systeemisen riskin kynnys (10^25 FLOPs) ja perusoikeusvaikutusten arviointi (FRIA, 27… |
-| [`ai-obligations`](ai-regulation/skills/ai-obligations/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) velvoitteiden selvittäminen roolin (tarjoaja/ käyttöönottaja) ja riskiluokan mukaan sekä korkean riskin järjestelmän teknisen dokumentaation (Annex IV) kokoaminen. Käytä tätä skilliä, kun tekoälyjärjestelmän… |
+| [`ai-classification`](ai-regulation/skills/ai-classification/SKILL.md) | Risk classification of an AI system under the EU Artificial Intelligence Act (Regulation (EU) 2024/1689, the "AI Act"): prohibited, high risk, limited risk (transparency obligations) or minimal risk. Use this skill when the user wants to e… |
+| [`ai-compliance`](ai-regulation/skills/ai-compliance/SKILL.md) | Supporting tasks for compliance with the AI Act (EU 2024/1689): the deadlines and transitional periods for application, the size of the penalties (fines), the threshold for systemic risk in a GPAI model (10^25 FLOPs) and the fundamental ri… |
+| [`ai-obligations`](ai-regulation/skills/ai-obligations/SKILL.md) | Establishing the obligations under the AI Act (EU 2024/1689) by role (provider/deployer) and risk class, and compiling the technical documentation for a high-risk system (Annex IV). Use this skill when the risk class of an AI system is kno… |
 
 ## Työoikeus
 
@@ -89,9 +89,9 @@ Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/20
 
 | Skill | Kuvaus |
 |---|---|
-| [`change-negotiations`](employment-law/skills/change-negotiations/SKILL.md) | Yhteistoiminta ja muutosneuvottelut Suomen yhteistoimintalain (1333/2021) mukaan: jatkuva vuoropuhelu, muutosneuvottelujen edellytykset ja kulku, neuvotteluesitys, määräajat ja soveltamisala. Käytä tätä skilliä, kun käyttäjä suunnittelee t… |
-| [`employment-contract`](employment-law/skills/employment-contract/SKILL.md) | Työsopimuksen laatiminen ja tarkistus Suomen työoikeuden mukaan (työsopimuslaki 55/2001). Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa työsopimusta, kysyy työsuhteen ehdoista, määräaikaisuudesta, koeajasta, kilpailukiellosta, sala… |
-| [`termination-of-employment`](employment-law/skills/termination-of-employment/SKILL.md) | Työsuhteen päättämisen arviointi Suomen työoikeuden mukaan (työsopimuslaki 55/2001): irtisanominen (henkilöön liittyvä ja tuotannollis-taloudellinen peruste), purkaminen, koeaikapurku, menettely, irtisanomisajat ja riskien luokittelu. Käyt… |
+| [`change-negotiations`](employment-law/skills/change-negotiations/SKILL.md) | Co-operation and change negotiations under the Finnish Act on Co-operation within Undertakings (yhteistoimintalaki 1333/2021): continuous dialogue, the conditions for and course of change negotiations, the negotiation proposal, time limits… |
+| [`employment-contract`](employment-law/skills/employment-contract/SKILL.md) | Drafting and reviewing an employment contract under Finnish employment law (Employment Contracts Act, työsopimuslaki 55/2001). Use this skill when the user is drafting or reviewing an employment contract, or asks about the terms of an empl… |
+| [`termination-of-employment`](employment-law/skills/termination-of-employment/SKILL.md) | Assessment of the ending of an employment relationship under Finnish employment law (Employment Contracts Act, työsopimuslaki 55/2001): termination with notice (irtisanominen, on grounds relating to the person and on financial and producti… |
 
 ## Hallinto-oikeus
 
@@ -101,9 +101,9 @@ Suomen hallinto-oikeus ja julkishallinto: hallintopäätöksen laatiminen ja tar
 
 | Skill | Kuvaus |
 |---|---|
-| [`administrative-appeal`](administrative-law/skills/administrative-appeal/SKILL.md) | Muutoksenhaku hallintopäätökseen Suomen hallintoprosessissa: oikaisuvaatimus, hallintovalitus hallinto-oikeuteen ja valitus korkeimpaan hallinto-oikeuteen (laki oikeudenkäynnistä hallintoasioissa 808/2019), valitusoikeus, määräajat, valitu… |
-| [`administrative-decision`](administrative-law/skills/administrative-decision/SKILL.md) | Hallintopäätöksen laatiminen ja tarkistus hallintolain (434/2003) mukaan: hyvän hallinnon perusteet, asian käsittely, kuuleminen, esteellisyys, päätöksen perustelu ja muutoksenhakuohjaus. Käytä tätä skilliä, kun käyttäjä laatii tai tarkist… |
-| [`public-access-and-information-requests`](administrative-law/skills/public-access-and-information-requests/SKILL.md) | Asiakirjajulkisuus ja tietopyyntöihin vastaaminen julkisuuslain (laki viranomaisten toiminnan julkisuudesta 621/1999) mukaan: julkisuusperiaate, salassapitoperusteet, asiakirjapyyntöön vastaaminen, määräajat ja kielteinen päätös. Käytä tät… |
+| [`administrative-appeal`](administrative-law/skills/administrative-appeal/SKILL.md) | Appealing against a Finnish administrative decision: request for rectification (oikaisuvaatimus), administrative appeal to the administrative court and appeal to the Supreme Administrative Court (KHO) under the Act on Judicial Procedure in… |
+| [`administrative-decision`](administrative-law/skills/administrative-decision/SKILL.md) | Drafting and reviewing a Finnish administrative decision under the Administrative Procedure Act (hallintolaki 434/2003): the requirements of good administration, handling of the matter, hearing a party, disqualification, the duty to give r… |
+| [`public-access-and-information-requests`](administrative-law/skills/public-access-and-information-requests/SKILL.md) | Public access to official documents and responding to information requests under the Act on the Openness of Government Activities (laki viranomaisten toiminnan julkisuudesta 621/1999): the principle of openness, the grounds for confidentia… |
 
 ## Riidanratkaisu
 
@@ -113,10 +113,10 @@ Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/17
 
 | Skill | Kuvaus |
 |---|---|
-| [`appeal-against-judgment`](dispute-resolution/skills/appeal-against-judgment/SKILL.md) | Muutoksenhaku yleisen tuomioistuimen tuomioon oikeudenkäymiskaaren (4/1734) mukaan: valitus käräjäoikeuden tuomiosta hovioikeuteen ja jatkokäsittelylupa, valitus korkeimpaan oikeuteen ja valituslupa, tyytymättömyyden ilmoitus, määräajat ja… |
-| [`damages`](dispute-resolution/skills/damages/SKILL.md) | Vahingonkorvausvastuun arviointi Suomen oikeuden mukaan (vahingonkorvauslaki 412/1974). Käytä tätä skilliä, kun käyttäjä arvioi korvausvastuun syntymistä tai puolustautuu korvausvaatimusta vastaan: tuottamus, syy-yhteys, vahinkolajit ja ko… |
-| [`evidence`](dispute-resolution/skills/evidence/SKILL.md) | Riita-asian todistelun suunnittelu ja arviointi oikeudenkäymiskaaren (4/1734) 17 luvun mukaan: näyttötaakka, todistuskeinot (asiakirjat, todistajat, asiantuntijat, katselmus, asianosaisen kuuleminen), todistusteemat ja todistelun rajoituks… |
-| [`statement-of-claim`](dispute-resolution/skills/statement-of-claim/SKILL.md) | Riita-asian haastehakemuksen laatiminen ja tarkistus oikeudenkäymiskaaren (4/1734) mukaan: kantajan vaatimukset, niiden perusteet, todisteet, oikeudenkäyntikulut, toimivalta ja prosessiosoite. Käytä tätä skilliä, kun käyttäjä panee vireill… |
+| [`appeal-against-judgment`](dispute-resolution/skills/appeal-against-judgment/SKILL.md) | Appealing against a judgment of a general court under the Code of Judicial Procedure (oikeudenkäymiskaari 4/1734): an appeal from a judgment of the käräjäoikeus to the hovioikeus and leave for continued consideration, an appeal to the Supr… |
+| [`damages`](dispute-resolution/skills/damages/SKILL.md) | Assessing liability in damages under Finnish law (vahingonkorvauslaki 412/1974). Use this skill when the user is assessing whether liability in damages has arisen or is defending against a claim for damages: negligence, causation, the head… |
+| [`evidence`](dispute-resolution/skills/evidence/SKILL.md) | Planning and assessing the evidence in a civil case under chapter 17 of the Code of Judicial Procedure (oikeudenkäymiskaari 4/1734): the burden of proof, the means of proof (documents, witnesses, experts, inspection, hearing a party), the… |
+| [`statement-of-claim`](dispute-resolution/skills/statement-of-claim/SKILL.md) | Drafting and checking an application for a summons (haastehakemus) in a civil case under the Code of Judicial Procedure (oikeudenkäymiskaari 4/1734): the plaintiff's claims, their grounds, the evidence, the costs of the proceedings, jurisd… |
 
 ## Yhtiöoikeus
 
@@ -126,9 +126,9 @@ Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiö
 
 | Skill | Kuvaus |
 |---|---|
-| [`corporate-governance`](company-law/skills/corporate-governance/SKILL.md) | Osakeyhtiön perustaminen, hallinto ja johdon vastuu Suomen osakeyhtiölain (624/2006) mukaan. Käytä tätä skilliä, kun käyttäjä perustaa osakeyhtiötä, laatii tai muuttaa yhtiöjärjestystä, valmistelee yhtiökokousta tai hallituksen kokousta (k… |
-| [`corporate-transactions`](company-law/skills/corporate-transactions/SKILL.md) | Yritysjärjestelyjen oikeudellinen jäsennys Suomen oikeuden mukaan: osakekauppa, liiketoimintakauppa, sulautuminen, jakautuminen ja oikeudellinen due diligence. Käytä tätä skilliä, kun käyttäjä valmistelee, arvioi tai dokumentoi yrityskaupp… |
-| [`shareholders-agreement`](company-law/skills/shareholders-agreement/SKILL.md) | Osakassopimuksen laatiminen ja riskitarkistus Suomen oikeuden mukaan. Käytä tätä skilliä, kun käyttäjä laatii, neuvottelee, tarkistaa tai tulkitsee osakassopimusta tai sen lausekkeita: päätöksenteko ja hallituspaikat, osakkeiden luovutusra… |
+| [`corporate-governance`](company-law/skills/corporate-governance/SKILL.md) | Corporate governance of a Finnish limited liability company: incorporation, governing bodies and the liability of management under the Limited Liability Companies Act (osakeyhtiölaki 624/2006). Use this skill when the user is forming a lim… |
+| [`corporate-transactions`](company-law/skills/corporate-transactions/SKILL.md) | Structuring corporate transactions under Finnish law: share deal, business deal, merger, demerger and legal due diligence under the Limited Liability Companies Act (osakeyhtiölaki 624/2006) and the Competition Act (kilpailulaki 948/2011).… |
+| [`shareholders-agreement`](company-law/skills/shareholders-agreement/SKILL.md) | Drafting a shareholders' agreement and reviewing its risks under Finnish law. Use this skill when the user is drafting, negotiating, reviewing or interpreting a shareholders' agreement (osakassopimus) or its clauses: decision-making and bo… |
 
 ## Insolvenssi
 
@@ -138,9 +138,9 @@ Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn val
 
 | Skill | Kuvaus |
 |---|---|
-| [`bankruptcy-proceedings`](insolvency/skills/bankruptcy-proceedings/SKILL.md) | Konkurssimenettelyn kulku Suomen konkurssilain (120/2004) mukaan velkojan ja velallisen näkökulmasta. Käytä tätä skilliä, kun käyttäjä valmistelee tai arvioi konkurssihakemusta, on saanut tiedon vastapuolen konkurssista, valvoo saatavaa ko… |
-| [`debt-collection`](insolvency/skills/debt-collection/SKILL.md) | Saatavan perinnän elinkaari Suomen oikeuden mukaan: vapaaehtoinen perintä ja hyvä perintätapa (perintälaki 513/1999), velan vanhentumisen hallinta ja katkaisu (728/2003), oikeudellinen perintä ja ulosotto (ulosottokaari 705/2007). Käytä tä… |
-| [`insolvency-assessment`](insolvency/skills/insolvency-assessment/SKILL.md) | Maksukyvyttömyystilanteen jäsennys ja menettelyn valinta Suomen insolvenssioikeuden mukaan. Käytä tätä skilliä, kun yrityksen tai yksityishenkilön maksukyky horjuu tai velkaa ei pystytä maksamaan ja pitää arvioida vaihtoehdot: vapaaehtoine… |
+| [`bankruptcy-proceedings`](insolvency/skills/bankruptcy-proceedings/SKILL.md) | The course of bankruptcy proceedings under the Finnish Bankruptcy Act (konkurssilaki 120/2004), from the creditor's and the debtor's point of view. Use this skill when the user is preparing or assessing a bankruptcy petition, has learned t… |
+| [`debt-collection`](insolvency/skills/debt-collection/SKILL.md) | The life cycle of collecting a claim under Finnish law: voluntary collection and good collection practice (perintälaki 513/1999), managing and interrupting the limitation of a debt (728/2003), judicial collection and enforcement (ulosottok… |
+| [`insolvency-assessment`](insolvency/skills/insolvency-assessment/SKILL.md) | Framing a situation of insolvency and choosing the procedure under Finnish insolvency law. Use this skill when a company's or a private individual's ability to pay is failing or a debt cannot be paid and the alternatives have to be weighed… |
 
 ## Immateriaalioikeus
 
@@ -150,9 +150,9 @@ Suomen immateriaalioikeus: tavaramerkin ja toiminimen suojastrategia ja sekaannu
 
 | Skill | Kuvaus |
 |---|---|
-| [`copyright`](intellectual-property/skills/copyright/SKILL.md) | Tekijänoikeus Suomen oikeuden mukaan (tekijänoikeuslaki 404/1961 DSM-uudistuksineen). Käytä tätä skilliä, kun käyttäjä kysyy teoksen, ohjelmiston, kuvan, tekstin, musiikin tai muun sisällön tekijänoikeudesta, oikeuksien omistuksesta työ- t… |
-| [`trade-secrets`](intellectual-property/skills/trade-secrets/SKILL.md) | Liikesalaisuuksien suoja Suomen oikeuden mukaan (liikesalaisuuslaki 595/2018). Käytä tätä skilliä, kun käyttäjä suojaa yrityksen luottamuksellista tietoa (asiakastiedot, hinnoittelu, reseptit, algoritmit, prosessit), arvioi täyttyykö liike… |
-| [`trademarks-and-trade-names`](intellectual-property/skills/trademarks-and-trade-names/SKILL.md) | Tavaramerkin ja toiminimen suoja Suomen oikeuden mukaan (tavaramerkkilaki 544/2019, toiminimilaki 128/1979). Käytä tätä skilliä, kun käyttäjä suunnittelee tuotteen, palvelun tai yrityksen nimeä tai logoa, valmistelee tavaramerkin rekisterö… |
+| [`copyright`](intellectual-property/skills/copyright/SKILL.md) | Copyright under Finnish law (tekijänoikeuslaki 404/1961 with the DSM reforms). Use this skill when the user asks about copyright in a work, software, an image, a text, music or other content, about the ownership of rights in an employment… |
+| [`trade-secrets`](intellectual-property/skills/trade-secrets/SKILL.md) | Protection of trade secrets under Finnish law (liikesalaisuuslaki 595/2018). Use this skill when the user is protecting a company's confidential information (customer data, pricing, recipes, algorithms, processes), assesses whether the def… |
+| [`trademarks-and-trade-names`](intellectual-property/skills/trademarks-and-trade-names/SKILL.md) | Protection of trademarks and trade names under Finnish law (tavaramerkkilaki 544/2019, toiminimilaki 128/1979). Use this skill when the user is planning a name or a logo for a product, a service or a company, is preparing a trade mark regi… |
 
 ## Verotus
 
@@ -162,9 +162,9 @@ Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku oikaisuvaatimu
 
 | Skill | Kuvaus |
 |---|---|
-| [`corporate-taxation`](taxation/skills/corporate-taxation/SKILL.md) | Yritysverotus Suomessa (laki elinkeinotulon verottamisesta 360/1968). Käytä tätä skilliä, kun käyttäjä arvioi yrityksen tulon veronalaisuutta tai menon vähennyskelpoisuutta, suunnittelee konserniavustusta, osingonjaon verotusta tai yritysj… |
-| [`tax-procedure-and-appeals`](taxation/skills/tax-procedure-and-appeals/SKILL.md) | Verotusmenettely ja muutoksenhaku verotukseen Suomessa (laki verotusmenettelystä 1558/1995). Käytä tätä skilliä, kun käyttäjä on saanut verotuspäätöksen, jälkiverotus- tai veronkorotuspäätöksen tai verotarkastuskertomuksen ja harkitsee muu… |
-| [`value-added-tax`](taxation/skills/value-added-tax/SKILL.md) | Arvonlisäverotus Suomessa (arvonlisäverolaki 1501/1993). Käytä tätä skilliä, kun käyttäjä arvioi myynnin arvonlisäverollisuutta tai verokantaa, ostojen vähennysoikeutta, käännettyä verovelvollisuutta (rakennusala, EU-hankinnat), kansainväl… |
+| [`corporate-taxation`](taxation/skills/corporate-taxation/SKILL.md) | Corporate taxation in Finland (the Business Income Tax Act, laki elinkeinotulon verottamisesta 360/1968). Use this skill when the user is assessing whether a company's income is taxable or an expense deductible, is planning a group contrib… |
+| [`tax-procedure-and-appeals`](taxation/skills/tax-procedure-and-appeals/SKILL.md) | Tax procedure and appeals against taxation in Finland (the Act on Assessment Procedure, laki verotusmenettelystä 1558/1995). Use this skill when the user has received an assessment decision, a reassessment or punitive tax increase decision… |
+| [`value-added-tax`](taxation/skills/value-added-tax/SKILL.md) | Value added tax in Finland (the Value Added Tax Act, arvonlisäverolaki 1501/1993). Use this skill when the user is assessing whether a sale is subject to VAT or which rate applies, the right to deduct input VAT, the reverse charge (constru… |
 
 ## Julkiset hankinnat
 
@@ -198,9 +198,9 @@ Suomen ympäristö- ja kaavoitusoikeus uudistuneen lainsäädännön mukaan: ymp
 
 | Skill | Kuvaus |
 |---|---|
-| [`environmental-liability`](environment-and-planning/skills/environmental-liability/SKILL.md) | Ympäristövastuiden arviointi Suomessa: pilaantuneen maaperän ja pohjaveden puhdistusvastuu (YSL 527/2014), ympäristövahinkojen korvaaminen (737/1994), ympäristörikosvastuu sekä ympäristö-due diligence yrityskaupassa ja kiinteistökaupassa.… |
-| [`environmental-permits-and-supervision`](environment-and-planning/skills/environmental-permits-and-supervision/SKILL.md) | Ympäristöluvat, ilmoitukset ja valvonta Suomen ympäristönsuojelulain (527/2014) mukaan. Käytä tätä skilliä, kun käyttäjä arvioi toiminnan luvanvaraisuutta tai luvan muutostarvetta, valmistelee tai jäsentää ympäristölupahakemusta tai vesilu… |
-| [`land-use-planning-and-construction`](environment-and-planning/skills/land-use-planning-and-construction/SKILL.md) | Kaavoitus ja rakentaminen Suomessa alueidenkäyttölain (132/1999, ent. maankäyttö- ja rakennuslaki) ja uuden rakentamislain (751/2023) mukaan. Käytä tätä skilliä, kun käyttäjä selvittää kaavatilannetta tai kaavamääräysten tulkintaa, osallis… |
+| [`environmental-liability`](environment-and-planning/skills/environmental-liability/SKILL.md) | Assessing environmental liabilities in Finland: liability to clean up contaminated soil and groundwater (ympäristönsuojelulaki 527/2014), compensation for environmental damage (737/1994), criminal environmental liability, and environmental… |
+| [`environmental-permits-and-supervision`](environment-and-planning/skills/environmental-permits-and-supervision/SKILL.md) | Environmental permits, notifications and supervision under the Finnish Environmental Protection Act (ympäristönsuojelulaki 527/2014). Use this skill when the user is assessing whether an activity needs a permit or whether a permit has to b… |
+| [`land-use-planning-and-construction`](environment-and-planning/skills/land-use-planning-and-construction/SKILL.md) | Land use planning and construction in Finland under the Land Use Act (alueidenkäyttölaki 132/1999, formerly maankäyttö- ja rakennuslaki) and the new Building Act (rakentamislaki 751/2023). Use this skill when the user is establishing the p… |
 
 ## Kiinteistöt ja asuminen
 
@@ -210,10 +210,10 @@ Suomen kiinteistö- ja asunto-oikeus: kiinteistökaupan määrämuoto, kirjaukse
 
 | Skill | Kuvaus |
 |---|---|
-| [`housing-company`](real-estate-and-housing/skills/housing-company/SKILL.md) | Asunto-osakeyhtiön hallinto ja osakkaan asema Suomessa asunto-osakeyhtiölain (1599/2009) mukaan. Käytä tätä skilliä, kun käyttäjä selvittää kunnossapitovastuun jakoa yhtiön ja osakkaan välillä, suunnittelee tai arvioi osakkaan muutostyötä,… |
-| [`lease-agreements`](real-estate-and-housing/skills/lease-agreements/SKILL.md) | Asuin- ja liikehuoneiston vuokrasuhteet Suomessa (laki asuinhuoneiston vuokrauksesta 481/1995 ja laki liikehuoneiston vuokrauksesta 482/1995). Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa vuokrasopimusta, arvioi vuokrankorotuksen,… |
-| [`real-property-conveyance`](real-estate-and-housing/skills/real-property-conveyance/SKILL.md) | Kiinteistön kauppa Suomessa maakaaren (540/1995) mukaan. Käytä tätä skilliä, kun käyttäjä valmistelee tai tarkistaa kiinteistön, määräalan tai määräosan kauppaa tai esisopimusta, laatii kauppakirjaa, selvittää lainhuutoa, kiinnityksiä tai… |
-| [`residential-property-sale`](real-estate-and-housing/skills/residential-property-sale/SKILL.md) | Asunto-osakkeiden kauppa Suomessa asuntokauppalain (843/1994) mukaan. Käytä tätä skilliä, kun käyttäjä valmistelee tai tarkistaa asunnon ostoa tai myyntiä, arvioi uudiskohteen (RS-kohteen) kauppaa, arvioi kaupan jälkeen ilmennyttä virhettä… |
+| [`housing-company`](real-estate-and-housing/skills/housing-company/SKILL.md) | Governance of a Finnish housing company and the position of a shareholder under the Limited Liability Housing Companies Act (asunto-osakeyhtiölaki 1599/2009). Use this skill when the user is working out the division of maintenance liabilit… |
+| [`lease-agreements`](real-estate-and-housing/skills/lease-agreements/SKILL.md) | Residential and commercial leases in Finland (the Act on Residential Leases, laki asuinhuoneiston vuokrauksesta 481/1995, and the Act on Commercial Leases, laki liikehuoneiston vuokrauksesta 482/1995). Use this skill when the user is draft… |
+| [`real-property-conveyance`](real-estate-and-housing/skills/real-property-conveyance/SKILL.md) | Sale of real property in Finland under the Code of Real Estate (maakaari 540/1995). Use this skill when the user is preparing or reviewing a sale or a pre-contract for real property, a parcel or an undivided share, drafting a deed of sale… |
+| [`residential-property-sale`](real-estate-and-housing/skills/residential-property-sale/SKILL.md) | Sale of housing-company shares in Finland under the Housing Transactions Act (asuntokauppalaki 843/1994). Use this skill when the user is preparing or reviewing the purchase or sale of a dwelling, assessing the purchase of a new-build (an… |
 
 ## Kilpailuoikeus
 
@@ -223,9 +223,9 @@ Suomen ja EU:n kilpailuoikeus: kielletyt kilpailunrajoitukset ja määräävän 
 
 | Skill | Kuvaus |
 |---|---|
-| [`competition-compliance`](competition-law/skills/competition-compliance/SKILL.md) | Kilpailuoikeudellinen compliance ja viranomaistarkastuksiin varautuminen Suomessa. Käytä tätä skilliä, kun organisaatio rakentaa tai päivittää kilpailu-compliance-ohjelmaa, laatii pelisääntöjä kilpailijakontakteille, toimialajärjestötoimin… |
-| [`merger-control`](competition-law/skills/merger-control/SKILL.md) | Yrityskauppavalvonta Suomessa ja EU:ssa (kilpailulaki 948/2011 4 luku, EU:n sulautuma-asetus). Käytä tätä skilliä, kun käyttäjä arvioi, pitääkö yrityskauppa ilmoittaa KKV:lle tai komissiolle, valmistelee yrityskauppailmoitusta, suunnittele… |
-| [`restrictive-practices`](competition-law/skills/restrictive-practices/SKILL.md) | Kiellettyjen kilpailunrajoitusten ja määräävän markkina-aseman väärinkäytön arviointi Suomen ja EU:n kilpailuoikeuden mukaan (kilpailulaki 948/2011, SEUT 101 ja 102 artikla). Käytä tätä skilliä, kun käyttäjä arvioi sopimuksen, yhteistyön t… |
+| [`competition-compliance`](competition-law/skills/competition-compliance/SKILL.md) | Competition-law compliance and preparing for an authority inspection in Finland. Use this skill when an organisation is building or updating a competition compliance programme, drawing up ground rules for competitor contacts, trade-associa… |
+| [`merger-control`](competition-law/skills/merger-control/SKILL.md) | Merger control in Finland and the EU (Chapter 4 of the Competition Act kilpailulaki 948/2011; the EU Merger Regulation). Use this skill when the user is assessing whether a concentration must be notified to KKV or to the Commission, prepar… |
+| [`restrictive-practices`](competition-law/skills/restrictive-practices/SKILL.md) | Assessment of prohibited restrictive practices and abuse of a dominant market position under Finnish and EU competition law (kilpailulaki 948/2011; SEUT Article 101 and Article 102). Use this skill when the user is assessing whether an agr… |
 
 ## Pankki ja rahoitus
 
@@ -235,9 +235,9 @@ Suomen pankki- ja rahoitusoikeus: rahoitussopimukset kovenantteineen ja vakuuspa
 
 | Skill | Kuvaus |
 |---|---|
-| [`anti-money-laundering`](banking-and-finance/skills/anti-money-laundering/SKILL.md) | Rahanpesun ja terrorismin rahoittamisen estäminen Suomessa (laki 444/2017). Käytä tätä skilliä, kun organisaatio arvioi, onko se ilmoitusvelvollinen, rakentaa tai päivittää AML-compliance-ohjelmaa (riskiarvio, asiakkaan tunteminen, monitor… |
-| [`financing-and-collateral`](banking-and-finance/skills/financing-and-collateral/SKILL.md) | Rahoitussopimukset ja vakuudet Suomen oikeuden mukaan. Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa velkakirjaa, lainasopimusta tai rahoitussopimusta kovenantteineen, suunnittelee tai arvioi vakuuksia (pantti, kiinteistöpanttioike… |
-| [`securities-markets`](banking-and-finance/skills/securities-markets/SKILL.md) | Arvopaperimarkkinasääntely Suomessa (arvopaperimarkkinalaki 746/2012, EU:n markkinoiden väärinkäyttöasetus MAR). Käytä tätä skilliä, kun listayhtiö tai sen neuvonantaja käsittelee tiedonantovelvollisuutta (pörssitiedote, sisäpiiritiedon ju… |
+| [`anti-money-laundering`](banking-and-finance/skills/anti-money-laundering/SKILL.md) | Preventing money laundering and terrorist financing in Finland (Act 444/2017). Use this skill when an organisation is assessing whether it is an obliged entity, is building or updating an AML compliance programme (risk assessment, customer… |
+| [`financing-and-collateral`](banking-and-finance/skills/financing-and-collateral/SKILL.md) | Finance agreements and collateral under Finnish law (velkakirjalaki 622/1947; takauslaki 361/1999; korkolaki 633/1982). Use this skill when the user is drafting or reviewing a promissory note, a loan agreement or a finance agreement with c… |
+| [`securities-markets`](banking-and-finance/skills/securities-markets/SKILL.md) | Securities markets regulation in Finland (the Securities Markets Act, arvopaperimarkkinalaki 746/2012; the EU Market Abuse Regulation MAR). Use this skill when a listed company or its adviser is dealing with the disclosure obligation (a st… |
 
 ## Ulkomaalaisoikeus
 
@@ -247,9 +247,9 @@ Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteis
 
 | Skill | Kuvaus |
 |---|---|
-| [`employer-obligations`](immigration-law/skills/employer-obligations/SKILL.md) | Työnantajan velvollisuudet ulkomaalaisen työvoiman käytössä Suomessa (ulkomaalaislaki 301/2004, laki työntekijöiden lähettämisestä 447/2016). Käytä tätä skilliä, kun työnantaja varmistaa työntekijän työnteko-oikeutta, rakentaa kansainvälis… |
-| [`eu-and-family-based-residence`](immigration-law/skills/eu-and-family-based-residence/SKILL.md) | EU-kansalaisen oleskeluoikeus, perheperusteinen oleskelu, pysyvä oleskelulupa ja Suomen kansalaisuus (ulkomaalaislaki 301/2004, kansalaisuuslaki 359/2003). Käytä tätä skilliä, kun käsitellään EU/ETA-kansalaisen rekisteröintiä ja perheenjäs… |
-| [`work-based-residence-permits`](immigration-law/skills/work-based-residence-permits/SKILL.md) | Työperusteiset oleskeluluvat Suomessa (ulkomaalaislaki 301/2004). Käytä tätä skilliä, kun työnantaja rekrytoi ulkomaalaisen työntekijän EU/ETA-alueen ulkopuolelta tai työntekijälle haetaan lupaa: lupatyypin valinta (työntekijän oleskelulup… |
+| [`employer-obligations`](immigration-law/skills/employer-obligations/SKILL.md) | An employer's obligations when using foreign labour in Finland (Aliens Act, ulkomaalaislaki 301/2004; laki työntekijöiden lähettämisestä 447/2016). Use this skill when an employer is confirming an employee's right to work, building a compl… |
+| [`eu-and-family-based-residence`](immigration-law/skills/eu-and-family-based-residence/SKILL.md) | An EU citizen's right of residence, family-based residence, a permanent residence permit and Finnish citizenship (Aliens Act, ulkomaalaislaki 301/2004; Nationality Act, kansalaisuuslaki 359/2003). Use this skill when dealing with the regis… |
+| [`work-based-residence-permits`](immigration-law/skills/work-based-residence-permits/SKILL.md) | Work-based residence permits in Finland (Aliens Act, ulkomaalaislaki 301/2004). Use this skill when an employer recruits a foreign employee from outside the EU/EEA area or a permit is being applied for on an employee's behalf: choosing the… |
 
 ## Perhe- ja perintöoikeus
 
@@ -259,10 +259,10 @@ Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhtee
 
 | Skill | Kuvaus |
 |---|---|
-| [`child-status-and-maintenance`](family-and-inheritance/skills/child-status-and-maintenance/SKILL.md) | Lapsen huolto, asuminen, tapaaminen ja elatus Suomessa (laki lapsen huollosta ja tapaamisoikeudesta 361/1983 ja laki lapsen elatuksesta 704/1975) sekä vanhemmuuden vahvistaminen (vanhemmuuslaki 775/2022). Käytä tätä skilliä, kun jäsennetää… |
-| [`guardianship-and-powers-of-attorney`](family-and-inheritance/skills/guardianship-and-powers-of-attorney/SKILL.md) | Edunvalvonta ja siihen varautuminen Suomessa (laki holhoustoimesta 442/1999 ja laki edunvalvontavaltuutuksesta 648/2007). Käytä tätä skilliä, kun selvitetään täysi-ikäisen tai alaikäisen edunvalvonnan tarvetta, laaditaan tai arvioidaan edu… |
-| [`inheritance-and-wills`](family-and-inheritance/skills/inheritance-and-wills/SKILL.md) | Perimys, testamentti ja jäämistön käsittely Suomessa (perintökaari 40/1965). Käytä tätä skilliä, kun selvitetään perimysjärjestystä, laaditaan tai tulkitaan testamenttia, arvioidaan rintaperillisen lakiosaa, jäsennetään perunkirjoitusta ta… |
-| [`marriage-and-division-of-property`](family-and-inheritance/skills/marriage-and-division-of-property/SKILL.md) | Avioliiton varallisuussuhteet ja niiden purkautuminen Suomessa (avioliittolaki 234/1929). Käytä tätä skilliä, kun laaditaan tai arvioidaan avioehtosopimusta, valmistaudutaan ositukseen tai omaisuuden erotteluun avioeron tai kuoleman johdos… |
+| [`child-status-and-maintenance`](family-and-inheritance/skills/child-status-and-maintenance/SKILL.md) | Custody, residence, contact and maintenance of a child in Finland (laki lapsen huollosta ja tapaamisoikeudesta 361/1983 and laki lapsen elatuksesta 704/1975) together with the establishment of parenthood (vanhemmuuslaki 775/2022). Use this… |
+| [`guardianship-and-powers-of-attorney`](family-and-inheritance/skills/guardianship-and-powers-of-attorney/SKILL.md) | Guardianship and planning ahead for it in Finland (laki holhoustoimesta 442/1999 and laki edunvalvontavaltuutuksesta 648/2007). Use this skill when assessing whether an adult or a minor needs a guardian, drafting or reviewing a continuing… |
+| [`inheritance-and-wills`](family-and-inheritance/skills/inheritance-and-wills/SKILL.md) | Succession, wills and the administration of a deceased person's estate in Finland (perintökaari 40/1965). Use this skill when working out the order of succession, drafting or interpreting a will, assessing the compulsory share of a direct… |
+| [`marriage-and-division-of-property`](family-and-inheritance/skills/marriage-and-division-of-property/SKILL.md) | The property relations of marriage and their dissolution in Finland (avioliittolaki 234/1929). Use this skill when drafting or reviewing a prenuptial agreement, preparing for a division of matrimonial property or a separation of assets on… |
 
 ## Kuluttajaoikeus
 
@@ -284,9 +284,9 @@ Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellyt
 
 | Skill | Kuvaus |
 |---|---|
-| [`criminal-liability-basics`](criminal-law/skills/criminal-liability-basics/SKILL.md) | Rikosvastuun yleiset edellytykset Suomen rikosoikeudessa (rikoslaki 39/1889, yleinen osa). Käytä tätä skilliä, kun arvioidaan täyttyykö rikoksen tunnusmerkistö, onko teko tahallinen vai tuottamuksellinen, onko vastuuvapausperustetta (hätäv… |
-| [`principal-offences`](criminal-law/skills/principal-offences/SKILL.md) | Keskeisten rikostyyppien tunnusmerkistöt ja rajanvedot Suomen rikosoikeudessa (rikoslaki 39/1889, erityisosa). Käytä tätä skilliä, kun jäsennetään mihin rikosnimikkeeseen teko mahdollisesti sopii, erotetaan perus-, törkeä- ja lievä tekomuo… |
-| [`sentencing`](criminal-law/skills/sentencing/SKILL.md) | Rangaistuksen ja muiden seuraamusten määrääminen Suomen rikosoikeudessa (rikoslaki 39/1889). Käytä tätä skilliä, kun arvioidaan rangaistuslajia ja -asteikkoa, rangaistuksen mittaamista koventamis- ja lieventämisperusteineen, ehdollisen ja… |
+| [`criminal-liability-basics`](criminal-law/skills/criminal-liability-basics/SKILL.md) | The general conditions of criminal liability in Finnish criminal law (Criminal Code, rikoslaki 39/1889, general part). Use this skill when assessing whether the statutory definition of an offence (tunnusmerkistö) is satisfied, whether an a… |
+| [`principal-offences`](criminal-law/skills/principal-offences/SKILL.md) | The statutory definitions of the principal offence types in Finnish criminal law and the lines between them (Criminal Code, rikoslaki 39/1889, special part). Use this skill when working out which offence label an act might fall under, dist… |
+| [`sentencing`](criminal-law/skills/sentencing/SKILL.md) | Imposing a penalty and other sanctions in Finnish criminal law (Criminal Code, rikoslaki 39/1889). Use this skill when assessing the type of penalty and the sentencing range, the measurement of the sentence with its aggravating and mitigat… |
 
 ## Kaksikielisyys (FI/SV)
 
@@ -296,8 +296,8 @@ Suomi–ruotsi-kaksikielisyyden tuki juridisessa työssä: oikeuskielen käänt�
 
 | Skill | Kuvaus |
 |---|---|
-| [`language-rights-and-obligations`](bilingual-legal-language/skills/language-rights-and-obligations/SKILL.md) | Kielelliset oikeudet ja viranomaisen kielelliset velvoitteet Suomessa (kielilaki 423/2003 ja perustuslaki 731/1999 17 §). Käytä tätä skilliä, kun arvioidaan millä kielellä viranomaisessa saa asioida, mitä käännös-, tiedoksianto- ja palvelu… |
-| [`legal-translation`](bilingual-legal-language/skills/legal-translation/SKILL.md) | Juridisen tekstin kääntäminen suomen ja ruotsin välillä (FI↔SV) vakiintunutta oikeustermistöä ja virallisia lähteitä käyttäen. Käytä tätä skilliä, kun käännetään tai tarkistetaan sopimusta, päätöstä, kirjelmää tai säädösviittausta suomesta… |
+| [`language-rights-and-obligations`](bilingual-legal-language/skills/language-rights-and-obligations/SKILL.md) | Language rights and an authority's language obligations in Finland (kielilaki 423/2003 and perustuslaki 731/1999 17 §). Use this skill when assessing in which language a person may deal with an authority, what obligations to translate, to… |
+| [`legal-translation`](bilingual-legal-language/skills/legal-translation/SKILL.md) | Translating legal text between Finnish and Swedish (FI↔SV) using established legal terminology and official sources. Use this skill when translating or checking a contract, decision, written submission or statutory reference from Finnish i… |
 
 ---
 

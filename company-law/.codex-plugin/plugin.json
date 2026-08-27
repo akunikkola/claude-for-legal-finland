@@ -1,7 +1,7 @@
 {
   "name": "company-law",
   "version": "0.1.0",
-  "description": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset ja yritysjärjestelyt.",
+  "description": "Finnish company law (osakeyhtiölaki 624/2006): incorporation and governance, directors' duties and liability, distribution of assets, shareholders' agreements and corporate transactions.",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Yhtiöoikeus",
-    "shortDescription": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset ja yritysjärjestelyt.",
+    "shortDescription": "Finnish company law (osakeyhtiölaki 624/2006): incorporation and governance, directors' duties and liability, distribution of assets, shareholders' agreements…",
     "longDescription": "Suomen yhtiöoikeus (osakeyhtiölaki 624/2006): perustaminen ja hallinto, yhtiökokous ja hallitustyö, johdon vastuu, varojenjaon kaksoistesti, osakassopimusten laatiminen ja riskitarkistus sekä yritysjärjestelyt due diligence -listoineen.",
     "developerName": "Aku Nikkola",
     "category": "Legal",

@@ -1,7 +1,7 @@
 {
   "name": "criminal-law",
   "version": "0.1.0",
-  "description": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889) avustajan, asianomistajan ja compliancen näkökulmasta: rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, osallisuus, yritys, vastuuvapausperusteet), keskeiset rikostyypit tunnusmerkistöineen sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Ei avusteta rikoksen tekemisessä eikä peittelyssä.",
+  "description": "Finnish substantive criminal law (Criminal Code, rikoslaki 39/1889) from the perspective of counsel, the injured party and compliance: the general conditions of criminal liability (legality principle, intent and negligence, complicity, attempt, grounds excluding liability), the principal offence types with their statutory definitions, and sentencing, confiscation and limitation. Complements the criminal-procedure domain. Does not assist in committing or concealing an offence.",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rikosoikeus (aineellinen)",
-    "shortDescription": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889) avustajan, asianomistajan ja compliancen näkökulmasta: rikosvastuun yleiset edellytykset (laillisuusperiaate…",
+    "shortDescription": "Finnish substantive criminal law (Criminal Code, rikoslaki 39/1889) from the perspective of counsel, the injured party and compliance: the general conditions o…",
     "longDescription": "Suomen aineellinen rikosoikeus (rikoslaki 39/1889): rikosvastuun yleiset edellytykset (laillisuusperiaate, tahallisuus ja tuottamus, vastuuvapausperusteet, osallisuus, yritys), keskeisten rikostyyppien tunnusmerkistöt ja tekomuodot sekä rangaistuksen määrääminen, menettämisseuraamus ja vanhentuminen. Täydentää rikosprosessi-plugaria. Palvelee puolustusta, asianomistajaa ja compliancea; ei avusta rikoksen tekemisessä eikä peittelyssä.",
     "developerName": "Aku Nikkola",
     "category": "Legal",

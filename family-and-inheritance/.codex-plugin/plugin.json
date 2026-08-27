@@ -1,7 +1,7 @@
 {
   "name": "family-and-inheritance",
   "version": "0.1.0",
-  "description": "Suomen perhe- ja perintöoikeus: avioliitto, avioehto ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361/1983 ja 704/1975), perintö, testamentti ja perinnönjako (perintökaari 40/1965) sekä edunvalvonta ja edunvalvontavaltuutus (442/1999 ja 648/2007).",
+  "description": "Finnish family and inheritance law: marriage, the prenuptial agreement and the division of matrimonial property (avioliittolaki 234/1929), the position of a cohabiting partner (26/2011), custody, contact and maintenance of a child (361/1983 and 704/1975), succession, wills and distribution of an estate (perintökaari 40/1965), and guardianship and the continuing power of attorney (442/1999 and 648/2007).",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Perhe- ja perintöoikeus",
-    "shortDescription": "Suomen perhe- ja perintöoikeus: avioliitto, avioehto ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361…",
+    "shortDescription": "Finnish family and inheritance law: marriage, the prenuptial agreement and the division of matrimonial property (avioliittolaki 234/1929), the position of a co…",
     "longDescription": "Suomen perhe- ja perintöoikeus arjen tilanteisiin: avioliiton varallisuussuhteet ja ositus (avioliittolaki 234/1929), avopuolison asema (26/2011), lapsen huolto, tapaaminen ja elatus (361/1983 ja 704/1975), perimys, testamentti ja lakiosa (perintökaari 40/1965) sekä edunvalvonta ja edunvalvontavaltuutus (442/1999 ja 648/2007). Lapsen etu ja turvallisuus edellä; verot lähteestä.",
     "developerName": "Aku Nikkola",
     "category": "Legal",

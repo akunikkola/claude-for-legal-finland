@@ -1,7 +1,7 @@
 {
   "name": "legislative-drafting",
   "version": "0.1.0",
-  "description": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot.",
+  "description": "An assistant for Finnish legislative drafting: Lainkirjoittajan opas (statute structure and language and cross-referencing and the enacting formula), the government bill drafting instructions (HELO), the legislative process guide and the symbols and inflected forms of statutory language.",
   "author": {
     "name": "Aku Nikkola"
   },
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Lainvalmistelu",
-    "shortDescription": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistel…",
+    "shortDescription": "An assistant for Finnish legislative drafting: Lainkirjoittajan opas (statute structure and language and cross-referencing and the enacting formula), the gover…",
     "longDescription": "Säädösvalmistelun apuri: Lainkirjoittajan opas (säädösten rakenne, kieli, viittaaminen, johtolause), hallituksen esitysten laatimisohjeet (HELO), lainvalmistelun prosessiopas ja lakikielen merkit ja taivutusmuodot. Perustuu virallisiin oppaisiin.",
     "developerName": "Aku Nikkola",
     "category": "Legal",

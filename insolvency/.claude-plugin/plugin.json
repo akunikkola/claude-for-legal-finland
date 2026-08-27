@@ -1,7 +1,7 @@
 {
   "name": "insolvency",
   "version": "0.1.0",
-  "description": "Suomen insolvenssioikeus: maksukyvyttömyystilanteen arviointi ja menettelyn valinta (konkurssi, yrityssaneeraus, velkajärjestely), konkurssimenettely velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.",
+  "description": "Finnish insolvency law: assessing a situation of insolvency and choosing the procedure (bankruptcy under konkurssilaki 120/2004, restructuring of an enterprise under 47/1993, debt adjustment under 57/1993), the bankruptcy procedure from the creditor's and the debtor's point of view, and the collection of claims, limitation and enforcement.",
   "author": {
     "name": "Aku Nikkola"
   }
