@@ -1,73 +1,73 @@
-# Oikeustutkimuksen työkalut — hakustrategiat ja vianetsintä
+# Legal research tools — search strategies and troubleshooting
 
-Tämä referenssi syventää `SKILL.md`:n työnkulkua: miten MCP-työkaluja käytetään tehokkaasti ja mitä tehdä, kun haku ei tuota tulosta.
+This reference expands on the workflow in `SKILL.md`: how to use the MCP tools effectively and what to do when a search produces nothing.
 
-## oik.ai / Finlex-MCP -työkalut
+## oik.ai / Finlex MCP tools
 
-### `get_legislation` — ajantasainen säädös
-Parametrit:
-- `year` (numero, esim. 2015) ja `number` (numero, esim. 410) — säädöstunnus 410/2015.
-- `part` (osa, roomalainen OSA), `chapter` (luku, esim. `3` tai `26a`), `section` (pykälä, esim. `1` tai `226b`) — valinnaisia.
-- `language`: `fin` (oletus) tai `swe`.
+### `get_legislation` — a statute in force
+Parameters:
+- `year` (number, e.g. 2015) and `number` (number, e.g. 410) — the statute identifier 410/2015.
+- `part` (osa, roman-numeral OSA), `chapter` (luku, e.g. `3` or `26a`), `section` (pykälä, e.g. `1` or `226b`) — optional.
+- `language`: `fin` (default) or `swe`.
 
-Käyttölogiikka:
-- **Koko laki**: jätä `part`/`chapter`/`section` pois. Käytä, kun et tiedä pykälän numeroa tai tarvitset yleiskuvan.
-- **Yksi luku**: anna vain `chapter`. Hyvä keino paikantaa oikea pykälä isossa laissa.
-- **Yksi pykälä**: anna `chapter` + `section` (tai `section` jos laki ei jakaudu lukuihin).
-- **Kirjainpäätteet** (lisätyt pykälät): `section: "226b"`, `chapter: "26a"`.
+How to use it:
+- **The whole act**: leave `part`/`chapter`/`section` out. Use this when you do not know the section number or you need an overview.
+- **A single chapter**: give `chapter` only. A good way to locate the right section in a large act.
+- **A single section**: give `chapter` + `section` (or `section` alone if the act is not divided into chapters).
+- **Letter suffixes** (sections inserted later): `section: "226b"`, `chapter: "26a"`.
 
-Jos et tiedä säädösnumeroa: älä arvaa. Hae ensin laki nimellä (jos työkalu tukee nimihakua) tai paikanna numero `search_decisions`-haun kautta (ratkaisuissa viitataan säädösnumeroihin), ja vahvista sitten `get_legislation`-haulla.
+If you do not know the statute number: do not guess. Search for the act by name first (if the tool supports name search), or locate the number through a `search_decisions` search (decisions cite statute numbers), and then confirm it with `get_legislation`.
 
-### `search_decisions` — oikeuskäytäntö
-Parametrit: `query` (pakollinen), `court`, `limit` (1–50, oletus 10), `offset` (sivutus).
+### `search_decisions` — case law
+Parameters: `query` (required), `court`, `limit` (1–50, default 10), `offset` (paging).
 
-`court`-arvot: `Korkein oikeus`, `Korkein hallinto-oikeus`, `Hallinto-oikeudet`, `Hovioikeudet`, `Markkinaoikeus`, `Työtuomioistuin`, `Vakuutusoikeus`.
+`court` values: `Korkein oikeus`, `Korkein hallinto-oikeus`, `Hallinto-oikeudet`, `Hovioikeudet`, `Markkinaoikeus`, `Työtuomioistuin`, `Vakuutusoikeus`.
 
-Hakustrategia:
-- Aloita **kuvaavilla asiasanoilla**, jotka kuvaavat oikeudellista kysymystä, ei arkikieltä (esim. "sopimuksen kohtuullistaminen OikTL 36 §" ennemmin kuin "epäreilu sopimus").
-- Rajaa `court`-arvolla, kun tiedät asteen (esim. verotus → Korkein hallinto-oikeus).
-- Jos tuloksia on liikaa tai liian vähän, säädä hakusanoja: lisää lainkohta, poista liian kapea termi, kokeile synonyymia.
-- Käytä `offset` + `limit` sivutukseen, kun käyt läpi useita osumia.
-- Tunnus haulla: anna `query`-kenttään ratkaisutunnus (esim. "KKO:2024:15") löytääksesi tietyn ratkaisun.
+Search strategy:
+- Start with **descriptive subject terms** that describe the legal question, not everyday language (e.g. "sopimuksen kohtuullistaminen OikTL 36 §" rather than "epäreilu sopimus").
+- Narrow with `court` when you know the instance (e.g. taxation → Korkein hallinto-oikeus).
+- If there are too many results or too few, adjust the search terms: add the provision, drop a term that is too narrow, try a synonym.
+- Use `offset` + `limit` for paging when you work through several hits.
+- Searching by identifier: put the case identifier in the `query` field (e.g. "KKO:2024:15") to find a particular decision.
 
-Palautuksessa on `document_path` — vie se `get_decision`-työkalulle.
+The result contains a `document_path` — pass it to the `get_decision` tool.
 
-### `get_decision` — ratkaisun koko teksti
-Parametri: `document_path` (`search_decisions`-tuloksesta).
+### `get_decision` — the full text of a decision
+Parameter: `document_path` (from a `search_decisions` result).
 
-Lue aina koko ratkaisu, kun lopputulos tai perustelut ovat olennaisia. Poimi: asian laatu, oikeuskysymys, lopputulos, keskeiset perustelut ja sovelletut lainkohdat. Hakukatkelma yksinään voi johtaa harhaan.
+Always read the whole decision when the outcome or the reasoning matters. Extract: the nature of the matter, the legal question, the outcome, the key reasoning and the provisions applied. A search extract on its own can mislead.
 
-## laki.ai-MCP -työkalut (vaihtoehtoinen konnektori)
+## laki.ai MCP tools (alternative connector)
 
-Jos lähdekonnektorina on **laki.ai** (MCP-osoite `https://api.laki.ai/mcp/claude`, OAuth-kirjautuminen) oik.ai:n sijaan, työnkulku on sama mutta työkalut eri nimillä. laki.ai kattaa Finlexin säädökset, hallituksen esitykset (1980→), oikeuskäytännön (KKO, KHO, HO, HAO, MAO, TT, VAKO) ja Verohallinnon syventävät vero-ohjeet.
+If the source connector is **laki.ai** (MCP address `https://api.laki.ai/mcp/claude`, OAuth sign-in) instead of oik.ai, the workflow is the same but the tools have different names. laki.ai covers Finlex statutes, government bills (1980→), case law (KKO, KHO, HO, HAO, MAO, TT, VAKO) and Verohallinto's in-depth tax guidance.
 
-| laki.ai-työkalu | Vastine oik.ai:ssa | Käyttö |
+| laki.ai tool | Equivalent in oik.ai | Use |
 |---|---|---|
-| `search_legal_sources` | `search_decisions` (laajempi) | Hae säädökset, oikeuskäytäntö, esityöt ja Verohallinnon ohjeet hakusanoilla. |
-| `read_document` | `get_legislation` / `get_decision` | Avaa säädöksen, ratkaisun tai HE:n koko teksti. |
-| `get_table_of_contents` | — | Selaa lähteen luku- ja pykälärakennetta oikean kohdan paikantamiseksi. |
-| `search_within_documents` | — | Hae täsmätermejä tunnetuista lähteistä. |
-| `get_statute_section_history` | — | Lue pykälän versiohistoria ja aiemmat sanamuodot — hyödyllinen ajantasaisuuden ja muutosten tarkistuksessa. |
+| `search_legal_sources` | `search_decisions` (broader) | Search statutes, case law, preparatory works and Verohallinto guidance by search terms. |
+| `read_document` | `get_legislation` / `get_decision` | Open the full text of a statute, a decision or a government bill. |
+| `get_table_of_contents` | — | Browse the chapter and section structure of a source to locate the right place. |
+| `search_within_documents` | — | Search for exact terms within known sources. |
+| `get_statute_section_history` | — | Read the version history of a section and its earlier wordings — useful when checking currency and amendments. |
 
-Sama kuri pätee konnektorista riippumatta: lue varsinainen teksti, älä hakukatkelmaa; varmista ajantasaisuus (laki.ai:lla `get_statute_section_history` auttaa); merkitse lähde — `(laki.ai)`. Asennus: juuren `QUICKSTART.md` ja <https://laki.ai/fi/claude>.
+The same discipline applies whatever the connector: read the actual text, not the search extract; confirm that it is current (with laki.ai, `get_statute_section_history` helps); mark the source — `(laki.ai)`. Installation: `QUICKSTART.md` at the root and <https://laki.ai/fi/claude>.
 
-## Ratkaisutunnusten lukeminen
-- `KKO:VVVV:NN` — korkeimman oikeuden ennakkopäätös (yleiset tuomioistuimet: rikos-, riita- ja hakemusasiat).
-- `KHO:VVVV:NN` — korkeimman hallinto-oikeuden ennakkopäätös (hallintoasiat: verotus, ympäristö, kaavoitus, sote jne.).
-- Ennen vuotta 2000 välilyönnillä: `KKO VVVV:NN`, `KHO VVVV:NN`.
-- Alempien tuomioistuinten ratkaisut eivät ole prejudikaatteja; viittaa niihin tuomioistuimen, päivämäärän ja diaarinumeron kanssa.
+## Reading case identifiers
+- `KKO:VVVV:NN` — a precedent of the Supreme Court (general courts: criminal, civil and petitionary matters).
+- `KHO:VVVV:NN` — a precedent of the Supreme Administrative Court (administrative matters: taxation, environment, planning, health and social services, and so on).
+- Before the year 2000, with a space: `KKO VVVV:NN`, `KHO VVVV:NN`.
+- Decisions of the lower courts are not precedents; cite them with the court, the date and the docket number.
 
-## Kun haku ei tuota tulosta
-1. **Ei osumia**: laajenna hakusanoja, poista `court`-rajaus, kokeile lainkohtaa numeroin ja sanoin.
-2. **Väärä laki**: jos epäilet säädösnumeroa, hae koko laki ja tarkista nimi ja soveltamisala ennen pykälään viittaamista.
-3. **MCP pois käytöstä**: kerro käyttäjälle, ettei lähdettä voitu tarkistaa. Merkitse vastaus muistinvaraiseksi (`[muistinvarainen — tarkista]`) tai pyydä käyttäjää liittämään lähde.
-4. **Ristiriita lähteiden välillä**: jos ajantasainen versio ja tuore muutos ovat eri linjassa, nosta ristiriita esiin äläkä valitse hiljaa toista.
+## When a search produces nothing
+1. **No hits**: broaden the search terms, drop the `court` restriction, try the provision both in numbers and in words.
+2. **Wrong act**: if you doubt the statute number, retrieve the whole act and check the name and the scope before citing a section.
+3. **MCP unavailable**: tell the user that the source could not be checked. Mark the answer as coming from memory (`[from memory — check]`) or ask the user to attach the source.
+4. **Conflict between sources**: if the version in force and a recent amendment do not line up, raise the conflict rather than quietly picking one.
 
-## Muut suomalaiset lähteet (ei välttämättä MCP:ssä)
-Dokumentoi ja ohjaa käyttäjää tarvittaessa:
-- **Finlex** (finlex.fi) — virallinen, maksuton säädöstietopankki; ajantasainen lainsäädäntö, alkuperäiset säädökset, oikeuskäytäntö, valtiosopimukset.
-- **EUR-Lex** (eur-lex.europa.eu) — EU-asetukset, direktiivit, EU-tuomioistuimen ratkaisut.
-- **Eduskunta** (eduskunta.fi) — HE:t, valiokuntamietinnöt, täysistuntopöytäkirjat.
-- **Lausuntopalvelu** (lausuntopalvelu.fi) — avoimet lausuntokierrokset.
-- **Edilex** (edilex.fi) — kaupallinen, laajempi oikeuskirjallisuus ja uutisointi (maksullinen).
-- **Eduskunnan oikeusasiamies** (oikeusasiamies.fi) ja **oikeuskansleri** (okv.fi) — laillisuusvalvonnan ratkaisukäytäntö.
+## Other Finnish sources (not necessarily in an MCP)
+Document these and point the user to them where needed:
+- **Finlex** (finlex.fi) — the official, free statutory database; legislation in force, original statutes, case law, treaties.
+- **EUR-Lex** (eur-lex.europa.eu) — EU regulations, directives, decisions of the Court of Justice of the EU.
+- **Eduskunta** (eduskunta.fi) — government bills, committee reports, plenary records.
+- **Lausuntopalvelu** (lausuntopalvelu.fi) — open consultation rounds.
+- **Edilex** (edilex.fi) — commercial, with broader legal literature and news coverage (subscription).
+- **Eduskunnan oikeusasiamies** (oikeusasiamies.fi) and **oikeuskansleri** (okv.fi) — the decision practice of the oversight of legality.

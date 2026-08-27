@@ -1,105 +1,158 @@
 ---
 name: legal-research
 description: >
-  Suomalaisen voimassa olevan lainsäädännön ja oikeuskäytännön haku, lukeminen ja
-  oikea viittaaminen oik.ai-, laki.ai- tai Finlex-MCP:n avulla. Käytä tätä skilliä AINA kun
-  tarvitaan ajantasaista lakitekstiä, pykälän sisältö, KKO:n tai KHO:n ennakkopäätös,
-  hovioikeuden, markkinaoikeuden, työtuomioistuimen tai vakuutusoikeuden ratkaisu,
-  hallituksen esityksen perusteluja, tai kun käyttäjä kysyy "mitä laki sanoo",
-  "onko tästä oikeuskäytäntöä", "mikä on voimassa oleva pykälä", viittaa
-  säädösnumeroon (esim. 410/2015) tai ratkaisutunnukseen (KKO:2024:15). Triggeröi
-  myös aina ennen kuin lainaat pykälää tai oikeustapausta muistista – tarkista se
-  ensin lähteestä.
+  Legal research into Finnish law: retrieving, reading and correctly citing
+  the legislation in force and the case law through the oik.ai, laki.ai or
+  Finlex MCP. Use this skill when you need up-to-date statutory text, the
+  content of a section, a precedent of the KKO or the KHO, a decision of a
+  court of appeal, the market court, the labour court or the insurance court,
+  or the reasoning of a government bill. Triggers on: what does the law say,
+  is there case law on this, what is the section in force, legal research,
+  check this in Finlex, and on any statute number (e.g. 410/2015) or case
+  identifier (KKO:2024:15). It also triggers always before you quote a section
+  or a case from memory — check it in the source first.
 ---
 
-# Oikeustutkimus — voimassa oleva laki ja oikeuskäytäntö lähteestä
+# Legal research — the law in force and the case law from the source
 
-Tämä skill varmistaa, että juridiset väitteet perustuvat **todelliseen, voimassa olevaan** lakitekstiin ja **oikeisiin** tuomioistuinratkaisuihin — ei mallin muistiin. Suomen lainsäädäntö muuttuu jatkuvasti, ja muistinvaraiset pykälät ja ratkaisutunnukset menevät usein pieleen. Hae lähde aina kun voit.
+This skill makes sure that legal claims rest on **real, currently valid**
+statutory text and on **genuine** court decisions — not on the model's memory.
+Finnish legislation changes constantly, and sections and case identifiers
+recalled from memory often go wrong. Retrieve the source whenever you can.
 
-> **Perusperiaate:** ennen kuin lainaat pykälän, säädösnumeron tai oikeustapauksen, hae se lähteestä. Jos lähdettä ei ole saatavilla, merkitse väite muistinvaraiseksi äläkä esitä sitä varmistettuna. Katso `legal-core/AGENTS.md` → *Ajantasaisuuden pakko*.
+> **Basic principle:** before you quote a section, a statute number or a case,
+> retrieve it from the source. If no source is available, mark the claim as
+> coming from memory and do not present it as verified. See
+> `legal-core/AGENTS.md` → *The currency imperative*.
 
 ---
 
-## Käytettävät työkalut
+## Tools to use
 
-Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:tä** (tai muuta vastaavaa Finlex-MCP:tä). Molemmat tuovat saman: ajantasaisen lain, oikeuskäytännön ja esityöt lähteestä — vain työkalujen nimet eroavat. Käytä sitä konnektoria, joka on liitettynä. Tarkemmat hakustrategiat, työkalut ja laki.ai-vastineet: lue `references/tools.md`. Asennus: juuren `QUICKSTART.md`.
+This skill uses the **oik.ai MCP** or, alternatively, the **laki.ai MCP** (or
+another equivalent Finlex MCP). Both provide the same thing: the law in force,
+the case law and the preparatory works from the source — only the tool names
+differ. Use whichever connector is attached. For detailed search strategies,
+the tools and the laki.ai equivalents, read `references/tools.md`.
+Installation: `QUICKSTART.md` at the root.
 
-| Työkalu | Käyttö |
+| Tool | Use |
 |---|---|
-| `get_legislation` | Hae ajantasainen säädös tai sen osa. Parametrit: `year` + `number` (esim. 2015 / 410), valinnaiset `part` / `chapter` / `section`, `language` (`fin`/`swe`). Jätä osat pois → koko laki; pelkkä `chapter` → koko luku. Tukee kirjainpäätteitä (esim. `226b`). |
-| `search_decisions` | Hae oikeustapauksia hakusanoilla. Parametrit: `query`, valinnainen `court` (Korkein oikeus, Korkein hallinto-oikeus, Hallinto-oikeudet, Hovioikeudet, Markkinaoikeus, Työtuomioistuin, Vakuutusoikeus), `limit`, `offset`. Palauttaa tekstikatkelmia ja `document_path`-arvon. |
-| `get_decision` | Hae ratkaisun koko teksti `document_path`-arvolla, joka saatiin `search_decisions`-haun tuloksesta. |
+| `get_legislation` | Retrieve a statute in force, or part of one. Parameters: `year` + `number` (e.g. 2015 / 410), optional `part` / `chapter` / `section`, `language` (`fin`/`swe`). Leave the parts out → the whole act; `chapter` alone → the whole chapter. Supports letter suffixes (e.g. `226b`). |
+| `search_decisions` | Search for cases by search terms. Parameters: `query`, optional `court` (Korkein oikeus, Korkein hallinto-oikeus, Hallinto-oikeudet, Hovioikeudet, Markkinaoikeus, Työtuomioistuin, Vakuutusoikeus), `limit`, `offset`. Returns text extracts and a `document_path` value. |
+| `get_decision` | Retrieve the full text of a decision using the `document_path` value obtained from a `search_decisions` result. |
 
-**Jos MCP ei ole käytettävissä:** kerro käyttäjälle, ettei lähdettä voitu tarkistaa, ja että vastaus perustuu muistiin. Merkitse jokainen lainkohta `[muistinvarainen — tarkista Finlexistä/oik.ai:sta]`. Älä esitä muistinvaraista pykälää varmistettuna.
-
----
-
-## Työnkulku
-
-### 1. Tunnista, mitä haetaan
-- **Tietty pykälä tai laki** → `get_legislation` säädösnumerolla. Jos käyttäjä antaa vain lain nimen, päättele säädösnumero (tarkista hakemalla, älä arvaa numeroa).
-- **Oikeudellinen kysymys ilman tunnettua pykälää** → `search_decisions` kuvaavilla hakusanoilla, tarvittaessa `court`-rajauksella; tunnista relevantti laki ratkaisuista ja hae sitten pykälä `get_legislation`-työkalulla.
-- **Tietty ennakkopäätös** (esim. KKO:2024:15) → `search_decisions` tunnuksella, sitten `get_decision`.
-
-### 2. Hae ja lue
-- Hae **ajantasainen** versio, ei alkuperäistä säädöstä. Tarkista, ettei pykälää ole kumottu tai muutettu.
-- Lue varsinainen pykäläteksti — älä tyydy hakukatkelmaan, jos sisältö on olennainen.
-- Oikeustapauksissa lue ratkaisun **lopputulos ja perustelut** koko tekstistä (`get_decision`), älä pelkkää otsikkoa tai hakukatkelmaa. Hakukatkelma voi olla harhaanjohtava ilman kontekstia.
-
-### 3. Varmista ajantasaisuus
-- Onko laki voimassa? Onko pykälää muutettu äskettäin? Onko siirtymäsäännöksiä?
-- Onko ennakkopäätöksen jälkeen tullut uudempaa, tulkintaa muuttavaa käytäntöä?
-- Huomioi: Finlexin/oik.ai:n ajantasainen versio voi olla muutaman viikon jäljessä uusimmista muutoksista. Jos asia on tuore, mainitse tämä varaus.
-
-### 4. Viittaa oikein
-Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../legal-writing/references/citations.md` ja `../legal-writing/references/sources.md`):
-
-- **Säädös**, ensimaininnalla nimi + numero: *kuntalain (410/2015) 7 §:n 1 momentin mukaan…*
-- **Ennakkopäätös**: *Korkein oikeus on ratkaisussaan KKO:VVVV:NN katsonut, että…* (tunnus paikkamerkki — täytä vain lähteestä tarkistetulla ratkaisulla)
-- **Alempi tuomioistuin** (ei prejudikaatti): *Helsingin hovioikeuden tuomio 15.3.2024 nro 312 (S 23/1234)*
-- **Hallituksen esitys**: *HE 268/2014 vp, s. 145*
-
-### 5. Merkitse lähde
-Liitä jokaiseen lainattuun pykälään ja ratkaisuun lähdemerkintä: `(oik.ai)`, `(laki.ai)` tai `(Finlex, ajantasainen)`. Erota selvästi:
-- mikä on **suora sisältö lähteestä**,
-- mikä on **sinun tulkintasi/yhteenvetosi**, ja
-- mikä vaatii **asiantuntijan vahvistuksen** (`[varmista — juristin arvioitava]`).
+**If no MCP is available:** tell the user that the source could not be checked
+and that the answer rests on memory. Mark every provision
+`[from memory — verify in Finlex/oik.ai]`. Do not present a provision recalled
+from memory as verified.
 
 ---
 
-## Mitä EI tehdä
+## Workflow
 
-- **Älä keksi** pykälää, säädösnumeroa, momenttia tai ratkaisutunnusta. Jos et löydä, sano se.
-- **Älä lainaa** hakukatkelmaa kuin se olisi koko pykälä tai ratkaisun lopputulos.
-- **Älä esitä** kumottua tai muutettua säännöstä voimassa olevana.
-- **Älä tee** lopullista oikeudellista johtopäätöstä — tuotos on tarkistettava luonnos (`AGENTS.md` → *Vastuuvapaus*).
+### 1. Identify what is being sought
+- **A particular section or act** → `get_legislation` by statute number. If the
+  user gives only the name of the act, work out the statute number (check it by
+  searching; do not guess the number).
+- **A legal question with no known section** → `search_decisions` with
+  descriptive search terms, narrowing by `court` where needed; identify the
+  relevant act from the decisions and then retrieve the section with
+  `get_legislation`.
+- **A particular precedent** (e.g. KKO:2024:15) → `search_decisions` by the
+  identifier, then `get_decision`.
+
+### 2. Retrieve and read
+- Retrieve the version **in force**, not the original statute. Check that the
+  section has not been repealed or amended.
+- Read the actual text of the section — do not settle for a search extract when
+  the content matters.
+- For cases, read the **outcome and the reasoning** from the full text
+  (`get_decision`), not the headnote or the search extract alone. A search
+  extract can be misleading without its context.
+
+### 3. Confirm that it is current
+- Is the act in force? Has the section been amended recently? Are there
+  transitional provisions?
+- Has more recent case law changed the interpretation since the precedent?
+- Note: the current version in Finlex or oik.ai may be a few weeks behind the
+  latest amendments. If the matter is recent, state that reservation.
+
+### 4. Cite correctly
+Use the established Finnish citation forms (full guidance:
+`../legal-writing/references/citations.md` and
+`../legal-writing/references/sources.md`):
+
+- **A statute**, on first mention name + number: *kuntalain (410/2015) 7 §:n 1 momentin mukaan…*
+- **A precedent**: *Korkein oikeus on ratkaisussaan KKO:VVVV:NN katsonut, että…* (the identifier is a placeholder — fill it only with a decision checked in the source)
+- **A lower court** (not a precedent): *Helsingin hovioikeuden tuomio 15.3.2024 nro 312 (S 23/1234)*
+- **A government bill**: *HE 268/2014 vp, s. 145*
+
+### 5. Mark the source
+Attach a source marker to every section and decision you quote: `(oik.ai)`,
+`(laki.ai)` or `(Finlex, ajantasainen)`. Distinguish clearly:
+- what is **content taken directly from the source**,
+- what is **your interpretation or summary**, and
+- what needs **specialist confirmation** (`[confirm — requires a lawyer's assessment]`).
 
 ---
 
-## Esimerkki
+## What NOT to do
 
-> **Käyttäjä:** Mitä kuntalaki sanoo kunnan toiminta-ajatuksesta ja saako valtuusto delegoida toimivaltaansa?
-
-1. `get_legislation` (year 2015, number 410) → hae relevantit luvut (esim. kunnan tehtävät, toimielimet ja toimivallan siirto).
-2. Lue varsinaiset pykälät; poimi toimivallan siirtoa koskeva säännös täsmällisesti.
-3. `search_decisions` (query "kunnan toimivallan siirtäminen delegointi", court "Korkein hallinto-oikeus") → tunnista relevantti KHO-käytäntö; `get_decision` koko tekstille.
-4. Vastaa: lainaa pykälä lähdemerkinnällä, tiivistä KHO-linja, ja merkitse selvästi tulkinnanvaraiset kohdat tarkistettaviksi.
+- **Do not invent** a section, a statute number, a subsection or a case
+  identifier. If you cannot find it, say so.
+- **Do not quote** a search extract as if it were the whole section or the
+  outcome of a decision.
+- **Do not present** a repealed or amended provision as being in force.
+- **Do not reach** a final legal conclusion — the output is a draft that needs
+  checking (`AGENTS.md` → *Disclaimer*).
 
 ---
 
-## Mitä tämä skill EI tee
+## Example
 
-- **Ei korvaa juristin oikeudellista arviota eikä kanna vastuuta lopputuloksesta.** Skill tuo lähteen pöytään; sen soveltaminen tapaukseen ja lopullinen vastuu kuuluvat pätevälle ihmiselle.
-- **Ei vahvista pykälää eikä ratkaisutunnusta muistista.** Jos MCP:tä ei ole saatavilla, jokainen lainkohta merkitään `[muistinvarainen — tarkista Finlexistä/oik.ai:sta]` — sitä ei esitetä varmistettuna.
-- **Ei takaa ehdotonta ajantasaisuutta.** Finlexin/oik.ai:n ajantasainen versio voi olla viikkoja jäljessä tuoreimmista muutoksista; tuoreissa muutoksissa tästä on mainittava varaus.
-- **Ei tee lopullista oikeudellista johtopäätöstä lähteen pohjalta.** Tuotos erottaa suoran lähdesisällön, oman tiivistyksen ja asiantuntijan vahvistusta vaativan tulkinnan toisistaan.
-- **Ei tulkitse hakukatkelmaa koko pykäläksi tai ratkaisun lopputulokseksi.** Olennainen sisältö luetaan varsinaisesta pykälä- tai ratkaisutekstistä.
-- **Ei kata muiden maiden lainsäädäntöä eikä yleistä oikeuskirjallisuutta.** Vain Suomen voimassa oleva laki ja oikeuskäytäntö (sekä relevantti EU-oikeus) MCP-lähteistä.
+> **User:** What does the Local Government Act say about a municipality's
+> purpose, and may the council delegate its powers?
 
-## Jatka tästä
+1. `get_legislation` (year 2015, number 410) → retrieve the relevant chapters
+   (e.g. the tasks of a municipality, its bodies and the transfer of powers).
+2. Read the actual sections; extract the provision on the transfer of powers
+   precisely.
+3. `search_decisions` (query "kunnan toimivallan siirtäminen delegointi", court
+   "Korkein hallinto-oikeus") → identify the relevant KHO case law;
+   `get_decision` for the full text.
+4. Answer: quote the section with a source marker, summarise the line taken by
+   the KHO, and mark clearly the points that are open to interpretation as
+   needing checking.
 
-- Viittausten muoto, taivutus tai lakikielen säännöt kaipaavat tarkistusta → /juristi:juristi
-- Tarkistetut lähteet pitää koota asiakirjan laaduntarkistukseen → /juristi:asiakirjan-tarkistus
-- Lähdehausta jatketaan sopimusehdon laatimiseen tai tarkistukseen → /sopimukset:sopimuksen-laatiminen tai /sopimukset:sopimuksen-tarkistus
-- Haettu oikeuskäytäntö liittyy työsuhteen päättämiseen tai riita-asiaan → /tyooikeus:tyosuhteen-paattaminen tai /riidanratkaisu:todistelu
-- Lähde koskee hallintopäätöstä tai muutoksenhakua → /hallinto-oikeus:hallintopaatos tai /hallinto-oikeus:muutoksenhaku
+---
+
+## What this skill does NOT do
+
+- **Does not replace a lawyer's legal assessment and does not carry
+  responsibility for the outcome.** The skill puts the source on the table;
+  applying it to the case and the final responsibility belong to a competent
+  human.
+- **Does not confirm a section or a case identifier from memory.** If no MCP is
+  available, every provision is marked
+  `[from memory — verify in Finlex/oik.ai]` — it is not presented as verified.
+- **Does not guarantee absolute currency.** The current version in Finlex or
+  oik.ai may be weeks behind the most recent amendments; for recent changes
+  that reservation must be stated.
+- **Does not reach a final legal conclusion from the source.** The output keeps
+  direct source content, your own summary, and interpretation needing
+  specialist confirmation separate from one another.
+- **Does not read a search extract as the whole section or as the outcome of a
+  decision.** The essential content is read from the actual text of the section
+  or the decision.
+- **Does not cover the law of other countries or general legal literature.**
+  Only Finnish law in force and Finnish case law (together with the relevant EU
+  law) from the MCP sources.
+
+## Continue from here
+
+- Citation forms, inflection or the rules of legal language need checking → /legal-core:legal-writing
+- The checked sources need to be assembled into a document quality review → /legal-core:document-review
+- The source search continues into drafting or reviewing a contract term → /contracts:contract-drafting or /contracts:contract-review
+- The case law retrieved concerns termination of employment or a civil dispute → /employment-law:termination-of-employment or /dispute-resolution:evidence
+- The source concerns an administrative decision or an appeal → /administrative-law:administrative-decision or /administrative-law:administrative-appeal

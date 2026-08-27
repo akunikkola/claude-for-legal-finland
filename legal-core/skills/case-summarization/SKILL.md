@@ -1,100 +1,105 @@
 ---
 name: case-summarization
 description: >
-  Tuomioistuinratkaisun jäsentäminen ja referointi: ennakkopäätöksen tai
-  muun ratkaisun olennaisen sisällön poiminta rakenteiseen muotoon
-  (tunnistetiedot, oikeuskysymys, faktat, lopputulos, perustelujen ydin
-  eli ratio, merkitys). Käytä tätä skilliä, kun KKO:n, KHO:n,
-  hovioikeuden, markkinaoikeuden tai muun tuomioistuimen ratkaisu pitää
-  tiivistää, kun arvioidaan ratkaisun soveltuvuutta omaan tapaukseen, tai
-  kun kootaan ratkaisukäytäntöä aiheesta. Triggeröi sanoista: referoi
-  ratkaisu, tiivistä tuomio, ennakkopäätös, KKO, KHO, ratio decidendi,
-  oikeusohje, ratkaisun merkitys, prejudikaatti, oikeustapaus,
-  ratkaisukäytäntö, mitä KKO linjasi.
+  Case summarization for Finnish court decisions: extracting the essential
+  content of a precedent or other decision into a structured form
+  (identifying details, legal question, facts, outcome, the core of the
+  reasoning or ratio, significance). Use this skill when a decision of the
+  KKO, the KHO, a court of appeal, the market court or another court has to
+  be summarised, when assessing whether a decision applies to your own case,
+  or when compiling the case law on a topic. Triggers on: summarise a
+  decision, summarise a judgment, precedent, KKO, KHO, ratio decidendi, rule
+  of law, the significance of a decision, prejudicate, court case, case law,
+  what did the KKO hold.
 ---
 
-# Oikeustapauksen referointi — ratkaisun ydin rakenteiseen muotoon
+# Case summarization — the core of a decision in structured form
 
-Tämä skill jäsentää tuomioistuinratkaisun olennaisen sisällön niin, että
-sitä voi käyttää ja arvioida luotettavasti. **Referointi perustuu vain
-ratkaisun varsinaiseen tekstiin**, ei muistiin eikä otsikkotietoon yksin.
+This skill structures the essential content of a court decision so that it
+can be used and assessed reliably. **The summary is based only on the actual
+text of the decision**, not on memory and not on the headnote alone.
 
-> **Vastuuvapaus:** referaatti on tarkistettava luonnos — ei
-> oikeudellista neuvontaa. Ratkaisun sisältöä ei esitetä muistista.
-> Katso `legal-core/AGENTS.md`.
+> **Disclaimer:** the summary is a draft that needs checking — not legal
+> advice. The content of a decision is never presented from memory.
+> See `legal-core/AGENTS.md`.
 
-## Hae ratkaisu lähteestä ensin
+## Retrieve the decision from the source first
 
-Hae ratkaisun **varsinainen teksti** `legal-core:legal-research`-skillillä
-(oik.ai/Finlex, `get_decision`/`search_decisions`) tai lue käyttäjän
-toimittama ratkaisu. **Älä referoi ratkaisua pelkän tunnuksen tai
-muistikuvan perusteella** — ratkaisuselosteen otsikko (headnote) ei ole
-sama kuin perustelut. Jos et saa ratkaisua lähteestä, sano se äläkä
-keksi sisältöä.
+Retrieve the **actual text** of the decision with the
+`legal-core:legal-research` skill (oik.ai/Finlex,
+`get_decision`/`search_decisions`), or read the decision the user has
+supplied. **Do not summarise a decision on the basis of its identifier or a
+recollection alone** — the headnote of a case report is not the same as the
+reasoning. If you cannot obtain the decision from the source, say so and do
+not invent the content.
 
-## Vaihe 1: Tunnistetiedot
+## Step 1: Identifying details
 
-- **Ratkaisutunnus** oikeassa muodossa (KKO:VVVV:NN, KHO:VVVV:NN), antopäivä,
-  tuomioistuin ja kokoonpano (esim. täysistunto, jaosto) sekä mahdollinen
-  äänestys (äänestysratkaisu).
+- The **case identifier** in the correct form (KKO:VVVV:NN, KHO:VVVV:NN), the
+  date of the decision, the court and the composition (e.g. plenary session,
+  division), and any vote (a decision reached by vote).
 
-## Vaihe 2: Oikeuskysymys
+## Step 2: The legal question
 
-- Mihin **oikeudelliseen kysymykseen** ratkaisu vastaa? Muotoile se
-  täsmällisesti — tämä ohjaa koko referaatin.
+- What **legal question** does the decision answer? Formulate it precisely —
+  this governs the whole summary.
 
-## Vaihe 3: Faktat ja prosessihistoria
+## Step 3: Facts and procedural history
 
-- Olennaiset tosiseikat tiivistettyinä (vain ratkaisun kannalta
-  merkitykselliset) ja alempien asteiden ratkaisut pääpiirteittäin
-  (käräjäoikeus → hovioikeus → KKO; tai hallinto-oikeus → KHO).
+- The material facts in summary (only those that matter for the decision) and
+  the decisions of the lower instances in outline (district court → court of
+  appeal → KKO; or administrative court → KHO).
 
-## Vaihe 4: Lopputulos
+## Step 4: Outcome
 
-- Mitä tuomioistuin **päätti** (esim. valitus hyväksyttiin/hylättiin,
-  alempi ratkaisu pysytettiin/kumottiin). Erota lopputulos perusteluista.
+- What the court **decided** (e.g. the appeal was allowed or dismissed, the
+  lower decision was upheld or overturned). Separate the outcome from the
+  reasoning.
 
-## Vaihe 5: Perustelujen ydin (ratio decidendi)
+## Step 5: The core of the reasoning (ratio decidendi)
 
-- **Oikeusohje**, jonka tuomioistuin ratkaisun perustaksi asetti — se,
-  mikä tekee ratkaisusta merkityksellisen.
-- **Erota ratio ja obiter**: kaikki perusteluissa lausuttu ei ole
-  kantava oikeusohje. Merkitse, mikä on ratkaisun ydin ja mikä
-  sivuhuomautus.
-- Viittaa perustelukohtiin, jos ne ovat numeroidut; lainaa täsmällisesti
-  ja erota suora lainaus omasta tiivistyksestä.
-- **Äänestysratkaisussa** erota enemmistön perustelut ja eri mieltä
-  olleiden kannat.
+- The **rule of law** the court laid down as the basis of the decision — what
+  makes the decision significant.
+- **Separate ratio and obiter**: not everything stated in the reasoning is the
+  operative rule. Mark what is the core of the decision and what is an aside.
+- Refer to the paragraphs of the reasoning if they are numbered; quote
+  precisely and keep direct quotation separate from your own summary.
+- **Where the decision was reached by vote**, separate the reasoning of the
+  majority from the positions of the dissenting members.
 
-## Vaihe 6: Merkitys ja soveltuvuus
+## Step 6: Significance and applicability
 
-- **Prejudikaattiarvo**: mihin oikeusohje yleistyy ja mihin ei.
-- **Soveltuvuus omaan tapaukseen**: mitkä faktat ovat samanlaiset, mitkä
-  erottavat (distinguishing). Älä ylitulkitse — yhden ratkaisun ohje on
-  sidoksissa sen kysymyksenasetteluun.
-- **Onko ratkaisu yhä ajantasainen?** Lainsäädäntö on voinut muuttua
-  ratkaisun jälkeen — tarkista, ettei oikeusohje perustu kumottuun
-  säännökseen (`legal-research`).
+- **Precedential value**: what the rule of law generalises to and what it does
+  not.
+- **Applicability to your own case**: which facts are alike and which
+  distinguish it. Do not over-read — the rule in a single decision is tied to
+  the question that was put.
+- **Is the decision still current?** The legislation may have changed since
+  the decision — check that the rule of law does not rest on a repealed
+  provision (`legal-research`).
 
-## Vaihe 7: Koottu referaatti
+## Step 7: The assembled summary
 
-Tuota jäsennelty referaatti yllä olevin otsikoin. Pidä se täsmällisenä
-ja merkitse, mikä on suoraa ratkaisutekstiä ja mikä omaa tulkintaa
-soveltuvuudesta. Kun kokoat useita ratkaisuja, esitä ne samalla
-rakenteella ja nosta esiin linja sekä mahdolliset poikkeamat.
+Produce a structured summary under the headings above. Keep it precise and
+mark what is the text of the decision itself and what is your own reading of
+its applicability. When you compile several decisions, present them in the
+same structure and bring out the line of authority together with any
+departures from it.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei referoi ratkaisua muistista tai pelkän otsikon perusteella** —
-  varsinaisesta tekstistä lähteestä.
-- **Ei sekoita ratiota ja obiteria** eikä esitä sivuhuomautusta kantavana
-  oikeusohjeena.
-- **Ei väitä ratkaisun sisältöä tarkistamatta** lähteestä.
-- **Ei ylitulkitse prejudikaattiarvoa** yli ratkaisun kysymyksenasettelun.
+- **Does not summarise a decision from memory or from the headnote alone** —
+  it works from the actual text in the source.
+- **Does not conflate ratio and obiter**, and does not present an aside as the
+  operative rule of law.
+- **Does not assert the content of a decision without checking** it in the
+  source.
+- **Does not over-read precedential value** beyond the question the decision
+  addressed.
 
-## Jatka tästä
+## Continue from here
 
-- Ratkaisun ja voimassa olevan säännöksen haku → /juristi:oikeustutkimus
-- Ratkaisun selittäminen asiakkaalle yleiskielellä → /juristi:selkokielistaja
-- Viittausmuotojen ja kirjelmän tarkistus → /juristi:asiakirjan-tarkistus
-- Argumentaation testaus vastapuolen näkökulmasta → /riidanratkaisu:vastapuoli
+- Retrieving a decision and the provision in force → /legal-core:legal-research
+- Explaining a decision to a client in plain language → /legal-core:plain-language
+- Checking citation forms and a written submission → /legal-core:document-review
+- Testing the argument from the opposing party's perspective → /dispute-resolution:opposing-counsel

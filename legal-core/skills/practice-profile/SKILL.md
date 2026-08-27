@@ -1,129 +1,135 @@
 ---
 name: practice-profile
 description: >
-  Plugarikokoelman räätälöinti organisaation omiin käytäntöihin. Käytä
-  tätä skilliä, kun käyttäjä haluaa mukauttaa, konfiguroida tai
-  personoida agent-skills-for-finnish-law-plugarit oman toimiston,
-  yrityksen, viraston tai kunnan käytäntöihin: vakiolausekkeet ja
-  mallipohjat, riskilinjaukset, sovellettavat työehtosopimukset, talon
-  kirjoitustyyli, toimialarajaukset tai vakiomuotoilut. Triggeröi
-  sanoista: räätälöi, mukauta, konfiguroi, käytäntöprofiili, talon tapa,
-  meidän pohjat, toimiston käytännöt, organisaation linjaukset, aseta
-  oletukset, personointi.
+  Tailoring the collection to an organisation's own standing practices. Use
+  this skill when the user wants to adapt, configure or personalise the
+  agent-skills-for-finnish-law domains to the practices of their own firm,
+  company, agency or municipality: standard clauses and templates, risk
+  positions, the applicable collective agreements (TES), house writing style,
+  sector limits or standard formatting. The practice profile is written into
+  the Practice profile section of each domain's AGENTS.md, which the skills
+  read. Triggers on: tailor, adapt, configure, practice profile, house style,
+  our templates, firm practices, organisation positions, set the defaults,
+  personalisation.
 ---
 
-# Käytäntöprofiili — kokoelman räätälöinti organisaatiolle
+# Practice profile — tailoring the collection to an organisation
 
-Jokaisen plugarin `AGENTS.md` päättyy osioon **"Käytäntöprofiili
-(valinnainen)"**, joka on oletuksena tyhjä. Tämä skill täyttää sen:
-haastattelee organisaation käytännöt ja kirjoittaa ne profiiliksi, jonka
-plugarin skillit lukevat jokaisessa tehtävässä. Näin "talon tapa" elää
-yhdessä paikassa eikä sitä tarvitse toistaa joka kehotteessa.
+Every domain's `AGENTS.md` ends with a section **"Practice profile
+(optional)"**, which is empty by default. This skill fills it in: it
+interviews the organisation's practices and writes them into a profile that
+the domain's skills read in every task. That way the "house way" lives in one
+place and does not have to be repeated in every prompt.
 
-> **Vastuuvapaus:** profiili tallentaa organisaation omia linjauksia —
-> skill ei keksi niitä eikä arvioi niiden viisautta. Linjausten
-> oikeellisuudesta vastaa organisaatio. Profiili ei ohita lakia: jaetut
-> suojaukset (lähdekuri, pakottava lainsäädäntö, negatiivirajaukset)
-> pätevät aina profiilin sisällöstä riippumatta.
+> **Disclaimer:** the profile records the organisation's own positions — the
+> skill does not invent them and does not judge whether they are wise. The
+> organisation is responsible for the correctness of its positions. A profile
+> does not override the law: the shared safeguards (source discipline,
+> mandatory legislation, statements of what is out of scope) apply regardless
+> of what the profile says.
 
-## Periaatteet
+## Principles
 
-1. **Kysy, älä keksi.** Profiiliin kirjataan vain käyttäjän antamia
-   tietoja. Puuttuva tieto jätetään pois — skillit kysyvät sen
-   tarvittaessa käyttöhetkellä.
-2. **Profiili täydentää, ei korvaa.** Suojausosioita (vastuuvapaus,
-   lähdekuri, negatiivirajaukset) ei muokata eikä heikennetä — profiili
-   kirjoitetaan vain `## Käytäntöprofiili` -otsikon alle.
-3. **Ei salaisuuksia profiiliin.** Asiakasnimiä, käynnissä olevien
-   toimeksiantojen tietoja tai henkilötietoja ei tallenneta —
-   profiili on pysyväisluonteinen konfiguraatio, ei juttukansio
-   (juttukohtaiset tiedot → `engagement-intake`-skillin työtila).
-4. **Versioi.** Profiilimuutos on muutos plugarin tiedostoon —
-   suosittele git-versiointia tai päivämäärämerkintää.
+1. **Ask, do not invent.** Only information the user gives is recorded in the
+   profile. Missing information is left out — the skills will ask for it when
+   it is needed.
+2. **The profile supplements, it does not replace.** The safeguard sections
+   (disclaimer, source discipline, out-of-scope statements) are not edited or
+   weakened — the profile is written only under the `## Practice profile`
+   heading.
+3. **No secrets in the profile.** Client names, information about live
+   engagements and personal data are not stored — the profile is a
+   configuration of a standing nature, not a matter folder (matter-specific
+   information → the workspace of the `engagement-intake` skill).
+4. **Version it.** A change to the profile is a change to a file in the domain
+   — recommend git versioning or a date stamp.
 
-## Vaihe 1: Haastattelu (yhdessä erässä, organisaation mukaan)
+## Step 1: The interview (in one round, according to the organisation)
 
-Kysy vain ne osiot, jotka ovat organisaatiolle relevantteja:
+Ask only about the sections that are relevant to the organisation:
 
-**Kaikille:**
-- Organisaation tyyppi ja toimiala (asianajotoimisto, yrityksen
-  lakiosasto, virasto, kunta, järjestö) — ja kenen näkökulmasta
-  skillien tulee oletuksena kirjoittaa.
-- Kirjoitustyyli: asiakirjapohjien kieli, allekirjoitustiedot,
-  vakiodisclaimer.
-- Tarkistusketju: kuka hyväksyy luonnokset (esim. "osakas tarkistaa
-  aina 🔴-luokitellut").
+**For everyone:**
+- The type and sector of the organisation (law firm, in-house legal
+  department, government agency, municipality, association) — and whose
+  perspective the skills should write from by default.
+- Writing style: the language of the document templates, signature details,
+  the standard disclaimer.
+- The review chain: who approves drafts (e.g. "a partner always reviews
+  anything classified 🔴").
 
-**Sopimustyötä tekeville (`contracts`, `company-law`):**
-- Vakiolausekkeet ja mallipohjat (vastuunrajaus, riidanratkaisu,
-  salassapito) ja missä ne sijaitsevat.
-- Riskilinjaukset: mitä ei hyväksytä ilman eskalointia
-  (esim. rajoittamaton vastuu, vieras lainvalinta).
+**For those doing contract work (`contracts`, `company-law`):**
+- Standard clauses and templates (limitation of liability, dispute
+  resolution, confidentiality) and where they are kept.
+- Risk positions: what is not accepted without escalation (e.g. unlimited
+  liability, a foreign choice of law).
 
-**Työnantajille (`employment-law`, `immigration-law`):**
-- Sovellettavat työehtosopimukset ja henkilöstöpolitiikan vakiokohdat.
+**For employers (`employment-law`, `immigration-law`):**
+- The applicable collective agreements (TES) and the standard points of
+  personnel policy.
 
-**Julkiselle sektorille (`administrative-law`, `public-procurement`,
+**For the public sector (`administrative-law`, `public-procurement`,
 `legislative-consultation`):**
-- Toimivaltarajat ja delegoinnit, hankintaohje, lausuntojen
-  hyväksymisketju ja lausunnonantajaprofiili.
+- Limits of competence and delegations, the procurement guideline, the
+  approval chain for statements and the profile of the body giving them.
 
-**Compliance-toiminnoille (`data-protection`, `banking-and-finance`,
+**For compliance functions (`data-protection`, `banking-and-finance`,
 `competition-law`):**
-- Valvojat, ilmoituskanavat, compliance-vastuuhenkilöt.
+- Supervisory authorities, reporting channels, the people responsible for
+  compliance.
 
-## Vaihe 2: Kirjoita profiilit
+## Step 2: Write the profiles
 
-1. Tunnista asennetut plugarit ja niiden `AGENTS.md`-tiedostojen polku
-   (asennuksessa plugarin hakemisto; kehityksessä repon hakemisto).
-   Jos et voi kirjoittaa plugarin tiedostoihin, tuota profiilisisältö
-   käyttäjälle liitettäväksi.
-2. Kirjoita kunkin relevantin plugarin `AGENTS.md`:n
-   `## Käytäntöprofiili` -osioon jäsennelty profiili:
+1. Identify the installed domains and the path to their `AGENTS.md` files (in
+   an installation, the domain's directory; in development, the repository
+   directory). If you cannot write to the domain's files, produce the profile
+   content for the user to paste in.
+2. Write a structured profile into the `## Practice profile` section of each
+   relevant domain's `AGENTS.md`:
 
 ```markdown
-## Käytäntöprofiili
+## Practice profile
 
-<!-- Päivitetty: VVVV-KK-PP, päivittäjä: NN -->
+<!-- Updated: YYYY-MM-DD, updated by: NN -->
 
-### Organisaatio ja näkökulma
+### Organisation and perspective
 - ...
 
-### Mallipohjat ja vakiolausekkeet
-- <nimi>: <sijainti> — käytä tätä pohjana, kun ...
+### Templates and standard clauses
+- <name>: <location> — use this as the basis when ...
 
-### Riskilinjaukset ja eskalointi
+### Risk positions and escalation
 - ...
 ```
 
-3. **Älä koske muihin osioihin** — vain Käytäntöprofiili-otsikon alle.
-4. Näytä käyttäjälle yhteenveto kirjoitetuista profiileista ja muistuta
-   versioinnista.
+3. **Do not touch the other sections** — only what is under the Practice
+   profile heading.
+4. Show the user a summary of the profiles written and remind them about
+   versioning.
 
-## Vaihe 3: Ylläpito
+## Step 3: Maintenance
 
-- Profiilin päivitys = sama prosessi; vanha sisältö näytetään ja
-  muutos vahvistetaan ennen ylikirjoitusta.
-- Suosittele vuosikatselmusta: ovatko TES:t, pohjat ja linjaukset
-  ajan tasalla (kytke `agent-recipes/statute-watch` seuraamaan
-  profiilissa mainittuja säädöksiä).
+- Updating the profile = the same process; the old content is shown and the
+  change is confirmed before it is overwritten.
+- Recommend an annual review: are the collective agreements, the templates and
+  the positions up to date (connect `agent-recipes/statute-watch` to follow the
+  statutes mentioned in the profile).
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei keksi linjauksia tai pohjia** — vain käyttäjän antamat tiedot
-  tallennetaan.
-- **Ei heikennä suojauksia** — vastuuvapaus-, lähdekuri- ja
-  negatiivirajausosiot eivät ole muokattavissa profiililla, eikä
-  profiiliin kirjata ohjeita, jotka ohittaisivat ne.
-- **Ei tallenna asiakas- tai henkilötietoja** eikä käynnissä olevien
-  toimeksiantojen tietoja.
-- **Ei arvioi linjausten oikeudellista kestävyyttä** — jos linjaus
-  vaikuttaa lain vastaiselta (esim. pakottavan säännöksen ohitus),
-  skill nostaa sen esiin eikä tallenna sellaisenaan.
-- **Ei jaa profiilia organisaation ulkopuolelle.**
+- **Does not invent positions or templates** — only what the user gives is
+  recorded.
+- **Does not weaken the safeguards** — the disclaimer, source-discipline and
+  out-of-scope sections cannot be edited through a profile, and instructions
+  that would override them are not written into a profile.
+- **Does not store client data or personal data**, nor information about live
+  engagements.
+- **Does not assess whether a position holds up legally** — if a position
+  appears to be contrary to law (e.g. overriding a mandatory provision), the
+  skill raises it and does not record it as it stands.
+- **Does not share the profile outside the organisation.**
 
-## Jatka tästä
+## Continue from here
 
-- Yksittäisen toimeksiannon työtila ja määräajat → /juristi:toimeksianto
-- Profiilissa mainittujen säädösten muutosseuranta → agent-recipes/statute-watch
-- Mallipohjan laaduntarkistus ennen profiiliin kirjaamista → /juristi:asiakirjan-tarkistus
+- The workspace and deadlines for an individual engagement → /legal-core:engagement-intake
+- Following changes to the statutes named in the profile → agent-recipes/statute-watch
+- Quality review of a template before it is recorded in the profile → /legal-core:document-review
