@@ -105,9 +105,9 @@
       "758/1991": 1
     },
     "banking-and-finance/skills/financing-and-collateral/SKILL.md": {
-      "622/1947": 2,
-      "633/1982": 2,
-      "361/1999": 2,
+      "622/1947": 3,
+      "361/1999": 3,
+      "633/1982": 3,
       "1578/1992": 1,
       "758/1991": 1
     },
@@ -143,7 +143,7 @@
       "1337/2022": 1
     },
     "company-law/README.md": {
-      "624/2006": 2,
+      "624/2006": 3,
       "564/2023": 1,
       "129/1979": 1,
       "948/2011": 1,
@@ -170,14 +170,14 @@
       "128/1979": 1
     },
     "company-law/skills/corporate-transactions/SKILL.md": {
-      "624/2006": 1,
+      "624/2006": 2,
+      "948/2011": 3,
       "564/2023": 2,
-      "948/2011": 2,
       "1337/2022": 1
     },
     "company-law/skills/shareholders-agreement/SKILL.md": {
-      "228/1929": 1,
-      "624/2006": 1,
+      "228/1929": 2,
+      "624/2006": 2,
       "967/1992": 1
     },
     "competition-law/AGENTS.md": {
@@ -186,6 +186,9 @@
     "competition-law/README.md": {
       "948/2011": 2,
       "1077/2016": 2
+    },
+    "competition-law/skills/competition-compliance/SKILL.md": {
+      "948/2011": 1
     },
     "competition-law/skills/merger-control/SKILL.md": {
       "948/2011": 2,
@@ -251,11 +254,13 @@
       "38/1978": 1
     },
     "contracts/skills/contract-drafting/SKILL.md": {
-      "228/1929": 1
+      "228/1929": 2,
+      "355/1987": 1,
+      "38/1978": 1
     },
     "contracts/skills/contract-review/SKILL.md": {
-      "38/1978": 1,
-      "228/1929": 2
+      "228/1929": 3,
+      "38/1978": 2
     },
     "CONTRIBUTING.md": {
       "410/2015": 1
@@ -295,11 +300,11 @@
       "423/2003": 1
     },
     "criminal-procedure/skills/injured-party-rights/SKILL.md": {
+      "412/1974": 3,
+      "1204/2005": 3,
+      "898/1998": 2,
       "423/2003": 1,
-      "412/1974": 2,
-      "1204/2005": 2,
-      "257/2002": 1,
-      "898/1998": 1
+      "257/2002": 1
     },
     "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/references/criminal-procedure-fundamentals.md": {
       "805/2011": 1,
@@ -341,7 +346,7 @@
       "2016/679": 2
     },
     "data-protection/skills/data-subject-requests/SKILL.md": {
-      "1050/2018": 1
+      "1050/2018": 2
     },
     "data-protection/skills/privacy-notice/SKILL.md": {
       "1050/2018": 1
@@ -522,7 +527,7 @@
       "808/2019": 1
     },
     "immigration-law/skills/employer-obligations/SKILL.md": {
-      "301/2004": 1,
+      "301/2004": 2,
       "447/2016": 3
     },
     "immigration-law/skills/eu-and-family-based-residence/SKILL.md": {
@@ -579,9 +584,9 @@
       "624/2006": 1
     },
     "insolvency/skills/insolvency-assessment/SKILL.md": {
-      "47/1993": 2,
-      "120/2004": 1,
-      "57/1993": 1,
+      "47/1993": 3,
+      "120/2004": 2,
+      "57/1993": 2,
       "758/1991": 1
     },
     "intellectual-property/AGENTS.md": {
@@ -659,11 +664,12 @@
       "150/1930": 1
     },
     "legal-core/skills/document-review/SKILL.md": {
-      "228/1929": 1
+      "434/2003": 2,
+      "228/1929": 2
     },
     "legal-core/skills/engagement-intake/SKILL.md": {
-      "715/2011": 1,
-      "150/1930": 1
+      "150/1930": 2,
+      "715/2011": 1
     },
     "legal-core/skills/legal-research/references/tools.md": {
       "410/2015": 1,
@@ -709,16 +715,20 @@
       "434/2003": 1
     },
     "legal-core/skills/tabular-review/SKILL.md": {
-      "55/2001": 1,
+      "55/2001": 2,
       "1018/2021": 1
     },
     "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure-examples.md": {
       "1234/2024": 1,
+      "731/1999": 2,
       "410/2015": 1,
       "434/2003": 1
     },
+    "legislative-consultation/skills/consultation-statement-assistant/references/statement-structure.md": {
+      "119/2001": 1
+    },
     "legislative-consultation/skills/consultation-statement-assistant/references/writing-guidelines.md": {
-      "119/2001": 2,
+      "119/2001": 3,
       "123/2025": 1,
       "HE 123/2025 vp": 1
     },
@@ -729,6 +739,7 @@
       "410/2015": 1
     },
     "legislative-drafting/skills/government-bill-guidelines/SKILL.md": {
+      "731/1999": 1,
       "423/2003": 1
     },
     "legislative-drafting/skills/legal-language-guide/SKILL.md": {
@@ -763,8 +774,8 @@
       "731/1999": 2
     },
     "legislative-drafting/skills/legislative-drafting-manual/SKILL.md": {
-      "423/2003": 1,
-      "731/1999": 1
+      "731/1999": 3,
+      "423/2003": 1
     },
     "legislative-drafting/skills/legislative-process-guide/references/basic-preparation.md": {
       "906/2019": 2,
@@ -778,7 +789,7 @@
       "188/2000": 1
     },
     "legislative-drafting/skills/legislative-process-guide/SKILL.md": {
-      "731/1999": 2
+      "731/1999": 3
     },
     "public-procurement/AGENTS.md": {
       "621/1999": 1
