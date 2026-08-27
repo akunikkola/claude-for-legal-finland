@@ -1,36 +1,36 @@
-# Kaksikielisyyden ja oikeuskielen kääntämisen perusteet
+# Basics of bilingualism and legal translation
 
-Plugarin yhteinen kartta: viralliset lähteet, vakiintunut termistö ja sudenkuopat.
-**Säädösten nimet ja numerot on varmistettu Finlexistä.** Termivastineet ja
-säädösten ruotsinkieliset tekstit tarkistetaan virallisista lähteistä — alla oleva
-taulukko on lähtökohta, ei kaiken kattava eikä korvaa lähteen tarkistusta.
+The domain's shared map: official sources, established terminology and pitfalls.
+**The names and numbers of the statutes have been verified in Finlex.** Term equivalents and
+the Swedish texts of statutes are checked from official sources — the table
+below is a starting point, not exhaustive, and it does not replace checking the source.
 
-## Periaate: kaksi todistusvoimaista kieltä
+## Principle: two authentic languages
 
-Suomen säädökset **säädetään sekä suomeksi että ruotsiksi**, ja molemmat tekstit
-ovat todistusvoimaisia. Säädöksen ruotsinkielinen versio ei siis ole "käännös"
-vaan virallinen teksti. Hae se aina Finlexin rinnakkaistekstistä — älä käännä
-säädöksen nimeä tai sanamuotoa itse.
+Finnish statutes are **enacted in both Finnish and Swedish**, and both texts
+are authentic. The Swedish version of a statute is therefore not a "translation"
+but an official text. Always retrieve it from the Finlex parallel text — do not translate
+the name or wording of a statute yourself.
 
-## Viralliset lähteet (käytä näitä)
+## Official sources (use these)
 
-| Lähde | Mihin |
+| Source | For what |
 |---|---|
-| **Finlex** (rinnakkaisteksti) | Säädöksen virallinen ruotsinkielinen nimi ja sanamuoto |
-| **Valter — valtioneuvoston termipankki** | Hallinnon ja lainsäädännön termien vakiintuneet vastineet |
-| **TEPA-termipankki** (Sanastokeskus) | Erikoisalojen termistö |
-| **Kotimaisten kielten keskus (Kotus)** | Suomen ja Suomen ruotsin kielenhuolto |
-| **oik.ai / KKO:n ja KHO:n ratkaisut** | Termien vakiintunut käyttö oikeuskäytännössä |
+| **Finlex** (parallel text) | The official Swedish name and wording of a statute |
+| **Valter — the government term bank** | Established equivalents of administrative and legislative terms |
+| **The TEPA term bank** (Terminology Centre) | Terminology of specialist fields |
+| **The Institute for the Languages of Finland (Kotus)** | Language care for Finnish and Finland Swedish |
+| **oik.ai / KKO and KHO decisions** | The established use of terms in case law |
 
-## Vakiintunutta oikeustermistöä (FI → SV)
+## Established legal terminology (FI → SV)
 
-Lähtökohtainen taulukko institutionaalisista ja rakenteellisista termeistä.
-**Tarkista asiayhteyteen sidotut ja aineelliset termit aina lähteestä** — sama
-suomen termi voi saada eri vastineen kontekstin mukaan.
+A starting-point table of institutional and structural terms.
+**Always check context-bound and substantive terms from the source** — the same
+Finnish term may take a different equivalent depending on the context.
 
-### Säädökset ja rakenne
+### Statutes and structure
 
-| Suomi | Ruotsi |
+| Finnish | Swedish |
 |---|---|
 | laki | lag |
 | asetus | förordning |
@@ -43,9 +43,9 @@ suomen termi voi saada eri vastineen kontekstin mukaan.
 | luku | kapitel |
 | hallituksen esitys (HE) | regeringens proposition (RP) |
 
-### Tuomioistuimet ja ratkaisut
+### Courts and decisions
 
-| Suomi | Ruotsi |
+| Finnish | Swedish |
 |---|---|
 | korkein oikeus (KKO) | högsta domstolen (HD) |
 | korkein hallinto-oikeus (KHO) | högsta förvaltningsdomstolen (HFD) |
@@ -58,9 +58,9 @@ suomen termi voi saada eri vastineen kontekstin mukaan.
 | tuomio | dom |
 | päätös | beslut |
 
-### Prosessi
+### Procedure
 
-| Suomi | Ruotsi |
+| Finnish | Swedish |
 |---|---|
 | oikeudenkäynti | rättegång |
 | haastehakemus | stämningsansökan |
@@ -75,9 +75,9 @@ suomen termi voi saada eri vastineen kontekstin mukaan.
 | muutoksenhaku | ändringssökande |
 | vanhentuminen | preskription |
 
-### Aineellisia peruskäsitteitä
+### Basic substantive concepts
 
-| Suomi | Ruotsi |
+| Finnish | Swedish |
 |---|---|
 | sopimus | avtal |
 | velkoja / velallinen | borgenär / gäldenär |
@@ -89,19 +89,19 @@ suomen termi voi saada eri vastineen kontekstin mukaan.
 | edunvalvonta | intressebevakning |
 | esteellisyys | jäv |
 
-## Kielelliset oikeudet ja velvoitteet (lähteestä)
+## Language rights and obligations (from the source)
 
-- **Perustuslaki 731/1999, 17 §** — oikeus omaan kieleen (suomi/ruotsi) ja
-  saamelaisten, romanien ja muiden ryhmien kielelliset oikeudet.
-- **Kielilaki 423/2003** — kaksikielisen ja yksikielisen viranomaisen ero,
-  asiointikieli, viranomaisen käännös- ja tiedoksiantovelvollisuudet.
+- **Perustuslaki 731/1999, 17 §** — the right to one's own language (Finnish/Swedish) and
+  the language rights of the Sámi, the Roma and other groups.
+- **Kielilaki 423/2003** — the difference between a bilingual and a monolingual authority,
+  the language of dealings, an authority's obligations to translate and to give notice.
 - **Laki julkisyhteisöjen henkilöstöltä vaadittavasta kielitaidosta 424/2003.**
-- **Saamen kielilaki 1086/2003** — erillinen kokonaisuus; ei rinnasteta ruotsiin.
+- **Saamen kielilaki 1086/2003** — a separate subject; not equated with Swedish.
 
-## Sudenkuopat
+## Pitfalls
 
-- Säädöksen nimen tai sanamuodon kääntäminen itse (hae rinnakkaisteksti).
-- Sanasanainen käännös, joka muuttaa oikeudellista merkitystä.
-- Keksitty termivastine ilman lähteen varmistusta.
-- Saamen ja ruotsin kielen oikeuksien niputtaminen.
-- Virallisen käännöksen tuottaminen ilman auktorisoitua kääntäjää.
+- Translating the name or wording of a statute yourself (retrieve the parallel text).
+- A word-for-word translation that changes the legal meaning.
+- An invented term equivalent without confirmation from the source.
+- Lumping together the language rights of Sámi and Swedish.
+- Producing an official translation without an authorised translator.

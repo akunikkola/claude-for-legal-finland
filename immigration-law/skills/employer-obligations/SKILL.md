@@ -1,105 +1,105 @@
 ---
 name: employer-obligations
 description: >
-  Työnantajan velvollisuudet ulkomaalaisen työvoiman käytössä Suomessa
-  (ulkomaalaislaki 301/2004, laki työntekijöiden lähettämisestä
-  447/2016). Käytä tätä skilliä, kun työnantaja varmistaa työntekijän
-  työnteko-oikeutta, rakentaa kansainvälisen rekrytoinnin
-  compliance-prosessia, käyttää ulkomaista alihankintaa tai
-  vuokratyövoimaa, vastaanottaa lähetettyjä työntekijöitä, tai on saanut
-  selvityspyynnön tai seuraamusmaksun työnteko-oikeuteen liittyen.
-  Triggeröi sanoista: työnteko-oikeuden varmistaminen, työnantajan
-  velvollisuudet ulkomaalainen, seuraamusmaksu, luvaton työnteko,
-  lähetetty työntekijä, ulkomainen alihankkija, vuokratyö ulkomailta,
-  tilaajavastuu, työsuojeluviranomainen.
+  An employer's obligations when using foreign labour in Finland
+  (Aliens Act, ulkomaalaislaki 301/2004; laki työntekijöiden
+  lähettämisestä 447/2016). Use this skill when an employer is confirming
+  an employee's right to work, building a compliance process for
+  international recruitment, using foreign subcontracting or agency
+  labour, receiving posted workers, or has received a request for an
+  account or a penalty payment relating to the right to work. Triggers
+  on: confirming the right to work, employer obligations foreign
+  national, penalty payment, unauthorised work, posted worker, foreign
+  subcontractor, agency work from abroad, contractor's obligations,
+  occupational safety and health authority.
 ---
 
-# Työnantajan velvollisuudet — varmistus, compliance ja seuraamukset
+# Employer obligations — confirmation, compliance and sanctions
 
-Tämä skill rakentaa työnantajan compliance-prosessin ulkomaalaisen
-työvoiman käyttöön ja jäsentää seuraamustilanteet. Perusteet:
+This skill builds the employer's compliance process for the use of foreign
+labour and sets out the sanction situations. Fundamentals:
 `../work-based-residence-permits/references/immigration-law-fundamentals.md`.
 
-> **Vastuuvapaus:** prosessit ja listat ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Työnantajan vastuu on ankara —
-> "en tiennyt" ei riitä, jos varmistus laiminlyötiin. Katso
-> `immigration-law/AGENTS.md` (mm. negatiivirajaus: luvattoman työn
-> tai hyväksikäytön järjestelyä ei avusteta).
+> **Disclaimer:** the processes and lists need checking — not
+> legal advice. The employer's liability is strict —
+> "I did not know" is not enough if the confirmation was neglected. See
+> `immigration-law/AGENTS.md` (including the negative scope: no assistance is given in arranging
+> unauthorised work or exploitation).
 
-## Tarkista laki lähteestä
+## Check the law from the source
 
-Hae UlkL:n työnantajavelvoitteet ja seuraamussäännökset
-(seuraamusmaksu — laissa, vahvistettu) sekä rikoslain säännökset
-(luvattoman ulkomaisen työvoiman käyttö, kiskonnantapainen
-työsyrjintä) **`legal-core:legal-research`-skillillä**. Lähetetyt
-työntekijät: 447/2016. Työsuojeluviranomaisen ohjeet `[tarkista]`.
+Retrieve the employer obligations and the sanction provisions of the Aliens Act (ulkomaalaislaki 301/2004)
+(the penalty payment — in law, confirmed) and the provisions of the Criminal Code
+(use of unauthorised foreign labour, extortionate
+work discrimination) with the **`legal-core:legal-research` skill**. Posted
+workers: 447/2016. The guidance of the occupational safety and health authority `[check]`.
 
-## Varmistusprosessi — rakenna ja dokumentoi
+## The confirmation process — build it and document it
 
-1. **Ennen työn alkua**: varmista työnteko-oikeus —
-   oleskelulupakortti tai muu peruste (EU-kansalaisuus,
-   hakuvaiheen oikeus) ja **oikeuden laajuus** (ala, työnantaja,
-   voimassaolo). Pelkkä kortin vilkaisu ei riitä: tarkista että
-   lupa kattaa juuri tämän työn.
-2. **Säilytysvelvollisuus**: tiedot ulkomaalaisista työntekijöistä ja
-   heidän työnteko-oikeutensa perusteista säilytetään laissa säädetty
-   aika `[tarkista]` — myös työsuhteen päätyttyä.
-3. **Ilmoitusvelvollisuudet**: tarkista lupatyypin ja tilanteen
-   mukaiset ilmoitukset (mm. TTOL-työntekijän ehdot, luottamusmiehen
-   informointi) lähteestä.
-4. **Seuranta**: lupien päättymispäivät kalenteriin
+1. **Before the work begins**: confirm the right to work —
+   the residence permit card or another basis (EU citizenship,
+   the right during the application stage) and **the extent of the right** (field, employer,
+   validity). A glance at the card is not enough: check that
+   the permit covers precisely this work.
+2. **The retention obligation**: information on foreign employees and
+   the bases of their right to work is retained for the period laid down in law
+   `[check]` — including after the employment relationship has ended.
+3. **Reporting obligations**: check the notifications required by the permit type and the situation
+   (including the terms for an employee's residence permit and informing the shop
+   steward) from the source.
+4. **Monitoring**: put the expiry dates of permits in the calendar
    (→ `legal-core:engagement-intake` / `agent-recipes/deadline-watch`);
-   jatkolupaprosessi käyntiin ajoissa; olosuhdemuutosten
-   (tehtävä, palkka) vaikutus lupaan arvioidaan ennen muutosta.
-5. **Ehdot kuntoon**: palkka ja ehdot vähintään TES:n/lain tasolla —
-   alipalkkaus on sekä työoikeus- että luparikkomus ja voi täyttää
-   rikostunnusmerkistön → `employment-law`.
+   start the extended permit process in good time; the effect of changes in
+   circumstances (duties, pay) on the permit is assessed before the change.
+5. **Get the terms right**: pay and terms at least at the level of the TES/the law —
+   underpayment is both an employment-law and a permit breach and may
+   satisfy the statutory definition of an offence → `employment-law`.
 
-## Alihankinta, vuokratyö ja lähetetyt työntekijät
+## Subcontracting, agency work and posted workers
 
-- **Ulkomainen alihankkija/vuokrayritys**: tilaajan
-  selvitysvelvollisuudet (tilaajavastuulaki — tarkista soveltuminen
-  ja selvitykset lähteestä) + ulkomaalaislain mukaiset velvoitteet
-  vuokratyössä ja urakoinnissa (toimeksiantajan vastuut — lähteestä).
-- **Lähetetyt työntekijät (447/2016)**: lähettävän yrityksen
-  ilmoitus työsuojeluviranomaiselle, edustajan asettaminen,
-  vähimmäisehdot Suomen lain ja TES:n mukaan, vastuut
-  tilaajalle — tarkista ketju sopimuksiin (→
-  `contracts:contract-drafting`: lähetettyjen ehdot ja
-  dokumentaatiovaatimukset alihankintasopimukseen).
+- **A foreign subcontractor/agency undertaking**: the contractor's
+  obligations to obtain accounts (tilaajavastuulaki — check its application
+  and the required accounts from the source) plus the obligations under the Aliens Act
+  in agency work and contracting (the principal's responsibilities — from the source).
+- **Posted workers (447/2016)**: the posting undertaking's
+  notification to the occupational safety and health authority, the appointment of a representative,
+  the minimum terms under Finnish law and the TES, the responsibilities
+  of the contractor — check the chain against the contracts (→
+  `contracts:contract-drafting`: the terms for posted workers and
+  documentation requirements in the subcontracting agreement).
 
-## Seuraamustilanne
+## A sanction situation
 
-Jos selvityspyyntö tai epäily on jo käsillä:
+If a request for an account or a suspicion is already at hand:
 
-1. **Kartoita tosiseikat**: kuka teki työtä, millä oikeudella, mitä
-   varmistettiin ja milloin (dokumentaatio!).
-2. **Seuraamuskartta**: työnantajan **seuraamusmaksu** (hallinnollinen),
-   rikosvastuu (työnantaja ja edustaja), mahdollinen vaikutus
-   tuleviin lupiin ja julkisiin hankintoihin (poissulkemisperusteet →
-   `public-procurement`) — edellytykset ja määrät lähteestä.
-3. **Vastaus viranomaiselle**: tosiseikat ja dokumentoitu
-   varmistusprosessi; korjaavat toimet heti (työnteon keskeytys jos
-   oikeutta ei ole, prosessin korjaus).
-4. Epäily rikoksesta → `criminal-procedure:pre-trial-investigation-and-coercive-measures`.
+1. **Map the facts**: who did the work, on what right, what
+   was confirmed and when (documentation!).
+2. **Sanction map**: the employer's **penalty payment** (administrative),
+   criminal liability (the employer and its representative), the possible effect on
+   future permits and on public procurement (grounds for exclusion →
+   `public-procurement`) — the conditions and the amounts from the source.
+3. **The response to the authority**: the facts and the documented
+   confirmation process; corrective measures immediately (suspension of the work if there is no
+   right to work, correction of the process).
+4. A suspicion of an offence → `criminal-procedure:pre-trial-investigation-and-coercive-measures`.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tarkista yksittäisen henkilön työnteko-oikeutta** — se ei näe
-  rekistereitä; se rakentaa prosessin, jolla työnantaja tarkistaa.
-- **Ei vahvista säilytysaikoja, maksujen määriä tai
-  ilmoitusvelvollisuuksia muistista** — lähteestä tai `[tarkista]`.
-- **Ei avusta luvattoman työnteon järjestelyssä tai ehtojen
-  polkemisessa** — ehdoton kieltäytyminen.
-- **Ei korvaa työsuojeluviranomaisen tai Migrin kantaa**
-  tulkinnanvaraisissa.
-- **Ei kata verotusta** (lähdevero, kuuden kuukauden sääntö) —
-  → `taxation` ja veroasiantuntija.
+- **Does not check an individual person's right to work** — it does not see
+  the registers; it builds the process by which the employer checks.
+- **Does not confirm retention periods, the amounts of payments or
+  reporting obligations from memory** — from the source or `[check]`.
+- **Does not assist in arranging unauthorised work or in undercutting
+  terms** — an absolute refusal.
+- **Does not replace the position of the occupational safety and health authority or of Migri**
+  in matters open to interpretation.
+- **Does not cover taxation** (withholding tax, the six-month rule) —
+  → `taxation` and a tax specialist.
 
-## Jatka tästä
+## Continue from here
 
-- Lupatyypit ja hakemukset → /ulkomaalaisoikeus:tyoperusteiset-oleskeluluvat
-- Työsuhteen ehdot ja TES-taso → /tyooikeus:tyosopimus
-- Alihankintasopimuksen ehdot → /sopimukset:sopimuksen-laatiminen
-- Seuraamusmaksupäätöksen muutoksenhaku → /hallinto-oikeus:muutoksenhaku
-- Säännöksen tarkistus lähteestä → /juristi:oikeustutkimus
+- Permit types and applications → /immigration-law:work-based-residence-permits
+- The terms of the employment relationship and the TES level → /employment-law:employment-contract
+- The terms of a subcontracting agreement → /contracts:contract-drafting
+- Appealing a decision imposing a penalty payment → /administrative-law:administrative-appeal
+- Checking a provision from the source → /legal-core:legal-research

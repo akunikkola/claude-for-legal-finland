@@ -1,121 +1,122 @@
 ---
 name: work-based-residence-permits
 description: >
-  Työperusteiset oleskeluluvat Suomessa (ulkomaalaislaki 301/2004).
-  Käytä tätä skilliä, kun työnantaja rekrytoi ulkomaalaisen työntekijän
-  EU/ETA-alueen ulkopuolelta tai työntekijälle haetaan lupaa: lupatyypin
-  valinta (työntekijän oleskelulupa, erityisasiantuntija, EU:n sininen
-  kortti, kasvuyrittäjä, kausityö), hakemuksen ja liitteiden jäsennys,
-  jatkolupa, työnteko-oikeuden laajuus tai kielteiseen päätökseen
-  vastaaminen. Triggeröi sanoista: työlupa, oleskelulupa, työntekijän
-  oleskelulupa, erityisasiantuntija, sininen kortti, specialist,
-  saatavuusharkinta, osapäätös, jatkolupa, työnteko-oikeus, Migri,
-  EnterFinland, kansainvälinen rekrytointi.
+  Work-based residence permits in Finland (Aliens Act, ulkomaalaislaki
+  301/2004). Use this skill when an employer recruits a foreign employee
+  from outside the EU/EEA area or a permit is being applied for on an
+  employee's behalf: choosing the permit type (employee's residence
+  permit, specialist, EU Blue Card, growth entrepreneur, seasonal work),
+  structuring the application and its annexes, an extended permit, the
+  extent of the right to work, or responding to a negative decision.
+  Triggers on: work permit, residence permit, employee's residence
+  permit, specialist, Blue Card, labour market test, partial decision,
+  extended permit, right to work, Migri, EnterFinland, international
+  recruitment.
 ---
 
-# Työperusteiset oleskeluluvat — lupatyyppi, hakemus ja jatkuvuus
+# Work-based residence permits — permit type, application and continuity
 
-Tämä skill jäsentää työperusteisen luvan polun rekrytoinnista
-jatkolupaan. Lupakartta, prosessi ja riskipisteet:
-`references/immigration-law-fundamentals.md` — lue se tehtävän alussa.
+This skill sets out the path of a work-based permit from recruitment to an
+extended permit. The permit map, the process and the risk points:
+`references/immigration-law-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** jäsennykset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. **Tulorajat, käsittelyajat ja edellytykset muuttuvat
-> tiheään ja lain kokonaisuudistus on valmisteilla** — kaikki luvut
-> `[tarkista — migri.fi/Finlex]`. Katso `immigration-law/AGENTS.md`.
+> **Disclaimer:** the structured assessment needs checking — not legal
+> advice. **Income thresholds, processing times and conditions change
+> frequently and a complete reform of the act is in preparation** — all figures
+> `[check — migri.fi/Finlex]`. See `immigration-law/AGENTS.md`.
 
-## Output language
+## Output language — filing requirement
 
-Drafts may be produced in **English** for review, but the version actually **filed with the court
-or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
-documents). An English filing is not admissible. Always offer to produce the Finnish version, and
-state plainly that the English text is a working translation only.
+A draft can be produced in **English** for review, but the version actually **filed with Migri
+or, on appeal, with the administrative court must be in Finnish or Swedish**
+(kielilaki 423/2003). An English filing is not admissible. Always offer to produce the
+Finnish version, and say plainly that the English text is a working translation only.
 
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
-example `notice period (irtisanomisaika)`.
+example `right to work (työnteko-oikeus)`.
 
-## Tarkista laki ja Migrin ohjeet lähteestä
+## Check the law and Migri's guidance from the source
 
-Hae UlkL:n (301/2004) säännökset **`legal-core:legal-research`-skillillä**
-ja lupakohtaiset edellytykset, tulorajat ja käsittelyajat migri.fi:stä.
-KHO:n käytäntö (mm. toimeentuloedellytys, työnteko-oikeuden tulkinta)
-lähteestä.
+Retrieve the provisions of the Aliens Act (ulkomaalaislaki 301/2004, "UlkL") with the **`legal-core:legal-research` skill**,
+and the permit-specific conditions, income thresholds and processing times from migri.fi.
+KHO case law (including the income requirement and the interpretation of the right to work)
+from the source.
 
-## Vaihe 1: Lupatyypin valinta
+## Step 1: Choosing the permit type
 
-Käy lupakartta (referenssi) läpi tehtävän ja henkilön mukaan:
+Go through the permit map (the reference) according to the duties and the person:
 
-1. **Työn luonne ja palkkataso** — erityisasiantuntija tai sininen
-   kortti (ei saatavuusharkintaa, nopeampi) vs. työntekijän
-   oleskelulupa (työvoimaviranomaisen **osapäätös** ja
-   saatavuusharkinta alueellisine linjauksineen).
-2. **Kesto ja tarkoitus** — kausityö, harjoittelu, tutkija/opiskelija
-   omine lakeineen; yrittäjäpolut erikseen (kasvuyrittäjä vaatii
-   Business Finlandin puollon).
-3. **Perhe mukana?** — perheenjäsenten luvat ja toimeentuloedellytys
-   koko perheelle → `eu-and-family-based-residence`.
-4. **EU-kansalainen?** — ei oleskelulupaa vaan rekisteröinti → sama
-   skill kuin yllä.
+1. **The nature of the work and the pay level** — a specialist or a Blue
+   Card (no labour market test, faster) versus an employee's
+   residence permit (a **partial decision** by the labour authority and
+   the labour market test with its regional policies).
+2. **Duration and purpose** — seasonal work, traineeship, researcher/student
+   under their own acts; entrepreneur routes separately (a growth entrepreneur requires
+   an endorsement from Business Finland).
+3. **Family coming too?** — permits for family members and the income requirement
+   for the whole family → `eu-and-family-based-residence`.
+4. **An EU citizen?** — no residence permit but registration → the same
+   skill as above.
 
-Tuota vertailu: edellytykset, käsittelyaika-arvio `[tarkista]`,
-työnteko-oikeuden laajuus ja jatkopolku (pysyvä lupa).
+Produce a comparison: the conditions, an estimate of the processing time `[check]`,
+the extent of the right to work and the onward route (a permanent permit).
 
-## Vaihe 2: Hakemuksen jäsennys
+## Step 2: Structuring the application
 
-- **Työsuhteen ehdot kuntoon ensin**: palkka vähintään sovellettavan
-  TES:n tai lupatyypin tulorajan mukainen, ehdot lain mukaiset →
-  `employment-law:employment-contract`. Ehtojen alimitoitus on yleisin
-  hylkäysperuste ja työnantajariski.
-- **Liitelista** lupatyypeittäin (työsopimus/tarjous, työnantajan
-  selvitykset, tutkinto- ja palkkatodistukset) — Migrin ajantasainen
-  lista `[tarkista]`; käännösvaatimukset.
-- **Työnantajan osuus**: TTOL-osapäätöstä varten selvitykset
-  (rekrytointiyritykset EU/ETA-alueella saatavuusharkinnassa);
-  sertifioidun työnantajan kevennetty menettely — edellytykset
-  lähteestä.
-- **Vireillepano ja tunnistautuminen**: EnterFinland + edustusto tai
-  Migrin palvelupiste; biometriikka.
+- **Get the terms of the employment relationship right first**: pay at least in accordance with the applicable
+  TES or the income threshold for the permit type, the terms in accordance with the law →
+  `employment-law:employment-contract`. Terms set too low are the most common
+  ground for refusal and an employer risk.
+- **List of annexes** by permit type (employment contract/offer, the employer's
+  accounts, degree and pay certificates) — Migri's up-to-date
+  list `[check]`; translation requirements.
+- **The employer's part**: accounts for the partial decision on an employee's residence permit
+  (recruitment attempts in the EU/EEA area in the labour market test);
+  the lighter procedure for a certified employer — the conditions
+  from the source.
+- **Filing and identification**: EnterFinland plus a mission or
+  a Migri service point; biometrics.
 
-## Vaihe 3: Työnteko-oikeus ja sen jatkuvuus
+## Step 3: The right to work and its continuity
 
-1. **Laajuus**: tarkista päätöksestä — ala- tai työnantajakohtainen vai
-   rajoittamaton; toisen työn aloittaminen voi vaatia uuden luvan.
-2. **Aloitusajankohta**: milloin työn saa aloittaa (lupatyypistä ja
-   tilanteesta riippuu — lähteestä).
-3. **Jatkolupa**: hae ennen edellisen päättymistä — hakuvaiheen
-   suojattu työnteko-oikeus edellytyksineen lähteestä; kalenteroi
-   määräpäivä `[mallin laskelma — tarkista]` →
+1. **Extent**: check it from the decision — restricted to a field or an employer, or
+   unrestricted; starting other work may require a new permit.
+2. **Starting point**: when work may be started (this depends on the permit type and
+   the situation — from the source).
+3. **Extended permit**: apply before the previous one ends — the protected
+   right to work during the application stage, with its conditions, from the source; diarise
+   the deadline `[model calculation — check]` →
    `legal-core:engagement-intake`.
-4. **Olosuhdemuutokset**: työnantajan vaihdos, palkanmuutos,
-   lomautus/irtisanominen — vaikutus lupaan arvioitava heti
-   (irtisanotun työnhakuaika — lähteestä).
-5. **Polku pysyvään**: pysyvän luvan asumisaika- ja muut edellytykset
+4. **Changes in circumstances**: a change of employer, a change in pay,
+   lay-off/termination — the effect on the permit must be assessed immediately
+   (the job-search period for a person made redundant — from the source).
+5. **The route to permanent residence**: the residence period and other conditions for a permanent permit
    → `eu-and-family-based-residence`.
 
-## Vaihe 4: Kielteinen päätös
+## Step 4: A negative decision
 
-Pura päätös: mikä edellytys katsottiin täyttymättömäksi
-(toimeentulo, ehdot, saatavuusharkinta, maahantulosäännösten
-kiertämisepäily) → korjattavissa uudella hakemuksella vai
-valitettava? Valitus hallinto-oikeuteen määräajassa `[tarkista]` →
-`administrative-law:administrative-appeal`; uusi hakemus ei estä valitusta.
+Break the decision down: which condition was regarded as unmet
+(income, terms, the labour market test, a suspicion of circumventing the provisions on
+entry) → can it be put right with a new application or should it be
+appealed? An appeal to the administrative court within the time limit `[check]` →
+`administrative-law:administrative-appeal`; a new application does not prevent an appeal.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista tulorajoja, käsittelyaikoja tai määräaikoja
-  muistista** — migri.fi/Finlex tai `[tarkista]`.
-- **Ei jätä hakemuksia eikä asioi Migrissä** — luonnokset ja listat
-  menevät hakijalle/työnantajalle.
-- **Ei kata kansainvälistä suojelua** — ohjaa erikoistuneelle
-  avustajalle tai oikeusaputoimistoon.
-- **Ei avusta maahantulosäännösten kiertämisessä** (näennäinen
-  työsuhde, väärät tiedot) — kieltäydy ja kerro seuraamukset.
-- **Ei takaa lupaa** — harkinta on viranomaisen.
+- **Does not confirm income thresholds, processing times or time limits
+  from memory** — migri.fi/Finlex or `[check]`.
+- **Does not file applications and does not deal with Migri** — drafts and lists
+  go to the applicant/employer.
+- **Does not cover international protection** — refer to specialised
+  counsel or to a legal aid office.
+- **Does not assist in circumventing the provisions on entry** (a sham
+  employment relationship, false information) — refuse and explain the sanctions.
+- **Does not guarantee a permit** — the discretion belongs to the authority.
 
-## Jatka tästä
+## Continue from here
 
-- Työnantajan varmistusvelvollisuus ja seuraamukset → /ulkomaalaisoikeus:tyonantajan-velvollisuudet
-- Perheenjäsenet, pysyvä lupa ja kansalaisuus → /ulkomaalaisoikeus:eu-ja-perheperusteinen-oleskelu
-- Työsopimuksen ehdot ja TES → /tyooikeus:tyosopimus
-- Kielteisen päätöksen valitus → /hallinto-oikeus:muutoksenhaku
-- Säännöksen tai KHO-käytännön tarkistus → /juristi:oikeustutkimus
+- The employer's obligation to confirm, and the sanctions → /immigration-law:employer-obligations
+- Family members, a permanent permit and citizenship → /immigration-law:eu-and-family-based-residence
+- The terms of the employment contract and the TES → /employment-law:employment-contract
+- Appealing a negative decision → /administrative-law:administrative-appeal
+- Checking a provision or KHO case law → /legal-core:legal-research

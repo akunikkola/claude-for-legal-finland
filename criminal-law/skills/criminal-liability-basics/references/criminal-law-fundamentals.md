@@ -1,66 +1,66 @@
-# Rikosoikeuden perusteet
+# Basics of criminal law
 
-Plugarin yhteinen kartta: rikosvastuun rakenne, käsitteet ja rajat. **Rikoslain
-(39/1889) nimi ja numero on varmistettu Finlexistä** (ajantasaversion
-asiakirjatunnus 18890039001); tunnusmerkistöt, rangaistusasteikot ja
-vanhentumisajat haetaan käytössä lähteestä (`legal-core:legal-research`).
+The domain's shared map: the structure of criminal liability, its concepts and its limits. **The name and
+number of the Criminal Code (rikoslaki 39/1889) have been verified in Finlex** (document identifier of the
+consolidated version 18890039001); statutory definitions, sentencing ranges and
+limitation periods are retrieved from the source in use (`legal-core:legal-research`).
 
-## Ehdoton rajaus
+## Absolute limit
 
-Tämä plugari palvelee **ymmärtämistä, puolustusta, asianomistajan asemaa ja
-compliancea** — ei rikoksen tekemistä tai peittelyä. Rikoksen suunnittelu,
-tunnusmerkistön kiertäminen "jäämättä kiinni", todisteiden hävittäminen ja
-todistajaan vaikuttaminen ovat ehdottomasti pois rajattuja (ks.
+This domain serves **understanding, the defence, the position of the injured party and
+compliance** — not the commission or concealment of an offence. Planning an offence,
+evading a statutory definition so as to avoid getting caught, destroying evidence and
+influencing a witness are absolutely out of scope (see
 `criminal-law/AGENTS.md`).
 
-## Rikoslain rakenne
+## The structure of the Criminal Code
 
-- **Yleinen osa** (mm. luvut 3–10): rikosvastuun edellytykset, syyksiluettavuus,
-  vastuuvapausperusteet, osallisuus, yritys, rangaistukset ja niiden
-  määrääminen, menettämisseuraamukset, vanhentuminen.
-- **Erityisosa**: yksittäiset rikokset tunnusmerkistöineen ja asteikkoineen
-  (mm. henkeen ja terveyteen, omaisuuteen, seksuaaliseen itsemääräämiseen,
-  talouteen ja viranomaistoimintaan kohdistuvat rikokset).
+- **General part** (chapters 3-10 among others): the conditions of criminal liability, culpability,
+  grounds excluding liability, complicity, attempt, penalties and their
+  imposition, confiscation, limitation.
+- **Special part**: individual offences with their statutory definitions and sentencing ranges
+  (including offences against life and health, against property, against sexual
+  self-determination, against the economy and against the activities of the authorities).
 
-Luku- ja pykälänumerot tarkistetaan aina lähteestä — rikoslakia muutetaan tiheään.
+Chapter and section numbers are always checked from the source — the Criminal Code is amended frequently.
 
-## Rikosvastuun kolme tasoa
+## The three levels of criminal liability
 
-1. **Tunnusmerkistönmukaisuus** — objektiiviset tunnusmerkit (tekijä, teko,
-   seuraus ja syy-yhteys, olosuhteet) sekä mahdollinen törkeä/lievä tekomuoto.
-2. **Syyksiluettavuus** — tahallisuus tai (laissa erikseen säädettäessä)
-   tuottamus vaaditulla tasolla; tahallisuuden kohteena tunnusmerkistötekijät.
-   Syyntakeisuus (ikä, mielentila).
-3. **Oikeudenvastaisuus / vastuuvapaus** — hätävarjelu, pakkotila, sallitut
-   voimakeinot, suostumus rajatusti. Liioittelu voi olla rangaistavaa lievennetysti.
+1. **Conformity with the statutory definition** — the objective elements (perpetrator, act,
+   consequence and causation, circumstances) and any aggravated/petty degree of the offence.
+2. **Culpability** — intent or (where the law separately so provides)
+   negligence at the required level; the elements of the statutory definition are the object of intent.
+   Criminal capacity (age, mental state).
+3. **Unlawfulness / exclusion of liability** — self-defence, necessity, permitted
+   use of force, consent within limits. Excess may be punishable on a reduced basis.
 
-## Laillisuusperiaate
+## The legality principle
 
-- **Nullum crimen, nulla poena sine lege**: ei rikosta eikä rangaistusta ilman
-  lakia (rikoslaki 3 luku).
-- **Taannehtivuuskielto**: ankarampaa lakia ei sovelleta taannehtivasti; lievemmän
-  lain periaate.
-- **Analogiakielto** syytetyn vahingoksi ja **epätäsmällisyyskielto** (riittävän
-  tarkkarajainen tunnusmerkistö).
+- **Nullum crimen, nulla poena sine lege**: no offence and no punishment without
+  law (rikoslaki, chapter 3).
+- **Prohibition of retroactivity**: a stricter law is not applied retroactively; the principle of the more
+  lenient law.
+- **Prohibition of analogy** to the defendant's detriment and the **prohibition of imprecision** (a sufficiently
+  precisely delimited statutory definition).
 
-## Osallisuus
+## Complicity
 
-- **Tekijä, tekijäkumppani, välillinen tekijä.**
-- **Yllyttäjä** — taivuttaa toisen tahalliseen tekoon; rangaistaan kuten tekijää.
-- **Avunantaja** — edistää tekoa; rangaistaan lievennetyllä asteikolla.
-- Vastuu määräytyy oman myötävaikutuksen ja syyksiluettavuuden mukaan.
+- **Principal, joint principal, indirect principal.**
+- **Instigator** — induces another to an intentional act; punished as a principal.
+- **Abettor** — furthers the act; punished on a reduced sentencing range.
+- Liability is determined by each person's own contribution and culpability.
 
-## Prosessuaaliset perusperiaatteet (kytkös)
+## Basic procedural principles (connection)
 
-- **Syyttömyysolettama** ja **in dubio pro reo** (epäselvässä syytetyn eduksi).
-- **Itsekriminointisuoja.**
-- Esitutkinta, pakkokeinot, syyteoikeus ja oikeudenkäynti → `criminal-procedure`-plugari.
+- **The presumption of innocence** and **in dubio pro reo** (in case of doubt, in favour of the defendant).
+- **The privilege against self-incrimination.**
+- Pre-trial investigation, coercive measures, the right to bring charges and the trial → `criminal-procedure` domain.
 
-## Tyypilliset sudenkuopat
+## Typical pitfalls
 
-- Syyllisyyden päättely "teko kuulostaa rikokselta" -tasolla ilman tunnusmerkistön
-  erittelyä.
-- Tahallisuusvaatimuksen sivuuttaminen (tuottamus rangaistava vain erikseen).
-- Tunnusmerkistön venyttäminen analogialla syytetyn vahingoksi.
-- Rangaistusasteikon tai vanhentumisajan esittäminen muistista.
-- Aineellisen rikosoikeuden ja prosessin sekoittaminen.
+- Inferring guilt at the level of "the act sounds like an offence" without breaking down the
+  statutory definition.
+- Passing over the requirement of intent (negligence is punishable only where separately provided).
+- Stretching a statutory definition by analogy to the defendant's detriment.
+- Stating a sentencing range or a limitation period from memory.
+- Confusing substantive criminal law with procedure.

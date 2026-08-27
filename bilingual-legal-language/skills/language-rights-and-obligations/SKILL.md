@@ -1,102 +1,103 @@
 ---
 name: language-rights-and-obligations
 description: >
-  Kielelliset oikeudet ja viranomaisen kielelliset velvoitteet Suomessa
-  (kielilaki 423/2003 ja perustuslaki 731/1999 17 §). Käytä tätä skilliä,
-  kun arvioidaan millä kielellä viranomaisessa saa asioida, mitä
-  käännös-, tiedoksianto- ja palveluvelvoitteita kaksikielisellä tai
-  yksikielisellä viranomaisella on, millä kielellä päätös tai asiakirja
-  annetaan, mitä kielitaitoa henkilöstöltä vaaditaan (424/2003), tai kun
-  esillä ovat saamen kielen oikeudet (saamen kielilaki 1086/2003).
-  Triggeröi sanoista: kielilaki, kielelliset oikeudet, asiointikieli,
-  kaksikielinen viranomainen, käännösvelvollisuus, ruotsinkielinen
-  palvelu, päätöksen kieli, kielitaitovaatimus, saamen kieli, äidinkieli,
-  kielivähemmistö.
+  Language rights and an authority's language obligations in Finland
+  (kielilaki 423/2003 and perustuslaki 731/1999 17 §). Use this skill when
+  assessing in which language a person may deal with an authority, what
+  obligations to translate, to give notice and to provide services a
+  bilingual or monolingual authority has, in which language a decision or
+  document is issued, what language skills are required of staff
+  (424/2003), or when the rights of the Sámi languages are at issue
+  (saamen kielilaki 1086/2003). Triggers on: Language Act, language
+  rights, language of dealings, bilingual authority, obligation to
+  translate, Swedish-language service, the language of a decision,
+  language skills requirement, Sámi language, mother tongue, language
+  minority, kielilaki, asiointikieli.
 ---
 
-# Kielelliset oikeudet ja velvoitteet — asiointikieli ja viranomaisen velvoitteet
+# Language rights and obligations — the language of dealings and an authority's obligations
 
-Tämä skill jäsentää yksilön kielelliset oikeudet ja viranomaisen
-kielelliset velvoitteet. Lähteet ja käsitteet:
+This skill sets out an individual's language rights and an authority's
+language obligations. Sources and concepts:
 `../legal-translation/references/bilingual-language-fundamentals.md`.
 
-> **Vastuuvapaus:** arvio on tarkistettava luonnos — ei oikeudellista
-> neuvontaa. Velvoitteet ja määräajat tarkistetaan kielilaista ja
-> perustuslaista lähteestä. Saamen kieli on oma kokonaisuutensa. Katso
+> **Disclaimer:** the assessment is a draft that needs checking — not legal
+> advice. The obligations and time limits are checked from the Language Act and
+> the Constitution in the source. The Sámi languages are their own subject. See
 > `bilingual-legal-language/AGENTS.md`.
 
-## Tarkista säännökset lähteestä
+## Check the provisions from the source
 
-Hae kielilain (423/2003), perustuslain (731/1999) 17 §:n,
-kielitaitolain (424/2003) ja tarvittaessa saamen kielilain (1086/2003)
-säännökset **`legal-core:legal-research`-skillillä**. Soveltamiskäytäntö
-(mm. kielelliset oikeudet hallinto- ja tuomioistuinmenettelyssä)
-lähteestä.
+Retrieve the provisions of the Language Act (kielilaki 423/2003), section 17 of the Constitution (perustuslaki 731/1999),
+the act on language skills (424/2003) and, where necessary, saamen kielilaki (1086/2003)
+with the **`legal-core:legal-research` skill**. The practice of application
+(including language rights in administrative and court proceedings)
+from the source.
 
-## Vaihe 1: Onko viranomainen kaksikielinen vai yksikielinen?
+## Step 1: Is the authority bilingual or monolingual?
 
-- **Kaksikielinen viranomainen** (esim. valtion viranomainen tai
-  kaksikielinen kunta) palvelee molemmilla kansalliskielillä;
-  **yksikielinen** pääosin yhdellä. Viranomaisen kielellinen asema
-  vaikuttaa velvoitteiden laajuuteen.
-- Selvitä viranomaisen asema ennen velvoitteiden arviointia — `[tarkista]`.
+- A **bilingual authority** (for example a state authority or a
+  bilingual municipality) serves in both national languages;
+  a **monolingual** one mainly in one. An authority's linguistic status
+  affects the extent of its obligations.
+- Establish the authority's status before assessing the obligations — `[check]`.
 
-## Vaihe 2: Yksilön asiointikieli
+## Step 2: The individual's language of dealings
 
-1. **Oikeus omaan kieleen**: Suomen kansalaisella on oikeus käyttää
-   omaa kieltään (suomi tai ruotsi) viranomaisessa perustuslain 17 §:n
-   ja kielilain mukaisesti.
-2. **Käytännön laajuus** (suullinen ja kirjallinen asiointi, tulkkaus,
-   asiakirjan kieli) riippuu viranomaisen asemasta ja asiasta —
-   tarkista lähteestä.
-3. **Tuomioistuin- ja hallintomenettely**: oikeudenkäynnin ja
-   hallintoasian käsittelykieli ja asianosaisen kielelliset oikeudet
-   omine säännöksineen → kytkös `administrative-law` ja `dispute-resolution`.
+1. **The right to one's own language**: a Finnish citizen has the right to use
+   their own language (Finnish or Swedish) before an authority in accordance with section 17 of the Constitution
+   and the Language Act.
+2. **The extent in practice** (oral and written dealings, interpretation,
+   the language of a document) depends on the authority's status and on the matter —
+   check from the source.
+3. **Court and administrative proceedings**: the language of the proceedings and of an
+   administrative matter, and a party's language rights, have their own
+   provisions → connection to `administrative-law` and `dispute-resolution`.
 
-## Vaihe 3: Viranomaisen velvoitteet
+## Step 3: The authority's obligations
 
-- **Palvelu- ja tiedotusvelvoite** omalla kielellä (kaksikielisellä
-  viranomaisella molemmilla).
-- **Päätöksen ja toimituskirjan kieli**: millä kielellä päätös
-  annetaan asianosaiselle; **käännös- ja tiedoksiantovelvollisuus**
-  edellytyksineen — tarkista lähteestä.
-- **Oma-aloitteinen kielellisten oikeuksien turvaaminen**: viranomaisen
-  on huolehdittava oikeuksien toteutumisesta ilman, että yksilön
-  tarvitsee erikseen vedota niihin.
+- **The obligation to provide services and information** in the person's own language (for a bilingual
+  authority, in both).
+- **The language of a decision and of an official document**: in which language a decision
+  is issued to a party; **the obligation to translate and to give notice**
+  with its conditions — check from the source.
+- **Securing language rights on the authority's own initiative**: the authority
+  must see to the realisation of the rights without the individual
+  having to invoke them separately.
 
-## Vaihe 4: Henkilöstön kielitaito (424/2003)
+## Step 4: The language skills of staff (424/2003)
 
-- Julkisyhteisön henkilöstöltä vaadittava kielitaito ja sen
-  osoittaminen; viran kelpoisuusvaatimukset kielitaidon osalta.
-  Tarkista vaatimukset lähteestä.
+- The language skills required of the staff of a public body and how they are
+  demonstrated; the eligibility requirements for a post as regards language skills.
+  Check the requirements from the source.
 
-## Vaihe 5: Saamen kieli (erikseen)
+## Step 5: The Sámi languages (separately)
 
-- **Saamen kielilaki 1086/2003** turvaa saamen kielen käytön omine
-  edellytyksineen erityisesti saamelaisten kotiseutualueella. **Älä
-  rinnasta saamen oikeuksia ruotsin kielen sääntelyyn** — käsittele
-  erikseen ja ohjaa tarvittaessa erityissääntelyyn ja -viranomaisiin.
+- **Saamen kielilaki 1086/2003** secures the use of the Sámi languages with its own
+  conditions, particularly in the Sámi homeland area. **Do
+  not equate Sámi rights with the regulation of the Swedish language** — deal with them
+  separately and, where necessary, direct the user to the special regulation and the relevant authorities.
 
-## Vaihe 6: Kokoava arvio
+## Step 6: Overall assessment
 
-Esitä: viranomaisen kielellinen asema, yksilön asiointikieli ja sen
-laajuus, viranomaisen käännös- ja tiedoksiantovelvoitteet sekä
-mahdolliset puutteet ja korjaustoimet. Merkitse tulkinnanvaraiset
-kohdat ja tarkistustarpeet.
+Present: the authority's linguistic status, the individual's language of dealings and its
+extent, the authority's obligations to translate and to give notice, and
+any shortcomings and corrective measures. Mark the points open to interpretation
+and the needs for checking.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei esitä viranomaisen velvoitetta tai määräaikaa muistista** —
-  kielilaista ja perustuslaista lähteestä.
-- **Ei rinnasta saamen kieltä ruotsiin** — oma sääntelynsä.
-- **Ei tuota virallista käännöstä** → `legal-translation` ja
-  auktorisoitu kääntäjä.
-- **Ei ratkaise kielellisten oikeuksien loukkausta** — se voi edetä
-  hallintomenettelyssä tai valvonnassa (mm. oikeusasiamies).
+- **Does not state an authority's obligation or a time limit from memory** —
+  from the Language Act and the Constitution in the source.
+- **Does not equate the Sámi languages with Swedish** — they have their own regulation.
+- **Does not produce an official translation** → `legal-translation` and
+  an authorised translator.
+- **Does not decide an infringement of language rights** — that may proceed in
+  administrative proceedings or through supervision (including the Ombudsman).
 
-## Jatka tästä
+## Continue from here
 
-- Asiakirjan tai termin kääntäminen FI↔SV → /kaksikielisyys:oikeuskielen-kaantaminen
-- Päätöksen kieli ja muutoksenhaku hallintoasiassa → /hallinto-oikeus:muutoksenhaku
-- Asiakirjajulkisuus ja tiedoksianto → /hallinto-oikeus:julkisuus-ja-tietopyynnot
-- Säännöksen tarkistus → /juristi:oikeustutkimus
+- Translating a document or a term FI↔SV → /bilingual-legal-language:legal-translation
+- The language of a decision and appeal in an administrative matter → /administrative-law:administrative-appeal
+- Document publicity and notice → /administrative-law:public-access-and-information-requests
+- Checking a provision → /legal-core:legal-research

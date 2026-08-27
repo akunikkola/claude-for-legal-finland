@@ -1,47 +1,47 @@
-# Ulkomaalaisoikeus
+# Immigration law
 
-Suomen ulkomaalaisoikeus työnantajan ja avustajan näkökulmasta: työperusteiset
-oleskeluluvat, työnantajan velvollisuudet ja seuraamukset sekä EU-kansalaisen,
-perheenjäsenen ja pysyvän oleskelun polut kansalaisuuteen asti.
+Finnish immigration law from the perspective of the employer and of counsel: work-based
+residence permits, the employer's obligations and sanctions, and the routes of an EU citizen,
+a family member and permanent residence, up to citizenship.
 
-> **Jäsennykset ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Ulkomaalaislain kokonaisuudistus on valmisteilla ja tulorajat, määräajat ja
-> käsittelyajat muuttuvat tiheään – ne haetaan aina lähteestä (Finlex, migri.fi).
-> Kansainvälisen suojelun asioita tämä plugari ei kata.
-> Katso [`AGENTS.md`](AGENTS.md).
+> **Structured assessments and drafts need checking – not legal advice.**
+> A complete reform of the Aliens Act is in preparation, and income thresholds, time limits and
+> processing times change frequently – they are always taken from the source (Finlex, migri.fi).
+> Matters of international protection are not covered by this domain.
+> See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **tyoperusteiset-oleskeluluvat** | Lupatyypin valinta ja hakemuksen jäsennys (ulkomaalaislaki 301/2004): työntekijän oleskelulupa saatavuusharkintoineen, erityisasiantuntija, EU:n sininen kortti, kasvuyrittäjä, kausityö, jatkoluvat ja työnteko-oikeuden laajuus. Sisältää ulkomaalaisoikeuden perusteiden referenssin. |
-| **tyonantajan-velvollisuudet** | Työnantajan varmistus-, säilytys- ja ilmoitusvelvollisuudet, seuraamukset (seuraamusmaksu, rikosvastuu), lähetetyt työntekijät (447/2016) ja rekrytointiprosessin compliance-tarkistuslista. |
-| **eu-ja-perheperusteinen-oleskelu** | EU-kansalaisen oleskeluoikeuden rekisteröinti ja perheenjäsenet, perheenyhdistäminen toimeentuloedellytyksineen, pysyvä oleskelulupa ja pitkään oleskelleen kolmannen maan kansalaisen asema sekä kansalaisuuden edellytykset (359/2003). |
+| **work-based-residence-permits** | Choosing the permit type and structuring the application (Aliens Act, ulkomaalaislaki 301/2004): an employee's residence permit with the labour market test, a specialist, the EU Blue Card, a growth entrepreneur, seasonal work, extended permits and the extent of the right to work. Includes the immigration-law fundamentals reference. |
+| **employer-obligations** | The employer's obligations to confirm, retain and report, the sanctions (penalty payment, criminal liability), posted workers (447/2016) and a compliance checklist for the recruitment process. |
+| **eu-and-family-based-residence** | Registration of an EU citizen's right of residence and family members, family reunification with the income requirement, a permanent residence permit and the status of a long-term resident third-country national, and the conditions for citizenship (359/2003). |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (Finlex) varmistettu: **ulkomaalaislaki (301/2004)** – ml. termit
-työntekijän oleskelulupa, erityisasiantuntija, sininen kortti, kasvuyrittäjä,
-työnantajan velvollisuudet ja seuraamusmaksu – **laki työntekijöiden
-lähettämisestä (447/2016)** ja **kansalaisuuslaki (359/2003)**. Tulorajat,
-käsittelyajat ja lupatyyppien yksityiskohdat tarkistetaan käytössä
-`legal-core:legal-research`-skillillä ja migri.fi:stä.
+Verified from the source (Finlex): **the Aliens Act (ulkomaalaislaki 301/2004)** – including the terms
+employee's residence permit, specialist, Blue Card, growth entrepreneur,
+the employer's obligations and the penalty payment – **laki työntekijöiden
+lähettämisestä (447/2016)**, on posting workers, and **the Nationality Act (kansalaisuuslaki 359/2003)**. Income thresholds,
+processing times and the details of permit types are checked in use with the
+`legal-core:legal-research` skill and from migri.fi.
 
-## Liittyy
+## Related
 
-- **`employment-law`-plugari** – työsuhteen ehdot ovat samat kuin suomalaisella
-  (TES, pakottava työlainsäädäntö); alipalkkaus on myös lupariski.
-- **`legal-core`-plugari** – `legal-research` (KHO:n käytäntö) ja `engagement-intake`.
-- **`administrative-law`-plugari** – Migrin päätökset ovat hallintopäätöksiä:
-  muutoksenhaku (808/2019).
-- **`criminal-procedure`-plugari** – luvattoman ulkomaisen työvoiman käytön
-  rikosepäilyt.
+- **`employment-law` domain** – the terms of the employment relationship are the same as for a Finnish employee
+  (TES, mandatory employment legislation); underpayment is also a permit risk.
+- **`legal-core` domain** – `legal-research` (KHO case law) and `engagement-intake`.
+- **`administrative-law` domain** – Migri's decisions are administrative decisions:
+  appeal (808/2019).
+- **`criminal-procedure` domain** – criminal suspicions concerning the use of unauthorised foreign
+  labour.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install ulkomaalaisoikeus@agent-skills-for-finnish-law
+/plugin install immigration-law@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the root.

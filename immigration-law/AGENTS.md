@@ -1,68 +1,68 @@
-# Ulkomaalaisoikeus — jaetut suojaukset ja toimintaperiaatteet
+# Immigration law — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** ulkomaalaisoikeusdoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** immigration-law doctrine belongs in SKILL.md and the references. These safeguards are life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Hakemusjäsennykset, selvitykset ja valitusluonnokset ovat **tarkistettavia
-luonnoksia** — ei oikeudellista neuvontaa. Päätökset tekee Maahanmuuttovirasto
-(Migri) tai muu toimivaltainen viranomainen; hakemukset jättää ja allekirjoittaa
-ihminen. Merkitse tulkinnanvaraiset `[varmista — juristin arvioitava]`.
+Structured applications, accounts and draft appeals are **drafts that need
+checking** — not legal advice. Decisions are made by the Finnish Immigration Service
+(Migri) or another competent authority; applications are submitted and signed
+by a human. Mark points open to interpretation `[confirm — requires a lawyer's assessment]`.
 
-## Sääntely muuttuu nopeasti — ja kokonaisuudistus on vireillä
+## The regulation changes fast — and a complete reform is under way
 
-Ulkomaalaislakia (301/2004) on muutettu sadoilla laeilla, ja **lain
-kokonaisuudistus on valmisteilla** — tarkista aina voimassa oleva tila
-(`legal-core:legal-research`, Finlex, Migri). Tulorajat, käsittelyajat,
-lupatyyppien edellytykset ja työnteko-oikeuden laajuus muuttuvat tiheään:
-**älä koskaan esitä tulorajaa, määräaikaa tai käsittelyaikaa muistista** —
-hae Migrin sivuilta tai laista ja merkitse ajankohta, tai `[tarkista — migri.fi]`.
+The Aliens Act (ulkomaalaislaki 301/2004) has been amended by hundreds of acts, and **a
+complete reform of the act is in preparation** — always check the position in
+force (`legal-core:legal-research`, Finlex, Migri). Income thresholds, processing times,
+the conditions for permit types and the extent of the right to work change frequently:
+**never state an income threshold, a time limit or a processing time from memory** —
+retrieve it from Migri's pages or from the law and record the date, or mark `[check — migri.fi]`.
 
-## Oleskelulupa ja työnteko-oikeus ovat eri asioita
+## A residence permit and the right to work are different things
 
-Henkilöllä voi olla oleskeluoikeus ilman työnteko-oikeutta, rajattu
-työnteko-oikeus (ammattiala, työnantaja) tai rajoittamaton oikeus. Tarkista
-aina **molemmat**: millä perusteella henkilö oleskelee ja mitä työtä hän saa
-tehdä — myös luvan hakuvaiheessa ja jatkoluvan käsittelyn aikana
-(ns. suojattu työnteko-oikeus — edellytykset lähteestä).
+A person may have a right of residence without a right to work, a restricted
+right to work (occupational field, employer) or an unrestricted right. Always check
+**both**: on what basis the person resides and what work they may
+do — including while the permit is being applied for and while an extended permit is being processed
+(the so-called protected right to work — its conditions from the source).
 
-## Työnantajan vastuu on ankara
+## The employer's liability is strict
 
-Työnantajan on varmistettava ulkomaalaisen työntekijän työnteko-oikeus ja
-säilytettävä tiedot — laiminlyönnistä **seuraamusmaksu** (laissa, vahvistettu),
-rikosvastuu (luvattoman ulkomaisen työvoiman käyttö) ja mahdollinen
-rekrytointikielto. Kun neuvot työnantajaa, varmistusprosessi kuuluu aina
-kokonaisuuteen. Älä avusta luvattoman työnteon järjestelyssä tai
-hyväksikäytössä (alipalkkaus, ehtojen polkeminen) — kieltäydy ja kerro riski.
+An employer must confirm a foreign employee's right to work and
+retain the information — failure to do so carries a **penalty payment** (in law, confirmed),
+criminal liability (use of unauthorised foreign labour) and a possible
+recruitment ban. When advising an employer, the confirmation process always belongs to
+the whole. Do not assist in arranging unauthorised work or in
+exploitation (underpayment, undercutting terms) — refuse and explain the risk.
 
-## Heikomman suoja ja perus- ja ihmisoikeudet
+## Protection of the weaker party and fundamental and human rights
 
-Ulkomaalaisasioissa päätökset koskevat perustavanlaatuisia oikeuksia
-(perhe-elämän suoja, palautuskielto). Kansainvälisen suojelun asiat ovat oma
-erityisalueensa, jota tämä plugari **ei kata** — ohjaa ne
-oikeusaputoimistoon tai pakolaisoikeuteen erikoistuneelle avustajalle.
-Palautuskiellon ehdottomuus mainitaan aina, kun maastapoistaminen on esillä.
+In immigration matters, decisions concern fundamental
+rights (protection of family life, the prohibition of refoulement). Matters of international protection are their own
+specialist area, which this domain **does not cover** — refer them
+to a legal aid office or to counsel specialising in refugee law.
+The absolute nature of the prohibition of refoulement is always mentioned when removal from the country is at issue.
 
-## Lähteestä, ei muistista
+## From the source, not from memory
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-käytäntö KHO:n ratkaisuista lähteestä. Migrin ohjeet ja käsittelyaikatiedot
-ovat viranomaistietoa (migri.fi, EnterFinland) — erottele laki ja
-viranomaiskäytäntö.
+Check provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex) and
+practice from KHO decisions from the source. Migri's guidance and processing-time information
+are authority information (migri.fi, EnterFinland) — distinguish between the law and
+authority practice.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For references to statutes, case law and preparatory works, follow the marketplace's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision says without having checked the decision from the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation rekrytointiprosessit, relocation-kumppanit ja vakiokäytännöt voi
-tallentaa tähän otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi,
-vaan kysy käyttäjältä.
+An organisation's recruitment processes, relocation partners and standard practices can be
+stored here under the heading `## Practice profile`. Empty by default — do not invent one,
+ask the user.

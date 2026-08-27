@@ -1,120 +1,121 @@
 ---
 name: eu-and-family-based-residence
 description: >
-  EU-kansalaisen oleskeluoikeus, perheperusteinen oleskelu, pysyvä
-  oleskelulupa ja Suomen kansalaisuus (ulkomaalaislaki 301/2004,
-  kansalaisuuslaki 359/2003). Käytä tätä skilliä, kun käsitellään
-  EU/ETA-kansalaisen rekisteröintiä ja perheenjäsenten oleskelukortteja,
-  perheenyhdistämistä ja toimeentuloedellytystä, pysyvän oleskeluluvan
-  tai pitkään oleskelleen kolmannen maan kansalaisen aseman edellytyksiä,
-  tai kansalaisuushakemuksen edellytyksiä. Triggeröi sanoista:
-  EU-kansalaisen rekisteröinti, oleskelukortti, perheenyhdistäminen,
-  perheside, toimeentuloedellytys, puolison oleskelulupa, pysyvä
-  oleskelulupa, P-lupa, pitkään oleskellut, kansalaisuushakemus,
-  kielitaitoedellytys, asumisaika.
+  An EU citizen's right of residence, family-based residence, a permanent
+  residence permit and Finnish citizenship (Aliens Act, ulkomaalaislaki
+  301/2004; Nationality Act, kansalaisuuslaki 359/2003). Use this skill
+  when dealing with the registration of an EU/EEA citizen and residence
+  cards for family members, family reunification and the income
+  requirement, the conditions for a permanent residence permit or for the
+  status of a long-term resident third-country national, or the
+  conditions for an application for citizenship. Triggers on:
+  registration of an EU citizen, residence card, family reunification,
+  family tie, income requirement, spouse's residence permit, permanent
+  residence permit, P permit, long-term resident, application for
+  citizenship, language skills requirement, residence period.
 ---
 
-# EU-oleskelu, perheside, pysyvä lupa ja kansalaisuus
+# EU residence, family ties, a permanent permit and citizenship
 
-Tämä skill jäsentää oleskelun polut työlupien ulkopuolella:
-EU-kansalaiset, perheenjäsenet, pysyvä oleskelu ja kansalaisuus.
-Perusteet: `../work-based-residence-permits/references/immigration-law-fundamentals.md`.
+This skill sets out the routes to residence outside work permits:
+EU citizens, family members, permanent residence and citizenship.
+Fundamentals: `../work-based-residence-permits/references/immigration-law-fundamentals.md`.
 
-> **Vastuuvapaus:** jäsennykset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Edellytykset (toimeentulorajat, asumisajat) muuttuvat —
-> kaikki luvut `[tarkista — migri.fi/Finlex]`. Katso
-> `immigration-law/AGENTS.md`. Kansainvälinen suojelu ei kuulu tähän
-> plugariin.
+> **Disclaimer:** the structured assessment needs checking — not legal
+> advice. The conditions (income thresholds, residence periods) change —
+> all figures `[check — migri.fi/Finlex]`. See
+> `immigration-law/AGENTS.md`. International protection does not belong to this
+> domain.
 
-## Output language
+## Output language — filing requirement
 
-Drafts may be produced in **English** for review, but the version actually **filed with the court
-or authority must be in Finnish or Swedish** (kielilaki 423/2003; oikeudenkäymiskaari for court
-documents). An English filing is not admissible. Always offer to produce the Finnish version, and
-state plainly that the English text is a working translation only.
+A draft can be produced in **English** for review, but the version actually **filed with Migri
+or, on appeal, with the administrative court must be in Finnish or Swedish**
+(kielilaki 423/2003). An English filing is not admissible. Always offer to produce the
+Finnish version, and say plainly that the English text is a working translation only.
 
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
-example `notice period (irtisanomisaika)`.
+example `income requirement (toimeentuloedellytys)`.
 
-## Tarkista laki lähteestä
+## Check the law from the source
 
-Hae UlkL:n (301/2004) ja kansalaisuuslain (359/2003) säännökset
-**`legal-core:legal-research`-skillillä**; toimeentulorajat ja
-asumisaikalaskenta Migrin ohjeista `[tarkista]`. KHO:n käytäntö
-(perhe-elämän suoja, toimeentulopoikkeukset, asumisajan katkokset)
-lähteestä.
+Retrieve the provisions of the Aliens Act (ulkomaalaislaki 301/2004) and of the Nationality Act (kansalaisuuslaki 359/2003)
+with the **`legal-core:legal-research` skill**; the income thresholds and
+the calculation of the residence period from Migri's guidance `[check]`. KHO case law
+(protection of family life, exceptions to the income requirement, breaks in the residence period)
+from the source.
 
-## EU/ETA-kansalainen ja perheenjäsenet
+## An EU/EEA citizen and family members
 
-- **EU-kansalainen ei tarvitse oleskelulupaa**: oleskeluoikeus
-  rekisteröidään Migrissä, kun oleskelu ylittää laissa säädetyn ajan
-  — perusteet (työ, opiskelu, riittävät varat) lähteestä.
-- **Perheenjäsenet**: EU-kansalaisen perheenjäsenen **oleskelukortti**
-  (myös kolmannen maan kansalaiselle); perheenjäsenen määritelmä
-  EU-oikeudessa on laajempi kuin kansallinen — tarkista kumpaa
-  sovelletaan.
-- Pohjoismaiden kansalaisten erityisasema (rekisteröinti DVV:ssä).
-- Työnantajalle: EU-kansalaisen työnteko-oikeus on välitön —
-  varmistusvelvollisuus silti → `employer-obligations`.
+- **An EU citizen does not need a residence permit**: the right of residence
+  is registered with Migri once residence exceeds the period laid down in law
+  — the grounds (work, study, sufficient resources) from the source.
+- **Family members**: a **residence card** for the family member of an EU citizen
+  (including for a third-country national); the definition of a family member
+  in EU law is wider than the national one — check which
+  applies.
+- The special position of Nordic citizens (registration with the DVV).
+- For the employer: an EU citizen's right to work is immediate —
+  the obligation to confirm still applies → `employer-obligations`.
 
-## Perheenyhdistäminen (kolmannen maan kansalaiset)
+## Family reunification (third-country nationals)
 
-1. **Perheenkokoajan asema** — millä luvalla perheenkokoaja oleskelee;
-   vaikutus edellytyksiin.
-2. **Persidesuhteen määritelmä** — puoliso (ml. avoliitto
-   edellytyksin), alaikäiset lapset; muut omaiset vain poikkeuksin —
-   lähteestä.
-3. **Toimeentuloedellytys** — euromääräiset rajat perheen koon mukaan
-   `[tarkista — migri.fi]`; poikkeamisperusteet (mm. lapsen etu) ja
-   KHO:n käytäntö lähteestä.
-4. **Menettely** — kuka hakee ja mistä; perhesiteen selvittäminen
-   (asiakirjat, DNA-tutkimus viimesijaisena); maahantulosäännösten
-   kiertämisen arviointi (lumeavioliitto) — älä avusta kiertämisessä.
+1. **The sponsor's status** — on what permit the sponsor resides;
+   the effect on the conditions.
+2. **The definition of the family tie** — a spouse (including cohabitation on
+   conditions), minor children; other relatives only exceptionally —
+   from the source.
+3. **The income requirement** — the euro thresholds according to family size
+   `[check — migri.fi]`; the grounds for departing from them (including the best interests of the child) and
+   KHO case law from the source.
+4. **Procedure** — who applies and from where; establishing the family tie
+   (documents, DNA testing as a last resort); assessment of the circumvention of
+   the provisions on entry (a marriage of convenience) — do not assist in circumvention.
 
-## Pysyvä oleskelu
+## Permanent residence
 
-- **Pysyvä oleskelulupa (P)**: yhtäjaksoinen asuminen
-  määräaikaisella luvalla — asumisaika, sen laskenta (poissaolojen
-  vaikutus) ja luvan peruste-edellytykset lähteestä `[tarkista]`.
-- **Pitkään oleskelleen kolmannen maan kansalaisen EU-oleskelulupa**
-  (laissa, termi vahvistettu) — rinnakkainen EU-pohjainen status;
-  edut liikkuvuudessa.
-- Hyöty työnantajalle ja henkilölle: rajoittamaton työnteko-oikeus,
-  ei jatkolupasykliä — nosta polku esiin jo ensiluvan suunnittelussa.
+- **A permanent residence permit (P)**: continuous residence
+  on a fixed-term permit — the residence period, its calculation (the effect of absences)
+  and the conditions as to the basis of the permit from the source `[check]`.
+- **The EU residence permit for a long-term resident third-country national**
+  (in the law, the term confirmed) — a parallel EU-based status;
+  advantages in mobility.
+- The benefit to the employer and to the person: an unrestricted right to work,
+  no cycle of extended permits — raise this route already when planning the first permit.
 
-## Kansalaisuus (359/2003)
+## Citizenship (359/2003)
 
-Jäsennä edellytykset hakemusta varten (kaikki lähteestä):
+Set out the conditions for an application (all from the source):
 
-- **Asumisaika** — yhtäjaksoinen tai kerätty; lyhennykset
-  (mm. kielitaidon perusteella, avioliitto Suomen kansalaisen kanssa,
-  kansalaisuudettomuus) — laskenta Migrin ohjeen mukaan.
-- **Kielitaito** — suomi tai ruotsi, hyväksytyt todistukset (YKI-taso)
-  `[tarkista]`.
-- **Nuhteettomuus** — rikosten ja maksulaiminlyöntien vaikutus,
-  odotusajat.
-- **Toimeentulo ja selvitetty henkilöllisyys.**
-- Kaksoiskansalaisuus sallittu Suomessa — lähtömaan laki tarkistettava
-  erikseen.
-- Ilmoitusmenettely erikseen (mm. entiset Suomen kansalaiset) —
-  lähteestä.
+- **The residence period** — continuous or accumulated; reductions
+  (including on the basis of language skills, marriage to a Finnish citizen,
+  statelessness) — the calculation according to Migri's guidance.
+- **Language skills** — Finnish or Swedish, accepted certificates (the YKI level)
+  `[check]`.
+- **Integrity** — the effect of offences and of unpaid debts,
+  waiting periods.
+- **Income and established identity.**
+- Dual citizenship is permitted in Finland — the law of the country of origin must be checked
+  separately.
+- The declaration procedure separately (including for former Finnish citizens) —
+  from the source.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista toimeentulorajoja, asumisaikoja tai
-  kielitaitovaatimuksia muistista** — lähteestä tai `[tarkista]`.
-- **Ei kata kansainvälistä suojelua eikä maastapoistamisasioita** —
-  erikoistuneelle avustajalle; palautuskiellon ehdottomuus mainitaan.
-- **Ei avusta perhesiteen tai henkilöllisyyden vääristelyssä** —
-  kieltäydy ja kerro seuraamukset (myös luvan peruuttaminen
-  jälkikäteen).
-- **Ei tee asumisaikalaskelmaa sitovasti** — laskelma on
-  `[mallin laskelma — tarkista]`; Migri laskee virallisesti.
-- **Ei takaa päätöstä** — harkinta on viranomaisen.
+- **Does not confirm income thresholds, residence periods or
+  language skills requirements from memory** — from the source or `[check]`.
+- **Does not cover international protection or removal from the country** —
+  refer to specialised counsel; the absolute nature of the prohibition of refoulement is mentioned.
+- **Does not assist in misrepresenting a family tie or an identity** —
+  refuse and explain the sanctions (including withdrawal of a permit
+  after the event).
+- **Does not calculate the residence period with binding effect** — the calculation is
+  a `[model calculation — check]`; Migri calculates it officially.
+- **Does not guarantee a decision** — the discretion belongs to the authority.
 
-## Jatka tästä
+## Continue from here
 
-- Työperusteinen lupa perheenkokoajalle → /ulkomaalaisoikeus:tyoperusteiset-oleskeluluvat
-- Työnantajan velvollisuudet → /ulkomaalaisoikeus:tyonantajan-velvollisuudet
-- Kielteisen päätöksen valitus → /hallinto-oikeus:muutoksenhaku
-- Säännöksen tai KHO-käytännön tarkistus → /juristi:oikeustutkimus
+- A work-based permit for the sponsor → /immigration-law:work-based-residence-permits
+- The employer's obligations → /immigration-law:employer-obligations
+- Appealing a negative decision → /administrative-law:administrative-appeal
+- Checking a provision or KHO case law → /legal-core:legal-research

@@ -1,110 +1,111 @@
 ---
 name: sentencing
 description: >
-  Rangaistuksen ja muiden seuraamusten määrääminen Suomen
-  rikosoikeudessa (rikoslaki 39/1889). Käytä tätä skilliä, kun
-  arvioidaan rangaistuslajia ja -asteikkoa, rangaistuksen mittaamista
-  koventamis- ja lieventämisperusteineen, ehdollisen ja ehdottoman
-  vankeuden sekä yhdyskuntaseuraamusten edellytyksiä, yhteistä
-  rangaistusta, menettämisseuraamusta tai syyteoikeuden ja rangaistuksen
-  vanhentumista. Triggeröi sanoista: rangaistuksen mittaaminen,
-  rangaistusasteikko, koventamisperuste, lieventämisperuste, ehdollinen
-  vankeus, ehdoton vankeus, yhdyskuntapalvelu, sakko, päiväsakko,
-  menettämisseuraamus, konfiskaatio, vanhentuminen, yhteinen rangaistus.
+  Imposing a penalty and other sanctions in Finnish criminal law
+  (Criminal Code, rikoslaki 39/1889). Use this skill when assessing the
+  type of penalty and the sentencing range, the measurement of the
+  sentence with its aggravating and mitigating grounds, the conditions
+  for conditional and unconditional imprisonment and for community
+  sanctions, a joint sentence, confiscation, or the limitation of the
+  right to bring charges and of the sentence. Triggers on: measurement of
+  a sentence, sentencing range, aggravating ground, mitigating ground,
+  conditional imprisonment, unconditional imprisonment, community
+  service, fine, day fine, confiscation, limitation, vanhentuminen,
+  joint sentence, KKO sentencing practice.
 ---
 
-# Rangaistuksen määrääminen — laji, mittaaminen ja seuraamukset
+# Sentencing — type, measurement and sanctions
 
-Tämä skill jäsentää, mikä seuraamus teosta voi seurata ja miten se
-mitataan. Rikosoikeuden kartta:
+This skill sets out what sanction can follow from an act and how it is
+measured. The map of criminal law:
 `../criminal-liability-basics/references/criminal-law-fundamentals.md`.
 
-> **Vastuuvapaus:** arvio on tarkistettava luonnos — ei oikeudellista
-> neuvontaa eikä ennustetta tuomiosta. **Asteikot, päiväsakon määrä ja
-> vanhentumisajat aina lähteestä**, ei muistista. Katso
+> **Disclaimer:** the assessment is a draft that needs checking — not legal
+> advice and not a prediction of the judgment. **Sentencing ranges, the amount of a day fine and
+> limitation periods always from the source**, not from memory. See
 > `criminal-law/AGENTS.md`.
 
-## Tarkista laki ja oikeuskäytäntö lähteestä
+## Check the law and the case law from the source
 
-Hae rikoslain rangaistuksen määräämistä (mm. 6 luku), seuraamuksia,
-menettämisseuraamusta (mm. 10 luku) ja vanhentumista (mm. 8 luku)
-koskevat säännökset **`legal-core:legal-research`-skillillä** sekä nimikkeen
-oma asteikko erityisosasta. Rangaistuskäytäntöä koskeva KKO-linja
-lähteestä. Sakon ja rikesakon määräämisestä on oma lakinsa (754/2010).
+Retrieve the provisions of the Criminal Code on sentencing (chapter 6 among others), on sanctions,
+on confiscation (chapter 10 among others) and on limitation (chapter 8 among others)
+with the **`legal-core:legal-research` skill**, together with the label's
+own sentencing range from the special part. The KKO line on sentencing practice
+from the source. The imposition of fines and summary penal fees has its own act (754/2010).
 
-## Vaihe 1: Asteikko ja rangaistuslaji
+## Step 1: Sentencing range and type of penalty
 
-1. **Nimikkeen rangaistusasteikko** erityisosasta (perus-, törkeä- ja
-   lievä tekomuoto eri asteikoin) — `[tarkista lähteestä]`.
-2. **Rangaistuslajit**: sakko, ehdollinen tai ehdoton vankeus,
-   yhdyskuntaseuraamukset (yhdyskuntapalvelu, valvontarangaistus),
-   nuorisorangaistus; rikesakko ja rangaistusmääräys vähäisissä.
-3. Lajinvalintaan vaikuttavat asteikko, teon vakavuus ja tekijän
-   olosuhteet — kriteerit lähteestä.
+1. **The label's sentencing range** from the special part (the basic, aggravated and
+   petty degrees have different ranges) — `[check the source]`.
+2. **Types of penalty**: a fine, conditional or unconditional imprisonment,
+   community sanctions (community service, monitoring sentence),
+   juvenile punishment; a summary penal fee and a penal order in minor matters.
+3. The choice of type is affected by the sentencing range, the seriousness of the act and the offender's
+   circumstances — criteria from the source.
 
-## Vaihe 2: Rangaistuksen mittaaminen
+## Step 2: Measurement of the sentence
 
-- **Mittaamisen lähtökohta**: rangaistus mitataan niin, että se on
-  oikeudenmukaisessa suhteessa teon vahingollisuuteen ja vaarallisuuteen,
-  teon vaikuttimiin ja tekijän syyllisyyteen.
-- **Koventamisperusteet** (esim. suunnitelmallisuus, rikoksen
-  tekeminen osana järjestäytynyttä toimintaa, rasistinen tms. vaikutin,
-  aiempi rikollisuus laissa määritellysti) — luettelo lähteestä.
-- **Lieventämisperusteet** (esim. painostus, sovinto, tekijän pyrkimys
-  estää tai poistaa vaikutuksia) ja **kohtuullistamisperusteet**.
-- **Lievennetty asteikko** (esim. avunanto, yritys, alentunut
-  syyntakeisuus, nuori ikä).
+- **The starting point for measurement**: the sentence is measured so that it is
+  in just proportion to the harmfulness and dangerousness of the act,
+  the motives behind it and the offender's culpability.
+- **Aggravating grounds** (for example planning, committing the offence
+  as part of organised activity, a racist or comparable motive,
+  prior criminality as defined in law) — the list from the source.
+- **Mitigating grounds** (for example pressure, settlement, the offender's efforts
+  to prevent or remove the effects) and **grounds for adjustment**.
+- **A reduced sentencing range** (for example abetting, attempt, diminished
+  criminal capacity, young age).
 
-## Vaihe 3: Sakko ja päiväsakko
+## Step 3: Fines and day fines
 
-- **Päiväsakkojärjestelmä**: sakon kokonaismäärä riippuu päiväsakkojen
-  lukumäärästä (teon moitittavuus) ja päiväsakon rahamäärästä
-  (maksukyky, tulot). **Älä laske päiväsakon rahamäärää tai sakon
-  euromäärää muistista** — laskentaperuste ja luvut lähteestä.
+- **The day fine system**: the total amount of a fine depends on the number of day fines
+  (the blameworthiness of the act) and on the monetary amount of a day fine
+  (ability to pay, income). **Do not calculate the monetary amount of a day fine or the
+  euro amount of a fine from memory** — the basis of calculation and the figures from the source.
 
-## Vaihe 4: Ehdollinen vai ehdoton vankeus
+## Step 4: Conditional or unconditional imprisonment
 
-- **Ehdollisen** edellytykset (mm. rangaistuksen pituus ja aiempi
-  rikollisuus) ja koeaika; mahdollinen oheissakko tai
-  yhdyskuntapalvelu ehdollisen ohessa.
-- **Ehdoton vankeus** ja sen suorittaminen; **yhdyskuntapalvelu** ehdottoman
-  sijaan edellytyksin. Tarkista kynnykset lähteestä.
+- The conditions for a **conditional** sentence (including the length of the sentence and prior
+  criminality) and the probation period; a possible supplementary fine or
+  community service alongside a conditional sentence.
+- **Unconditional imprisonment** and its enforcement; **community service** instead of an
+  unconditional sentence on conditions. Check the thresholds from the source.
 
-## Vaihe 5: Useita rikoksia — yhteinen rangaistus
+## Step 5: Several offences — a joint sentence
 
-- Kun samalla kertaa tuomitaan useasta rikoksesta, määrätään **yhteinen
-  rangaistus** (ankarimman asteikon pohjalta korotettuna) — periaatteet
-  lähteestä; ei rangaistusten suora yhteenlasku.
+- Where a person is sentenced for several offences at the same time, a **joint
+  sentence** is imposed (on the basis of the most severe range, increased) — the principles
+  from the source; not a straight addition of sentences.
 
-## Vaihe 6: Menettämisseuraamus ja muut seuraamukset
+## Step 6: Confiscation and other sanctions
 
-- **Menettämisseuraamus (konfiskaatio)**: rikoksen tuottaman hyödyn ja
-  rikoksentekovälineiden menettäminen valtiolle — edellytykset
-  (mm. laajennettu hyödyn menettäminen) lähteestä.
-- **Liitännäisseuraamukset**: esim. liiketoimintakielto, ajokielto,
-  vahingonkorvaus (siviilivaade rikosasiassa →
+- **Confiscation**: forfeiture to the State of the proceeds of an offence and of
+  the instruments of the offence — the conditions
+  (including extended forfeiture of proceeds) from the source.
+- **Ancillary sanctions**: for example a business prohibition, a driving ban,
+  damages (a civil claim in a criminal case →
   `dispute-resolution:damages`).
 
-## Vaihe 7: Vanhentuminen
+## Step 7: Limitation
 
-- **Syyteoikeuden vanhentuminen** (riippuu rangaistusasteikosta) ja
-  **rangaistuksen vanhentuminen** — **ajat aina lähteestä**, ne ovat
-  nimike- ja asteikkokohtaisia.
+- **Limitation of the right to bring charges** (depends on the sentencing range) and
+  **limitation of the sentence** — **the periods always from the source**, they are
+  specific to the label and the range.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei esitä asteikkoja, päiväsakon määrää tai vanhentumisaikoja
-  muistista** — lähteestä tai `[tarkista]`.
-- **Ei ennusta tuomiota varmana** — mittaaminen on tuomioistuimen
-  harkintaa.
-- **Ei avusta seuraamuksen kiertämisessä** (esim. omaisuuden
-  kätkeminen konfiskaatiolta) — kieltäydy ja kerro syy.
-- **Ei korvaa avustajaa** rangaistusvaatimukseen vastaamisessa.
+- **Does not state sentencing ranges, the amount of a day fine or limitation periods
+  from memory** — from the source or `[check]`.
+- **Does not predict the judgment as certain** — measurement is a matter for the court's
+  discretion.
+- **Does not assist in evading a sanction** (for example concealing property
+  from confiscation) — refuse and say why.
+- **Does not replace counsel** in responding to a sentencing demand.
 
-## Jatka tästä
+## Continue from here
 
-- Tunnusmerkistö ja syyksiluettavuus → /rikosoikeus:rikosvastuun-perusteet
-- Rikosnimikkeen valinta ja tekomuoto → /rikosoikeus:keskeiset-rikostyypit
-- Syyteneuvottelu, syyte ja vastaus → /rikosprosessi:syyte-ja-vastaus
-- Asianomistajan korvausvaatimus → /riidanratkaisu:vahingonkorvaus
-- Asteikon tai vanhentumisajan tarkistus → /juristi:oikeustutkimus
+- The statutory definition and culpability → /criminal-law:criminal-liability-basics
+- Choosing the offence label and the degree of the offence → /criminal-law:principal-offences
+- Plea bargaining, charges and response → /criminal-procedure:charges-and-response
+- The injured party's claim for compensation → /dispute-resolution:damages
+- Checking a sentencing range or a limitation period → /legal-core:legal-research

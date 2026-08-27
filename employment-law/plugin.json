@@ -2,7 +2,7 @@
   "name": "employment-law",
   "displayName": "Työoikeus",
   "version": "0.1.0",
-  "description": "Suomen työoikeus: työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001), työsuhteen päättämisen perusteen ja menettelyn arviointi sekä yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021). Pakottavan lainsäädännön ja työehtosopimusten ehdoilla.",
+  "description": "Finnish employment law: drafting and reviewing an employment contract (Employment Contracts Act, työsopimuslaki 55/2001), assessing the grounds and procedure for ending an employment relationship, and co-operation and change negotiations (Act on Co-operation within Undertakings, yhteistoimintalaki 1333/2021). On the terms of mandatory legislation and collective agreements (TES).",
   "author": {
     "name": "Aku Nikkola"
   }

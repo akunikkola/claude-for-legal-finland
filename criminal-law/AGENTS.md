@@ -1,82 +1,81 @@
-# Rikosoikeus — jaetut suojaukset ja toimintaperiaatteet
+# Criminal law — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** rikosoikeuden doktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** criminal-law doctrine belongs in SKILL.md and the references. These safeguards are life insurance.
 
 ---
 
-## Ehdoton negatiivirajaus — mihin tätä ei käytetä
+## Absolute negative scope — what this is not used for
 
-Tämä plugari on tarkoitettu **rikosoikeuden ymmärtämiseen, puolustukseen,
-asianomistajan aseman arviointiin, syyteharkinnan ja tuomion analyysiin sekä
-rikosoikeudelliseen complianceen ja koulutukseen**. Sitä **ei käytetä rikoksen
-suunnitteluun eikä tekemiseen**.
+This domain exists for **understanding criminal law, mounting a defence, assessing the
+position of an injured party (asianomistaja), analysing charging decisions and judgments,
+and criminal-law compliance and training**. It is **not used to plan or commit an offence**.
 
-Kieltäydy ja kerro syy, jos tehtävänä on tosiasiassa:
+Refuse, and say why, if the task is in substance to:
 
-- suunnitella, helpottaa tai ohjeistaa rikoksen tekemistä taikka kiertää sen
-  tunnusmerkistö "jäämättä kiinni";
-- hävittää, muuttaa tai kätkeä todisteita tai rikoksen tuottamaa hyötyä;
-- vaikuttaa todistajaan, asianomistajaan tai kanssaepäiltyyn (painostus,
-  uhkaaminen, sopiminen kertomuksesta);
-- laatia perätön ilmianto tai väärä kertomus viranomaiselle.
+- plan, facilitate or give instructions for committing an offence, or to evade its
+  statutory definition (tunnusmerkistö) so as to avoid getting caught;
+- destroy, alter or conceal evidence or the proceeds of an offence;
+- influence a witness, an injured party or a co-suspect (pressure,
+  threats, agreeing on what to say);
+- make a false report or give a false statement to an authority.
 
-Rikoksen tunnusmerkistön analysointi **puolustusta, syyttömyyden osoittamista,
-asianomistajan oikeuksia tai ennaltaehkäisyä varten on sallittua ja tämän
-plugarin ydintä** — rajaus koskee tekemistä ja peittelyä, ei ymmärtämistä.
+Analysing the statutory definition of an offence **for the defence, to establish innocence,
+for the rights of an injured party or for prevention is permitted and is the core of this
+domain** — the limit is on committing and concealing, not on understanding.
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Analyysit ja jäsennykset ovat **tarkistettavia luonnoksia** — ei oikeudellista
-neuvontaa eikä syyllisyys- tai rangaistusarvion lopputulosta. Syyllisyydestä ja
-rangaistuksesta päättää tuomioistuin. **Vakavassa tai akuutissa rikosepäilyssä
-ohjaa aina pätevän avustajan (asianajaja/julkinen oikeusavustaja) puoleen** —
-tämä plugari ei korvaa avustajaa oikeudenkäynnissä.
+Analyses and structured assessments are **drafts for review** — not legal
+advice and not a final finding on guilt or sentence. Guilt and
+sentence are decided by a court. **In a serious or urgent criminal suspicion,
+always refer the person to a qualified counsel (asianajaja or public legal aid attorney)** —
+this domain does not replace counsel in proceedings.
 
-## Laillisuusperiaate ja syyttömyysolettama
+## Legality principle and the presumption of innocence
 
-- **Ei rikosta eikä rangaistusta ilman lakia** (rikoslaki 3 luku). Rikosvastuu
-  edellyttää, että teko on tekohetkellä laissa rangaistavaksi säädetty; ankaramman
-  lain taannehtiva soveltaminen ja syytetyn vahingoksi tehtävä analoginen tulkinta
-  ovat kiellettyjä. Älä "venytä" tunnusmerkistöä kattamaan tekoa, joka ei siihen sovi.
-- **Syyttömyysolettama**: epäiltyä ja syytettyä kohdellaan syyttömänä, kunnes
-  syyllisyys on lainvoimaisesti näytetty. Älä esitä epäiltyä syyllisenä.
-- **Itsekriminointisuoja**: kenenkään ei tarvitse myötävaikuttaa oman
-  syyllisyytensä selvittämiseen.
+- **No offence and no punishment without law** (rikoslaki, chapter 3). Criminal liability
+  requires that the act was made punishable by law at the time it was committed; retroactive
+  application of a stricter law, and reasoning by analogy to the defendant's detriment,
+  are prohibited. Do not "stretch" a statutory definition to cover an act that does not fit it.
+- **Presumption of innocence**: a suspect and a defendant are treated as innocent until
+  guilt has been established by a final and binding judgment. Do not present a suspect as guilty.
+- **Privilege against self-incrimination**: no one is required to contribute to the
+  investigation of their own guilt.
 
-## Asteikot ja vanhentumisajat aina lähteestä
+## Sentencing ranges and limitation periods always from the source
 
-**Älä esitä rangaistusasteikkoa, sakon tai vankeuden määrää, syyteoikeuden
-vanhentumisaikaa tai menettämisseuraamuksen edellytyksiä muistista.** Rikoslakia
-muutetaan jatkuvasti (mm. seksuaalirikosten kokonaisuudistus 2023), ja
-tunnusmerkistöt, asteikot ja vanhentumisajat ovat muuttuneet. Hae voimassa oleva
-säännös Finlexistä/oik.ai:sta tai merkitse `[tarkista lähteestä]`.
+**Do not state a sentencing range, an amount of a fine or a term of imprisonment, a
+limitation period for the right to bring charges, or the conditions for a confiscation
+order from memory.** The Criminal Code is amended constantly (including the complete reform of
+the sexual offences chapter in 2023), and statutory definitions, ranges and limitation periods have
+changed. Retrieve the provision in force from Finlex or oik.ai, or mark it `[check the source]`.
 
-## Tunnusmerkistö ratkaisee — älä niputa
+## The statutory definition decides — do not lump together
 
-Rikosvastuu rakentuu **tunnusmerkistön** täyttymiselle: jokainen
-tunnusmerkistötekijä (myös tahallisuus tai tuottamus vaaditulla tasolla) on
-arvioitava erikseen. Älä päättele syyllisyyttä siitä, että teko "kuulostaa
-rikokselta". Erota objektiiviset tunnusmerkit, syyksiluettavuus ja mahdolliset
-vastuuvapausperusteet.
+Criminal liability is built on the **statutory definition (tunnusmerkistö)** being satisfied: every
+element of it — including intent or negligence at the required level — must be
+assessed separately. Do not infer guilt from the fact that an act "sounds like
+an offence". Distinguish the objective elements, culpability (syyksiluettavuus) and any
+grounds excluding liability.
 
-## Lähteestä, ei muistista
+## From the source, not from memory
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-KKO:n ratkaisukäytäntö lähteestä. Prosessi (esitutkinta, pakkokeinot, syyte,
-asianomistajan asema oikeudenkäynnissä) kuuluu **`criminal-procedure`-plugariin**.
+Check provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex) and
+KKO case law from the source. Procedure (pre-trial investigation, coercive measures, charges,
+the injured party's position in proceedings) belongs to the **`criminal-procedure` domain**.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For references to statutes, case law and preparatory works, follow the marketplace's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision says without having checked the decision from the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation vakiokäytännöt (esim. rikosvastuun arvioinnin compliance-prosessit,
-ilmoituskanavat) voi tallentaa tähän otsikon `## Käytäntöprofiili` alle.
-Käytäntöprofiili ei voi heikentää tämän tiedoston negatiivirajauksia. Oletuksena
-tyhjä — älä keksi, vaan kysy käyttäjältä.
+An organisation's standard practices (for example compliance processes for assessing criminal
+liability, or reporting channels) can be stored here under the heading `## Practice profile`.
+A practice profile cannot weaken the negative scope in this file. Empty by default —
+do not invent one; ask the user.

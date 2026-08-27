@@ -1,64 +1,64 @@
-# Kaksikielisyys (FI/SV) — jaetut suojaukset ja toimintaperiaatteet
+# Bilingualism (FI/SV) — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** käännös- ja kielioikeusdoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** translation and language-rights doctrine belongs in SKILL.md and the references. These safeguards are life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Käännökset ja kieltä koskevat arviot ovat **tarkistettavia luonnoksia** — ei
-oikeudellista neuvontaa eikä virallinen käännös. **Virallisen tai oikeudessa
-käytettävän käännöksen tekee auktorisoitu kääntäjä**; tämä plugari tukee työtä,
-ei korvaa sitä. Käännetyn asiakirjan tarkistaa ja vastuun kantaa pätevä ihminen.
+Translations and assessments concerning language are **drafts that need checking** — not
+legal advice and not an official translation. **An official translation, or one used in
+court, is made by an authorised translator (auktorisoitu kääntäjä)**; this domain supports the work,
+it does not replace it. A translated document is checked by, and the responsibility carried by, a competent human.
 
-## Älä keksi termiä — käytä vakiintunutta vastinetta
+## Do not invent a term — use the established equivalent
 
-Oikeustermin väärä tai sanasanainen käännös voi **muuttaa oikeudellista
-merkitystä**. Älä keksi ruotsinkielistä (tai suomenkielistä) oikeustermiä:
+An incorrect or word-for-word translation of a legal term can **change the legal
+meaning**. Do not invent a Swedish (or Finnish) legal term:
 
-- **Säädöksen virallinen ruotsinkielinen nimi ja sanamuoto** haetaan
-  **Finlexin rinnakkaistekstistä** — säädökset säädetään molemmilla kielillä,
-  joten ruotsinkielinen versio on yhtä todistusvoimainen, ei "käännös".
-- **Termien vakiintuneet vastineet** tarkistetaan virallisista termilähteistä
-  (valtioneuvoston termipankki Valter, Sanastokeskuksen TEPA, Kotimaisten
-  kielten keskus). Käytä näitä, älä omaa käännöstä.
-- Jos vakiintunutta vastinetta ei löydy, **merkitse termi
-  `[vastine varmistettava]`** äläkä esitä keksittyä termiä varmana.
+- **The official Swedish name and wording of a statute** are retrieved
+  **from the Finlex parallel text** — statutes are enacted in both languages,
+  so the Swedish version is equally authentic, not a "translation".
+- **The established equivalents of terms** are checked from official terminology sources
+  (the government term bank Valter, TEPA from the Terminology Centre, the Institute for the
+  Languages of Finland). Use these, not your own translation.
+- If no established equivalent is found, **mark the term
+  `[equivalent to be confirmed]`** and do not present an invented term as certain.
 
-## Ruotsi ja saame ovat eri asioita
+## Swedish and Sámi are different matters
 
-Tämä plugari koskee ensisijaisesti **suomi–ruotsi**-kaksikielisyyttä (kielilaki
-423/2003). **Saamen kielen oikeudet ovat oma kokonaisuutensa** (saamen kielilaki
-1086/2003) saamelaisten kotiseutualueineen ja erityissääntelyineen — älä niputa
-niitä ruotsin kanssa, vaan käsittele erikseen ja ohjaa tarvittaessa
-erityissääntelyyn.
+This domain concerns primarily **Finnish–Swedish** bilingualism (kielilaki
+423/2003). **The rights of the Sámi languages are their own subject** (saamen kielilaki
+1086/2003), with the Sámi homeland area and its special regulation — do not lump them
+together with Swedish; deal with them separately and, where necessary, direct the user to
+the special regulation.
 
-## Kielelliset oikeudet ja velvoitteet lähteestä
+## Language rights and obligations from the source
 
-Viranomaisen kielelliset velvoitteet, asiointikieli, käännös- ja
-tiedoksiantovelvollisuudet sekä kaksikielisen ja yksikielisen viranomaisen ero
-ratkaistaan **kielilaista (423/2003)** ja perustuslain 17 §:stä, ei muistista.
-Älä esitä viranomaisen velvollisuutta tai määräaikaa tarkistamatta — hae säännös
-lähteestä tai merkitse `[tarkista]`.
+An authority's language obligations, the language of dealings, the obligations to translate and to
+give notice, and the difference between a bilingual and a monolingual authority
+are resolved from the **Language Act (kielilaki 423/2003)** and section 17 of the Constitution, not from memory.
+Do not state an authority's obligation or a time limit without checking — retrieve the provision
+from the source or mark it `[check]`.
 
-## Lähteestä, ei muistista
+## From the source, not from memory
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-termien vakiintunut käyttö ratkaisuista lähteestä. Erota toisistaan säädöksen
-todistusvoimainen ruotsinkielinen teksti ja vapaa käännös.
+Check provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex) and
+the established use of terms from decisions in the source. Distinguish between a statute's
+authentic Swedish text and a free translation.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For references to statutes, case law and preparatory works, follow the marketplace's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision says without having checked the decision from the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation vakiotermistö, kaksikieliset asiakirjamallit ja kielilinjaukset voi
-tallentaa tähän otsikon `## Käytäntöprofiili` alle. Talon termivalinta ei voi
-korvata säädöksen virallista vastinetta. Oletuksena tyhjä — älä keksi, vaan kysy
-käyttäjältä.
+An organisation's standard terminology, bilingual document templates and language policies can be
+stored here under the heading `## Practice profile`. An in-house choice of term cannot
+replace a statute's official equivalent. Empty by default — do not invent one; ask
+the user.

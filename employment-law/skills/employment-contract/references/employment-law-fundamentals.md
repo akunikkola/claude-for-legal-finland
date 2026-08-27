@@ -1,53 +1,54 @@
-# Suomen työoikeuden perusteet
+# Basics of Finnish employment law
 
-Tiivistelmä työsuhteen kannalta keskeisistä laeista ja periaatteista. **Tarkista pykälien
-voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
-`legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
+A summary of the acts and principles that matter for an employment relationship. **Check the wording in force
+of the sections, and any statute numbers other than those confirmed below, with the
+`legal-core:legal-research` skill (oik.ai/Finlex) before citing them.**
 
-## Perusperiaatteet
-- **Pakottavuus työntekijän hyväksi:** työlainsäädäntö on pääosin pakottavaa; työntekijän
-  vahingoksi poikkeavat ehdot ovat pääsääntöisesti tehottomia.
-- **Työehtosopimus (TES):** yleissitova TES sitoo alan kaikkia työnantajia; normaalisitova
-  järjestäytyneitä. TES asettaa vähimmäisehtoja (palkka, työaika, lomat, lisät), joista ei voi
-  sopia työntekijän vahingoksi. **Tarkista aina sovellettava TES.**
-- **Työsuhteen tunnusmerkit (työsopimuslaki 55/2001, 1 luku 1 §, vahvistettu lähteestä):**
-  työ tehdään sopimuksen perusteella, henkilökohtaisesti, työnantajan johdon ja valvonnan
-  alaisena, vastiketta vastaan. Kokonaisharkinta ratkaisee tulkinnanvaraiset tilanteet
-  (vrt. itsenäinen yrittäjä / kevytyrittäjä).
+## Basic principles
+- **Mandatory in the employee's favour:** employment legislation is largely mandatory; terms
+  departing from it to the employee's detriment are as a rule ineffective.
+- **Collective agreement (TES):** a generally binding TES binds every employer in the sector; a normally
+  binding one binds organised employers. A TES sets minimum terms (pay, working time, holidays, supplements) which cannot
+  be agreed away to the employee's detriment. **Always check the applicable TES.**
+- **The elements of an employment relationship (Employment Contracts Act, työsopimuslaki 55/2001, chapter 1 section 1, confirmed from the source):**
+  work is performed on the basis of a contract, personally, under the employer's direction and supervision,
+  for remuneration. An overall assessment decides cases open to interpretation
+  (compare an independent entrepreneur or a light entrepreneur).
 
-## Keskeiset lait
-**Vahvistettu lähteestä (oik.ai/Finlex, 2026-05):**
-- **Työsopimuslaki (55/2001)** — työsuhteen yleislaki: työsopimus, ehdot, määräaikaisuus,
-  koeaika, työnantajan ja työntekijän velvollisuudet, lomauttaminen, irtisanominen ja purku,
-  kilpailukielto (2 luku 5 §).
-- **Yhteistoimintalaki (1333/2021)** — yhteistoiminta ja muutosneuvottelut (korvasi vanhan
-  YT-lain 334/2007). Ks. `change-negotiations`-skill.
+## The key acts
+**Confirmed from the source (oik.ai/Finlex, 2026-05):**
+- **The Employment Contracts Act (työsopimuslaki 55/2001)** — the general act on employment relationships: the employment contract, terms, fixed-term status,
+  the probationary period, the obligations of the employer and the employee, lay-offs, termination with notice and summary termination,
+  the non-compete clause (chapter 2 section 5).
+- **The Act on Co-operation within Undertakings (yhteistoimintalaki 1333/2021)** — co-operation and change negotiations (it replaced the old
+  co-operation act 334/2007). See the `change-negotiations` skill.
 
-**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
-- **Työaikalaki** — säännöllinen työaika, ylityö, lepoajat (uudistui 2019).
-- **Vuosilomalaki** — loman ansainta ja lomakorvaus.
-- **Yhdenvertaisuuslaki** — syrjinnän kielto ja yhdenvertaisuuden edistäminen.
-- **Laki naisten ja miesten välisestä tasa-arvosta** — sukupuoleen perustuvan syrjinnän kielto.
-- **Työturvallisuuslaki** — työnantajan huolehtimisvelvollisuus.
-- **Laki yksityisyyden suojasta työelämässä (759/2004)** — työntekijän henkilötiedot
-  (ks. myös `data-protection`-plugari).
-- Toimialakohtaiset ja erityisryhmien lait (esim. merityö, vuokratyö, lähetetyt työntekijät).
+**Check the statute number with the `legal-research` skill before citing:**
+- **Työaikalaki** — regular working time, overtime, rest periods (reformed in 2019).
+- **Vuosilomalaki** — accrual of holiday and holiday compensation.
+- **Yhdenvertaisuuslaki** — prohibition of discrimination and promotion of equality.
+- **Laki naisten ja miesten välisestä tasa-arvosta** — prohibition of discrimination based on gender.
+- **Työturvallisuuslaki** — the employer's duty of care.
+- **Laki yksityisyyden suojasta työelämässä (759/2004)** — employees' personal data
+  (see also the `data-protection` domain).
+- Sector-specific acts and acts on special groups (for example seafarers' work, agency work, posted workers).
 
-## Päättäminen — peruskäsitteet
-- **Irtisanominen** edellyttää **asiallista ja painavaa syytä**:
-  - **Henkilöön liittyvä** (esim. velvoitteiden olennainen laiminlyönti) — pääsääntöisesti
-    varoitus + kuuleminen + mahdollisuus korjata ennen irtisanomista.
-  - **Tuotannollis-taloudellinen / kollektiiviperuste** — työn olennainen ja pysyvä
-    vähentyminen; työn tarjoamis- ja koulutusvelvollisuus; ei saa olla korvaavaa työtä.
-- **Purkaminen** (välitön päättäminen) edellyttää **erittäin painavaa syytä**.
-- **Koeaikapurku** kevyemmin, mutta ei syrjivin tai epäasiallisin perustein.
-- **Irtisanomisajat** määräytyvät lain ja/tai TES:n mukaan.
-- **Muutosneuvottelut** (yhteistoimintalaki 1333/2021) on käytävä ennen kollektiiviperusteisia
-  irtisanomisia/lomautuksia laissa säädetyn kokorajan ylittävissä yrityksissä.
+## Ending an employment relationship — basic concepts
+- **Termination with notice (irtisanominen)** requires **proper and weighty grounds**:
+  - **Relating to the person** (for example a material breach of obligations) — as a rule
+    a warning + a hearing + an opportunity to put matters right before termination.
+  - **Financial and production-related / collective grounds** — a material and permanent
+    reduction in work; the obligation to offer work and to provide training; there must be no
+    substitute work available.
+- **Summary termination (purkaminen)** (immediate ending) requires **exceptionally weighty grounds**.
+- **Termination during the probationary period (koeaikapurku)** on lighter grounds, but not on discriminatory or improper grounds.
+- **Notice periods (irtisanomisajat)** are determined by law and/or the TES.
+- **Change negotiations** (yhteistoimintalaki 1333/2021) must be held before terminations or lay-offs on collective grounds
+  in undertakings exceeding the size threshold laid down in law.
 
-## Riidat ja valvonta
-- **Työsuojeluviranomainen** (aluehallintovirasto) valvoo työsuojelua ja monia työsuhteen ehtoja.
-- **Yhdenvertaisuusvaltuutettu** ja **tasa-arvovaltuutettu** syrjintäkysymyksissä.
-- **Työtuomioistuin** ratkaisee TES:n tulkintaa koskevat riidat; muut työsuhderiidat
-  yleisissä tuomioistuimissa. Hae relevantti oikeuskäytäntö `legal-research`-skillillä
-  (esim. court "Työtuomioistuin").
+## Disputes and supervision
+- **The occupational safety and health authority** (aluehallintovirasto) supervises occupational safety and many terms of employment.
+- **The Non-Discrimination Ombudsman** and the **Ombudsman for Equality** in discrimination matters.
+- **The Labour Court (Työtuomioistuin)** decides disputes on the interpretation of a TES; other employment disputes go to
+  the general courts. Retrieve the relevant case law with the `legal-research` skill
+  (for example court "Työtuomioistuin").

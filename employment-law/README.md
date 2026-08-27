@@ -1,36 +1,36 @@
-# Työoikeus
+# Employment law
 
-Suomen työoikeus työsuhteen elinkaaren keskeisiin tilanteisiin: sopimus, päättäminen ja
-yhteistoiminta. Pakottavan lainsäädännön ja työehtosopimusten (TES) ehdoilla.
+Finnish employment law for the key situations in the life cycle of an employment relationship: the contract,
+termination and co-operation. On the terms of mandatory legislation and collective agreements (TES).
 
-> **Luonnokset ja riskiarviot ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Päättämispäätös kuuluu työnantajalle; 🔴-tapaukset työoikeusjuristille. Katso [`AGENTS.md`](AGENTS.md).
+> **Drafts and risk assessments need checking – not legal advice.**
+> The decision to terminate belongs to the employer; 🔴 cases belong to an employment lawyer. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **tyosopimus** | Työsopimuksen laatiminen ja tarkistus (työsopimuslaki 55/2001): ehdot, määräaikaisuus, koeaika, kilpailukielto, TES-yhteensopivuus. Sisältää työoikeuden perusteiden referenssin. |
-| **tyosuhteen-paattaminen** | Päättämisen perusteen ja menettelyn arviointi + riskiluokittelu (🟢/🟡/🔴): irtisanominen (henkilö-/tuotannollis-taloudellinen peruste), purku, koeaikapurku, varoitus, kuuleminen, irtisanomisajat. |
-| **yhteistoiminta** | Yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021): jatkuva vuoropuhelu, neuvotteluesitys, määräajat, menettelytarkistuslista. |
+| **employment-contract** | Drafting and reviewing an employment contract (Employment Contracts Act, työsopimuslaki 55/2001): terms, fixed-term status, probationary period, non-compete clause, compatibility with the TES. Includes the employment-law fundamentals reference. |
+| **termination-of-employment** | Assessment of the grounds and procedure for ending an employment relationship plus risk classification (🟢/🟡/🔴): termination with notice (irtisanominen, on grounds relating to the person or on financial and production-related grounds), summary termination (purkaminen), termination during the probationary period, warning, hearing, notice periods. |
+| **change-negotiations** | Co-operation and change negotiations (Act on Co-operation within Undertakings, yhteistoimintalaki 1333/2021): continuous dialogue, the negotiation proposal, time limits, procedural checklist. |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (oik.ai/Finlex) varmistettu: **työsopimuslaki (55/2001)** ja **yhteistoimintalaki
-(1333/2021)** (korvasi vanhan YT-lain 334/2007). Muut lait (työaika-, vuosiloma-,
-yhdenvertaisuus-, tasa-arvolaki ym.) ja niiden numerot tarkistetaan `legal-core:legal-research`-skillillä.
+Verified from the source (oik.ai/Finlex): **the Employment Contracts Act (työsopimuslaki 55/2001)** and **the Act on Co-operation within Undertakings
+(yhteistoimintalaki 1333/2021)** (which replaced the old co-operation act 334/2007). Other acts (työaikalaki, vuosilomalaki,
+yhdenvertaisuuslaki, tasa-arvolaki and others) and their numbers are checked with the `legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (lain ja oikeuskäytännön, mm. Työtuomioistuin, tarkistus) ja `document-review`.
-- **`contracts`-plugari** – yleinen sopimusmekaniikka työsopimuksen pohjana.
-- **`data-protection`-plugari** – työntekijöiden henkilötiedot (laki yksityisyyden suojasta työelämässä 759/2004).
+- **`legal-core` domain** – `legal-research` (checking the law and case law, including the Labour Court, Työtuomioistuin) and `document-review`.
+- **`contracts` domain** – general contract mechanics as the basis for an employment contract.
+- **`data-protection` domain** – employees' personal data (laki yksityisyyden suojasta työelämässä 759/2004).
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install tyooikeus@agent-skills-for-finnish-law
+/plugin install employment-law@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the root.

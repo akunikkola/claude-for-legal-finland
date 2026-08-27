@@ -1,23 +1,25 @@
 ---
 name: employment-contract
 description: >
-  Työsopimuksen laatiminen ja tarkistus Suomen työoikeuden mukaan (työsopimuslaki
-  55/2001). Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa työsopimusta,
-  kysyy työsuhteen ehdoista, määräaikaisuudesta, koeajasta, kilpailukiellosta,
-  salassapidosta, työehtosopimuksen (TES) vaikutuksesta, irtisanomisajoista tai
-  työntekijän vähimmäisehdoista. Triggeröi kun mainitaan työsopimus, työsuhde,
-  määräaikainen sopimus, koeaika, kilpailukieltosopimus tai työehtosopimus.
+  Drafting and reviewing an employment contract under Finnish employment law
+  (Employment Contracts Act, työsopimuslaki 55/2001). Use this skill when the user
+  is drafting or reviewing an employment contract, or asks about the terms of an
+  employment relationship, fixed-term status, the probationary period, a non-compete
+  clause, confidentiality, the effect of the collective agreement (TES), notice
+  periods or an employee's minimum terms. Triggers when an employment contract,
+  employment relationship, fixed-term contract, probationary period, non-compete
+  agreement or collective agreement is mentioned.
 ---
 
-# Työsopimus — laatiminen ja tarkistus
+# Employment contract — drafting and review
 
-Tämä skill auttaa laatimaan ja tarkistamaan työsopimuksen Suomen työoikeuden mukaan.
-Lähtökohta poikkeaa yleisestä sopimusoikeudesta: **työlainsäädäntö on pakottavaa
-työntekijän hyväksi**, ja työehtosopimukset (TES) asettavat vähimmäisehtoja, joista ei
-voi poiketa työntekijän vahingoksi.
+This skill helps draft and review an employment contract under Finnish employment law.
+The starting point differs from general contract law: **employment legislation is mandatory
+in the employee's favour**, and collective agreements (TES) set minimum terms which cannot
+be departed from to the employee's detriment.
 
-> **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa.
-> Katso `employment-law/AGENTS.md`. Perusteet: `references/employment-law-fundamentals.md`.
+> **Disclaimer:** a draft or assessment that needs checking — not legal advice.
+> See `employment-law/AGENTS.md`. Fundamentals: `references/employment-law-fundamentals.md`.
 
 ## Output language
 
@@ -26,49 +28,50 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista pakottava sääntely ja TES ensin
+## Check the mandatory regulation and the TES first
 
-- **Sovellettava työehtosopimus:** selvitä, sitooko alalla yleissitova tai normaalisitova
-  TES. TES voi määrätä palkasta, työajasta, lomista ym. työsopimusta sitovammin. Älä laadi
-  ehtoa, joka alittaa TES:n tai pakottavan lain vähimmäistason työntekijän vahingoksi.
-- Tarkista työsopimuslain (55/2001) ja muiden lakien voimassa olevat säännökset
-  **`legal-core`-plugarin `legal-research`-skillillä** (oik.ai/Finlex). Yleinen sopimusmekaniikka:
-  `contracts`-plugari.
+- **The applicable collective agreement:** establish whether a generally binding (yleissitova) or
+  normally binding TES applies in the sector. A TES may govern pay, working time, holidays and other
+  matters more bindingly than the employment contract. Do not draft a
+  term that falls below the minimum level of the TES or of mandatory law to the employee's detriment.
+- Check the provisions in force of the Employment Contracts Act (työsopimuslaki 55/2001) and other acts
+  with the **`legal-research` skill in the `legal-core` domain** (oik.ai/Finlex). General contract mechanics:
+  the `contracts` domain.
 
-## Työsopimuksen keskeiset ehdot
+## The key terms of an employment contract
 
-Käy läpi vähintään:
-1. **Osapuolet** ja työnteon alkamisajankohta.
-2. **Työtehtävät** ja työntekopaikka.
-3. **Sopimuksen kesto:** toistaiseksi voimassa oleva vai **määräaikainen**. Määräaikaisuus edellyttää **perusteltua syytä** (työsopimuslaki 55/2001); toistuvat määräaikaiset ilman perustetta voidaan katsoa toistaiseksi voimassa olevaksi. Työnantajan aloitteesta tehty perusteeton määräaikaisuus on riski → merkitse.
-4. **Koeaika:** sallittu laissa säädetyissä rajoissa; pituus ja ehdot tarkistettava lähteestä. Koeajan kuluessa sopimus voidaan purkaa kevyemmin, mutta ei syrjivin tai epäasiallisin perustein.
-5. **Palkka** ja palkanmaksukausi (huomioi TES:n vähimmäispalkka).
-6. **Työaika** (työaikalaki) ja **vuosiloma** (vuosilomalaki) — tarkista numerot `legal-research`-skillillä.
-7. **Kilpailukieltosopimus:** sallittu vain **erityisen painavasta syystä**, rajoitettu kestoltaan, ja siitä on pääsääntöisesti maksettava **korvaus** (työsopimuslain 2022 uudistuksen jälkeen). Perusteeton tai liian laaja kilpailukielto on osin tehoton → merkitse ja tarkista voimassa oleva säännös lähteestä.
-8. **Salassapito**, immateriaalioikeudet ja muut ehdot.
-9. **Irtisanomisajat** (laki/TES) ja päättämisen perusteet (ks. `termination-of-employment`-skill).
+Go through at least:
+1. **The parties** and the date work begins.
+2. **Duties** and the place of work.
+3. **Duration of the contract:** indefinite or **fixed-term**. A fixed term requires **justified grounds** (työsopimuslaki 55/2001); repeated fixed-term contracts without grounds may be regarded as being in force indefinitely. A fixed term without grounds, made on the employer's initiative, is a risk → mark it.
+4. **Probationary period (koeaika):** permitted within the limits laid down in law; the length and conditions must be checked from the source. During the probationary period the contract can be terminated on lighter grounds, but not on discriminatory or improper grounds.
+5. **Pay** and the pay period (note the minimum pay under the TES).
+6. **Working time** (työaikalaki) and **annual holiday** (vuosilomalaki) — check the figures with the `legal-research` skill.
+7. **Non-compete agreement (kilpailukieltosopimus):** permitted only for a **particularly weighty reason**, limited in duration, and **compensation** must as a rule be paid for it (following the 2022 reform of the Employment Contracts Act). A non-compete clause without grounds or one that is too wide is partly ineffective → mark it and check the provision in force from the source.
+8. **Confidentiality**, intellectual property rights and other terms.
+9. **Notice periods (irtisanomisajat)** (law/TES) and the grounds for ending the relationship (see the `termination-of-employment` skill).
 
-## Työnkulku
+## Workflow
 
-- **Laadinta:** kokoa ehdot yllä olevan mukaan; merkitse täydennettävät kohdat hakasulkein; varmista TES-yhteensopivuus. Tuota uusi sopimus `docx`-skillillä tai olemassa olevan muokkaus `adeu`-MCP:llä (jälkimuutokset).
-- **Tarkistus:** käy ehdot läpi pakottavan lain ja TES:n kannalta; nosta esiin ehdot, jotka alittavat vähimmäistason tai ovat työntekijän vahingoksi tehottomia (perusteeton määräaikaisuus, ylilaaja kilpailukielto ilman korvausta, koeaikaehto yli sallitun). Merkitse `[varmista — työoikeusjuristin arvioitava]`.
+- **Drafting:** assemble the terms as set out above; mark points to be completed in square brackets; confirm compatibility with the TES. Produce a new contract with the `docx` skill, or edit an existing one with the `adeu` MCP (tracked changes).
+- **Review:** go through the terms from the point of view of mandatory law and the TES; raise terms that fall below the minimum level or that are ineffective to the employee's detriment (a fixed term without grounds, an excessively wide non-compete clause without compensation, a probationary period term beyond what is permitted). Mark `[confirm — requires an employment lawyer's assessment]`.
 
-## Raportoi
+## Report
 
-Tuota sopimus/arvio lähdemerkinnöin (säädös + pykälä tarkistettuna `legal-research`-skillillä,
-sovellettava TES nimettynä). Erota selvästi pakottava vähimmäistaso, TES-ehto ja
-sopimusvapauden piiriin kuuluva ehto.
+Produce the contract or assessment with source markings (statute + section checked with the `legal-research` skill,
+the applicable TES named). Distinguish clearly between the mandatory minimum level, a TES term and
+a term within the scope of freedom of contract.
 
-## Mitä tämä skill EI tee
-- **Ei korvaa työnantajan päätöstä eikä työoikeusjuristin arviota.** Tuottaa tarkistettavan luonnoksen tai arvion, ei lopullista kantaa sopimuksen pätevyydestä.
-- **Ei vahvista irtisanomisaikoja, koeajan enimmäispituutta, vuosiloma- tai työaikalukuja eikä TES-määräyksiä muistista.** Ne haetaan voimassa olevasta laista ja sovellettavasta työehtosopimuksesta.
-- **Ei ratkaise kilpailukiellon pätevyyttä eikä korvauksen suuruutta sitovasti** — arvioi vain riskin ja ohjaa tarkistamaan voimassa olevan työsopimuslain 3 luvun säännöksen.
-- **Ei laadi työsuhteen päättämistä** (irtisanominen, purku, koeaikapurku) — vain perustaa työsuhteen ja sen ehdot.
-- **Ei käsittele kollektiiviperusteista vähentämistä eikä YT-/muutosneuvotteluvelvoitetta.**
-- **Vain Suomen työoikeus** — ei muiden maiden työlainsäädäntöä eikä rajat ylittäviä työsuhteita.
+## What this skill does NOT do
+- **Does not replace the employer's decision or an employment lawyer's assessment.** It produces a draft or assessment that needs checking, not a final position on the validity of the contract.
+- **Does not confirm notice periods, the maximum length of a probationary period, annual holiday or working time figures, or TES provisions from memory.** These are retrieved from the law in force and from the applicable collective agreement.
+- **Does not decide the validity of a non-compete clause or the amount of compensation with binding effect** — it only assesses the risk and directs the user to check the provision in force in chapter 3 of the Employment Contracts Act.
+- **Does not prepare the ending of an employment relationship** (termination with notice, summary termination, termination during the probationary period) — only the establishment of the relationship and its terms.
+- **Does not deal with reductions on collective grounds or with the obligation to hold change negotiations.**
+- **Finnish employment law only** — not the employment legislation of other countries and not cross-border employment relationships.
 
-## Jatka tästä
-- Työsuhteen päättäminen, koeaikapurku tai irtisanomisen perusteet → /tyooikeus:tyosuhteen-paattaminen
-- Kollektiiviperusteinen vähentäminen tai YT-velvoitteen selvitys → /tyooikeus:yhteistoiminta
-- Työsopimuslain, TES:n tai oikeuskäytännön tarkistus lähteestä → /juristi:oikeustutkimus
-- Valmiin työsopimusluonnoksen laaduntarkistus ennen allekirjoitusta → /juristi:asiakirjan-tarkistus
+## Continue from here
+- Ending an employment relationship, termination during the probationary period or the grounds for termination with notice → /employment-law:termination-of-employment
+- Reductions on collective grounds or establishing the co-operation obligation → /employment-law:change-negotiations
+- Checking the Employment Contracts Act, the TES or case law from the source → /legal-core:legal-research
+- Quality check of a completed draft employment contract before signature → /legal-core:document-review

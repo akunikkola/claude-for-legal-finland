@@ -1,98 +1,100 @@
 ---
 name: legal-translation
 description: >
-  Juridisen tekstin kääntäminen suomen ja ruotsin välillä (FI↔SV)
-  vakiintunutta oikeustermistöä ja virallisia lähteitä käyttäen. Käytä
-  tätä skilliä, kun käännetään tai tarkistetaan sopimusta, päätöstä,
-  kirjelmää tai säädösviittausta suomesta ruotsiin tai päinvastoin,
-  etsitään oikeustermin vakiintunutta vastinetta, varmistetaan säädöksen
-  virallinen ruotsinkielinen nimi tai laaditaan kaksikielistä asiakirjaa.
-  Triggeröi sanoista: käännä ruotsiksi, käännä suomeksi, ruotsinkielinen
-  termi, oikeustermi, vastine, juridinen käännös, kaksikielinen asiakirja,
-  svenska, översättning, säädöksen ruotsinkielinen nimi, termipankki.
+  Translating legal text between Finnish and Swedish (FI↔SV) using
+  established legal terminology and official sources. Use this skill when
+  translating or checking a contract, decision, written submission or
+  statutory reference from Finnish into Swedish or the other way round,
+  when looking for the established equivalent of a legal term, when
+  confirming the official Swedish name of a statute, or when drafting a
+  bilingual document. Triggers on: translate into Swedish, translate into
+  Finnish, Swedish legal term, legal terminology, equivalent, legal
+  translation, bilingual document, svenska, översättning, käännä
+  ruotsiksi, oikeustermi, the Swedish name of a statute, Finlex parallel
+  text, term bank, termipankki.
 ---
 
-# Oikeuskielen kääntäminen — FI↔SV vakiintunein termein
+# Translating legal language — FI↔SV in established terms
 
-Tämä skill tukee juridisen tekstin kääntämistä suomen ja ruotsin välillä
-niin, että oikeudellinen merkitys säilyy. Termistö ja viralliset lähteet:
-`references/bilingual-language-fundamentals.md` — lue se tehtävän alussa.
+This skill supports the translation of legal text between Finnish and Swedish
+so that the legal meaning is preserved. Terminology and official sources:
+`references/bilingual-language-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** käännös on tarkistettava luonnos — ei oikeudellista
-> neuvontaa eikä virallinen käännös. Virallisen käännöksen tekee
-> auktorisoitu kääntäjä. **Älä keksi termiä — käytä vakiintunutta
-> vastinetta lähteestä.** Katso `bilingual-legal-language/AGENTS.md`.
+> **Disclaimer:** the translation is a draft that needs checking — not legal
+> advice and not an official translation. An official translation is made by
+> an authorised translator. **Do not invent a term — use the established
+> equivalent from the source.** See `bilingual-legal-language/AGENTS.md`.
 
-## Tarkista termit ja säädösnimet lähteestä
+## Check the terms and the names of statutes from the source
 
-Säädöksen **virallinen ruotsinkielinen nimi ja sanamuoto** Finlexin
-rinnakkaistekstistä (`legal-core:legal-research`). Termien vakiintuneet
-vastineet valtioneuvoston termipankista (Valter), Sanastokeskuksen
-TEPA:sta ja Kotuksen ohjeista. Älä esitä keksittyä tai sanasanaista
-vastinetta varmana.
+The **official Swedish name and wording of a statute** from the Finlex
+parallel text (`legal-core:legal-research`). The established equivalents of terms
+from the government term bank (Valter), from TEPA at the Terminology Centre and
+from the guidance of the Institute for the Languages of Finland. Do not present an invented or word-for-word
+equivalent as certain.
 
-## Vaihe 1: Tekstilaji ja tarkoitus
+## Step 1: Text type and purpose
 
-- **Mikä teksti** (sopimus, päätös, kirjelmä, säädössitaatti, markkinointi)
-  ja **mihin käyttöön** (virallinen vai sisäinen, viranomaiselle vai
-  asiakkaalle)? Virallinen tai oikeudessa käytettävä käännös → ohjaa
-  auktorisoidulle kääntäjälle; tämä skill tukee valmistelua ja tarkistusta.
-- Tunnista käännössuunta ja kohdeyleisön kielitaso.
+- **What text** (a contract, a decision, a written submission, a statutory citation, marketing material)
+  and **for what use** (official or internal, for an authority or for
+  a client)? An official translation or one to be used in court → direct the user
+  to an authorised translator; this skill supports preparation and checking.
+- Identify the direction of translation and the language level of the target audience.
 
-## Vaihe 2: Säädös- ja viranomaisnimet ensin
+## Step 2: The names of statutes and authorities first
 
-- Hae jokaisen viitatun **säädöksen virallinen ruotsinkielinen nimi**
-  Finlexistä (rinnakkaisteksti) — älä käännä nimeä itse.
-- **Tuomioistuinten ja viranomaisten nimet** vakiintuneessa muodossa
-  (ks. referenssin termitaulukko); ratkaisulyhenteet (KKO/HD, KHO/HFD).
-- Säilytä säädösnumero ja pykäläviittaus muuttumattomana molemmilla
-  kielillä.
+- Retrieve the **official Swedish name of every statute** referred to
+  from Finlex (the parallel text) — do not translate the name yourself.
+- **The names of courts and authorities** in their established form
+  (see the terminology table in the reference); the abbreviations of decisions (KKO/HD, KHO/HFD).
+- Keep the statute number and the section reference unchanged in both
+  languages.
 
-## Vaihe 3: Termivastineet
+## Step 3: Term equivalents
 
-1. **Tunnista oikeustermit** lähtötekstistä (käsitteet, joilla on
-   määritelty oikeudellinen merkitys).
-2. **Hae kullekin vakiintunut vastine** virallisesta termilähteestä.
-   Esimerkkejä vakiintuneista vastineista on referenssin taulukossa.
-3. **Merkitse epävarmat** `[vastine varmistettava]` äläkä esitä
-   keksittyä termiä. Sama suomen termi voi saada eri vastineen
-   asiayhteyden mukaan — varmista konteksti.
-4. **Vältä kavereita ja sanasanaisuutta** — käännä käsite, ei sana.
+1. **Identify the legal terms** in the source text (concepts that have a
+   defined legal meaning).
+2. **Retrieve the established equivalent for each** from an official terminology source.
+   Examples of established equivalents are in the table in the reference.
+3. **Mark uncertain ones** `[equivalent to be confirmed]` and do not present
+   an invented term. The same Finnish term may take a different equivalent
+   depending on the context — confirm the context.
+4. **Avoid false friends and literalism** — translate the concept, not the word.
 
-## Vaihe 4: Rakenne ja kielenhuolto
+## Step 4: Structure and language care
 
-- Noudata kohdekielen oikeuskielen konventioita (lauserakenne,
-  passiivin käyttö, yhdyssanat). Suomen kielen tarkistus →
-  `legal-core:finnish-language`; ruotsin osalta nojaa virallisiin ruotsin
-  kielenhuolto-ohjeisiin (Kotus / statsrådets svenska språknämnd).
-- Pidä numerot, päivämäärät ja viittausmuodot kohdekielen mukaisina.
+- Follow the conventions of legal language in the target language (sentence structure,
+  the use of the passive, compound words). Checking of Finnish →
+  `legal-core:finnish-language`; for Swedish, rely on the official Swedish
+  language-care guidance (Kotus / statsrådets svenska språknämnd).
+- Keep numbers, dates and forms of reference in accordance with the target language.
 
-## Vaihe 5: Kaksikielinen asiakirja
+## Step 5: A bilingual document
 
-- Kun sama asiakirja laaditaan kahdella kielellä, varmista, että
-  **molemmat versiot vastaavat oikeudellisesti toisiaan**; merkitse,
-  kumpi on alkuperäinen tai ratkaiseva, jos sopimukseen otetaan
-  kieliehto.
-- Olemassa olevan asiakirjan käännösehdotukset voi tehdä Adeu-MCP:llä
-  jälkimuutoksina (Track Changes).
+- Where the same document is drawn up in two languages, ensure that
+  **both versions correspond to each other legally**; state
+  which is the original or decisive one, if a language clause is taken into
+  the contract.
+- Suggested translations for an existing document can be made with the Adeu MCP as
+  tracked changes (Track Changes).
 
-## Vaihe 6: Tarkistuslista
+## Step 6: Checklist
 
-Termivastineet lähteestä ✓ · säädösnimet Finlexin rinnakkaistekstistä ✓
-· epävarmat merkitty `[vastine varmistettava]` ✓ · merkitys säilynyt
-(ei sanasanaisuutta) ✓ · virallista käyttöä varten auktorisoitu kääntäjä ✓.
+Term equivalents from the source ✓ · the names of statutes from the Finlex parallel text ✓
+· uncertain ones marked `[equivalent to be confirmed]` ✓ · meaning preserved
+(no literalism) ✓ · for official use, an authorised translator ✓.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tuota virallista tai oikeudessa pätevää käännöstä** — se on
-  auktorisoidun kääntäjän tehtävä.
-- **Ei keksi termivastineita** — vakiintunut vastine lähteestä tai
-  `[vastine varmistettava]`.
-- **Ei käännä säädöksen nimeä itse** — virallinen nimi Finlexistä.
-- **Ei käsittele saamen kieltä ruotsin tapaan** → omat oikeutensa.
+- **Does not produce an official translation or one valid in court** — that is
+  the task of an authorised translator.
+- **Does not invent term equivalents** — the established equivalent from the source or
+  `[equivalent to be confirmed]`.
+- **Does not translate the name of a statute itself** — the official name from Finlex.
+- **Does not treat the Sámi languages in the same way as Swedish** → they have their own rights.
 
-## Jatka tästä
+## Continue from here
 
-- Viranomaisen kielelliset velvoitteet ja asiointikieli → /kaksikielisyys:kielelliset-oikeudet-ja-velvoitteet
-- Suomenkielisen tekstin oikeinkirjoitus ja tyyli → /juristi:suomen-kieli
-- Säädöksen ruotsinkielisen nimen ja tekstin tarkistus → /juristi:oikeustutkimus
+- An authority's language obligations and the language of dealings → /bilingual-legal-language:language-rights-and-obligations
+- The orthography and style of Finnish text → /legal-core:finnish-language
+- Checking the Swedish name and text of a statute → /legal-core:legal-research
