@@ -1,4 +1,4 @@
-# CLAUDE.md — kiinteistot-ja-asuminen
+# CLAUDE.md — real-estate-and-housing
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

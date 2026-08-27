@@ -1,4 +1,4 @@
-# CLAUDE.md — lausunnot
+# CLAUDE.md — legislative-consultation
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

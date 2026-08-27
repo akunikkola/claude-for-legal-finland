@@ -1,5 +1,5 @@
 ---
-name: aineistokartoittaja
+name: material-mapper
 description: >
   Datahuoneen ja juttuaineiston kartoittaja transaktioihin. Käytä tätä
   agenttia, kun due diligence -aineisto tai laaja asiakirjakansio pitää

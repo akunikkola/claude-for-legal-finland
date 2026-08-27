@@ -1,4 +1,4 @@
-# CLAUDE.md — verotus
+# CLAUDE.md — taxation
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

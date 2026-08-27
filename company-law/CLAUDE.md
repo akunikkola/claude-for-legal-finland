@@ -1,4 +1,4 @@
-# CLAUDE.md — yhtiooikeus
+# CLAUDE.md — company-law
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

@@ -1,4 +1,4 @@
-# CLAUDE.md — kaksikielisyys
+# CLAUDE.md — bilingual-legal-language
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

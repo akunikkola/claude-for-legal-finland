@@ -112,7 +112,7 @@ Kun verokohtelu on tulkinnanvarainen ja toteutus edessä:
 - **Ei takaa lopputulosta** — vain sitova ennakkoratkaisu sitoo
   Verohallintoa.
 - **Ei avusta tulojen salaamisessa tai ilmoitusvelvollisuuden
-  kiertämisessä** — ks. CLAUDE.md negatiivirajaus.
+  kiertämisessä** — ks. AGENTS.md negatiivirajaus.
 - **Ei jätä hakemuksia tai valituksia** — ihminen allekirjoittaa ja
   vastaa määräajoista.
 

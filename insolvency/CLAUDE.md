@@ -1,4 +1,4 @@
-# CLAUDE.md — insolvenssi
+# CLAUDE.md — insolvency
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

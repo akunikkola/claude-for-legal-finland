@@ -1,4 +1,4 @@
-# CLAUDE.md — lainvalmistelu
+# CLAUDE.md — legislative-drafting
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

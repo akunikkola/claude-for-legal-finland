@@ -1,5 +1,5 @@
 ---
-name: salassapitoarvioija
+name: confidentiality-assessor
 description: >
   Asiakirjan julkisuusarvion valmistelija viranomaiselle (julkisuuslaki
   621/1999). Käytä tätä agenttia, kun tietopyyntöön vastaaminen tai

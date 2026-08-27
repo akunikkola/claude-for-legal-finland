@@ -1,5 +1,5 @@
 ---
-name: poikkeamatarkastaja
+name: deviation-checker
 description: >
   Sopimusluonnoksen vertaaja organisaation omiin linjauksiin. Käytä
   tätä agenttia, kun saatu tai laadittu sopimusluonnos pitää verrata

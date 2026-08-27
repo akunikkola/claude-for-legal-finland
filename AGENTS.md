@@ -17,7 +17,7 @@ A collection of [Agent Skills](https://agentskills.io/specification.md) for Finn
 Finlex. Each domain is a self-contained bundle — copy `<domain>/skills/*` into any harness that
 reads the Agent Skills format and it works, with no plugin system required.
 
-This is a hard fork of [`akunikkola/agent-skills-for-finnish-law`](https://github.com/akunikkola/agent-skills-for-finnish-law),
+This is a hard fork of [`akunikkola/claude-for-legal-finland`](https://github.com/akunikkola/claude-for-legal-finland),
 translated to English and de-vendored. See **Fork provenance** below.
 
 ---
@@ -149,7 +149,7 @@ node scripts/apply-rename.mjs --dry-run
 
 | | |
 |---|---|
-| Upstream | `https://github.com/akunikkola/agent-skills-for-finnish-law` |
+| Upstream | `https://github.com/akunikkola/claude-for-legal-finland` |
 | Forked at | `6294330` |
 | Last ported upstream commit | `6294330` |
 

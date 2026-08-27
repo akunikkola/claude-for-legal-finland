@@ -40,6 +40,7 @@ jobs:
         run: |
           bash scripts/check-generated.sh
           node scripts/validate.mjs
+          node scripts/check-invariants.mjs
           node scripts/check-output-language.mjs
           node scripts/check-safety-mechanisms.mjs
           node scripts/check-citations.mjs

@@ -1,4 +1,4 @@
-# CLAUDE.md — rikosoikeus
+# CLAUDE.md — criminal-law
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

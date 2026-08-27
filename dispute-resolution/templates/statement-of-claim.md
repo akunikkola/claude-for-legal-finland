@@ -8,10 +8,6 @@ Konventiot: [`references/template-standards.md`](../../references/template-stand
 <!-- ohje: summaarinen (riidaton) asia voi noudattaa kevyempää menettelyä —
      tarkista skillistä ennen tämän pohjan käyttöä. -->
 
----
-
-**[Käräjäoikeuden nimi]** (pakollinen)
-
 ## Output language
 
 Drafts may be produced in **English** for review, but the version actually **filed with the court
@@ -21,6 +17,10 @@ state plainly that the English text is a working translation only.
 
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
+
+---
+
+**[Käräjäoikeuden nimi]** (pakollinen)
 
 ## HAASTEHAKEMUS
 

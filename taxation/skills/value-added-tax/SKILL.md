@@ -91,7 +91,7 @@ suosittele kokonaistarkastelua ja tarvittaessa ennakkoratkaisua.
   varastojärjestelyt, alustatalous) sitovasti — niissä
   veroasiantuntijalle ja tarvittaessa ennakkoratkaisu.
 - **Ei avusta ALV-petoksissa** — kuittikauppa, karusellikauppa tai
-  tekaistut laskut → kieltäydy (ks. CLAUDE.md negatiivirajaus).
+  tekaistut laskut → kieltäydy (ks. AGENTS.md negatiivirajaus).
 - **Ei korvaa taloushallinnon järjestelmiä** verokoodien määrittelyssä —
   se jäsentää oikeudellisen arvion.
 

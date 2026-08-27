@@ -58,7 +58,7 @@ kullakin oma virhesäännöstönsä.
 1. **Myyjän tiedonantovelvollisuus**: tiedossa olevat viat, tehdyt ja
    päätetyt remontit, yhtiön taloustilanne — myös se mitä myyjän
    "pitäisi tietää". Salaaminen → virhe + vahingonkorvaus, törkeimmillään
-   petos (ei avusteta — CLAUDE.md).
+   petos (ei avusteta — AGENTS.md).
 2. **Ostajan ennakkotarkastus**: nähtävillä ollutta ilmeistä ei voi
    reklamoida; kuntotarkastuksen lisätutkimuskehotukset laukaisevat
    erityisen selonottovelvollisuuden — käytäntö lähteestä.

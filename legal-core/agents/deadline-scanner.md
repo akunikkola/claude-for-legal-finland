@@ -1,5 +1,5 @@
 ---
-name: maaraaikaskanneri
+name: deadline-scanner
 description: >
   Määräaikojen skannaaja juridiselle aineistolle. Käytä tätä agenttia,
   kun asiakirjanippu tai juttukansio pitää käydä läpi määräaikojen

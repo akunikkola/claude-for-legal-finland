@@ -1,5 +1,5 @@
 ---
-name: vastapuoli
+name: opposing-counsel
 description: >
   Vastapuolen avustajan simulaattori riita- ja rikosasioiden
   kirjelmille. Käytä tätä agenttia, kun oma kirjelmäluonnos

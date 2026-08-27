@@ -1,4 +1,4 @@
-# CLAUDE.md — ymparisto-ja-kaavoitus
+# CLAUDE.md — environment-and-planning
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

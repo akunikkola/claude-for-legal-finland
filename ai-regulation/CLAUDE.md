@@ -1,4 +1,4 @@
-# CLAUDE.md — tekoalysaantely
+# CLAUDE.md — ai-regulation
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

@@ -34,7 +34,14 @@ const WHEN_CLAUSE = /\b(use (this )?(skill )?(when|for)|trigger(s|ed)? (when|on)
 
 // Citation forms that must be preserved as secondary keywords so the skill
 // still triggers on a Finnish statute reference after translation.
-const FINNISH_ANCHOR = /\b\d{1,4}\/(?:19|20)\d{2}\b|\b(KKO|KHO|MAO|KVL|TES|HE|Finlex|oik\.ai)\b/;
+//
+// The year pattern deliberately allows 17xx-18xx as well as 19xx/20xx.
+// rikoslaki 39/1889 and oikeudenkäymiskaari 4/1734 are both in force and are
+// the central statutes of criminal law and civil procedure respectively. A
+// 19xx/20xx-only pattern warned that descriptions citing them carried "no
+// Finnish statute number", which is the opposite of the truth. Keep this in
+// step with the same pattern in check-citations.mjs.
+const FINNISH_ANCHOR = /\b\d{1,4}\/(?:1[78]|19|20)\d{2}\b|\b(KKO|KHO|MAO|KVL|TES|HE|Finlex|oik\.ai)\b/;
 
 const MIN_LENGTH = 80;
 const MAX_LENGTH = 1024;

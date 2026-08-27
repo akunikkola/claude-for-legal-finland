@@ -96,7 +96,7 @@ realisointi vs. saneeraus).
 - **Ei ohita yksityistakaajan tai kuluttajan pakottavaa suojaa** —
   tehoton ehto kerrotaan, ei piiloteta.
 - **Ei suunnittele toimilupavaatimuksen kiertämistä** — luvanvaraisuus
-  selvitetään ensin (CLAUDE.md).
+  selvitetään ensin (AGENTS.md).
 - **Ei korvaa vero- tai kirjanpitoarviota** (korkovähennysrajoitukset
   → `taxation:corporate-taxation`).
 

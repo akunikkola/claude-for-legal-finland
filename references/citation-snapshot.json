@@ -1,6 +1,6 @@
 {
   "description": "Per-file multiset of citation tokens, taken before translation. scripts/check-citations.mjs diffs the live tree against this so a statute number, case identifier or preparatory-works reference that is dropped or altered during translation fails CI instead of shipping. Regenerate only when a citation is INTENTIONALLY changed, and say why in the commit.",
-  "takenAt": "2026-08-25",
+  "takenAt": "2026-08-27",
   "files": {
     "administrative-law/agents/confidentiality-assessor.md": {
       "621/1999": 2
@@ -62,6 +62,21 @@
       "410/2015": 1,
       "KKO:2019:42": 1,
       "HE 268/2014 vp": 1
+    },
+    "ai-regulation/README.md": {
+      "2024/1689": 1
+    },
+    "ai-regulation/skills/ai-classification/references/ai-act-fundamentals.md": {
+      "2024/1689": 1
+    },
+    "ai-regulation/skills/ai-classification/SKILL.md": {
+      "2024/1689": 2
+    },
+    "ai-regulation/skills/ai-compliance/SKILL.md": {
+      "2024/1689": 1
+    },
+    "ai-regulation/skills/ai-obligations/SKILL.md": {
+      "2024/1689": 1
     },
     "banking-and-finance/AGENTS.md": {
       "610/2014": 1,
@@ -246,10 +261,21 @@
       "410/2015": 1
     },
     "criminal-law/README.md": {
-      "754/2010": 1
+      "754/2010": 1,
+      "39/1889": 3
+    },
+    "criminal-law/skills/criminal-liability-basics/references/criminal-law-fundamentals.md": {
+      "39/1889": 1
+    },
+    "criminal-law/skills/criminal-liability-basics/SKILL.md": {
+      "39/1889": 2
+    },
+    "criminal-law/skills/principal-offences/SKILL.md": {
+      "39/1889": 1
     },
     "criminal-law/skills/sentencing/SKILL.md": {
-      "754/2010": 1
+      "754/2010": 1,
+      "39/1889": 1
     },
     "criminal-procedure/AGENTS.md": {
       "257/2002": 1
@@ -261,7 +287,8 @@
       "412/1974": 2,
       "1204/2005": 2,
       "898/1998": 2,
-      "257/2002": 1
+      "257/2002": 1,
+      "39/1889": 1
     },
     "criminal-procedure/skills/charges-and-response/SKILL.md": {
       "689/1997": 2,
@@ -281,30 +308,37 @@
       "257/2002": 1,
       "412/1974": 1,
       "1204/2005": 1,
-      "898/1998": 1
+      "898/1998": 1,
+      "39/1889": 1,
+      "4/1734": 1
     },
     "criminal-procedure/skills/pre-trial-investigation-and-coercive-measures/SKILL.md": {
       "805/2011": 1,
       "806/2011": 1,
       "257/2002": 1,
-      "423/2003": 1
+      "423/2003": 1,
+      "39/1889": 1
     },
     "data-protection/AGENTS.md": {
       "1050/2018": 1,
       "523/1999": 1,
-      "759/2004": 1
+      "759/2004": 1,
+      "2016/679": 1
     },
     "data-protection/README.md": {
       "1050/2018": 2,
-      "759/2004": 1
+      "759/2004": 1,
+      "2016/679": 2
     },
     "data-protection/skills/data-protection-assessment/references/data-protection-fundamentals.md": {
       "1050/2018": 1,
-      "759/2004": 1
+      "759/2004": 1,
+      "2016/679": 1
     },
     "data-protection/skills/data-protection-assessment/SKILL.md": {
       "1050/2018": 3,
-      "759/2004": 1
+      "759/2004": 1,
+      "2016/679": 2
     },
     "data-protection/skills/data-subject-requests/SKILL.md": {
       "1050/2018": 1
@@ -314,15 +348,18 @@
     },
     "dispute-resolution/AGENTS.md": {
       "673/2016": 1,
-      "967/1992": 1
+      "967/1992": 1,
+      "4/1734": 1
     },
     "dispute-resolution/README.md": {
       "412/1974": 1,
       "673/2016": 1,
-      "967/1992": 1
+      "967/1992": 1,
+      "4/1734": 2
     },
     "dispute-resolution/skills/appeal-against-judgment/SKILL.md": {
-      "423/2003": 1
+      "423/2003": 1,
+      "4/1734": 1
     },
     "dispute-resolution/skills/damages/SKILL.md": {
       "412/1974": 3,
@@ -331,13 +368,18 @@
       "737/1994": 1,
       "633/1982": 1
     },
+    "dispute-resolution/skills/evidence/SKILL.md": {
+      "4/1734": 1
+    },
     "dispute-resolution/skills/statement-of-claim/references/dispute-resolution-fundamentals.md": {
       "673/2016": 2,
       "665/2005": 1,
-      "967/1992": 2
+      "967/1992": 2,
+      "4/1734": 1
     },
     "dispute-resolution/skills/statement-of-claim/SKILL.md": {
-      "423/2003": 1
+      "423/2003": 1,
+      "4/1734": 2
     },
     "dispute-resolution/templates/statement-of-claim.md": {
       "423/2003": 1
@@ -602,6 +644,7 @@
       "808/2019": 1,
       "1096/1996": 1,
       "9/2023": 1,
+      "2016/679": 1,
       "KKO:2024:15": 1,
       "KHO:2023:42": 1,
       "MAO:123/24": 1,
@@ -634,7 +677,9 @@
     },
     "legal-core/skills/legal-writing/references/citations.md": {
       "410/2015": 2,
-      "731/1999": 1
+      "731/1999": 1,
+      "2016/679": 1,
+      "2022/2555": 1
     },
     "legal-core/skills/legal-writing/references/finnish-language.md": {
       "410/2015": 1
@@ -694,7 +739,9 @@
       "410/2015": 23,
       "1301/2014": 1,
       "419/2021": 1,
-      "434/2003": 1
+      "434/2003": 1,
+      "2016/1148": 3,
+      "2016/679": 2
     },
     "legislative-drafting/skills/legislative-drafting-manual/references/enacting-formula.md": {
       "731/1999": 2,
@@ -808,7 +855,9 @@
       "513/1999": 1,
       "423/2003": 1,
       "731/1999": 1,
-      "1086/2003": 1
+      "1086/2003": 1,
+      "4/1734": 1,
+      "39/1889": 1
     },
     "real-estate-and-housing/AGENTS.md": {
       "540/1995": 1,
@@ -855,6 +904,8 @@
     "references/citation-style.md": {
       "410/2015": 2,
       "268/2014": 1,
+      "2024/1689": 1,
+      "2019/790": 1,
       "KKO:2024:15": 1,
       "HE 268/2014 vp": 1
     },
@@ -877,6 +928,9 @@
       "301/2004": 1,
       "621/1999": 1,
       "808/2019": 1,
+      "4/1734": 1,
+      "39/1889": 1,
+      "2016/679": 1,
       "KKO:2019:42": 1,
       "KHO:2021:7": 1,
       "HE 268/2014 vp": 1
@@ -885,7 +939,10 @@
       "496/1958": 1,
       "715/2011": 1,
       "1050/2018": 1,
-      "759/2004": 1
+      "759/2004": 1,
+      "4/1734": 1,
+      "2016/679": 1,
+      "2024/1689": 1
     },
     "references/output-language-matrix.md": {
       "423/2003": 1

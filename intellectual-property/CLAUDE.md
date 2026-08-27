@@ -1,4 +1,4 @@
-# CLAUDE.md — immateriaalioikeus
+# CLAUDE.md — intellectual-property
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

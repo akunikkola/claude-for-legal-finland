@@ -72,7 +72,7 @@ Tuota organisaatiolle tarkistuslista ja dokumentaatiopohja:
   julkistaa keksinnön määräaikaista yksinoikeutta vastaan;
   liikesalaisuus voi olla ikuinen mutta ei suojaa itsenäiseltä
   keksimiseltä eikä käänteismallinnukselta (sallittu hankintatapa —
-  tarkista rajat lähteestä). Ennen julkistamista: ks. CLAUDE.md
+  tarkista rajat lähteestä). Ennen julkistamista: ks. AGENTS.md
   *Salassapito ennen hakemista*.
 
 ## Loukkaustilanne

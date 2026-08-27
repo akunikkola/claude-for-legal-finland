@@ -72,7 +72,7 @@ Liitä jokaiseen lainattuun pykälään ja ratkaisuun lähdemerkintä: `(oik.ai)
 - **Älä keksi** pykälää, säädösnumeroa, momenttia tai ratkaisutunnusta. Jos et löydä, sano se.
 - **Älä lainaa** hakukatkelmaa kuin se olisi koko pykälä tai ratkaisun lopputulos.
 - **Älä esitä** kumottua tai muutettua säännöstä voimassa olevana.
-- **Älä tee** lopullista oikeudellista johtopäätöstä — tuotos on tarkistettava luonnos (`CLAUDE.md` → *Vastuuvapaus*).
+- **Älä tee** lopullista oikeudellista johtopäätöstä — tuotos on tarkistettava luonnos (`AGENTS.md` → *Vastuuvapaus*).
 
 ---
 

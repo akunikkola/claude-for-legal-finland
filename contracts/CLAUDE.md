@@ -1,4 +1,4 @@
-# CLAUDE.md — sopimukset
+# CLAUDE.md — contracts
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

@@ -14,7 +14,7 @@ description: >
 
 # Käytäntöprofiili — kokoelman räätälöinti organisaatiolle
 
-Jokaisen plugarin `CLAUDE.md` päättyy osioon **"Käytäntöprofiili
+Jokaisen plugarin `AGENTS.md` päättyy osioon **"Käytäntöprofiili
 (valinnainen)"**, joka on oletuksena tyhjä. Tämä skill täyttää sen:
 haastattelee organisaation käytännöt ja kirjoittaa ne profiiliksi, jonka
 plugarin skillit lukevat jokaisessa tehtävässä. Näin "talon tapa" elää
@@ -74,11 +74,11 @@ Kysy vain ne osiot, jotka ovat organisaatiolle relevantteja:
 
 ## Vaihe 2: Kirjoita profiilit
 
-1. Tunnista asennetut plugarit ja niiden `CLAUDE.md`-tiedostojen polku
+1. Tunnista asennetut plugarit ja niiden `AGENTS.md`-tiedostojen polku
    (asennuksessa plugarin hakemisto; kehityksessä repon hakemisto).
    Jos et voi kirjoittaa plugarin tiedostoihin, tuota profiilisisältö
    käyttäjälle liitettäväksi.
-2. Kirjoita kunkin relevantin plugarin `CLAUDE.md`:n
+2. Kirjoita kunkin relevantin plugarin `AGENTS.md`:n
    `## Käytäntöprofiili` -osioon jäsennelty profiili:
 
 ```markdown

@@ -97,7 +97,7 @@ EU-tuomioistuin, komissio) lähteestä tunnuksineen.
 ## Mitä tämä skill EI tee
 
 - **Ei avusta kartellissa tai sen peittelyssä** — ehdoton
-  kieltäytyminen; laillinen polku kerrotaan (CLAUDE.md).
+  kieltäytyminen; laillinen polku kerrotaan (AGENTS.md).
 - **Ei vahvista markkinaosuusrajoja, seuraamusprosentteja tai
   vanhentumisaikoja muistista** — lähteestä tai `[tarkista]`.
 - **Ei tee ekonometristä markkina- tai vahinkoanalyysiä** — se

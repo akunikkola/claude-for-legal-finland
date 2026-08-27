@@ -1,4 +1,4 @@
-# CLAUDE.md — julkiset-hankinnat
+# CLAUDE.md — public-procurement
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

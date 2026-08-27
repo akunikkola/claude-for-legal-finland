@@ -1,4 +1,4 @@
-# CLAUDE.md — ulkomaalaisoikeus
+# CLAUDE.md — immigration-law
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

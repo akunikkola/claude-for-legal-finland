@@ -184,8 +184,28 @@ function rewriteText(text, originalPath, newPath) {
     out = rewriteLinks(out, originalPath, newPath);
   }
 
-  for (const id of map.identifiers) {
-    out = out.split(id.from).join(id.to);
+  // Identifier substitution is ordered longest-first and skips the upstream
+  // repository slug.
+  //
+  // This is not hypothetical: the first run rewrote
+  // `akunikkola/claude-for-legal-finland` into
+  // `akunikkola/agent-skills-for-finnish-law` — a repository that does not
+  // exist — because the fork's own rename rule matched inside the upstream
+  // URL. That URL is what the drift bridge fetches from, so corrupting it
+  // silently severs the mechanism carrying upstream's legal corrections.
+  const upstream = map.forkedFrom.repository.replace(/^https?:\/\/github\.com\//, '');
+  const ordered = [...map.identifiers].sort((a, b) => b.from.length - a.from.length);
+
+  for (const id of ordered) {
+    if (upstream.includes(id.from)) {
+      // Rewrite every occurrence EXCEPT the ones inside the upstream slug.
+      out = out
+        .split(upstream)
+        .map((part) => part.split(id.from).join(id.to))
+        .join(upstream);
+    } else {
+      out = out.split(id.from).join(id.to);
+    }
   }
 
   return out;

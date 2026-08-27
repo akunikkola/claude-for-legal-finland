@@ -104,7 +104,7 @@ palautusvelvollisuuden laajuus. Merkitse näyttökysymykset.
 - **Ei ennusta jako-osuutta lukuna** ilman pesänhoitajan tietoja — se
   jäsentää etuoikeusaseman.
 - **Ei toimi pesänhoitajana** eikä korvaa tämän lakisääteisiä tehtäviä.
-- **Ei avusta omaisuuden piilottamisessa pesältä** (ks. CLAUDE.md
+- **Ei avusta omaisuuden piilottamisessa pesältä** (ks. AGENTS.md
   negatiivirajaus).
 
 ## Jatka tästä

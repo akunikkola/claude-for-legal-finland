@@ -54,7 +54,7 @@ tai ELY-keskukseen, ne lakkasivat 2025 lopussa.
    YVA ennen lupaa, luvat rinnan vai peräkkäin.
 3. **Muutostilanne** — toiminnan olennainen muutos voi vaatia luvan
    muuttamisen; arvioi kynnys lähteestä äläkä pilko toimintaa
-   lupakynnyksen alle (negatiivirajaus CLAUDE.md:ssä).
+   lupakynnyksen alle (negatiivirajaus AGENTS.md:ssä).
 
 ## Vaihe 2: Lupahakemuksen jäsennys (toiminnanharjoittajalle)
 

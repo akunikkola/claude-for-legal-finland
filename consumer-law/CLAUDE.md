@@ -1,4 +1,4 @@
-# CLAUDE.md — kuluttajaoikeus
+# CLAUDE.md — consumer-law
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

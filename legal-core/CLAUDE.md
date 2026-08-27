@@ -1,4 +1,4 @@
-# CLAUDE.md — juristi
+# CLAUDE.md — legal-core
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

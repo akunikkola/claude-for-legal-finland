@@ -1,4 +1,4 @@
-# CLAUDE.md — perhe-ja-perinto
+# CLAUDE.md — family-and-inheritance
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

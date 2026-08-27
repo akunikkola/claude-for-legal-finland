@@ -52,7 +52,7 @@ Sakkomenettely (summaarinen) kulkee omaa polkuaan vähäisissä asioissa.
 
 ## Prosessiperiaatteet
 
-- **Syyttömyysolettama** ja **itsekriminointisuoja** (ks. CLAUDE.md).
+- **Syyttömyysolettama** ja **itsekriminointisuoja** (ks. AGENTS.md).
 - **In dubio pro reo** — epäselvässä näyttötilanteessa vastaajan eduksi;
   tuomitseminen edellyttää, ettei varteenotettavaa epäilyä jää.
 - **Syytesidonnaisuus** — tuomioistuin saa tuomita vain syytteessä

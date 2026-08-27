@@ -24,7 +24,7 @@ Perusteet: `../financing-and-collateral/references/finance-fundamentals.md`.
 
 > **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
 > neuvontaa eikä sijoitusneuvontaa. **Sisäpiiritiedon väärinkäyttöä ei
-> avusteta** — ehdoton negatiivirajaus (CLAUDE.md). Seuraamukset ovat
+> avusteta** — ehdoton negatiivirajaus (AGENTS.md). Seuraamukset ovat
 > ankaria: hallinnolliset seuraamusmaksut ja rikosvastuu.
 
 ## Tarkista sääntelykerrokset lähteestä

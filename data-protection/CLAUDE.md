@@ -1,4 +1,4 @@
-# CLAUDE.md — tietosuoja
+# CLAUDE.md — data-protection
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

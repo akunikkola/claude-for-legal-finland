@@ -115,7 +115,7 @@ Kun pakkokeino on käytetty tai uhkaa:
 - **Ei rakenna kertomuksia, selityksiä tai alibeja** — se jäsentää
   oikeudet, menettelyn ja aineiston.
 - **Ei avusta todisteiden hävittämisessä, todistajiin vaikuttamisessa
-  tai pakoilussa** — ehdoton kieltäytyminen (CLAUDE.md).
+  tai pakoilussa** — ehdoton kieltäytyminen (AGENTS.md).
 - **Ei vahvista asteikkoja, kynnyksiä tai määräaikoja muistista** —
   lähteestä tai `[tarkista]`.
 - **Ei arvioi syyllisyyttä** — se arvioi näyttöä, menettelyä ja

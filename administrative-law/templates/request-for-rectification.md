@@ -11,11 +11,6 @@ tässä asiassa. Konventiot:
      tarkista ne sieltä, älä muistista. Myöhästynyt vaatimus jätetään
      tutkimatta. -->
 
----
-
-**Vastaanottaja:** [viranomainen, jolle oikaisuvaatimus osoitetaan —
-päätöksen ohjeen mukaan]
-
 ## Output language
 
 Drafts may be produced in **English** for review, but the version actually **filed with the court
@@ -25,6 +20,11 @@ state plainly that the English text is a working translation only.
 
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
+
+---
+
+**Vastaanottaja:** [viranomainen, jolle oikaisuvaatimus osoitetaan —
+päätöksen ohjeen mukaan]
 
 ## OIKAISUVAATIMUS
 

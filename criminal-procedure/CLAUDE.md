@@ -1,4 +1,4 @@
-# CLAUDE.md — rikosprosessi
+# CLAUDE.md — criminal-procedure
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

@@ -14,7 +14,7 @@ const reg = JSON.parse(readFileSync(join(root, "tracking/statutes.json"), "utf8"
 const norm = (s) => s.toLowerCase().normalize("NFC");
 const docIdOf = (e) => {
   if (e.docId) return e.docId;
-  const [nro, vuosi] = e.numero.split("/");
+  const [nro, vuosi] = e.number.split("/");
   return vuosi + nro.padStart(4, "0");
 };
 
@@ -28,10 +28,10 @@ async function titleAt(url) {
 }
 
 let virheet = 0, varoitukset = 0, ok = 0;
-console.log(`säädösvahti — ${reg.saadokset.length} säädöstä\n`);
+console.log(`säädösvahti — ${reg.statutes.length} säädöstä\n`);
 
-for (const e of reg.saadokset) {
-  const [, vuosi] = e.numero.split("/");
+for (const e of reg.statutes) {
+  const [, vuosi] = e.number.split("/");
   const id = docIdOf(e);
   let title = null, lahde = "";
   for (const polku of ["ajantasa", "alkup"]) {
@@ -42,16 +42,16 @@ for (const e of reg.saadokset) {
   }
   if (!title) {
     varoitukset++;
-    console.log(`  ⚠️  ${e.numero} ${e.nimi} — ei tavoitettu (tarkista käsin)`);
+    console.log(`  ⚠️  ${e.number} ${e.name} — ei tavoitettu (tarkista käsin)`);
     continue;
   }
-  const nimiOsuu = norm(title).includes(norm(e.nimi));
-  const numeroOsuu = title.includes(e.numero);
+  const nimiOsuu = norm(title).includes(norm(e.name));
+  const numeroOsuu = title.includes(e.number);
   if (nimiOsuu && numeroOsuu) {
     ok++;
   } else {
     virheet++;
-    console.log(`  ❌ ${e.numero} — odotettu "${e.nimi}", Finlex (${lahde}): "${title}"`);
+    console.log(`  ❌ ${e.number} — odotettu "${e.name}", Finlex (${lahde}): "${title}"`);
     console.log(`     → säädös on voinut muuttua tai korvautua; päivitä plugarit ja rekisteri.`);
   }
   await new Promise((r) => setTimeout(r, 150));

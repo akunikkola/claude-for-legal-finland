@@ -26,14 +26,35 @@ const SKIP = new Set(['node_modules', 'docs', 'dist', '.git']);
 
 // Citation forms that must survive translation untouched.
 const PATTERNS = [
-  // statute number: 55/2001, 2016/679
+  // Finnish statute number: NUMBER/YEAR — 55/2001, 410/2015
   /\b\d{1,4}\/(?:19|20)\d{2}\b/g,
+  // Historical Finnish statutes, still in force and heavily cited:
+  // rikoslaki 39/1889 and oikeudenkäymiskaari 4/1734 (Swedish-era). The
+  // 19xx/20xx pattern above misses both, which left 33 references to two of
+  // the most fundamental statutes in Finnish law completely untracked — a
+  // translator could have deleted every Criminal Code citation and this gate
+  // would still have reported green. Bounded to 17xx-18xx so it does not
+  // start matching fractions or version strings.
+  /\b\d{1,4}\/1[78]\d{2}\b/g,
+  // EU instruments: YEAR/NUMBER — the REVERSE of the Finnish order.
+  // (EU) 2016/679, 2024/1689, direktiivi 2019/790.
+  //
+  // These need their own pattern for two reasons, and the previous one caught
+  // nothing at all:
+  //   1. `\b\(EU\)` can never match — \b before '(' requires a word character
+  //      immediately before it, so the anchor was unsatisfiable.
+  //   2. Requiring a literal "(EU)" prefix misses the many references written
+  //      as a bare 2016/679 or in prose as "tietosuoja-asetus (2016/679)".
+  // The effect was that all 27 GDPR and AI Act references in the collection —
+  // the two most-cited EU instruments here — were invisible to this gate.
+  //
+  // Year bounded to 19xx/20xx and the sequence number to 1-4 digits, so this
+  // does not swallow ordinary fractions.
+  /\b(?:19|20)\d{2}\/\d{1,4}\b/g,
   // case identifier: KKO:2019:42, KHO:2021:7, MAO:123/2020
   /\b(?:KKO|KHO|MAO|KVL|EUT|EIT):\d{2,4}[:/]\d+\b/g,
   // preparatory works: HE 268/2014 vp
   /\bHE\s+\d+\/\d{4}\s*vp\b/g,
-  // EU instruments: (EU) 2024/1689, direktiivi 2019/790
-  /\b\(EU\)\s*\d{4}\/\d+\b/g,
 ];
 
 function* mdFiles(dir) {

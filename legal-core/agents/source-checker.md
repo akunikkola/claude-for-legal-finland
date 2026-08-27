@@ -1,5 +1,5 @@
 ---
-name: lahdetarkastaja
+name: source-checker
 description: >
   Adversariaalinen viitetarkastaja suomalaisille juridisille
   asiakirjoille. Käytä tätä agenttia, kun luonnoksen KAIKKI säädös-,

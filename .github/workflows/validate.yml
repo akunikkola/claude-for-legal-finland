@@ -26,6 +26,9 @@ jobs:
       - name: Validoi rakenne ja frontmatter
         run: node scripts/validate.mjs
 
+      - name: Tarkista repon invariantit
+        run: node scripts/check-invariants.mjs
+
       - name: Tarkista tuotoskielen ilmoitukset
         run: node scripts/check-output-language.mjs
 

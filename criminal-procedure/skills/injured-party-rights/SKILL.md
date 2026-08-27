@@ -108,7 +108,7 @@ Syyttämättäjättämispäätökseen reagointi:
 - **Ei lupaa korvauksen määrää** — taso haetaan suosituksista ja
   käytännöstä lähteestä; tuomioistuin harkitsee.
 - **Ei aja vastaajan ja asianomistajan asiaa samassa jutussa** —
-  eturistiriita (CLAUDE.md).
+  eturistiriita (AGENTS.md).
 - **Ei vahvista haku- tai muutoksenhakuaikoja muistista** — lähteestä
   tai `[tarkista]`.
 - **Ei painosta sovintoon eikä vaatimuksista luopumiseen** — ratkaisut

@@ -135,7 +135,7 @@ lähteestä.
 - **Ei vahvista asteikkoja, vanhentumis- tai muutoksenhakuaikoja
   muistista** — lähteestä tai `[tarkista]`.
 - **Ei hoida asianomistajan vaatimuksia vastaajan asiassa** —
-  eturistiriita; ks. `injured-party-rights` ja CLAUDE.md.
+  eturistiriita; ks. `injured-party-rights` ja AGENTS.md.
 
 ## Jatka tästä
 

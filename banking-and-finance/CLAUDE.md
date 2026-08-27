@@ -1,4 +1,4 @@
-# CLAUDE.md — pankki-ja-rahoitus
+# CLAUDE.md — banking-and-finance
 
 This domain uses the vendor-neutral [AGENTS.md](https://agents.md) convention.
 

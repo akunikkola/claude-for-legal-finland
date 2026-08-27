@@ -165,6 +165,22 @@ paragraph as a general caveat.
 
 > **Disclaimer:** a draft or assessment for review — not legal advice.
 
+### The practice-profile heading — exact spelling required
+
+`legal-core/skills/practice-profile` writes organisation-specific conventions into every domain's
+`AGENTS.md` **under one exact heading**. If domains spell it differently, the skill writes under a
+heading that does not exist, or fails to find one — silently, in only some domains.
+
+The canonical English heading is, verbatim:
+
+```markdown
+## Practice profile (optional)
+```
+
+Sentence case. Not "Practice Profile", not "House practice", not "Practice profile" without the
+qualifier. `scripts/check-invariants.mjs` enforces that every domain `AGENTS.md` uses this exact
+form and that `legal-core/skills/practice-profile/SKILL.md` refers to the same string.
+
 ---
 
 ## 5. Recurring vocabulary
