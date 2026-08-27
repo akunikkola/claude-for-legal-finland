@@ -1,146 +1,151 @@
-# Perusvalmistelu (vaihe 2)
+# Perusvalmistelu — basic preparation (stage 2)
 
-Perusvalmistelu on yleensä eniten työpanosta vaativa lainvalmistelun vaihe.
-Se alkaa hankkeen asettamispäätöksestä ja päättyy hallituksen esityksen
-luonnoksen valmistumiseen lausuntomenettelyä varten.
+Basic preparation is usually the stage of legislative preparation that demands
+the most work. It begins with the decision setting up the project and ends when
+the draft government bill is ready for the consultation procedure.
 
-Perusvalmistelu tehdään joko **virkatyönä** (prosessioppaan vaihe 2a) tai
-**valmisteluelimessä** — esimerkiksi työryhmässä tai komiteassa — (vaihe 2b).
-Alla kuvataan virkatyön kulku; valmisteluelimessä vaiheet ovat vastaavat,
-mutta päätöksiä tekee ja luonnoksia käsittelee valmisteluelin.
+Basic preparation is carried out either as **in-house official work** (stage 2a
+in the process guide) or **in a preparatory body** — for example a working group
+or a committee — (stage 2b). What follows describes the course of the in-house
+work; in a preparatory body the stages correspond, but it is the preparatory
+body that takes the decisions and considers the drafts.
 
-## 2.1 Valmistelun organisointi
+## 2.1 Organising the preparation
 
-**Tekijät:** virkamiesjohto ja valmistelutiimi.
+**Who:** the senior officials and the drafting team.
 
-Valmistelutiimi laatii hankesuunnitelman pohjalta työsuunnitelman sekä
-suunnittelee viestinnän ja kuulemisen yhteistyössä viestinnän
-asiantuntijoiden kanssa. Virkamiesjohto hyväksyy työsuunnitelman ja päättää
-rahoituksesta.
+On the basis of the project plan the drafting team draws up a work plan and
+plans the communications and the consultation together with communications
+specialists. The senior officials approve the work plan and decide on the
+funding.
 
-**Lopputulokset:** hankkeen työsuunnitelma; viestintä- ja
-kuulemissuunnitelma; hankkeen verkkosivut.
+**Outcomes:** the project work plan; the communications and consultation
+plan; the project website.
 
-## 2.2 Tietopohjan kokoaminen
+## 2.2 Assembling the evidence base
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Esivalmistelussa kerättyä tietoa täydennetään: nykytila-analyysit,
-kansainvälinen vertailu, perustuslakikytkentöjä koskevat selvitykset.
-Samalla arvioidaan ulkopuolisten selvitysten tarve.
+The information gathered in the preliminary preparation is supplemented:
+analyses of the current state, international comparison, studies of the
+constitutional connections. At the same time the need for outside studies is
+assessed.
 
-**Lopputulokset:** selvitykset nykytilasta ja kehityksestä; kansainvälinen
-vertailu; esitys ulkopuolisten selvitysten tilaamisesta.
+**Outcomes:** studies on the current state and on developments; the
+international comparison; a proposal to commission outside studies.
 
-## 2.3 Sidosryhmien kuuleminen tietopohjasta
+## 2.3 Consulting stakeholders on the evidence base
 
-**Tekijät:** sidosryhmät.
+**Who:** the stakeholders.
 
-Asiantuntijoita ja sidosryhmiä kuullaan kootusta tietopohjasta
-(Otakantaa.fi, Lausuntopalvelu.fi). Palaute kootaan ja selvitykset
-päivitetään.
+Experts and stakeholders are consulted on the assembled evidence base
+(Otakantaa.fi, Lausuntopalvelu.fi). The feedback is gathered and the studies
+are updated.
 
-**Lopputulokset:** päivitetyt selvitykset; yhteenveto palautteesta.
+**Outcomes:** updated studies; a summary of the feedback.
 
-## 2.4 Hankintapäätös ulkopuolisista selvityksistä
+## 2.4 The procurement decision on outside studies
 
-**Tekijät:** virkamiesjohto.
+**Who:** the senior officials.
 
-Päätetään ulkopuolisten selvitysten ja asiantuntija-avun hankkimisesta ja
-rahoituksesta.
+A decision is taken on procuring outside studies and expert assistance and on
+the funding.
 
-**Lopputulokset:** hankintasopimus; ulkopuoliset selvitykset.
+**Outcomes:** the procurement contract; the outside studies.
 
-## 2.5 Ratkaisuvaihtoehdot ja vaikutusten arviointi
+## 2.5 Alternative solutions and impact assessment
 
-**Tekijät:** valmistelutiimi; ministeriä informoidaan.
+**Who:** the drafting team; the minister is informed.
 
-Pääkysymysten ratkaisuvaihtoehdot täsmennetään ja alustavaa vaikutusten
-arviointia täydennetään. Vaikutusten arviointi kirjataan erilliseen
-asiakirjaan (taloudelliset vaikutukset, viranomaisvaikutukset,
-ympäristövaikutukset, muut yhteiskunnalliset vaikutukset).
+The alternative solutions to the main questions are made precise and the
+preliminary impact assessment is supplemented. The impact assessment is
+recorded in a separate document (economic impacts, impacts on the authorities,
+environmental impacts, other impacts on society).
 
-**Lopputulokset:** vaikutusten arviointi; päivitykset verkkosivuille ja
-Hankeikkunaan.
+**Outcomes:** the impact assessment; updates to the website and to
+Hankeikkuna.
 
-## 2.6 Sidosryhmien kuuleminen vaihtoehdoista
+## 2.6 Consulting stakeholders on the alternatives
 
-**Tekijät:** sidosryhmät.
+**Who:** the stakeholders.
 
-Kuullaan ratkaisuvaihtoehdoista ja vaikutusten arvioinnista. Jos esityksellä
-on vaikutuksia julkisen hallinnon tiedonhallintaan, pyydetään
-valtiovarainministeriön lausunto (laki julkisen hallinnon tiedonhallinnasta
+The alternative solutions and the impact assessment are consulted on. If the
+bill has impacts on information management in public administration, a
+statement is requested from the Ministry of Finance (Act on Information
+Management in Public Administration, laki julkisen hallinnon tiedonhallinnasta
 906/2019, 9 §).
 
-**Lopputulokset:** päivitetty vaikutusten arviointi; yhteenveto palautteesta.
+**Outcomes:** an updated impact assessment; a summary of the feedback.
 
-## 2.7 Arvio tietopohjan riittävyydestä
+## 2.7 Assessing whether the evidence base is sufficient
 
-**Tekijät:** virkamiesjohto ja valmistelutiimi.
+**Who:** the senior officials and the drafting team.
 
-Arvioidaan, riittääkö käytettävissä oleva tietopohja sisältölinjausten
-tekemiseen, ja päätetään jatkomenettelystä.
+An assessment is made of whether the evidence base available is sufficient for
+taking the decisions on content, and the further procedure is decided.
 
-**Lopputulos:** ehdotus HE-luonnoksen sisällön linjauksista.
+**Outcome:** a proposal for the policy choices on the content of the draft government bill.
 
-## 2.8 Linjaukset HE-luonnoksen sisällöstä
+## 2.8 The policy choices on the content of the draft government bill
 
-**Tekijät:** ministeri (tai hallitus), virkamiesjohto.
+**Who:** the minister (or the Government) and the senior officials.
 
-Ministeri päättää sisällön linjauksista tai vie asian hallituksen
-käsiteltäväksi. Samalla suunnitellaan täytäntöönpanon resursointi ja
-varmistetaan, että tarvittavat määrärahat sisältyvät talousarvioon.
+The minister decides the policy choices on content or refers the matter to the
+Government. At the same time the resourcing of implementation is planned and it
+is ensured that the necessary appropriations are included in the budget.
 
-**Lopputulokset:** sisällön linjaukset; luonnos täytäntöönpano- ja
-seurantasuunnitelmaksi.
+**Outcomes:** the policy choices on content; a draft implementation and
+monitoring plan.
 
-## 2.9 HE-luonnoksen laatiminen
+## 2.9 Drafting the government bill
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Lakiehdotus ja perustelut kirjoitetaan hallituksen esityksen muotoon
-noudattaen Hallituksen esitysten laatimisohjeita (HELO) ja Lainkirjoittajan
-opasta. Vaikutusten arviointia täydennetään, tarvittavat asetusluonnokset
-laaditaan ja keskeisten termien luettelo toimitetaan kääntäjille.
+The draft act and the reasoning are written in the form of a government bill,
+following Hallituksen esitysten laatimisohjeet (HELO) and Lainkirjoittajan
+opas. The impact assessment is supplemented, any necessary draft decrees are
+prepared and a list of the key terms is sent to the translators.
 
-**Lopputulokset:** HE-luonnos; asetusluonnokset; päätös sidosryhmien
-kuulemisesta.
+**Outcomes:** the draft government bill; the draft decrees; the decision on
+consulting stakeholders.
 
-## 2.10 Sidosryhmien kuuleminen luonnoksesta
+## 2.10 Consulting stakeholders on the draft
 
-**Tekijät:** sidosryhmät.
+**Who:** the stakeholders.
 
-Kuullaan säädösluonnoksista ja niiden täytäntöönpanosta ja esitetään arvio
-lausuntomenettelyn aikataulusta.
+The draft statutes and their implementation are consulted on, and an estimate
+of the timetable for the consultation procedure is given.
 
-**Lopputulokset:** päivitetty HE-luonnos; päivitetty täytäntöönpano- ja
-seurantasuunnitelma; yhteenveto palautteesta.
+**Outcomes:** an updated draft government bill; an updated implementation and
+monitoring plan; a summary of the feedback.
 
-## 2.11 HE-luonnoksen hyväksyminen lausuntokierrokselle
+## 2.11 Approving the draft government bill for the consultation round
 
-**Tekijät:** ministeri, virkamiesjohto (tai hallitus).
+**Who:** the minister and the senior officials (or the Government).
 
-Ministeri päättää luonnoksen viemisestä lausuntomenettelyyn. Vaihtoehtoina
-on myös palata aikaisempiin vaiheisiin tai lopettaa valmistelu.
+The minister decides on taking the draft to the consultation procedure. The
+alternatives are also to return to earlier stages or to end the preparation.
 
-**Lopputulokset:** hyväksytty HE-luonnos; hyväksytyt asetusluonnokset;
-täytäntöönpano- ja seurantasuunnitelma.
+**Outcomes:** the approved draft government bill; the approved draft decrees;
+the implementation and monitoring plan.
 
-## Työkalut, ohjeet ja keskeiset säädökset
+## Tools, guidance and the key statutes
 
-- **Otakantaa.fi** ja **Lausuntopalvelu.fi** — kuuleminen
-- **Hankeikkuna** ja **VAHVA** — hanke- ja asianhallinta
-- **HELO** — Hallituksen esitysten laatimisohjeet (ks. skill
+- **Otakantaa.fi** and **Lausuntopalvelu.fi** — consultation
+- **Hankeikkuna** and **VAHVA** — project and case management
+- **HELO** — Hallituksen esitysten laatimisohjeet (see the skill
   `government-bill-guidelines`)
-- **Lainkirjoittajan opas** — säädöstekniikka (ks. skill
+- **Lainkirjoittajan opas** — drafting technique (see the skill
   `legislative-drafting-manual`)
-- Julkisuusperiaate valmistelussa: laki viranomaisten toiminnan
-  julkisuudesta (621/1999) 19–20 § sekä asetus viranomaisten toiminnan
-  julkisuudesta ja hyvästä tiedonhallintatavasta (1030/1999)
-- Tiedonhallintavaikutukset: laki julkisen hallinnon tiedonhallinnasta
-  (906/2019) 9 §
+- The principle of openness in preparation: Act on the Openness of Government
+  Activities (laki viranomaisten toiminnan julkisuudesta 621/1999) 19–20 § and
+  the decree on the openness of government activities and on good practice in
+  information management (asetus viranomaisten toiminnan julkisuudesta ja
+  hyvästä tiedonhallintatavasta 1030/1999)
+- Impacts on information management: Act on Information Management in Public
+  Administration (laki julkisen hallinnon tiedonhallinnasta 906/2019) 9 §
 
-## Lukulähde
+## Source consulted
 
-Lainvalmistelun prosessiopas, vaiheet 2a–2b: Perusvalmistelu
+Lainvalmistelun prosessiopas, stages 2a–2b: Perusvalmistelu
 (https://lainvalmistelu.finlex.fi/2a-perusvalmistelu-virkatyo/).

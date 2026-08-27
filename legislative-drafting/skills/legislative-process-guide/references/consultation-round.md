@@ -1,108 +1,112 @@
-# Lausuntomenettely (vaihe 3)
+# Lausuntomenettely — the consultation round (stage 3)
 
-Perusvalmistelun jälkeen luonnoksesta hallituksen esitykseksi pyydetään
-kirjalliset lausunnot sidosryhmiltä. Lausuntopyyntö ja lausunnot ovat
-julkisia, ja lausunnon voi antaa myös kuka tahansa muu kiinnostunut.
-Kuulemisen menettelyt ohjeistaa Säädösvalmistelun kuulemisopas.
+After the basic preparation, written statements are requested from stakeholders
+on the draft government bill. The request for statements and the statements are
+public, and anyone else with an interest may also give a statement. The
+procedures for consultation are set out in Säädösvalmistelun kuulemisopas.
 
-## 3.1 Päätös lausuntomenettelystä
+## 3.1 The decision on the consultation procedure
 
-**Tekijät:** virkamiesjohto.
+**Who:** the senior officials.
 
-Päätetään kirjallisten lausuntojen pyytämisestä, lausuntokierroksen
-aikataulusta ja laajuudesta. Ministeriä informoidaan.
+A decision is taken on requesting written statements and on the timetable and
+the scope of the consultation round. The minister is informed.
 
-**Lopputulos:** päätös lausuntomenettelystä.
+**Outcome:** the decision on the consultation procedure.
 
-## 3.2 Lausuntopyynnön valmistelu
+## 3.2 Preparing the request for statements
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Laaditaan lausuntopyyntö ja tarvittavat liitteet (mm. HE-luonnoksen
-rinnakkaistekstit) sekä suunnitellaan viestintä ja mahdolliset
-kuulemistilaisuudet.
+The request for statements and the necessary annexes are drawn up (among them
+the parallel texts of the draft government bill), and the communications and any
+consultation events are planned.
 
-**Lopputulokset:** lausuntopyyntö; kutsu kuulemistilaisuuteen.
+**Outcomes:** the request for statements; an invitation to a consultation event.
 
-## 3.3 Kääntäminen
+## 3.3 Translation
 
-**Tekijät:** kääntäjä tai käännöstoimisto.
+**Who:** a translator or a translation agency.
 
-HE-luonnos ja lausuntopyyntö käännetään ruotsiksi ja tarvittaessa saamen
-kielille. Valmistelutiimi vertaa käännökset alkuperäisteksteihin.
+The draft government bill and the request for statements are translated into
+Swedish and, where necessary, into the Sámi languages. The drafting team
+compares the translations against the original texts.
 
-**Lopputulokset:** HE-luonnoksen ja lausuntopyynnön käännökset.
+**Outcomes:** the translations of the draft government bill and the request for statements.
 
-## 3.4 Lausuntopyynnön lähettäminen
+## 3.4 Sending the request for statements
 
-**Tekijät:** valmistelutiimi ja viestintä.
+**Who:** the drafting team and communications.
 
-Virkamiesjohdon allekirjoittama lausuntopyyntö lähetetään sidosryhmille ja
-julkaistaan (Lausuntopalvelu.fi, hankkeen verkkosivut, Hankeikkuna).
-Asiakirjat viedään VAHVAan. Kuulemistilaisuuksien järjestelyistä
-huolehditaan.
+The request for statements, signed by the senior officials, is sent to the
+stakeholders and published (Lausuntopalvelu.fi, the project website,
+Hankeikkuna). The documents are entered in VAHVA. The arrangements for the
+consultation events are taken care of.
 
-**Lopputulokset:** julkaistu lausuntopyyntö; tiedote.
+**Outcomes:** the published request for statements; a press release.
 
-## 3.5 Lausuntojen antaminen
+## 3.5 The giving of statements
 
-**Tekijät:** sidosryhmät.
+**Who:** the stakeholders.
 
-Sidosryhmät toimittavat lausuntonsa ja osallistuvat mahdollisiin
-kuulemistilaisuuksiin.
+The stakeholders submit their statements and take part in any consultation
+events.
 
-**Lopputulokset:** lausunnot; kuulemistilaisuuksien palaute.
+**Outcomes:** the statements; the feedback from the consultation events.
 
-## 3.6 Lausuntojen läpikäynti
+## 3.6 Going through the statements
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Lausunnot käydään läpi ja niistä laaditaan lausuntotiivistelmä ja
-lausuntokooste sekä muistio lausuntojen perusteella ehdotettavista
-muutoksista.
+The statements are gone through and a summary of the statements and a
+compilation of them are drawn up, together with a memorandum on the changes
+proposed on the basis of the statements.
 
-**Lopputulokset:** lausuntokooste; lausuntotiivistelmä; muistio
-muutosehdotuksista.
+**Outcomes:** the compilation of statements; the summary of statements; the
+memorandum on the proposed changes.
 
-## 3.7 Lausuntopalautteen julkaiseminen
+## 3.7 Publishing the consultation feedback
 
-**Tekijät:** viestintä.
+**Who:** communications.
 
-Lausuntokooste ja -tiivistelmä viedään VAHVAan ja julkaistaan Hankeikkunassa;
-lausunnonantajille tiedotetaan.
+The compilation and the summary of statements are entered in VAHVA and published
+in Hankeikkuna; those who gave statements are informed.
 
-**Lopputulokset:** julkaistut asiakirjat; tiedote.
+**Outcomes:** the published documents; a press release.
 
-## 3.8 Päätös valmistelun jatkamisesta
+## 3.8 The decision to continue the preparation
 
-**Tekijät:** ministeri (tai hallitus), virkamiesjohto.
+**Who:** the minister (or the Government) and the senior officials.
 
-Ministeri päättää, jatketaanko valmistelua jatkovalmisteluun, palataanko
-aikaisempaan vaiheeseen vai lopetetaanko hanke. Samalla ratkaistaan
-täytäntöönpanon rahoitukseen ja kuntien tehtäviin liittyvät kysymykset.
+The minister decides whether the preparation continues to further preparation,
+whether to return to an earlier stage or whether to end the project. At the same
+time the questions relating to the funding of implementation and to the tasks of
+the municipalities are settled.
 
-**Lopputulokset:** päätös jatkosta; päivitetty täytäntöönpano- ja
-seurantasuunnitelma; päivitetty muutosmuistio.
+**Outcomes:** the decision on continuing; an updated implementation and
+monitoring plan; an updated memorandum on the changes.
 
-## Hyvän lausuntomenettelyn periaatteet
+## The principles of a good consultation procedure
 
-- **Riittävä lausuntoaika.** Mitoita lausuntoaika ehdotuksen laajuuden
-  mukaan ja huomioi lomakaudet — liian lyhyt lausuntoaika on toistuva
-  laillisuusvalvonnan moite. Tarkista voimassa oleva ohjeellinen
-  vähimmäisaika Säädösvalmistelun kuulemisoppaasta.
-- **Avoimuus.** Lausuntopyyntö on julkinen ja lausunnon saa antaa muukin
-  kuin jakelussa mainittu taho.
-- **Palaute lausujille.** Lausuntojen vaikutus esitykseen kuvataan
-  jatkovalmistelussa ja HE:n "Lausuntopalaute"-jaksossa.
+- **A sufficient period for statements.** Set the period in proportion to the
+  scope of the proposal and allow for holiday periods — too short a period is a
+  recurring criticism from the oversight of legality. Check the guideline minimum
+  period in force in Säädösvalmistelun kuulemisopas.
+- **Openness.** The request for statements is public, and a statement may be
+  given by someone other than a body named in the distribution list.
+- **Feedback to those who gave statements.** The effect of the statements on the
+  bill is described in the further preparation and in the "Lausuntopalaute" part
+  of the government bill.
 
-## Työkalut
+## Tools
 
-- **Lausuntopalvelu.fi** — lausuntopyynnöt ja lausunnot (ks. lausunnonantajan
-  näkökulma: plugari `legislative-consultation`)
-- **Hankeikkuna** ja **VAHVA** — julkaisu ja asianhallinta
-- **Säädösvalmistelun kuulemisopas** — kuulemisen ohjeistus
+- **Lausuntopalvelu.fi** — requests for statements and statements (for the
+  perspective of the party giving a statement, see the domain
+  `legislative-consultation`)
+- **Hankeikkuna** and **VAHVA** — publication and case management
+- **Säädösvalmistelun kuulemisopas** — the guidance on consultation
 
-## Lukulähde
+## Source consulted
 
-Lainvalmistelun prosessiopas, vaihe 3: Lausuntomenettely
+Lainvalmistelun prosessiopas, stage 3: Lausuntomenettely
 (https://lainvalmistelu.finlex.fi/3-lausuntomenettely/).

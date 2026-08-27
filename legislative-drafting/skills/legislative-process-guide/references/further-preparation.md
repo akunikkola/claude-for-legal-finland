@@ -1,121 +1,126 @@
-# Jatkovalmistelu (vaihe 4)
+# Jatkovalmistelu — further preparation (stage 4)
 
-Jatkovalmistelussa hallituksen esityksen luonnos viimeistellään
-lausuntomenettelyssä saadun palautteen pohjalta: päätetään lopullisesta
-sisällöstä, tehdään käännökset ja laintarkastus sekä valmistellaan esitys
-teknisesti valtioneuvoston käsittelyä varten.
+In the further preparation the draft government bill is finalised on the basis
+of the feedback received in the consultation procedure: the final content is
+decided, the translations and the legal scrutiny of statutes are carried out,
+and the bill is prepared technically for consideration by the Government.
 
-## 4.1–4.2 Palaute lausunnonantajille ja neuvottelut
+## 4.1–4.2 Feedback to those who gave statements, and negotiations
 
-**Tekijät:** valmistelutiimi, virkamiesjohto ja sidosryhmät.
+**Who:** the drafting team, the senior officials and the stakeholders.
 
-Sidosryhmille kerrotaan, miten kannanotot on käsitelty ja miten ne ovat
-vaikuttaneet hankkeeseen. Tarvittaessa järjestetään keskustelu- ja
-neuvottelutilaisuuksia.
+The stakeholders are told how the positions they took have been dealt with and
+how they have affected the project. Discussion and negotiation events are
+arranged where necessary.
 
-**Lopputulokset:** kutsut tilaisuuksiin; päivitetty muutosmuistio.
+**Outcomes:** invitations to the events; an updated memorandum on the changes.
 
-## 4.3 Päätös esityksen sisällöstä
+## 4.3 The decision on the content of the bill
 
-**Tekijät:** ministeri (tai hallitus), virkamiesjohto.
+**Who:** the minister (or the Government) and the senior officials.
 
-Päätetään esityksen lopullisesta sisällöstä tai palataan aikaisempiin
-vaiheisiin. Varmistetaan taloudellisten vaikutusten ja kuntien tehtäviä
-koskevien muutosten käsittely.
+A decision is taken on the final content of the bill, or there is a return to
+earlier stages. The handling of the economic impacts and of the changes
+concerning the tasks of the municipalities is ensured.
 
-**Lopputulos:** päätös hallituksen esityksen sisällöstä.
+**Outcome:** the decision on the content of the government bill.
 
-## 4.4 Jatkovalmistelun suunnittelu
+## 4.4 Planning the further preparation
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Suunnitellaan valmistelun loppuunsaattamisen vaiheet ja aikataulu.
-Ennakkoon informoidaan valtioneuvoston kanslian ruotsin kielen yksikköä
-(käännökset), oikeusministeriön laintarkastusta ja tarvittaessa eduskunnan
-valiokuntia.
+The stages and the timetable for completing the preparation are planned. The
+Swedish Language Unit of the Prime Minister's Office (translations), the legal
+scrutiny of statutes at the Ministry of Justice and, where necessary, the
+committees of Eduskunta are informed in advance.
 
-**Lopputulos:** päivitetty työsuunnitelma.
+**Outcome:** an updated work plan.
 
-## 4.5 Esityksen muokkaaminen
+## 4.5 Amending the bill
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Päätetyt muutokset toteutetaan ja perusteluihin kirjoitetaan yhteenveto
-kuulemisesta ja lausuntopalautteesta.
+The decided changes are made and a summary of the consultation and of the
+consultation feedback is written into the reasoning.
 
-Tähän vaiheeseen kytkeytyvät kaksi ulkoista tarkastusta:
+Two external reviews attach to this stage:
 
-- **Lainsäädännön arviointineuvosto** (valtioneuvoston kanslian yhteydessä
-  toimiva riippumaton neuvosto, https://vnk.fi/arviointineuvosto) voi ottaa
-  esitysluonnoksen käsiteltäväkseen ja antaa lausunnon erityisesti
-  vaikutusten arvioinnista. Käsittelyyn on varattava noin **neljä viikkoa**,
-  ja neuvoston lausunto julkaistaan.
-- **Oikeuskansleri** voi pyytää esityksen ennakkotarkastukseen; siihen on
-  varattava **viikosta kahteen**.
+- **The Finnish Council of Regulatory Impact Analysis** (lainsäädännön
+  arviointineuvosto, an independent council operating in connection with the
+  Prime Minister's Office, https://vnk.fi/arviointineuvosto) may take up the
+  draft bill and give a statement on it, in particular on the impact assessment.
+  About **four weeks** must be allowed for the consideration, and the council's
+  statement is published.
+- **The Chancellor of Justice** (oikeuskansleri) may ask for the bill to be
+  submitted for advance review; **one to two weeks** must be allowed for that.
 
-**Lopputulos:** päivitetty HE-luonnos.
+**Outcome:** an updated draft government bill.
 
-## 4.6 Sidosryhmien kuuleminen merkittävistä muutoksista
+## 4.6 Consulting stakeholders on significant changes
 
-**Tekijät:** sidosryhmät.
+**Who:** the stakeholders.
 
-Jos esitykseen tehdään lausuntokierroksen jälkeen merkittäviä muutoksia,
-sidosryhmiä kuullaan niistä.
+If significant changes are made to the bill after the consultation round, the
+stakeholders are consulted on them.
 
-**Lopputulos:** viimeistelty HE-luonnos.
+**Outcome:** the finalised draft government bill.
 
-## 4.7–4.8 Kääntäminen ja käännöksen tarkastaminen
+## 4.7–4.8 Translation and checking the translation
 
-**Tekijät:** valtioneuvoston kanslian kielipalvelut; valmistelutiimi.
+**Who:** the language services of the Prime Minister's Office; the drafting team.
 
-Esitys käännetään ruotsiksi (tarvittaessa myös saamen kielille).
-Valmistelutiimi vertaa käännöksen ja suomenkielisen tekstin vastaavuuden ja
-neuvottelee kääntäjän kanssa tarvittavista korjauksista.
+The bill is translated into Swedish (and, where necessary, into the Sámi
+languages as well). The drafting team compares the translation against the
+Finnish text for correspondence and discusses any necessary corrections with the
+translator.
 
-**Lopputulokset:** HE-luonnoksen käännös; viimeistelty käännös.
+**Outcomes:** the translation of the draft government bill; the finalised
+translation.
 
-## 4.9–4.10 Laintarkastus ja korjausten tekeminen
+## 4.9–4.10 The legal scrutiny of statutes and making the corrections
 
-**Tekijät:** oikeusministeriön laintarkastus; valmistelutiimi.
+**Who:** the legal scrutiny of statutes at the Ministry of Justice; the drafting team.
 
-Laintarkastus tarkastaa, että säädösteksti ja esitys noudattavat
-Lainkirjoittajan opasta ja HELO-ohjeita, sekä suomen- ja ruotsinkielisen
-tekstin vastaavuuden. Puutteellinen luonnos voidaan palauttaa
-valmistelijalle. Tarkastuksen jälkeen ehdotetut muutokset tehdään molempiin
-kieliversioihin.
+The legal scrutiny checks that the statutory text and the bill follow
+Lainkirjoittajan opas and the HELO instructions, and that the Finnish and
+Swedish texts correspond. A deficient draft may be returned to the drafter.
+After the scrutiny the proposed changes are made in both language versions.
 
-**Lopputulokset:** tarkastusseloste; korjatut HE-luonnokset (suomi ja
-ruotsi).
+**Outcomes:** the scrutiny report; the corrected draft government bills (Finnish
+and Swedish).
 
-## 4.11–4.12 Tekninen viimeistely ja hyväksyminen
+## 4.11–4.12 Technical finalisation and approval
 
-**Tekijät:** valmistelutiimi; virkamiesjohto.
+**Who:** the drafting team; the senior officials.
 
-Tekstit taitetaan valtioneuvoston asiakirjapohjalle ja varmistetaan
-valtioneuvoston yleisistunnon ajankohta. Virkamiesjohto hyväksyy esityksen
-esittelyä varten.
+The texts are laid out on the Government document template and the date of the
+plenary session of the Government is confirmed. The senior officials approve the
+bill for presentation.
 
-**Lopputulokset:** taitetut, lopulliset HE-luonnokset.
+**Outcomes:** the laid-out, final draft government bills.
 
-## 4.13–4.17 Esittelylupa, esittelylistat ja jakolupa
+## 4.13–4.17 Permission to present, the presentation lists and permission to distribute
 
-**Tekijät:** valmistelutiimi, asian esittelijä, ministeri.
+**Who:** the drafting team, the presenting official and the minister.
 
-- Jos esityksessä on toisen ministeriön toimialaan kuuluvia asioita,
-  pyydetään **esittelylupa** kyseiseltä ministeriöltä.
-- Esittelylistat laaditaan PTJ-järjestelmällä valtioneuvoston
-  yleisistuntoon ja tarvittaessa raha-asiainvaliokuntaan.
-- Laillisuus-, menettely- ja raha-asianeuvontaa antavat
-  oikeuskanslerinvirasto, valtioneuvoston istuntoyksikkö ja
-  valtiovarainministeriö.
-- Ministeri antaa **jakoluvan**, minkä jälkeen esittelylistat jaetaan.
+- If the bill contains matters falling within the remit of another ministry,
+  **permission to present** is requested from that ministry.
+- The presentation lists are drawn up in the PTJ system for the plenary session
+  of the Government and, where necessary, for the Finance Committee of the
+  Government.
+- Advice on legality, procedure and financial matters is given by the Office of
+  the Chancellor of Justice, the Government Session Unit and the Ministry of
+  Finance.
+- The minister gives **permission to distribute**, after which the presentation
+  lists are distributed.
 
-**Lopputulokset:** esittelylupa; jakolupa; jaetut esittelylistat.
+**Outcomes:** permission to present; permission to distribute; the distributed
+presentation lists.
 
-Tämän jälkeen siirrytään vaiheeseen 5 (valtioneuvoston päätöksenteko) — ks.
+After this the process moves to stage 5 (Government decision-making) — see
 `decision-making-and-parliament.md`.
 
-## Lukulähde
+## Source consulted
 
-Lainvalmistelun prosessiopas, vaihe 4: Jatkovalmistelu
+Lainvalmistelun prosessiopas, stage 4: Jatkovalmistelu
 (https://lainvalmistelu.finlex.fi/4-jatkovalmistelu/).

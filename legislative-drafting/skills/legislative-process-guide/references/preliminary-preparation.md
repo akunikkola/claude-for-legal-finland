@@ -1,121 +1,122 @@
-# Esivalmistelu (vaihe 1)
+# Esivalmistelu — preliminary preparation (stage 1)
 
-Esivalmistelu on lainvalmisteluprosessin ensimmäinen vaihe. Siinä kootaan
-tieto aloitteen kohteena olevasta ongelmasta ja nykytilasta, arvioidaan
-lainsäädäntöhankkeen käynnistämisen tarve ja suunnitellaan tuleva hanke.
-Vaihe päättyy päätökseen hankkeen asettamisesta — tai siihen, ettei hanketta
-käynnistetä.
+Preliminary preparation is the first stage of the legislative process. In it,
+information is gathered on the problem the initiative addresses and on the
+current state, the need to start a legislative project is assessed and the
+future project is planned. The stage ends in a decision to set up the project —
+or in a decision not to start one.
 
-## 1.1 Tavoitteen tai ongelman määrittäminen
+## 1.1 Defining the objective or the problem
 
-**Tekijät:** hallitus, ministeri tai virkamiesjohto.
+**Who:** the Government, the minister or the senior officials.
 
-Aloitteen käsittelystä annetaan toimeksianto. Toimeksiannossa määritellään:
+An assignment is given to deal with the initiative. The assignment defines:
 
-- mikä on esillä oleva ongelma,
-- mitkä ovat tavoitteet ja millaiset keinot toteuttaisivat niitä, sekä
-- onko kyse ylipäätään lainsäädäntöasiasta vai ratkeaisiko asia muilla keinoin.
+- what the problem at hand is,
+- what the objectives are and what kind of means would achieve them, and
+- whether this is a legislative matter at all, or whether it could be resolved by other means.
 
-EU-säädösten osalta toimeksianto annetaan, kun on saatu tieto kansallista
-täytäntöönpanoa edellyttävän säädöksen vireilletulosta.
+For EU instruments the assignment is given once notice has been received that
+an instrument requiring national implementation has been initiated.
 
-**Lopputulos:** toimeksianto alustavan kartoituksen tekemisestä.
+**Outcome:** an assignment to carry out an initial survey.
 
-## 1.2 Alustava kartoitus
+## 1.2 The initial survey
 
-**Tekijät:** valmistelija tai valmistelutiimi.
+**Who:** the drafter or the drafting team.
 
-Aloitteen pohjalta selvitetään:
+On the basis of the initiative, the following are established:
 
-- mitä asiasta tiedetään ja miten sitä on aiemmin käsitelty,
-- mitä ehdotuksia tai linjauksia asiasta on tehty,
-- mitä asiasta keskustellaan julkisuudessa ja mediassa (ml. sosiaalinen media),
-- mitä asiaan liittyvää sääntelyä on voimassa, sekä
-- mitä lisäselvityksiä tarvittaisiin.
+- what is known about the matter and how it has been dealt with before,
+- what proposals or policy statements have been made on it,
+- what is being said about it in public and in the media (including social media),
+- what regulation bearing on the matter is in force, and
+- what further study would be needed.
 
-Samalla kartoitetaan vaihtoehtoiset ratkaisutavat ja tunnistetaan
-lainsäädännölle vaihtoehtoiset ohjauskeinot.
+At the same time the alternative solutions are surveyed and the steering
+instruments that are alternatives to legislation are identified.
 
-**Lopputulokset:** muistio tai arviomuistio; päätös sidosryhmien kuulemisesta.
+**Outcomes:** a memorandum or an assessment memorandum; a decision on consulting stakeholders.
 
-## 1.3 Näkemysten hankkiminen kartoituksesta
+## 1.3 Obtaining views on the survey
 
-**Tekijät:** valmistelutiimi ja sidosryhmät.
+**Who:** the drafting team and the stakeholders.
 
-Tunnistetaan asiaan liittyvät viranomaiset, asiantuntijat ja sidosryhmät ja
-hankitaan niiden näkemykset sääntelyn tarpeesta. Kuuleminen suunnitellaan
-tarvittaessa viestinnän asiantuntijoiden kanssa; välineinä voidaan käyttää
-Otakantaa.fi- ja Lausuntopalvelu.fi-palveluita.
+The authorities, experts and stakeholders concerned are identified and their
+views on the need for regulation are obtained. The consultation is planned with
+communications specialists where necessary; the Otakantaa.fi and
+Lausuntopalvelu.fi services may be used as the means.
 
-**Lopputulokset:** yhteenveto sidosryhmien palautteesta; päivitetty selvitys.
+**Outcomes:** a summary of the stakeholder feedback; an updated study.
 
-## 1.4 Päätös esivalmistelun käynnistämisestä
+## 1.4 The decision to start preliminary preparation
 
-**Tekijät:** virkamiesjohto (merkittävissä asioissa ministeri).
+**Who:** the senior officials (in significant matters, the minister).
 
-Päätetään, käynnistetäänkö esivalmistelu, palataanko aikaisempiin vaiheisiin,
-hylätäänkö hanke vai valmistellaanko lainsäädäntöä korvaavia keinoja.
-Valmistelutiimi nimetään. Hankkeen tiedot viedään asianhallintaan (VAHVA) ja
-Hankeikkunaan.
+A decision is taken on whether to start the preliminary preparation, to return
+to earlier stages, to reject the project or to prepare means that would replace
+legislation. The drafting team is appointed. The project details are entered in
+the case management system (VAHVA) and in Hankeikkuna.
 
-**Lopputulokset:** hankkeen tiedot järjestelmissä; verkkosivujen päivitys; tiedote.
+**Outcomes:** the project details in the systems; a website update; a press release.
 
-## 1.5 Esivalmistelun tekeminen
+## 1.5 Carrying out the preliminary preparation
 
-**Tekijät:** valmistelutiimi.
+**Who:** the drafting team.
 
-Kootaan aineisto, jonka pohjalta voidaan päättää hankkeen tarpeellisuudesta
-ja antaa valmistelun toimeksianto:
+The material is assembled on the basis of which the necessity of the project can
+be decided and the assignment for the preparation given:
 
-- kerätään ja arvioidaan aiemmat kannanotot, nykytilan kuvaus, kansainväliset
-  kokemukset, tutkimukset, oikeuskäytäntö ja kirjallisuus,
-- määritellään valmistelun pääkysymykset,
-- kartoitetaan ratkaisuvaihtoehdot ja tunnistetaan alustavasti vaikutukset,
-- arvioidaan ulkopuolisten selvitysten ja asiantuntija-avun tarve,
-- suunnitellaan tietopohjan hankkiminen ja vaikutusten arviointi sekä
-- kiinnitetään huomiota säädöskielen selkeyteen sekä termien ja nimistön
-  suunnitteluun jo tässä vaiheessa.
+- the earlier positions taken, the description of the current state, international
+  experience, research, case law and the literature are collected and assessed,
+- the main questions of the preparation are defined,
+- the alternative solutions are surveyed and the impacts preliminarily identified,
+- the need for outside studies and expert assistance is assessed,
+- the gathering of the evidence base and the impact assessment are planned, and
+- attention is paid to the clarity of the statutory language and to planning the
+  terms and the nomenclature already at this stage.
 
-**Lopputulokset:** hankesuunnitelma; mahdollinen valmisteluelimen raportti;
-arviomuistio; alustava vaikutusten arviointi.
+**Outcomes:** a project plan; any report of a preparatory body;
+an assessment memorandum; a preliminary impact assessment.
 
-## 1.6 Näkemysten hankkiminen esivalmistelun tuloksista
+## 1.6 Obtaining views on the results of the preliminary preparation
 
-**Tekijät:** valmistelutiimi ja sidosryhmät.
+**Who:** the drafting team and the stakeholders.
 
-Esivalmistelun tulokset julkaistaan ja sidosryhmiä kuullaan niistä
-(Otakantaa.fi, Lausuntopalvelu.fi). Palaute kootaan yhteen ja selvitys sekä
-hankesuunnitelma päivitetään sen pohjalta.
+The results of the preliminary preparation are published and the stakeholders
+are consulted on them (Otakantaa.fi, Lausuntopalvelu.fi). The feedback is
+gathered together and the study and the project plan are updated on the basis of
+it.
 
-**Lopputulokset:** päivitetty selvitys; päivitetty hankesuunnitelma;
-yhteenveto sidosryhmien palautteesta.
+**Outcomes:** an updated study; an updated project plan;
+a summary of the stakeholder feedback.
 
-## 1.7 Päätös hankkeen asettamisesta
+## 1.7 The decision to set up the project
 
-**Tekijät:** ministeri tai virkamiesjohto.
+**Who:** the minister or the senior officials.
 
-Päätetään lainsäädäntöhankkeen käynnistämisestä. Asettamispäätökseen
-kirjataan:
+A decision is taken on starting the legislative project. The decision setting up
+the project records:
 
-- yhteiskunnalliset ja oikeusjärjestystä koskevat tavoitteet sekä
-  lainvalmistelun laatutavoitteet,
-- tehtävän määrittely ja määräaika,
-- valmistelijoiden roolit ja mahdollisen valmisteluelimen kokoonpano,
-- rahoitus sekä seuranta ja raportointi.
+- the objectives concerning society and the legal order, together with the
+  quality objectives for the legislative preparation,
+- the definition of the task and the deadline,
+- the roles of the drafters and the composition of any preparatory body,
+- the funding, and the monitoring and reporting.
 
-Tiedot päivitetään VAHVAan ja Hankeikkunaan.
+The details are updated in VAHVA and in Hankeikkuna.
 
-**Lopputulokset:** hankkeen asettamispäätös; hyväksytty hankesuunnitelma;
-tiedote.
+**Outcomes:** the decision setting up the project; an approved project plan;
+a press release.
 
-## Työkalut ja palvelut
+## Tools and services
 
-- **Otakantaa.fi** — varhaisen vaiheen kuuleminen ja keskustelu
-- **Lausuntopalvelu.fi** — lausuntojen ja palautteen kerääminen
-- **Hankeikkuna** — valtioneuvoston yhteinen hanketietopalvelu (julkinen)
-- **VAHVA** — valtioneuvoston asianhallintajärjestelmä (sisäinen)
+- **Otakantaa.fi** — early-stage consultation and discussion
+- **Lausuntopalvelu.fi** — collecting statements and feedback
+- **Hankeikkuna** — the Government's shared project information service (public)
+- **VAHVA** — the Government's case management system (internal)
 
-## Lukulähde
+## Source consulted
 
-Lainvalmistelun prosessiopas, vaihe 1: Esivalmistelu
+Lainvalmistelun prosessiopas, stage 1: Esivalmistelu
 (https://lainvalmistelu.finlex.fi/1-esivalmistelu/).
