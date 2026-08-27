@@ -1,119 +1,169 @@
 ---
 name: legal-writing
 description: >
-  Suomalaisen oikeuden ja lakikielen yleisapuri. Käytä tätä skilliä AINA kun käyttäjä työskentelee lakien, pykälien, säädösten, sopimusten tai muiden juridisten dokumenttien kanssa – riippumatta siitä, onko käyttäjä juristi vai ei. Triggeröi kun käyttäjä mainitsee pykälän, momentin, lain, asetuksen, säädöksen, sopimuksen, juridisen tekstin, lakiviittauksen, lakikielen, oikeudellisen asiakirjan tai haluaa ymmärtää, tulkita, analysoida tai kirjoittaa juridista sisältöä suomeksi. Triggeröi myös kun käyttäjä antaa tai pyytää lukemaan lakitekstiä, viittaa säädösnumeroihin (esim. "365/1995"), käyttää pykälämerkkiä (§), mainitsee hallituksen esityksen, tai pyytää tarkistamaan juridisen tekstin kielen tai rakenteen. Käytä tätä skilliä myös kun käyttäjä laatii ehtoja, velvoitteita, vastuulausekkeita tai muita juridisluonteisia tekstejä, vaikka hän ei käyttäisi sanaa "juridinen". Käytä myös pikatehtäviin (yhden viittauksen korjaus) – älä vastaa ilman skilliä, viittausstandardi on skillissä.
+  General assistant for Finnish law and legal writing. Use this skill ALWAYS
+  when the user works with acts, sections, statutes, contracts or other legal
+  documents — whether or not the user is a lawyer. It triggers when the user
+  mentions a section, a subsection, an act, a decree, a statute, a contract,
+  legal text, a statutory reference, legal language or a legal document, or
+  wants to understand, interpret, analyse or write legal content in Finnish.
+  It also triggers when the user supplies legal text or asks for it to be
+  read, refers to a statute number (e.g. "365/1995"), uses the section symbol
+  (§), mentions a government bill (HE), or asks for the language or structure
+  of a legal text to be checked. Use this skill too when the user is drafting
+  terms, obligations, liability clauses or other texts of a legal character,
+  even if they never use the word "legal". Use it for quick tasks as well
+  (fixing a single reference) — do not answer without the skill, because the
+  citation standard lives in it.
 ---
 
-# Juristi — Suomalaisen lakikielen ja lainsäädännön apuri
+# Legal writing — Finnish legal language and legislation
 
-Tämä skill auttaa työskentelemään suomalaisen lainsäädännön ja juridisten dokumenttien kanssa. Se kattaa lainsäädännön rakenteen, pykäläviittausten oikean muodon, lakikielen kirjoitussäännöt, suomen kielen erityisvaatimukset juridisessa kontekstissa, sopimusten laatimisen sekä oikeuslähteiden käytön.
+This skill helps you work with Finnish legislation and legal documents. It
+covers the structure of statutes, the correct form of section references, the
+writing rules of legal Finnish, the particular demands Finnish makes in a legal
+context, the drafting of contracts and the use of the sources of law.
 
-Skill palvelee sekä juristeja (joille tarkkuus ja ammattimaisuus ovat itsestäänselvyyksiä) että ei-juristeja (jotka tarvitsevat selkeää opastusta juridisen sisällön ymmärtämiseen ja tuottamiseen).
+The skill serves both lawyers (for whom precision and professionalism are a
+given) and non-lawyers (who need clear guidance in understanding and producing
+legal content).
+
+**The rules and examples below are Finnish and stay Finnish.** They describe
+how legal Finnish is written; rendering an example into English would destroy
+the very thing it demonstrates.
 
 ---
 
-## Referenssitiedostot
+## Reference files
 
-Tämän skillin yksityiskohtaiset ohjeet on jaettu referenssitiedostoihin. **Lue tarvittava referenssi Read-työkalulla aina kun tehtävä sitä edellyttää.**
+The detailed guidance for this skill is split into reference files. **Read the
+reference you need with the Read tool whenever the task calls for it.**
 
-| Referenssi | Tiedosto | Käytä kun |
+| Reference | File | Use when |
 |---|---|---|
-| Säädösten rakenne | `references/structure.md` | Käyttäjä kysyy säädöksen rakenteesta, hierarkiasta, pykälien numeroinnista, momenteista, lukujen tai pykälien otsikoista, säädöksen nimikkeestä |
-| Pykäläviittaukset | `references/citations.md` | Käyttäjä muotoilee viittauksen pykälään, momenttiin tai säädökseen, tai tarkistaa viittauksen oikeellisuutta |
-| Lakikieli ja suomen kieli | `references/legal-language.md` | Käyttäjä kirjoittaa tai tarkistaa juridista tekstiä, kysyy kirjoitussäännöistä, yhdyssanoista, pilkutuksesta tai lakikielen tyylistä |
-| Sopimukset | `references/contracts.md` | Käyttäjä laatii, tarkistaa tai analysoi sopimusta tai muuta juridista asiakirjaa |
-| Lähteet ja oikeuskäytäntö | `references/sources.md` | Käyttäjä etsii ajantasaista lakia, oikeuskäytäntöä, hallituksen esityksiä tai tarvitsee viittausmuotoja oikeuslähteisiin |
-| Suomen kieli | `references/finnish-language.md` | Juridisen suomen pikaohje: juridiset yhdyssanat, pykälämerkinnät, alkukirjaimet, tekstilajikohtaiset numero- ja lyhennesäännöt, tekoälyn tyyppivirheet. Kattava kielentarkistus: skill `finnish-language` |
+| The structure of statutes | `references/structure.md` | The user asks about the structure or hierarchy of a statute, the numbering of sections, subsections, the headings of chapters or sections, or the title of a statute |
+| Section references | `references/citations.md` | The user is formulating a reference to a section, a subsection or a statute, or is checking whether a reference is correct |
+| Legal language and Finnish | `references/legal-language.md` | The user is writing or checking legal text, or asks about the writing rules, compound words, punctuation or the style of legal Finnish |
+| Contracts | `references/contracts.md` | The user is drafting, reviewing or analysing a contract or another legal document |
+| Sources and case law | `references/sources.md` | The user is looking for the law in force, case law or government bills, or needs the citation forms for the sources of law |
+| Finnish | `references/finnish-language.md` | Quick guide to legal Finnish: legal compound words, section notation, initial capitals, the rules on numbers and abbreviations by text type, the model's typical mistakes. For a full language check: the `finnish-language` skill |
 
-**Ohje:** Lue yksi tai useampi referenssitiedosto tehtävän alussa. Useimmissa tehtävissä riittää 1–2 referenssiä. Lue kaikki vain, jos tehtävä on laaja (esim. kokonaisen säädöstekstin tarkistus). Lue `references/finnish-language.md` aina kun tuotat tai tarkistat suomenkielistä juridista tekstiä; perusteellisessa kielentarkistuksessa käytä lisäksi skilliä `finnish-language`.
-
----
-
-## Ydinsäännöt (aina käytettävissä)
-
-### Pykäläviittausten pikaohje
-
-- §-merkki ja numero **aina yhdessä**: 2 §:ssä (ei: pykälässä 2)
-- Ilman numeroa sana "pykälä": tässä pykälässä (ei: tässä §:ssä)
-- Taivutus kaksoispisteellä: §:n, §:ssä, §:ään, §:stä, §:llä
-- Yksikkö myös useasta pykälästä: 2 ja 4 §:ssä (ei: §:issä)
-- Pykäläväli ajatusviivalla: 2–4 § (ei yhdysviivalla)
-- Ensimmäisellä kerralla säädöksen nimi ja numero: kuntalain (410/2015) 7 §:ssä
-
-### Lakikielen keskeiset periaatteet
-
-- **Yleiskielisyys, tarkkuus, yhdenmukaisuus, selkeys**
-- **3-3-3-sääntö**: max 3 momenttia/pykälä, 3 virkettä/momentti, 3 lausetta/virke
-- Samasta asiasta **aina sama termi** — ei synonyymeja
-- Virkettä **ei aloiteta numerolla**
-- Numerot 1–10 kirjaimin, 11+ numeroin säädöstekstissä
-- Prosentit ja rahayksiköt kirjaimin säädöstekstissä: "20 prosenttia", "50 euroa"
-
-### Suomen kielen pikamuistilista
-
-- Yhdyssanat: oikeusturva, hallintopäätös, voimaantulo (ei erikseen)
-- Partisiippi-ilmaukset erikseen: voimassa oleva, edellä mainittu
-- Sivulauseen edessä aina pilkku
-- Lakien nimet pienellä: kuntalaki, rikoslaki
-- Ei Oxford-pilkkua
+**Guidance:** read one or more of the reference files at the start of the task.
+For most tasks 1–2 references are enough. Read them all only if the task is a
+large one (e.g. checking a whole statutory text). Read
+`references/finnish-language.md` whenever you produce or check legal text in
+Finnish; for a thorough language check, use the `finnish-language` skill as
+well.
 
 ---
 
-## Tarkistuslista juridiselle tekstille
+## Core rules (always available)
 
-Kun kirjoitat tai tarkistat juridista tekstiä, käy läpi:
+### Quick guide to section references
 
-### Rakenne ja sisältö
-- Onko rakenne looginen ja johdonmukainen?
-- Ovatko määritelmät riittäviä ja yksiselitteisiä?
-- Ovatko viittaukset muihin säädöksiin tarkkoja ja täydellisiä?
-- Noudattaako teksti 3-3-3-sääntöä?
-- Muodostavatko johdantokappaleet ja kohdat kieliopillisesti ehyen virkkeen?
-- Ovatko kohtien välimerkit oikein (puolipiste, sidesana, piste)?
+- The § symbol and the number **always together**: `2 §:ssä` (not: `pykälässä 2`)
+- Without a number, the word `pykälä`: `tässä pykälässä` (not: `tässä §:ssä`)
+- Inflected with a colon: `§:n`, `§:ssä`, `§:ään`, `§:stä`, `§:llä`
+- The singular is used even for several sections: `2 ja 4 §:ssä` (not: `§:issä`)
+- A range of sections takes an en dash: `2–4 §` (not a hyphen)
+- On first mention, the name and number of the statute: `kuntalain (410/2015) 7 §:ssä`
 
-### Pykälä- ja momenttiviittaukset
-- Onko §-merkki aina numeron kanssa (ja päinvastoin)?
-- Ovatko taivutusmuodot oikein (§:n, §:ssä, §:ään)?
-- Onko säädösnumero (esim. 410/2015) mukana ensimmäisellä viittauskerralla?
-- Ovatko momenttiviittaukset tarkkoja (pykälä + momentti)?
-- Onko käytetty ajatusviivaa (–) eikä yhdysviivaa (-) pykäläväleissä?
-- Onko a-pykälät huomioitu pykäläväleissä?
+### The central principles of legal language
 
-### Lakikieli
-- Onko teksti yleiskielistä ja ymmärrettävää?
-- Käytetäänkö samasta asiasta johdonmukaisesti samaa termiä?
-- Onko virkettä aloitettu numerolla? (ei saa)
-- Ovatko numerot, prosentit ja rahayksiköt oikeassa muodossa?
+- **Yleiskielisyys, tarkkuus, yhdenmukaisuus, selkeys** — everyday language,
+  precision, consistency, clarity
+- **The 3-3-3 rule**: at most 3 subsections per section, 3 sentences per
+  subsection, 3 clauses per sentence
+- **Always the same term** for the same thing — no synonyms
+- A sentence **is never begun with a numeral**
+- In statutory text the numbers 1–10 are written out in words and 11 upwards in
+  figures
+- Percentages and units of currency are written out in statutory text:
+  `20 prosenttia`, `50 euroa`
 
-### Suomen kieli
-- Ovatko yhdyssanat oikein (oikeusturva, hallintopäätös)?
-- Ovatko partisiippi-ilmaukset erikseen (voimassa oleva, edellä mainittu)?
-- Onko pilkutus oikein, erityisesti sivulauseissa?
-- Onko tyyli asiallinen eikä mahtipontinen?
+### Quick checklist for Finnish
 
-### Lähteet ja ajantasaisuus
-- Onko viitattu voimassa olevaan lakiin (ei kumottuun tai muutettuun)?
-- Onko Finlexin ajantasainen versio tarkistettu?
-- Onko oikeuskäytännön viittauksissa käytetty oikeaa tunnusmuotoa (KKO:VVVV:NN)?
-- Onko HE:n numero ja vuosi oikein?
-- Onko huomioitu mahdolliset siirtymäsäännökset?
+- Compound words: `oikeusturva`, `hallintopäätös`, `voimaantulo` (not written as
+  two words)
+- Participle expressions written as two words: `voimassa oleva`,
+  `edellä mainittu`
+- Always a comma before a subordinate clause
+- The names of acts take a lower-case initial: `kuntalaki`, `rikoslaki`
+- No Oxford comma
 
 ---
 
-## Mitä tämä skill EI tee
+## Checklist for a legal text
 
-- **Ei korvaa pätevän juristin tarkistusta eikä kanna vastuuta lopputuloksesta.** Tuotos on tarkistettava luonnos; lopullisen oikeudellisen arvion ja vastuun kantaa ihminen.
-- **Ei vahvista pykäliä, säädösnumeroita eikä ratkaisutunnuksia muistista.** Tämän skillin pikaohjeet koskevat viittausten *muotoa* — sisältö ja ajantasaisuus on aina haettava lähteestä (`legal-research`).
-- **Ei tee lopullista oikeudellista johtopäätöstä eikä anna oikeudellista neuvontaa.** Tulkinta ja riskiarvio esitetään tarkistettavana, ei sitovana kannanottona.
-- **Ei kata muiden maiden oikeutta.** Vain Suomen oikeus (ja relevantti EU-oikeus erikseen nostettuna); muista jurisdiktioista on sanottava, ettei tämä kata niitä.
-- **Ei laadi valmista asiakirjaa loppuun asti yksin.** Skill opastaa kielen, rakenteen ja viittausten kanssa; varsinainen sopimus, lausunto tai valitus syntyy aihekohtaisilla skilleillä ja ihmisen ohjauksessa.
-- **Ei korvaa järjestelmällistä laaduntarkistusta.** Tarkistuslista on kevyt itsearvio, ei monivaiheinen riskianalyysi.
+When you write or check a legal text, work through the following:
 
-## Jatka tästä
+### Structure and content
+- Is the structure logical and consistent?
+- Are the definitions adequate and unambiguous?
+- Are the references to other statutes exact and complete?
+- Does the text follow the 3-3-3 rule?
+- Do the introductory paragraph and the items together form a grammatically
+  complete sentence?
+- Is the punctuation between the items correct (semicolon, conjunction, full
+  stop)?
 
-- Uusi toimeksianto alkaa tai käyttäjä antaa aineiston ilman ohjetta → /juristi:toimeksianto (määräaikaskannaus ensin)
-- Lain sisältö, voimassaolo tai oikeuskäytäntö pitää varmistaa lähteestä → /juristi:oikeustutkimus
-- Valmis juridinen asiakirja pitää tarkistaa järjestelmällisesti ennen käyttöä → /juristi:asiakirjan-tarkistus
-- Suomenkielinen teksti pitää oikolukea ja viimeistellä kielellisesti → /juristi:suomen-kieli
-- Tarkoitus on laatia tai tarkistaa sopimus → /sopimukset:sopimuksen-laatiminen tai /sopimukset:sopimuksen-tarkistus
-- Kyse on työsuhteesta, hallintoasiasta tai riita-asiasta → /tyooikeus:tyosopimus, /hallinto-oikeus:hallintopaatos tai /riidanratkaisu:haastehakemus
+### References to sections and subsections
+- Is the § symbol always with a number (and the other way round)?
+- Are the inflected forms correct (`§:n`, `§:ssä`, `§:ään`)?
+- Is the statute number (e.g. 410/2015) included on the first reference?
+- Are the references to subsections exact (section + subsection)?
+- Has an en dash (–) been used rather than a hyphen (-) in ranges of sections?
+- Have the a-sections been taken into account in the ranges?
+
+### Legal language
+- Is the text in everyday language and understandable?
+- Is the same term used consistently for the same thing?
+- Has a sentence been begun with a numeral? (it must not be)
+- Are the numbers, percentages and units of currency in the right form?
+
+### Finnish
+- Are the compound words right (`oikeusturva`, `hallintopäätös`)?
+- Are the participle expressions written as two words (`voimassa oleva`,
+  `edellä mainittu`)?
+- Is the punctuation right, particularly in subordinate clauses?
+- Is the style matter-of-fact rather than grandiose?
+
+### Sources and currency
+- Has the reference been made to the act in force (not to one repealed or
+  amended)?
+- Has the current version in Finlex been checked?
+- Have the case references used the correct form of identifier (KKO:VVVV:NN)?
+- Are the number and the year of the government bill (HE) correct?
+- Have any transitional provisions been taken into account?
+
+---
+
+## What this skill does NOT do
+
+- **Does not replace review by a competent lawyer and does not carry
+  responsibility for the outcome.** The output is a draft that needs checking;
+  the final legal assessment and the responsibility rest with a human.
+- **Does not confirm sections, statute numbers or case identifiers from
+  memory.** The quick guidance in this skill concerns the *form* of references —
+  the content and the currency must always be retrieved from the source
+  (`legal-research`).
+- **Does not reach a final legal conclusion and does not give legal advice.**
+  Interpretation and risk assessment are presented as something to be checked,
+  not as a binding position.
+- **Does not cover the law of other countries.** Only Finnish law (with the
+  relevant EU law raised separately); for other jurisdictions it must be said
+  that this does not cover them.
+- **Does not produce a finished document on its own.** The skill guides the
+  language, the structure and the references; the contract, statement or appeal
+  itself is produced with the subject-specific skills and under human direction.
+- **Does not replace a systematic quality review.** The checklist is a light
+  self-assessment, not a multi-stage risk analysis.
+
+## Continue from here
+
+- A new engagement begins or the user supplies material with no instruction → /legal-core:engagement-intake (deadline scan first)
+- The content of the law, whether it is in force, or the case law has to be verified in the source → /legal-core:legal-research
+- A finished legal document has to be checked systematically before use → /legal-core:document-review
+- Finnish text has to be proofread and polished → /legal-core:finnish-language
+- The task is to draft or review a contract → /contracts:contract-drafting or /contracts:contract-review
+- The matter concerns employment, an administrative matter or a civil dispute → /employment-law:employment-contract, /administrative-law:administrative-decision or /dispute-resolution:statement-of-claim

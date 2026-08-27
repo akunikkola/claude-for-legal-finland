@@ -1,42 +1,44 @@
-# Sopimusten ja juridisten asiakirjojen erityispiirteet
+# The particular features of contracts and legal documents
 
-Sopimuksia ja muita juridisia asiakirjoja (kuten lausuntoja, päätöksiä, muistioita) koskevat samat lakikielen perusperiaatteet, mutta lisäksi:
+Contracts and other legal documents (such as statements, decisions and memoranda) are governed by the same basic principles of legal language, and in addition by the following:
 
-## Sopimusrakenne (tyypillinen)
+**The Finnish clause examples below stay Finnish.** They are model wordings for Finnish-language contracts.
 
-1. Sopimuksen osapuolet (yksilöinti)
-2. Sopimuksen tarkoitus / tausta
-3. Määritelmät
-4. Sopimusehdot (varsinainen sisältö)
-5. Vastuut ja velvoitteet
-6. Sopimusrikkomus ja seuraamukset
-7. Sopimuksen voimassaolo ja irtisanominen
-8. Riitojen ratkaisu
-9. Allekirjoitukset
+## The structure of a contract (typical)
 
-## Sopimusten kieleen liittyvät periaatteet
+1. The parties to the contract (identification)
+2. The purpose or background of the contract
+3. Definitions
+4. The contract terms (the substance itself)
+5. Liabilities and obligations
+6. Breach of contract and its consequences
+7. The term of the contract and its termination
+8. Dispute resolution
+9. Signatures
 
-- **Tarkkuus osapuolten yksilöinnissä**: käytä virallisia nimiä ja y-tunnuksia
-- **Johdonmukaisuus**: jos käytät lyhennettyä nimeä osapuolesta ("jäljempänä Toimittaja"), käytä sitä koko sopimuksen läpi
-- **Yksiselitteisyys**: vältä ilmauksia, jotka jättävät tulkinnanvaraa ("kohtuullinen aika" → määrittele aika)
-- **Viittaukset lakeihin**: käytä samoja viittausmuotoja kuin säädöstekstissä
+## Principles relating to the language of contracts
 
-## Esimerkkejä sopimuslausekkeista
+- **Precision in identifying the parties**: use the official names and the business IDs (y-tunnus)
+- **Consistency**: if you use a shortened name for a party (`jäljempänä Toimittaja`), use it throughout the contract
+- **Unambiguity**: avoid expressions that leave room for interpretation (`kohtuullinen aika` → define the period)
+- **References to acts**: use the same forms of reference as in statutory text
 
-**Vahingonkorvauslauseke:**
+## Examples of contract clauses
+
+**Vahingonkorvauslauseke (damages clause):**
 ```
 Toimittaja on velvollinen korvaamaan tilaajalle sopimusrikkomuksesta
 aiheutuneet välittömät vahingot. Korvausvelvollisuus ei koske vahinkoja,
 jotka aiheutuvat tilaajan omasta huolimattomuudesta.
 ```
 
-**Riitojen ratkaisulauseke:**
+**Riitojen ratkaisulauseke (dispute resolution clause):**
 ```
 Tästä sopimuksesta aiheutuvat erimielisyydet ratkaistaan
 Pirkanmaan käräjäoikeudessa.
 ```
 
-**Sovellettavan lain lauseke:**
+**Sovellettavan lain lauseke (governing law clause):**
 ```
 Tähän sopimukseen sovelletaan Suomen lakia.
 ```

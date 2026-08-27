@@ -1,10 +1,12 @@
-# Pykäläviittaukset — oikeat muodot
+# Section references — the correct forms
 
-Pykäläviittausten oikea muoto on yksi yleisimmistä kompastuskivistä. Näitä sääntöjä noudatetaan aina.
+The correct form of a section reference is one of the commonest stumbling blocks. These rules are always followed.
 
-## Pykälänmerkki ja numero kulkevat aina yhdessä
+**The rules and examples below are Finnish and stay Finnish.** They govern how references are written in Finnish legal text.
 
-Kun viitataan pykälän numerolla, käytetään §-merkkiä. Kun viitataan ilman numeroa, kirjoitetaan sana "pykälä".
+## The section symbol and the number always go together
+
+When a reference is made by the number of the section, the § symbol is used. When it is made without a number, the word `pykälä` is written out.
 
 | Oikein | Väärin |
 |--------|--------|
@@ -12,9 +14,9 @@ Kun viitataan pykälän numerolla, käytetään §-merkkiä. Kun viitataan ilman
 | tässä pykälässä | ~~tässä §:ssä~~ |
 | 2 §:n mukaan | ~~2:n §:n mukaan~~ |
 
-## Taivutus
+## Inflection
 
-Sijapäätteet liitetään pykälänmerkkiin kaksoispisteellä:
+Case endings are attached to the section symbol with a colon:
 
 - 2 **§:n** (genetiivi)
 - 2 **§:ssä** (inessiivi)
@@ -22,9 +24,9 @@ Sijapäätteet liitetään pykälänmerkkiin kaksoispisteellä:
 - 2 **§:stä** (elatiivi)
 - 2 **§:llä** (adessiivi)
 
-## Useaan pykälään viittaaminen
+## Referring to several sections
 
-Sana "pykälä" pysyy **yksikössä** myös viitattaessa useaan pykälään:
+The word `pykälä` stays in the **singular** even when several sections are referred to:
 
 | Oikein | Väärin |
 |--------|--------|
@@ -32,51 +34,51 @@ Sana "pykälä" pysyy **yksikössä** myös viitattaessa useaan pykälään:
 | 3–5 §:ään | ~~3–5 §:iin~~ |
 | 2 ja 4 §:n | ~~2 ja 4 §§:n~~ |
 
-## Pykäläväli (ajatusviivalla)
+## A range of sections (with an en dash)
 
-"2–4 §" voi tarkoittaa joko "2, 3 ja 4 §" tai "2, 3 tai 4 §" — asiayhteys ratkaisee. Jos on epäselvää, kirjoita luettelo auki.
+`2–4 §` can mean either `2, 3 ja 4 §` or `2, 3 tai 4 §` — the context decides. If it is unclear, write the list out.
 
-## A-pykälät
+## The a-sections
 
-Kun säädökseen lisätään pykäliä olemassa olevien väliin, käytetään kirjainlisäystä:
+When sections are added to a statute between existing ones, a letter is added:
 
-- 4 a §, 4 b §, 4 c § (luetaan: "neljä a pykälä")
-- Luettelona: "4 a—4 d §" (ajatusviivalla, ei pilkkuluettelona)
-- A-pykäliä sisältävää väliä ei voi korvata pelkällä ajatusviivalla: "2–5 §" ei kata 4 a §:ää, ellei sitä nimenomaisesti mainita
+- 4 a §, 4 b §, 4 c § (read aloud: "neljä a pykälä")
+- As a list: `4 a—4 d §` (with an en dash, not as a comma-separated list)
+- A range containing a-sections cannot be replaced by an en dash alone: `2–5 §` does not cover 4 a § unless it is expressly mentioned
 
-## Säädösnumero
+## The statute number
 
-Suomalainen säädösnumero muodostuu juoksevasta numerosta ja antamisvuodesta:
+A Finnish statute number is made up of a running number and the year it was given:
 
-- Muoto: **numero/vuosi** — esim. 410/2015, 731/1999
-- Säädösnumeroa käytetään säädöksen yksilöimiseen viittauksissa
-- Finlex (finlex.fi) on virallinen sähköinen säädöstietopankki, josta ajantasaiset säädökset löytyvät
+- Form: **numero/vuosi** — e.g. 410/2015, 731/1999
+- The statute number is used to identify the statute in references
+- Finlex (finlex.fi) is the official electronic statutory database, where the statutes in force are found
 
-## Täydellinen säädösviittaus
+## A complete statutory reference
 
-Ensimmäisellä kerralla viittaus sisältää säädöksen nimen ja numeron:
+On first mention the reference contains the name and the number of the statute:
 
 ```
 kuntalain (410/2015) 7 §:ssä säädetään...
 ```
 
-Tämän jälkeen voi käyttää lyhempää muotoa:
+After that a shorter form may be used:
 
 ```
 kuntalain 7 §:ssä...
 ```
 
-## EU-säädöksiin viittaaminen
+## Referring to EU legislation
 
 ```
 Euroopan parlamentin ja neuvoston asetuksessa (EU) 2016/679 säädetään...
 Direktiivissä (EU) 2022/2555 edellytetään...
 ```
 
-## Vakiintuneita viittausilmaisuja
+## Established referring expressions
 
-- **"...säädetään"** — kun kerrotaan, mitä säädöksessä normitetaan
-- **"...mukaisesti"** — toiminnan perusteena
-- **"...nojalla"** — oikeusperusteena
-- **"...perusteella"** — syynä tai perusteena
-- **"...tarkoitetaan"** — määritelmän yhteydessä
+- **`...säädetään`** — when saying what a statute lays down
+- **`...mukaisesti`** — as the basis for an action
+- **`...nojalla`** — as the legal basis
+- **`...perusteella`** — as the reason or ground
+- **`...tarkoitetaan`** — in connection with a definition
