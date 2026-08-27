@@ -1,28 +1,30 @@
-# Hallituksen esitysten mallirakenteet
+# Model structures for government bills
 
-## Yleiskatsaus
+## Overview
 
-Hallituksen esitykset voidaan jakaa eri tyyppeihin niiden pohjan perusteella. Jokainen tyyppi noudattaa omaa rakennetta, jota selostetaan tässä dokumentissa.
+Government bills can be divided into different types according to what they are based on. Each type follows its own structure, described in this document.
 
-## Rakenteiden valinta
+> The structural outlines below are the **Finnish templates** a drafter copies into the bill. The part titles stay in Finnish; the guidance around them is English.
 
-Hallituksen esityksen rakenne valitaan esityksen pohjan perusteella:
+## Choosing the structure
 
-| Esityksen tyyppi | Pohja | Rakenne | Käyttötapaus |
+The structure of a government bill is chosen according to what the bill is based on:
+
+| Type of bill | Basis | Structure | When used |
 |---|---|---|---|
-| **Perusrakenteinen esitys** | Kotimainen lainsäädäntö | Perusrakenne | Suurin osa hallituksen esityksistä |
-| **EU-taustainen esitys** | EU-direktiivi tai -asetus | Muunneltu perusrakenne + EU-osiot | EU-säädösten täytäntöönpano |
-| **Valtiosopimustaustainen esitys** | Kansainvälinen sopimus | Muunneltu perusrakenne + sopimuksen osiot | Kansainvälisten sopimusten ratifiointi |
-| **Monitaustainen esitys** | Useat pohjarakat | Yhdistetty rakenne | Harvinaisempi, kun esityksellä on useita pohjia |
-| **Täydentävä esitys** | Aiempi hallituksen esitys | Muunneltu rakenne | Täydentävät esitykset aiemmin käsiteltyihin asioihin |
+| **A bill with the basic structure** | Domestic legislation | The basic structure | The great majority of government bills |
+| **An EU-derived bill** | An EU directive or regulation | The basic structure modified plus EU parts | Implementing EU instruments |
+| **A treaty-derived bill** | An international agreement | The basic structure modified plus the agreement parts | Ratifying international agreements |
+| **A multi-source bill** | Several bases | A combined structure | Less common, where a bill has several bases |
+| **A supplementary bill** | An earlier government bill | A modified structure | Bills supplementing matters already dealt with |
 
-## Perusrakenteinen esitys (Perusrakenteinen hallituksen esitys)
+## A bill with the basic structure
 
-### Käyttötapaus
+### When used
 
-Perusrakenteista esitystä käytetään, kun hallituksen esitys pohjautuu ensisijaisesti kotimaisen lainsäädännön tarpeeseen. Tämä on yleisin hallituksen esityksen tyyppi.
+The basic structure is used when a government bill is based primarily on a need arising in domestic legislation. This is the most common type of government bill.
 
-### Rakenne
+### Structure
 
 ```
 SISÄLLYS
@@ -52,24 +54,24 @@ LAKIEHDOTUS / LAKIEHDOTUKSET
 LIITE / LIITTEET
 ```
 
-### Ominaisuudet
+### Characteristics
 
-- Yksinkertainen ja johdonmukainen rakenne
-- Sopii useimpiin hallituksen esityksiin
-- Selkeä osiointi tekee luettavaksi
-- Kattaa kaikki oleelliset näkökulmat
+- A simple and consistent structure
+- Suits most government bills
+- Clear division into parts makes it readable
+- Covers every essential aspect
 
-### Katso tarkempi opas
+### For the fuller guide
 
-Ks. `basic-structure.md`
+See `basic-structure.md`
 
-## EU-taustainen esitys (EU-taustainen hallituksen esitys)
+## An EU-derived bill
 
-### Käyttötapaus
+### When used
 
-EU-taustaista esitystä käytetään, kun hallituksen esitys pohjautuu EU-direktiiviin tai EU-asetukseen, jonka Suomi on velvollinen täytäntöön paneman.
+The EU-derived structure is used when a government bill is based on an EU directive or an EU regulation that Finland is obliged to implement.
 
-### Rakenne
+### Structure
 
 ```
 SISÄLLYS
@@ -101,24 +103,24 @@ LAKIEHDOTUS / LAKIEHDOTUKSET
 LIITE / LIITTEET
 ```
 
-### Ominaisuudet
+### Characteristics
 
-- Sisältää EU-säädöksen valmistelusta kertovan osion
-- Vertaa EU-säädöstä ja kotimaista lainsäädäntöä
-- Käsittelee muiden jäsenvaltioiden ratkaisuja
-- Viittaukset EU-säädökseen ovat keskeisiä
+- Contains a part describing the preparation of the EU instrument
+- Compares the EU instrument and domestic legislation
+- Deals with the solutions of other Member States
+- The references to the EU instrument are central
 
-### Katso tarkempi opas
+### For the fuller guide
 
-Ks. `eu-derived.md`
+See `eu-derived.md`
 
-## Valtiosopimustaustainen esitys (Valtiosopimustaustainen hallituksen esitys)
+## A treaty-derived bill
 
-### Käyttötapaus
+### When used
 
-Valtiosopimustaustaista esitystä käytetään, kun hallituksen esitys pohjautuu kansainväliseen sopimukseen, jonka Suomi ratifioi tai muutoin hyväksyy.
+The treaty-derived structure is used when a government bill is based on an international agreement that Finland ratifies or otherwise approves.
 
-### Rakenne
+### Structure
 
 ```
 SISÄLLYS
@@ -151,27 +153,27 @@ LIITE / LIITTEET
 (Sopimuksen teksti liitteenä)
 ```
 
-### Ominaisuudet
+### Characteristics
 
-- Sisältää sopimuksen valmistelusta kertovan osion
-- Vertaa sopimusta ja kotimaista lainsäädäntöä
-- Käsittelee muiden maiden ratkaisuja
-- Sopimuksen teksti on liitteenä
-- Käsittelee eduskunnan hyväksyntää (jos vaaditaan)
+- Contains a part describing the preparation of the agreement
+- Compares the agreement and domestic legislation
+- Deals with the solutions of other countries
+- The text of the agreement is annexed
+- Deals with the approval of Eduskunta (where that is required)
 
-### Katso tarkempi opas
+### For the fuller guide
 
-Ks. `treaty-derived.md`
+See `treaty-derived.md`
 
-## Monitaustainen esitys (Monitaustainen hallituksen esitys)
+## A multi-source bill
 
-### Käyttötapaus
+### When used
 
-Monitaustaista esitystä käytetään harvinaisesti, kun hallituksen esityksellä on useita pohjia (esim. sekä EU-säädös että kansainvälinen sopimus, tai sekä kotimainen tarve että EU-säädös).
+The multi-source structure is used rarely, where a government bill has several bases (for example both an EU instrument and an international agreement, or both a domestic need and an EU instrument).
 
-### Rakenne
+### Structure
 
-Monitaustaisen esityksen rakenne yhdistää eri tyyppien rakenteita. Tyypillisesti:
+The structure of a multi-source bill combines the structures of the different types. Typically:
 
 ```
 SISÄLLYS
@@ -205,24 +207,24 @@ LAKIEHDOTUS / LAKIEHDOTUKSET
 LIITE / LIITTEET
 ```
 
-### Ominaisuudet
+### Characteristics
 
-- Yhdistää eri pohjien vaatimuksia
-- Voi olla monimutkainen ja pitkä
-- Vaatii selkeää johdonmukaisuutta
-- Voi sisältää EU-säädöksen tekiä ja sopimuksen tekstejä liitteissä
+- Combines the requirements of the different bases
+- May be complex and long
+- Requires clear consistency
+- May contain the text of the EU instrument and of the agreement in the annexes
 
-## Täydentävä esitys
+## A supplementary bill
 
-### Käyttötapaus
+### When used
 
-Täydentävää esitystä käytetään, kun hallituksen esitys täydentää aiemmin käsiteltyä asiaa (esim. eduskunnan tai hallituksen antaman lain täydentäminen).
+A supplementary bill is used where a government bill supplements a matter already dealt with (for example supplementing an act given by Eduskunta or by the Government).
 
-### Rakenne
+### Structure
 
-Täydentävät esitykset voivat noudattaa perusrakennetta tai muunnettua rakennetta riippuen siitä, mitä esitys täydentää.
+Supplementary bills may follow the basic structure or a modified one, depending on what the bill supplements.
 
-**Tyypillinen rakenne:**
+**A typical structure:**
 
 ```
 SISÄLLYS
@@ -257,81 +259,81 @@ LAKIEHDOTUS / LAKIEHDOTUKSET
 LIITE / LIITTEET
 ```
 
-### Ominaisuudet
+### Characteristics
 
-- Viittaa aiempaan esitykseen ja lakiin
-- Käsittelee muutostarpeita selkeästi
-- Yhdistää uudet ehdotukset aiemman lain kanssa
-- Hyvä jakaa perustelut selkeiksi osioiksi muutostarpeen osoittamiseksi
+- Refers to the earlier bill and to the act
+- Deals clearly with the need for change
+- Connects the new proposals with the earlier act
+- It is good to divide the reasoning into clear parts to show the need for change
 
-## Rakenteiden vertailu
+## Comparing the structures
 
-### Vertailutaulukko
+### Comparison table
 
-| Ominaisuus | Perusrakenne | EU-taustainen | Valtiosopimustaustainen | Monitaustainen | Täydentävä |
+| Feature | Basic | EU-derived | Treaty-derived | Multi-source | Supplementary |
 |---|---|---|---|---|---|
-| Yksinkertainen rakenne | ✓ | ◐ | ◐ | ✗ | ◐ |
-| EU-säädöksen käsittely | ✗ | ✓ | ✗ | ✓ | ✗ |
-| Sopimuksen käsittely | ✗ | ✗ | ✓ | ✓ | ✗ |
-| Kansainvälinen vertailu | ◐ | ✓ | ✓ | ✓ | ◐ |
-| Eduskunnan hyväksyntä | ✗ | ✗ | ◐ | ◐ | ✗ |
-| Yleinen käyttötapaus | Usein | Usein | Usein | Harvoin | Joskus |
+| Simple structure | ✓ | ◐ | ◐ | ✗ | ◐ |
+| Deals with an EU instrument | ✗ | ✓ | ✗ | ✓ | ✗ |
+| Deals with an agreement | ✗ | ✗ | ✓ | ✓ | ✗ |
+| International comparison | ◐ | ✓ | ✓ | ✓ | ◐ |
+| Approval of Eduskunta | ✗ | ✗ | ◐ | ◐ | ✗ |
+| How often used | Often | Often | Often | Rarely | Sometimes |
 
-**Legendy:**
-- ✓ = Sisällytetään
-- ◐ = Joskus sisällytetään
-- ✗ = Ei yleensä sisällytetä
+**Key:**
+- ✓ = included
+- ◐ = sometimes included
+- ✗ = not usually included
 
-## Rakenteiden valintaperusteet
+## The grounds for choosing a structure
 
-### Valitse perusrakenne, jos:
-- Esitys pohjautuu ensisijaisesti kotimaisen lainsäädännön tarpeeseen
-- Esityksellä ei ole EU-säädösten tai kansainvälisten sopimusten taustaa
-- Esitys on suhteellisen yksinkertainen
+### Choose the basic structure if:
+- The bill is based primarily on a need arising in domestic legislation
+- The bill has no background in EU instruments or international agreements
+- The bill is relatively simple
 
-### Valitse EU-taustainen rakenne, jos:
-- Esitys pohjautuu EU-direktiiviin tai EU-asetukseen
-- Suomella on velvollisuus täytäntöön paneman EU-säädöksen
-- Esityksessä käsitellään EU-säädöksen implementointia
+### Choose the EU-derived structure if:
+- The bill is based on an EU directive or an EU regulation
+- Finland is under an obligation to implement the EU instrument
+- The bill deals with the implementation of an EU instrument
 
-### Valitse valtiosopimustaustainen rakenne, jos:
-- Esitys pohjautuu kansainväliseen sopimukseen
-- Suomen on ratifioitava tai muutoin hyväksyttävä sopimus
-- Esityksessä käsitellään sopimuksen täytäntöönpanoa
+### Choose the treaty-derived structure if:
+- The bill is based on an international agreement
+- Finland has to ratify or otherwise approve the agreement
+- The bill deals with the implementation of the agreement
 
-### Valitse monitaustainen rakenne, jos:
-- Esityksellä on useita pohjia (EU + sopimus, kotimainen + EU jne.)
-- Eri pohjojen yhdistäminen on välttämätöntä
+### Choose the multi-source structure if:
+- The bill has several bases (EU plus an agreement, domestic plus EU and so on)
+- Combining the different bases is unavoidable
 
-### Valitse täydentävä esitys, jos:
-- Esitys täydentää aiempia esityksiä
-- Aiemmassa esityksessä ilmaantuneet puutteet tarvitsevat korjaamista
-- Esitys on lähetetysti riippuvainen aiemmasta esityksestä
+### Choose a supplementary bill if:
+- The bill supplements earlier bills
+- Shortcomings that have emerged in an earlier bill need correcting
+- The bill is closely dependent on an earlier bill
 
-## Huomioita rakenteiden valinnasta
+## Points on choosing the structure
 
-### Pohjan määritys
+### Determining the basis
 
-Hallituksen esityksen pohjan määrityksessä tulee harkita:
-- Mitkä tekijät ovat johtaneet uuden lainsäädännön tarpeeseen?
-- Onko EU-säädös olemassa tähän aiheeseen liittyen?
-- Onko kansainvälinen sopimus, johon laki on sidottava?
-- Onko useita pohjia?
+In determining the basis of a government bill, consider:
+- What factors have led to the need for new legislation?
+- Is there an EU instrument bearing on this subject?
+- Is there an international agreement to which the act must be tied?
+- Are there several bases?
 
-### Päävastuu rakenteiden valintaan
+### Who decides the structure
 
-Hallituksen esityksen valmistelussa vastaava ministeriö tekee päätöksen sopivasta rakenteesta, usein oikeus- tai ulkoministeriön neuvoin.
+In preparing a government bill the ministry responsible decides the appropriate structure, often on the advice of the Ministry of Justice or the Ministry for Foreign Affairs.
 
-### Rakenteiden mukauttaminen
+### Adapting the structures
 
-Rakenteet ovat ohjeellisia. Jos esityksellä on erityispiirteitä, rakennetta voidaan sopivasti mukauttaa, kunhan peruslogiikka ja järjestys säilyvät.
+The structures are indicative. Where a bill has particular features, the structure may be adapted as appropriate, so long as the basic logic and the order are preserved.
 
 ---
 
-## Lisätietoa
+## Further information
 
-Katso tarkemmin kunkin rakennetyypin erityisistä ohjeista:
+See the specific guidance for each type of structure:
 
-- **Perusrakenne**: `basic-structure.md`
-- **EU-taustainen**: `eu-derived.md`
-- **Valtiosopimustaustainen**: `treaty-derived.md`
+- **The basic structure**: `basic-structure.md`
+- **EU-derived**: `eu-derived.md`
+- **Treaty-derived**: `treaty-derived.md`

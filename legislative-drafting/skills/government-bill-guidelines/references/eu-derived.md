@@ -1,10 +1,12 @@
-# EU-taustainen hallituksen esitys
+# An EU-derived government bill
 
-## Yleiskatsaus
+## Overview
 
-EU-taustaista hallituksen esitystä käytetään, kun hallituksen esitys pohjautuu EU-direktiiviin tai EU-asetukseen. Rakenne eroaa perusrakenteesta siten, että se sisältää lisäosioita, jotka käsittelevät EU-lainsäädännön valmistelua ja toteuttamista.
+The EU-derived form of government bill is used when a bill is based on an EU directive or an EU regulation. The structure differs from the basic structure in that it contains extra parts dealing with the preparation and the implementation of the EU legislation.
 
-## Koko rakenne
+> The structural outline below is the **Finnish template** a drafter copies into the bill. The part titles stay in Finnish; the guidance around them is English.
+
+## The full structure
 
 ```
 SISÄLLYS
@@ -39,246 +41,246 @@ Asetusluonnos / Asetusluonnokset
 Muut liitteet
 ```
 
-## EU-taustaisen esityksen erityispiirteet
+## The particular features of an EU-derived bill
 
-### Rakenteet ja yksityiskohdistamisen taso
+### Structure and the level of detail
 
-EU-taustaisten hallituksen esitysten rakenteen yhtenäisyys on tärkeää. Kaikkien hallituksen esitysten tulisi noudattaa samaa rakennetta, mutta EU-säädösten toteuttavissa esityksissä on erityisiä osioita, jotka käsittelevät EU-säädösten implementointia.
+Consistency in the structure of EU-derived government bills matters. All government bills should follow the same structure, but bills implementing EU instruments have particular parts dealing with that implementation.
 
-**Keskeisiä huomioita:**
-- Rakenne on mukatuotu EU-säädösten erityispiirteiden huomioivaksi
-- Esityksessä tulee käsitellä EU-säädösten valmistelua ja niiden tavoitteita
-- Esityksessä tulee selvittää, miten EU-säädökset jäsenvaltioiden lainsäädäntöön toteutetaan
+**Key points:**
+- The structure is adapted to take account of the particular features of EU instruments
+- The bill must deal with the preparation of the EU instrument and with its objectives
+- The bill must establish how EU instruments are implemented in the legislation of the Member States
 
-## Perustelujen yksityiskohtainen opas
+## A detailed guide to the reasoning
 
-### 1 Asian tausta ja valmistelu
+### 1 Asian tausta ja valmistelu — background and preparation
 
-EU-taustaisen esityksen tausta-osiossa käsitellään sekä EU-säädöksen valmistelua että hallituksen esityksen valmistelua.
+In an EU-derived bill the background part deals both with the preparation of the EU instrument and with the preparation of the government bill.
 
-#### 1 Tausta
+#### 1 Tausta — background
 
-Taustassa kerrotaan:
-- EU-säädöksen tausta ja syntyä edeltäneet tapahtumat
-- Suomen rooli EU-säädöksen valmistelussa
-- Hallitusohjelmaan sisältyvät asiaa koskevat linjaukset
-- Kansainväliset velvoitteet ja sopimukset (muut kuin EU)
+The background states:
+- The background to the EU instrument and the events that preceded it
+- Finland's role in the preparation of the EU instrument
+- The policy statements in the Government Programme bearing on the matter
+- International obligations and agreements (other than EU)
 
-**Sisällytä seuraavat kohdat:**
-- EU-säädöksen syntyyn johtaneet syyt
-- EU:n päätöksentekoprosessissa käyty keskustelu
-- Suomen kantavaiheet ja tavoitteet EU-säädöksen valmistelussa
-- Hallituspolitiikka ja tavoitteet asian osalta
+**Include the following:**
+- The reasons that led to the EU instrument
+- The discussion in the EU decision-making process
+- Finland's positions and objectives during the preparation of the EU instrument
+- Government policy and the objectives as regards the matter
 
-#### 2 Valmistelu
+#### 2 Valmistelu — preparation
 
-Valmistelu-osiossa kuvataan sekä EU-säädöksen valmistelua että hallituksen esityksen valmistelua.
+The preparation part describes both the preparation of the EU instrument and the preparation of the government bill.
 
-##### EU-säädöksen valmistelu
+##### EU-säädöksen valmistelu — the preparation of the EU instrument
 
-- EU-säädöksen valmisteluprosessin kulku
-- Neuvottelut EU:n tasolla
-- Suomen aktiivisuus ja kannat neuvotteluissa
-- Päätöksentekoprosessi (Neuvosto, Euroopan parlamentti)
+- The course of the preparation process for the EU instrument
+- The negotiations at EU level
+- Finland's activity and positions in the negotiations
+- The decision-making process (the Council, the European Parliament)
 
-##### Hallituksen esityksen valmistelu
+##### Hallituksen esityksen valmistelu — the preparation of the government bill
 
-- Hallituksen esityksen valmistelun aloitus
-- Valmistelun johtavat tahot
-- Osallistuneet ministeriöt ja asiantuntijat
-- Lausuntokierrokset ja asiantuntijayhteistyö
+- When the preparation of the government bill began
+- The bodies leading the preparation
+- The ministries and experts who took part
+- The consultation rounds and the co-operation with experts
 
-### 2 EU-säädöksen tavoitteet ja pääasiallinen sisältö
+### 2 EU-säädöksen tavoitteet ja pääasiallinen sisältö — the objectives and main content of the EU instrument
 
-Tämä osio on erityinen EU-taustaisia esityksiä varten. Siinä käsitellään EU-säädöksen tavoitteita ja sisältöä.
+This part is particular to EU-derived bills. It deals with the objectives and the content of the EU instrument.
 
-**Sisältö:**
-- EU-säädöksen yleiset tavoitteet
-- Säädöksen pääasialliset säännökset
-- Säädöksen soveltamisala
-- Täytäntöönpanon määräajat
+**Content:**
+- The general objectives of the EU instrument
+- The main provisions of the instrument
+- The scope of application of the instrument
+- The deadlines for implementation
 
-**Kirjoitusohjeet:**
-- Selitä EU-säädöksen tavoitteet selkeästi
-- Kuvaile säädöksen pääasiallisia säännöksiä
-- Osoita yhteys EU-säädökseen ja sen sisältöön
-- Käytä EU-säädöksesta peräisin olevia termejä johdonmukaisesti
+**Drafting instructions:**
+- Explain the objectives of the EU instrument clearly
+- Describe the main provisions of the instrument
+- Show the connection with the EU instrument and its content
+- Use the terms drawn from the EU instrument consistently
 
-**Erityiskohdat:**
-- EU:n direktiiveissä on tyypillisesti täytäntöönpanoaikataulu
-- Asetuksissa määritellään usein soveltamispäivä
-- Joissain tapauksissa jäsenvaltion on mahdollista poiketa säännöksestä tietyin edellytyksin
+**Particular points:**
+- EU directives typically have an implementation timetable
+- Regulations often set a date of application
+- In some cases a Member State may derogate from a provision on certain conditions
 
-### 3 Nykytila ja sen arviointi
+### 3 Nykytila ja sen arviointi — the current state and its assessment
 
-Nykytila-osiossa kuvataan Suomen nykyinen lainsäädäntö EU-säädöksen valossa.
+The current-state part describes the Finnish legislation in force in the light of the EU instrument.
 
-**Sisältö:**
-- Nykyisen lainsäädännön vertailu EU-säädökseen
-- Mitä muutoksia EU-säädös edellyttää
-- Onko nykyinen lainsäädäntö jo EU-säädösten mukainen
-- Missä osissa muutoksia tarvitaan
+**Content:**
+- A comparison of the legislation in force with the EU instrument
+- What changes the EU instrument requires
+- Whether the legislation in force already complies with the EU instrument
+- In which parts changes are needed
 
-**Kirjoitusohjeet:**
-- Vertaa nykytilan lainsäädäntöä EU-säädöksiin
-- Tunnista puutteet ja poikkeamat
-- Osoita, mitkä osat nykyisestä lainsäädännöstä säilyvät
-- Osoita, mitkä osat muuttuvat
+**Drafting instructions:**
+- Compare the legislation as it stands with the EU instruments
+- Identify the shortcomings and the divergences
+- Show which parts of the legislation in force are retained
+- Show which parts change
 
-### 4 Ehdotukset ja niiden vaikutukset
+### 4 Ehdotukset ja niiden vaikutukset — the proposals and their impacts
 
-#### 4.1 Keskeiset ehdotukset
+#### 4.1 Keskeiset ehdotukset — the key proposals
 
-EU-taustaisen esityksen ehdotuksissa tulee selkeästi osoittaa, miten ehdotukset toteutuvat EU-säädökseen.
+The proposals in an EU-derived bill must show clearly how they implement the EU instrument.
 
-**Kirjoitusohjeet:**
-- Esitä ehdotukset EU-säädökseen viitaten
-- Ryhmittele ehdotukset loogisesti
-- Selitä, miten ehdotukset noudattavat EU-säädöstä
-- Käytä EU-säädöksessä käytettyjä termejä
+**Drafting instructions:**
+- Present the proposals with reference to the EU instrument
+- Group the proposals logically
+- Explain how the proposals comply with the EU instrument
+- Use the terms used in the EU instrument
 
-**Huomio**: Joissakin tapauksissa jäsenvaltiolle on annettava liikkumavaraa EU-säädösten täytäntöönpanossa. Selitä, milloin käytetään tätä liikkumavaraa.
+**Note**: in some cases a Member State must be left a margin of discretion in implementing an EU instrument. Explain when that margin is used.
 
-#### 4.2 Pääasialliset vaikutukset
+#### 4.2 Pääasialliset vaikutukset — the main impacts
 
-EU-taustaisten esitysten vaikutuksissa tulee käsitellä myös EU:n tasolla odotettavissa olevat vaikutukset.
+The impacts in an EU-derived bill must also deal with the impacts to be expected at EU level.
 
-**Sisältö:**
-- Vaikutus eri osapuoliin (kunnat, yritykset, kansalaiset jne.)
-- Hallinnolliset vaikutukset
-- Taloudelliset vaikutukset
-- Sosiaaliset vaikutukset
-- Vaikutukset muihin jäsenvaltioihin (jos relevantti)
+**Content:**
+- The effect on the different parties (municipalities, businesses, citizens and so on)
+- Administrative impacts
+- Economic impacts
+- Social impacts
+- Impacts on other Member States (where relevant)
 
-**Huomio**: EU-säädösten vaikutukset ovat usein merkittäviä myös muille jäsenvaltioille. Mainitse, miten muut jäsenvaltiot ovat vaikutuksista selviytyneet tai mitä vaikutuksia on odotettavissa.
+**Note**: the impacts of EU instruments are often significant for other Member States too. Say how other Member States have coped with the impacts, or what impacts are to be expected.
 
-### 5 Muut toteuttamisvaihtoehdot
+### 5 Muut toteuttamisvaihtoehdot — other implementation options
 
-#### 5.1 Vaihtoehdot
+#### 5.1 Vaihtoehdot — the alternatives
 
-Vaihtoehdoissa voidaan käsitellä eri toteutustapoja EU-säädöksen vaatimuksissa.
+The alternatives may deal with different ways of implementing the requirements of the EU instrument.
 
-**Vaihtoehdoina voidaan esittää:**
-- Erilaisia täytäntöönpanokeinoja
-- Eri tasoiset toteutukset (vain minimivaatimukset vai laajempi)
-- Erilaiset siirtymäajat
-- Erilaiset soveltamiskohdat
+**The alternatives that may be presented:**
+- Different means of implementation
+- Implementation at different levels (the minimum requirements only, or something wider)
+- Different transitional periods
+- Different points of application
 
-**Kirjoitusohjeet:**
-- Osoita, mitkä vaihtoehdot ovat EU-säädösten mukaisia
-- Perustele, miksi valittu vaihtoehto on parempi
-- Käytä objektiivia kieltä
+**Drafting instructions:**
+- Show which alternatives comply with the EU instruments
+- Justify why the chosen alternative is better
+- Use objective language
 
-#### 5.2 Muiden jäsenvaltioiden suunnitelmat tai toteutetut keinot
+#### 5.2 Muiden jäsenvaltioiden suunnitelmat tai toteutetut keinot — the plans or the measures taken in other Member States
 
-Tässä alaluvussa voidaan verrata Suomen ratkaisua muiden jäsenvaltioiden ratkaisuihin.
+This sub-part may compare Finland's solution with the solutions of other Member States.
 
-**Sisältö:**
-- Miten muut jäsenvaltiot ovat toteuttaneet EU-säädöksen
-- Eroavaisuudet eri jäsenvaltioiden toteutuksissa
-- Mitä oppia muiden ratkaisuista
-- Perusteet Suomen valinnalle
+**Content:**
+- How other Member States have implemented the EU instrument
+- The differences between the implementations in different Member States
+- What can be learned from the solutions of others
+- The grounds for Finland's choice
 
-**Kirjoitusohjeet:**
-- Esitä muiden jäsenvaltioiden ratkaisut objektiivisesti
-- Mainitse ainakin pari muuta jäsenvaltioita (vertailun vuoksi)
-- Perustele, miksi Suomi valitsee oman ratkaisunsa
+**Drafting instructions:**
+- Present the solutions of other Member States objectively
+- Mention at least a couple of other Member States (for the sake of comparison)
+- Justify why Finland chooses its own solution
 
-### 6 Lausuntopalaute
+### 6 Lausuntopalaute — consultation feedback
 
-Lausuntopalaute käsitellään samalla tavalla kuin perusrakenteen esityksessä, mutta EU-taustaisten esitysten kohdalla lausuntojen saajat voivat olla EU-tasolla.
+The consultation feedback is dealt with in the same way as in a bill with the basic structure, but in an EU-derived bill those giving statements may be at EU level.
 
-**Huomio:** Jos esitys on käsitelty EU-tasolla, mainitse EU:ssa saadut kannanotot ja neuvottelutulokset.
+**Note:** if the bill has been dealt with at EU level, mention the positions taken and the negotiated outcome in the EU.
 
-### 7 Säännöskohtaiset perustelut
+### 7 Säännöskohtaiset perustelut — section-by-section reasoning
 
-Säännöskohtaiset perustelut kirjoitetaan samalla tavalla kuin perusrakenteen esityksessä, mutta viittaukset EU-säädöksiin ovat erityisen tärkeitä.
+The section-by-section reasoning is written in the same way as in a bill with the basic structure, but the references to the EU instruments are especially important.
 
-**Kirjoitusohjeet:**
-- Viittaa EU-säädöksen asiaankuuluviin artikloihin tai säännöksiin
-- Selitä, miten kotimainen sääntely toteutuu EU-säädöksen vaatimukset
-- Osoita poikkeamat EU-säädöksistä, jos niitä on
-- Käytä EU-säädöksessä käytettyjä termejä
+**Drafting instructions:**
+- Refer to the relevant articles or provisions of the EU instrument
+- Explain how the domestic regulation meets the requirements of the EU instrument
+- Show any divergences from the EU instruments
+- Use the terms used in the EU instrument
 
-### 8 Lakia alemman asteinen sääntely
+### 8 Lakia alemman asteinen sääntely — regulation below the level of an act
 
-Lakia alemman asteinen sääntely käsitellään samalla tavalla kuin perusrakenteen esityksessä.
+Regulation below the level of an act is dealt with in the same way as in a bill with the basic structure.
 
-**Huomio**: EU-asetuksissa voi olla määräyksiä täytäntöönpanomääräyksistä tai muista alemman tason säädöksistä. Mainitse, jos EU-säädös velvoittaa antamaan alemman asteisen sääntelyn.
+**Note**: EU regulations may contain provisions on implementing measures or other lower-level rules. Say so if the EU instrument obliges lower-level regulation to be issued.
 
-### 9 Voimaantulo
+### 9 Voimaantulo — entry into force
 
-Voimaantulo on kriittinen osio EU-taustaisten esitysten kohdalla.
+Entry into force is a critical part in an EU-derived bill.
 
-**Sisältö:**
-- EU-säädöksen soveltamispäivä tai täytäntöönpanoaika
-- Kotimaisen lainsäädännön voimaantuloaika
-- Yhteydet EU-säädökseen
+**Content:**
+- The date of application or the implementation period of the EU instrument
+- The time of entry into force of the domestic legislation
+- The connections with the EU instrument
 
-**Kirjoitusohjeet:**
-- Osoita, milloin EU-säädös tulee voimaan
-- Määrittele, milloin kotimainen lainsäädäntö tulee voimaan
-- Huomioi siirtymäajat ja erityiset määräykset
-- Selitä perustelut valituille ajankohdille
+**Drafting instructions:**
+- Show when the EU instrument enters into force
+- Define when the domestic legislation enters into force
+- Take account of transitional periods and any special provisions
+- Explain the reasons for the times chosen
 
-### 10 Toimeenpano ja seuranta
+### 10 Toimeenpano ja seuranta — implementation and monitoring
 
-Toimeenpano-osio käsitellään samalla tavalla kuin perusrakenteen esityksessä, mutta huomioidaan EU:n vaatimukset raportointiin ja seurantaan.
+The implementation part is dealt with in the same way as in a bill with the basic structure, but the EU requirements on reporting and monitoring are taken into account.
 
-**Erityiskohdat:**
-- EU-säädöksessä usein vaaditaan raportointi komissiolle
-- Seuranta-indikaattorit määritellään usein EU-tasolla
-- Arviointipäivät määritetään usein EU-säädöksessä
+**Particular points:**
+- An EU instrument often requires reporting to the Commission
+- The monitoring indicators are often defined at EU level
+- The evaluation dates are often set in the EU instrument
 
-### 11 Suhde muihin esityksiin
+### 11 Suhde muihin esityksiin — the relationship to other bills
 
-#### 11.1 Esityksen riippuvuus muista esityksistä
+#### 11.1 Esityksen riippuvuus muista esityksistä — the bill's dependence on other bills
 
-- Liittyykö esitys muihin EU-säädösten täytäntöönpano-esityksiin?
-- Onko esitys riippuvainen muista samanaikaisista esityksistä?
+- Does the bill relate to other bills implementing EU instruments?
+- Is the bill dependent on other bills being dealt with at the same time?
 
-#### 11.2 Suhde talousarvioesitykseen
+#### 11.2 Suhde talousarvioesitykseen — the relationship to the budget proposal
 
-- Vaikuttaako EU-säädösten täytäntöönpano julkisiin menoihin?
-- Tarvitaanko uusia määrärahoja?
+- Does implementing the EU instruments affect public expenditure?
+- Are new appropriations needed?
 
-### 12 Suhde perustuslakiin ja säätämisjärjestys
+### 12 Suhde perustuslakiin ja säätämisjärjestys — the relationship to the Constitution and the legislative procedure
 
-Tämä osio on erityisen tärkeä EU-taustaisten esitysten kohdalla.
+This part is especially important in an EU-derived bill.
 
-**Sisältö:**
-- EU-säädösten ja perustuslain välinen suhde
-- Perustuslain mukainen säätämisjärjestys
-- Mahdolliset perustusoikeuksiin vaikuttavat puolet
+**Content:**
+- The relationship between the EU instruments and the Constitution
+- The legislative procedure under the Constitution
+- Any aspects affecting fundamental rights
 
-**Kirjoitusohjeet:**
-- Osoita EU-säädösten perustuslainmukaisuus
-- Mainitse mahdolliset perustusoikeuksiin vaikuttavat näkökulmat
-- Selitä säätämisjärjestys
+**Drafting instructions:**
+- Show that the EU instruments comply with the Constitution
+- Mention any aspects affecting fundamental rights
+- Explain the legislative procedure
 
 ---
 
-## Erityishuomioita EU-taustaisten esitysten kohdalla
+## Particular points on EU-derived bills
 
-### EU-direktiivi vs. EU-asetus
+### An EU directive compared with an EU regulation
 
-- **Direktiivi**: Jäsenvaltio päättää täytäntöönpantavien keinojen valinnasta
-- **Asetus**: Asetus on sellaisenaan voimassa ja jäsenvaltiot eivät voi säätää ristiriitaista lainsäädäntöä
+- **A directive**: the Member State decides which means of implementation to choose
+- **A regulation**: a regulation applies as it stands and Member States cannot enact legislation conflicting with it
 
-Näiden erojen vuoksi direktiivit vaativat yleensä enemmän kotimaista lainsäädäntöä kuin asetukset.
+Because of these differences, directives usually require more domestic legislation than regulations do.
 
-### Täytäntöönpanoajat
+### Implementation periods
 
-EU-direktiiveillä on tyypillisesti täytäntöönpanoaikataulu, jonka mennessä jäsenvaltion on pantava direktiivi täytäntöön. Aikarajaa ei yleensä kannata ylittää.
+EU directives typically have an implementation timetable by which the Member State must implement the directive. It is generally unwise to exceed the deadline.
 
-### Minimistandardit ja liikkumavara
+### Minimum standards and the margin of discretion
 
-Monet EU-säädökset sisältävät ainoastaan minimivaatimukset. Jäsenvaltiot voivat usein asettaa tiukempia vaatimuksia, jos se on perustuslain mukaista.
+Many EU instruments contain only minimum requirements. Member States can often set stricter requirements where that complies with the Constitution.
 
-### Neuvottelutulos
+### The negotiated outcome
 
-Jos esityksen valmistelu osui EU:n säädöksen neuvotteluihin, mainitse Suomen kantavaiheet ja neuvottelutulos.
+If the preparation of the bill coincided with the negotiations on the EU instrument, mention Finland's positions and the negotiated outcome.
 
-### Kielellinen vaatimustenmukaisuus
+### Consistency of terminology
 
-Varmista, että käytetyt termit vastaavat EU-säädöksessä käytettyjä termejä. Tämä helpottaa tulkintaa ja oikeuskäytäntöä.
+Make sure the terms used correspond to those used in the EU instrument. This makes interpretation and the case law easier.
