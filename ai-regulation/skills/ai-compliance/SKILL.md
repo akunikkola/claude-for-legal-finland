@@ -1,81 +1,90 @@
 ---
 name: ai-compliance
 description: >
-  Tekoälyasetuksen (EU 2024/1689) vaatimustenmukaisuuden tukitehtävät: soveltamisen
-  määräajat ja siirtymäajat, seuraamusten (sakkojen) suuruus, GPAI-mallin systeemisen
-  riskin kynnys (10^25 FLOPs) ja perusoikeusvaikutusten arviointi (FRIA, 27 art). Käytä
-  tätä skilliä, kun käyttäjä kysyy milloin velvoitteet tulevat voimaan, mikä on rikkomuksen
-  sakko, ylittääkö tekoälymalli systeemisen riskin kynnyksen, tarvitaanko FRIA, tai
-  mainitsee määräajat, siirtymäajat, sanktiot, GPAI:n tai perusoikeusvaikutusten arvioinnin.
+  Supporting tasks for compliance with the AI Act (EU 2024/1689): the deadlines
+  and transitional periods for application, the size of the penalties (fines), the
+  threshold for systemic risk in a GPAI model (10^25 FLOPs) and the fundamental
+  rights impact assessment (FRIA, Article 27). Use this skill when the user asks
+  when the obligations take effect, what the fine for an infringement is, whether
+  an AI model exceeds the systemic risk threshold, whether a FRIA is needed, or
+  when the user mentions deadlines, transitional periods, sanctions, GPAI or the
+  fundamental rights impact assessment.
 ---
 
-# Tekoälyasetuksen vaatimustenmukaisuus — määräajat, sakot, GPAI, FRIA
+# AI Act compliance — deadlines, penalties, GPAI, FRIA
 
-Tämä skill tukee vaatimustenmukaisuuden ajoitusta ja riskien arviointia EU:n
-tekoälyasetuksen mukaan.
+This skill supports the timing of compliance and the assessment of risk under the EU
+Artificial Intelligence Act.
 
-> **Vastuuvapaus:** tarkistettavaa ensiarviota — ei oikeudellista neuvontaa. Sakkojen ja
-> luokittelun lopullinen arvio kuuluu asiantuntijalle. Katso `ai-regulation/AGENTS.md`.
-> Perusteet: `../ai-classification/references/ai-act-fundamentals.md`.
+> **Disclaimer:** a first assessment to be checked — not legal advice. The final
+> assessment of the penalties and of the classification belongs to a specialist. See
+> `ai-regulation/AGENTS.md`.
+> Fundamentals: `../ai-classification/references/ai-act-fundamentals.md`.
 
-## Käytä EU AI Act -MCP:tä — älä arvaa lukuja äläkä päiviä
+## Use the EU AI Act MCP — do not guess figures or dates
 
-- **`euaiact_check_deadlines`** — soveltamisen virstanpylväät, jäljellä olevat päivät,
-  `next_milestone`-pikatieto ja `only_upcoming`-suodatin. **Hae päivämäärät aina tästä**,
-  älä esitä niitä muistista; asetuksen soveltaminen on vaiheittaista ja tilanne muuttuu.
-- **`euaiact_calculate_penalty`** — enimmäissakko rikkomustyypin, liikevaihdon ja pk-statuksen
-  mukaan (99 art), pk-/startup-kevennys (99(6)) ja vertailu pk vs. ei-pk.
-- **`euaiact_check_gpai_systemic_risk`** — ylittääkö GPAI-malli 10²⁵ FLOPs -kynnyksen;
-  palauttaa 53 art perustason + 55 art systeemisen riskin velvoitteet ja 52 art
-  ilmoitusvelvollisuuden.
-- **`euaiact_assess_art6_3_exception`** — 6(3) "ei merkittävää riskiä" -poikkeuksen läpikäynti
-  (profilointivaroitus + 6(4)/49(2) muistutukset).
+- **`euaiact_check_deadlines`** — the milestones for application, the days remaining, the
+  `next_milestone` quick answer and the `only_upcoming` filter. **Always fetch the dates
+  from here**, do not state them from memory; the Regulation applies in stages and the
+  position changes.
+- **`euaiact_calculate_penalty`** — the maximum fine by type of infringement, turnover and
+  SME status (Article 99), the reduction for SMEs and start-ups (Article 99(6)) and a
+  comparison of SME against non-SME.
+- **`euaiact_check_gpai_systemic_risk`** — whether a GPAI model exceeds the 10²⁵ FLOPs
+  threshold; it returns the baseline obligations under Article 53 plus the systemic risk
+  obligations under Article 55 and the notification obligation under Article 52.
+- **`euaiact_assess_art6_3_exception`** — working through the Article 6(3) "no significant
+  risk" exception (with the profiling warning and the reminders on Article 6(4) and
+  Article 49(2)).
 
-Jos MCP ei ole käytettävissä, kerro se äläkä esitä lukuja tai päiviä varmistettuina.
+If the MCP is not available, say so and do not present figures or dates as verified.
 
 ---
 
-## Tehtävät
+## Tasks
 
-### Määräajat ja siirtymäajat
-Kutsu `euaiact_check_deadlines`. Esitä käyttäjän tilanteeseen osuvat virstanpylväät ja
-seuraava määräpäivä. Jos jokin tilan muutos (esim. Digital Omnibus) on vasta ehdotus eikä
-voimassa olevaa lakia, sano se selvästi — voimassa olevat päivät ovat ratkaisevia
-neuvonnassa, kunnes muutos on hyväksytty ja julkaistu virallisessa lehdessä.
+### Deadlines and transitional periods
+Call `euaiact_check_deadlines`. Present the milestones that bear on the user's situation
+and the next deadline. If some change in the position (for example the Digital Omnibus) is
+only a proposal and not law in force, say so clearly — the dates in force are decisive in
+advising until the change has been adopted and published in the Official Journal.
 
-### Seuraamukset
-Kutsu `euaiact_calculate_penalty` rikkomustyypillä, liikevaihdolla ja pk-statuksella.
-Esitä enimmäissakko ja pk-kevennys vertailuna. Korosta, että kyseessä on **enimmäismäärä**,
-ei ennuste todellisesta seuraamuksesta.
+### Penalties
+Call `euaiact_calculate_penalty` with the type of infringement, the turnover and the SME
+status. Present the maximum fine and the SME reduction as a comparison. Stress that this is
+a **maximum amount**, not a prediction of the actual sanction.
 
-### GPAI:n systeeminen riski
-Kutsu `euaiact_check_gpai_systemic_risk` mallin laskentamäärällä/tiedoilla. Raportoi, ylittääkö
-malli kynnyksen, ja siitä seuraavat 53/55 art velvoitteet sekä 52 art ilmoitus.
+### Systemic risk in a GPAI model
+Call `euaiact_check_gpai_systemic_risk` with the model's compute figure or details. Report
+whether the model exceeds the threshold, and the obligations that follow under Articles 53
+and 55 as well as the notification under Article 52.
 
-### FRIA — perusoikeusvaikutusten arviointi (27 art)
-Selvitä, onko käyttöönottaja FRIA-velvollinen (mm. Annex III(5)(b) luottokelpoisuus/
-luottoluokitus ja (5)(c) henki-/sairausvakuutuksen riskinarviointi ja hinnoittelu; Annex
-III(2) kriittinen infrastruktuuri on vapautettu). Jos FRIA tarvitaan, ohjaa sen sisältöön:
-käyttöprosessin kuvaus, vaikutukset perusoikeuksiin, riskit ja lieventävät toimet. FRIA ja
-GDPR:n DPIA limittyvät — ohjaa tarvittaessa `data-protection`-plugariin.
+### FRIA — fundamental rights impact assessment (Article 27)
+Establish whether the deployer is obliged to carry out a FRIA (including Annex III(5)(b)
+creditworthiness and credit scoring and (5)(c) risk assessment and pricing in life and
+health insurance; Annex III(2) critical infrastructure is exempt). If a FRIA is required,
+guide the user on its content: a description of the process of use, the effects on
+fundamental rights, the risks and the mitigating measures. A FRIA and a DPIA under the GDPR
+overlap — steer the user to the `data-protection` domain where necessary.
 
-### Raportointi
-Tuota selkeä yhteenveto haetuista luvuista ja päivistä **lähdemerkinnöin** (MCP / EUR-Lex),
-ja merkitse tulkinnanvaraiset kohdat `[varmista — asiantuntijan arvioitava]`. Muistuta
-kansallisen kerroksen tarkistuksesta (toimivaltaiset viranomaiset, kansallinen täytäntöönpano).
+### Reporting
+Produce a clear summary of the figures and dates fetched, **with the source marked** (MCP /
+EUR-Lex), and mark points open to interpretation
+`[confirm — requires a specialist's assessment]`. Remind the user to check the national
+layer (the competent authorities, the national implementation).
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tee lopullista vaatimustenmukaisuus- tai luokittelupäätöstä.** Tukee ajoitusta ja riskien arviointia tarkistettavin ensiarvioin; sitova arvio kuuluu asiantuntijalle.
-- **Ei esitä määräpäiviä eikä sakkoja muistista.** Soveltamisen siirtymäajat ja seuraamusten enimmäismäärät haetaan aina eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) suoraan asetuksesta.
-- **Ei ennusta todellista seuraamusta.** `euaiact_calculate_penalty` antaa 99 art mukaisen **enimmäismäärän**, ei arviota viranomaisen tosiasiassa määräämästä sakosta.
-- **Ei vahvista kansallisia viranomaisnimeämisiä eikä täytäntöönpanon yksityiskohtia.** Suomen toimivaltaiset viranomaiset ja menettelyt ovat muotoutumassa — merkitse `[varmista — kansallinen sääntely muotoutumassa]`.
-- **Ei kohtele ehdotuksia voimassa olevana lakina.** Esimerkiksi Digital Omnibus -tyyppiset muutokset ovat suuntaa-antavia, kunnes ne on hyväksytty ja julkaistu EU:n virallisessa lehdessä — voimassa olevat päivät ovat ratkaisevia.
-- **Ei kirjoita FRIA- tai DPIA-asiakirjaa valmiiksi.** Tunnistaa FRIA-velvollisuuden (27 art) ja ohjaa sen rakenteeseen, mutta varsinaisen arvioinnin laatiminen jää organisaatiolle.
+- **It does not make the final compliance or classification decision.** It supports timing and risk assessment with first assessments to be checked; the binding assessment belongs to a specialist.
+- **It does not state deadlines or penalties from memory.** The transitional periods for application and the maximum sanctions for infringements are always fetched with the tools of the eu-ai-act MCP (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) directly from the Regulation.
+- **It does not predict the actual sanction.** `euaiact_calculate_penalty` gives the **maximum amount** under Article 99, not an estimate of the fine an authority would in fact impose.
+- **It does not confirm designations of national authorities or the details of implementation.** The Finnish competent authorities and the procedures are still taking shape — mark this `[confirm — national regulation still taking shape]`.
+- **It does not treat proposals as law in force.** Changes of the Digital Omnibus type are indicative only until they have been adopted and published in the Official Journal of the European Union — the dates in force are decisive.
+- **It does not write the FRIA or the DPIA for you.** It identifies the FRIA obligation (Article 27) and guides the structure, but drafting the assessment itself is left to the organisation.
 
-## Jatka tästä
+## Continue from here
 
-- Jos riskiluokka on vielä auki, aloita luokittelusta → /tekoalysaantely:tekoaly-luokittelu
-- Velvoitteiden täsmäkokoaminen roolin ja luokan mukaan sekä Annex IV → /tekoalysaantely:tekoaly-velvoitteet
-- FRIA:n ja DPIA:n limittäisyys, profilointi ja automaattinen päätöksenteko → /tietosuoja:tietosuoja-arviointi
-- Kansallisten määräaikojen, viranomaisten ja täytäntöönpanon tarkistus → /juristi:oikeustutkimus
+- If the risk class is still open, start from the classification → /ai-regulation:ai-classification
+- Compiling the exact obligations by role and class, plus Annex IV → /ai-regulation:ai-obligations
+- The overlap of FRIA and DPIA, profiling and automated decision-making → /data-protection:data-protection-assessment
+- Checking the national deadlines, authorities and implementation → /legal-core:legal-research

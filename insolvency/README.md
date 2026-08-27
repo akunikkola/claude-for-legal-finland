@@ -1,47 +1,52 @@
-# Insolvenssi
+# Insolvency
 
-Suomen insolvenssioikeus maksukyvyttömyystilanteisiin: menettelyn valinta
-(konkurssi, yrityssaneeraus, yksityishenkilön velkajärjestely), konkurssimenettely
-velkojan ja velallisen näkökulmasta sekä saatavien perintä, vanhentuminen ja ulosotto.
+Finnish insolvency law for situations of inability to pay: choosing the procedure
+(bankruptcy, restructuring of an enterprise, debt adjustment of a private individual), the
+bankruptcy procedure from the creditor's and the debtor's point of view, and the collection
+of claims, limitation and enforcement.
 
-> **Arviot ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Määräajat ovat tässä lajissa kohtalokkaita: jokainen päivämäärä varmistetaan
-> lähteestä ja kalenterivastuu on ihmisellä. Katso [`AGENTS.md`](AGENTS.md).
+> **Assessments and drafts are to be checked – not legal advice.**
+> Deadlines are fatal in this field: every date is verified from the source and calendar
+> responsibility sits with a human. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **maksukyvyttomyysarvio** | Tilanteen jäsennys ja menettelyn valinta: maksuviivästys vai maksukyvyttömyys, yrityksellä sovinto / varhainen tai perusmuotoinen saneeraus (47/1993) / konkurssi, yksityishenkilöllä sovinto / velkajärjestely (57/1993). Kriisiyhtiön johdon riskit (takaisinsaanti, vastuu). Sisältää insolvenssioikeuden perusteiden referenssin. |
-| **konkurssimenettely** | Konkurssin kulku (konkurssilaki 120/2004): edellytykset, hakeminen, pesänhoitaja, saatavien valvonta, jakoluettelo ja maksunsaantijärjestys (1578/1992), takaisinsaanti (758/1991) – velkojan ja velallisen tarkistuslistat. |
-| **saatavien-perinta** | Saatavan elinkaari: vapaaehtoinen perintä hyvän perintätavan mukaan (513/1999), vanhentumisen hallinta ja katkaisu (728/2003), oikeudellinen perintä ja ulosotto (705/2007). |
+| **insolvency-assessment** | Framing the situation and choosing the procedure: late payment or insolvency; for a company settlement / early or basic restructuring (47/1993) / bankruptcy; for a private individual settlement / debt adjustment (57/1993). Risks for the management of a company in crisis (recovery to the estate, liability). Includes the reference on the fundamentals of insolvency law. |
+| **bankruptcy-proceedings** | The course of a bankruptcy (konkurssilaki 120/2004): conditions, applying, the estate administrator, lodging claims, the distribution list and the order of priority of creditors (1578/1992), recovery to the estate (758/1991) – checklists for the creditor and for the debtor. |
+| **debt-collection** | The life cycle of a claim: voluntary collection under good collection practice (513/1999), managing and interrupting limitation (728/2003), judicial collection and enforcement (705/2007). |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (Finlex) varmistettu: **konkurssilaki (120/2004)**, **laki yrityksen
-saneerauksesta (47/1993)** – sisältää 2022 uudistuksen varhaisen ja perusmuotoisen
-saneerausmenettelyn – **laki yksityishenkilön velkajärjestelystä (57/1993)**,
-**ulosottokaari (705/2007)**, **laki velan vanhentumisesta (728/2003)**, **laki
-saatavien perinnästä (513/1999)**, **laki velkojien maksunsaantijärjestyksestä
-(1578/1992)** ja **laki takaisinsaannista konkurssipesään (758/1991)**. Pykälätason
-sisällöt ja määräajat tarkistetaan käytössä `legal-core:legal-research`-skillillä.
+Verified from the source (Finlex): the **Bankruptcy Act (konkurssilaki 120/2004)**, the
+**Restructuring of Enterprises Act (laki yrityksen saneerauksesta 47/1993)** – which
+includes the early and basic restructuring procedures introduced in the 2022 reform – the
+**Act on the Adjustment of the Debts of a Private Individual (laki yksityishenkilön
+velkajärjestelystä 57/1993)**, the **Enforcement Code (ulosottokaari 705/2007)**, the **Act
+on the Limitation of Debts (laki velan vanhentumisesta 728/2003)**, the **Debt Collection
+Act (laki saatavien perinnästä 513/1999)**, the **Act on the Order of Priority of Creditors
+(laki velkojien maksunsaantijärjestyksestä 1578/1992)** and the **Act on the Recovery of
+Assets to a Bankruptcy Estate (laki takaisinsaannista konkurssipesään 758/1991)**. Content
+at section level and the time limits are checked in use with the
+`legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research`, `document-review` ja `engagement-intake`
-  (määräaikaskannaus).
-- **`company-law`-plugari** – johdon vastuu ja varojenjaon maksukykytesti
-  kriisiyhtiössä.
-- **`dispute-resolution`-plugari** – riitautettu saatava ratkaistaan
-  oikeudenkäynnissä ennen täytäntöönpanoa.
-- **`employment-law`-plugari** – työsuhdesaatavat ja palkkaturva työnantajan
-  maksukyvyttömyydessä.
+- **`legal-core` domain** – `legal-research`, `document-review` and `engagement-intake`
+  (deadline scan).
+- **`company-law` domain** – directors' liability and the solvency test on distribution of
+  assets in a company in crisis.
+- **`dispute-resolution` domain** – a disputed claim is resolved in court proceedings before
+  enforcement.
+- **`employment-law` domain** – employment-related claims and pay security in the employer's
+  insolvency.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install insolvenssi@agent-skills-for-finnish-law
+/plugin install insolvency@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.

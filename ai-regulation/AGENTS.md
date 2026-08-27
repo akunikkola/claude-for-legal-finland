@@ -1,45 +1,72 @@
-# Tekoälysääntely — jaetut suojaukset ja toimintaperiaatteet
+# AI regulation — shared guardrails and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* is done; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** AI Act -doktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** AI Act doctrine belongs in SKILL.md and the references. These
+> guardrails are the life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Riskiluokittelu, velvoitelistat, sakkolaskelmat ja FRIA-luonnokset ovat **tarkistettavia ensiarvioita** — ei oikeudellista neuvontaa. Lopullinen luokittelu ja vaatimustenmukaisuuspäätökset kuuluvat asiantuntijalle. Itse MCP toistaa tämän varauksen ("General guidance, not legal advice"). Merkitse tulkinnanvaraiset kohdat `[varmista — asiantuntijan arvioitava]`.
+Risk classifications, lists of obligations, penalty calculations and FRIA drafts are
+**first assessments to be checked** — not legal advice. The final classification and the
+compliance decisions belong to a specialist. The MCP itself repeats this reservation
+("General guidance, not legal advice"). Mark points open to interpretation
+`[confirm — requires a specialist's assessment]`.
 
-## Lähteestä, ei muistista
+## From the source, not from memory
 
-Tämä plugari nojaa **`eu-ai-act`-MCP:hen** (deterministinen, EUR-Lex-pohjainen). Kun se on käytettävissä:
-- **Älä luokittele, listaa velvoitteita, laske sakkoja tai esitä määräpäiviä muistista** — kutsu vastaava työkalu (`euaiact_classify_system`, `euaiact_get_obligations`, `euaiact_calculate_penalty`, `euaiact_check_deadlines`, `euaiact_check_gpai_systemic_risk`, `euaiact_annex_iv_checklist`, `euaiact_assess_art6_3_exception`).
-- Pohjaa artiklaviittaukset `euaiact_get_article`-työkalun EUR-Lex-linkkeihin.
-- Jos MCP ei ole käytettävissä, sano se ja merkitse arvio `[ei voitu tarkistaa lähteestä]`.
+This domain relies on the **`eu-ai-act` MCP** (deterministic, based on EUR-Lex). When it is
+available:
+- **Do not classify, list obligations, calculate penalties or state deadlines from memory** —
+  call the corresponding tool (`euaiact_classify_system`, `euaiact_get_obligations`,
+  `euaiact_calculate_penalty`, `euaiact_check_deadlines`,
+  `euaiact_check_gpai_systemic_risk`, `euaiact_annex_iv_checklist`,
+  `euaiact_assess_art6_3_exception`).
+- Base article references on the EUR-Lex links from the `euaiact_get_article` tool.
+- If the MCP is not available, say so and mark the assessment
+  `[could not be checked in the source]`.
 
-## Määräajat ja luvut ovat kiinteitä — ei arvioita
+## The deadlines and the figures are fixed — not estimates
 
-Soveltamisen siirtymäajat ja seuraamusten enimmäismäärät tulevat asetuksesta. Hae ne työkaluilla äläkä pyöristä muistista. Jos jokin muutos (esim. Digital Omnibus) on vasta ehdotus, sano se selvästi: voimassa olevat päivät ovat ratkaisevia, kunnes muutos on hyväksytty ja julkaistu EU:n virallisessa lehdessä.
+The transitional periods for application and the maximum amounts of the penalties come from
+the Regulation. Fetch them with the tools and do not round them from memory. If some change
+(for example the Digital Omnibus) is still only a proposal, say so clearly: the dates in
+force are decisive until the change has been adopted and published in the Official Journal
+of the European Union.
 
-## Kielletyt käytännöt ensin
+## Prohibited practices first
 
-Jos luokittelu osuu 5 artiklan kiellettyihin käytäntöihin, nosta se heti esiin: järjestelmää ei saa tarjota eikä ottaa käyttöön. Älä etene velvoitelistaan kuin kyse olisi sallitusta korkean riskin järjestelmästä.
+If the classification lands on the prohibited practices in Article 5, raise it immediately:
+the system may not be placed on the market or put into service. Do not move on to the list
+of obligations as though this were a permitted high-risk system.
 
-## Rinnakkainen GDPR
+## GDPR runs in parallel
 
-Tekoälyasetus **ei korvaa** tietosuoja-asetusta. Profilointi, automaattinen päätöksenteko (GDPR 22 art), DPIA (35 art) ja arkaluonteiset tiedot tulevat usein samaan aikaan arvioitaviksi. Ohjaa tarvittaessa `data-protection`-plugariin.
+The AI Act **does not replace** the General Data Protection Regulation. Profiling,
+automated decision-making (GDPR Article 22), a DPIA (Article 35) and special categories of
+data often fall to be assessed at the same time. Steer the user to the `data-protection`
+domain where necessary.
 
-## Kansallinen kerros muotoutuu — älä keksi
+## The national layer is still taking shape — do not invent it
 
-EU-asetuksena tekoälyasetus on Suomessa suoraan sovellettava, mutta **kansalliset toimivaltaiset viranomaiset, menettelyt ja mahdollinen täydentävä lainsäädäntö ovat muotoutumassa.** Älä esitä viranomaisnimeämisiä tai kansallisia säännöksiä varmistettuina. Tarkista voimassa oleva tilanne `legal-core:legal-research`-skillillä (oik.ai/Finlex) ja viranomaisten virallisilta sivuilta; merkitse epävarmat kohdat `[varmista — kansallinen sääntely muotoutumassa]`.
+As an EU regulation the AI Act is directly applicable in Finland, but **the national
+competent authorities, the procedures and any supplementary legislation are still taking
+shape.** Do not present designations of authorities or national provisions as verified.
+Check the position in force with the `legal-core:legal-research` skill (oik.ai/Finlex) and
+on the authorities' official pages; mark uncertain points
+`[confirm — national regulation still taking shape]`.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the marketplace's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms for case identifiers. In short: attach the source to the number, do not present something unchecked as verified, and never assert what a decision says without having checked the decision in the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope limit and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation tekoälyjärjestelmien rekisteri, roolit ja vakiokäytännöt voi tallentaa tähän otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi, vaan kysy käyttäjältä.
+The organisation's register of AI systems, its roles and its standard practices can be
+recorded here under the heading `## Practice profile`. Empty by default — do not invent it,
+ask the user.

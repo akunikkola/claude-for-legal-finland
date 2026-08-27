@@ -1,26 +1,30 @@
 ---
 name: bankruptcy-proceedings
 description: >
-  Konkurssimenettelyn kulku Suomen konkurssilain (120/2004) mukaan velkojan
-  ja velallisen näkökulmasta. Käytä tätä skilliä, kun käyttäjä valmistelee
-  tai arvioi konkurssihakemusta, on saanut tiedon vastapuolen konkurssista,
-  valvoo saatavaa konkurssissa (valvontakirjelmä), arvioi jako-osuutta tai
-  maksunsaantijärjestystä, käsittelee takaisinsaantivaatimusta tai toimii
-  pesänhoitajan, velkojatoimikunnan tai velkojainkokouksen kanssa.
-  Triggeröi sanoista: konkurssi, konkurssihakemus, pesänhoitaja,
-  konkurssipesä, valvontapäivä, valvontakirjelmä, jakoluettelo, jako-osuus,
-  velkojainkokous, takaisinsaanti, konkurssin raukeaminen, julkisselvitys.
+  The course of bankruptcy proceedings under the Finnish Bankruptcy Act
+  (konkurssilaki 120/2004), from the creditor's and the debtor's point of
+  view. Use this skill when the user is preparing or assessing a bankruptcy
+  petition, has learned that a counterparty has gone bankrupt, is lodging a
+  claim in a bankruptcy (valvontakirjelmä), is assessing a dividend or the
+  order of priority of creditors, is handling a claim for recovery to the
+  estate, or is dealing with the estate administrator, the creditors'
+  committee or the creditors' meeting. Triggers on: bankruptcy, konkurssi,
+  bankruptcy petition, konkurssihakemus, estate administrator, pesänhoitaja,
+  bankruptcy estate, konkurssipesä, bar date, valvontapäivä, lodging a claim,
+  valvontakirjelmä, distribution list, jakoluettelo, dividend, jako-osuus,
+  creditors' meeting, velkojainkokous, recovery to the estate, takaisinsaanti,
+  lapse of bankruptcy, konkurssin raukeaminen, julkisselvitys.
 ---
 
-# Konkurssimenettely — kulku, valvonta ja jako
+# Bankruptcy proceedings — course, lodging of claims and distribution
 
-Tämä skill jäsentää konkurssin vaiheet (konkurssilaki 120/2004) ja tuottaa
-tarkistuslistat velkojalle ja velalliselle. Perusteet:
+This skill sets out the stages of a bankruptcy (konkurssilaki 120/2004) and produces
+checklists for the creditor and for the debtor. Fundamentals:
 `../insolvency-assessment/references/insolvency-fundamentals.md`.
 
-> **Vastuuvapaus:** luonnokset ja listat ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Hakemukset ja valvonnat jättää ihminen
-> määräajassa; kalenterivastuu on ihmisellä. Katso `insolvency/AGENTS.md`.
+> **Disclaimer:** the drafts and lists are to be checked — not legal advice.
+> Applications and claims are filed by a human within the time limit; calendar
+> responsibility sits with a human. See `insolvency/AGENTS.md`.
 
 ## Output language
 
@@ -32,85 +36,92 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the law in the source
 
-Hae konkurssilain sovellettavat säännökset (edellytykset, määräajat,
-menettelyvaiheet) **`legal-core:legal-research`-skillillä** ennen kuin esität
-ne varmistettuina. Tämä skill kuvaa rakenteen; pykälät ja ajat elävät.
+Fetch the applicable provisions of the Bankruptcy Act (conditions, time limits,
+procedural stages) with the **`legal-core:legal-research` skill** before you present
+them as verified. This skill describes the structure; the sections and the periods
+change.
 
-## Menettelyn kaari
+## The arc of the procedure
 
-1. **Hakemus** — velallinen itse tai velkoja (velkojan hakemuksen
-   perusteet, mm. maksukyvyttömyysolettamat ja konkurssiuhkaisen
-   maksukehotuksen käyttö: tarkista edellytykset lähteestä).
-2. **Asettaminen** — tuomioistuin asettaa konkurssiin ja määrää
-   **pesänhoitajan**; velallisen määräysvalta omaisuuteen siirtyy pesälle.
-3. **Pesäluettelo ja velallisselvitys** — pesänhoitaja laatii; velallisella
-   myötävaikutusvelvollisuus.
-4. **Saatavien valvonta** — pesänhoitaja määrää **valvontapäivän**;
-   velkojan on valvottava saatavansa kirjallisesti (jälkivalvonnan
-   edellytykset ja maksu lähteestä). **Tämä on velkojan kriittisin
-   määräpäivä.**
-5. **Jakoluettelo** — pesänhoitajan ehdotus, riitautukset, vahvistaminen
-   tuomioistuimessa.
-6. **Rahaksimuutto ja jako** — maksunsaantijärjestys (1578/1992):
-   pääsääntönä velkojien yhtäläinen asema, poikkeukset (pantti,
-   yrityskiinnitys, viimesijaiset) lähteestä.
-7. **Päättyminen** — lopputilitys; tai **raukeaminen** varojen puutteessa;
-   tai siirto **julkisselvitykseen** (konkurssiasiamies).
+1. **Petition** — by the debtor itself or by a creditor (the grounds for a creditor's
+   petition, including the presumptions of insolvency and the use of a demand for
+   payment under threat of bankruptcy: check the conditions in the source).
+2. **Adjudication** — the court adjudicates the debtor bankrupt and appoints an
+   **estate administrator** (pesänhoitaja); the debtor's power to dispose of its
+   assets passes to the estate.
+3. **Estate inventory and debtor's report** — drawn up by the estate administrator;
+   the debtor has a duty to contribute.
+4. **Lodging of claims** — the estate administrator sets the **bar date**
+   (valvontapäivä); a creditor must lodge its claim in writing (the conditions for
+   late lodging and the fee from the source). **This is the creditor's most critical
+   date.**
+5. **Distribution list** — the estate administrator's proposal, objections,
+   confirmation by the court.
+6. **Realisation and distribution** — the order of priority of creditors (1578/1992):
+   as a rule creditors rank equally, with exceptions (pledge, floating charge,
+   subordinated claims) from the source.
+7. **Conclusion** — final accounts; or **lapse** for want of assets; or transfer to
+   **public receivership** (julkisselvitys, konkurssiasiamies).
 
-## Velkojan tarkistuslista
+## Creditor's checklist
 
-- [ ] Saatavan peruste ja määrä dokumentoitu (sopimus, laskut, korot,
-      viivästyskorko eriteltyinä)
-- [ ] Vakuudet ja niiden asema selvitetty (panttivelkojan erillisasema)
-- [ ] **Valvontapäivä kalenterissa** ja valvontakirjelmä laadittu ajoissa
-      `[mallin laskelma — tarkista]`
-- [ ] Mahdollinen kuittausoikeus tarkistettu lähteestä
-- [ ] Takaisinsaantialtistus arvioitu (saadut maksut kriittisenä aikana —
+- [ ] Basis and amount of the claim documented (contract, invoices, interest, penalty
+      interest itemised separately)
+- [ ] Security and its standing established (the separate position of a secured
+      creditor)
+- [ ] **Bar date in the calendar** and the written claim prepared in good time
+      `[model calculation — check]`
+- [ ] Any right of set-off checked in the source
+- [ ] Exposure to recovery assessed (payments received during the critical period —
       758/1991)
-- [ ] Jakoluetteloehdotus tarkistettu, riitautustarve ja sen määräaika
-- [ ] Velkojainkokouksen päätösvalta ja äänestys: oma kanta valmisteltu
+- [ ] Draft distribution list reviewed, need to object and the time limit for it
+- [ ] Decision-making power and voting at the creditors' meeting: own position
+      prepared
 
-Valvontakirjelmäluonnoksen tuotat tällä skillillä; Word-muotoon ja
-muutoksiin `adeu`-MCP.
+You produce the draft written claim with this skill; for Word formatting and revisions
+use the `adeu` MCP.
 
-## Velallisen (ja sen johdon) tarkistuslista
+## Checklist for the debtor (and its management)
 
-- [ ] Myötävaikutusvelvollisuus: tiedot ja aineisto pesänhoitajalle
-- [ ] Kirjanpito luovutettu ajantasaisena
-- [ ] Pesäluettelon vahvistaminen (oikeellisuusvakuutus)
-- [ ] Liiketoiminnan jatkamisen tai luovutuksen kysymykset pesän kanssa
-- [ ] Työsuhteet: päättäminen konkurssissa ja **palkkaturva**
-      työntekijöille → `employment-law`
-- [ ] Ympäristö- ja sopimusvastuiden kartoitus
-- [ ] Johdon oma asema: takaisinsaanti, vahingonkorvaus (OYL 22 luku),
-      velallisen rikokset — ohjaa tarvittaessa omalle avustajalle
+- [ ] Duty to contribute: information and material to the estate administrator
+- [ ] Accounts handed over up to date
+- [ ] Confirmation of the estate inventory (affirmation of correctness)
+- [ ] Questions of continuing or transferring the business, with the estate
+- [ ] Employment relationships: termination in bankruptcy and **pay security**
+      (palkkaturva) for employees → `employment-law`
+- [ ] Mapping of environmental and contractual liabilities
+- [ ] The management's own position: recovery to the estate, damages (Limited
+      Liability Companies Act (osakeyhtiölaki) chapter 22), debtor's offences —
+      refer them to their own counsel where necessary
 
-## Takaisinsaanti (758/1991)
+## Recovery to the estate (758/1991)
 
-Pesänhoitaja tai velkoja voi vaatia oikeustoimen peräyttämistä.
-Jäsennä vaatimus tai puolustus: peräytettävä toimi, **kriittinen aika**
-määräpäivästä taaksepäin (ajat lähteestä; läheisillä pidemmät),
-takaisinsaantiperuste (yleinen / maksun peräytyminen / lahja ym.) ja
-palautusvelvollisuuden laajuus. Merkitse näyttökysymykset.
+The estate administrator or a creditor may demand that a transaction be set aside.
+Frame the claim or the defence: the transaction to be set aside, the **critical
+period** counted backwards from the reference date (the periods from the source;
+longer for related parties), the ground for recovery (general / setting aside of a
+payment / gift and so on) and the extent of the duty to return. Mark the questions of
+evidence.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei jätä hakemusta, valvontaa tai riitautusta** — luonnokset menevät
-  ihmiselle, joka vastaa määräajoista.
-- **Ei vahvista valvontapäivää, jälkivalvonnan ehtoja tai
-  riitautusaikoja muistista** — lähteestä tai `[tarkista]`.
-- **Ei ennusta jako-osuutta lukuna** ilman pesänhoitajan tietoja — se
-  jäsentää etuoikeusaseman.
-- **Ei toimi pesänhoitajana** eikä korvaa tämän lakisääteisiä tehtäviä.
-- **Ei avusta omaisuuden piilottamisessa pesältä** (ks. AGENTS.md
-  negatiivirajaus).
+- **It does not file a petition, a claim or an objection** — the drafts go to a human,
+  who is responsible for the time limits.
+- **It does not confirm the bar date, the conditions for late lodging or the periods
+  for objecting from memory** — from the source or `[check]`.
+- **It does not predict a dividend as a figure** without the estate administrator's
+  information — it frames the order of priority.
+- **It does not act as estate administrator** and does not replace that person's
+  statutory duties.
+- **It does not assist in hiding assets from the estate** (see the negative scope
+  limit in `insolvency/AGENTS.md`).
 
-## Jatka tästä
+## Continue from here
 
-- Menettelyn valinta ennen konkurssia → /insolvenssi:maksukyvyttomyysarvio
-- Saatavan perintä ja vanhentumisen katkaisu ennen konkurssia → /insolvenssi:saatavien-perinta
-- Säännöksen tai määräajan tarkistus → /juristi:oikeustutkimus
-- Riitautetun saatavan oikeudenkäynti → /riidanratkaisu:haastehakemus
-- Valvontakirjelmän kieliasu ja rakenne → /juristi:asiakirjan-tarkistus
+- Choice of procedure before bankruptcy → /insolvency:insolvency-assessment
+- Collecting a claim and interrupting limitation before bankruptcy → /insolvency:debt-collection
+- Checking a provision or a time limit → /legal-core:legal-research
+- Court proceedings on a disputed claim → /dispute-resolution:statement-of-claim
+- Language and structure of the written claim → /legal-core:document-review

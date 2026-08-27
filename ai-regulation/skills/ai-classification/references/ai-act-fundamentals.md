@@ -1,51 +1,56 @@
-# EU:n tekoälyasetus — perusteet ja Suomi-kerros
+# The EU Artificial Intelligence Act — fundamentals and the Finnish layer
 
-Tiivistelmä luokittelun ja velvoitteiden kannalta keskeisistä asioista. **Tarkista
-artiklat `eu-ai-act`-MCP:n työkalulla `euaiact_get_article` (EUR-Lex-linkit) ja kansallinen
-sääntely `legal-core:legal-research`-skillillä ennen kuin nojaat niihin.**
+A summary of the points that matter for classification and for the obligations. **Check the
+articles with the `euaiact_get_article` tool of the `eu-ai-act` MCP (EUR-Lex links) and the
+national regulation with the `legal-core:legal-research` skill before you rely on them.**
 
-## Sovellettava sääntely
-- **EU:n tekoälyasetus, asetus (EU) 2024/1689 ("AI Act")** — suoraan sovellettava EU-asetus.
-  Ei tarvitse kansallista täytäntöönpanoa ollakseen voimassa, mutta jäsenvaltiot nimeävät
-  kansalliset viranomaiset ja täydentävät menettelyjä.
-- Soveltaminen on **vaiheittaista** (2025–2027). Tarkista voimassa olevat määräpäivät
-  `euaiact_check_deadlines`-työkalulla — älä esitä päivämääriä muistista.
+## The applicable regulation
+- **The EU Artificial Intelligence Act, Regulation (EU) 2024/1689 (the "AI Act")** — a
+  directly applicable EU regulation. It does not need national implementation to be in
+  force, but the Member States designate the national authorities and supplement the
+  procedures.
+- Application is **staged** (2025-2027). Check the deadlines in force with the
+  `euaiact_check_deadlines` tool — do not state dates from memory.
 
-## Riskiperusteinen kehys
-- **Kielletyt käytännöt (5 art)** — esim. haitallinen manipulointi, sosiaalinen pisteytys,
-  tietyt biometrisen tunnistuksen käytöt.
-- **Korkea riski (6 art)** — kaksi reittiä: Annex I (säännellyn tuotteen turvakomponentti)
-  ja **Annex III** (luettelo aloista: biometriikka, kriittinen infrastruktuuri, koulutus,
-  työllistäminen, olennaiset palvelut, lainvalvonta, muuttoliike/raja, oikeudenkäyttö).
-  Laajat velvoitteet (9–17 art tarjoajalle, 26–27 art käyttöönottajalle).
-- **Rajoitettu riski (50 art)** — läpinäkyvyysvelvoitteet (chatbot-ilmoitus, synteettisen
-  sisällön merkintä).
-- **Minimaalinen riski** — ei erityisvelvoitteita.
-- **GPAI (51–56 art)** — yleiskäyttöiset mallit; systeemisen riskin kynnys 10²⁵ FLOPs
-  (`euaiact_check_gpai_systemic_risk`).
-- **Tekoälylukutaito (4 art)** — yleisvelvoite kaikille tarjoajille ja käyttöönottajille.
+## The risk-based framework
+- **Prohibited practices (Article 5)** — for example harmful manipulation, social scoring,
+  certain uses of biometric identification.
+- **High risk (Article 6)** — two routes: Annex I (a safety component of a regulated
+  product) and **Annex III** (a list of fields: biometrics, critical infrastructure,
+  education, employment, essential services, law enforcement, migration and borders, the
+  administration of justice). Extensive obligations (Articles 9-17 for the provider;
+  Articles 26-27 for the deployer).
+- **Limited risk (Article 50)** — transparency obligations (notification of a chatbot,
+  marking of synthetic content).
+- **Minimal risk** — no specific obligations.
+- **GPAI (Articles 51-56)** — general-purpose models; the systemic risk threshold is 10²⁵
+  FLOPs (`euaiact_check_gpai_systemic_risk`).
+- **AI literacy (Article 4)** — a general obligation for all providers and deployers.
 
-## Keskeiset velvoitevälineet
-- **Annex IV** — korkean riskin järjestelmän tekninen dokumentaatio (`euaiact_annex_iv_checklist`).
-- **FRIA, perusoikeusvaikutusten arviointi (27 art)** — tietyt käyttöönottajat; Annex III(5)(b)
-  (luottokelpoisuus/luottoluokitus) ja (5)(c) (henki-/sairausvakuutuksen riskinarviointi ja
-  hinnoittelu) laukaisevat sen. Annex III(2) (kriittinen infrastruktuuri) on ainoa Annex III
-  -kategoria, joka on vapautettu FRIA:sta.
-- **Vaatimustenmukaisuuden arviointi (43 art)** — pääosin sisäinen valvonta (Annex VI);
-  ilmoitetun laitoksen osallistuminen mm. Annex III(1) biometriikkareitillä.
-- **Seuraamukset (99 art)** — hallinnolliset sakot; pk-yrityksille/startupeille kevennys
-  (99(6)). Laske `euaiact_calculate_penalty`-työkalulla.
+## Key instruments of obligation
+- **Annex IV** — the technical documentation for a high-risk system
+  (`euaiact_annex_iv_checklist`).
+- **FRIA, the fundamental rights impact assessment (Article 27)** — for certain deployers;
+  Annex III(5)(b) (creditworthiness and credit scoring) and (5)(c) (risk assessment and
+  pricing in life and health insurance) trigger it. Annex III(2) (critical infrastructure)
+  is the only Annex III category exempt from a FRIA.
+- **Conformity assessment (Article 43)** — mainly internal control (Annex VI); the
+  involvement of a notified body on the Annex III(1) biometrics route among others.
+- **Penalties (Article 99)** — administrative fines; a reduction for SMEs and start-ups
+  (Article 99(6)). Calculate with the `euaiact_calculate_penalty` tool.
 
-## Suhde GDPR:ään
-Tekoälyasetus ja tietosuoja-asetus ovat **rinnakkaisia** — AI Act -vaatimukset eivät korvaa
-GDPR-velvoitteita. Profilointi ja automaattinen päätöksenteko (GDPR 22 art), DPIA (35 art) ja
-arkaluonteiset tiedot (9 art) tulevat usein samaan aikaan arvioitaviksi. → `data-protection`-plugari.
+## The relationship to the GDPR
+The AI Act and the General Data Protection Regulation run **in parallel** — the AI Act
+requirements do not replace the GDPR obligations. Profiling and automated decision-making
+(GDPR Article 22), a DPIA (Article 35) and special categories of data (Article 9) often fall
+to be assessed at the same time. → the `data-protection` domain.
 
-## Suomi-kerros (tarkistettava)
-EU-asetuksena tekoälyasetus on Suomessa suoraan sovellettava. **Kansallinen täytäntöönpano
-(toimivaltaiset valvontaviranomaiset, menettelyt, mahdolliset täydentävät säännökset) on
-muotoutumassa — älä esitä viranomaisnimeämisiä tai kansallisia säännöksiä varmistettuina.**
-Tarkista voimassa oleva tilanne `legal-core:legal-research`-skillillä (oik.ai/Finlex) ja
-viranomaisten virallisilta sivuilta, ja merkitse epävarmat kohdat `[varmista — kansallinen
-sääntely muotoutumassa]`. Huomioi myös toimialakohtainen valvonta (esim. rahoitusala,
-terveydenhuolto, tietosuoja).
+## The Finnish layer (to be checked)
+As an EU regulation the AI Act is directly applicable in Finland. **The national
+implementation (the competent supervisory authorities, the procedures and any supplementary
+provisions) is still taking shape — do not present designations of authorities or national
+provisions as verified.** Check the position in force with the `legal-core:legal-research`
+skill (oik.ai/Finlex) and on the authorities' official pages, and mark uncertain points
+`[confirm — national regulation still taking shape]`. Take account also of
+sector-specific supervision (in the financial sector, healthcare and data protection, for
+example).

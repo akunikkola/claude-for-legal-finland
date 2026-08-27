@@ -1,28 +1,30 @@
 ---
 name: debt-collection
 description: >
-  Saatavan perinnän elinkaari Suomen oikeuden mukaan: vapaaehtoinen perintä
-  ja hyvä perintätapa (perintälaki 513/1999), velan vanhentumisen hallinta
-  ja katkaisu (728/2003), oikeudellinen perintä ja ulosotto (ulosottokaari
-  705/2007). Käytä tätä skilliä, kun käyttäjä perii saatavaa tai
-  puolustautuu perintää vastaan: maksumuistutus, maksuvaatimus,
-  perintäkulut, tratta, vanhentumisen katkaisu, maksusopimus, summaarinen
-  velkomus, ulosottohakemus tai ulosoton rajoitukset. Triggeröi sanoista:
-  perintä, maksumuistutus, maksuvaatimus, perintäkulut, erääntynyt lasku,
-  velkomus, vanhentuminen, katkaisu, tratta, ulosotto, ulosmittaus,
+  The life cycle of collecting a claim under Finnish law: voluntary collection
+  and good collection practice (perintälaki 513/1999), managing and
+  interrupting the limitation of a debt (728/2003), judicial collection and
+  enforcement (ulosottokaari 705/2007). Use this skill when the user is
+  collecting a claim or defending against collection: payment reminder,
+  demand for payment, collection costs, tratta, interrupting limitation,
+  payment agreement, summary proceedings for a debt, application for
+  enforcement or the limits of enforcement. Triggers on: debt collection,
+  perintä, payment reminder, maksumuistutus, demand for payment,
+  maksuvaatimus, collection costs, perintäkulut, overdue invoice, erääntynyt
+  lasku, velkomus, limitation, vanhentuminen, interruption, katkaisu, tratta,
+  enforcement, ulosotto, attachment, ulosmittaus, payment default entry,
   maksuhäiriömerkintä.
 ---
 
-# Saatavien perintä — vapaaehtoisesta perinnästä ulosottoon
+# Debt collection — from voluntary collection to enforcement
 
-Tämä skill jäsentää saatavan perinnän vaiheet ja tuottaa luonnokset
-(muistutus, maksuvaatimus, katkaisuilmoitus, maksusopimus) molempien
-osapuolten näkökulmasta. Perusteet:
+This skill sets out the stages of collecting a claim and produces the drafts
+(reminder, demand for payment, notice interrupting limitation, payment agreement)
+from the point of view of both parties. Fundamentals:
 `../insolvency-assessment/references/insolvency-fundamentals.md`.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Lähettämisestä ja määräajoista vastaa ihminen. Katso
-> `insolvency/AGENTS.md`.
+> **Disclaimer:** the drafts are to be checked — not legal advice. Sending them and
+> the time limits are the responsibility of a human. See `insolvency/AGENTS.md`.
 
 ## Output language
 
@@ -31,84 +33,83 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Vaihe 0: Saatavan kunto
+## Stage 0: The state of the claim
 
-Ennen perintätoimia varmista premissit:
+Before any collection measure, confirm the premises:
 
-- **Peruste ja määrä** — sopimus, lasku, erittely; korko ja
-  viivästyskorko (korkolain mukainen — tarkista voimassa oleva
-  viitekorko lähteestä, älä muistista).
-- **Riitainen vai riidaton?** Riitautettua saatavaa ei saa periä
-  perintälain mukaisella vapaaehtoisella perinnällä kuluttajalta —
-  riitainen saatava ratkaistaan oikeudenkäynnissä →
-  `dispute-resolution:statement-of-claim`.
-- **Vanhentuminen (728/2003)** — yleinen vanhentumisaika on kolme vuotta
-  ja se on katkaistavissa; tarkista erityisajat (tuomion jälkeinen,
-  lopullinen vanhentuminen, ulosottoperusteen määräaika) lähteestä.
-  **Dokumentoi jokainen katkaisutoimi päivämäärineen.**
-- **Kuluttaja vai yritys?** Kuluttajasaatavissa perintälain kulu- ja
-  aikarajat ovat pakottavia — hae voimassa olevat enimmäismäärät
-  lähteestä (ne ovat muuttuneet, älä käytä muistinvaraisia lukuja).
+- **Basis and amount** — contract, invoice, itemisation; interest and penalty
+  interest (under korkolaki — check the reference rate in force from the source,
+  not from memory).
+- **Disputed or undisputed?** A disputed claim may not be collected from a consumer
+  by voluntary collection under the Debt Collection Act — a disputed claim is
+  resolved in court proceedings → `dispute-resolution:statement-of-claim`.
+- **Limitation (728/2003)** — the general limitation period is three years and it
+  can be interrupted; check the special periods (after a judgment, final
+  limitation, the period for an enforcement order) from the source. **Document
+  every act of interruption with its date.**
+- **Consumer or business?** In consumer claims the cost caps and time limits in the
+  Debt Collection Act are mandatory — fetch the maximum amounts in force from the
+  source (they have changed; do not use figures from memory).
 
-## Vaihe 1: Vapaaehtoinen perintä (513/1999)
+## Stage 1: Voluntary collection (513/1999)
 
-- Kulku: maksumuistutus → maksuvaatimus → (yrityssaatavissa mahdollinen
-  **tratta**) → maksusopimus tai siirto oikeudelliseen perintään.
-- **Hyvä perintätapa**: ei väärää tai harhaanjohtavaa tietoa, ei
-  kohtuuttomia kuluja, ei tarpeetonta haittaa, velallisen
-  tiedonsaantioikeus. Tarkista yksityiskohdat lähteestä.
-- Velallisen puolella: tarkista perintäkulujen lainmukaisuus, vaadi
-  erittely, riitauta perusteeton saatava kirjallisesti ja nosta esiin
-  maksusuunnitelman mahdollisuus.
+- The course: payment reminder → demand for payment → (in business claims a
+  **tratta** is possible) → payment agreement or transfer to judicial collection.
+- **Good collection practice** (hyvä perintätapa): no false or misleading
+  information, no unreasonable costs, no unnecessary harm, the debtor's right to
+  information. Check the details in the source.
+- On the debtor's side: check that the collection costs are lawful, demand an
+  itemisation, dispute an unfounded claim in writing and raise the possibility of a
+  payment plan.
 
-## Vaihe 2: Oikeudellinen perintä
+## Stage 2: Judicial collection
 
-- **Riidaton saatava**: summaarinen haastehakemus käräjäoikeuteen →
-  yksipuolinen tuomio → ulosottoperuste. Luonnostelu:
-  `dispute-resolution:statement-of-claim` (summaarinen muoto).
-- **Riitainen saatava**: täysimittainen riita-asia →
-  `dispute-resolution`-plugari.
-- Arvioi kuluriski suhteessa saatavan määrään ja velallisen maksukykyyn —
-  tuomio maksukyvyttömältä ei tuota suoritusta (→
+- **Undisputed claim**: summary application for a summons to the käräjäoikeus →
+  default judgment → enforcement order. Drafting:
+  `dispute-resolution:statement-of-claim` (summary form).
+- **Disputed claim**: full civil proceedings → `dispute-resolution` domain.
+- Weigh the cost risk against the amount of the claim and the debtor's ability to
+  pay — a judgment against an insolvent debtor produces no payment (→
   `insolvency-assessment`).
 
-## Vaihe 3: Ulosotto (705/2007)
+## Stage 3: Enforcement (705/2007)
 
-- Ulosottohakemus ulosottoperusteen (tuomio tms.) nojalla;
-  suoraan ulosottokelpoiset saatavat (mm. verot) erikseen.
-- Velallisen suoja: **suojaosuus** palkan ulosmittauksessa ja
-  erottamisetu — määrät tarkistetaan lähteestä (vahvistetaan
-  säännöllisesti uudelleen).
-- Vaihtoehdot ulosotossa: maksusuunnitelma, lykkäys, vapaakuukaudet —
-  edellytykset lähteestä.
-- **Ulosottoperusteen määräaikaisuus** ja velan lopullinen vanhentuminen:
-  tarkista ajat lähteestä ennen kuin toteat saatavan perimiskelvottomaksi.
+- Application for enforcement on the basis of an enforcement order (a judgment or
+  equivalent); claims that are directly enforceable (taxes among others) separately.
+- Protection of the debtor: the **protected portion** (suojaosuus) in the attachment
+  of wages and the right to retain essentials — the amounts are checked from the
+  source (they are re-confirmed regularly).
+- Alternatives within enforcement: payment plan, postponement, free months — the
+  conditions from the source.
+- **The time limit on an enforcement order** and the final limitation of the debt:
+  check the periods from the source before you conclude that a claim can no longer
+  be collected.
 
-## Velallisen kokonaisongelma
+## The debtor's overall problem
 
-Jos velallisella on useita velkojia ja pysyvä maksukyvyttömyys,
-yksittäinen perintäjärjestely ei riitä → ohjaa
-`insolvency-assessment`-skilliin (yritys: saneeraus/konkurssi;
-yksityishenkilö: velkajärjestely + talous- ja velkaneuvonta).
+If the debtor has several creditors and is permanently insolvent, a single
+collection arrangement is not enough → steer the user to the
+`insolvency-assessment` skill (company: restructuring or bankruptcy; private
+individual: debt adjustment plus financial and debt counselling).
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei lähetä perintäkirjeitä eikä jätä hakemuksia** — luonnokset menevät
-  ihmiselle.
-- **Ei vahvista perintäkulujen enimmäismääriä, viitekorkoa, suojaosuutta
-  tai vanhentumisen erityisaikoja muistista** — lähteestä tai
-  `[tarkista]`.
-- **Ei harjoita painostavaa tai hyvän perintätavan vastaista perintää** —
-  ei uhkauksia, ei harhaanjohtamista, ei kulujen keinotekoista
-  kasvattamista.
-- **Ei peri riitautettua kuluttajasaatavaa vapaaehtoisena perintänä** —
-  riitainen asia ohjataan tuomioistuimeen.
-- **Ei tee luottopäätöksiä eikä maksuhäiriömerkintöjä**.
+- **It does not send collection letters and does not file applications** — the
+  drafts go to a human.
+- **It does not confirm the maximum collection costs, the reference rate, the
+  protected portion or the special limitation periods from memory** — from the
+  source or `[check]`.
+- **It does not carry out coercive collection or collection contrary to good
+  collection practice** — no threats, no misleading, no artificial inflation of
+  costs.
+- **It does not collect a disputed consumer claim as voluntary collection** — a
+  disputed matter is taken to court.
+- **It does not make credit decisions or payment default entries**.
 
-## Jatka tästä
+## Continue from here
 
-- Velallisen kokonaistilanne ja menettelyn valinta → /insolvenssi:maksukyvyttomyysarvio
-- Velallinen konkurssissa: saatavan valvonta → /insolvenssi:konkurssimenettely
-- Summaarinen tai riitainen velkomus → /riidanratkaisu:haastehakemus
-- Vanhentumissäännöksen tarkistus lähteestä → /juristi:oikeustutkimus
-- Maksusopimusluonnoksen viimeistely → /sopimukset:sopimuksen-laatiminen
+- The debtor's overall situation and the choice of procedure → /insolvency:insolvency-assessment
+- Debtor in bankruptcy: lodging the claim → /insolvency:bankruptcy-proceedings
+- Summary or disputed proceedings for a debt → /dispute-resolution:statement-of-claim
+- Checking a limitation provision in the source → /legal-core:legal-research
+- Finalising a draft payment agreement → /contracts:contract-drafting

@@ -1,92 +1,94 @@
-# Ympäristö- ja kaavoitusoikeuden perusteet
+# Fundamentals of environmental and planning law
 
-**Vahvistettu lähteestä (Finlex ja viranomaislähteet, 2026-06):** alla
-mainitut säädösnumerot, säädösten nimenmuutokset ja viranomaisuudistus on
-tarkistettu. Luvanvaraisuuskynnykset, määräajat ja menettelyjen
-yksityiskohdat tarkistetaan aina käyttöhetkellä
-`legal-core:legal-research`-skillillä.
+**Confirmed from the source (Finlex and official sources, 2026-06):** the statute numbers
+named below, the changes of statute names and the reform of the authorities have been
+checked. The thresholds for permit obligation, the time limits and the details of the
+procedures are always checked at the moment of use with the `legal-core:legal-research`
+skill.
 
-## Keskeiset säädökset — huomaa tuoreet uudistukset
+## Key statutes — note the recent reforms
 
-- **Ympäristönsuojelulaki (527/2014, "YSL")** — pilaantumisen torjunta:
-  ympäristöluvat, ilmoitukset, rekisteröinti, valvonta, hallintopakko,
-  maaperän ja pohjaveden pilaamiskiellot.
-- **Alueidenkäyttölaki (132/1999)** — **vanhan maankäyttö- ja
-  rakennuslain uusi nimi** (vahvistettu): kaavajärjestelmä ja alueiden
-  käytön suunnittelu. Älä käytä nimeä "maankäyttö- ja rakennuslaki"
-  voimassa olevana.
-- **Rakentamislaki (751/2023)** — rakentamisen luvat ja vastuut
-  (vahvistettu): **rakentamislupa** (korvasi rakennusluvan ja
-  toimenpideluvan), purkamislupa, maisematyölupa, sijoittamislupa sekä
-  ilmastoselvitys (hiilijalanjälki ja hiilikädenjälki).
-- **Luonnonsuojelulaki (9/2023)** — **korvasi vanhan luonnonsuojelulain
-  (1096/1996)** (vahvistettu): lajien ja luontotyyppien suoja, Natura
-  2000, poikkeusluvat.
-- **Vesilaki (587/2011)** — vesitaloushankkeet ja vesiluvat.
-- **Jätelaki (646/2011)** — jätehuolto, tuottajavastuu, etusijajärjestys.
-- **Laki ympäristövaikutusten arviointimenettelystä (252/2017, "YVA")** —
-  hankkeiden ympäristövaikutusten arviointi ennen lupaa.
-- **Laki ympäristövahinkojen korvaamisesta (737/1994)** — ankara
-  korvausvastuu ympäristövahingosta.
+- **Environmental Protection Act (ympäristönsuojelulaki 527/2014, "YSL")** — prevention of
+  pollution: environmental permits, notifications, registration, supervision,
+  administrative enforcement, the prohibitions on contaminating soil and groundwater.
+- **Land Use Act (alueidenkäyttölaki 132/1999)** — **the new name of the old maankäyttö- ja
+  rakennuslaki** (confirmed): the planning system and the planning of land use. Do not use
+  the name "maankäyttö- ja rakennuslaki" as the one in force.
+- **Building Act (rakentamislaki 751/2023)** — building permits and responsibilities
+  (confirmed): **rakentamislupa** (the building permit, which replaced the building permit
+  and the action permit), purkamislupa (demolition permit), maisematyölupa (landscape work
+  permit), sijoittamislupa (siting permit), and the climate report (carbon footprint and
+  carbon handprint).
+- **Nature Conservation Act (luonnonsuojelulaki 9/2023)** — **replaced the old
+  luonnonsuojelulaki (1096/1996)** (confirmed): protection of species and habitat types,
+  Natura 2000, derogation permits.
+- **Water Act (vesilaki 587/2011)** — water management projects and water permits.
+- **Waste Act (jätelaki 646/2011)** — waste management, producer responsibility, the waste
+  hierarchy.
+- **Act on Environmental Impact Assessment Procedure (laki ympäristövaikutusten
+  arviointimenettelystä 252/2017, "YVA")** — assessment of the environmental impact of
+  projects before the permit.
+- **Act on Compensation for Environmental Damage (laki ympäristövahinkojen korvaamisesta
+  737/1994)** — strict liability in damages for environmental damage.
 
-## Viranomaiskenttä 2026 — kokonaan uusi
+## The authorities in 2026 — entirely new
 
-**Lupa- ja valvontavirasto (LVV, lvv.fi) aloitti 1.1.2026** ja siihen
-koottiin aluehallintovirastojen (AVI), ELY-keskusten ja Valviran
-tehtävät (vahvistettu valtioneuvoston ja LVV:n lähteistä). Ympäristöasioissa:
+**Lupa- ja valvontavirasto (LVV, lvv.fi) began on 1 January 2026** and brought together the
+tasks of the regional state administrative agencies (AVI), the ELY centres and Valvira
+(confirmed from government and LVV sources). In environmental matters:
 
-- **LVV** — valtion ympäristö- ja vesiluvat, ympäristövalvonta,
-  luonnonsuojelu, YVA-yhteysviranomaistehtävät, alueidenkäytön
-  valtion tehtävät.
-- **Kunnan ympäristönsuojeluviranomainen** — pienempien toimintojen
-  luvat ja valvonta (työnjako YSL:n ja asetusten mukaan — lähteestä).
-- **Kunta** — kaavoitusmonopoli (valtuusto hyväksyy kaavat) ja
-  rakennusvalvonta (rakentamisluvat).
-- **Tukes, Säteilyturvakeskus ym.** — erityisalojen rinnakkaiset luvat.
-- Vireillä olleiden asioiden siirtymäjärjestelyt: tarkista lähteestä.
+- **LVV** — the State's environmental and water permits, environmental supervision, nature
+  conservation, the EIA coordinating authority tasks, and the State's tasks in land use.
+- **The municipal environmental protection authority** — permits and supervision for
+  smaller activities (the division of work under the Environmental Protection Act and the
+  decrees — from the source).
+- **The municipality** — the planning monopoly (the council approves the plans) and
+  building control (building permits).
+- **Tukes, the Radiation and Nuclear Safety Authority and others** — parallel permits in
+  special fields.
+- Transitional arrangements for matters that were already pending: check from the source.
 
-## Lupien ja menettelyjen kartta
+## Map of permits and procedures
 
-| Menettely | Laki | Tyypillinen kohde |
+| Procedure | Act | Typical subject |
 |---|---|---|
-| Ympäristölupa | YSL | teollisuuslaitos, jätteenkäsittely, eläinsuoja — luvanvaraisuus YSL:n laitosluettelosta (lähteestä) |
-| Ilmoitus / rekisteröinti | YSL | kevyemmät toiminnot |
-| Vesilupa | vesilaki | vesirakentaminen, vedenotto, ruoppaus |
-| YVA | 252/2017 | suurhankkeet (hankeluettelo + tapauskohtainen päätös) — arviointi ennen lupaa |
-| Natura-arviointi | 9/2023 | hankkeet, jotka voivat heikentää Natura-arvoja |
-| Rakentamislupa | 751/2023 | rakennukset; kynnys lähteestä |
-| Poikkeamispäätös | alueidenkäyttölaki/751/2023 | kaavasta poikkeaminen |
-| Maa-aineslupa | maa-aineslaki | ottotoiminta |
+| Environmental permit | YSL | industrial installation, waste treatment, animal shelter — permit obligation from the list of installations in the Act (from the source) |
+| Notification / registration | YSL | lighter activities |
+| Water permit | vesilaki | water construction, water abstraction, dredging |
+| EIA | 252/2017 | large projects (the project list plus a case-by-case decision) — assessment before the permit |
+| Natura assessment | 9/2023 | projects that may impair Natura values |
+| Building permit | 751/2023 | buildings; the threshold from the source |
+| Derogation decision | alueidenkäyttölaki/751/2023 | derogation from a plan |
+| Land extraction permit | maa-aineslaki | extraction activity |
 
-Sama hanke tarvitsee usein **useita rinnakkaisia menettelyjä** — laadi
-lupakartta aikajanalle (YVA ensin, sitten luvat).
+The same project often needs **several parallel procedures** — draw up a map of permits on
+a timeline (EIA first, then the permits).
 
-## Periaatteet
+## Principles
 
-- **Aiheuttamisperiaate** — pilaaja maksaa.
-- **Varovaisuus- ja ennaltaehkäisyperiaate**; paras käyttökelpoinen
-  tekniikka (BAT) lupaharkinnassa (EU:n teollisuuspäästödirektiivin
-  BAT-päätelmät sitovat — lähteestä).
-- **Pilaamiskiellot**: maaperän ja pohjaveden pilaamiskielto (YSL) ovat
-  ehdottomia.
-- **Osallistuminen**: kuulutus, muistutukset ja mielipiteet,
-  valitusoikeus asianosaisilla ja järjestöillä — ajat ja oikeudet
-  lähteestä.
+- **The polluter pays principle** — the polluter pays.
+- **The precautionary and prevention principles**; the best available techniques (BAT) in
+  permit consideration (the BAT conclusions under the EU Industrial Emissions Directive are
+  binding — from the source).
+- **Prohibitions on contamination**: the prohibitions on contaminating soil and groundwater
+  (YSL) are absolute.
+- **Participation**: public notice, objections and opinions, the right of appeal for parties
+  and for associations — the periods and the rights from the source.
 
-## Muutoksenhaku
+## Appeals
 
-Ympäristö- ja vesiasioiden valitukset on perinteisesti keskitetty
-**Vaasan hallinto-oikeuteen** ja kaava- ja rakentamisasiat menevät
-alueellisiin hallinto-oikeuksiin; jatkovalitus KHO:hon (valituslupa).
-**Tarkista reitit ja valitusajat lähteestä** — viranomaisuudistuksen
-siirtymäsäännökset voivat vaikuttaa. Yleiset opit:
+Appeals in environmental and water matters have traditionally been concentrated in the
+**Vaasa Administrative Court**, while planning and building matters go to the regional
+administrative courts; a further appeal lies to KHO (leave to appeal required).
+**Check the routes and the appeal periods from the source** — the transitional provisions
+of the reform of the authorities may have an effect. General doctrine:
 `administrative-law:administrative-appeal`.
 
-## Tyypilliset riskipisteet
+## Typical risk points
 
-- Vanhentuneet nimet: "maankäyttö- ja rakennuslaki", "rakennuslupa",
-  "ELY-keskus", "AVI", vanha luonnonsuojelulaki.
-- Toiminnan muutos ilman luvan muutostarpeen arviointia.
-- YVA:n tai Natura-arvioinnin ohittaminen → lupa kaatuu valituksessa.
-- Osallistumisikkunan (muistutus, valitus) ohitus.
-- Pilaantuneen maaperän selvittämättä jättäminen kiinteistökaupassa.
+- Outdated names: "maankäyttö- ja rakennuslaki", "rakennuslupa", "ELY-keskus", "AVI", the
+  old luonnonsuojelulaki.
+- A change of activity without assessing whether the permit needs to be amended.
+- Bypassing the EIA or the Natura assessment → the permit falls on appeal.
+- Missing the window for participation (objection, appeal).
+- Failing to investigate contaminated soil in a real property sale.

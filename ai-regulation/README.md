@@ -1,39 +1,40 @@
-# Tekoälysääntely
+# AI regulation
 
-EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") noudattaminen suomalaisessa
-kontekstissa.
+Compliance with the EU Artificial Intelligence Act (Regulation (EU) 2024/1689, the "AI
+Act") in a Finnish context.
 
-> **Riskiluokittelu, velvoitteet, sakkolaskelmat ja FRIA-luonnokset ovat tarkistettavia
-> ensiarvioita – ei oikeudellista neuvontaa.** Katso [`AGENTS.md`](AGENTS.md).
+> **Risk classifications, obligations, penalty calculations and FRIA drafts are first
+> assessments to be checked – not legal advice.** See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **tekoaly-luokittelu** | Riskiluokittelu (kielletty / korkea / rajoitettu / minimaalinen), Annex III -kategoria, rooli ja relevantit artiklat. Sisältää AI Act -perusteiden referenssin + Suomi-kerroksen. |
-| **tekoaly-velvoitteet** | Velvoitteet roolin (tarjoaja/käyttöönottaja) ja riskiluokan mukaan + Annex IV tekninen dokumentaatio. |
-| **tekoaly-vaatimustenmukaisuus** | Soveltamisen määräajat, seuraamukset (Art. 99), GPAI:n systeemisen riskin kynnys (10²⁵ FLOPs) ja perusoikeusvaikutusten arviointi (FRIA, Art. 27). |
+| **ai-classification** | Risk classification (prohibited / high / limited / minimal), the Annex III category, the role and the relevant articles. Includes the reference on the fundamentals of the AI Act plus the Finnish layer. |
+| **ai-obligations** | The obligations by role (provider/deployer) and risk class, plus the Annex IV technical documentation. |
+| **ai-compliance** | The deadlines for application, the penalties (Article 99), the threshold for systemic risk in a GPAI model (10²⁵ FLOPs) and the fundamental rights impact assessment (FRIA, Article 27). |
 
-## Tietolähde (`.mcp.json`)
+## Data source (`.mcp.json`)
 
 - **EU AI Act MCP** ([`@lexbeam-software/eu-ai-act-mcp`](https://github.com/lexbeam-software/eu-ai-act-mcp)) –
-  avoin (MIT), **deterministinen** (ei LLM:ää silmukassa), EUR-Lex-pohjaiset sitaatit.
-  Pyörii **paikallisesti npx:llä, ei vaadi tiliä**. Antaa 9 työkalua tekoälyasetukseen
-  (luokittelu, velvoitteet, määräajat, sakot, GPAI, FRIA).
-- **oik.ai** – kansallisen täytäntöönpanon ja toimivaltaisten viranomaisten tarkistukseen
-  (vaatii oik.ai-tilin).
+  open (MIT), **deterministic** (no LLM in the loop), citations based on EUR-Lex.
+  Runs **locally with npx and requires no account**. Provides nine tools for the AI Act
+  (classification, obligations, deadlines, penalties, GPAI, FRIA).
+- **oik.ai** – for checking the national implementation and the competent authorities
+  (requires an oik.ai account).
 
-## Liittyy
+## Related
 
-- **`data-protection`-plugari** – tekoälyasetus ja GDPR ovat rinnakkaisia (profilointi, automaattiset päätökset, DPIA).
-- **`legal-core`-plugari** – `legal-research` kansallisen kerroksen tarkistukseen.
+- **`data-protection` domain** – the AI Act and the GDPR run in parallel (profiling,
+  automated decisions, DPIA).
+- **`legal-core` domain** – `legal-research` for checking the national layer.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install tekoalysaantely@agent-skills-for-finnish-law
+/plugin install ai-regulation@agent-skills-for-finnish-law
 ```
 
-EU AI Act -MCP käynnistyy automaattisesti npx:llä (vaatii Node.js:n). oik.ai-konnektori:
-katso juuren [QUICKSTART.md](../QUICKSTART.md).
+The EU AI Act MCP starts automatically with npx (requires Node.js). oik.ai connector: see
+[QUICKSTART.md](../QUICKSTART.md) at the repository root.

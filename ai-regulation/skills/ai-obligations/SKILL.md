@@ -1,21 +1,22 @@
 ---
 name: ai-obligations
 description: >
-  Tekoälyasetuksen (EU 2024/1689) velvoitteiden selvittäminen roolin (tarjoaja/
-  käyttöönottaja) ja riskiluokan mukaan sekä korkean riskin järjestelmän teknisen
-  dokumentaation (Annex IV) kokoaminen. Käytä tätä skilliä, kun tekoälyjärjestelmän
-  riskiluokka on tiedossa ja käyttäjä haluaa tietää, mitä velvoitteita siihen kohdistuu,
-  mitä dokumentaatiota tarvitaan, mitä tarjoajan tai käyttöönottajan on tehtävä, tai
-  mainitsee Annex IV:n, teknisen dokumentaation, laadunhallinnan tai GPAI-velvoitteet.
+  Establishing the obligations under the AI Act (EU 2024/1689) by role
+  (provider/deployer) and risk class, and compiling the technical documentation
+  for a high-risk system (Annex IV). Use this skill when the risk class of an AI
+  system is known and the user wants to know what obligations apply to it, what
+  documentation is required, what the provider or the deployer has to do, or when
+  the user mentions Annex IV, technical documentation, quality management or GPAI
+  obligations.
 ---
 
-# Tekoälyasetuksen velvoitteet roolin ja riskiluokan mukaan
+# AI Act obligations by role and risk class
 
-Tämä skill kokoaa tekoälyjärjestelmään kohdistuvat velvoitteet, kun riskiluokka on tiedossa
-(jos ei ole, käytä ensin `ai-classification`-skilliä).
+This skill compiles the obligations that apply to an AI system once the risk class is known
+(if it is not, use the `ai-classification` skill first).
 
-> **Vastuuvapaus:** velvoitelistat ovat tarkistettavia luonnoksia — ei oikeudellista
-> neuvontaa. Katso `ai-regulation/AGENTS.md`. Perusteet: `../ai-classification/references/ai-act-fundamentals.md`.
+> **Disclaimer:** the lists of obligations are drafts to be checked — not legal
+> advice. See `ai-regulation/AGENTS.md`. Fundamentals: `../ai-classification/references/ai-act-fundamentals.md`.
 
 ## Output language
 
@@ -24,66 +25,69 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Käytä EU AI Act -MCP:tä
+## Use the EU AI Act MCP
 
-- **`euaiact_get_obligations`** — anna **rooli** (provider/deployer) ja **riskiluokka**;
-  palauttaa konkreettiset velvoitteet, mukaan lukien GPAI (51–56 art) ja yleinen
-  tekoälylukutaito (4 art).
-- **`euaiact_annex_iv_checklist`** — palauttaa korkean riskin järjestelmän teknisen
-  dokumentaation yhdeksän kohtaa, halutessa markdown-tarkistuslistana, pk-yrityksen
-  kevennysmaininnalla.
-- **`euaiact_get_article`** — artiklan tiivistelmä ja EUR-Lex-linkki sitaattiin.
+- **`euaiact_get_obligations`** — give the **role** (provider/deployer) and the **risk
+  class**; it returns the concrete obligations, including GPAI (Articles 51-56) and the
+  general AI literacy obligation (Article 4).
+- **`euaiact_annex_iv_checklist`** — returns the nine points of the technical documentation
+  for a high-risk system, as a markdown checklist if desired, with a note on the relief for
+  small enterprises.
+- **`euaiact_get_article`** — the summary of an article and the EUR-Lex link for the
+  citation.
 
-Älä luettele velvoitteita muistinvaraisesti, kun MCP on käytettävissä.
+Do not list obligations from memory when the MCP is available.
 
 ---
 
-## Työnkulku
+## Workflow
 
-### 1. Varmista rooli ja riskiluokka
-- **Tarjoaja (provider)** kehittää järjestelmän tai saattaa sen markkinoille omalla nimellään.
-- **Käyttöönottaja (deployer)** käyttää järjestelmää ammattitoiminnassaan.
-- Sama organisaatio voi olla molempia eri järjestelmissä. Korkean riskin järjestelmän
-  olennainen muuttaminen voi tehdä käyttöönottajasta tarjoajan (25 art) — nosta tämä esiin.
+### 1. Confirm the role and the risk class
+- The **provider** develops the system or places it on the market under its own name.
+- The **deployer** uses the system in the course of its professional activity.
+- The same organisation can be both, for different systems. A substantial modification of a
+  high-risk system can turn a deployer into a provider (Article 25) — raise this.
 
-### 2. Hae velvoitteet
-Kutsu `euaiact_get_obligations` roolilla ja riskiluokalla. Tyypilliset korkean riskin
-velvoitteet:
-- **Tarjoaja:** riskienhallintajärjestelmä (9 art), datanhallinta (10 art), tekninen
-  dokumentaatio (11 art + Annex IV), lokitus (12 art), läpinäkyvyys ja ohjeet (13 art),
-  ihmisen valvonta (14 art), tarkkuus/robustius/kyberturva (15 art), laadunhallinta (17 art),
-  vaatimustenmukaisuuden arviointi (43 art) ja rekisteröinti (49 art).
-- **Käyttöönottaja:** käyttö ohjeiden mukaan ja ihmisen valvonta (26 art), tietyissä
-  tapauksissa **perusoikeusvaikutusten arviointi FRIA (27 art)**.
+### 2. Fetch the obligations
+Call `euaiact_get_obligations` with the role and the risk class. Typical high-risk
+obligations:
+- **Provider:** risk management system (Article 9), data governance (Article 10), technical
+  documentation (Article 11 plus Annex IV), logging (Article 12), transparency and
+  instructions (Article 13), human oversight (Article 14), accuracy, robustness and
+  cybersecurity (Article 15), quality management (Article 17), conformity assessment
+  (Article 43) and registration (Article 49).
+- **Deployer:** use in accordance with the instructions and human oversight (Article 26),
+  and in certain cases a **fundamental rights impact assessment, FRIA (Article 27)**.
 
-### 3. Kokoa tekninen dokumentaatio (korkea riski)
-Käytä `euaiact_annex_iv_checklist`. Käy yhdeksän kohtaa läpi ja tunnista, mitä
-organisaatiolla on jo ja mitä puuttuu. Tuota tarkistuslista.
+### 3. Compile the technical documentation (high risk)
+Use `euaiact_annex_iv_checklist`. Go through the nine points and identify what the
+organisation already has and what is missing. Produce a checklist.
 
-### 4. GPAI-velvoitteet
-Yleiskäyttöisille malleille hae velvoitteet roolilla "provider" ja huomioi systeemisen
-riskin lisävelvoitteet (55 art) — tarkista kynnys `ai-compliance`-skillin
-`euaiact_check_gpai_systemic_risk`-työkalulla.
+### 4. GPAI obligations
+For general-purpose models, fetch the obligations with the role "provider" and take account
+of the additional obligations for systemic risk (Article 55) — check the threshold with the
+`euaiact_check_gpai_systemic_risk` tool in the `ai-compliance` skill.
 
-### 5. Raportoi
-Tuota velvoitelista ryhmiteltynä (tarjoaja / käyttöönottaja), artiklaviittaukset EUR-Lex-
-linkein, ja Annex IV -tarkistuslista korkean riskin tapauksessa. Erota **mitä on jo
-olemassa** ja **mitä puuttuu**. Merkitse tulkinnanvaraiset `[varmista — asiantuntijan
-arvioitava]`. Muistuta tarvittaessa GDPR-rinnakkaisuudesta (`data-protection`-plugari) ja
-kansallisen kerroksen tarkistuksesta.
+### 5. Report
+Produce the list of obligations grouped by role (provider / deployer), the article
+references with EUR-Lex links, and the Annex IV checklist in a high-risk case. Distinguish
+**what already exists** from **what is missing**. Mark points open to interpretation
+`[confirm — requires a specialist's assessment]`. Where relevant, remind the user that the
+GDPR runs in parallel (the `data-protection` domain) and that the national layer has to be
+checked.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tee lopullista vaatimustenmukaisuuspäätöstä.** Kokoaa tarkistettavan velvoiteluonnoksen roolin ja riskiluokan mukaan; sitova arvio velvoitteiden täyttymisestä kuuluu asiantuntijalle.
-- **Ei määritä riskiluokkaa.** Edellyttää, että luokka ja rooli (tarjoaja/käyttöönottaja) ovat jo tiedossa — luokittelu tehdään erillisessä skillissä.
-- **Ei laske määräpäiviä eikä sakkoja muistista.** Velvoitteiden voimaantulon siirtymäajat ja rikkomusten enimmäisseuraamukset haetaan eu-ai-act-MCP:n työkaluilla (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `ai-compliance`.
-- **Ei ratkaise GPAI-mallin systeemisen riskin kynnystä.** 10²⁵ FLOPs -kynnys ja 55 art lisävelvoitteet tarkistetaan `euaiact_check_gpai_systemic_risk`-työkalulla.
-- **Ei vahvista kansallisia viranomaisnimeämisiä eikä rekisteröinnin yksityiskohtia.** Suomen toimivaltaiset viranomaiset ja menettelyt ovat muotoutumassa — merkitse `[varmista — kansallinen sääntely muotoutumassa]`.
-- **Ei laadi teknistä dokumentaatiota puolestasi.** Tuottaa Annex IV -tarkistuslistan ja tunnistaa puuttuvat osat, mutta sisällön kirjoittaminen jää organisaatiolle.
+- **It does not make the final compliance decision.** It compiles a draft list of obligations by role and risk class, to be checked; the binding assessment of whether the obligations are met belongs to a specialist.
+- **It does not determine the risk class.** It requires the class and the role (provider/deployer) to be known already — the classification is done in a separate skill.
+- **It does not calculate deadlines or penalties from memory.** The transitional periods for the obligations to take effect and the maximum sanctions for infringements are fetched with the tools of the eu-ai-act MCP (`euaiact_check_deadlines`, `euaiact_calculate_penalty`) → `ai-compliance`.
+- **It does not resolve the systemic risk threshold for a GPAI model.** The 10²⁵ FLOPs threshold and the additional obligations under Article 55 are checked with the `euaiact_check_gpai_systemic_risk` tool.
+- **It does not confirm designations of national authorities or the details of registration.** The Finnish competent authorities and the procedures are still taking shape — mark this `[confirm — national regulation still taking shape]`.
+- **It does not draft the technical documentation for you.** It produces the Annex IV checklist and identifies the missing parts, but writing the content is left to the organisation.
 
-## Jatka tästä
+## Continue from here
 
-- Jos riskiluokka tai rooli on vielä auki, palaa luokitteluun → /tekoalysaantely:tekoaly-luokittelu
-- Voimaantulon määräajat, sakkojen enimmäismäärät, GPAI-kynnys ja FRIA-tarve → /tekoalysaantely:tekoaly-vaatimustenmukaisuus
-- Rinnakkainen henkilötietojen käsittelyn, profiloinnin tai DPIA:n arvio → /tietosuoja:tietosuoja-arviointi
-- Kansallisen sääntelytilanteen ja viranomaisnimeämisten tarkistus → /juristi:oikeustutkimus
+- If the risk class or the role is still open, go back to the classification → /ai-regulation:ai-classification
+- The deadlines for entry into force, the maximum penalties, the GPAI threshold and the need for a FRIA → /ai-regulation:ai-compliance
+- A parallel assessment of the processing of personal data, profiling or a DPIA → /data-protection:data-protection-assessment
+- Checking the national regulatory position and the designation of authorities → /legal-core:legal-research
