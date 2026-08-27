@@ -1,57 +1,71 @@
-# Lausunnot — jaetut suojaukset ja toimintaperiaatteet
+# Consultation statements — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** oikea toiminta kuuluu SKILL.md:hen. Nämä suojaukset ovat henkivakuutus, eivät ensisijainen mekanismi.
-
----
-
-## Luonnos, jonka vastuuhenkilö hyväksyy
-
-Lausunto on **luonnos**, jonka lausunnonantajan vastuuhenkilö tarkistaa ja hyväksyy
-ennen lähettämistä. Skill ei päätä organisaation kantaa.
-
-- **Arvolatautuneet ja poliittiset kannanotot** jätetään päättäjien täydennettäväksi, jos asiasta on erimielisyyttä. Kirjoita tällöin neutraalin asiantuntevasti.
-- Älä esitä organisaation kantaa varmistettuna, ellei käyttäjä ole sitä vahvistanut.
+> **Design principle:** correct behaviour belongs in SKILL.md. These safeguards are life insurance, not the primary mechanism.
 
 ---
 
-## Voimassa olevan lain tarkistus lähteestä
+## A draft that a human approves
 
-Lausunnon uskottavuus rakentuu täsmällisille lakiviittauksille. Kun lausunto vertaa
-ehdotusta voimassa olevaan lakiin tai viittaa pykälään:
+A consultation statement (lausunto) is a **draft** that the respondent's responsible officer
+reviews and approves before it is submitted. The skill does not decide the organisation's
+position.
 
-- **Käytä `legal-core`-plugarin `legal-research`-skilliä** ja hae voimassa oleva sanamuoto oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista.
-- Erota selvästi **voimassa oleva oikeus**, **ehdotettu muutos** ja **lausunnonantajan kanta**.
-- Älä keksi säädös-, pykälä- tai HE-numeroita.
-
----
-
-## Vaikutusarviot: merkitse arviot arvioiksi
-
-Taloudelliset ja muut vaikutusluvut ovat lausunnon vahvin argumentti — ja samalla altein virhelähde.
-
-- Merkitse arvioidut luvut selvästi: `[arvio — varmista organisaation taloushallinnosta]`. Älä esitä arvioitua euromäärää varmistettuna lukuna.
-- Suhteuta vaikutukset lausunnonantajan profiiliin (`references/respondent-profile.md`). Jos profiili puuttuu, kysy taustatiedot — älä keksi organisaation kokoa, taloutta tai resursseja.
-- Vastustamisen rinnalle aina konkreettinen vaihtoehto.
+- **Value-laden and political positions** are left for the decision-makers to complete if there is disagreement within the organisation. Write in a neutral, expert register in that case.
+- Do not present the organisation's position as settled unless the user has confirmed it.
 
 ---
 
-## EU-tausta ja kansallinen liikkumavara
+## Check the law in force against the source
 
-Jos lakiehdotus perustuu EU-säädökseen, erota mikä on **pakollista** (suoraan EU-säädöksestä) ja mikä **kansallista liikkumavaraa**. Kohdista muutosesitykset kansalliseen toimeenpanoon. Älä esitä muutosta sellaiseen, joka tulee suoraan sitovasta EU-asetuksesta.
+The credibility of a statement rests on precise references to legislation. When the statement
+compares the proposal with the law in force or cites a section:
+
+- **Use the `legal-research` skill in the `legal-core` domain** and retrieve the wording in force from the oik.ai/Finlex MCP. Do not confirm a legislative reference from memory.
+- Distinguish clearly between **the law in force**, **the proposed change** and **the respondent's own position**.
+- Do not invent statute numbers, section numbers or HE numbers.
 
 ---
 
-## Jaetut standardit
+## Impact assessments: mark estimates as estimates
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+Financial and other impact figures are the strongest argument in a statement — and at the same
+time the most likely source of error.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+- Mark estimated figures clearly: `[estimate — confirm with the organisation's finance function]`. Do not present an estimated euro figure as a confirmed number.
+- Relate the impacts to the respondent's profile (`references/respondent-profile.md`). If the profile is missing, ask for the background information — do not invent the organisation's size, finances or resources.
+- Always pair opposition with a concrete alternative.
 
-## Käytäntöprofiili (valinnainen)
+---
 
-Lausunnonantajan pysyvät taustatiedot ja vakiolinjaukset voi tallentaa tähän tiedostoon
-otsikon `## Käytäntöprofiili` alle, jolloin skillit lukevat ne joka kerta. Oletuksena
-tyhjä — älä keksi tietoja, vaan kysy käyttäjältä.
+## EU background and national discretion
+
+If the bill is based on an EU instrument, separate what is **mandatory** (flowing directly from
+the EU instrument) from what falls within **national discretion**. Aim proposed amendments at the
+national implementation. Do not propose amending something that follows directly from a binding
+EU regulation.
+
+---
+
+## Shared standards
+
+For references to legislation, case law and preparatory works, follow the marketplace's shared
+source standard in [`references/citation-style.md`](../references/citation-style.md):
+three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and
+the correct forms of case identifiers. In short: attach the source to the number, do not present
+something unchecked as verified, and never assert what a decision says without having checked the
+decision against the source.
+
+On liability, professional ethics (confidentiality, disqualification, who may represent whom) and
+data handling (GDPR Article 28 processing agreement, anonymisation before analysis):
+[`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer
+alone is not protection** — protection comes from source verification, certainty marking, checking
+the premises, negative scoping and the human review gate.
+
+## Practice profile (optional)
+
+The respondent's standing background information and settled positions can be stored in this file
+under the heading `## Practice profile`, and the skills will then read them every time. Empty by
+default — do not invent details, ask the user.

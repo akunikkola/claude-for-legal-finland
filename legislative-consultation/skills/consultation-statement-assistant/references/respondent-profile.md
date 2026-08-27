@@ -1,44 +1,44 @@
-# Lausunnonantajan profiili — mallipohja
+# The respondent's profile — template
 
-Tämä on **tyhjä mallipohja**. Täytä lausunnonantajan (kunnan, kaupungin, kuntayhtymän,
-viraston, järjestön tai yrityksen) tiedot tähän, niin lausuntoapuri osaa arvioida
-vaikutuksia juuri tämän organisaation näkökulmasta. Mitä tarkemmat tiedot, sitä
-konkreettisemmat vaikutusarviot.
+This is an **empty template**. Fill in the details of the respondent (municipality, city, joint
+municipal authority, government agency, association or company) here, and the consultation
+statement assistant will be able to assess impacts from this particular organisation's point of
+view. The more precise the details, the more concrete the impact assessments.
 
-> **Ohje skillille:** jos tämä profiili on täyttämättä, kysy käyttäjältä keskeiset
-> tiedot (organisaation tyyppi, koko, toimiala/painopisteet, resurssitilanne, erityispiirteet)
-> ennen vaikutusten arviointia. Älä keksi lukuja — merkitse arviot `[arvio — varmista]`.
-> Tämän voi myös tallentaa pysyvästi plugarin käytäntöprofiiliin (`legislative-consultation/AGENTS.md`).
+> **Instruction to the skill:** if this profile has not been filled in, ask the user for the key
+> details (type of organisation, size, sector and priorities, resourcing, distinctive features)
+> before assessing impacts. Do not invent figures — mark estimates `[estimate — confirm]`.
+> This can also be stored permanently in the domain's practice profile
+> (`legislative-consultation/AGENTS.md`).
 
-## Perustiedot
+## Basic details
 
-| Tieto | Arvo |
+| Detail | Value |
 |---|---|
-| **Virallinen nimi** | [esim. X:n kaupunki / X:n kunta / X-kuntayhtymä / X ry] |
-| **Tyyppi** | [kunta / kaupunki / kuntayhtymä / valtion virasto / järjestö / yritys] |
-| **Maakunta / alue** | [ ] |
-| **Koko** | [asukasluku / jäsenmäärä / henkilöstömäärä / liikevaihto] |
-| **Talous** | [budjetin suuruusluokka; talouden tila tiiviisti] |
+| **Official name** | [e.g. City of X / Municipality of X / X joint municipal authority / X ry] |
+| **Type** | [municipality / city / joint municipal authority / government agency / association / company] |
+| **Region / area** | [ ] |
+| **Size** | [population / number of members / headcount / turnover] |
+| **Finances** | [order of magnitude of the budget; the financial position in brief] |
 
-## Toiminta ja painopisteet
+## Activities and priorities
 
-- [Keskeiset tehtävät tai toimialat, joihin lainsäädäntö tyypillisesti vaikuttaa]
-- [Mahdolliset erityisroolit: esim. järjestämisvastuu, valvontatehtävä, omistajaohjaus]
+- [The main tasks or sectors that legislation typically affects]
+- [Any special roles: e.g. responsibility for organising services, a supervisory function, ownership steering]
 
-## Resurssit ja reunaehdot
+## Resources and constraints
 
-- [Henkilöstön mitoitus ja osaamisalueet; varahenkilöjärjestelyt]
-- [Tietojärjestelmät ja keskeiset toimittajat]
-- [Taloudelliset reunaehdot, jotka rajaavat sopeutumiskykyä]
+- [Staffing levels and areas of expertise; deputy arrangements]
+- [Information systems and the main suppliers]
+- [Financial constraints that limit the capacity to adapt]
 
-## Erityispiirteet
+## Distinctive features
 
-- [Maantieteelliset, demografiset tai elinkeinorakenteeseen liittyvät erityispiirteet]
-- [Aiemmat kannat tai linjaukset, jotka ohjaavat lausuntoja]
-- [Poliittiset herkkyydet, joissa kannanotto jätetään päättäjien täydennettäväksi]
+- [Geographic, demographic or industrial-structure features]
+- [Earlier positions or policies that guide statements]
+- [Political sensitivities where the position is left for the decision-makers to complete]
 
-## Käyttö
+## Use
 
-Lausuntoapuri lukee tämän profiilin vaikutusten arvioinnin yhteydessä (vaihe 2) ja
-suhteuttaa lakiehdotuksen vaikutukset tähän organisaatioon. Päivitä profiili, kun
-tiedot muuttuvat.
+The consultation statement assistant reads this profile when assessing impacts (stage 2) and
+relates the effects of the bill to this organisation. Update the profile when the details change.

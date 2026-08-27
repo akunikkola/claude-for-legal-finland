@@ -1,133 +1,131 @@
-# Lausuntopalvelu.fi — käyttöohje kunnille
+# Lausuntopalvelu.fi — a guide for municipalities
 
-Tämä viitetiedosto kuvaa, miten Lausuntopalvelu.fi:tä käytetään lausuntojen
-antamiseen ja muiden lausuntojen hakemiseen.
+This reference describes how Lausuntopalvelu.fi is used to give statements and to find other
+respondents' statements.
 
-## Lausuntopalvelu.fi — yleiskatsaus
+## Lausuntopalvelu.fi — overview
 
-Lausuntopalvelu.fi on oikeusministeriön ylläpitämä sähköinen palvelu, jossa
-ministeriöt ja muut tahot pyytävät lausuntoja lakiluonnoksista, asetusluonnoksista
-ja muista säädöshankkeista. Kaikki palveluun annetut lausunnot ovat julkisia.
+Lausuntopalvelu.fi is an electronic service maintained by the Ministry of Justice, where
+ministries and others request statements on draft acts, draft decrees and other legislative
+projects. Every statement given through the service is public.
 
-**Osoite:** https://www.lausuntopalvelu.fi/FI
+**Address:** https://www.lausuntopalvelu.fi/FI
 
-## Lausuntopyynnön löytäminen
+## Finding a request for statements
 
-### Aktiiviset lausuntopyynnöt
+### Active requests for statements
 
-Lausuntopalvelun etusivulla näkyvät ajankohtaiset lausuntopyynnöt. Hakutoiminnot:
+Current requests for statements are shown on the front page of Lausuntopalvelu. Search functions:
 
-- **Haku nimellä**: Kirjoita lain tai hankkeen nimi
-- **Haku ministeriöittäin**: Rajaa tietyn ministeriön hankkeet
-- **Haku aiheittain**: Rajaa aihealueen mukaan
-- **Haku päivämäärärajauksella**: Rajaa lausuntoajan mukaan
+- **Search by name**: type the name of the act or the project
+- **Search by ministry**: limit to a particular ministry's projects
+- **Search by subject**: limit by subject area
+- **Search by date range**: limit by the consultation period
 
-### Päättyneet lausuntopyynnöt
+### Closed requests for statements
 
-Myös jo päättyneiden lausuntopyyntöjen aineistot ovat saatavilla:
-- Alkuperäinen lausuntopyyntö
-- Lausunnon kohteena oleva luonnos
-- Kaikki annetut lausunnot
+The material for requests for statements that have already closed is also available:
+- The original request for statements
+- The draft that the statements concern
+- All the statements given
 
-## Lausunnon antaminen
+## Giving a statement
 
-### Prosessi lausuntopalvelussa
+### The process in Lausuntopalvelu
 
-1. **Kirjaudu** palveluun (Suomi.fi-tunnistautuminen tai organisaatiotunnus)
-2. **Valitse** lausuntopyyntö
-3. **Lue** lausuntopyynnön taustamateriaali huolellisesti
-4. **Vastaa** esitettyihin kysymyksiin tai anna vapaamuotoinen lausunto
-5. **Tarkista** ennen lähettämistä
-6. **Lähetä** — lausunto tulee julkiseksi
+1. **Log in** to the service (Suomi.fi identification or an organisation identifier)
+2. **Select** the request for statements
+3. **Read** the background material to the request carefully
+4. **Answer** the questions put, or give a free-form statement
+5. **Check** before sending
+6. **Send** — the statement becomes public
 
-### Tyypilliset kysymyskategoriat
+### Typical categories of question
 
-Lausuntopalvelussa lausuntopyyntö sisältää usein valmiita kysymyksiä:
+A request for statements in Lausuntopalvelu often contains ready-made questions:
 
-1. **Yleiset huomiot**: Esitysluonnoksesta yleisesti
-2. **Luvuttaiset/pykälittäiset huomiot**: Kannanotot tiettyihin kohtiin
-3. **Vaikutusarvioinnit**: Huomiot esityksen vaikutusarvioinneista
-4. **Muut huomiot**: Vapaamuotoinen palaute
-5. **Yhteenveto**: Keskeisimmät huomiot tiivistettynä
+1. **General observations**: on the draft bill generally
+2. **Observations by chapter or section**: positions on particular points
+3. **Impact assessments**: observations on the impact assessments in the bill
+4. **Other observations**: free-form feedback
+5. **Summary**: the most important observations in brief
 
-### Lausunnon muotoilu palvelussa
+### Formatting the statement in the service
 
-- Kukin vastaus voi olla useita kappaleita pitkä
-- Tekstissä voi käyttää perusmuotoilua
-- Liitetiedostoja voi lisätä (esim. tarkempi lausunto PDF-muodossa)
-- Jos lausunto on laaja, suositellaan liitetiedostoa
+- Each answer may run to several paragraphs
+- Basic formatting can be used in the text
+- Attachments can be added (e.g. a more detailed statement in PDF form)
+- If the statement is extensive, an attachment is recommended
 
-## Muiden lausuntojen hakeminen
+## Finding other statements
 
-### Kuntien lausuntojen etsiminen
+### Looking for municipalities' statements
 
-Tee näin hakeaksesi muiden kuntien tai Kuntaliiton lausuntoja:
+To find the statements of other municipalities or of Kuntaliitto:
 
-1. Avaa päättynyt lausuntopyyntö
-2. Selaa annettujen lausuntojen listaa
-3. Etsi lausunnon antajan nimellä (esim. "Helsinki", "Kuntaliitto")
-4. Lausuntojen sisältö avautuu klikkaamalla
+1. Open a closed request for statements
+2. Browse the list of statements given
+3. Search by the name of the respondent (e.g. "Helsinki", "Kuntaliitto")
+4. The content of a statement opens by clicking it
 
-### Hyödylliset hakutermit
+### Useful search terms
 
-- **Kuntaliitto** — Suomen Kuntaliiton virallinen lausunto
-- **[Kaupungin nimi]** — Tietyn kaupungin lausunto
-- **[Maakunnan nimi]** — Alueellinen näkökulma
+- **Kuntaliitto** — the official statement of the Association of Finnish Municipalities
+- **[Name of the city]** — a particular city's statement
+- **[Name of the region]** — the regional point of view
 
-## Aikatauluhuomiot
+## Points on timing
 
-### Lausuntoaika
+### The consultation period
 
-- Vähimmäislausuntoaika on kuulemisoppaan mukaan 6 viikkoa
-- Laajemmissa hankkeissa vähintään 8 viikkoa
-- Kesäaikaan ja vuodenvaihteessa voidaan antaa pidempi aika
-- Jos lausuntoaika on poikkeuksellisen lyhyt, tämä voi olla argumentti lausunnossa
+- Under the consultation guide the minimum consultation period is 6 weeks
+- For more extensive projects at least 8 weeks
+- A longer period may be given over the summer and at the turn of the year
+- If the consultation period is exceptionally short, that can itself be an argument in the statement
 
-### Kunnan sisäinen prosessi
+### The municipality's internal process
 
-Huomioi, että kunnan lausunto vaatii sisäistä käsittelyä:
+Note that a municipality's statement requires internal handling:
 
-1. **Valmistelu** (1-2 viikkoa): Asiantuntijat valmistelevat lausuntoluonnoksen
-2. **Sisäinen lausuntokierros** (1 viikko): Eri toimialojen kommentit
-3. **Hyväksyminen** (1 viikko): Kunnanhallituksen tai viranhaltijan hyväksyntä
-4. **Lähettäminen**: Tallennetaan lausuntopalveluun
+1. **Preparation** (1-2 weeks): experts prepare the draft statement
+2. **Internal consultation round** (1 week): comments from the different sectors
+3. **Approval** (1 week): approval by the municipal executive board or an office-holder
+4. **Submission**: saved into Lausuntopalvelu
 
-Yhteensä kunnan sisäinen prosessi vie tyypillisesti 3-5 viikkoa,
-joten lausunnon valmistelu on aloitettava heti lausuntopyynnön saavuttua.
+In total the municipality's internal process typically takes 3-5 weeks, so preparation of the
+statement has to start as soon as the request for statements arrives.
 
-## Lausunnon jälkeen
+## After the statement
 
-### Lausuntopalautteen seuranta
+### Following up the consultation feedback
 
-Ministeriö kokoaa lausunnoista tiivistelmän (lausuntokooste),
-joka julkaistaan:
-- Lausuntopalvelussa hankkeen tietojen yhteydessä
-- Hallituksen esityksen osiossa "6. Lausuntopalaute"
+The ministry compiles a summary of the statements (lausuntokooste), which is published:
+- In Lausuntopalvelu alongside the project details
+- In section "6. Lausuntopalaute" of the government bill
 
-### Lausunnon vaikuttavuus
+### The influence of the statement
 
-Lausunnon vaikuttavuutta voi seurata:
-- Vertaamalla hallituksen esitystä lausuntovaiheen luonnokseen
-- Lukemalla HE:n lausuntopalautteen tiivistelmä
-- Seuraamalla, onko kunnan huomiot otettu huomioon jatkovalmistelussassa
+The influence of a statement can be tracked by:
+- Comparing the government bill with the draft that went out for consultation
+- Reading the summary of the consultation feedback in the HE
+- Following whether the municipality's observations were taken into account in the further preparation
 
-## Tekniset huomiot
+## Technical points
 
-### Kirjautuminen
+### Logging in
 
-- Organisaation nimissä kirjautumiseen tarvitaan valtuutus
-- Suomi.fi-tunnistautuminen tai organisaation tunnus
-- Yhdestä organisaatiosta voi antaa yhden lausunnon per lausuntopyyntö
+- Authorisation is needed to log in on behalf of an organisation
+- Suomi.fi identification or an organisation identifier
+- One organisation can give one statement per request for statements
 
-### Tallentaminen
+### Saving
 
-- Lausuntoa voi tallentaa keskeneräisenä
-- Lähettämisen jälkeen lausuntoa ei voi enää muokata
-- Tarkista huolellisesti ennen lähettämistä
+- A statement can be saved while still unfinished
+- After it has been sent, a statement can no longer be edited
+- Check it carefully before sending
 
-### Liitetiedostot
+### Attachments
 
-- Sallitut muodot: PDF, DOCX
-- Maksimikoko: tarkista palvelun ohjeet (tyypillisesti 10-25 MB)
-- Liitetiedostossa voi olla laajempi lausunto kuin mitä palvelun
-  tekstikenttiin mahtuu
+- Permitted formats: PDF, DOCX
+- Maximum size: check the service's instructions (typically 10-25 MB)
+- An attachment can hold a more extensive statement than fits in the service's text fields

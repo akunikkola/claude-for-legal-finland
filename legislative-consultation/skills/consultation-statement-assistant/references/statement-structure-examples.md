@@ -1,204 +1,201 @@
-# Lausunnon rakenne — esimerkkejä kuntien lausunnoista
+# The structure of a statement — examples from municipalities' statements
 
-Tämä viitetiedosto sisältää todellisiin kuntien lausuntoihin perustuvia rakennemalleja
-ja esimerkkejä eri tyyppisistä lakiuudistuksista.
+This reference contains structural models based on real municipal statements, together with
+examples from different types of legislative reform.
 
-## Rakennemalli 1: Pykäläkohtainen lausunto
+## Structural model 1: a section-by-section statement
 
-Tämä rakenne sopii, kun lausuntopyyntö pyytää kannanottoa yksittäisiin säännöksiin
-tai kun muutettavat pykälät ovat selkeästi rajattuja.
+This structure suits cases where the request for statements asks for a position on individual
+provisions, or where the sections being amended are clearly delimited.
 
 ```
-LAUSUNTO
+STATEMENT
 
-[Kunnan nimi]                                    [Päivämäärä]
+[Name of the municipality]                          [Date]
 
-Asia: Lausunto hallituksen esityksestä eduskunnalle laiksi [lain nimi]
-      ([HE xx/20xx vp])
-Viite: [Lausuntopyynnön viite, esim. VN/1234/2024]
+Matter: Statement on the government bill to Parliament for an act on [name of the act]
+        ([HE xx/20xx vp])
+Reference: [Reference of the request for statements, e.g. VN/1234/2024]
 
-1. JOHDANTO
+1. INTRODUCTION
 
-[Kunnan nimi] kiittää mahdollisuudesta lausua hallituksen esityksestä
-laiksi [lain nimi]. [Kunnan nimi] pitää esityksen tavoitteita
-lähtökohtaisesti kannatettavina / suhtautuu esitykseen varauksellisesti
-ja esittää seuraavat huomiot.
+[Name of the municipality] thanks the ministry for the opportunity to comment on the
+government bill for an act on [name of the act]. [Name of the municipality] considers
+the objectives of the bill to be supportable in principle / takes a cautious view of the
+bill, and makes the following observations.
 
-2. PYKÄLÄKOHTAISET HUOMIOT
+2. OBSERVATIONS SECTION BY SECTION
 
-2.1 X §: [Pykälän otsikko]
+2.1 X §: [Heading of the section]
 
-Esityksessä ehdotetaan, että [kuvaus muutoksesta].
+The bill proposes that [description of the change].
 
-[Kunnan nimi] pitää ehdotusta [kannatettavana/ongelmallisena], koska
-[perustelu]. Kunnan kokemuksen mukaan [konkreettinen esimerkki].
+[Name of the municipality] considers the proposal [supportable/problematic], because
+[reasoning]. In the municipality's experience [concrete example].
 
-[Kunnan nimi] ehdottaa, että [muutosehdotus ja sen perustelu].
+[Name of the municipality] proposes that [proposed amendment and the reasons for it].
 
-2.2 Y §: [Pykälän otsikko]
+2.2 Y §: [Heading of the section]
 
-[Sama rakenne jatkuu...]
+[The same structure continues...]
 
-3. KUNTAVAIKUTUKSET
+3. IMPACTS ON THE MUNICIPALITY
 
-3.1 Taloudelliset vaikutukset
-[Kunnan nimi] arvioi esityksen aiheuttavan kunnalle vuositasolla
-noin [summa] euron lisäkustannukset. Arvio perustuu seuraavaan:
-[kustannuserittely]
+3.1 Financial impacts
+[Name of the municipality] estimates that the bill will cause the municipality
+additional costs of around [amount] euros a year. The estimate is based on the
+following: [breakdown of costs]
 
-3.2 Henkilöstövaikutukset
+3.2 Staffing impacts
 [...]
 
-4. YHTEENVETO
+4. SUMMARY
 
-[Kunnan nimi] esittää, että [keskeiset muutosehdotukset listattuna].
+[Name of the municipality] proposes that [the key proposed amendments listed].
 
-[Allekirjoitus]
+[Signature]
 ```
 
-## Rakennemalli 2: Teemakohtainen lausunto
+## Structural model 2: a theme-based statement
 
-Tämä rakenne sopii laajoihin uudistuksiin, joissa vaikutukset ulottuvat
-usealle kunnan toimialalle.
-
-```
-LAUSUNTO
-
-[Kunnan nimi]                                    [Päivämäärä]
-
-Asia: Lausunto luonnoksesta hallituksen esitykseksi [lain nimi]
-Viite: [Viite]
-
-1. YLEISTÄ
-
-[Kunnan yleinen kannanotto esitykseen ja sen tavoitteisiin.]
-
-2. ESITYKSEN VAIKUTUKSET KUNNAN MAANKÄYTÖN SUUNNITTELUUN
-
-[Teemakohtainen analyysi: nykytila → ehdotettu muutos → vaikutukset
-→ kunnan näkemys → parannusehdotukset]
-
-3. ESITYKSEN VAIKUTUKSET KUNNAN RAKENNUSVALVONTAAN
-
-[Sama rakenne]
-
-4. ESITYKSEN TALOUDELLISET VAIKUTUKSET KUNNALLE
-
-[Kustannusanalyysi ja rahoitusperiaate]
-
-5. ESITYKSEN VAIKUTUKSET PIENTEN KUNTIEN TOIMINTAAN
-
-[Erityishuomiot]
-
-6. YHTEENVETO JA MUUTOSEHDOTUKSET
-
-[Priorisoitu lista ehdotuksista]
-
-[Allekirjoitus]
-```
-
-## Rakennemalli 3: Lausuntopalvelu.fi — kysymyskohtainen
-
-Kun lausunto annetaan lausuntopalvelu.fi:n kautta, rakenne noudattaa
-usein valmistajan asettamia kysymyksiä.
+This structure suits extensive reforms whose effects reach across several of the municipality's
+sectors.
 
 ```
-LAUSUNTOPALVELU.FI — VASTAUKSET
+STATEMENT
 
-Lausunnonantaja: [Kunnan nimi]
-Viite: [Lausuntopalvelun hankenumero]
+[Name of the municipality]                          [Date]
 
-Kysymys 1: Yleiset huomiot esitysluonnoksesta
+Matter: Statement on the draft government bill for [name of the act]
+Reference: [Reference]
 
-[Kunnan yleinen kannanotto, 1-3 kappaletta]
+1. GENERAL
 
-Kysymys 2: Huomiot esityksen tavoitteista
+[The municipality's general position on the bill and its objectives.]
 
-[Ovatko tavoitteet kannatettavia? Puuttuuko tavoitteita?
-Onko valittu sääntelymalli oikea?]
+2. THE BILL'S EFFECTS ON THE MUNICIPALITY'S LAND-USE PLANNING
 
-Kysymys 3: Huomiot ehdotuksen X luvusta / X pykälästä
+[Theme-based analysis: current position → proposed change → effects
+→ the municipality's view → proposals for improvement]
 
-[Yksityiskohtainen kannanotto]
+3. THE BILL'S EFFECTS ON THE MUNICIPALITY'S BUILDING CONTROL
 
-Kysymys 4: Huomiot vaikutusarvioinneista
+[The same structure]
 
-[Ovatko kuntavaikutukset arvioitu oikein? Puuttuuko arvioita?
-Kunnan omat laskelmat ja arviot.]
+4. THE BILL'S FINANCIAL EFFECTS ON THE MUNICIPALITY
 
-Kysymys 5: Muut huomiot
+[Cost analysis and the funding principle]
 
-[Kaikki muu, mitä kunta haluaa nostaa esiin]
+5. THE BILL'S EFFECTS ON THE OPERATION OF SMALL MUNICIPALITIES
+
+[Specific observations]
+
+6. SUMMARY AND PROPOSED AMENDMENTS
+
+[Prioritised list of proposals]
+
+[Signature]
 ```
 
-## Esimerkkejä argumentaatiosta
+## Structural model 3: Lausuntopalvelu.fi — question by question
 
-### Rahoitusperiaate-argumentti
+When a statement is given through lausuntopalvelu.fi, the structure often follows the questions
+set by the body requesting it.
 
-> [Kunnan nimi] kiinnittää huomiota siihen, että esityksessä ehdotetut
-> uudet tehtävät lisäävät merkittävästi kunnan kustannuksia. Esityksen
-> mukaan kustannusten arvioidaan olevan X euroa vuodessa. [Kunnan nimi]
-> oman arvion mukaan todelliset kustannukset ovat kuitenkin Y euroa,
-> koska [perustelu]. Rahoitusperiaatteen mukaisesti uusiin tehtäviin
-> tulee osoittaa riittävä rahoitus.
+```
+LAUSUNTOPALVELU.FI — ANSWERS
 
-### Itsehallinto-argumentti
+Respondent: [Name of the municipality]
+Reference: [Project number in Lausuntopalvelu]
 
-> Esityksessä ehdotettu X §:n muutos rajoittaa kunnan harkintavaltaa
-> palvelujen järjestämisessä perustuslain 121 §:ssä turvatun kunnallisen
-> itsehallinnon vastaisella tavalla. Nykyisin kunta voi [nykytila],
-> mutta ehdotuksen mukaan kunnan tulisi [velvoite]. Tämä kaventaa
-> tarpeettomasti kunnan päätösvaltaa asiassa, jossa paikallinen
-> harkinta tuottaa parhaita ratkaisuja.
+Question 1: General observations on the draft bill
 
-### Pienten kuntien erityistilanne
+[The municipality's general position, 1-3 paragraphs]
 
-> [Kunnan nimi] (X asukasta) huomauttaa, että ehdotettu velvoite
-> palkata erillinen [virkanimike] ei ole pienten kuntien osalta
-> realistinen. Kunnassa tehtävää hoitaa tällä hetkellä oto-periaatteella
-> [virkanimi], jolle uusi velvoite tarkoittaisi kohtuutonta lisätaakkaa.
-> [Kunnan nimi] ehdottaa, että laissa mahdollistettaisiin tehtävän
-> hoitaminen kuntien yhteistyönä tai muulla joustavalla tavalla.
+Question 2: Observations on the objectives of the bill
 
-### Siirtymäaika-argumentti
+[Are the objectives supportable? Are any objectives missing?
+Is the regulatory model chosen the right one?]
 
-> Ehdotettu voimaantulo [päivämäärä] ei jätä kunnille riittävää
-> siirtymäaikaa. Uusien prosessien käyttöönotto, henkilöstön koulutus
-> ja IT-järjestelmien päivitys vaativat realistisesti vähintään
-> [X kuukautta/vuotta]. [Kunnan nimi] esittää voimaantulon siirtämistä
-> [ehdotettu ajankohta].
+Question 3: Observations on chapter X / section X of the proposal
 
-### Käytännön toteutettavuus
+[Detailed position]
 
-> [Kunnan nimi] nostaa esiin, että ehdotettu X §:n mukainen
-> [menettelyvaatimus] on käytännössä vaikeasti toteutettavissa.
-> Kunnan kokemuksen mukaan vastaava menettely [aiempi kokemus] on
-> osoittautunut [ongelmalliseksi/toimivaksi], koska [perustelu].
-> [Kunnan nimi] ehdottaa, että [vaihtoehtoinen toteutustapa].
+Question 4: Observations on the impact assessments
 
-## Yleisiä huomioita lausunnon kirjoittamiseen
+[Have the impacts on municipalities been assessed correctly? Are any
+assessments missing? The municipality's own calculations and estimates.]
 
-### Mitä välttää
+Question 5: Other observations
 
-- Pelkkä "vastustetaan" ilman perusteluja — heikko argumentti
-- Liian pitkä ja rönsyilevä teksti — pidä napakka ja jäsennelty
-- Mielipiteet ilman faktapohjaa — käytä lukuja ja esimerkkejä
-- Poliittiset kannanotot — pysy asiatasolla
+[Everything else the municipality wishes to raise]
+```
 
-### Vahvan lausunnon piirteet
+## Examples of argumentation
 
-- Selkeä rakenne, helppo seurata
-- Jokainen väite perusteltu
-- Konkreettisia lukuja ja esimerkkejä
-- Muutosehdotukset, ei pelkkää kritiikkiä
-- Myös positiiviset kohdat mainittu — uskottavuus kasvaa
-- Johdonmukainen kokonaisuus, ei ristiriitaisia argumentteja
+### The funding-principle argument
 
-### Hyödylliset viittauskohteet lausunnossa
+> [Name of the municipality] draws attention to the fact that the new tasks proposed in the
+> bill significantly increase the municipality's costs. According to the bill the costs are
+> estimated at X euros a year. In [name of the municipality]'s own estimate, however, the
+> real costs are Y euros, because [reasoning]. In accordance with the funding principle,
+> adequate funding must be allocated to new tasks.
 
-- Perustuslaki, erityisesti 121 § (kunnallinen itsehallinto)
-- Kuntalaki (410/2015), erityisesti 8 § (kunnan tehtävien rahoitusperiaate)
-- Hallintolaki (434/2003), hyvän hallinnon periaatteet
-- Hallituksen omat norminpurku- ja digitalisaatiotavoitteet
-- Kuntaliiton vastaava lausunto ja laskelmat
-- Perustuslakivaliokunnan aiemmat lausunnot vastaavista esityksistä
+### The self-government argument
+
+> The amendment to section X proposed in the bill restricts the municipality's discretion in
+> organising services in a way contrary to the municipal self-government safeguarded by
+> section 121 of the Constitution of Finland (perustuslaki 731/1999). At present the
+> municipality may [current position], but under the proposal the municipality would have to
+> [obligation]. This narrows the municipality's decision-making power unnecessarily in a matter
+> where local discretion produces the best solutions.
+
+### The special position of small municipalities
+
+> [Name of the municipality] (X residents) points out that the proposed obligation to employ a
+> separate [job title] is not realistic for small municipalities. In the municipality the task
+> is at present carried out as an additional duty by [job title], for whom the new obligation
+> would mean an unreasonable additional burden. [Name of the municipality] proposes that the
+> act should allow the task to be carried out in co-operation between municipalities or in some
+> other flexible way.
+
+### The transitional-period argument
+
+> The proposed entry into force on [date] does not leave municipalities an adequate transitional
+> period. Introducing the new processes, training staff and upgrading IT systems realistically
+> require at least [X months/years]. [Name of the municipality] proposes that entry into force
+> be postponed to [proposed date].
+
+### Practical feasibility
+
+> [Name of the municipality] raises the point that the [procedural requirement] under the
+> proposed section X is difficult to implement in practice. In the municipality's experience a
+> corresponding procedure [earlier experience] has proved [problematic/workable], because
+> [reasoning]. [Name of the municipality] proposes that [alternative way of implementing it].
+
+## General points on writing a statement
+
+### What to avoid
+
+- A bare "we oppose" without reasons — a weak argument
+- Text that is too long and rambling — keep it crisp and structured
+- Opinions with no factual basis — use figures and examples
+- Political positions — stay at the factual level
+
+### The marks of a strong statement
+
+- A clear structure that is easy to follow
+- Every assertion supported by reasons
+- Concrete figures and examples
+- Proposed amendments, not just criticism
+- The positive points mentioned too — credibility grows
+- A coherent whole, with no contradictory arguments
+
+### Useful things to cite in a statement
+
+- The Constitution of Finland (perustuslaki 731/1999), in particular section 121 (municipal self-government)
+- The Local Government Act (kuntalaki 410/2015), in particular section 8 (the funding principle for municipalities' tasks)
+- The Administrative Procedure Act (hallintolaki 434/2003), the principles of good administration
+- The government's own deregulation and digitalisation objectives
+- Kuntaliitto's corresponding statement and calculations
+- Earlier statements of the Constitutional Law Committee on comparable bills

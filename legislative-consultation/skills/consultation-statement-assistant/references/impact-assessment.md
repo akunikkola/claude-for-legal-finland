@@ -1,163 +1,171 @@
-# Kuntavaikutusten arviointikehikko
+# Framework for assessing impacts on a municipality
 
-Tämä kehikko auttaa arvioimaan lakiehdotuksen vaikutuksia kuntaan järjestelmällisesti. Jokaisesta vaikutusalueesta arvioidaan vaikutuksen suunta (positiivinen, negatiivinen, neutraali), merkittävyys ja aikajänne.
+This framework helps assess the impacts of a bill on a municipality systematically. For each area
+of impact, assess the direction of the effect (positive, negative, neutral), its significance and
+its time horizon.
 
-## Arviointiprosessi
+## The assessment process
 
-Jokainen lakiehdotuksen muutos käydään läpi seuraavan kehikon kautta. Ei jokainen kohta ole relevantti jokaiselle muutokselle – keskity niihin, jotka todella vaikuttavat.
+Every change in the bill is worked through the framework below. Not every point is relevant to
+every change — concentrate on the ones that actually bite.
 
-## 1. Taloudelliset vaikutukset
+## 1. Financial impacts
 
-### 1.1 Käyttötalousvaikutukset
+### 1.1 Operating-budget impacts
 
-**Menopuoli:**
-- Syntyykö uusia pysyviä menoja (henkilöstö, palvelut, järjestelmät)?
-- Kasvavatko olemassa olevien tehtävien kustannukset?
-- Syntyykö kertaluonteisia käyttöönottokustannuksia?
-- Onko menojen kasvu arvioitavissa euroissa?
+**Expenditure side:**
+- Do new permanent costs arise (staff, services, systems)?
+- Do the costs of existing tasks increase?
+- Do one-off implementation costs arise?
+- Can the increase in expenditure be estimated in euros?
 
-**Tulopuoli:**
-- Muuttuvatko kunnan maksu- tai taksakäytännöt?
-- Voiko kunta periä uusia maksuja?
-- Vähenevätkö nykyiset tulot?
+**Income side:**
+- Do the municipality's charging or tariff practices change?
+- Can the municipality levy new charges?
+- Does existing income fall?
 
-**Rahoitus:**
-- Kompensoidaanko uudet velvoitteet valtionosuusjärjestelmässä?
-- Onko erillisrahoitusta tarjolla?
-- Noudatetaanko rahoitusperiaatetta (uudet tehtävät = uusi rahoitus)?
+**Funding:**
+- Are the new obligations compensated through the central government transfer system?
+- Is separate funding available?
+- Is the funding principle being observed (new tasks = new funding)?
 
-### 1.2 Investointivaikutukset
+### 1.2 Investment impacts
 
-- Edellyttääkö muutos investointeja infrastruktuuriin?
-- Tarvitaanko uusia tietojärjestelmiä tai niiden päivityksiä?
-- Tarvitaanko uusia tiloja tai tilamuutoksia?
-- Mikä on investointien arvioidut kokonaiskustannukset?
+- Does the change require investment in infrastructure?
+- Are new information systems or upgrades to them needed?
+- Are new premises or alterations to premises needed?
+- What is the estimated total cost of the investments?
 
-### 1.3 Henkilöstökustannukset
+### 1.3 Staffing costs
 
-- Tarvitaanko lisähenkilöstöä? Kuinka monta henkilötyövuotta?
-- Tarvitaanko uutta erikoisosaamista (esim. erityisasiantuntijoita)?
-- Syntyykö koulutustarpeita nykyiselle henkilöstölle?
+- Is additional staff needed? How many person-years?
+- Is new specialist expertise needed (e.g. particular specialists)?
+- Does training need arise for existing staff?
 
-**lausunnonantajan konteksti:** lausunnonantajan henkilöstö on jo mitoitettu tiiviisti. Jokainen uusi henkilötyövuosi merkitsee noin 45 000–65 000 euron vuosikustannusta (tehtävästä riippuen).
+**Respondent context:** the respondent's staffing is already tightly dimensioned. Each new
+person-year means an annual cost of roughly 45 000–65 000 euros (depending on the role).
 
-## 2. Hallinnolliset vaikutukset
+## 2. Administrative impacts
 
-### 2.1 Uudet velvoitteet
+### 2.1 New obligations
 
-- Mitä uusia hallinnollisia velvoitteita kunnalle syntyy?
-- Lisääntyvätkö raportointivelvoitteet?
-- Syntyykö uusia lupa- tai valvontatehtäviä?
-- Muuttuvatko päätöksentekoprosessit?
+- What new administrative obligations arise for the municipality?
+- Do reporting obligations increase?
+- Do new permit or supervisory tasks arise?
+- Do decision-making processes change?
 
-### 2.2 Byrokratiavaikutukset
+### 2.2 Bureaucratic impacts
 
-- Monimutkaistuvatko prosessit?
-- Lisääntyykö dokumentointivelvoite?
-- Tuleeko uusia määräaikoja noudatettavaksi?
+- Do processes become more complex?
+- Does the documentation obligation increase?
+- Are there new time limits to observe?
 
-### 2.3 Organisatoriset vaikutukset
+### 2.3 Organisational impacts
 
-- Pitääkö organisaatiorakennetta muuttaa?
-- Syntyykö uusia yhteistyövelvoitteita muiden viranomaisten kanssa?
-- Muuttuvatko toimivaltasuhteet?
+- Does the organisational structure have to change?
+- Do new obligations to co-operate with other authorities arise?
+- Do the relationships of competence change?
 
-**lausunnonantajan konteksti:** Pienessä kunnassa uusi velvoite kuormittaa yksittäisiä henkilöitä enemmän, koska vastuualueet ovat laajoja ja varahenkilöjärjestelyt rajallisia.
+**Respondent context:** in a small municipality a new obligation loads individual people more
+heavily, because areas of responsibility are broad and deputy arrangements are limited.
 
-## 3. Palveluvaikutukset
+## 3. Service impacts
 
-### 3.1 Asukaspalvelut
+### 3.1 Services to residents
 
-- Muuttuuko palvelun saatavuus tai laatu?
-- Syntyykö uusia palveluvelvoitteita?
-- Poistuuko tai keventyykö jokin nykyinen velvoite?
-- Miten vaikuttaa eri väestöryhmiin (lapset, ikääntyneet, vammaiset)?
+- Does the availability or quality of the service change?
+- Do new service obligations arise?
+- Is any existing obligation removed or lightened?
+- How does it affect different population groups (children, older people, people with disabilities)?
 
-### 3.2 Elinkeinoelämän palvelut
+### 3.2 Services to business
 
-- Muuttuvatko yrityksille tarjottavat palvelut (luvat, neuvonta)?
-- Vaikuttaako paikallisen elinkeinoelämän toimintaedellytyksiin?
+- Do the services offered to companies change (permits, advice)?
+- Does it affect the operating conditions of local business?
 
-### 3.3 Infrastruktuuripalvelut
+### 3.3 Infrastructure services
 
-- Vaikuttaako vesihuoltoon, jätehuoltoon, teihin, energiaan?
-- Muuttuvatko teknisen infrastruktuurin vaatimukset?
+- Does it affect water services, waste management, roads or energy?
+- Do the requirements for technical infrastructure change?
 
-## 4. Henkilöstövaikutukset
+## 4. Staffing impacts
 
-### 4.1 Osaamisvaatimukset
+### 4.1 Competence requirements
 
-- Tarvitaanko uutta osaamista, jota kunnassa ei vielä ole?
-- Onko kyseessä osaamista, jota on vaikea rekrytoida?
-- Kuinka laaja koulutusponnistus tarvitaan?
+- Is new expertise needed that the municipality does not yet have?
+- Is it expertise that is hard to recruit?
+- How large a training effort is needed?
 
-### 4.2 Työtehtävien muutokset
+### 4.2 Changes to duties
 
-- Muuttuvatko nykyisten työntekijöiden tehtävänkuvat?
-- Syntyykö uusia tehtäviä vai jaetaanko nykyisiä uudelleen?
-- Vaikuttaako työhyvinvointiin tai kuormitukseen?
+- Do the job descriptions of existing employees change?
+- Do new duties arise, or are existing ones redistributed?
+- Does it affect wellbeing at work or workload?
 
-**lausunnonantajan konteksti:** Pienessä kunnassa yksittäisen viranhaltijan tehtävänkuva voi olla jo laaja. Uuden velvoitteen lisääminen voi vaatia joko rekrytointia tai jonkin muun tehtävän karsimista.
+**Respondent context:** in a small municipality an individual office-holder's job description may
+already be broad. Adding a new obligation may require either recruitment or the shedding of some
+other task.
 
-## 5. Aikataulu- ja siirtymävaikutukset
+## 5. Timetable and transitional impacts
 
-### 5.1 Siirtymäajan riittävyys
+### 5.1 Adequacy of the transitional period
 
-- Onko ehdotettu siirtymäaika realistinen kunnan näkökulmasta?
-- Mitä toimenpiteitä siirtymäaika edellyttää (hankintaprosessit, koulutus, tietojärjestelmät)?
-- Onko hankintaprosesseille riittävästi aikaa (julkiset hankinnat voivat kestää 6–12 kk)?
+- Is the proposed transitional period realistic from the municipality's point of view?
+- What steps does the transitional period require (procurement processes, training, information systems)?
+- Is there enough time for procurement processes (public procurement can take 6–12 months)?
 
-### 5.2 Voimaantulon ajankohta
+### 5.2 Timing of entry into force
 
-- Onko voimaantulon ajankohta sopiva (esim. ei keskellä vuotta, koska budjettivaikutukset)?
-- Onko muilla uudistuksilla päällekkäisiä aikatauluja?
+- Is the timing of entry into force appropriate (e.g. not mid-year, because of the budget effects)?
+- Do other reforms have overlapping timetables?
 
-## 6. Digitalisaatio- ja tietojärjestelmävaikutukset
+## 6. Digitalisation and information-system impacts
 
-### 6.1 Järjestelmämuutokset
+### 6.1 System changes
 
-- Vaatiiko muutos tietojärjestelmäpäivityksiä?
-- Onko järjestelmätoimittajilla valmiudet muutokseen?
-- Mikä on päivityksen arvioitu kustannus ja aikataulu?
+- Does the change require information-system upgrades?
+- Are the system suppliers ready for the change?
+- What is the estimated cost and timetable of the upgrade?
 
-### 6.2 Tiedonhallinta
+### 6.2 Information management
 
-- Syntyykö uusia rekisteri- tai tiedonhallintavelvoitteita?
-- Miten vaikuttaa tietosuojaan (GDPR)?
-- Tarvitaanko uusia rajapintoja muiden viranomaisten kanssa?
+- Do new register or information-management obligations arise?
+- How does it affect data protection (GDPR)?
+- Are new interfaces with other authorities needed?
 
-**lausunnonantajan konteksti:** lausunnonantaja käyttää pitkälti samoja järjestelmätoimittajia kuin muutkin pienet kunnat. Räätälöinnit ovat kalliita ja niiden saaminen kestää.
+**Respondent context:** the respondent largely uses the same system suppliers as other small
+municipalities. Customisations are expensive and slow to obtain.
 
-## 7. Erityisvaikutukset lausunnonantajaan
+## 7. Specific impacts on the respondent
 
-### 7.1 Alueelliset vaikutukset
+### 7.1 Regional impacts
 
-- Miten muutos vaikuttaa lausunnonantajan alueella (esim. työssäkäyntialue, kasvukeskus vai väestöltään vähenevä seutu)?
-- Onko vaikutuksia erilaisia maaseututaajamissa kuin kaupunkikeskuksissa?
+- How does the change affect the respondent's area (e.g. a commuting area, a growth centre or a region with a declining population)?
+- Are the effects different in rural population centres than in urban centres?
 
-### 7.2 Vesistövaikutukset
+### 7.2 Impacts on water bodies
 
-- Liittyykö muutos vesistöihin tai vesihuoltoon? (relevantti erityisesti vesistön äärellä sijaitseville kunnille)
-- Vaikuttaako hulevesien hallintaan?
+- Does the change relate to water bodies or water services? (particularly relevant for municipalities located by a water body)
+- Does it affect stormwater management?
 
-### 7.3 Liikennevaikutukset
+### 7.3 Transport impacts
 
-- Vaikuttaako raide- tai tieliikenteen järjestämiseen?
-- Muuttuvatko joukkoliikenteen velvoitteet?
+- Does it affect the organisation of rail or road transport?
+- Do public transport obligations change?
 
-## Arviointiyhteenveto
+## Assessment summary
 
-Kokoa vaikutusarvion tulokset yhteenvetotaulukkoon:
+Collect the results of the impact assessment in a summary table:
 
-| Vaikutusalue | Suunta | Merkittävyys | Aikajänne | Kommentti |
+| Area of impact | Direction | Significance | Time horizon | Comment |
 |---|---|---|---|---|
-| Talous – käyttötalous | +/- /0 | Suuri/Kohtalainen/Vähäinen | Pysyvä/Kertaluonteinen | |
-| Talous – investoinnit | +/- /0 | | | |
-| Hallinto | +/- /0 | | | |
-| Palvelut | +/- /0 | | | |
-| Henkilöstö | +/- /0 | | | |
-| Aikataulu | +/- /0 | | | |
-| Tietojärjestelmät | +/- /0 | | | |
-| Erityisvaikutukset | +/- /0 | | | |
+| Finances – operating budget | +/- /0 | Large/Moderate/Minor | Permanent/One-off | |
+| Finances – investment | +/- /0 | | | |
+| Administration | +/- /0 | | | |
+| Services | +/- /0 | | | |
+| Staffing | +/- /0 | | | |
+| Timetable | +/- /0 | | | |
+| Information systems | +/- /0 | | | |
+| Specific impacts | +/- /0 | | | |
 
-Tämä taulukko voidaan sisällyttää lausuntoon tai sen liitteeseen.
+This table can be included in the statement or in an annex to it.

@@ -1,39 +1,40 @@
-# Sopimukset
+# Contracts
 
-Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan.
+Drafting and reviewing contracts under Finnish law.
 
-> **Sopimusluonnos ja riskiarvio ovat tarkistettavia luonnoksia – ei oikeudellista
-> neuvontaa.** Suuririskinen tai 🔴 PUNAINEN sopimus kuuluu juristin arvioitavaksi.
-> Katso [`AGENTS.md`](AGENTS.md).
+> **A draft contract and a risk assessment are drafts for review – not legal
+> advice.** A high-risk or 🔴 RED contract belongs with a lawyer.
+> See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **sopimuksen-laatiminen** | Laatii sopimuksen Suomen oikeuden mukaan: rakenne, kommentoitu lausekekirjasto ja sopimusoikeuden perusteet (sopimusvapaus, pakottava sääntely, kohtuullistaminen, vastuu). |
-| **sopimuksen-tarkistus** | Lausekekohtainen riskiarvio ja luokittelu (🟢 VIHREÄ / 🟡 KELTAINEN / 🔴 PUNAINEN), kohtuullistamis- ja pakottavan lain lippuineen. |
+| **contract-drafting** | Drafts a contract under Finnish law: structure, an annotated clause library and the fundamentals of contract law (freedom of contract, mandatory regulation, adjustment of unfair terms, liability). |
+| **contract-review** | A clause-by-clause risk assessment and classification (🟢 GREEN / 🟡 YELLOW / 🔴 RED), with flags for adjustment of unfair terms and for mandatory law. |
 
-## Agentit
+## Agents
 
-| Agentti | Mitä tekee |
+| Agent | What it does |
 |---|---|
-| **poikkeamatarkastaja** | Vertaa sopimusluonnoksen talon riskilinjauksiin ja vakiolausekkeisiin (käytäntöprofiili tai annettu playbook) ja palauttaa lausekekohtaisen poikkeamataulukon (✅/🟡/🔴/⚪) eskalointiehdotuksineen. Pysähtyy, jos mittatikkua ei ole. Vain luku. |
+| **deviation-checker** | Compares a draft contract against the organisation's own risk positions and standard clauses (practice profile or a supplied playbook) and returns a clause-by-clause deviation table (✅/🟡/🔴/⚪) with escalation proposals. Stops if there is no yardstick. Read-only. |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the foundation
 
-Sisältö nojaa lähteestä (oik.ai/Finlex) varmistettuihin säädöksiin: oikeustoimilaki
-(228/1929, mm. 36 §:n kohtuullistaminen), kauppalaki (355/1987) ja kuluttajansuojalaki
-(38/1978). Muut säädösviittaukset on tarkistettava `legal-core:legal-research`-skillillä.
+The content rests on statutes verified against the source (oik.ai/Finlex): the Contracts Act
+(oikeustoimilaki 228/1929, including the adjustment of unfair terms under section 36), the Sale of
+Goods Act (kauppalaki 355/1987) and the Consumer Protection Act (kuluttajansuojalaki 38/1978).
+Other legislative references must be checked with the `legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (lakiviittausten tarkistus lähteestä) ja `document-review` (perusteellinen monivaiheinen läpikäynti).
+- **`legal-core` domain** – `legal-research` (checking legislative references against the source) and `document-review` (a thorough multi-stage review).
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install sopimukset@agent-skills-for-finnish-law
+/plugin install contracts@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) in the repository root.

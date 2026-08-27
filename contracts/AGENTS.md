@@ -1,42 +1,64 @@
-# Sopimukset — jaetut suojaukset ja toimintaperiaatteet
+# Contracts — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** sopimusdoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** contract doctrine belongs in SKILL.md and in the references. These safeguards are life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Sopimusluonnos ja riskiarvio ovat **tarkistettavia luonnoksia** — ei oikeudellista neuvontaa eikä lopullinen kanta sopimuksen pätevyydestä. Suuririskinen tai 🔴 PUNAINEN sopimus kuuluu juristin arvioitavaksi ennen allekirjoitusta. Lisää merkittävään luonnokseen: *"Luonnos — tarkistettava ennen allekirjoitusta."*
+A draft contract and a risk assessment are **drafts for review** — not legal advice, and not a
+final position on the validity of the contract. A high-risk or 🔴 RED contract belongs with a
+lawyer before signature. Add to any significant draft: *"Draft — needs checking before
+signature."*
 
-## Pakottava lainsäädäntö ensin
+## Mandatory legislation first
 
-Ennen ehtojen laatimista tai arviointia selvitä, onko osapuolena **kuluttaja** tai **työntekijä**.
+Before drafting or assessing terms, establish whether one of the parties is a **consumer** or an
+**employee**.
 
-- **Kuluttajasopimus:** kuluttajansuojalaki (38/1978) on pakottava. Kuluttajan vahingoksi poikkeavat ehdot ovat pääsääntöisesti pätemättömiä. Kohtuuttomuus arvioidaan kuluttajansuojalain mukaan (ei oikeustoimilain 36 §).
-- **Työsopimus:** työsopimuslaki on pakottava työntekijän hyväksi → ohjaa työoikeuden materiaaliin.
-- Älä laadi tai hyväksy ehtoa, joka on pakottavan lain vastainen, vain koska osapuolet "sopivat niin".
+- **Consumer contract:** the Consumer Protection Act (kuluttajansuojalaki 38/1978) is mandatory. Terms that derogate to the consumer's detriment are as a rule invalid. Unfairness is assessed under the Consumer Protection Act (not under section 36 of oikeustoimilaki).
+- **Employment contract:** the Employment Contracts Act (työsopimuslaki) is mandatory in the employee's favour → direct the user to the employment-law material.
+- Do not draft or accept a term that is contrary to mandatory law merely because the parties "agreed it".
 
-## Kohtuullistaminen — vakiolippu
+## Adjustment of an unfair term — the standard flag
 
-Räikeän yksipuolinen ehto heikomman osapuolen vahingoksi altistuu sovittelulle (**oikeustoimilain 228/1929 36 §**, vahvistettu lähteestä). Nosta tämä esiin vastuunrajoituksissa, sopimussakoissa, kilpailukielloissa ja yksipuolisissa muutos-/irtisanomisoikeuksissa.
+A blatantly one-sided term to the detriment of the weaker party is exposed to adjustment
+(**section 36 of the Contracts Act (oikeustoimilaki 228/1929)**, verified against the source).
+Raise this in limitations of liability, contractual penalties, non-compete clauses and
+one-sided rights to amend or terminate.
 
-## Vastuunrajoituksen rajat
+## The limits of a limitation of liability
 
-Vastuuta **ei voi pätevästi rajoittaa tahallisuuden tai törkeän huolimattomuuden osalta.** Pidä tämä poikkeus vastuunrajoituslausekkeissa. Erota välitön ja välillinen vahinko selkeästi.
+Liability **cannot validly be limited in respect of intent or gross negligence.** Keep that
+exception in limitation-of-liability clauses. Distinguish direct and indirect loss clearly.
 
-## Lakiviittaukset lähteestä
+## Legislative references from the source
 
-Tarkista sovellettavan lain (kauppalaki 355/1987, kuluttajansuojalaki 38/1978, korkolaki, vahingonkorvauslaki ym.) voimassa oleva sanamuoto ja säädösnumero **`legal-core`-plugarin `legal-research`-skillillä** ennen viittausta. Älä keksi säädös- tai pykälänumeroita; merkitse tarkistamaton viittaus `[muistinvarainen — tarkista]`.
+Check the wording in force and the statute number of the applicable law (kauppalaki 355/1987,
+kuluttajansuojalaki 38/1978, korkolaki, vahingonkorvauslaki and so on) **with the
+`legal-research` skill in the `legal-core` domain** before citing it. Do not invent statute or
+section numbers; mark an unchecked reference `[from memory — verify in Finlex]`.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For references to legislation, case law and preparatory works, follow the marketplace's shared
+source standard in [`references/citation-style.md`](../references/citation-style.md):
+three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and
+the correct forms of case identifiers. In short: attach the source to the number, do not present
+something unchecked as verified, and never assert what a decision says without having checked the
+decision against the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent whom) and
+data handling (GDPR Article 28 processing agreement, anonymisation before analysis):
+[`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer
+alone is not protection** — protection comes from source verification, certainty marking, checking
+the premises, negative scoping and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation vakiolausekkeet, riskilinjaukset ja talon sopimusmallit voi tallentaa tähän tiedostoon otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi linjauksia, vaan kysy käyttäjältä.
+The organisation's standard clauses, risk positions and in-house contract templates can be stored
+in this file under the heading `## Practice profile`. Empty by default — do not invent positions,
+ask the user.

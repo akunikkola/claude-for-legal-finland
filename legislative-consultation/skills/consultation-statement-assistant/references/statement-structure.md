@@ -1,139 +1,159 @@
-# Kunnan lausunnon rakenne – yksityiskohtainen opas
+# The structure of a municipality's statement — a detailed guide
 
-Tämä opas kuvaa, miten kunnan lausunto lakiehdotuksesta rakennetaan. Rakenne on joustava: kaikki osat eivät ole pakollisia jokaisessa lausunnossa, mutta johdonmukaisuus ja selkeys ovat aina tärkeitä.
+This guide describes how a municipality's statement on a bill is built. The structure is
+flexible: not every part is compulsory in every statement, but coherence and clarity always
+matter.
 
-## Lausunnon perusosat
+## The basic parts of a statement
 
-### Otsikkotiedot
+### Heading details
 
-Lausunnon alussa on oltava:
-
-```
-[KUNNAN TAI ORGANISAATION NIMI] – LAUSUNTO
-
-Asia: [Lausuntopyynnön otsikko, esim. "Luonnos hallituksen esitykseksi
-       eduskunnalle laiksi vesihuoltolain muuttamisesta"]
-Viite: [Lausuntopyynnön diaarinumero tai tunniste, esim. "VN/12345/2025"]
-Lausuntopyynnön antaja: [Ministeriö]
-Päivämäärä: [pp.kk.vvvv]
-```
-
-### 1. Yleistä
-
-Tässä osiossa:
-- Kiitetään mahdollisuudesta lausua
-- Annetaan lyhyt yleisarvio (1–2 kappaletta)
-- Kerrotaan, suhtautuuko kunta ehdotukseen myönteisesti, varauksellisesti vai kriittisesti
-- Nostetaan esiin kaikkein keskeisin viesti
-
-Yleisarvion pitää olla rehellinen mutta rakentava. Jos kunta pitää ehdotusta pääosin hyvänä, se voidaan sanoa suoraan – ja sitten keskittyä parannusehdotuksiin. Jos ehdotus on ongelmallinen, se voidaan todeta perustellusti.
-
-**Esimerkki:**
-> "lausunnonantaja pitää vesihuoltolain uudistuksen tavoitteita kannatettavina. Vesihuollon toimintavarmuuden vahvistaminen ja omistajaohjauksen selkeyttäminen ovat tärkeitä tavoitteita. Kaupunki haluaa kuitenkin kiinnittää huomiota eräisiin yksityiskohtiin, jotka voivat aiheuttaa merkittäviä lisäkustannuksia pienille kunnille."
-
-### 2. Yleiset huomiot
-
-Tässä osiossa käsitellään laajempia teemoja:
-
-**Uudistuksen tarpeellisuus:**
-- Onko lainsäädännön muutostarve perusteltu?
-- Ratkaiseeko ehdotus tunnistettuja ongelmia?
-
-**Kokonaisarvio kuntavaikutuksista:**
-- Miten ehdotus kokonaisuutena vaikuttaa kuntasektoriin?
-- Onko vaikutusarviointi riittävä ja realistinen?
-- Huomioiko ehdotus erikokoisten kuntien erilaiset lähtökohdat?
-
-**Suhde muihin uudistuksiin:**
-- Liittyykö ehdotus muihin meneillään oleviin uudistuksiin?
-- Onko yhteisvaikutuksia arvioitu?
-
-### 3. Yksityiskohtaiset huomiot
-
-Tämä on lausunnon ydin. Käydään läpi lakiehdotuksen keskeiset kohdat, jotka vaikuttavat kuntaan.
-
-**Rakenne kullekin kohdalle:**
+At the head of the statement there must be:
 
 ```
-[Pykälä/luku] – [Lyhyt kuvaus]
+[NAME OF THE MUNICIPALITY OR ORGANISATION] – STATEMENT
 
-Ehdotuksen sisältö: [Tiivistelmä mitä ehdotetaan]
-
-Vaikutus lausunnonantajaan: [Konkreettinen kuvaus vaikutuksesta]
-
-lausunnonantajan kanta: [Kannanotto – tuetaan / tuetaan muutoksin / vastustetaan]
-
-Muutosehdotus: [Jos on, konkreettinen ehdotus miten pykälää pitäisi muuttaa]
+Matter:  [Title of the request for statements, e.g. "Draft government bill to
+          Parliament for an act amending the Water Services Act"]
+Reference: [Case number or identifier of the request, e.g. "VN/12345/2025"]
+Request for statements by: [Ministry]
+Date: [dd.mm.yyyy]
 ```
 
-Huomioita yksityiskohtaisiin kommentteihin:
-- Ei tarvitse kommentoida jokaista pykälää – keskity niihin, jotka vaikuttavat kuntaan
-- Viittaa aina pykälänumeroihin ja momentteihin täsmällisesti
-- Perustele kanta konkreettisesti: "lausunnonantajan vesihuoltolaitos palvelee noin 14 000 asukasta, joten..."
-- Jos ehdotus on hyvä, sekin voidaan mainita: "lausunnonantaja kannattaa ehdotettua X §:n muutosta"
+### 1. General
 
-### 4. Taloudelliset vaikutukset
+In this section:
+- Thank the ministry for the opportunity to comment
+- Give a brief overall assessment (1–2 paragraphs)
+- Say whether the municipality is favourable, cautious or critical towards the proposal
+- Bring out the single most important message
 
-Kunnan taloudellisten vaikutusten arviointi on usein lausunnon vaikuttavin osa.
+The overall assessment must be honest but constructive. If the municipality considers the
+proposal broadly good, that can be said directly — and the focus can then move to proposals for
+improvement. If the proposal is problematic, that can be stated with reasons.
 
-Käsittele:
-- **Suorat kustannusvaikutukset:** Lisääntyvät menot, vähentyvät tulot
-- **Epäsuorat kustannukset:** Hallinnon lisätyö, järjestelmämuutokset, koulutustarpeet
-- **Investointitarpeet:** Uudet järjestelmät, infrastruktuuri, tilat
-- **Siirtymäkauden kustannukset:** Kertaluonteiset kustannukset ennen uuden järjestelmän vakiintumista
-- **Rahoitus:** Kompensoidaanko kunnille? Riittääkö valtionosuusjärjestelmä?
+**Example:**
+> "The respondent considers the objectives of the reform of the Water Services Act
+> (vesihuoltolaki 119/2001) to be supportable. Strengthening the reliability of water services
+> and clarifying ownership steering are important objectives. The city wishes, however, to draw
+> attention to certain details that may cause significant additional costs for small
+> municipalities."
 
-Anna mahdollisimman konkreettisia lukuarvioita. Likimääräinenkin arvio on parempi kuin yleinen toteamus.
+### 2. General observations
 
-**Esimerkki:**
-> "Ehdotettu velvoite edellyttäisi lausunnonantajalta arviolta yhden uuden henkilötyövuoden rekrytoimista, mikä tarkoittaa noin 50 000–60 000 euron vuosittaista lisäkustannusta. Lisäksi tietojärjestelmän päivittäminen aiheuttaisi arviolta 20 000 euron kertaluonteisen kustannuksen."
+This section deals with broader themes:
 
-### 5. Toimeenpanon haasteet
+**The need for the reform:**
+- Is the need to amend the legislation well founded?
+- Does the proposal solve the problems that have been identified?
 
-Tämä osio kuvaa käytännön haasteita, joita pieni kunta kohtaa uudistuksen toimeenpanossa.
+**Overall assessment of the impacts on municipalities:**
+- How does the proposal as a whole affect the municipal sector?
+- Is the impact assessment adequate and realistic?
+- Does the proposal take account of the different starting points of municipalities of different sizes?
 
-Tyypillisiä teemoja:
-- **Henkilöstöresurssit:** Onko kunnassa tarvittavaa osaamista? Saadaanko rekrytoitua?
-- **Aikataulut:** Onko siirtymäaika realistinen? Paljonko valmistautumiseen tarvitaan aikaa?
-- **Tietojärjestelmät:** Vaatiiko muutos päivityksiä? Onko järjestelmätoimittajilla valmiuksia?
-- **Koulutus:** Paljonko henkilöstöä pitää kouluttaa?
-- **Yhteistyö:** Voiko kunta hoitaa velvoitteita yhteistyössä naapurikuntien kanssa?
+**Relationship to other reforms:**
+- Does the proposal relate to other reforms under way?
+- Have the combined effects been assessed?
 
-### 6. Yhteenveto ja keskeiset esitykset
+### 3. Detailed observations
 
-Lausunnon lopussa tiivistetään:
-- 3–7 keskeistä viestiä (priorisoituna)
-- Konkreettiset muutosesitykset lakitekstiin
-- Mahdolliset toimeenpanoa koskevat esitykset (esim. pidemmästä siirtymäajasta)
+This is the core of the statement. Work through the key points of the bill that affect the
+municipality.
 
-Yhteenvedon pitää olla itsenäisesti luettava: päätöksentekijän tulee saada kokonaiskuva lukemalla vain tämän osion.
-
-### Allekirjoitus
+**Structure for each point:**
 
 ```
-[Paikkakunta] [pp.kk.vvvv]
+[Section/chapter] – [Short description]
 
-[KUNNAN TAI ORGANISAATION NIMI]
+Content of the proposal: [Summary of what is proposed]
 
-[Allekirjoittajan nimi]
-[Titteli]
+Effect on the respondent: [Concrete description of the effect]
+
+The respondent's position: [Position — supported / supported with amendments / opposed]
+
+Proposed amendment: [If there is one, a concrete proposal for how the section should be changed]
 ```
 
-Käytännössä lausunnon allekirjoittaa yleensä kaupunginjohtaja tai hallintojohto. Käyttäjä täydentää allekirjoitustiedot itse.
+Points to bear in mind on the detailed comments:
+- You do not have to comment on every section — concentrate on those that affect the municipality
+- Always cite section numbers and subsections precisely
+- Give concrete reasons for the position: "The respondent's water utility serves around 14 000 residents, so..."
+- If a proposal is good, that can be said too: "The respondent supports the proposed amendment to section X"
 
-## Lausunnon pituudesta
+### 4. Financial impacts
 
-Sopiva pituus riippuu uudistuksen laajuudesta:
+Assessing the financial impacts on the municipality is often the most influential part of the
+statement.
 
-| Uudistuksen laajuus | Lausunnon suositeltu pituus |
+Cover:
+- **Direct cost effects:** increased expenditure, reduced income
+- **Indirect costs:** additional administrative work, system changes, training needs
+- **Investment needs:** new systems, infrastructure, premises
+- **Transitional costs:** one-off costs before the new system settles down
+- **Funding:** are municipalities compensated? Is the central government transfer system sufficient?
+
+Give figures that are as concrete as possible. Even an approximate estimate is better than a
+general statement.
+
+**Example:**
+> "The proposed obligation would require the respondent to recruit an estimated one additional
+> person-year, which means an additional annual cost of roughly 50 000–60 000 euros. In addition,
+> upgrading the information system would cause an estimated one-off cost of 20 000 euros."
+
+### 5. Implementation challenges
+
+This section describes the practical challenges a small municipality faces in implementing the
+reform.
+
+Typical themes:
+- **Staff resources:** does the municipality have the expertise needed? Can it be recruited?
+- **Timetables:** is the transitional period realistic? How much time is needed to prepare?
+- **Information systems:** does the change require upgrades? Are the system suppliers ready?
+- **Training:** how many staff have to be trained?
+- **Co-operation:** can the municipality discharge the obligations in co-operation with neighbouring municipalities?
+
+### 6. Summary and key proposals
+
+At the end of the statement, summarise:
+- 3–7 key messages (prioritised)
+- Concrete proposed amendments to the text of the act
+- Any proposals concerning implementation (e.g. a longer transitional period)
+
+The summary must stand on its own: a decision-maker should get the whole picture by reading this
+section alone.
+
+### Signature
+
+```
+[Place] [dd.mm.yyyy]
+
+[NAME OF THE MUNICIPALITY OR ORGANISATION]
+
+[Name of the signatory]
+[Title]
+```
+
+In practice a statement is usually signed by the city manager or by the administrative
+leadership. The user fills in the signature details themselves.
+
+## On the length of a statement
+
+The appropriate length depends on the scale of the reform:
+
+| Scale of the reform | Recommended length of the statement |
 |---|---|
-| Yksittäisen pykälän muutos | 1–3 sivua |
-| Lain osittainen uudistus | 3–8 sivua |
-| Kokonaisuudistus | 5–15 sivua |
-| Useita lakeja koskeva uudistus | 8–20 sivua |
+| Amendment of a single section | 1–3 pages |
+| Partial reform of an act | 3–8 pages |
+| Complete reform | 5–15 pages |
+| A reform covering several acts | 8–20 pages |
 
-Parempi on kirjoittaa tiiviisti ja hyvin perustellusti kuin pitkästi ja toistaen. Päätöksentekijät arvostavat napakkaa viestintää.
+It is better to write tightly and with good reasons than at length and repetitively.
+Decision-makers value crisp communication.
 
-## Lausuntopyynnön kysymyksiin vastaaminen
+## Answering the questions in the request for statements
 
-Usein lausuntopyyntö sisältää erityisiä kysymyksiä (esim. Lausuntopalvelu.fi:ssä). Näihin tulee vastata suoraan, mutta lausunnossa voi lisäksi nostaa esiin aiheita, joita kysymyksissä ei ole käsitelty. Mainitse tällöin selkeästi: "Lausuntopyynnössä esitettyjen kysymysten lisäksi lausunnonantaja haluaa kiinnittää huomiota seuraaviin seikkoihin:"
+A request for statements often contains specific questions (for example in Lausuntopalvelu.fi).
+These should be answered directly, but the statement may in addition raise subjects the questions
+do not cover. Say so clearly in that case: "In addition to the questions put in the request for
+statements, the respondent wishes to draw attention to the following points:"

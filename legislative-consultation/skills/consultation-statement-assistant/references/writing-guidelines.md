@@ -1,108 +1,129 @@
-# Lausunnon kirjoitusohjeet
+# Writing guidelines for a statement
 
-Tämä opas kattaa lausunnon kielellisen ja tyylillisen puolen. Tavoitteena on tuottaa tekstiä, joka on samaan aikaan juridisesti täsmällistä ja helposti ymmärrettävää.
+This guide covers the language and style of a statement. The aim is text that is at once legally
+precise and easy to understand.
 
-## Yleisperiaatteet
+Because the statement that is actually filed is in Finnish, the Finnish-language rules below —
+the inflection of `§`, the register examples and the number conventions — are given in Finnish
+and explained in English. Translating a Finnish orthographic rule into English destroys it.
 
-**Rakentava sävy.** Lausunnon tarkoitus on vaikuttaa lainsäädännön sisältöön. Pelkkä kritiikki ei johda muutoksiin – perustellut vaihtoehdot johtavat. Kun vastustaa jotakin, ehdota aina toinen ratkaisu.
+## General principles
 
-**Konkreettisuus.** "Aiheuttaa lisäkustannuksia" on heikko argumentti. "Edellyttää arviolta yhden henkilötyövuoden lisäystä, noin 55 000 euroa vuodessa" on vahva argumentti. Aina kun mahdollista, käytä lukuja, esimerkkejä ja vertailuja.
+**A constructive tone.** The point of a statement is to influence the content of the legislation.
+Criticism alone does not lead to changes — reasoned alternatives do. When you oppose something,
+always propose another solution.
 
-**Täsmälliset viittaukset.** Viittaa lakipykäliin tarkasti: "ehdotetun 15 §:n 2 momentin mukaan" tai "voimassa olevan vesihuoltolain (119/2001) 9 §:ssä". Älä kirjoita "eräissä kohdissa ehdotetaan" – kerro mikä kohta.
+**Concreteness.** "Causes additional costs" is a weak argument. "Requires an estimated increase
+of one person-year, roughly 55 000 euros a year" is a strong argument. Whenever possible, use
+figures, examples and comparisons.
 
-**Johdonmukaisuus.** Yhteenvedon pitää olla linjassa yksityiskohtaisten huomioiden kanssa. Jos yksityiskohdissa suhtaudutaan myönteisesti ja yleisarviossa kriittisesti, se heikentää lausunnon uskottavuutta.
+**Precise references.** Cite sections of an act exactly: "ehdotetun 15 §:n 2 momentin mukaan"
+("under subsection 2 of the proposed section 15") or "voimassa olevan vesihuoltolain (119/2001)
+9 §:ssä" ("in section 9 of the Water Services Act (vesihuoltolaki 119/2001) in force"). Do not
+write "in certain places it is proposed" — say which place.
 
-## Lakikielen konventiot
+**Coherence.** The summary must be consistent with the detailed observations. If the detail is
+favourable and the overall assessment critical, that weakens the credibility of the statement.
 
-### Pykäläviittaukset
+## Conventions of Finnish legal language
 
-Suomalaisessa lakikielessä pykälämerkki (§) kirjoitetaan numeron jälkeen välilyönnillä:
+### Section references
 
-- "15 §" (ei "§ 15" eikä "15§")
-- "15 §:n 2 momentti" (genetiivimuoto)
-- "15 §:ssä" (inessiivi)
-- "15 §:ään" (illatiivi)
-- "15–17 §" (pykäläväli)
-- "15 §:n 1 ja 3 momentti" (useampi momentti)
+In Finnish legal language the section symbol (§) is written after the number, with a space:
 
-### Lain nimien käyttö
+- `15 §` (not `§ 15` and not `15§`)
+- `15 §:n 2 momentti` (genitive — "subsection 2 of section 15")
+- `15 §:ssä` (inessive — "in section 15")
+- `15 §:ään` (illative — "to section 15")
+- `15–17 §` (a range of sections)
+- `15 §:n 1 ja 3 momentti` (several subsections)
 
-Ensimmäisellä mainintakerralla kirjoita lain koko nimi ja sen numero:
-> "vesihuoltolaki (119/2001)"
+### Using the names of acts
 
-Tämän jälkeen voi käyttää lyhyempää muotoa:
-> "vesihuoltolain", "mainitun lain"
+On the first mention, write the full name of the act and its number:
+> `vesihuoltolaki (119/2001)`
 
-### Viranomaisten ja elinten nimet
+After that a shorter form can be used:
+> `vesihuoltolain`, `mainitun lain` ("of the Water Services Act", "of the said act")
 
-- Kirjoita virallisella nimellä ensimmäisellä kerralla
-- Ministeriöiden nimet pienellä alkukirjaimella: "ympäristöministeriö", "maa- ja metsätalousministeriö"
-- Hallituksen esitys lyhennetään: "HE 123/2025 vp" (vp = valtiopäivät)
+### Names of authorities and bodies
 
-### Momenttien ja kohtien viittaukset
+- Use the official name on the first mention
+- The names of ministries take a lower-case initial in Finnish: `ympäristöministeriö`, `maa- ja metsätalousministeriö`
+- A government bill is abbreviated: `HE 123/2025 vp` (vp = valtiopäivät, the parliamentary session)
 
-- 1 momentti, 2 momentti (ei "ensimmäinen momentti")
-- 1 momentin 2 kohta
-- "2 §:n 1 momentin 3 kohdan mukaan"
+### References to subsections and paragraphs
 
-## Argumentointitavat
+- `1 momentti`, `2 momentti` (subsection 1, subsection 2 — not "the first subsection")
+- `1 momentin 2 kohta` (paragraph 2 of subsection 1)
+- `2 §:n 1 momentin 3 kohdan mukaan` ("under paragraph 3 of subsection 1 of section 2")
 
-### Kuntavaikutusargumentit
+## Ways of arguing
 
-Vahvimmat argumentit kuntanäkökulmasta:
+### Arguments about the impact on municipalities
 
-1. **Taloudelliset vaikutukset** – "Ehdotus lisäisi lausunnonantajan vuotuisia kustannuksia arviolta X euroa"
-2. **Rahoitusperiaate** – "Uudet tehtävät tulee rahoittaa täysimääräisesti valtionosuusjärjestelmän kautta"
-3. **Toimeenpanon realismi** – "Ehdotettu siirtymäaika (6 kk) ei mahdollista järjestelmien päivittämistä"
-4. **Kuntien yhdenvertaisuus** – "Ehdotus asettaa pienet kunnat eriarvoiseen asemaan suurten kanssa"
-5. **Kunnallinen itsehallinto** – "Ehdotus kaventaa kunnallista päätösvaltaa tavalla, joka ei ole perusteltua"
+The strongest arguments from a municipal point of view:
 
-### Muutosehdotusten muotoilu
+1. **Financial impacts** — "The proposal would increase the respondent's annual costs by an estimated X euros"
+2. **The funding principle** — "New tasks must be funded in full through the central government transfer system"
+3. **Realism of implementation** — "The proposed transitional period (6 months) does not make it possible to upgrade the systems"
+4. **Equal treatment of municipalities** — "The proposal places small municipalities in an unequal position compared with large ones"
+5. **Municipal self-government** — "The proposal narrows municipal decision-making power in a way that is not justified"
 
-Muutosehdotukset voidaan esittää kahdella tavalla:
+### Formulating proposed amendments
 
-**Yleisempi muotoilu:**
-> "lausunnonantaja esittää, että 15 §:n 2 momenttia muutetaan siten, että kunnille varataan vähintään 12 kuukauden siirtymäaika."
+Proposed amendments can be put in two ways:
 
-**Tarkka sanamuotoehdotus:**
-> "lausunnonantaja esittää, että 15 §:n 2 momentin viimeinen virke muutetaan muotoon: 'Kunnan on saatettava toimintansa tämän lain mukaiseksi viimeistään 12 kuukauden kuluessa lain voimaantulosta.'"
+**The more general formulation:**
+> "The respondent proposes that subsection 2 of section 15 be amended so that municipalities are
+> allowed a transitional period of at least 12 months."
 
-Tarkka sanamuotoehdotus on vahvempi, koska se osoittaa, että esitys on harkittu ja toteuttamiskelpoinen.
+**A precise wording proposal:**
+> "The respondent proposes that the last sentence of subsection 2 of section 15 be amended to
+> read: 'The municipality shall bring its operations into conformity with this Act within 12
+> months of its entry into force at the latest.'"
 
-## Kielelliset ohjeet
+A precise wording proposal is stronger, because it shows that the proposal has been thought
+through and is workable.
 
-### Passiivin ja aktiivin käyttö
+## Language guidance
 
-Lausunnossa käytetään sekä aktiivia että passiivia:
-- **Aktiivi kunnan kannanotoissa:** "lausunnonantaja katsoo...", "lausunnonantaja esittää..."
-- **Passiivi lakisisällön kuvauksessa:** "Ehdotuksessa esitetään...", "Voimassa olevan lain mukaan..."
+### Use of the passive and the active
 
-### Vältettävät ilmaukset
+A statement uses both the active and the passive:
+- **Active for the municipality's positions:** `lausunnonantaja katsoo...`, `lausunnonantaja esittää...` ("the respondent considers...", "the respondent proposes...")
+- **Passive when describing the content of the law:** `Ehdotuksessa esitetään...`, `Voimassa olevan lain mukaan...` ("the proposal puts forward...", "under the law in force...")
 
-| Vältä | Käytä mieluummin |
+### Expressions to avoid
+
+The Finnish phrasings are given as they are used; the English gloss is for comprehension only.
+
+| Avoid | Prefer |
 |---|---|
-| "On mahdotonta toteuttaa" | "Edellyttäisi resursseja, joita kunnalla ei nykyisellään ole" |
-| "Ehdotus on huono" | "Ehdotus ei riittävästi huomioi pienten kuntien tilannetta" |
-| "Vastustamme ehdottomasti" | "Katsomme, että ehdotusta tulisi olennaisesti muuttaa" |
-| "Kaikki kunnat ovat samaa mieltä" | "Monissa lausunnoissa on tuotu esiin vastaavia huomioita" |
+| `"On mahdotonta toteuttaa"` (it is impossible to implement) | `"Edellyttäisi resursseja, joita kunnalla ei nykyisellään ole"` (it would require resources the municipality does not currently have) |
+| `"Ehdotus on huono"` (the proposal is bad) | `"Ehdotus ei riittävästi huomioi pienten kuntien tilannetta"` (the proposal does not sufficiently take account of the situation of small municipalities) |
+| `"Vastustamme ehdottomasti"` (we absolutely oppose) | `"Katsomme, että ehdotusta tulisi olennaisesti muuttaa"` (we consider that the proposal should be substantially amended) |
+| `"Kaikki kunnat ovat samaa mieltä"` (all municipalities agree) | `"Monissa lausunnoissa on tuotu esiin vastaavia huomioita"` (corresponding observations have been raised in many statements) |
 
-### Numerot ja luvut
+### Numbers and figures
 
-- Alle kymmenen kirjoitetaan kirjaimin: "kolme kuntaa"
-- Kymmenen ja yli numeroin: "15 kuntaa"
-- Rahasummat aina numeroin: "50 000 euroa"
-- Prosentit numeroin: "3,5 prosenttia" tai "3,5 %"
-- Vuosiluvut aina numeroin: "vuonna 2025"
+These are Finnish typographic conventions and apply to the Finnish text:
 
-## Tarkistuslista ennen viimeistelyä
+- Below ten, written out in words: `kolme kuntaa` (three municipalities)
+- Ten and above, in figures: `15 kuntaa` (15 municipalities)
+- Sums of money always in figures: `50 000 euroa`
+- Percentages in figures, with the Finnish decimal comma: `3,5 prosenttia` or `3,5 %`
+- Years always in figures: `vuonna 2025`
 
-Ennen lausunnon palauttamista käyttäjälle, tarkista nämä:
+## Checklist before finishing
 
-- [ ] Ovatko kaikki pykäläviittaukset oikein muotoiltuja?
-- [ ] Onko lain nimi ja numero mainittu oikein?
-- [ ] Onko HE-luonnoksen viitetiedot oikein?
-- [ ] Ovatko lukuarviot perustellusti esitettyjä?
-- [ ] Onko jokaiselle vastaväitteelle ehdotettu vaihtoehto?
-- [ ] Onko yhteenveto linjassa yksityiskohtien kanssa?
-- [ ] Onko teksti kieliopillisesti moitteetonta?
-- [ ] Onko lausunnonantajan virallinen nimi oikein (esim. kaupunki vs. kunta, viraston tarkka nimi)?
+Before returning the statement to the user, check these:
+
+- [ ] Are all the section references correctly formatted?
+- [ ] Are the name and number of the act cited correctly?
+- [ ] Are the reference details of the draft bill correct?
+- [ ] Are the estimated figures presented with reasons?
+- [ ] Has an alternative been proposed for every objection?
+- [ ] Is the summary consistent with the detail?
+- [ ] Is the text grammatically faultless?
+- [ ] Is the respondent's official name correct (e.g. city vs. municipality, the exact name of the agency)?

@@ -1,162 +1,163 @@
-# Analyysin työkalut — lain ja ehdotuksen analysointi
+# Analysis tools — analysing the act and the proposal
 
-Tämä viitetiedosto kuvaa, miten voimassa olevaa lakia ja ehdotettuja muutoksia
-analysoidaan systemaattisesti kunnan lausunnon pohjaksi.
+This reference describes how to analyse the law in force and the proposed amendments
+systematically as the basis for a municipality's statement.
 
-## Tietolähteet
+## Information sources
 
-### Lainsäädäntö ja lakiehdotukset
+### Legislation and bills
 
-**Finlex (finlex.fi)** — Ajantasainen lainsäädäntö
-- Haetaan voimassa oleva laki, jota esitys muuttaa
-- Vertaillaan voimassa olevia pykäliä ehdotettuihin muutoksiin
-- Huom: Finlexin ajantasainen versio sisältää kaikki muutokset
+**Finlex (finlex.fi)** — legislation in force
+- Retrieve the act in force that the bill amends
+- Compare the sections in force with the proposed amendments
+- Note: the consolidated version on Finlex includes all amendments
 
-**Eduskunta (eduskunta.fi)** — Hallituksen esitykset
-- HE:t löytyvät osoitteesta: eduskunta.fi/valtiopaivaasiakirjat
-- Sisältää perustelut, valiokuntamietinnöt ja äänestystulokset
-- Myös vanhat HE:t ja niiden perustelut ovat käyttökelpoisia
+**Eduskunta (eduskunta.fi)** — government bills
+- HE documents are at: eduskunta.fi/valtiopaivaasiakirjat
+- Contains the reasoning, committee reports and voting results
+- Older HE documents and their reasoning are useful too
 
-**Valtioneuvosto (valtioneuvosto.fi)** — Hanketietopalvelu
-- Lainsäädäntöhankkeiden seuranta
-- Hankerekisteri: hankeikkuna.fi
-- Ministerien päätökset ja linjaukset
+**Valtioneuvosto (valtioneuvosto.fi)** — project information service
+- Tracking of legislative projects
+- Project register: hankeikkuna.fi
+- Ministers' decisions and policy positions
 
-### Lausunnot ja kannanotot
+### Statements and position papers
 
-**Lausuntopalvelu.fi** — Kaikkien annettujen lausuntojen arkisto
-- Hakutoiminto: lain nimi, HE-numero tai asiasanat
-- Kuntien lausunnot löytyvät lausunnonantajan tyyppi: "kunta"
-- Kuntaliiton lausunto löytyy omalla nimellä
+**Lausuntopalvelu.fi** — archive of all statements given
+- Search function: name of the act, HE number or keywords
+- Municipalities' statements are found under respondent type "kunta"
+- Kuntaliitto's statement is under its own name
 
-**Kuntaliitto (kuntaliitto.fi)** — Kuntaliiton lausunnot
-- Kattava arkisto Kuntaliiton virallisista lausunnoista
-- Usein yksityiskohtaisia kustannuslaskelmia
-- Juridisia analyysejä perustuslainmukaisuudesta
+**Kuntaliitto (kuntaliitto.fi)** — Kuntaliitto's statements
+- A comprehensive archive of Kuntaliitto's official statements
+- Often contains detailed cost calculations
+- Legal analyses of constitutionality
 
-**Perustuslakivaliokunta** — Aikaisemmat lausunnot
-- Perustuslakivaliokunnan lausunnot (PeVL) ovat painavia argumentteja
-- Erityisesti kunnallisen itsehallinnon ja rahoitusperiaatteen tulkinnat
-- Hakutoiminto: eduskunta.fi → Valtiopäiväasiakirjat → PeVL
+**The Constitutional Law Committee** — earlier statements
+- The statements of the Constitutional Law Committee (PeVL) are weighty arguments
+- Particularly its interpretations of municipal self-government and the funding principle
+- Search: eduskunta.fi → Valtiopäiväasiakirjat → PeVL
 
-### Taustatiedot
+### Background information
 
-**Tilastokeskus (tilastokeskus.fi)** — Kuntataloustilastot
-- Kuntien menot ja tulot toimialoittain
-- Kuntien henkilöstötilastot
-- Väestöennusteet kunnittain
+**Tilastokeskus (tilastokeskus.fi)** — municipal finance statistics
+- Municipalities' expenditure and income by sector
+- Municipal staffing statistics
+- Population projections by municipality
 
-**Valtiovarainministeriö (vm.fi)** — Kuntatalous
-- Peruspalvelujen tila -raportti
-- Kuntien rahoitusasema
-- Valtionosuuslaskelmat
+**The Ministry of Finance (vm.fi)** — municipal finances
+- The report on the state of basic services
+- Municipalities' financial position
+- Central government transfer calculations
 
-## Analyysin vaiheet
+## Stages of the analysis
 
-### Vaihe 1: Nykytilan kartoitus
+### Stage 1: Mapping the current position
 
-Selvitä ja dokumentoi:
+Establish and document:
 
-1. **Voimassa oleva laki**: Lue ajantasainen laki Finlexistä kokonaan tai muutettavien osien osalta
-2. **Soveltamiskäytäntö**: Miten lakia sovelletaan käytännössä kunnissa?
-3. **Tunnetut ongelmat**: Mitkä ongelmat nykylaissa ovat yleisesti tunnettuja?
-4. **Kunnan nykytilanne**: Miten oma kunta toteuttaa lain velvoitteet nykyisin?
+1. **The law in force**: read the consolidated act on Finlex in full, or the parts being amended
+2. **Application in practice**: how is the act applied in practice in municipalities?
+3. **Known problems**: which problems in the current act are generally recognised?
+4. **The municipality's current position**: how does your own municipality meet the obligations under the act at present?
 
-### Vaihe 2: Muutosten tunnistaminen
+### Stage 2: Identifying the changes
 
-Lue hallituksen esitys ja tunnista:
+Read the government bill and identify:
 
-1. **Uudet velvoitteet**: Mitä kuntien on tehtävä, mitä ei ennen tarvinnut?
-2. **Muuttuvat velvoitteet**: Miten nykyisiä velvoitteita muutetaan?
-3. **Poistuvat velvoitteet**: Mitä velvoitteita kevennetään tai poistetaan?
-4. **Rakenteelliset muutokset**: Muuttuuko toimivallan jako tai organisointi?
+1. **New obligations**: what must municipalities now do that they did not have to before?
+2. **Changed obligations**: how are existing obligations being changed?
+3. **Obligations removed**: which obligations are being lightened or removed?
+4. **Structural changes**: does the division of competence or the organisation change?
 
-### Vaihe 3: Vertailu
+### Stage 3: Comparison
 
-Laadi vertailutaulukko keskeisistä muutoksista:
-
-```
-Pykälä | Nykytila                  | Ehdotettu muutos            | Kunnan arvio
-───────┼───────────────────────────┼─────────────────────────────┼──────────────
-X §    | Kunta voi järjestää...    | Kunnan on järjestettävä...  | Velvoittaa
-Y §    | Ei säännöstä              | Uusi velvoite: [kuvaus]     | Uusi tehtävä
-Z §    | Ilmoitettava 30 pv:n     | Ilmoitettava 14 pv:n        | Tiukentaa
-       | kuluessa                  | kuluessa                    | aikataulua
-```
-
-### Vaihe 4: Vaikutusarvioinnin tarkistaminen
-
-Vertaa HE:n vaikutusarviointia omiin havaintoihin:
-
-1. **Kustannusarviot**: Ovatko realistisia? Puuttuuko kustannuseriä?
-2. **Henkilöstöarviot**: Vastaavatko kunnan kokemusta?
-3. **Siirtymäaika-arviot**: Onko valmistautumiseen varattu realistisesti aikaa?
-4. **Kohdentuminen**: Onko eri kokoluokkien kuntien tilanne huomioitu?
-
-### Vaihe 5: Muiden lausuntojen analysointi
-
-Lue erityisesti:
-
-1. **Kuntaliiton lausunto**: Kattava juridinen ja taloudellinen analyysi
-2. **Suurten kaupunkien lausunnot**: Helsinki, Tampere, Turku, Oulu
-3. **Pienten kuntien lausunnot**: Vertailukohta oman kunnan tilanteeseen
-4. **Ministeriön vastaukset lausuntoihin**: Miten aiemmat huomiot on käsitelty?
-
-## Analyysipohja
-
-Käytä seuraavaa pohjaa analyysin jäsentämiseen:
+Draw up a comparison table of the key changes:
 
 ```
-ANALYYSI: [Lain nimi, HE-numero]
-
-1. YLEISKATSAUS
-   - Esityksen tavoite: [lyhyt kuvaus]
-   - Keskeiset muutokset: [luettelo]
-   - Lausuntopyyntö: [päivämäärä, lausuntoaika]
-
-2. MUUTOSANALYYSI
-   [Vertailutaulukko yllä olevan mallin mukaan]
-
-3. KUNTAVAIKUTUKSET
-   - Talous: [arvio]
-   - Itsehallinto: [arvio]
-   - Henkilöstö: [arvio]
-   - Palvelut: [arvio]
-   - Hallinto: [arvio]
-
-4. HE:N VAIKUTUSARVIOINNIN PUUTTEET
-   [Mitä HE:stä puuttuu tai mikä on aliarvioitu?]
-
-5. MUIDEN LAUSUNTOJEN PÄÄPOINTIT
-   - Kuntaliitto: [tiivistelmä]
-   - Muut kunnat: [keskeisimmät huomiot]
-
-6. JOHTOPÄÄTÖKSET
-   - Kunnan kannalta kriittisimmät kohdat
-   - Ehdotukset parannuksiksi
-   - Priorisointi: mihin keskittyä lausunnossa?
+Section | Current position           | Proposed change              | Municipality's view
+────────┼────────────────────────────┼──────────────────────────────┼────────────────────
+X §     | The municipality may       | The municipality must        | Makes it mandatory
+        | organise...                | organise...                  |
+Y §     | No provision               | New obligation: [description]| New task
+Z §     | Notification within        | Notification within          | Tightens the
+        | 30 days                    | 14 days                      | timetable
 ```
 
-## Hakustrategiat verkosta
+### Stage 4: Checking the impact assessment
 
-Kun tarvitset lisätietoa, käytä näitä hakutermejä:
+Compare the impact assessment in the HE with your own findings:
 
-**Hallituksen esityksen löytäminen:**
-- `"HE [numero]/[vuosi] vp"` → eduskunta.fi
-- `[lain nimi] hallituksen esitys` → valtioneuvosto.fi
+1. **Cost estimates**: are they realistic? Are any cost items missing?
+2. **Staffing estimates**: do they match the municipality's experience?
+3. **Transitional period estimates**: has realistic time been allowed for preparation?
+4. **Targeting**: has the situation of municipalities of different sizes been taken into account?
 
-**Kuntaliiton lausunnon löytäminen:**
-- `kuntaliitto lausunto [lain nimi]` → kuntaliitto.fi
-- `site:kuntaliitto.fi lausunto [aihe]`
+### Stage 5: Analysing other statements
 
-**Voimassa olevan lain löytäminen:**
-- `[lain nimi] finlex` → finlex.fi/fi/laki/ajantasa/
-- `[lain numero/vuosi]` → suora linkki finlex.fi
+Read in particular:
 
-**Perustuslakivaliokunnan lausuntojen löytäminen:**
-- `PeVL [aihe] kunnallinen itsehallinto`
-- `perustuslakivaliokunta lausunto [lain nimi]`
+1. **Kuntaliitto's statement**: a comprehensive legal and financial analysis
+2. **Statements by the large cities**: Helsinki, Tampere, Turku, Oulu
+3. **Statements by small municipalities**: a point of comparison for your own municipality's situation
+4. **The ministry's responses to statements**: how have earlier observations been dealt with?
 
-**Muiden kuntien lausuntojen löytäminen:**
-- `site:lausuntopalvelu.fi [lain nimi]`
-- `[kaupungin nimi] lausunto [lain nimi]`
+## Analysis template
+
+Use the following template to structure the analysis:
+
+```
+ANALYSIS: [Name of the act, HE number]
+
+1. OVERVIEW
+   - Objective of the bill: [brief description]
+   - Key changes: [list]
+   - Request for statements: [date, consultation period]
+
+2. ANALYSIS OF THE CHANGES
+   [Comparison table following the model above]
+
+3. IMPACTS ON THE MUNICIPALITY
+   - Finances: [assessment]
+   - Self-government: [assessment]
+   - Staffing: [assessment]
+   - Services: [assessment]
+   - Administration: [assessment]
+
+4. GAPS IN THE IMPACT ASSESSMENT IN THE HE
+   [What is missing from the HE or has been underestimated?]
+
+5. MAIN POINTS OF OTHER STATEMENTS
+   - Kuntaliitto: [summary]
+   - Other municipalities: [the most important observations]
+
+6. CONCLUSIONS
+   - The points most critical for the municipality
+   - Proposals for improvement
+   - Prioritisation: what to concentrate on in the statement?
+```
+
+## Search strategies for the web
+
+When you need more information, use these search terms:
+
+**Finding the government bill:**
+- `"HE [number]/[year] vp"` → eduskunta.fi
+- `[name of the act] hallituksen esitys` → valtioneuvosto.fi
+
+**Finding Kuntaliitto's statement:**
+- `kuntaliitto lausunto [name of the act]` → kuntaliitto.fi
+- `site:kuntaliitto.fi lausunto [subject]`
+
+**Finding the act in force:**
+- `[name of the act] finlex` → finlex.fi/fi/laki/ajantasa/
+- `[number/year of the act]` → direct link on finlex.fi
+
+**Finding the statements of the Constitutional Law Committee:**
+- `PeVL [subject] kunnallinen itsehallinto`
+- `perustuslakivaliokunta lausunto [name of the act]`
+
+**Finding other municipalities' statements:**
+- `site:lausuntopalvelu.fi [name of the act]`
+- `[name of the city] lausunto [name of the act]`

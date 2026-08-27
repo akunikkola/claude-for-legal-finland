@@ -1,26 +1,26 @@
 ---
 name: contract-drafting
 description: >
-  Sopimuksen laatiminen Suomen oikeuden mukaan: rakenne, keskeiset lausekkeet ja
-  sopimusoikeuden perusteet. Käytä tätä skilliä, kun käyttäjä laatii, luonnostelee
-  tai täydentää sopimusta – toimitus-, palvelu-, salassapito-, työ-, vuokra-,
-  toimeksianto-, lisenssi- tai muuta sopimusta – tai kysyy sopimuslausekkeen
-  muotoilusta, sopimuksen osista, vastuunrajoituksesta, sopimussakosta,
-  irtisanomisesta, sovellettavasta laista tai riidanratkaisusta. Triggeröi kun
-  käyttäjä mainitsee sopimuksen, sopimusehdon, lausekkeen, osapuolet, velvoitteet
-  tai haluaa sopimuspohjan.
+  Drafting a contract under Finnish law: structure, the key clauses and the fundamentals of
+  contract law. Use this skill when the user is drafting, outlining or completing a contract –
+  supply, services, non-disclosure, employment, lease, engagement, licence or any other
+  contract – or asks about the wording of a contract clause, the parts of a contract, a
+  limitation of liability, a contractual penalty, termination, the applicable law or dispute
+  resolution. Triggers when the user mentions a contract, a contract term, a clause, the
+  parties or the obligations, or wants a contract template. Covers oikeustoimilaki 228/1929
+  and kauppalaki 355/1987 and kuluttajansuojalaki 38/1978.
 ---
 
-# Sopimuksen laatiminen Suomen oikeuden mukaan
+# Drafting a contract under Finnish law
 
-Tämä skill auttaa laatimaan selkeän, tasapainoisen ja Suomen sopimusoikeuden mukaisen
-sopimuksen. Lähtökohtana on **sopimusvapaus**: osapuolet voivat pääsääntöisesti sopia
-sisällöstä vapaasti, mutta pakottava lainsäädäntö (erityisesti kuluttaja- ja
-työsuhteissa) ja kohtuullistamissäännöt asettavat rajat.
+This skill helps produce a clear, balanced contract that complies with Finnish contract law.
+The starting point is **freedom of contract**: the parties may as a rule agree the content
+freely, but mandatory legislation (particularly in consumer and employment relationships) and
+the rules on adjustment of unfair terms set the limits.
 
-> **Vastuuvapaus:** sopimusluonnos on tarkistettava ennen allekirjoitusta — ei
-> oikeudellista neuvontaa. Merkittävissä tai suuririskisissä sopimuksissa juristin
-> tarkistus on tarpeen. Katso `contracts/AGENTS.md`.
+> **Disclaimer:** a draft contract needs checking before signature — this is not legal
+> advice. For significant or high-risk contracts a lawyer's review is necessary. See
+> `contracts/AGENTS.md`.
 
 ## Output language
 
@@ -29,82 +29,88 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista sovellettava laki lähteestä
+## Check the applicable law against the source
 
-Kun sopimus nojaa lakiin (kauppalaki, kuluttajansuojalaki, työsopimuslaki, korkolaki
-jne.) tai viittaat pykälään, **käytä `legal-core`-plugarin `legal-research`-skilliä** ja
-varmista voimassa oleva sanamuoto oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta
-muistista. Sopimusoikeuden perusteet ja keskeiset lait: lue `references/contract-law.md`.
+When the contract rests on legislation (kauppalaki, kuluttajansuojalaki, työsopimuslaki,
+korkolaki and so on) or you cite a section, **use the `legal-research` skill in the `legal-core`
+domain** and confirm the wording in force from the oik.ai/Finlex MCP. Do not confirm a
+legislative reference from memory. For the fundamentals of contract law and the key statutes,
+read `references/contract-law.md`.
 
 ---
 
-## Vaihe 1: Selvitä sopimuksen perusta
+## Stage 1: Establish the basis of the contract
 
-Kysy käyttäjältä, ellei tieto käy ilmi:
-1. **Sopimustyyppi ja tarkoitus** (mitä sovitaan, mikä on kaupan/palvelun kohde).
-2. **Osapuolet** — viralliset nimet ja y-tunnukset; onko jompikumpi kuluttaja? (Kuluttajasopimuksessa pakottava kuluttajansuoja rajoittaa ehtoja.)
-3. **Keskeiset kaupalliset ehdot** — hinta, maksuehdot, aikataulu, kesto.
-4. **Riskit ja painopisteet** — mikä osapuolta erityisesti huolettaa (vastuu, IPR, salassapito, exit).
-5. **Onko valmista pohjaa tai aiempaa sopimusta** mallina.
+Ask the user, unless it is already clear:
+1. **Type and purpose of the contract** (what is being agreed, what is being sold or supplied).
+2. **The parties** — official names and business IDs (y-tunnus); is either of them a consumer? (In a consumer contract the mandatory consumer protection rules limit what may be agreed.)
+3. **The key commercial terms** — price, payment terms, timetable, duration.
+4. **Risks and priorities** — what particularly concerns the party (liability, IPR, confidentiality, exit).
+5. **Whether there is an existing template or earlier contract** to use as a model.
 
-Jos jompikumpi osapuoli on kuluttaja tai kyse on työsuhteesta, nosta pakottavan
-lainsäädännön rajat esiin ennen ehtojen laatimista.
+If either party is a consumer, or the matter concerns an employment relationship, raise the
+limits set by mandatory legislation before drafting the terms.
 
-## Vaihe 2: Rakenne
+## Stage 2: Structure
 
-Käytä vakiintunutta rakennetta (sovita sopimustyyppiin):
+Use the established structure (adapt it to the type of contract):
 
-1. **Otsikko ja osapuolet** — viralliset nimet, y-tunnukset, lyhennetyt nimet ("jäljempänä *Toimittaja*").
-2. **Tausta ja tarkoitus** (tarvittaessa) — mitä sopimuksella tavoitellaan.
-3. **Määritelmät** — keskeiset termit, isolla alkukirjaimella merkityt.
-4. **Sopimuksen kohde** — mitä toimitetaan/tehdään, laajuus, laatuvaatimukset.
-5. **Hinta ja maksuehdot** — hinta, alv, laskutus, maksuaika, viivästyskorko (korkolaki).
-6. **Osapuolten velvollisuudet** — kummankin suoritukset selkeästi eroteltuina.
-7. **Immateriaalioikeudet** (jos relevanttia) — kenelle oikeudet syntyvät/siirtyvät.
-8. **Salassapito** — laajuus, kesto, poikkeukset.
-9. **Vastuu ja vastuunrajoitus** — vahingonkorvaus, vastuun yläraja, välilliset vahingot, force majeure.
-10. **Sopimusrikkomus ja seuraamukset** — sopimussakko, purku, korjaaminen.
-11. **Voimassaolo ja päättäminen** — kesto, irtisanominen, purkuperusteet, päättymisen vaikutukset.
-12. **Sovellettava laki ja riidanratkaisu** — Suomen laki; yleinen tuomioistuin (yksilöi käräjäoikeus) vai välimiesmenettely.
-13. **Muut ehdot** — muutokset kirjallisesti, siirtäminen, ilmoitukset, sopimuksen liitteet ja pätevyysjärjestys.
-14. **Allekirjoitukset** — päiväys, kappalemäärä/sähköinen allekirjoitus.
+1. **Title and parties** — official names, business IDs, short names ("hereinafter the *Supplier*").
+2. **Background and purpose** (where needed) — what the contract is intended to achieve.
+3. **Definitions** — the key terms, marked with an initial capital.
+4. **Subject matter of the contract** — what is supplied or done, the scope, the quality requirements.
+5. **Price and payment terms** — price, VAT, invoicing, payment period, interest on late payment (korkolaki).
+6. **The parties' obligations** — each party's performance clearly separated.
+7. **Intellectual property rights** (where relevant) — to whom rights arise or are transferred.
+8. **Confidentiality** — scope, duration, exceptions.
+9. **Liability and limitation of liability** — damages, the cap on liability, indirect loss, force majeure.
+10. **Breach and its consequences** — contractual penalty, rescission, cure.
+11. **Term and termination** — duration, termination with notice, grounds for rescission, the effects of termination.
+12. **Applicable law and dispute resolution** — Finnish law; the general courts (identify the district court) or arbitration.
+13. **Other terms** — amendments in writing, assignment, notices, the annexes to the contract and their order of precedence.
+14. **Signatures** — date, number of counterparts or electronic signature.
 
-Valmiit, kommentoidut esimerkkilausekkeet: lue `references/contract-clauses.md`.
+Ready-made, annotated model clauses: read `references/contract-clauses.md`.
 
-## Vaihe 3: Laadinnan periaatteet
+## Stage 3: Principles of drafting
 
-- **Yksilöi osapuolet tarkasti** (viralliset nimet, y-tunnukset) ja käytä lyhennettyä nimeä johdonmukaisesti läpi sopimuksen.
-- **Yksiselitteisyys:** vältä tulkinnanvaraa. "Kohtuullinen aika" → määrittele päivinä. "Viipymättä" → täsmennä.
-- **Johdonmukainen termistö:** samasta asiasta sama termi (käytä `legal-core`-skilliä kielen tarkistukseen).
-- **Tasapaino:** yksipuoliset ehdot voivat altistua kohtuullistamiselle (oikeustoimilain 228/1929 36 §) — erityisesti heikomman osapuolen vahingoksi. Kuluttajasopimuksessa kuluttajan vahingoksi poikkeavat ehdot voivat olla pätemättömiä.
-- **Vastuunrajoitus:** erota välitön ja välillinen vahinko, aseta vastuun yläraja selkeästi; huomaa, ettei vastuuta voi rajoittaa tahallisuuden tai törkeän huolimattomuuden osalta.
-- **Pykäläviittaukset:** käytä säädöskielen viittausmuotoja (`legal-core`-skill); tarkista numerot `legal-research`-skillillä.
+- **Identify the parties precisely** (official names, business IDs) and use the short name consistently throughout the contract.
+- **Unambiguity:** avoid room for interpretation. "A reasonable time" → define it in days. "Without delay" → make it precise.
+- **Consistent terminology:** the same term for the same thing (use the `legal-core` skill to check the language).
+- **Balance:** one-sided terms may be exposed to adjustment (section 36 of oikeustoimilaki 228/1929) — particularly to the detriment of the weaker party. In a consumer contract, terms that derogate to the consumer's detriment may be invalid.
+- **Limitation of liability:** distinguish direct and indirect loss, set the cap on liability clearly; note that liability cannot be limited in respect of intent or gross negligence.
+- **Section references:** use the citation forms of legislative language (the `legal-core` skill); check the numbers with the `legal-research` skill.
 
-## Vaihe 4: Tulostemuoto
+## Stage 4: Output format
 
-Tuota **uusi** sopimus muokattavana Word-dokumenttina (.docx) `docx`-skillillä (lue sen SKILL.md ensin), tai pyydettäessä Markdown-/tekstimuodossa. Jos kyse on **olemassa olevan sopimuksen muokkaamisesta**, käytä `adeu`-MCP:tä: se kirjoittaa muutokset natiiveina Word-jälkimuutoksina (Track Changes) rikkomatta muotoilua — älä luo dokumenttia uusiksi. Merkitse täydennettävät kohdat selkeästi hakasulkein: `[osapuolen nimi]`, `[hinta]`, `[päivämäärä]`. Lisää loppuun huomautus: *"Luonnos — tarkistettava ennen allekirjoitusta."*
+Produce a **new** contract as an editable Word document (.docx) with the `docx` skill (read its
+SKILL.md first), or in Markdown or plain text on request. If the task is **editing an existing
+contract**, use the `adeu` MCP: it writes the changes as native Word tracked changes (Track
+Changes) without breaking the formatting — do not recreate the document. Mark the points to be
+completed clearly in square brackets: `[name of the party]`, `[price]`, `[date]`. Add a note at
+the end: *"Draft — needs checking before signature."*
 
-## Vaihe 5: Suosittele tarkistusta
+## Stage 5: Recommend a review
 
-Ehdota laajan tai suuririskisen sopimuksen kohdalla `contract-review`-skilliä
-(lausekekohtainen riskiarvio) ja perusteelliseen läpikäyntiin `legal-core`-plugarin
-`document-review`-skilliä.
+For an extensive or high-risk contract, suggest the `contract-review` skill (a clause-by-clause
+risk assessment) and, for a thorough going-over, the `document-review` skill in the `legal-core`
+domain.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei korvaa juristin tarkistusta eikä kanna vastuuta luonnoksesta.** Tuottaa tarkistettavan luonnoksen; merkittävä tai suuririskinen sopimus kuuluu juristin arvioitavaksi ennen allekirjoitusta.
-- **Ei vahvista sovellettavan lain pykäliä muistista.** Kauppalain, kuluttajansuojalain, työsopimuslain, korkolain ym. säädösnumero ja sanamuoto tarkistetaan lähteestä; tarkistamaton viittaus merkitään `[muistinvarainen — tarkista]`.
-- **Ei päätä, voiko valmiin sopimuksen allekirjoittaa.** Laatii ja muotoilee ehdot; lausekekohtainen riskiluokitus ja 🔴 PUNAINEN kuuluvat tarkistus-skillille ja juristille.
-- **Ei laadi pakottavan lain vastaista ehtoa** vain siksi, että osapuolet niin "sopivat" — kuluttajan tai työntekijän vahingoksi poikkeava ehto nostetaan esiin, ei piiloteta sopimukseen.
-- **Ei korvaa työsuhteen erityissääntelyä.** Työsopimuksen yksityiskohdat (koeaika, irtisanomissuoja, työehtosopimus) kuuluvat työoikeuden materiaaliin.
-- **Ei luo olemassa olevaa dokumenttia uusiksi.** Voimassa olevan sopimuksen muokkaus tehdään jälkimuutoksina (`adeu`-MCP), ei korvaavana versiona.
+- **It does not replace a lawyer's review and does not carry responsibility for the draft.** It produces a draft for review; a significant or high-risk contract belongs with a lawyer before signature.
+- **It does not confirm sections of the applicable law from memory.** The statute number and wording of kauppalaki, kuluttajansuojalaki, työsopimuslaki, korkolaki and the rest are checked against the source; an unchecked reference is marked `[from memory — verify in Finlex]`.
+- **It does not decide whether a finished contract can be signed.** It drafts and formulates the terms; clause-by-clause risk classification and 🔴 RED belong to the review skill and to a lawyer.
+- **It does not draft a term contrary to mandatory law** merely because the parties "agreed it" — a term derogating to the detriment of a consumer or an employee is raised, not buried in the contract.
+- **It does not replace the special rules on employment relationships.** The details of an employment contract (probationary period, protection against dismissal, the collective agreement) belong to the employment-law material.
+- **It does not recreate an existing document.** An amendment to a contract in force is made as tracked changes (the `adeu` MCP), not as a replacement version.
 
-## Jatka tästä
+## Continue from here
 
-- Valmiin luonnoksen lausekekohtainen riskiarvio (🟢/🟡/🔴) → /sopimukset:sopimuksen-tarkistus
-- Sovellettavan lain pykälien ja säädösnumeroiden tarkistus → /juristi:oikeustutkimus
-- Työsopimuksen laatiminen Suomen työoikeuden mukaan → /tyooikeus:tyosopimus
-- Henkilötietojen käsittely sopimuksessa (käsittelysopimus, tietosuojaehdot) → /tietosuoja:tietosuoja-arviointi
-- Valmiin sopimustekstin perusteellinen laadun- ja kielentarkistus → /juristi:asiakirjan-tarkistus
-- Osakassopimus tai yhtiöoikeudellinen kytkös → /yhtiooikeus:osakassopimus
-- NDA tai liikesalaisuuksien suojaehdot → /immateriaalioikeus:liikesalaisuudet
+- Clause-by-clause risk assessment of a finished draft (🟢/🟡/🔴) → /contracts:contract-review
+- Checking the sections and statute numbers of the applicable law → /legal-core:legal-research
+- Drafting an employment contract under Finnish employment law → /employment-law:employment-contract
+- Processing of personal data in the contract (processing agreement, data protection terms) → /data-protection:data-protection-assessment
+- A thorough quality and language check of finished contract text → /legal-core:document-review
+- A shareholders' agreement or a company-law connection → /company-law:shareholders-agreement
+- An NDA or terms protecting trade secrets → /intellectual-property:trade-secrets

@@ -1,27 +1,29 @@
 ---
 name: consultation-statement-assistant
 description: >
-  Lausunnon laatiminen lakiuudistuksiin ja lakiluonnoksiin minkä tahansa lausunnonantajan
-  (kunta, kaupunki, kuntayhtymä, virasto, järjestö, yritys) näkökulmasta. Auttaa
-  analysoimaan lakiehdotusta, vertaamaan sitä voimassa olevaan lakiin, tunnistamaan
-  vaikutukset, tiivistämään muiden lausunnonantajien näkemyksiä ja kirjoittamaan
-  perustellun lausunnon. Käytä tätä skilliä aina kun käyttäjä mainitsee lausunnon,
-  lausuntokierroksen, lausuntopyynnön, lakiuudistuksen, hallituksen esityksen (HE),
-  lausuntopalvelun tai kannanoton, tai haluaa analysoida lakiehdotusta oman
-  organisaationsa näkökulmasta tai arvioida lakimuutoksen vaikutuksia.
+  Drafting a consultation statement (lausunto) on a legislative reform or a draft act from
+  any respondent's point of view: municipality, city, joint municipal authority, government
+  agency, association or company. Helps analyse the bill, compare it with the law in force,
+  identify the impacts, summarise other respondents' views and write a reasoned statement.
+  Use this skill when the user mentions a consultation statement, a consultation round
+  (lausuntokierros), a request for statements (lausuntopyyntö), a legislative reform, a
+  government bill (hallituksen esitys / HE), lausuntopalvelu or a position paper, or wants
+  to analyse a bill from their own organisation's point of view or to assess the impact of
+  a legislative change.
 ---
 
-# Lausuntoapuri — laadukas lausunto lakiuudistuksiin
+# Consultation statement assistant — a strong statement on a legislative reform
 
-Tämä skill auttaa laatimaan perustellun ja vaikuttavan lausunnon lakiehdotuksesta.
-Se yhdistää lakiehdotuksen analyysin, vaikutusarvioinnin lausunnonantajan näkökulmasta
-ja lausunnon rakenteellisen kirjoittamisen. Skill soveltuu kaikille lausunnonantajille;
-kunnat ja muut julkisyhteisöt saavat siitä erityisesti irti, koska ne toteuttavat
-suuren osan lainsäädännöstä käytännössä.
+This skill helps produce a reasoned and effective statement on a bill. It combines analysis
+of the bill, an impact assessment from the respondent's point of view and the structured
+writing of the statement itself. The skill suits every kind of respondent; municipalities and
+other public bodies get particular value from it, because they implement much of the
+legislation in practice.
 
-> **Vastuuvapaus:** lausunto on luonnos, jonka lausunnonantajan vastuuhenkilö tarkistaa
-> ja hyväksyy. Arvolatautuneet ja poliittiset kannanotot jätetään päättäjien
-> täydennettäväksi, jos niistä on erimielisyyttä. Lakiviittaukset tarkistetaan lähteestä.
+> **Disclaimer:** a statement is a draft that the respondent's responsible officer reviews
+> and approves. Value-laden and political positions are left for the decision-makers to
+> complete if there is disagreement about them. Legislative references are checked against
+> the source.
 
 ## Output language
 
@@ -35,119 +37,135 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-## Lausunnonantajan profiili
+## The respondent's profile
 
-Lue `references/respondent-profile.md`. Jos profiili on täyttämättä, kysy
-käyttäjältä keskeiset tiedot (organisaation tyyppi, koko, toimiala, resurssit,
-erityispiirteet) ennen vaikutusten arviointia — vaikutusarvio on yhtä hyvä kuin sen
-taustatiedot. Profiilin voi tallentaa pysyvästi plugarin käytäntöprofiiliin (`legislative-consultation/AGENTS.md`).
+Read `references/respondent-profile.md`. If the profile has not been filled in, ask the user
+for the key details (type of organisation, size, sector, resources, distinctive features)
+before assessing impacts — an impact assessment is only as good as the background information
+behind it. The profile can be stored permanently in the domain's practice profile
+(`legislative-consultation/AGENTS.md`).
 
-## Voimassa olevan lain ja oikeuskäytännön tarkistus
+## Checking the law in force and case law
 
-Aina kun lausunto vertaa ehdotusta voimassa olevaan lakiin tai viittaa pykälään,
-**käytä `legal-core`-plugarin `legal-research`-skilliä** ja hae voimassa oleva sanamuoto
-oik.ai/Finlex-MCP:stä. Älä vahvista lakiviittausta muistista. Tämä on lausunnon
-uskottavuuden kannalta olennaista.
-
----
-
-## Työvaiheet
-
-Lausunnon laatiminen etenee seitsemässä vaiheessa. Jokainen vaihe tuottaa konkreettisen
-tuloksen, jota seuraava hyödyntää.
-
-### Vaihe 0: Rajaus
-Selvitä käyttäjältä: mikä lakiuudistus (HE-numero tai lausuntopalvelun linkki),
-mitä materiaaleja on valmiina (HE-luonnos, lausuntopyyntö, aiemmat lausunnot), lausunnon
-**määräaika**, erityiset painopisteet ja huolenaiheet, lausunnon **vastuuhenkilö**, ja
-onko aiempia lausuntoja samasta aiheesta. Jos asiasta on organisaatiossa erimielisyyttä,
-kirjoita neutraalin asiantuntevasti ja jätä arvovalinnat täydennettäväksi.
-
-### Vaihe 1: Lähtötietojen kerääminen
-Jos materiaaleja ei ole, etsi ne (`WebSearch`/`WebFetch`; tarkemmat ohjeet
-`references/information-sources.md` ja `references/lausuntopalvelu-guide.md`):
-1. **HE-luonnos / lakiehdotusteksti** — ensisijaisesti Lausuntopalvelu.fi, vaihtoehtoisesti valtioneuvosto.fi tai eduskunta.fi.
-2. **Voimassa oleva laki** — `legal-research`-skill (oik.ai/Finlex).
-3. **Kuntaliiton / kattojärjestön lausunto** — sektorin yhteinen näkemys.
-4. **Vastaavien lausunnonantajien lausunnot** — vertailupohja.
-5. **Lausuntopyynnön erityiskysymykset** — mihin ministeriö toivoo vastausta.
-
-### Vaihe 2: Lakiehdotuksen analyysi
-Analysoi järjestelmällisesti (työkalut: `references/analysis-tools.md`) ja tuota
-tiivistelmä ennen kirjoittamista.
-- **Yleiskuva:** mitä lakia muutetaan ja miksi, keskeiset muutokset, tavoitteet HE:n mukaan.
-- **Vaikutusten tunnistaminen** (kattava kehikko: `references/impact-assessment.md`): taloudelliset, hallinnolliset, palvelu-, henkilöstö-, aikataulu-, tietojärjestelmä- ja kohderyhmävaikutukset. Priorisoi lakiuudistuksen kannalta olennaisimmat.
-- **Lausunnonantajan erityispiirteet:** suhteuta vaikutukset profiiliin.
-
-### Vaihe 3: Muiden lausuntojen analyysi
-Hae ja tiivistä keskeiset näkemykset (kattojärjestö, vertaisorganisaatiot, alueelliset toimijat, asiantuntijat). Tunnista: missä laaja yhteisymmärrys, missä erimielisyyttä, mitä huolia oma viiteryhmä nostaa, onko jotain jäänyt huomaamatta. Tuota yhteenveto käyttäjälle.
-
-### Vaihe 4: Lausunnon laatiminen
-Laadi lausunto (rakenneopas: `references/statement-structure.md`, esimerkit: `references/statement-structure-examples.md`):
-1. **Yleistä** — kiitos lausuntomahdollisuudesta, lyhyt yleisarvio.
-2. **Yleiset huomiot** — tavoitteiden arviointi, kokonaisvaikutus, viiteryhmän näkökulma.
-3. **Yksityiskohtaiset huomiot** — pykälä-/lukukohtaiset kommentit: mitä ehdotetaan → miten vaikuttaa → mitä tilalle.
-4. **Taloudelliset vaikutukset** — euroina aina kun mahdollista, rahoituskysymykset, siirtymäkausi.
-5. **Toimeenpanon haasteet** — käytännön toteutettavuus, aikataulu, resurssit.
-6. **Yhteenveto ja keskeiset esitykset** — 3–7 kannanottoa, konkreettiset muutosesitykset lakitekstiin.
-
-Kirjoitustyyli (tarkemmin `references/writing-guidelines.md`): asiallinen ja rakentava, jokainen kannanotto perusteltu konkreettisesti (esimerkein ja luvuin), pykäläviittaukset tarkasti, vastustamisen rinnalle aina vaihtoehto, lausuntopyynnön erityiskysymyksiin vastataan suoraan ja otsikoidusti.
-
-### Vaihe 5: Tarkistus ja viimeistely
-- **Sisältö:** vastaavatko kommentit lausuntopyynnön kysymyksiin? Ovatko pykäläviittaukset, lakien nimet ja numerot oikein (tarkistettu `legal-research`-skillillä)? Ovatko euroarviot realistisia? Onko keskeiset vaikutukset käsitelty?
-- **Rakenne:** johdonmukainen rakenne; yhteenveto linjassa yksityiskohtien kanssa; taloudelliset arviot tukevat kannanottoja.
-- **Sävy:** asiallinen ja rakentava; muutosesitykset selkeitä ja toteuttamiskelpoisia.
-- **Käytäntö:** lausunnonantajan virallinen nimi oikein; viitetiedot (diaarinumero, lausuntopyynnön tunnus) oikein; mitta sopiva (3–15 sivua).
-
-Hyödynnä tarvittaessa `legal-core`-plugarin `document-review`-skilliä perusteelliseen tarkistukseen.
-
-### Vaihe 6: Lähettäminen ja seuranta
-Ohjeista käyttäjää (yksityiskohdat `references/lausuntopalvelu-guide.md`): lausunnot toimitetaan pääsääntöisesti Lausuntopalvelu.fi:n kautta tai lausuntopyynnössä ilmoitettuun osoitteeseen; tarkista allekirjoitustarve ja muoto. Seuraa uudistuksen etenemistä eduskunta.fi:stä — valiokuntien mietinnöistä näkee, huomioitiinko lausunnon kannat.
+Whenever the statement compares the proposal with the law in force or cites a section,
+**use the `legal-research` skill in the `legal-core` domain** and retrieve the wording in force
+from the oik.ai/Finlex MCP. Do not confirm a legislative reference from memory. This is essential
+to the credibility of the statement.
 
 ---
 
-## Tulostemuoto
+## Stages of the work
 
-Luo **uusi** lausunto Word-dokumenttina (.docx), jotta käyttäjä voi muokata sitä ennen lähettämistä (käytä `docx`-skilliä; lue sen SKILL.md ensin). Jos muokkaat **olemassa olevaa** lausuntoluonnosta tai kommentoit sitä, käytä `adeu`-MCP:tä, joka tekee muutokset natiiveina Word-jälkimuutoksina ja kommentteina (Track Changes) muotoilua rikkomatta. Tuota lisäksi:
-1. **Tiivistelmäsivu** (1 sivu) — päätöksentekijöille keskeiset viestit.
-2. **Varsinainen lausunto** (3–15 sivua) yllä kuvatulla rakenteella.
-3. **Analyysiliite** (valinnainen) — yksityiskohtainen analyysi, jos käyttäjä haluaa.
+Drafting a statement proceeds in seven stages. Each stage produces a concrete result that the
+next one builds on.
 
-## Erityistilanteet
+### Stage 0: Scoping
+Establish from the user: which legislative reform (HE number or lausuntopalvelu link), what
+material is already available (draft bill, request for statements, earlier statements), the
+**deadline** for the statement, any particular priorities and concerns, the **responsible
+officer** for the statement, and whether there are earlier statements on the same subject. If
+there is disagreement within the organisation, write in a neutral, expert register and leave the
+value judgements to be completed by others.
 
-- **Laaja lausuntopyyntö:** keskity eniten vaikuttaviin osiin, mainitse mihin ei ole huomautettavaa.
-- **Vähän aikaa:** keskity keskeisimpiin pykäliin, hyödynnä kattojärjestön lausuntoa pohjana, nosta 3–5 tärkeintä huomiota ja mainitse aikataulun rajoite.
-- **EU-taustainen sääntely:** erota mikä tulee suoraan EU-säädöksestä (pakollista) vs. kansallinen liikkumavara; kohdista muutosesitykset kansalliseen toimeenpanoon.
-- **Useita ministeriöitä:** varmista ettei asia jää kommentoimatta "kuuluu toiselle ministeriölle" -syystä.
-- **Kanta poikkeaa kattojärjestöstä:** oma lausunto on itsenäinen; perustele poikkeama konkreettisesti.
+### Stage 1: Gathering source material
+If the material is not to hand, find it (`WebSearch`/`WebFetch`; detailed guidance in
+`references/information-sources.md` and `references/lausuntopalvelu-guide.md`):
+1. **Draft bill / text of the proposed act** — primarily Lausuntopalvelu.fi, alternatively valtioneuvosto.fi or eduskunta.fi.
+2. **The law in force** — the `legal-research` skill (oik.ai/Finlex).
+3. **The statement of Kuntaliitto or the relevant umbrella organisation** — the sector's common view.
+4. **Statements by comparable respondents** — a basis for comparison.
+5. **The specific questions in the request for statements** — what the ministry wants answered.
 
-## Viitetiedostot
+### Stage 2: Analysing the bill
+Analyse systematically (tools: `references/analysis-tools.md`) and produce a summary before you
+start writing.
+- **Overview:** which act is being amended and why, the key changes, the objectives according to the HE.
+- **Identifying the impacts** (full framework: `references/impact-assessment.md`): financial, administrative, service, staffing, timetable, information-system and target-group impacts. Prioritise those most material to this particular reform.
+- **The respondent's distinctive features:** relate the impacts to the profile.
 
-| Tiedosto | Sisältö | Milloin lukea |
+### Stage 3: Analysing other statements
+Find and summarise the key views (umbrella organisation, peer organisations, regional actors,
+experts). Identify: where there is broad agreement, where there is disagreement, what concerns
+the respondent's own peer group raises, and whether anything has been overlooked. Produce a
+summary for the user.
+
+### Stage 4: Drafting the statement
+Draft the statement (structure guide: `references/statement-structure.md`, examples:
+`references/statement-structure-examples.md`):
+1. **General** — thanks for the opportunity to comment, a brief overall assessment.
+2. **General observations** — assessment of the objectives, the overall effect, the peer group's point of view.
+3. **Detailed observations** — comments by section or chapter: what is proposed → how it affects → what to put in its place.
+4. **Financial impacts** — in euros wherever possible, funding questions, transitional period.
+5. **Implementation challenges** — practical feasibility, timetable, resources.
+6. **Summary and key proposals** — 3–7 positions and concrete proposed amendments to the text of the act.
+
+Writing style (in more detail in `references/writing-guidelines.md`): factual and constructive,
+every position supported concretely (with examples and figures), precise section references,
+always an alternative alongside any opposition, and direct, clearly headed answers to the
+specific questions in the request for statements.
+
+### Stage 5: Checking and finishing
+- **Content:** do the comments answer the questions in the request for statements? Are the section references and the names and numbers of the acts correct (checked with the `legal-research` skill)? Are the euro estimates realistic? Have the key impacts been covered?
+- **Structure:** a coherent structure; the summary consistent with the detail; the financial estimates supporting the positions taken.
+- **Tone:** factual and constructive; proposed amendments clear and workable.
+- **Practicalities:** the respondent's official name correct; the reference details (case number, identifier of the request for statements) correct; the length appropriate (3–15 pages).
+
+Use the `document-review` skill in the `legal-core` domain for a thorough check where needed.
+
+### Stage 6: Submission and follow-up
+Guide the user (details in `references/lausuntopalvelu-guide.md`): statements are as a rule
+submitted through Lausuntopalvelu.fi or to the address given in the request for statements;
+check whether a signature is required and in what form. Follow the progress of the reform on
+eduskunta.fi — the committee reports show whether the positions in the statement were taken into
+account.
+
+---
+
+## Output format
+
+Create a **new** statement as a Word document (.docx) so the user can edit it before submission
+(use the `docx` skill; read its SKILL.md first). If you are editing or commenting on an
+**existing** draft statement, use the `adeu` MCP, which makes the edits as native Word tracked
+changes and comments (Track Changes) without breaking the formatting. Produce in addition:
+1. **A summary page** (1 page) — the key messages for decision-makers.
+2. **The statement itself** (3–15 pages) with the structure described above.
+3. **An analysis annex** (optional) — the detailed analysis, if the user wants it.
+
+## Special situations
+
+- **A broad request for statements:** concentrate on the parts with the greatest effect, and say where you have no observations.
+- **Little time:** concentrate on the most important sections, use the umbrella organisation's statement as a base, raise the 3–5 most important observations and mention the constraint imposed by the timetable.
+- **EU-derived regulation:** separate what follows directly from the EU instrument (mandatory) from national discretion; aim the proposed amendments at the national implementation.
+- **Several ministries:** make sure nothing goes uncommented on the ground that it "belongs to another ministry".
+- **A position that differs from the umbrella organisation's:** the respondent's statement is independent; give concrete reasons for the difference.
+
+## Reference files
+
+| File | Content | When to read it |
 |---|---|---|
-| `references/respondent-profile.md` | Lausunnonantajan taustatiedot (mallipohja) | Vaikutuksia arvioitaessa (vaihe 2) |
-| `references/analysis-tools.md` | Lakiehdotuksen analyysin työkalut | Analyysissä (vaihe 2) |
-| `references/impact-assessment.md` | Vaikutusten arviointikehikko | Vaikutuksia arvioitaessa (vaihe 2) |
-| `references/information-sources.md` | Verkkolähteet ja hakuohjeet | Tiedonhaussa (vaihe 1) |
-| `references/lausuntopalvelu-guide.md` | Lausuntopalvelu.fi:n käyttö ja lähettäminen | Tiedonhaussa ja lähettäessä (vaiheet 1, 6) |
-| `references/statement-structure.md` | Lausunnon rakenneopas | Kirjoittaessa (vaihe 4) |
-| `references/statement-structure-examples.md` | Esimerkkejä lausunnon osista | Kirjoittaessa (vaihe 4) |
-| `references/writing-guidelines.md` | Lakikielen ja lausunnon kirjoitustyyli | Viimeistelyssä (vaihe 5) |
+| `references/respondent-profile.md` | The respondent's background details (template) | When assessing impacts (stage 2) |
+| `references/analysis-tools.md` | Tools for analysing a bill | During the analysis (stage 2) |
+| `references/impact-assessment.md` | Framework for assessing impacts | When assessing impacts (stage 2) |
+| `references/information-sources.md` | Online sources and search guidance | When gathering material (stage 1) |
+| `references/lausuntopalvelu-guide.md` | Using Lausuntopalvelu.fi and submitting | When gathering material and submitting (stages 1 and 6) |
+| `references/statement-structure.md` | Guide to the structure of a statement | When writing (stage 4) |
+| `references/statement-structure-examples.md` | Examples of parts of a statement | When writing (stage 4) |
+| `references/writing-guidelines.md` | Legal register and the style of a statement | When finishing (stage 5) |
 
 ---
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei päätä organisaation kantaa.** Tuottaa lausuntoluonnoksen, jonka lausunnonantajan vastuuhenkilö tarkistaa ja hyväksyy ennen lähettämistä.
-- **Ei vahvista lakiviittauksia eikä vaikutuslukuja muistista.** Voimassa olevat pykälät tarkistetaan lähteestä (`legal-research`-skill) ja euro- ja muut arviot merkitään selvästi arvioiksi (`[arvio — varmista organisaation taloushallinnosta]`).
-- **Ei esitä poliittista kannanottoa varmistettuna.** Arvolatautuneet linjaukset jätetään päättäjien täydennettäväksi; jos asiasta on erimielisyyttä, kirjoitetaan neutraalin asiantuntevasti.
-- **Ei esitä muutosesitystä sitovaan EU-sääntelyyn.** Erottaa pakollisen EU-pohjaisen sääntelyn kansallisesta liikkumavarasta ja kohdistaa esitykset vain kansalliseen toimeenpanoon.
-- **Ei lähetä lausuntoa.** Ohjeistaa lähettämisessä (Lausuntopalvelu.fi tai ilmoitettu osoite), mutta varsinaisen jättämisen ja allekirjoituksen tekee käyttäjä.
+- **It does not decide the organisation's position.** It produces a draft statement that the respondent's responsible officer reviews and approves before submission.
+- **It does not confirm legislative references or impact figures from memory.** The sections in force are checked against the source (the `legal-research` skill) and euro and other estimates are clearly marked as estimates (`[estimate — confirm with the organisation's finance function]`).
+- **It does not present a political position as settled.** Value-laden lines are left for the decision-makers to complete; where there is disagreement, the text is written in a neutral, expert register.
+- **It does not propose amendments to binding EU regulation.** It separates mandatory EU-derived rules from national discretion and aims proposals only at the national implementation.
+- **It does not submit the statement.** It gives guidance on submission (Lausuntopalvelu.fi or the address given), but the user makes the actual filing and signs it.
 
-## Jatka tästä
+## Continue from here
 
-- Ehdotuksen ja voimassa olevan lain vertailu lähteestä → /juristi:oikeustutkimus
-- Lausunnon kielen viimeistely → /juristi:suomen-kieli
-- Valmiin luonnoksen perusteellinen laaduntarkistus → /juristi:asiakirjan-tarkistus
-- Jos lausunto koskee säädösteknistä muotoilua → /lainvalmistelu:lainkirjoittajan-opas
-- Jos lausunto kohdistuu hallituksen esityksen rakenteeseen tai perusteluihin → /lainvalmistelu:hallituksen-esityksen-laatimisohjeet
+- Comparing the proposal with the law in force, against the source → /legal-core:legal-research
+- Polishing the language of the statement → /legal-core:finnish-language
+- A thorough quality check of the finished draft → /legal-core:document-review
+- If the statement concerns legislative drafting technique → /legislative-drafting:legislative-drafting-manual
+- If the statement addresses the structure or reasoning of a government bill → /legislative-drafting:government-bill-guidelines
