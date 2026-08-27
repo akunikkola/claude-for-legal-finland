@@ -1,26 +1,25 @@
 ---
 name: trade-secrets
 description: >
-  Liikesalaisuuksien suoja Suomen oikeuden mukaan (liikesalaisuuslaki
-  595/2018). Käytä tätä skilliä, kun käyttäjä suojaa yrityksen
-  luottamuksellista tietoa (asiakastiedot, hinnoittelu, reseptit,
-  algoritmit, prosessit), arvioi täyttyykö liikesalaisuuden määritelmä,
-  suunnittelee suojatoimenpiteitä tai NDA-käytäntöjä, epäilee
-  liikesalaisuuden oikeudetonta hankkimista, käyttöä tai ilmaisemista
-  (esim. lähtevä työntekijä, kumppani), tai vertailee salassapitoa ja
-  patentointia. Triggeröi sanoista: liikesalaisuus, yrityssalaisuus,
-  salassapito, NDA, luottamuksellinen tieto, tietovuoto, lähtevä
-  työntekijä vei tiedot, know-how, kilpailija sai tiedot.
+  Protection of trade secrets under Finnish law (liikesalaisuuslaki 595/2018). Use
+  this skill when the user is protecting a company's confidential information
+  (customer data, pricing, recipes, algorithms, processes), assesses whether the
+  definition of a trade secret is met, plans protective measures or NDA practices,
+  suspects the unlawful acquisition, use or disclosure of a trade secret (for
+  example a departing employee or a partner), or is comparing secrecy with
+  patenting. Triggers on: trade secret, liikesalaisuus, confidentiality, NDA,
+  confidential information, data leak, a departing employee took the data,
+  know-how, a competitor obtained the information.
 ---
 
-# Liikesalaisuudet — suoja, loukkaukset ja oikeuskeinot
+# Trade secrets — protection, infringement and remedies
 
-Tämä skill jäsentää liikesalaisuuden suojan ja loukkaustilanteet
-liikesalaisuuslain (595/2018) mukaan. Perusteet:
+This skill structures the protection of a trade secret and infringement situations
+under the Trade Secrets Act (liikesalaisuuslaki 595/2018). Fundamentals:
 `../trademarks-and-trade-names/references/ip-fundamentals.md`.
 
-> **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Katso `intellectual-property/AGENTS.md`.
+> **Disclaimer:** assessments and drafts are for review — not
+> legal advice. See `intellectual-property/AGENTS.md`.
 
 ## Output language
 
@@ -29,98 +28,95 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the law at source
 
-Hae liikesalaisuuslain määritelmät, loukkaussäännökset ja oikeuskeinot
-**`legal-core:legal-research`-skillillä**; työntekijäulottuvuudessa myös
-työsopimuslain lojaliteetti- ja kilpailusäännökset sekä rikoslain
-yritysvakoilua ja yrityssalaisuuden rikkomista koskevat säännökset
-(tarkista lähteestä).
+Look up the definitions, the infringement provisions and the remedies of the Trade
+Secrets Act with the **`legal-core:legal-research` skill**; for the employee
+dimension, also the loyalty and non-competition provisions of the Employment
+Contracts Act, and the provisions of the Criminal Code on industrial espionage and
+violation of a business secret (check at source).
 
-## Onko tieto liikesalaisuus? — kolme edellytystä
+## Is the information a trade secret? — three conditions
 
-Käy läpi ja dokumentoi jokainen:
+Work through and document each of them:
 
-1. **Salaisuus** — tieto ei ole kokonaisuutena tai osiensa täsmällisenä
-   kokoonpanona alalla yleisesti tunnettua tai helposti selville
-   saatavissa.
-2. **Taloudellinen arvo** — juuri salaisuuden vuoksi.
-3. **Kohtuulliset suojatoimenpiteet** — haltija on tosiasiallisesti
-   suojannut tietoa. **Tämä kaatuu useimmin:** ilman dokumentoituja
-   toimia suojaa ei ole.
+1. **Secrecy** — the information is not, as a body or in the precise configuration
+   of its components, generally known among those in the field or readily
+   accessible.
+2. **Commercial value** — precisely because it is secret.
+3. **Reasonable protective measures** — the holder has actually protected the
+   information. **This is what most often fails:** without documented measures
+   there is no protection.
 
-Tarkat sanamuodot lähteestä. Huomaa: työntekijän **ammattitaito ja
-kokemus** eivät ole liikesalaisuuksia — rajanveto on
-loukkausriidoissa keskeinen ja tulkinnanvarainen `[varmista —
-IPR-juristin arvioitava]`.
+The precise wordings from source. Note: an employee's **skill and experience** are
+not trade secrets — this boundary is central in infringement disputes and open to
+interpretation `[confirm — requires an IP lawyer's assessment]`.
 
-## Suojaohjelma — kohtuulliset toimenpiteet käytäntöön
+## A protection programme — reasonable measures in practice
 
-Tuota organisaatiolle tarkistuslista ja dokumentaatiopohja:
+Produce a checklist and a documentation template for the organisation:
 
-- **Tunnista ja luokittele** — mitkä tiedot ovat liikesalaisuuksia;
-  omistaja ja säilytyspaikka.
-- **Rajaa pääsy** — need to know, käyttöoikeudet, lokit, merkinnät
-  ("luottamuksellinen").
-- **Sopimukset** — NDA:t (kumppanit, neuvottelut, DD), työsopimusten
-  salassapitoehdot (kesto myös työsuhteen jälkeen — kohtuullisuus),
-  alihankkijaketju. Lausekemekaniikka:
+- **Identify and classify** — which information is a trade secret; its owner and
+  where it is held.
+- **Restrict access** — need to know, access rights, logs, markings
+  ("confidential").
+- **Agreements** — NDAs (partners, negotiations, due diligence), confidentiality
+  clauses in employment contracts (their duration after the employment ends too —
+  reasonableness), the subcontracting chain. The mechanics of the clauses:
   `contracts:contract-drafting`.
-- **Prosessit** — perehdytys, lähtötarkistuslista (laitteet, pääsyt,
-  muistutus velvoitteista), tietoturva.
-- **Strategiavalinta** — liikesalaisuus vs. patentointi: patentti
-  julkistaa keksinnön määräaikaista yksinoikeutta vastaan;
-  liikesalaisuus voi olla ikuinen mutta ei suojaa itsenäiseltä
-  keksimiseltä eikä käänteismallinnukselta (sallittu hankintatapa —
-  tarkista rajat lähteestä). Ennen julkistamista: ks. AGENTS.md
-  *Salassapito ennen hakemista*.
+- **Processes** — induction, an exit checklist (devices, access rights, a reminder
+  of the obligations), information security.
+- **The strategic choice** — trade secret versus patenting: a patent discloses the
+  invention in return for a time-limited exclusive right; a trade secret can last
+  for ever but gives no protection against independent creation or reverse
+  engineering (a permitted means of acquisition — check its limits at source).
+  Before any disclosure: see AGENTS.md, *Confidentiality before filing*.
 
-## Loukkaustilanne
+## An infringement situation
 
-1. **Jäsennä teko** — oikeudeton **hankkiminen**, **käyttäminen** vai
-   **ilmaiseminen**; myös loukkaavien tuotteiden valmistus ja myynti.
-   Sallitut hankintatavat (itsenäinen kehitys, käänteismallinnus,
-   työntekijöiden tiedonsaanti laissa säädetyissä rajoissa) lähteestä.
-2. **Turvaa todisteet** — lokit, asiakirjat, laitteet; toimi nopeasti
-   mutta laillisesti (työntekijän sähköpostin tutkimisella on
-   tietosuojarajat → `data-protection`).
-3. **Keinot** — kielto ja korjaavat toimenpiteet, **käyttökorvaus ja
-   vahingonkorvaus**, turvaamistoimet; markkinaoikeus
-   riita-asioissa (toimivalta ja määräajat lähteestä); rikosilmoitus
-   vakavissa tapauksissa.
-4. **Whistleblower-poikkeus** — liikesalaisuuden ilmaiseminen voi olla
-   sallittua väärinkäytöksen paljastamiseksi — tarkista edellytykset
-   lähteestä ennen kuin arvioit ilmoittajan vastuuta (ks. myös
-   ilmoittajansuojelusääntely).
+1. **Characterise the act** — unlawful **acquisition**, **use** or **disclosure**;
+   also the manufacture and sale of infringing goods. The permitted means of
+   acquisition (independent development, reverse engineering, employees' access to
+   information within the limits laid down by law) from source.
+2. **Secure the evidence** — logs, documents, devices; act fast but lawfully
+   (examining an employee's email has data protection limits →
+   `data-protection`).
+3. **Remedies** — an injunction and corrective measures, **a user fee and
+   damages**, interim measures; the Market Court in civil disputes (jurisdiction
+   and time limits from source); a criminal report in serious cases.
+4. **The whistleblower exception** — disclosing a trade secret may be permitted in
+   order to reveal misconduct — check the conditions at source before you assess
+   the liability of the person reporting (see also the whistleblower protection
+   rules).
 
-## Lähtevä työntekijä -tilanne
+## The departing-employee situation
 
-Yleisin käytännön tapaus — käy läpi molemmista näkökulmista:
+The most common case in practice — work through it from both points of view:
 
-- **Työnantaja**: mitä tietoa henkilöllä oli, mitkä sopimusehdot
-  sitovat (salassapito, kilpailukielto → `employment-law:employment-contract`),
-  lähtötarkistus tehty?, todisteet ennen syytöksiä.
-- **Työntekijä/uusi työnantaja**: ammattitaito vs. liikesalaisuus
-  -rajanveto, mitä saa käyttää, riskien minimointi uudessa roolissa
-  (ei vanhan työnantajan aineistoa järjestelmiin).
+- **The employer**: what information the person had, which contractual terms bind
+  them (confidentiality, non-competition → `employment-law:employment-contract`),
+  was an exit check carried out?, evidence before making accusations.
+- **The employee or the new employer**: the boundary between skill and a trade
+  secret, what may be used, minimising the risks in the new role (no material
+  belonging to the former employer in the systems).
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista, että tieto on liikesalaisuus** — edellytykset arvioi
-  viime kädessä tuomioistuin; skill dokumentoi arvion perusteet.
-- **Ei avusta toisen liikesalaisuuden hankkimisessa tai käytössä** —
-  kilpailijatiedon hankinnan on pysyttävä laillisissa lähteissä.
-- **Ei tutki työntekijän viestintää** eikä ohita tietosuojarajoja
-  todisteiden hankinnassa.
-- **Ei vahvista määräaikoja tai korvaustasoja muistista** — lähteestä
-  tai `[tarkista]`.
-- **Ei korvaa rikosprosessia** — vakavat teot poliisille; skill
-  jäsentää siviilioikeudelliset keinot.
+- **It does not confirm that information is a trade secret** — the conditions are
+  ultimately assessed by a court; the skill documents the basis of the assessment.
+- **It does not assist in acquiring or using someone else's trade secret** —
+  gathering competitor information must stay within lawful sources.
+- **It does not investigate an employee's communications** and does not bypass data
+  protection limits when gathering evidence.
+- **It does not confirm time limits or levels of compensation from memory** — from
+  source, or `[check]`.
+- **It does not replace criminal proceedings** — serious acts go to the police; the
+  skill structures the civil remedies.
 
-## Jatka tästä
+## Continue from here
 
-- NDA:n tai salassapitoehdon laatiminen → /sopimukset:sopimuksen-laatiminen
-- Kilpailukielto ja työsuhteen ehdot → /tyooikeus:tyosopimus
-- Säännöksen tai oikeuskäytännön tarkistus → /juristi:oikeustutkimus
-- Patentoitavissa oleva keksintö → /immateriaalioikeus:tavaramerkki-ja-toiminimi (suojamuototaulukko) ja patenttiasiamies
-- Henkilötiedot tutkinnassa → /tietosuoja:tietosuoja-arviointi
+- Drafting an NDA or a confidentiality clause → /contracts:contract-drafting
+- Non-competition and the terms of employment → /employment-law:employment-contract
+- Checking a provision or case law → /legal-core:legal-research
+- A patentable invention → /intellectual-property:trademarks-and-trade-names (the table of forms of protection) and a patent attorney
+- Personal data in an investigation → /data-protection:data-protection-assessment

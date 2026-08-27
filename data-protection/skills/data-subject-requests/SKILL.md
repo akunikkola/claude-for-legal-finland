@@ -1,24 +1,25 @@
 ---
 name: data-subject-requests
 description: >
-  Rekisteröidyn oikeuksien toteuttaminen ja tietopyyntöihin vastaaminen EU:n
-  tietosuoja-asetuksen (15–22 art) mukaan: tarkastusoikeus, oikaisu, poisto, käsittelyn
-  rajoittaminen, siirto-oikeus, vastustaminen ja automatisoidut päätökset. Käytä tätä
-  skilliä, kun käyttäjä on saanut rekisteröidyltä tietopyynnön tai vaatimuksen, haluaa
-  vastata siihen, arvioida onko se hyväksyttävä, tai mainitsee tarkastuspyynnön,
-  tietojen poistopyynnön, "oikeuden tulla unohdetuksi", omien tietojen pyytämisen tai
-  rekisteröidyn oikeudet.
+  Giving effect to the rights of the data subject and responding to their requests under the
+  EU General Data Protection Regulation (Articles 15 to 22) and the Data Protection Act
+  (tietosuojalaki 1050/2018): the right of access, rectification, erasure, restriction of
+  processing, data portability, the right to object and automated decisions. Use this skill
+  when the user has received a request or claim from a data subject, wants to respond to it
+  or to assess whether it must be granted, or mentions a subject access request, a request
+  for erasure, the "right to be forgotten", asking for one's own data, or the rights of the
+  data subject.
 ---
 
-# Rekisteröidyn pyynnöt — oikeuksien toteuttaminen
+# Data subject requests — giving effect to the rights
 
-Tämä skill auttaa käsittelemään rekisteröidyn esittämän pyynnön ja laatimaan vastauksen
-EU:n tietosuoja-asetuksen mukaisesti. Oikeudet eivät ole ehdottomia — useimmilla on
-edellytyksiä ja poikkeuksia.
+This skill helps you handle a request made by a data subject and draft a response under the EU
+General Data Protection Regulation. The rights are not absolute — most of them have conditions
+and exceptions.
 
-> **Vastuuvapaus:** vastausluonnos tarkistettavaksi — ei oikeudellista neuvontaa.
-> Kielteinen päätös ja monitulkintainen poikkeus kuuluvat tietosuojavastaavan/juristin
-> arvioon. Perusteet: `../data-protection-assessment/references/data-protection-fundamentals.md`.
+> **Disclaimer:** a draft response for review — not legal advice.
+> An adverse decision and an exception open to more than one reading belong to the data protection
+> officer or a lawyer. Fundamentals: `../data-protection-assessment/references/data-protection-fundamentals.md`.
 
 ## Output language
 
@@ -29,63 +30,65 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-## Vaihe 1: Tunnista pyyntö ja pyytäjä
+## Step 1: Identify the request and the requester
 
-- **Mikä oikeus** on kyseessä (alla)? Pyyntö voi olla muodoton — tulkitse sisältö, ei otsikkoa.
-- **Tunnista pyytäjä** luotettavasti, jotta tietoja ei luovuteta väärälle (mutta älä vaadi kohtuuttomia lisätietoja).
-- **Kirjaa vastaanottopäivä** — määräaika alkaa siitä.
+- **Which right** is at issue (see below)? A request need not take any particular form — read the substance, not the heading.
+- **Identify the requester** reliably, so that data is not disclosed to the wrong person (but do not demand unreasonable additional information).
+- **Record the date of receipt** — the time limit runs from it.
 
-## Vaihe 2: Määräaika
+## Step 2: The time limit
 
-Vastaa **ilman aiheetonta viivytystä ja viimeistään kuukauden kuluessa** pyynnön
-vastaanottamisesta (12(3) art). Määräaikaa voi jatkaa enintään **kahdella kuukaudella**,
-jos pyynnöt ovat monimutkaisia tai useita — tällöin rekisteröidylle on ilmoitettava
-viivästyksestä ja syystä kuukauden kuluessa. Toimenpiteet ovat lähtökohtaisesti maksuttomia.
+Respond **without undue delay and at the latest within one month** of receiving the request
+(Article 12(3)). The time limit may be extended by at most **two further months** where the
+requests are complex or numerous — in that case the data subject must be informed of the delay
+and of the reason for it within one month. Action is in principle free of charge.
 
-## Vaihe 3: Arvioi oikeus ja edellytykset
+## Step 3: Assess the right and its conditions
 
-| Oikeus | Artikla | Keskeiset edellytykset / poikkeukset |
+| Right | Article | Key conditions and exceptions |
 |---|---|---|
-| **Tarkastusoikeus** | 15 | Oikeus saada jäljennös käsitellyistä tiedoista ja käsittelyn tiedot. Ei saa loukata muiden oikeuksia. |
-| **Oikaisu** | 16 | Virheellisten tietojen korjaaminen, puutteellisten täydentäminen. |
-| **Poisto ("unohdetuksi")** | 17 | Esim. tietoja ei enää tarvita, suostumus peruttu, käsittely lainvastaista. **Ei sovellu**, jos käsittely on tarpeen mm. lakisääteisen velvoitteen tai oikeusvaateen vuoksi. |
-| **Käsittelyn rajoittaminen** | 18 | Esim. tietojen oikeellisuus riitautettu — käsittely jäädytetään selvittelyn ajaksi. |
-| **Siirto-oikeus** | 20 | Vain kun käsittely perustuu **suostumukseen tai sopimukseen** ja tehdään automaattisesti. Jäsennelty, yleisesti käytetty, koneluettava muoto. |
-| **Vastustamisoikeus** | 21 | Erityisesti oikeutettuun etuun tai yleiseen etuun perustuva käsittely; **suoramarkkinointia saa aina vastustaa**. |
-| **Automatisoidut päätökset** | 22 | Oikeus olla joutumatta pelkkään automaattiseen käsittelyyn perustuvan, oikeusvaikutuksia aiheuttavan päätöksen kohteeksi (poikkeuksin). |
+| **Right of access** | 15 | The right to obtain a copy of the data processed and information about the processing. It must not adversely affect the rights of others. |
+| **Rectification** | 16 | Correcting inaccurate data and completing incomplete data. |
+| **Erasure ("to be forgotten")** | 17 | For example the data is no longer needed, consent has been withdrawn, the processing is unlawful. **Does not apply** where the processing is necessary for, among other things, a legal obligation or a legal claim. |
+| **Restriction of processing** | 18 | For example the accuracy of the data is contested — the processing is frozen while the matter is investigated. |
+| **Data portability** | 20 | Only where the processing is based on **consent or a contract** and is carried out by automated means. A structured, commonly used, machine-readable format. |
+| **Right to object** | 21 | In particular processing based on legitimate interests or on the public interest; **direct marketing may always be objected to**. |
+| **Automated decisions** | 22 | The right not to be subject to a decision based solely on automated processing which produces legal effects (subject to exceptions). |
 
-Tarkista kansalliset täsmennykset ja mahdolliset erityislain poikkeukset (tietosuojalaki
-1050/2018; toimialakohtainen laki) `legal-core`-plugarin `legal-research`-skillillä.
+Check the national specifications and any exceptions in a special statute (the Data Protection
+Act (tietosuojalaki 1050/2018); sector-specific legislation) with the `legal-research` skill in
+the `legal-core` domain.
 
-## Vaihe 4: Laadi vastaus
+## Step 4: Draft the response
 
-- **Myönteinen:** toteuta toimenpide ja kuvaa, mitä tehtiin. Tarkastuspyyntöön: kokoa tiedot ja käsittelyn 15 art mukaiset tiedot; varmista, ettei jäljennös paljasta sivullisten tietoja.
-- **Kielteinen tai osittainen:** perustele, mihin poikkeukseen päätös perustuu, ja kerro rekisteröidylle **oikeus tehdä valitus tietosuojavaltuutetun toimistolle** sekä oikeussuojakeinot. Älä kieltäydy ilman perustetta.
-- **Ilmeisen perusteeton tai kohtuuton (etenkin toistuva) pyyntö:** voidaan periä kohtuullinen maksu tai kieltäytyä (12(5) art) — mutta tämä on poikkeus, jota on käytettävä varoen ja perustellen.
+- **Granting the request:** carry out the measure and describe what was done. For a subject access request: gather the data and the information about the processing required by Article 15; make sure the copy does not reveal third parties' data.
+- **Refusing it in whole or in part:** give reasons, stating the exception on which the decision rests, and tell the data subject about the **right to lodge a complaint with the Office of the Data Protection Ombudsman** and about the remedies available. Do not refuse without a basis.
+- **A manifestly unfounded or excessive (particularly a repetitive) request:** a reasonable fee may be charged, or the request refused (Article 12(5)) — but this is an exception to be used sparingly and with reasons.
 
-Kirjoita vastaus asiallisesti ja selkokielisesti (`legal-core:finnish-language`). Tuota
-vastausluonnos ja tarvittaessa toimenpidelistaus. Merkitse `[varmista — tietosuojavastaavan
-arvioitava]` kohtiin, joissa poikkeuksen soveltuminen on tulkinnanvaraista.
+Write the response in a matter-of-fact and plain style (`legal-core:finnish-language`). Produce
+the draft response and, where needed, a list of the measures to take. Mark `[confirm — requires
+the data protection officer's assessment]` wherever the application of an exception is open to
+interpretation.
 
-## Muista
+## Remember
 
-Jos pyyntö paljastaa laajemman ongelman (esim. tietoja säilytetty liian kauan, peruste
-puuttuu), nosta se esiin — yksittäinen pyyntö voi olla oire käsittelyn puutteesta, jonka
-korjaaminen kuuluu `data-protection-assessment`-skillille.
+If the request reveals a wider problem (for example data kept for too long, or a missing legal
+basis), raise it — a single request can be a symptom of a defect in the processing, and putting
+that right belongs to the `data-protection-assessment` skill.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei korvaa tietosuojavastaavan tai juristin arviota.** Kielteinen tai osittainen päätös ja tulkinnanvaraisen poikkeuksen soveltaminen kuuluvat asiantuntijalle.
-- **Ei vahvista GDPR-artikloja (15–22 art) tai tietosuojalain pykäliä muistista.** Oikeuksien edellytykset, poikkeukset ja erityislain rajaukset tarkistetaan lähteestä.
-- **Ei tee päätöstä siitä, kieltäydytäänkö pyynnöstä, eikä tunnista pyytäjää puolestasi.** Tuottaa vastausluonnoksen; toimenpiteet ja tunnistus jäävät rekisterinpitäjälle.
-- **Ei kokoa tarkastuspyynnön tietoja eikä tarkista, paljastuuko jäljennöksessä sivullisten tietoja** — tämä on tehtävä järjestelmissä manuaalisesti.
-- **Ei käsittele viranomaisen julkisuuslakiin perustuvaa tietopyyntöä.** Se on eri asia kuin rekisteröidyn GDPR-pyyntö → /hallinto-oikeus:julkisuus-ja-tietopyynnot.
-- **Ei tee ilmoitusta valvontaviranomaiselle puolestasi.** Kertoo rekisteröidylle valitusoikeudesta tietosuojavaltuutetun toimistolle, mutta ei asioi viranomaisen kanssa.
+- **It does not replace the assessment of a data protection officer or a lawyer.** An adverse or partial decision and the application of an exception open to interpretation belong to a specialist.
+- **It does not confirm GDPR articles (15 to 22) or sections of the Data Protection Act from memory.** The conditions for the rights, the exceptions and the limits set by special statutes are checked at source.
+- **It does not decide whether to refuse a request and does not identify the requester for you.** It produces a draft response; the measures and the identification remain with the controller.
+- **It does not gather the data for a subject access request and does not check whether the copy reveals third parties' data** — that has to be done manually in the systems.
+- **It does not handle a request to an authority under the Act on the Openness of Government Activities.** That is a different matter from a data subject's GDPR request → /administrative-law:public-access-and-information-requests.
+- **It does not notify the supervisory authority for you.** It tells the data subject about the right to lodge a complaint with the Office of the Data Protection Ombudsman, but it does not deal with the authority.
 
-## Jatka tästä
+## Continue from here
 
-- Pyynnön paljastama käsittelyn puute (peruste, säilytysaika) → /tietosuoja:tietosuoja-arviointi
-- Informoinnin tai selosteen päivitys pyynnön johdosta → /tietosuoja:tietosuojaseloste
-- Viranomaisen julkisuuslakiin perustuva tietopyyntö (ei GDPR-pyyntö) → /hallinto-oikeus:julkisuus-ja-tietopyynnot
-- Vastauksen asiallisuus ja selkokielisyys → /juristi:suomen-kieli
-- Oikeuksien pykälien ja erityislain poikkeusten tarkistus → /juristi:oikeustutkimus
+- A defect in the processing revealed by the request (legal basis, retention period) → /data-protection:data-protection-assessment
+- Updating the information given or the notice as a result of the request → /data-protection:privacy-notice
+- An information request to an authority under the Act on the Openness of Government Activities (not a GDPR request) → /administrative-law:public-access-and-information-requests
+- The tone and plain language of the response → /legal-core:finnish-language
+- Checking the sections on the rights and the exceptions in special statutes → /legal-core:legal-research

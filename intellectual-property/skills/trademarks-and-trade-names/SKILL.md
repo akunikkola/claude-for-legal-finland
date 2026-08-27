@@ -1,27 +1,28 @@
 ---
 name: trademarks-and-trade-names
 description: >
-  Tavaramerkin ja toiminimen suoja Suomen oikeuden mukaan (tavaramerkkilaki
-  544/2019, toiminimilaki 128/1979). Käytä tätä skilliä, kun käyttäjä
-  suunnittelee tuotteen, palvelun tai yrityksen nimeä tai logoa, valmistelee
-  tavaramerkin rekisteröintiä (PRH, EUIPO, Madrid), arvioi erottamiskykyä
-  tai sekaannusvaaraa, käsittelee väite- tai mitätöintiasiaa, epäilee
-  merkkinsä tai nimensä loukkausta tai saa varoituskirjeen. Triggeröi
-  sanoista: tavaramerkki, brändi, logo, tuotenimi, toiminimi, yrityksen
-  nimi, rekisteröinti, sekaannusvaara, erottamiskyky, väite, loukkaus,
-  varoituskirje, EUIPO, PRH, verkkotunnus, domain.
+  Protection of trademarks and trade names under Finnish law (tavaramerkkilaki
+  544/2019, toiminimilaki 128/1979). Use this skill when the user is planning a
+  name or a logo for a product, a service or a company, is preparing a trade mark
+  registration (PRH, EUIPO, Madrid), assesses distinctiveness or the likelihood of
+  confusion, is dealing with an opposition or an invalidation, suspects that their
+  mark or name is being infringed, or receives a cease-and-desist letter. Triggers
+  on: trademark, brand, logo, product name, trade name, company name,
+  registration, likelihood of confusion, distinctiveness, opposition, infringement,
+  cease-and-desist letter, EUIPO, PRH, domain name, tavaramerkki, toiminimi.
 ---
 
-# Tavaramerkki ja toiminimi — suoja, rekisteröinti ja loukkaukset
+# Trade marks and trade names — protection, registration and infringement
 
-Tämä skill auttaa nimen ja merkin suojastrategiassa, rekisteröinnin
-valmistelussa ja loukkaustilanteissa. Perusteet ja keinovalikoima:
-`references/ip-fundamentals.md` — lue se tehtävän alussa.
+This skill helps with the protection strategy for a name and a mark, with
+preparing a registration and with infringement situations. The fundamentals and
+the range of remedies: `references/ip-fundamentals.md` — read it at the start of
+the task.
 
-> **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. **Skill ei näe rekistereitä** eikä koskaan
-> vahvista, että nimi tai merkki on vapaa — se tuottaa hakustrategian
-> ihmiselle. Katso `intellectual-property/AGENTS.md`.
+> **Disclaimer:** assessments and drafts are for review — not
+> legal advice. **The skill cannot see the registers** and never
+> confirms that a name or a mark is free — it produces a search strategy
+> for a human. See `intellectual-property/AGENTS.md`.
 
 ## Output language
 
@@ -33,88 +34,89 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the law at source
 
-Hae tavaramerkkilain (544/2019) ja toiminimilain (128/1979) sovellettavat
-säännökset, määräajat ja menettelyt **`legal-core:legal-research`-skillillä**.
-Älä viittaa vanhaan tavaramerkkilakiin (7/1964) voimassa olevana.
-Oikeuskäytäntö: markkinaoikeus (MAO), KKO ja EU-tavaramerkissä EUIPO:n
-valituslautakunnat ja EU-tuomioistuin.
+Look up the applicable provisions, time limits and procedures of the Trade Marks
+Act (544/2019) and the Trade Names Act (128/1979) with the
+**`legal-core:legal-research` skill**. Do not cite the old Trade Marks Act
+(tavaramerkkilaki 7/1964) as being in force. Case law: the Market Court (MAO), KKO
+and, for the EU trade mark, the EUIPO Boards of Appeal and the Court of Justice of
+the European Union.
 
-## Suojan suunnittelu (uusi nimi tai merkki)
+## Planning the protection (a new name or mark)
 
-1. **Kolmoistarkistus** — sama nimi voi törmätä kolmeen eri oikeuteen:
-   toiminimi (kaupparekisteri), tavaramerkki (PRH/EUIPO) ja verkkotunnus
-   (Traficom/muut). Käy kaikki läpi.
-2. **Erottamiskyky** — kuvaileva ilmaus ei lähtökohtaisesti kelpaa
-   tavaramerkiksi; arvioi suhteessa tavaroihin/palveluihin. Ehdota
-   tarvittaessa erottamiskykyisempiä vaihtoehtoja.
-3. **Estehakustrategia** — laadi ihmiselle lista: mistä haetaan (PRH:n
-   tavaramerkkitietokanta, EUIPO/TMview, kaupparekisteri, verkkotunnukset,
-   yleinen verkkohaku), millä hakusanoilla ja missä **Nizzan luokituksen**
-   luokissa. Älä esitä hakutulosta itse.
-4. **Alue ja reitti** — Suomi (PRH) / EU (EUIPO, yksi rekisteröinti koko
-   EU:hun) / kansainvälinen (Madrid). Valinta liiketoiminnan alueen
-   mukaan; kustannukset ja määräajat viranomaislähteistä.
-5. **Luokitus** — määritä tavarat ja palvelut täsmällisesti; liian suppea
-   ei suojaa, liian laaja altistuu käyttämättömyysväitteille
-   (käyttöpakko — edellytykset lähteestä).
+1. **The triple check** — the same name can collide with three different rights:
+   the trade name (the trade register), the trade mark (PRH/EUIPO) and the domain
+   name (Traficom and others). Work through all of them.
+2. **Distinctiveness** — a descriptive expression is in principle not registrable
+   as a trade mark; assess it in relation to the goods and services. Suggest more
+   distinctive alternatives where necessary.
+3. **A clearance search strategy** — draw up a list for a human: where to search
+   (the PRH trade mark database, EUIPO/TMview, the trade register, domain names, a
+   general web search), with which search terms and in which classes of the **Nice
+   Classification**. Do not present the search result yourself.
+4. **Territory and route** — Finland (PRH) / the EU (EUIPO, a single registration
+   for the whole EU) / international (Madrid). The choice follows the territory of
+   the business; costs and time limits from the authorities' own sources.
+5. **Classification** — specify the goods and services precisely; too narrow does
+   not protect, too broad is exposed to claims of non-use (the use requirement —
+   its conditions from source).
 
-## Sekaannusvaara-arvio
+## Assessing the likelihood of confusion
 
-Jäsennä arvio kolmella akselilla ja perustele jokainen:
+Structure the assessment along three axes and give reasons for each:
 
-- **Merkkien samankaltaisuus** — ulkoasu, lausuntatapa, merkityssisältö.
-- **Tavaroiden/palvelujen samankaltaisuus** — luokat ohjaavat mutta eivät
-  ratkaise.
-- **Kohdeyleisö ja kokonaisvaikutelma** — huomioi merkin tunnettuus
-  (laajalti tunnetun merkin laajempi suoja — edellytykset lähteestä).
+- **Similarity of the marks** — appearance, pronunciation, meaning.
+- **Similarity of the goods and services** — the classes guide the assessment but
+  do not settle it.
+- **The relevant public and the overall impression** — take account of the
+  reputation of the mark (a mark with a reputation enjoys wider protection — its
+  conditions from source).
 
-Anna lopputulos kolmiportaisesti (sekaannusvaara todennäköinen /
-mahdollinen / epätodennäköinen) ja merkitse `[varmista — IPR-juristin
-arvioitava]` — sekaannusvaara on viime kädessä tuomioistuimen
-kokonaisharkintaa.
+Give the outcome on a three-step scale (likelihood of confusion likely /
+possible / unlikely) and mark it `[confirm — requires an IP lawyer's
+assessment]` — the likelihood of confusion is ultimately a matter for the overall
+assessment of a court.
 
-## Loukkaustilanne
+## An infringement situation
 
-**Oma oikeus loukattu:** dokumentoi loukkaus → varmista oman oikeuden
-voimassaolo ja kattavuus → keinot järjestyksessä
-(`references/ip-fundamentals.md`): varoituskirje → neuvottelu/lisenssi →
-kanne markkinaoikeudessa (kielto, hyvitys, vahingonkorvaus,
-turvaamistoimi). Varoituskirjeluonnos: yksilöi oikeus, loukkaus, vaatimus
-ja määräaika — vältä liioiteltuja uhkauksia.
+**Your own right is being infringed:** document the infringement → confirm that
+your own right is in force and how far it extends → the remedies in order
+(`references/ip-fundamentals.md`): cease-and-desist letter → negotiation or
+licence → an action in the Market Court (injunction, reasonable compensation,
+damages, an interim measure). A draft cease-and-desist letter: identify the right,
+the infringement, the claim and the deadline — avoid exaggerated threats.
 
-**Varoituskirje saatu:** älä hätiköi — tarkista vastapuolen oikeuden
-voimassaolo ja kattavuus, oman käytön aloitusajankohta ja mahdolliset
-vastaperusteet (erottamiskyvyttömyys, käyttämättömyys, oma aiempi oikeus,
-vakiintuminen). Vastausluonnos ihmisen tarkistettavaksi.
+**You have received a cease-and-desist letter:** do not rush — check that the
+other party's right is in force and how far it extends, when your own use began,
+and any counter-arguments (lack of distinctiveness, non-use, your own earlier
+right, established use). A draft response for a human to review.
 
-## Väite ja mitätöinti
+## Opposition and invalidation
 
-Rekisteröintiä vastaan voi tehdä **väitteen** (määräaika rekisteröinnin
-julkaisusta — tarkista lähteestä) ja myöhemmin vaatia **mitätöintiä tai
-menettämistä** (mm. käyttämättömyys). Hallinnollinen menettely PRH:ssa /
-EUIPO:ssa vs. kanne markkinaoikeudessa — vertaile reitit käyttäjän
-tilanteeseen.
+An **opposition** may be filed against a registration (the time limit runs from
+publication of the registration — check it at source) and, later, **invalidation
+or revocation** may be sought (among other grounds, non-use). Administrative
+proceedings at PRH or EUIPO versus an action in the Market Court — compare the
+routes against the user's situation.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tee este- tai saatavuushakuja** eikä vahvista nimen tai merkin
-  olevan vapaa — se laatii hakustrategian ihmiselle.
-- **Ei jätä hakemuksia, väitteitä tai kanteita** eikä lähetä
-  varoituskirjeitä — luonnokset menevät ihmiselle.
-- **Ei vahvista määräaikoja tai maksuja muistista** — PRH:n/EUIPO:n
-  lähteistä tai `[tarkista]`.
-- **Ei anna sitovaa sekaannusvaara-arviota** — lopullinen arvio on
-  tuomioistuimen/viranomaisen.
-- **Ei kata patentteja, hyödyllisyysmalleja eikä mallioikeutta
-  syvällisesti** — niissä patenttiasiamiehelle; perustaulukko
-  referenssissä.
+- **It does not carry out clearance or availability searches** and does not confirm that a name
+  or a mark is free — it draws up a search strategy for a human.
+- **It does not file applications, oppositions or actions** and does not send
+  cease-and-desist letters — the drafts go to a human.
+- **It does not confirm time limits or fees from memory** — these come from the
+  sources of PRH or EUIPO, or are marked `[check]`.
+- **It does not give a binding assessment of the likelihood of confusion** — the
+  final assessment is for the court or the authority.
+- **It does not cover patents, utility models or registered designs in depth** —
+  for those, a patent attorney; there is a basic table in the reference.
 
-## Jatka tästä
+## Continue from here
 
-- Säännöksen tai MAO/KKO-käytännön tarkistus → /juristi:oikeustutkimus
-- Lisenssi- tai rinnakkaiselosopimus (coexistence) → /sopimukset:sopimuksen-laatiminen
-- Tekijänoikeudellinen suoja samalle aineistolle → /immateriaalioikeus:tekijanoikeus
-- Salassa pidettävä tieto nimen takana → /immateriaalioikeus:liikesalaisuudet
-- Varoituskirjeen kieliasu ja rakenne → /juristi:asiakirjan-tarkistus
+- Checking a provision or MAO/KKO case law → /legal-core:legal-research
+- A licence or coexistence agreement → /contracts:contract-drafting
+- Copyright protection for the same material → /intellectual-property:copyright
+- Confidential information behind the name → /intellectual-property:trade-secrets
+- The wording and structure of a cease-and-desist letter → /legal-core:document-review

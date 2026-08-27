@@ -1,34 +1,35 @@
-# Suomen hallinto-oikeuden perusteet
+# Fundamentals of Finnish administrative law
 
-Tiivistelmä julkishallinnon ja hallintomenettelyn kannalta keskeisistä laeista ja
-periaatteista. **Tarkista pykälien voimassa oleva sanamuoto ja muut kuin alla vahvistetut
-säädösnumerot `legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
+A summary of the statutes and principles that matter most for public administration and
+administrative procedure. **Check the wording in force of any section, and any statute number
+other than those verified below, with the `legal-core:legal-research` skill (oik.ai/Finlex)
+before you cite it.**
 
-## Perusperiaatteet
-- **Hallinnon lainalaisuus:** viranomainen saa käyttää vain laissa annettua toimivaltaa, ja toiminnan on perustuttava lakiin.
-- **Hyvän hallinnon perusteet** (hallintolaki 434/2003, 6 §): yhdenvertaisuus, tarkoitussidonnaisuus, objektiviteetti, suhteellisuus, luottamuksensuoja.
-- **Oikeusturva:** asianosaisella on oikeus saada asiansa käsitellyksi asianmukaisesti ja hakea muutosta häntä koskevaan päätökseen.
-- **Julkisuusperiaate:** viranomaisen asiakirjat ovat julkisia, jollei laissa toisin säädetä.
+## Basic principles
+- **Legality of administration:** an authority may exercise only the competence conferred on it by law, and its action must rest on law.
+- **The requirements of good administration** (hallintolaki 434/2003, 6 §): equality, purpose limitation, objectivity, proportionality, protection of legitimate expectations.
+- **Legal protection:** a party has the right to have their matter handled properly and to appeal against a decision concerning them.
+- **The principle of openness:** documents held by an authority are public unless otherwise provided by law.
 
-## Keskeiset lait
-**Vahvistettu lähteestä (oik.ai/Finlex, 2026-05):**
-- **Hallintolaki (434/2003)** — hyvä hallinto, asian käsittely, kuuleminen, esteellisyys, päätöksen perustelu, muutoksenhakuohjaus, tiedoksianto. Hallintomenettelyn yleislaki.
-- **Laki oikeudenkäynnistä hallintoasioissa (808/2019)** — hallintoprosessi: valitus hallinto-oikeuteen ja korkeimpaan hallinto-oikeuteen, valitusoikeus, määräajat, valituslupa. **Korvasi vanhan hallintolainkäyttölain (586/1996).**
-- **Laki viranomaisten toiminnan julkisuudesta (julkisuuslaki, 621/1999)** — asiakirjajulkisuus, salassapito, tietopyyntöön vastaaminen.
+## Key statutes
+**Verified at source (oik.ai/Finlex, 2026-05):**
+- **Administrative Procedure Act (hallintolaki 434/2003)** — good administration, handling of a matter, hearing a party, disqualification, the reasoning of a decision, appeal instructions, service. The general act on administrative procedure.
+- **Act on Judicial Procedure in Administrative Matters (laki oikeudenkäynnistä hallintoasioissa 808/2019)** — administrative judicial procedure: appeal to the administrative court and to the Supreme Administrative Court, the right of appeal, time limits, leave to appeal. **It replaced the old Administrative Judicial Procedure Act (hallintolainkäyttölaki 586/1996).**
+- **Act on the Openness of Government Activities (julkisuuslaki, 621/1999)** — public access to documents, confidentiality, responding to an information request.
 
-**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
-- **Kuntalaki (410/2015)** — kunnan toimielimet, toimivalta ja sen siirto, kunnallisvalitus ja oikaisuvaatimus kunnallisasioissa.
-- **Hallintolainkäytön erityislait** ja toimialakohtaiset lait (esim. sosiaalihuolto, rakentaminen, ympäristö, verotus) — antavat aineelliset edellytykset ja usein erityiset muutoksenhakusäännöt.
-- **Tietosuojalaki (1050/2018)** ja tietosuoja-asetus — henkilötietojen osalta (julkisuus vs. tietosuoja, ks. `data-protection`-plugari).
+**Check the statute number with the `legal-research` skill before citing:**
+- **Local Government Act (kuntalaki 410/2015)** — municipal bodies, competence and its delegation, municipal appeal and request for rectification in municipal matters.
+- **Special statutes on administrative judicial procedure** and sector-specific statutes (for example social welfare, construction, the environment, taxation) — they set the substantive conditions and often contain special rules on appeals.
+- **Data Protection Act (tietosuojalaki 1050/2018)** and the General Data Protection Regulation — where personal data is involved (public access versus data protection, see the `data-protection` domain).
 
-## Muutoksenhaun pääpiirteet (tarkista 808/2019 ja erityislait)
-- **Oikaisuvaatimus** — monessa asiassa ensivaihe samalle viranomaiselle ennen valitusta.
-- **(Hallinto)valitus hallinto-oikeuteen** — pääsääntöinen muutoksenhakutie hallintopäätökseen.
-- **Valitus korkeimpaan hallinto-oikeuteen** — usein **valituslupa** vaaditaan.
-- **Kunnallisvalitus** — kunnallisasioissa oma sääntelynsä (kuntalaki); valitusperusteet rajatummat (laillisuusvalitus).
-- **Määräajat** ovat ehdottomia — hae ne lähteestä, älä esitä muistista.
+## Appeals in outline (check 808/2019 and the special statutes)
+- **Request for rectification (oikaisuvaatimus)** — in many matters the first stage, to the same authority, before an appeal.
+- **(Administrative) appeal to the administrative court** — the main appeal route against an administrative decision.
+- **Appeal to the Supreme Administrative Court** — **leave to appeal** is often required.
+- **Municipal appeal (kunnallisvalitus)** — municipal matters have their own rules (kuntalaki); the grounds of appeal are narrower (an appeal on legality).
+- **Time limits** are absolute — look them up at source, do not state them from memory.
 
-## Valvonta ja laillisuusvalvonta
-- **Eduskunnan oikeusasiamies** (oikeusasiamies.fi) ja **valtioneuvoston oikeuskansleri** (okv.fi) — ylimmät laillisuusvalvojat; ratkaisukäytäntö ohjaa hyvää hallintoa.
-- **Aluehallintovirastot (AVI)** ja sektorikohtaiset valvojat.
-- Hae relevantti oikeuskäytäntö `legal-research`-skillillä (esim. court "Korkein hallinto-oikeus", "Hallinto-oikeudet").
+## Supervision and oversight of legality
+- **The Parliamentary Ombudsman** (oikeusasiamies.fi) and the **Chancellor of Justice** (okv.fi) — the highest overseers of legality; their decision practice guides good administration.
+- **The Regional State Administrative Agencies (AVI)** and sector-specific supervisors.
+- Look up the relevant case law with the `legal-research` skill (for example court "Korkein hallinto-oikeus", "Hallinto-oikeudet").

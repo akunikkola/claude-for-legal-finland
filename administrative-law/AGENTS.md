@@ -1,44 +1,44 @@
-# Hallinto-oikeus — jaetut suojaukset ja toimintaperiaatteet
+# Administrative law — shared guardrails and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** hallinto-oikeuden doktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** administrative-law doctrine belongs in SKILL.md and in the references. These guardrails are life insurance.
 
 ---
 
-## Luonnos, jonka viranomainen/ihminen tarkistaa
+## A draft that the authority or a human reviews
 
-Päätös-, valitus- ja vastausluonnokset sekä julkisuus- ja menettelyarviot ovat **tarkistettavia luonnoksia** — ei oikeudellista neuvontaa eikä lopullinen kanta laillisuudesta. Viranomainen vastaa päätöksestään; tulkinnanvaraiset ja kielteiset ratkaisut kuuluvat asiantuntijalle. Merkitse `[varmista — hallinto-oikeudellisen asiantuntijan arvioitava]`.
+Draft decisions, appeals and responses, together with public-access and procedural assessments, are **drafts for review** — not legal advice, and not a final position on lawfulness. The authority answers for its own decision; matters open to interpretation and adverse outcomes belong to a specialist. Mark them `[confirm — requires an administrative-law specialist's assessment]`.
 
-## Hallinnon lainalaisuus ja toimivalta
+## Legality of administration and competence
 
-Viranomainen saa käyttää vain **laissa annettua toimivaltaa**. Tarkista aina toimivaltaperuste (erityislaki, kuntalaki 410/2015, johtosäännöt) — päätös ilman toimivaltaa on pätemätön. Päätöksen on perustuttava lakiin ja asiallisiin perusteisiin.
+An authority may exercise only the **competence conferred on it by law**. Always check the basis for competence (special legislation, the Local Government Act (kuntalaki 410/2015), administrative rules) — a decision made without competence is void. The decision must rest on law and on proper grounds.
 
-## Hyvän hallinnon perusteet
+## The requirements of good administration
 
-Pidä mielessä hallintolain (434/2003) 6 §: **yhdenvertaisuus, tarkoitussidonnaisuus, objektiviteetti, suhteellisuus, luottamuksensuoja.** Nosta esiin, jos päätös vaikuttaa nojaavan epäasiallisiin perusteisiin tai loukkaavan näitä.
+Keep section 6 of the Administrative Procedure Act (hallintolaki 434/2003) in mind: **equality, purpose limitation, objectivity, proportionality, protection of legitimate expectations.** Raise it if a decision appears to rest on improper grounds or to breach these.
 
-## Menettely ratkaisee — kumoamisriskit
+## Procedure decides — the risk of annulment
 
-Hallintomenettelyssä **menettelyvirhe voi johtaa päätöksen kumoamiseen**: kuulematta jättäminen, esteellisyys, puutteellinen perustelu, väärä tai puuttuva muutoksenhakuohjaus, tiedoksiannon virhe. Tarkista menettely yhtä huolella kuin aineellinen ratkaisu.
+In administrative procedure a **procedural error can lead to the decision being annulled**: failure to hear a party, disqualification, inadequate reasoning, wrong or missing appeal instructions, a defect in service. Check the procedure as carefully as the substantive outcome.
 
-## Määräajat ja lähteet — älä arvaa
+## Time limits and sources — do not guess
 
-Muutoksenhaun ja tietopyyntöjen **määräajat ovat ehdottomia** ja vaihtelevat erityislaeittain. **Hae määräaika, muutoksenhakutie ja valitusluvan tarve lähteestä** (`legal-core:legal-research`), älä esitä muistista. Tarkista myös:
-- **Hallintoprosessilaki on 808/2019** (vahvistettu) — se **korvasi hallintolainkäyttölain (586/1996)**. Älä viittaa 586/1996:een voimassa olevana.
-- Kunnallisasioissa voi olla oma muutoksenhakutie (kunnallisvalitus, kuntalaki 410/2015) ja rajatummat valitusperusteet.
+Time limits for appeals and for information requests are **absolute** and vary between special statutes. **Look up the time limit, the appeal route and the need for leave to appeal at source** (`legal-core:legal-research`); do not state them from memory. Also check:
+- **The Act on Judicial Procedure in Administrative Matters is 808/2019** (verified) — it **replaced the Administrative Judicial Procedure Act (hallintolainkäyttölaki 586/1996)**. Do not cite 586/1996 as being in force.
+- Municipal matters may have their own appeal route (municipal appeal, kunnallisvalitus, kuntalaki 410/2015) and narrower grounds of appeal.
 
-## Julkisuus on pääsääntö
+## Openness is the main rule
 
-Viranomaisen asiakirjat ovat julkisia, jollei laissa toisin säädetä (julkisuuslaki 621/1999, vahvistettu). **Salassapito on poikkeus** ja sitä tulkitaan suppeasti; se vaatii nimenomaisen lakiperusteen. Sovita julkisuus ja tietosuoja yhteen (→ `data-protection`-plugari), älä syrjäytä toista automaattisesti.
+Documents held by an authority are public unless otherwise provided by law (Act on the Openness of Government Activities (julkisuuslaki 621/1999), verified). **Confidentiality is the exception** and is construed narrowly; it requires an express statutory basis. Reconcile openness with data protection (→ the `data-protection` domain); do not let one automatically override the other.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the collection's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision holds without having checked the decision at source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent a client) and data handling (the GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, stating the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation toimivaltasäännöt, johtosäännöt ja vakiomallit voi tallentaa tähän otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi, vaan kysy käyttäjältä.
+An organisation's rules on competence, its administrative rules and its standard templates can be stored here under the heading `## Practice profile`. Empty by default — do not invent anything; ask the user.

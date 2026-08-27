@@ -1,23 +1,25 @@
 ---
 name: administrative-decision
 description: >
-  Hallintopäätöksen laatiminen ja tarkistus hallintolain (434/2003) mukaan: hyvän
-  hallinnon perusteet, asian käsittely, kuuleminen, esteellisyys, päätöksen perustelu
-  ja muutoksenhakuohjaus. Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa
-  viranomaisen päätöstä, hallintopäätöstä, viranhaltijapäätöstä tai muuta hallintoasian
-  ratkaisua, tai kysyy kuulemisesta, esteellisyydestä, perusteluvelvollisuudesta,
-  hyvästä hallinnosta tai päätöksen muotovaatimuksista.
+  Drafting and reviewing a Finnish administrative decision under the Administrative
+  Procedure Act (hallintolaki 434/2003): the requirements of good administration,
+  handling of the matter, hearing a party, disqualification, the duty to give reasons
+  and appeal instructions. Use this skill when the user drafts or reviews a decision by
+  an authority, an administrative decision (hallintopäätös), an official's decision or
+  another ruling in an administrative matter, or asks about hearing a party,
+  disqualification (esteellisyys), the duty to give reasons, good administration or the
+  formal requirements for a decision.
 ---
 
-# Hallintopäätös — laatiminen ja tarkistus (hallintolaki 434/2003)
+# Administrative decision — drafting and review (hallintolaki 434/2003)
 
-Tämä skill auttaa laatimaan ja tarkistamaan hallintopäätöksen hallintolain (434/2003)
-ja hyvän hallinnon vaatimusten mukaisesti. Hallintomenettelyssä **menettelyvirhe voi
-johtaa päätöksen kumoamiseen** muutoksenhaussa, joten menettely on yhtä tärkeä kuin
-aineellinen ratkaisu.
+This skill helps you draft and review an administrative decision so that it meets the
+Administrative Procedure Act (hallintolaki 434/2003) and the requirements of good
+administration. In administrative procedure a **procedural error can lead to the decision
+being annulled** on appeal, so the procedure matters as much as the substantive outcome.
 
-> **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa. Viranomainen
-> vastaa päätöksestään. Katso `administrative-law/AGENTS.md`. Perusteet: `references/administrative-law-fundamentals.md`.
+> **Disclaimer:** a draft or assessment for review — not legal advice. The authority answers
+> for its own decision. See `administrative-law/AGENTS.md`. Fundamentals: `references/administrative-law-fundamentals.md`.
 
 ## Output language
 
@@ -29,53 +31,53 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki ja toimivalta lähteestä
-Hae hallintolain (434/2003) ja sovellettavan **erityislain** (joka antaa toimivallan ja
-aineelliset edellytykset) säännökset **`legal-core:legal-research`-skillillä**. Tarkista myös
-viranomaisen toimivalta (kuntalaki 410/2015, johtosäännöt) — hallintopäätös ilman toimivaltaa
-on pätemätön.
+## Check the law and the basis for competence at source
+Look up the provisions of the Administrative Procedure Act (434/2003) and of the applicable
+**special statute** (which confers the competence and sets the substantive conditions) with the
+**`legal-core:legal-research` skill**. Also check the authority's competence (kuntalaki 410/2015,
+administrative rules) — an administrative decision made without competence is void.
 
-## Hyvän hallinnon perusteet (hallintolaki 6 §)
-Pidä mielessä koko käsittelyn ajan: **yhdenvertaisuus, tarkoitussidonnaisuus,
-objektiviteetti, suhteellisuus ja luottamuksensuoja.** Päätöksen on perustuttava lakiin ja
-asiallisiin perusteisiin, ei epäasiallisiin vaikuttimiin.
+## The requirements of good administration (hallintolaki 6 §)
+Keep these in mind throughout: **equality, purpose limitation, objectivity, proportionality and
+the protection of legitimate expectations.** The decision must rest on law and on proper grounds,
+not on improper motives.
 
-## Tarkistuslista
+## Checklist
 
-### Asian käsittely
-- **Toimivalta:** onko päättävällä viranomaisella/viranhaltijalla toimivalta tähän asiaan?
-- **Esteellisyys:** onko käsittelijä esteellinen (intressi, läheinen, aiempi rooli)? Esteellinen ei saa osallistua.
-- **Asian selvittäminen:** onko asia selvitetty riittävästi (selvittämisvelvollisuus)?
-- **Kuuleminen:** onko asianosaista kuultu ennen päätöstä, kun päätös voi vaikuttaa hänen etuunsa/oikeuteensa? Kuulematta jättäminen on yleinen kumoamisperuste — varmista peruste, jos kuulemista ei tehdä.
+### Handling the matter
+- **Competence:** does the deciding authority or official have competence in this matter?
+- **Disqualification:** is the person handling the matter disqualified (an interest, a close relation, an earlier role)? A disqualified person may not take part.
+- **Investigation of the matter:** has the matter been investigated sufficiently (the duty to investigate)?
+- **Hearing a party:** has the party been heard before the decision, where the decision may affect their interest or right? Failure to hear a party is a common ground for annulment — establish the basis if no hearing is held.
 
-### Päätöksen sisältö ja muoto
-- **Yksilöinti:** päättävä viranomainen, asia, asianosaiset, ratkaisu.
-- **Perustelu:** päätös on **perusteltava** — mitkä seikat ja selvitykset ovat vaikuttaneet ja mitä säännöksiä on sovellettu. Puutteellinen perustelu on kumoamisriski.
-- **Sovelletut säännökset:** nimettävä (säädös + pykälä), tarkistettuna lähteestä.
-- **Muutoksenhakuohjaus:** liitettävä oikea ohjaus — oikaisuvaatimus vai valitus, mihin, missä ajassa, miten (ks. `administrative-appeal`-skill). Väärä tai puuttuva ohjaus on virhe.
-- **Tiedoksianto:** miten ja milloin päätös annetaan tiedoksi (vaikuttaa muutoksenhakuajan alkuun).
+### Content and form of the decision
+- **Identification:** the deciding authority, the matter, the parties, the outcome.
+- **Reasons:** the decision **must be reasoned** — which facts and evidence carried weight and which provisions were applied. Inadequate reasoning is a risk of annulment.
+- **Provisions applied:** name them (statute plus section), checked at source.
+- **Appeal instructions:** attach the correct instructions — request for rectification or appeal, to whom, within what time, and how (see the `administrative-appeal` skill). Wrong or missing instructions are an error.
+- **Service:** how and when the decision is served (this affects when the appeal period starts).
 
-## Työnkulku
-1. Selvitä: asia, asianosaiset, sovellettava erityislaki ja toimivaltaperuste, mitä on jo tehty (kuuleminen, selvitykset).
-2. Hae säännökset `legal-research`-skillillä.
-3. Laadi tai tarkista päätös yllä olevan listan mukaan. Nosta esiin menettelyvirheet (kuulematta jättäminen, esteellisyys, puuttuva perustelu/ohjaus) → kumoamisriski.
-4. Tuota päätös (uusi: `docx`-skill; olemassa olevan muokkaus jälkimuutoksin: `adeu`-MCP). Merkitse täydennettävät kohdat ja `[varmista — hallinto-oikeudellisen asiantuntijan arvioitava]`.
+## Workflow
+1. Establish: the matter, the parties, the applicable special statute and the basis for competence, and what has already been done (hearing, evidence).
+2. Look up the provisions with the `legal-research` skill.
+3. Draft or review the decision against the checklist above. Raise any procedural errors (failure to hear a party, disqualification, missing reasons or instructions) → a risk of annulment.
+4. Produce the decision (a new one: the `docx` skill; editing an existing one with tracked changes: the `adeu` MCP). Mark the passages that need completing and add `[confirm — requires an administrative-law specialist's assessment]`.
 
-## Raportoi
-Tuota päätös/arvio lähdemerkinnöin (hallintolaki + erityislaki, pykälät tarkistettuna).
-Erota selvästi aineellinen ratkaisu, sen perustelu ja menettelyn arviointi. Korosta
-mahdolliset kumoamisriskit.
+## Report
+Produce the decision or assessment with source references (the Administrative Procedure Act plus
+the special statute, sections checked). Keep the substantive outcome, its reasoning and the
+assessment of the procedure clearly apart. Highlight any risks of annulment.
 
-## Mitä tämä skill EI tee
-- **Ei tee viranomaispäätöstä eikä korvaa viranomaisen vastuuta.** Tuottaa tarkistettavan luonnoksen; viranomainen vastaa päätöksestään ja sen laillisuudesta.
-- **Ei vahvista toimivaltaperusteita eikä määräaikoja muistista.** Toimivalta (erityislaki, kuntalaki 410/2015, johtosäännöt) ja muutoksenhaun määräajat haetaan lähteestä erityislaeittain.
-- **Ei ratkaise aineellista oikeuskysymystä lopullisesti.** Tulkinnanvaraiset edellytykset ja näytön arviointi kuuluvat hallinto-oikeudellisen asiantuntijan vastuulle.
-- **Ei laadi muutoksenhakua eikä arvioi valituksen menestymistä** — se kuuluu `administrative-appeal`-skilliin.
-- **Ei tee julkisuus- tai salassapitoratkaisua** päätökseen liittyvistä asiakirjoista; se kuuluu `public-access-and-information-requests`-skilliin.
-- **Vain Suomen hallinto-oikeus.** Ei sovellu muiden maiden hallintomenettelyyn eikä yksityisoikeudellisiin asioihin.
+## What this skill does NOT do
+- **It does not make the authority's decision and does not replace the authority's responsibility.** It produces a draft for review; the authority answers for its decision and for its lawfulness.
+- **It does not confirm the basis for competence or any time limit from memory.** Competence (the special statute, kuntalaki 410/2015, administrative rules) and appeal time limits are looked up at source, statute by statute.
+- **It does not settle the substantive legal question conclusively.** Conditions open to interpretation and the assessment of evidence are the responsibility of an administrative-law specialist.
+- **It does not draft an appeal or assess an appeal's prospects** — that belongs to the `administrative-appeal` skill.
+- **It does not make a public-access or confidentiality decision** on documents connected with the decision; that belongs to the `public-access-and-information-requests` skill.
+- **Finnish administrative law only.** It does not apply to administrative procedure in other countries or to private-law matters.
 
-## Jatka tästä
-- Jos päätökseen haetaan muutosta → /hallinto-oikeus:muutoksenhaku
-- Säädösten ja määräaikojen tarkistus → /juristi:oikeustutkimus
-- Päätöksen kielen ja muotovaatimusten tarkistus ennen tiedoksiantoa → /juristi:asiakirjan-tarkistus
-- Jos päätökseen liittyviä asiakirjoja pyydetään tai luovutetaan → /hallinto-oikeus:julkisuus-ja-tietopyynnot
+## Continue from here
+- If the decision is appealed → /administrative-law:administrative-appeal
+- Checking statutes and time limits → /legal-core:legal-research
+- Checking the language and formal requirements of the decision before service → /legal-core:document-review
+- If documents connected with the decision are requested or released → /administrative-law:public-access-and-information-requests

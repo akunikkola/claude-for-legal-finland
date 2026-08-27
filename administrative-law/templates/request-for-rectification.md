@@ -1,15 +1,16 @@
-# Pohja: oikaisuvaatimus
+# Template: request for rectification
 
-Rakenteellinen luuranko oikaisuvaatimukselle viranomaisen päätökseen.
-Käyttävä skill: [`administrative-appeal`](../skills/administrative-appeal/SKILL.md) —
-tarkista ensin skillin kautta, onko oikaisuvaatimus oikea muutoksenhakutie
-tässä asiassa. Konventiot:
+The structural skeleton of a request for rectification (oikaisuvaatimus) against an
+authority's decision. Skill that uses it:
+[`administrative-appeal`](../skills/administrative-appeal/SKILL.md) — check through that
+skill first whether a request for rectification is the right appeal route in this
+matter. Conventions:
 [`references/template-standards.md`](../../references/template-standards.md).
 
-<!-- ohje: MÄÄRÄAIKA ENSIN. Oikaisuvaatimusaika ja vastaanottava
-     viranomainen ilmenevät päätökseen liitetystä oikaisuvaatimusohjeesta —
-     tarkista ne sieltä, älä muistista. Myöhästynyt vaatimus jätetään
-     tutkimatta. -->
+<!-- guidance: TIME LIMIT FIRST. The period for a request for rectification and
+     the receiving authority appear in the rectification instructions attached
+     to the decision — check them there, not from memory. A late request is
+     dismissed without being examined. -->
 
 ## Output language
 
@@ -23,42 +24,42 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-**Vastaanottaja:** [viranomainen, jolle oikaisuvaatimus osoitetaan —
-päätöksen ohjeen mukaan]
+**Addressee:** [the authority to which the request for rectification is
+addressed — as stated in the instructions attached to the decision]
 
-## OIKAISUVAATIMUS
+## REQUEST FOR RECTIFICATION
 
-### Päätös, johon vaaditaan oikaisua (pakollinen)
+### The decision for which rectification is sought (mandatory)
 
-- Päätöksen tehnyt viranomainen: [nimi]
-- Päätöksen päivämäärä ja numero/diaari: [tiedot]
-- Tiedoksisaantipäivä: [päivä] <!-- ohje: määräajan laskennan perusta —
-  dokumentoi, mistä päivä tiedetään. -->
+- Authority that made the decision: [name]
+- Date and number or case reference of the decision: [details]
+- Date of service: [date] <!-- guidance: the basis on which the time limit is
+  calculated — record how the date is known. -->
 
-### Vaatimuksen esittäjä (pakollinen)
+### The person making the request (mandatory)
 
-- [Nimi ja yhteystiedot]
-- [Asianosaisasema — miten päätös vaikuttaa esittäjään]
-- [Mahdollinen asiamies ja valtakirja]
+- [Name and contact details]
+- [Standing as a party — how the decision affects the person making the request]
+- [Any representative and power of attorney]
 
-### Vaatimus (pakollinen)
+### The claim (mandatory)
 
-[Miltä osin päätökseen vaaditaan oikaisua ja mitä muutosta vaaditaan —
-täsmällisesti]
+[In what respect rectification of the decision is sought and what change is
+requested — precisely]
 
-### Perustelut (pakollinen)
+### Grounds (mandatory)
 
-[Millä perusteella päätös on virheellinen — tosiseikat ja
-lainkohdat lähteestä oikeustutkimus-skillin kautta, ei muistista]
+[On what basis the decision is wrong — the facts and the provisions,
+taken from source through the legal-research skill, not from memory]
 
-### Liitteet
+### Appendices
 
-- Päätös oikaisuvaatimusohjeineen
-- [Todisteet, joihin vedotaan]
-- [Valtakirja, jos asiamies]
+- The decision together with its rectification instructions
+- [The evidence relied on]
+- [Power of attorney, if a representative acts]
 
-[Paikka, päiväys ja allekirjoitus]
+[Place, date and signature]
 
 ---
 
-*Luonnos. Tarkistettava ennen käyttöä; ei oikeudellista neuvontaa.*
+*A draft. Must be verified before use; not legal advice.*

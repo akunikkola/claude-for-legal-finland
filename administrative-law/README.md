@@ -1,42 +1,44 @@
-# Hallinto-oikeus
+# Administrative law
 
-Suomen hallinto-oikeus ja julkishallinto: hallintopäätökset, muutoksenhaku ja
-asiakirjajulkisuus.
+Finnish administrative law and public administration: administrative decisions, appeals and
+public access to official documents.
 
-> **Luonnokset ja arviot ovat tarkistettavia – ei oikeudellista neuvontaa.** Viranomainen
-> vastaa päätöksestään. Katso [`AGENTS.md`](AGENTS.md).
+> **Drafts and assessments are for review – not legal advice.** The authority answers for its
+> own decision. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **hallintopaatos** | Hallintopäätöksen laatiminen ja tarkistus (hallintolaki 434/2003): hyvä hallinto, kuuleminen, esteellisyys, perustelu, muutoksenhakuohjaus. Sisältää hallinto-oikeuden perusteiden referenssin. |
-| **muutoksenhaku** | Oikaisuvaatimus ja valitus (laki oikeudenkäynnistä hallintoasioissa 808/2019): muutoksenhakutie, määräajat, valitusoikeus, valituksen sisältö, valituslupa. |
-| **julkisuus-ja-tietopyynnot** | Asiakirjajulkisuus ja tietopyyntöihin vastaaminen (julkisuuslaki 621/1999): julkisuusperiaate, salassapitoperusteet, määräajat, kielteinen päätös. |
+| **administrative-decision** | Drafting and reviewing an administrative decision (hallintolaki 434/2003): good administration, hearing a party, disqualification, the duty to give reasons, appeal instructions. Includes a reference on the fundamentals of administrative law. |
+| **administrative-appeal** | Request for rectification and appeal (laki oikeudenkäynnistä hallintoasioissa 808/2019): the appeal route, time limits, the right of appeal, the content of the appeal, leave to appeal. |
+| **public-access-and-information-requests** | Public access to documents and responding to information requests (julkisuuslaki 621/1999): the principle of openness, the grounds for confidentiality, time limits, an adverse decision. |
 
-## Agentit
+## Agents
 
-| Agentti | Mitä tekee |
+| Agent | What it does |
 |---|---|
-| **salassapitoarvioija** | Valmistelee julkisuusarvion (621/1999): käy asiakirjan kohta kohdalta, merkitsee salassapitoehdokkaat säännösperusteineen ja vahinkoedellytyksineen ja tuottaa peittoehdotuksen – osittainen julkisuus pääsääntönä. Esitys; viranhaltija päättää. Vain luku. |
+| **confidentiality-assessor** | Prepares a public-access assessment (621/1999): works through the document item by item, marks the candidates for confidentiality together with their statutory basis and any harm test, and produces a redaction proposal – partial openness as the main rule. A proposal only; the official decides. Read-only. |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (oik.ai/Finlex) varmistettu: **hallintolaki (434/2003)**, **laki oikeudenkäynnistä
-hallintoasioissa (808/2019)** (korvasi hallintolainkäyttölain 586/1996) ja **julkisuuslaki
-(621/1999)**. Erityislait ja kuntalaki (410/2015) tarkistetaan `legal-core:legal-research`-skillillä.
+Verified at source (oik.ai/Finlex): the **Administrative Procedure Act (hallintolaki 434/2003)**,
+the **Act on Judicial Procedure in Administrative Matters (laki oikeudenkäynnistä
+hallintoasioissa 808/2019)** (which replaced hallintolainkäyttölaki 586/1996) and the **Act on
+the Openness of Government Activities (julkisuuslaki 621/1999)**. Special statutes and the Local
+Government Act (kuntalaki 410/2015) are checked with the `legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (lain ja KHO/hallinto-oikeus-käytännön tarkistus) ja `document-review`.
-- **`data-protection`-plugari** – julkisuuden ja henkilötietojen suojan yhteensovittaminen.
-- **`legislative-consultation`-plugari** – kunnan/viranomaisen lausunnot lakiehdotuksiin.
+- **the `legal-core` domain** – `legal-research` (checking statutes and KHO or administrative-court practice) and `document-review`.
+- **the `data-protection` domain** – reconciling public access with the protection of personal data.
+- **the `legislative-consultation` domain** – statements by a municipality or authority on legislative proposals.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install hallinto-oikeus@agent-skills-for-finnish-law
+/plugin install administrative-law@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.
