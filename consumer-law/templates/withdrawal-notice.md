@@ -1,13 +1,13 @@
-# Pohja: peruuttamisilmoitus (etä- ja kotimyynti)
+# Template: notice of withdrawal (distance and off-premises selling)
 
-Rakenteellinen luuranko kuluttajan peruuttamisilmoitukselle. Käyttävä
-skill: [`distance-selling-and-withdrawal`](../skills/distance-selling-and-withdrawal/SKILL.md).
-Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
+A structural skeleton for a consumer's notice of withdrawal. The skill that
+uses it: [`distance-selling-and-withdrawal`](../skills/distance-selling-and-withdrawal/SKILL.md).
+Conventions: [`references/template-standards.md`](../../references/template-standards.md).
 
-<!-- ohje: peruuttamisaika ja sen laskentatapa sekä peruuttamisoikeuden
-     poikkeukset tarkistetaan kuluttajansuojalaista skillin kautta —
-     älä täytä määräaikaa muistista. Ilmoituksen voi tehdä myös myyjän
-     lomakkeella tai muulla yksiselitteisellä tavalla. -->
+<!-- guidance: the withdrawal period, how it is calculated and the exceptions
+     to the right of withdrawal are checked in the Consumer Protection Act
+     through the skill — do not fill in the period from memory. The notice can
+     also be given on the trader's own form or by any other unambiguous means. -->
 
 ## Output language
 
@@ -18,33 +18,33 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-**Vastaanottaja:** [elinkeinonharjoittajan nimi, osoite ja sähköposti]
+**Addressee:** [the trader's name, address and email]
 
-## PERUUTTAMISILMOITUS
+## NOTICE OF WITHDRAWAL
 
-Ilmoitan peruuttavani seuraavaa sopimusta koskevan tilaukseni:
+I hereby give notice that I withdraw from my order under the following contract:
 
-### Sopimuksen yksilöinti (pakollinen)
+### Identification of the contract (mandatory)
 
-- Tilattu tavara/palvelu: [nimi ja määrä]
-- Tilausnumero: [numero]
-- Tilauspäivä: [päivä] / Vastaanottopäivä: [päivä]
-  <!-- ohje: kumpi käynnistää peruuttamisajan — tarkista skillistä
-       sopimustyypin mukaan. -->
+- Goods or service ordered: [name and quantity]
+- Order number: [number]
+- Date of order: [date] / Date of receipt: [date]
+  <!-- guidance: which of these starts the withdrawal period — check in the
+       skill according to the type of contract. -->
 
-### Kuluttajan tiedot (pakollinen)
+### The consumer's details (mandatory)
 
-- Nimi: [nimi]
-- Osoite: [osoite]
-- [Sähköposti ja puhelin]
+- Name: [name]
+- Address: [address]
+- [Email and telephone]
 
-### Palautus ja maksun palautus
+### Return and refund
 
-- [Palautustapa ja -aika — tarkista ohjeet ja kulujen jako skillin kautta]
-- Maksun palautus tilille: [tilinumero, jos eri kuin maksutapa]
+- [How and when the goods are returned — check the instructions and the allocation of costs through the skill]
+- Refund to the account: [account number, if different from the means of payment]
 
-[Päiväys — ja allekirjoitus, jos ilmoitus tehdään paperilla]
+[Date — and signature, if the notice is given on paper]
 
 ---
 
-*Luonnos. Tarkistettava ennen käyttöä; ei oikeudellista neuvontaa.*
+*A draft. Must be verified before use; not legal advice.*

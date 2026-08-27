@@ -1,12 +1,12 @@
-# Pohja: reklamaatio (tavaran tai palvelun virhe)
+# Template: notice of defect (a defect in goods or a service)
 
-Rakenteellinen luuranko kuluttajan virheilmoitukselle myyjälle. Käyttävä
-skill: [`consumer-sales-liability`](../skills/consumer-sales-liability/SKILL.md).
-Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
+A structural skeleton for a consumer's notice of a defect to the seller. The skill that
+uses it: [`consumer-sales-liability`](../skills/consumer-sales-liability/SKILL.md).
+Conventions: [`references/template-standards.md`](../../references/template-standards.md).
 
-<!-- ohje: reklamaatio on tehtävä kohtuullisessa ajassa virheen
-     havaitsemisesta — vähimmäisaika ja takaraja tarkistetaan lähteestä
-     (skill ohjaa). Myöhästyminen voi kaventaa oikeuksia. -->
+<!-- guidance: a notice of defect must be given within a reasonable time of
+     noticing the defect — the minimum period and the long stop are checked at
+     source (the skill guides this). Being late can narrow the rights. -->
 
 ## Output language
 
@@ -17,45 +17,45 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-**Vastaanottaja:** [myyjän/palveluntarjoajan nimi ja osoite tai sähköposti]
+**Addressee:** [name and address or email of the seller or service provider]
 
-**Lähettäjä:** [kuluttajan nimi ja yhteystiedot]
+**Sender:** [the consumer's name and contact details]
 
-## REKLAMAATIO
+## NOTICE OF DEFECT
 
-### Kaupan yksilöinti (pakollinen)
+### Identification of the purchase (mandatory)
 
-- Tuote/palvelu: [nimi, malli, sarjanumero]
-- Ostopäivä ja -paikka / tilausnumero: [tiedot]
-- Kauppahinta: [summa]
+- Product or service: [name, model, serial number]
+- Date and place of purchase / order number: [details]
+- Purchase price: [amount]
 
-### Virheen kuvaus (pakollinen)
+### Description of the defect (mandatory)
 
-[Mikä on vialla, milloin ja miten virhe ilmeni]
+[What is wrong, and when and how the defect appeared]
 
-<!-- ohje: kuvaa havainnot, älä oikeudellista luonnehdintaa — riittää,
-     että virhe yksilöidään. -->
+<!-- guidance: describe the observations, not the legal characterisation — it
+     is enough that the defect is identified. -->
 
-### Vaatimus (pakollinen)
+### The claim (mandatory)
 
-[Ensisijainen vaatimus: korjaus / vaihto — ja toissijainen:
-hinnanalennus / kaupan purku. Vaatimusjärjestys ja edellytykset:
-tarkista kuluttajansuojalaista skillin kautta]
+[The primary claim: repair / replacement — and the secondary one:
+price reduction / cancellation of the sale. The order of the claims and their
+conditions: check them in the Consumer Protection Act through the skill]
 
-[Mahdollinen vahingonkorvausvaatimus kuluineen — eriteltynä]
+[Any claim for damages with its costs — itemised]
 
-### Vastauspyyntö
+### Request for a reply
 
-Pyydän vastaustanne [päivämäärään] mennessä. Ellei asia ratkea,
-käytettävissä ovat kuluttajaneuvonta ja kuluttajariitalautakunta.
+I request your reply by [date]. If the matter is not resolved, consumer advisory
+services and the Consumer Disputes Board are available.
 
-### Liitteet
+### Annexes
 
-- [kuitti/tilausvahvistus]
-- [valokuvat virheestä]
+- [receipt / order confirmation]
+- [photographs of the defect]
 
-[Paikka, päiväys ja allekirjoitus]
+[Place, date and signature]
 
 ---
 
-*Luonnos. Tarkistettava ennen käyttöä; ei oikeudellista neuvontaa.*
+*A draft. Must be verified before use; not legal advice.*

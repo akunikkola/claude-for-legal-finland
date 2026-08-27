@@ -2,7 +2,7 @@
   "name": "consumer-law",
   "displayName": "Kuluttajaoikeus",
   "version": "0.1.0",
-  "description": "Suomen kuluttajaoikeus (kuluttajansuojalaki 38/1978): kuluttajan oikeudet tavaran ja palvelun virhetilanteissa, koti- ja etämyynnin peruuttamisoikeus ja tiedonantovelvollisuudet, sopimaton markkinointi sekä kuluttajariitojen ratkaisu (kuluttajariitalautakunta 8/2007 ja KKV 661/2012) ja kuluttajasaatavan hyvä perintätapa (513/1999).",
+  "description": "Finnish consumer law (kuluttajansuojalaki 38/1978): the consumer's rights where goods or a service are defective, the right of withdrawal and the information duties in off-premises and distance selling, unfair marketing, and the resolution of consumer disputes (the Consumer Disputes Board 8/2007 and KKV 661/2012) together with good collection practice for a consumer debt (513/1999).",
   "author": {
     "name": "Aku Nikkola"
   }

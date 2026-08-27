@@ -1,74 +1,70 @@
-# Kuluttajaoikeuden perusteet
+# Fundamentals of consumer law
 
-Plugarin yhteinen kartta: keskeiset käsitteet, säädökset ja sudenkuopat.
-**Säädösten nimet ja numerot on varmistettu Finlexistä**; lukujen sisältö,
-määräajat ja kulujen enimmäismäärät haetaan käytössä lähteestä
-(`legal-core:legal-research`).
+The domain's shared map: the key concepts, statutes and pitfalls. **The names and numbers of the
+statutes have been verified in Finlex**; the content of the chapters, the time limits and the
+maximum charges are taken from the source in use (`legal-core:legal-research`).
 
-## Varmistetut säädökset (perusta)
+## Verified statutes (the basis)
 
-| Säädös | Numero | Kattaa |
+| Statute | Number | Covers |
 |---|---|---|
-| Kuluttajansuojalaki | 38/1978 | Markkinointi, sopimusehdot, tavaran ja palvelun virhe, etä- ja kotimyynti, peruuttaminen |
-| Laki kuluttajariitalautakunnasta | 8/2007 | Kuluttajariitojen ratkaisusuositukset |
-| Laki Kilpailu- ja kuluttajavirastosta | 661/2012 | KKV ja kuluttaja-asiamiehen valvonta |
-| Laki saatavien perinnästä | 513/1999 | Hyvä perintätapa, perintäkulut, kuluttajasaatava |
-| Korkolaki | 633/1982 | Viivästyskorko ja sen rajat |
+| Consumer Protection Act (kuluttajansuojalaki) | 38/1978 | Marketing, contract terms, defects in goods and services, distance and off-premises selling, withdrawal |
+| Act on the Consumer Disputes Board (laki kuluttajariitalautakunnasta) | 8/2007 | Recommended decisions in consumer disputes |
+| Act on the Finnish Competition and Consumer Authority (laki Kilpailu- ja kuluttajavirastosta) | 661/2012 | KKV and the supervision by the Consumer Ombudsman |
+| Debt Collection Act (laki saatavien perinnästä) | 513/1999 | Good collection practice, collection charges, consumer debt |
+| Interest Act (korkolaki) | 633/1982 | Default interest and its limits |
 
-## Kantava periaate: pakottavuus kuluttajan hyväksi
+## The governing principle: mandatory in the consumer's favour
 
-KSL:n säännökset ovat **pakottavia kuluttajan eduksi**. Sopimusehto, joka
-heikentää kuluttajan lakisääteisiä oikeuksia, on häntä kohtaan **mitätön**.
-Kuluttajan vähimmäisoikeudet tulevat laista sopimuksesta riippumatta.
+The provisions of the Consumer Protection Act are **mandatory in the consumer's favour**. A
+contract term that weakens the consumer's statutory rights is **void** against them. The
+consumer's minimum rights follow from the law regardless of the contract.
 
-## Soveltamisala
+## Scope of application
 
-- **Kuluttaja** = luonnollinen henkilö, joka hankkii hyödykkeen pääasiassa
-  muuhun kuin elinkeinotoimintaan.
-- **Elinkeinonharjoittaja** = ammattimainen myyjä/palveluntarjoaja.
-- KSL koskee **B2C**-suhdetta. Yksityishenkilöiden välinen kauppa ja B2B →
-  kauppalaki (355/1987) ja yleinen sopimusoikeus (`contracts`-plugari).
+- **Consumer** = a natural person who acquires goods or services mainly for a purpose other than
+  business.
+- **Trader** = a professional seller or service provider.
+- The Act covers the **B2C** relationship. A sale between private individuals and B2B → the Sale
+  of Goods Act (kauppalaki 355/1987) and general contract law (the `contracts` domain).
 
-## Keskeiset alueet
+## The key areas
 
-- **Tavaran ja palvelun virhe** ja kuluttajan oikaisukeinot: korjaus tai
-  vaihto ensisijaisesti, sitten hinnanalennus tai purku, lisäksi
-  vahingonkorvaus ja oikeus pidättyä maksusta.
-- **Digitaalinen sisältö ja palvelut**: oma sääntelynsä (mm. päivitykset).
-- **Etä- ja kotimyynti**: ennakkotiedot ja **peruuttamisoikeus**
-  (määräaika lähteestä); peruuttamislomake ja -ohje.
-- **Markkinointi ja sopimusehdot**: sopimaton ja harhaanjohtava
-  markkinointi kielletty; kohtuuttomat vakioehdot voidaan sovitella tai
-  jättää huomiotta.
-- **Kuluttajasaatavan perintä**: hyvä perintätapa, perintäkulujen
-  enimmäismäärät ja maksuvaatimuksen sisältö laissa.
+- **Defects in goods and services** and the consumer's remedies: repair or replacement first, then
+  a price reduction or cancellation, plus damages and the right to withhold payment.
+- **Digital content and services**: their own rules (among other things updates).
+- **Distance and off-premises selling**: pre-contractual information and the **right of
+  withdrawal** (the period from the source); the withdrawal form and instructions.
+- **Marketing and contract terms**: unfair and misleading marketing is prohibited; unreasonable
+  standard terms may be adjusted or disregarded.
+- **Collection of a consumer debt**: good collection practice, the maximum collection charges and
+  the content of the payment demand are laid down in law.
 
-## Laki muuttuu — varmista luvut
+## The law changes — confirm the chapters
 
-KSL:ää on uudistettu toistuvasti EU-direktiivien myötä (tavarankauppa,
-digitaalinen sisältö ja palvelut, omnibus). **Lukujen numerointi ja sisältö
-ovat muuttuneet.** Älä luota muistinvaraiseen lukurakenteeseen — tarkista
-voimassa oleva sisältö Finlexistä.
+The Consumer Protection Act has been reformed repeatedly through EU directives (the sale of goods,
+digital content and services, omnibus). **The numbering and content of the chapters have
+changed.** Do not rely on a remembered chapter structure — check the content in force in Finlex.
 
-## Määräajat ja kulut — lähteestä, pakottavia
+## Time limits and charges — from source, and mandatory
 
-Peruuttamisaika, virheilmoituksen kohtuullinen aika ja takarajat, takuun
-suhde lakiin sekä kuluttajasaatavan perintäkulujen enimmäismäärät ovat
-laissa ja osin pakottavia. **Älä esitä näitä lukuja muistista.**
+The withdrawal period, the reasonable time for giving notice of a defect and the long stops, the
+relationship between a guarantee and the law, and the maximum collection charges for a consumer
+debt are laid down in law and are in part mandatory. **Do not state these figures from memory.**
 
-## Valvonta ja riidanratkaisu
+## Supervision and dispute resolution
 
-- **Kuluttajaneuvonta** (KKV) — maksuton neuvonta.
-- **Kuluttaja-asiamies / KKV** (661/2012) — valvoo markkinointia ja
-  sopimusehtoja, voi puuttua lainvastaiseen menettelyyn.
-- **Kuluttajariitalautakunta** (8/2007) — antaa ratkaisusuosituksia
-  yksittäisiin riitoihin (ei sitova, mutta noudatetaan laajalti).
-- **Tuomioistuin** — sitova ratkaisu; kuluttaja-asioissa erityispiirteitä.
+- **Consumer advisory services** (KKV) — free advice.
+- **The Consumer Ombudsman / KKV** (661/2012) — supervises marketing and contract terms, and can
+  intervene in unlawful conduct.
+- **The Consumer Disputes Board** (8/2007) — issues recommended decisions in individual disputes
+  (not binding, but widely followed).
+- **The courts** — a binding decision; consumer matters have their own features.
 
-## Tyypilliset sudenkuopat
+## Typical pitfalls
 
-- KSL:n soveltaminen B2B- tai yksityiskauppaan.
-- Takuun esittäminen kuluttajan ainoana keinona (laki on takuusta riippumaton).
-- Reklamaatioaikojen tai peruuttamisajan esittäminen muistista.
-- Kuluttajan oikeuksia heikentävät vakioehdot (mitättömiä).
-- Aggressiivinen tai hyvän perintätavan vastainen perintä.
+- Applying the Consumer Protection Act to a B2B or private sale.
+- Presenting a guarantee as the consumer's only remedy (the law applies regardless of a guarantee).
+- Stating periods for giving notice of a defect or the withdrawal period from memory.
+- Standard terms that weaken the consumer's rights (void).
+- Aggressive collection, or collection contrary to good collection practice.

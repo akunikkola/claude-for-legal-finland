@@ -1,26 +1,26 @@
 ---
 name: consumer-sales-liability
 description: >
-  Kuluttajan oikeudet tavaran tai palvelun virhetilanteessa
-  (kuluttajansuojalaki 38/1978). Käytä tätä skilliä, kun kuluttaja
-  reklamoi viallisesta tuotteesta tai palvelusta, arvioidaan onko
-  kyseessä virhe, valitaan oikaisukeino (korjaus, vaihto, hinnanalennus,
-  kaupan purku, vahingonkorvaus), laaditaan reklamaatio tai siihen
-  vastataan, tai arvioidaan takuun ja virhevastuun suhdetta. Triggeröi
-  sanoista: reklamaatio, tavaran virhe, palvelun virhe, viallinen tuote,
-  takuu, hinnanalennus, kaupan purku, virhevastuu, oikaisu, kuluttajan
-  oikeudet, hyvitys, vaihto, korjaus.
+  The consumer's rights where goods or a service are defective (kuluttajansuojalaki
+  38/1978). Use this skill when a consumer gives notice of a defective product or
+  service, when it is being assessed whether there is a defect, when a remedy is
+  chosen (repair, replacement, price reduction, cancellation of the sale, damages),
+  when a notice of defect is drafted or answered, or when the relationship between a
+  guarantee and liability for defects is assessed. Triggers on: notice of defect,
+  reklamaatio, defective goods, defective service, faulty product, guarantee, price
+  reduction, cancellation of the sale, liability for defects, remedy, consumer rights,
+  refund, replacement, repair.
 ---
 
-# Kuluttajakaupan virhevastuu — virhe, oikaisu ja reklamaatio
+# Consumer sales liability — the defect, the remedy and the notice
 
-Tämä skill jäsentää kuluttajan oikeudet, kun ostettu tavara tai palvelu
-on virheellinen. Kuluttajaoikeuden kartta ja käsitteet:
-`references/consumer-law-fundamentals.md` — lue se tehtävän alussa.
+This skill structures the consumer's rights where goods or a service that have been
+bought are defective. The map and the concepts of consumer law:
+`references/consumer-law-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. KSL on pakottava kuluttajan hyväksi; määräajat ja takuun
-> kesto tarkistetaan lähteestä. Katso `consumer-law/AGENTS.md`.
+> **Disclaimer:** drafts are for review — not legal
+> advice. The Consumer Protection Act is mandatory in the consumer's favour; the time
+> limits and the duration of a guarantee are checked at source. See `consumer-law/AGENTS.md`.
 
 ## Output language
 
@@ -29,85 +29,82 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki ja ratkaisukäytäntö lähteestä
+## Check the law and the decision practice at source
 
-Hae KSL:n (38/1978) virhe- ja seuraamussäännökset oikeasta luvusta
-**`legal-core:legal-research`-skillillä** — lukurakenne on muuttunut
-EU-uudistuksissa (tavarankauppa, digitaalinen sisältö ja palvelut),
-joten varmista voimassa oleva luku. Kuluttajariitalautakunnan
-ratkaisut vastaavista tapauksista lähteestä.
+Look up the provisions on defects and remedies in the Consumer Protection Act (38/1978)
+in the right chapter with the **`legal-core:legal-research` skill** — the chapter
+structure has changed in the EU reforms (the sale of goods, digital content and
+services), so confirm the chapter in force. The decisions of the Consumer Disputes
+Board on comparable cases from the source.
 
-## Vaihe 0: Onko kyseessä kuluttajakauppa?
+## Step 0: Is this a consumer sale?
 
-Tarkista, että myyjä on elinkeinonharjoittaja ja ostaja kuluttaja
-(B2C). Jos kyse on yksityishenkilöiden välisestä kaupasta tai B2B:stä,
-sovelletaan kauppalakia ja yleistä sopimusoikeutta → `contracts`.
+Check that the seller is a trader and the buyer a consumer (B2C). If this is a sale
+between private individuals or B2B, the Sale of Goods Act and general contract law
+apply → `contracts`.
 
-> **Pohja:** [`templates/complaint-notice.md`](../../templates/complaint-notice.md) — reklamaation rakenteellinen luuranko.
+> **Template:** [`templates/complaint-notice.md`](../../templates/complaint-notice.md) — the structural skeleton of a notice of defect.
 
-## Vaihe 1: Onko virhe?
+## Step 1: Is there a defect?
 
-1. **Virheen käsite**: tavara/palvelu ei vastaa sovittua, lain
-   vaatimuksia tai sitä, mitä kuluttaja voi perustellusti odottaa
-   (laatu, ominaisuudet, tiedot, soveltuvuus tarkoitukseen).
-2. **Tiedot ja markkinointi**: myös puutteelliset tai harhaanjohtavat
-   tiedot ja markkinointilupaukset voivat olla virhe.
-3. **Asennus ja ohjeet**: virheelliset asennus- tai käyttöohjeet.
-4. **Digitaalinen sisältö ja palvelut**: oma sääntelynsä (mm.
-   päivitykset, yhteentoimivuus) — tarkista sovellettava luku lähteestä.
-5. **Vaaranvastuun siirtyminen** ja virheen olemassaolo luovutushetkellä;
-   tietyn ajan kuluessa ilmenevän virheen oletukset — lähteestä.
+1. **The concept of a defect**: the goods or the service do not correspond to what was
+   agreed, to the requirements of the law, or to what the consumer may justifiably
+   expect (quality, characteristics, information given, fitness for purpose).
+2. **Information and marketing**: incomplete or misleading information and marketing
+   promises can also amount to a defect.
+3. **Installation and instructions**: defective installation or user instructions.
+4. **Digital content and services**: these have their own rules (among other things
+   updates, interoperability) — check the applicable chapter at source.
+5. **The passing of risk** and whether the defect existed at the time of delivery; the
+   presumptions for a defect appearing within a certain period — from the source.
 
-## Vaihe 2: Reklamaatio ajoissa
+## Step 2: Notice of defect in time
 
-- Kuluttajan on ilmoitettava virheestä **kohtuullisessa ajassa** siitä,
-  kun hän havaitsi sen tai hänen olisi pitänyt havaita — `[tarkista
-  vähimmäisaika ja takaraja lähteestä]`. Liian myöhäinen reklamaatio voi
-  menettää oikeudet.
-- Laadi reklamaatio: yksilöi tuote/palvelu, kuvaa virhe, vaadittu
-  oikaisu, määräaika vastaukselle, liitteet (kuitti, kuvat).
+- The consumer must give notice of the defect **within a reasonable time** of noticing
+  it or of when they ought to have noticed it — `[check the minimum period and the long
+  stop at source]`. A notice given too late may forfeit the rights.
+- Draft the notice: identify the product or service, describe the defect, state the
+  remedy demanded, give a deadline for a reply, and attach the annexes (receipt,
+  photographs).
 
-## Vaihe 3: Oikaisukeinot oikeassa järjestyksessä
+## Step 3: The remedies in their proper order
 
-1. **Ensisijaisesti korjaus tai virheettömän tavaran toimitus** (myyjän
-   valinta tietyin rajoin; ei kohtuutonta kustannusta/haittaa kuluttajalle).
-2. **Toissijaisesti hinnanalennus tai kaupan purku**, jos oikaisu ei
-   onnistu, viivästyy kohtuuttomasti tai virhe on olennainen (purku).
-3. **Vahingonkorvaus** virheestä aiheutuneesta vahingosta erikseen
-   edellytyksineen.
-4. **Oikeus pidättyä maksusta** virhettä vastaavalta osin.
+1. **First, repair or the delivery of goods free of defects** (the seller's choice
+   within limits; no unreasonable cost or inconvenience to the consumer).
+2. **Second, a price reduction or cancellation of the sale**, if the remedy fails, is
+   unreasonably delayed, or the defect is material (cancellation).
+3. **Damages** for loss caused by the defect, separately and on its own conditions.
+4. **The right to withhold payment** to the extent corresponding to the defect.
 
-Esitä keinot porrastettuna ja merkitse, mitkä edellytykset vaativat
-tarkistuksen lähteestä.
+Set the remedies out in order and mark which conditions require checking at source.
 
-## Vaihe 4: Takuu vs. lakisääteinen virhevastuu
+## Step 4: Guarantee versus statutory liability for defects
 
-- **Takuu on vapaaehtoinen lisäsitoumus** eikä rajoita lakisääteistä
-  virhevastuuta. Lakisääteinen virhevastuu on voimassa takuusta
-  riippumatta.
-- Takuunantaja vastaa takuun ehtojen mukaan; kuluttaja voi aina vedota
-  myös lakiin. Älä esitä takuuta kuluttajan ainoana keinona.
+- **A guarantee is a voluntary additional undertaking** and does not limit statutory
+  liability for defects. Statutory liability applies regardless of any guarantee.
+- The guarantor is liable according to the terms of the guarantee; the consumer may
+  always rely on the law as well. Do not present a guarantee as the consumer's only
+  remedy.
 
-## Vaihe 5: Jos myyjä kiistää
+## Step 5: If the seller disputes it
 
-- Ohjaa kuluttaja maksuttomaan neuvontaan (kuluttajaneuvonta/KKV) ja
-  tarvittaessa kuluttajariitalautakuntaan → `consumer-disputes-and-collection`.
-- Elinkeinonharjoittajan vastinetta laadittaessa: arvioi virheväite
-  rehellisesti; pakottavia oikeuksia ei voi kiistää sopimusehdolla.
+- Direct the consumer to free advice (consumer advisory services / KKV) and, where
+  needed, to the Consumer Disputes Board → `consumer-disputes-and-collection`.
+- When drafting a trader's reply: assess the claim of defect honestly; mandatory rights
+  cannot be disputed by a contract term.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista reklamaatioaikoja, takuun kestoa tai muita määräaikoja
-  muistista** — laista tai `[tarkista]`.
-- **Ei sovella KSL:ää B2B- tai yksityiskauppaan** → `contracts`.
-- **Ei laadi kuluttajan oikeuksia heikentäviä ehtoja** — ne ovat
-  mitättömiä.
-- **Ei anna kuluttajariitalautakunnan ratkaisua** — se on lautakunnan
-  toimivallassa.
+- **It does not confirm periods for giving notice, the duration of a guarantee or any
+  other time limit from memory** — from the law or `[check]`.
+- **It does not apply the Consumer Protection Act to B2B or private sales** → `contracts`.
+- **It does not draft terms that weaken the consumer's rights** — such terms are void.
+- **It does not give the Consumer Disputes Board's decision** — that is within the
+  Board's competence.
 
-## Jatka tästä
+## Continue from here
 
-- Etämyynti, kotimyynti ja peruuttamisoikeus → /kuluttajaoikeus:etamyynti-ja-peruuttaminen
-- Riidan vieminen lautakuntaan ja perintä → /kuluttajaoikeus:kuluttajariita-ja-perinta
-- B2B- tai yksityiskaupan virhe (kauppalaki) → /sopimukset:sopimuksen-tarkistus
-- Säännöksen tai ratkaisukäytännön tarkistus → /juristi:oikeustutkimus
+- Distance selling, off-premises selling and the right of withdrawal → /consumer-law:distance-selling-and-withdrawal
+- Taking a dispute to the Board, and debt collection → /consumer-law:consumer-disputes-and-collection
+- A defect in a B2B or private sale (the Sale of Goods Act) → /contracts:contract-review
+- Checking a provision or the decision practice → /legal-core:legal-research
