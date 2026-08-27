@@ -38,7 +38,7 @@ koskevat luvut **`legal-core:legal-research`-skillillä** — lukurakenne on
 muuttunut EU-uudistuksissa. Peruuttamisajan pituus, poikkeukset ja
 tiedonantovelvollisuuden sisältö aina laista; KKV:n ohjeet kkv.fi:stä.
 
-> **Pohja:** [`pohjat/withdrawal-notice.md`](../../templates/withdrawal-notice.md) — peruuttamisilmoituksen rakenteellinen luuranko.
+> **Pohja:** [`templates/withdrawal-notice.md`](../../templates/withdrawal-notice.md) — peruuttamisilmoituksen rakenteellinen luuranko.
 
 ## Vaihe 1: Onko kyse etä- tai kotimyynnistä?
 

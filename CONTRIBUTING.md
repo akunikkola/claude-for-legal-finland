@@ -53,6 +53,10 @@ Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tie
 6. **Aja validaattori ja testit ennen pushia:**
    - `node scripts/validate.mjs`
    - `node scripts/check-invariants.mjs`
+   - `node scripts/check-portability.mjs` — jokaisen skillin viittausten on
+     ratkettava oman `<domain>/`-hakemistonsa sisällä; siirrettävyyden yksikkö on
+     koko domain-hakemisto, ei `skills/*`. `--report` tulostaa erittelyn siitä,
+     mihin viittaukset osuvat (skill / sisarskill / domain / repo).
    - `node scripts/check-output-language.mjs`
    - `node scripts/check-safety-mechanisms.mjs`
    - `node scripts/check-citations.mjs`

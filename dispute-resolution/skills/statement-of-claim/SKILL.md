@@ -47,7 +47,7 @@ selvittämiseksi. **Allekirjoitus** (asianosainen tai laatija; laatijan ammatti 
 > Tarkista voimassa oleva sanamuoto ja mahdolliset muutokset `legal-core:legal-research`-skillillä
 > ennen lopullista käyttöä; summaariset (riidattomat) asiat voivat noudattaa kevyempää menettelyä.
 
-> **Pohja:** [`pohjat/statement-of-claim.md`](../../templates/statement-of-claim.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/template-standards.md`](../../../references/template-standards.md).
+> **Pohja:** [`templates/statement-of-claim.md`](../../templates/statement-of-claim.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/template-standards.md`](../../../references/template-standards.md).
 
 ## Työnkulku
 

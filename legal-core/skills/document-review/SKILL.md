@@ -76,7 +76,7 @@ Palveleeko asiakirjan muoto ja rakenne todellista käyttöä?
 ## Vaihe 3 — Kielen ja ilmaisun selkeys
 
 Tunnista kielelliset ongelmat ennen sisällön tarkistusta (korjaukset muuttavat tekstiä).
-- **Käytä `legal-core`-skilliä ja sen referenssejä** (`references/legal-language.md`, `references/finnish-language.md`): yhdyssanat, pilkutus, pykäläviittausten muoto, 3-3-3-sääntö, johdonmukainen termistö.
+- **Käytä `legal-core`-skilliä ja sen referenssejä** (`../legal-writing/references/legal-language.md`, `../legal-writing/references/finnish-language.md`): yhdyssanat, pilkutus, pykäläviittausten muoto, 3-3-3-sääntö, johdonmukainen termistö.
 - **Monitulkintaisuus**: epämääräiset ilmaukset ("kohtuullinen aika", "viipymättä", "olennainen") — onko ne määritelty tai sidottu kontekstiin?
 - **Johdonmukainen termistö**: samasta asiasta sama termi, ei synonyymeja. Vaihteleva termi luo tulkintariidan.
 - **Vääräperäinen täsmällisyys**: lupaako teksti tarkkuutta, jota ei voi toteuttaa ("24 tunnin kuluessa", kun todellinen kyky on 2–3 arkipäivää)? Näyttävätkö esimerkkiluettelot tyhjentäviltä, vaikka ovat vain esimerkkejä (lisää "muun muassa")?

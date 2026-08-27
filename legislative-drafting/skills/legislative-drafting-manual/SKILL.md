@@ -82,19 +82,19 @@ Yksityiskohtaiset ohjeet lakikielestä löytyvät referenssitiedostoista.
 
 | Aihe | Referenssi | Käyttötilanne |
 |------|-----------|---------------|
-| Säädösten rakenne | `saadosten-rakenne.md` | Suunnitellessa uuden säädöksen rakennetta tai arvioidessa olemassa olevan säädöksen rakennetta |
-| Lakikieli | `lakikieli.md` | Kirjoitettaessa säädöstekstejä tai arvioitaessa säädöstekstin kielenkäyttöä |
-| Johtolause | `johtolause.md` | Laadittaessa johdantotekstiä (preambuuli) laissa tai asetuksessa |
-| Säädösten lajit | `saadosten-lajit.md` | Määritettäessä mitä säädöstyyppiä tarvitaan ja mitä säädöstasoa pitäisi käyttää |
-| Viittaaminen | `viittaaminen.md` | Kirjoitettaessa viittauksia muihin säädöksiin tai määräyksiin |
+| Säädösten rakenne | `references/statute-structure.md` | Suunnitellessa uuden säädöksen rakennetta tai arvioidessa olemassa olevan säädöksen rakennetta |
+| Lakikieli | `references/legal-language.md` | Kirjoitettaessa säädöstekstejä tai arvioitaessa säädöstekstin kielenkäyttöä |
+| Johtolause | `references/enacting-formula.md` | Laadittaessa johdantotekstiä (preambuuli) laissa tai asetuksessa |
+| Säädösten lajit | `references/types-of-statutes.md` | Määritettäessä mitä säädöstyyppiä tarvitaan ja mitä säädöstasoa pitäisi käyttää |
+| Viittaaminen | `references/citation.md` | Kirjoitettaessa viittauksia muihin säädöksiin tai määräyksiin |
 
 ## Referenssitiedostot
 
-- **[saadosten-rakenne.md](references/statute-structure.md)** - Yksityiskohtaiset ohjeet säädösten rakenteesta
-- **[lakikieli.md](references/legal-language.md)** - Kattava opas lakikieleen ja hyvään kielenkäyttöön
-- **[johtolause.md](references/enacting-formula.md)** - Ohjeet johtolauseista (preambuuleista)
-- **[saadosten-lajit.md](references/types-of-statutes.md)** - Eri säädöstyyppien ja säädöstasojen kuvaus
-- **[viittaaminen.md](references/citation.md)** - Ohjeet viittauksista säädöksiin ja määräyksiin
+- **[statute-structure.md](references/statute-structure.md)** - Yksityiskohtaiset ohjeet säädösten rakenteesta
+- **[legal-language.md](references/legal-language.md)** - Kattava opas lakikieleen ja hyvään kielenkäyttöön
+- **[enacting-formula.md](references/enacting-formula.md)** - Ohjeet johtolauseista (preambuuleista)
+- **[types-of-statutes.md](references/types-of-statutes.md)** - Eri säädöstyyppien ja säädöstasojen kuvaus
+- **[citation.md](references/citation.md)** - Ohjeet viittauksista säädöksiin ja määräyksiin
 
 ## Keskeisiä käsitteitä
 

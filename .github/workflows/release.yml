@@ -7,8 +7,9 @@ name: Julkaise plugari-ZIPit
 #
 # HUOM: jokainen ZIP sisältää koko plugarin (skills/, AGENTS.md, references/,
 # mcp.json, .mcp.json, plugin.json, .claude-plugin/, .codex-plugin/) jotta
-# asennus on täydellinen. Tarkista asennuksen toimivuus kohdeympäristössä
-# ennen laajaa julkaisua.
+# asennus on täydellinen. Koko <domain>/ on siirrettävyyden yksikkö — ks.
+# AGENTS.md, osio "Portability" — ja scripts/check-portability.mjs vartioi sitä.
+# Tarkista asennuksen toimivuus kohdeympäristössä ennen laajaa julkaisua.
 
 on:
   push:
@@ -41,6 +42,7 @@ jobs:
           bash scripts/check-generated.sh
           node scripts/validate.mjs
           node scripts/check-invariants.mjs
+          node scripts/check-portability.mjs
           node scripts/check-output-language.mjs
           node scripts/check-safety-mechanisms.mjs
           node scripts/check-citations.mjs

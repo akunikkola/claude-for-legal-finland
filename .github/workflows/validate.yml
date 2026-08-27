@@ -2,8 +2,8 @@ name: Validoi plugarit
 
 # Ajaa rakenne- ja laatuvalidaattorin jokaisessa pushissa ja pull requestissa.
 # Portti estää markkinapaikan rikkovat virheet (frontmatter, marketplace-
-# yhtenäisyys, kuolleet linkit, Cowork-validaattorin numero-pilkku-ansa)
-# ennen kuin ne päätyvät käyttäjien asennuksiin.
+# yhtenäisyys, kuolleet linkit, siirrettävyys, Cowork-validaattorin numero-
+# pilkku-ansa) ennen kuin ne päätyvät käyttäjien asennuksiin.
 
 on:
   push:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Tarkista repon invariantit
         run: node scripts/check-invariants.mjs
+
+      - name: Tarkista siirrettävyys (skillien viittaukset pysyvät domainin sisällä)
+        run: node scripts/check-portability.mjs
 
       - name: Tarkista tuotoskielen ilmoitukset
         run: node scripts/check-output-language.mjs

@@ -43,7 +43,7 @@ Tarkista, että myyjä on elinkeinonharjoittaja ja ostaja kuluttaja
 (B2C). Jos kyse on yksityishenkilöiden välisestä kaupasta tai B2B:stä,
 sovelletaan kauppalakia ja yleistä sopimusoikeutta → `contracts`.
 
-> **Pohja:** [`pohjat/complaint-notice.md`](../../templates/complaint-notice.md) — reklamaation rakenteellinen luuranko.
+> **Pohja:** [`templates/complaint-notice.md`](../../templates/complaint-notice.md) — reklamaation rakenteellinen luuranko.
 
 ## Vaihe 1: Onko virhe?
 

@@ -34,7 +34,7 @@ example `notice period (irtisanomisaika)`.
   (joka voi muuttaa määräaikaa, valituslupaa tai valitustietä) **`legal-core:legal-research`-skillillä**.
   **Älä esitä määräaikaa muistista** — hae se ja merkitse lähde; jos et voi tarkistaa, merkitse `[tarkista määräaika]`.
 
-> **Pohja:** [`pohjat/request-for-rectification.md`](../../templates/request-for-rectification.md) — oikaisuvaatimuksen rakenteellinen luuranko (määräaika ensin).
+> **Pohja:** [`templates/request-for-rectification.md`](../../templates/request-for-rectification.md) — oikaisuvaatimuksen rakenteellinen luuranko (määräaika ensin).
 
 ## Vaihe 1: Tunnista oikea muutoksenhakutie
 - **Oikaisuvaatimus** — monessa asiassa pakollinen ensivaihe samalle viranomaiselle ennen valitusta. Tarkista, edellyttääkö asia ensin oikaisuvaatimusta.

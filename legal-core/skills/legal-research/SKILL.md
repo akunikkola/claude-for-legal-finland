@@ -52,7 +52,7 @@ Tämä skill käyttää **oik.ai-MCP:tä** tai vaihtoehtoisesti **laki.ai-MCP:t�
 - Huomioi: Finlexin/oik.ai:n ajantasainen versio voi olla muutaman viikon jäljessä uusimmista muutoksista. Jos asia on tuore, mainitse tämä varaus.
 
 ### 4. Viittaa oikein
-Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../legal-core/references/citations.md` ja `../legal-core/references/sources.md`):
+Käytä vakiintuneita suomalaisia viittausmuotoja (täydet ohjeet: `../legal-writing/references/citations.md` ja `../legal-writing/references/sources.md`):
 
 - **Säädös**, ensimaininnalla nimi + numero: *kuntalain (410/2015) 7 §:n 1 momentin mukaan…*
 - **Ennakkopäätös**: *Korkein oikeus on ratkaisussaan KKO:VVVV:NN katsonut, että…* (tunnus paikkamerkki — täytä vain lähteestä tarkistetulla ratkaisulla)
