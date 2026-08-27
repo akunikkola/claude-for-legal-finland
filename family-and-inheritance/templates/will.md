@@ -1,13 +1,14 @@
-# Pohja: testamentti
+# Template: will
 
-Rakenteellinen luuranko testamentille. Käyttävä skill:
+A structural skeleton for a will. The skill that uses it:
 [`inheritance-and-wills`](../skills/inheritance-and-wills/SKILL.md).
-Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
+Conventions: [`references/template-standards.md`](../../references/template-standards.md).
 
-> ⚠️ **Määrämuotoinen asiakirja.** Muotovirhe voi tehdä testamentista
-> pätemättömän, eikä tätä pohjaa saa käyttää tarkistamatta muotovaatimuksia
-> lähteestä. Käy muotomuistilista (alla) läpi skillin kanssa ennen
-> allekirjoitusta, ja huomioi rintaperillisen **lakiosa** (pakottava).
+> ⚠️ **A document subject to a prescribed form.** A defect of form can render a will
+> void, and this template must not be used without checking the formal requirements
+> against the source. Work through the checklist on form (below) with the skill before
+> signature, and allow for the **compulsory share (lakiosa)** of a direct heir
+> (mandatory).
 
 ## Output language
 
@@ -20,62 +21,63 @@ example `notice period (irtisanomisaika)`.
 
 ## TESTAMENTTI
 
-### Testamentintekijä (pakollinen)
+### Testator (mandatory)
 
-[Nimi, henkilötunnus, kotipaikka]
+[Name, personal identity code, place of residence]
 
-### Määräykset (pakollinen)
+### Dispositions (mandatory)
 
-<!-- ohje: ilmaise kunkin määräyksen kohde ja saaja yksiselitteisesti.
-     Tyypit (yleis-/erityisjälkisäädös, käyttö- ja omistusoikeuden
-     erottaminen, toissijaismääräykset) ja niiden vaikutukset — skillin
-     kautta lähteestä, ei valmiita lausekkeita muistista. -->
+<!-- guidance: express the subject matter and the beneficiary of each disposition
+     unambiguously. The types (universal or specific disposition, separating the
+     right of use from ownership, secondary dispositions) and their effects —
+     through the skill from the source, not ready-made clauses from memory. -->
 
-1. [Määräys: mitä, kenelle]
-2. [Mahdollinen toissijaismääräys: jos ensisijainen saaja on kuollut…]
-3. [Mahdollinen avio-oikeusmääräys saajan puolison avio-oikeudesta —
-   tarkista muotoilu skillin kautta]
+1. [Disposition: what, to whom]
+2. [Any secondary disposition: if the primary beneficiary has died…]
+3. [Any disposition on the marital right concerning the marital right of the
+   beneficiary's spouse — check the wording through the skill]
 
-### Aiempien testamenttien peruuttaminen *(valinnainen)*
+### Revocation of earlier wills *(optional)*
 
-[Peruutan kaikki aikaisemmat testamenttini / en ole tehnyt aiempia]
+[I revoke all my earlier wills / I have made no earlier will]
 
-### Päiväys ja allekirjoitus (pakollinen)
+### Date and signature (mandatory)
 
-[Paikka ja päiväys]
+[Place and date]
 
-[Testamentintekijän allekirjoitus ja nimenselvennys]
+[Testator's signature and name in block capitals]
 
-### Todistuslauseke (pakollinen)
+### Attestation clause (mandatory)
 
-<!-- ohje: kaksi esteetöntä todistajaa yhtä aikaa läsnä — esteettömyys ja
-     lausekkeen sisältövaatimukset tarkistetaan perintökaaren 10 luvusta
-     oikeustutkimus-skillillä ennen allekirjoitusta. -->
+<!-- guidance: two disqualification-free witnesses present at the same time —
+     the disqualification rules and the required content of the clause are checked
+     against chapter 10 of the Code of Inheritance with the legal-research skill
+     before signature. -->
 
-Todistamme, että [testamentintekijä] on omakätisesti allekirjoittanut
-tämän testamentin ja ilmoittanut sen sisältävän hänen viimeisen tahtonsa,
-molempien meidän ollessa yhtä aikaa läsnä:
+We attest that [testator] has signed this will in their own hand and has stated
+that it contains their last will, both of us being present at the same time:
 
-- [Todistaja 1: nimi, ammatti, asuinpaikka, allekirjoitus]
-- [Todistaja 2: nimi, ammatti, asuinpaikka, allekirjoitus]
-
----
-
-## Muotomuistilista ennen allekirjoitusta
-
-Jokainen kohta tarkistetaan lähteestä (perintökaari 40/1965, 10 luku —
-`legal-core:legal-research`), ei muistista:
-
-- [ ] Testamentti on kirjallinen
-- [ ] Kaksi todistajaa, jotka ovat **esteettömiä** [esteettömyysperusteet —
-  tarkista lähteestä]
-- [ ] Todistajat läsnä **yhtä aikaa** allekirjoitettaessa tai
-  allekirjoitusta tunnustettaessa
-- [ ] Todistajat tietävät asiakirjan testamentiksi [sisällön tuntemista ei
-  edellytetä — tarkista]
-- [ ] Lakiosan vaikutus määräyksiin arvioitu (skillin kautta)
-- [ ] Säilytys ja mahdollinen tiedoksianto suunniteltu
+- [Witness 1: name, occupation, place of residence, signature]
+- [Witness 2: name, occupation, place of residence, signature]
 
 ---
 
-*Luonnos. Tarkistettava ennen käyttöä; ei oikeudellista neuvontaa.*
+## Checklist on form before signature
+
+Every item is checked against the source (perintökaari 40/1965, chapter 10 —
+`legal-core:legal-research`), not from memory:
+
+- [ ] The will is in writing
+- [ ] Two witnesses who are **disqualification-free** [grounds of disqualification —
+  check against the source]
+- [ ] The witnesses present **at the same time** when it is signed or when the
+  signature is acknowledged
+- [ ] The witnesses know the document to be a will [knowledge of its contents is not
+  required — check]
+- [ ] The effect of the compulsory share on the dispositions has been assessed
+  (through the skill)
+- [ ] Safekeeping and any notification have been planned
+
+---
+
+*A draft. Needs checking before use; not legal advice.*

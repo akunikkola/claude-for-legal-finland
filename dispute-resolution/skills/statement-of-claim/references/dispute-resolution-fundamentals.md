@@ -1,51 +1,46 @@
-# Suomen riidanratkaisun perusteet (yleiset tuomioistuimet)
+# Fundamentals of Finnish dispute resolution (the general courts)
 
-Tiivistelmä riita-asian ratkaisemisesta yleisissä tuomioistuimissa. **Tarkista pykälien
-voimassa oleva sanamuoto ja muut kuin alla vahvistetut säädösnumerot
-`legal-core:legal-research`-skillillä (oik.ai/Finlex) ennen viittausta.**
+A summary of how a civil case is resolved in the general courts. **Check the wording in
+force of the sections, and any statute numbers other than those confirmed below, with the
+`legal-core:legal-research` skill (oik.ai/Finlex) before citing them.**
 
-## Tuomioistuinrakenne (yleiset tuomioistuimet)
-- **Käräjäoikeus** — ensimmäinen aste riita- ja rikosasioissa.
-- **Hovioikeus** — muutoksenhakuaste; valitus käräjäoikeuden tuomiosta (usein **jatkokäsittelylupa**).
-- **Korkein oikeus (KKO)** — ylin aste; pääsääntöisesti **valituslupa** vaaditaan. KKO antaa ennakkopäätökset (KKO:2024:xx).
+## The court structure (the general courts)
+- **Käräjäoikeus** — the first instance in civil and criminal cases.
+- **Hovioikeus** — the appellate instance; an appeal against a judgment of the käräjäoikeus (often subject to **leave for continued consideration**).
+- **The Supreme Court (KKO)** — the highest instance; as a rule **leave to appeal** is required. The KKO issues precedents (KKO:2024:xx).
 
-Tuomioistuimista säädetään **tuomioistuinlaissa (673/2016)** (vahvistettu lähteestä); KKO:sta
-laissa 665/2005.
+The courts are governed by the **Courts Act (tuomioistuinlaki 673/2016)** (verified against the source); the KKO by act 665/2005.
 
-## Keskeiset säädökset
-**Vahvistettu lähteestä (oik.ai/Finlex, 2026-05):**
-- **Oikeudenkäymiskaari (4/1734)** — riita-asian (ja osin rikosasian) prosessin yleislaki:
-  vireillepano ja haastehakemus (**5 luku**, mm. 2 §:n sisältövaatimukset), valmistelu ja
-  pääkäsittely, **todistelu (17 luku)**, tuomio, oikeudenkäyntikulut (**21 luku**),
-  muutoksenhaku hovioikeuteen (**25 luku**) ja jatkokäsittelylupa (**25 a luku**), valitus
-  KKO:hon ja valituslupa (**30 luku**).
-- **Tuomioistuinlaki (673/2016)** — tuomioistuimet ja tuomarit.
+## The key statutes
+**Verified against the source (oik.ai/Finlex, 2026-05):**
+- **The Code of Judicial Procedure (oikeudenkäymiskaari 4/1734)** — the general statute on procedure in civil cases (and in part in criminal cases): bringing an action and the application for a summons (**chapter 5**, among other things the content requirements in section 2), preparation and the main hearing, **evidence (chapter 17)**, the judgment, the costs of the proceedings (**chapter 21**), appeal to the hovioikeus (**chapter 25**) and leave for continued consideration (**chapter 25 a**), appeal to the KKO and leave to appeal (**chapter 30**).
+- **The Courts Act (tuomioistuinlaki 673/2016)** — the courts and the judges.
 
-**Tarkista säädösnumero `legal-research`-skillillä ennen viittausta:**
-- **Laki oikeudenkäynnistä rikosasioissa (ROL)** — rikosprosessi (tämä plugari keskittyy riita-asioihin).
-- **Laki välimiesmenettelystä (967/1992)** — välimiesmenettely (ks. ADR alla).
-- Vanhentumislainsäädäntö (esim. velan vanhentuminen) — kanteen nostamisen määräajat.
-- Aineellinen laki, johon vaatimus perustuu (sopimus-, vahingonkorvaus-, esine- ym. oikeus).
+**Check the statute number with the `legal-research` skill before citing:**
+- **Laki oikeudenkäynnistä rikosasioissa (ROL)** — criminal procedure (this domain concentrates on civil cases).
+- **Laki välimiesmenettelystä (967/1992)** — arbitration (see ADR below).
+- Limitation legislation (for example the limitation of a debt) — the time limits for bringing an action.
+- The substantive statute on which the claim is based (contract law, the law of damages, property law and so on).
 
-## Riita-asian kulku käräjäoikeudessa (pääpiirteet)
-1. **Vireillepano:** haastehakemus käräjäoikeuteen (OK 5 luku).
-2. **Haaste ja vastaus:** vastaajaa haastetaan antamaan vastaus.
-3. **Valmistelu:** kirjallinen ja/tai suullinen valmistelu — riidan kohde, vaatimukset, myönnöt, riitaiset seikat ja todisteet täsmennetään. Tavoitteena myös sovinto.
-4. **Pääkäsittely:** todistelu vastaanotetaan; asianosaiset esittävät asiansa.
-5. **Tuomio** ja oikeudenkäyntikulut (pääsääntö: häviäjä korvaa voittajan kulut, OK 21 luku).
+## The course of a civil case in the käräjäoikeus (in outline)
+1. **Bringing the action:** the application for a summons to the käräjäoikeus (OK chapter 5).
+2. **The summons and the answer:** the defendant is summoned to give an answer.
+3. **Preparation:** written and/or oral preparation — the subject matter of the dispute, the claims, the admissions, the contested facts and the evidence are pinned down. A settlement is also an aim.
+4. **The main hearing:** the evidence is received; the parties present their case.
+5. **The judgment** and the costs of the proceedings (the main rule: the losing party pays the winner's costs, OK chapter 21).
 
-## Todistelu (OK 17 luku)
-- **Vapaa todistusharkinta** ja **vapaa todistelu** (laissa säädetyin rajoituksin).
-- **Näyttötaakka** pääsääntöisesti sillä, joka seikkaan vetoaa.
-- **Todistuskeinot:** asiakirjat, todistajat, asiantuntijat, katselmus, asianosaisen kuuleminen.
-- Hyödyntämiskiellot ja todistamiskiellot (esim. tietyt luottamukselliset suhteet) — tarkista lähteestä.
+## Evidence (OK chapter 17)
+- **Free evaluation of evidence** and **freedom of proof** (subject to the restrictions laid down in the statute).
+- **The burden of proof** as a rule rests on the party who relies on the fact.
+- **The means of proof:** documents, witnesses, experts, inspection, hearing a party.
+- Prohibitions on the use of evidence and prohibitions on giving evidence (for example certain confidential relationships) — check against the source.
 
-## Vaihtoehtoinen riidanratkaisu (ADR)
-- **Välimiesmenettely** (laki välimiesmenettelystä 967/1992) — sopimukseen perustuva, lopullinen, luottamuksellinen; ratkaisu pannaan täytäntöön kuin tuomio. Sovi instituutiosta (esim. Keskuskauppakamarin välimieslautakunta) tai ad hoc.
-- **Tuomioistuinsovittelu** ja **sovittelu** — neuvotteluratkaisu ilman täysimittaista oikeudenkäyntiä.
-- Punnitse aina, onko sovinto tai ADR asiakkaan etu ennen kannetta.
+## Alternative dispute resolution (ADR)
+- **Arbitration** (laki välimiesmenettelystä 967/1992) — based on agreement, final and confidential; the award is enforced like a judgment. Agree on the institution (for example the Arbitration Institute of the Finland Chamber of Commerce) or on an ad hoc procedure.
+- **Court-annexed mediation** and **mediation** — a negotiated resolution without full-scale litigation.
+- Always weigh whether a settlement or ADR is in the client's interest before bringing an action.
 
-## Oikeuskäytäntö
-Hae relevantit ennakkopäätökset `legal-research`-skillillä (court "Korkein oikeus",
-"Hovioikeudet"). Tunnukset: KKO:2024:xx; hovioikeuden tuomio yksilöidään tuomioistuimen,
-päivämäärän ja diaarinumeron mukaan.
+## Case law
+Retrieve the relevant precedents with the `legal-research` skill (court "Korkein oikeus",
+"Hovioikeudet"). Identifiers: KKO:2024:xx; a judgment of a hovioikeus is identified by the
+court, the date and the docket number.

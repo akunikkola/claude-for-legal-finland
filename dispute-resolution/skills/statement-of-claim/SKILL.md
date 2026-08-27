@@ -1,23 +1,25 @@
 ---
 name: statement-of-claim
 description: >
-  Riita-asian haastehakemuksen laatiminen ja tarkistus oikeudenkäymiskaaren (4/1734)
-  mukaan: kantajan vaatimukset, niiden perusteet, todisteet, oikeudenkäyntikulut,
-  toimivalta ja prosessiosoite. Käytä tätä skilliä, kun käyttäjä panee vireille tai
-  laatii riita-asian kannetta käräjäoikeudessa, kirjoittaa haastehakemusta, kysyy mitä
-  kanteessa on esitettävä, miten vaatimus muotoillaan, tai mainitsee haastehakemuksen,
-  kanteen, kantajan, vastaajan tai vireillepanon.
+  Drafting and checking an application for a summons (haastehakemus) in a civil case under
+  the Code of Judicial Procedure (oikeudenkäymiskaari 4/1734): the plaintiff's claims, their
+  grounds, the evidence, the costs of the proceedings, jurisdiction and the address for
+  service. Use this skill when the user is bringing or drafting a civil action in the
+  käräjäoikeus, writing an application for a summons, asking what an action must set out or
+  how a claim should be worded, or mentions a haastehakemus, a statement of claim, the
+  plaintiff (kantaja), the defendant (vastaaja) or bringing an action.
 ---
 
-# Haastehakemus — riita-asian kanne käräjäoikeudessa
+# Application for a summons — a civil action in the käräjäoikeus
 
-Tämä skill auttaa laatimaan ja tarkistamaan riita-asian haastehakemuksen
-oikeudenkäymiskaaren (4/1734) mukaan. Haastehakemus on asiakirja, jolla riita-asia pannaan
-vireille käräjäoikeudessa.
+This skill helps to draft and check an application for a summons in a civil case
+under the Code of Judicial Procedure (oikeudenkäymiskaari 4/1734). The application for a
+summons is the document by which a civil case is brought before the käräjäoikeus.
 
-> **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä
-> arvio menestymisestä. Asianajollinen vastuu on toimeksiannon hoitavalla. Katso
-> `dispute-resolution/AGENTS.md`. Perusteet: `references/dispute-resolution-fundamentals.md`.
+> **Disclaimer:** a draft or assessment for review — not legal advice and not an
+> assessment of whether the case will succeed. Professional responsibility rests with the
+> person handling the engagement. See
+> `dispute-resolution/AGENTS.md`. The fundamentals: `references/dispute-resolution-fundamentals.md`.
 
 ## Output language
 
@@ -29,60 +31,54 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Pakollinen sisältö (oikeudenkäymiskaari 5 luku 2 §)
+## Mandatory content (oikeudenkäymiskaari chapter 5 section 2)
 
-Lähteestä vahvistettu (oik.ai/Finlex, OK 5:2 §) — haastehakemuksessa on ilmoitettava:
+Verified against the source (oik.ai/Finlex, OK 5:2 §) — an application for a summons must state:
 
-1. **Kantajan yksilöity vaatimus** — mitä tuomioistuimelta vaaditaan, täsmällisesti (esim. tietty euromäärä korkoineen).
-2. **Seikat, joihin vaatimus perustuu** — kanteen perusteet (oikeustosiseikat).
-3. **Todisteet mahdollisuuksien mukaan** — mitä todisteita kantaja aikoo esittää ja **mitä kullakin todisteella aiotaan näyttää toteen** (teema).
-4. **Oikeudenkäyntikuluvaatimus**, jos aiheellinen.
-5. **Toimivaltaperuste**, jos se ei muutoin ilmene.
+1. **The plaintiff's specified claim** — what is being demanded of the court, precisely (for example a particular sum of money with interest).
+2. **The facts on which the claim is based** — the grounds of the action (the legally operative facts).
+3. **The evidence so far as possible** — what evidence the plaintiff intends to present and **what each piece of evidence is intended to prove** (the theme).
+4. **A claim for the costs of the proceedings**, where appropriate.
+5. **The ground of jurisdiction**, if it is not otherwise apparent.
 
-Lisäksi: **tuomioistuimen nimi**, asianosaisten nimet ja kotipaikat, laillisen edustajan/
-asiamiehen yhteystiedot, **prosessiosoite** (postiosoite kutsuja ja ilmoituksia varten),
-puhelinnumerot. Jos vastaajan yhteystietoja ei tiedetä, kerrottava mitä on tehty niiden
-selvittämiseksi. **Allekirjoitus** (asianosainen tai laatija; laatijan ammatti ja asuinpaikka).
+In addition: **the name of the court**, the names and places of residence of the parties, the contact details of the legal representative or agent, the **address for service** (a postal address for summonses and notices), and telephone numbers. If the defendant's contact details are not known, the application must state what has been done to establish them. **Signature** (the party or the drafter; the drafter's occupation and place of residence).
 
-> Tarkista voimassa oleva sanamuoto ja mahdolliset muutokset `legal-core:legal-research`-skillillä
-> ennen lopullista käyttöä; summaariset (riidattomat) asiat voivat noudattaa kevyempää menettelyä.
+> Check the wording in force and any amendments with the `legal-core:legal-research` skill
+> before final use; summary (undisputed) matters may follow a lighter procedure.
 
-> **Pohja:** [`templates/statement-of-claim.md`](../../templates/statement-of-claim.md) — rakenteellinen luuranko (OK 5:2 §:n osat). Konventiot: [`references/template-standards.md`](../../../references/template-standards.md).
+> **Template:** [`templates/statement-of-claim.md`](../../templates/statement-of-claim.md) — a structural skeleton (the parts required by OK 5:2 §). Conventions: [`references/template-standards.md`](../../../references/template-standards.md).
 
-## Työnkulku
+## Workflow
 
-1. **Selvitä asia:** mitä vaaditaan ja keneltä, mihin vaatimus perustuu, mitä todisteita on, mikä käräjäoikeus on toimivaltainen (vastaajan kotipaikka tai muu peruste).
-2. **Tarkista oikeustila lähteestä:** hae aineelliset säännökset (sopimus-, vahingonkorvaus- ym. oikeus) ja niitä tukeva oikeuskäytäntö `legal-research`-skillillä. Vaatimuksen on nojattava oikeustosiseikkoihin ja oikeusperusteeseen.
-3. **Laadi haastehakemus** yllä olevan rakenteen mukaan:
-   - Vaatimukset numeroituna ja täsmällisinä.
-   - Perusteet jäsenneltyinä (tapahtumat → oikeudellinen peruste).
-   - Todisteet teemoineen (kirjalliset todisteet, todistajat).
-   - Korko- ja kuluvaatimukset.
-4. **Tarkista** ennen jättämistä: täyttyvätkö OK 5:2 §:n kohdat, onko toimivalta perusteltu, ovatko vaatimus ja perusteet linjassa, onko todisteilla teema.
+1. **Establish the case:** what is being claimed and from whom, what the claim is based on, what evidence there is, which käräjäoikeus has jurisdiction (the defendant's place of residence or another ground).
+2. **Check the legal position against the source:** retrieve the substantive provisions (contract law, the law of damages and so on) and the supporting case law with the `legal-research` skill. The claim must rest on the legally operative facts and on a legal ground.
+3. **Draft the application for a summons** following the structure above:
+   - The claims numbered and precise.
+   - The grounds set out in order (events → legal ground).
+   - The evidence with its themes (documentary evidence, witnesses).
+   - The claims for interest and costs.
+4. **Check** before filing: are the requirements of OK 5:2 § met, is jurisdiction made out, are the claim and the grounds consistent, does each piece of evidence have a theme.
 
-## Tulostemuoto
+## Output format
 
-Tuota haastehakemus muokattavana asiakirjana (uusi: `docx`-skill; olemassa olevan muokkaus
-jälkimuutoksin: `adeu`-MCP). Merkitse täydennettävät kohdat hakasulkein ja
-`[varmista — asianajajan/lakimiehen tarkistettava]`. Älä esitä menestymisen todennäköisyyttä.
+Produce the application for a summons as an editable document (new: the `docx` skill; editing an existing one with subsequent changes: the `adeu` MCP). Mark the passages to be completed in square brackets and with
+`[confirm — needs checking by the advocate or lawyer]`. Do not state the probability of success.
 
-## Raportoi
+## Report
 
-Tuota haastehakemus + tarkistuslista (OK 5:2 §:n kohdat tehty/puuttuu) lähdemerkinnöin
-(aineellinen laki + pykälä `legal-research`-skillillä, mahdollinen oikeuskäytäntö). Muistuta
-määräajoista ja vanhentumisesta (tarkista vanhentumisaika lähteestä, jos relevantti).
+Produce the application for a summons plus a checklist (the requirements of OK 5:2 § done or missing) with source markings (the substantive statute and section via the `legal-research` skill, and any case law). Remind the user of time limits and limitation (check the limitation period against the source, where relevant).
 
-## Mitä tämä skill EI tee
-- **Ei korvaa asiamiehen tai asianajajan vastuuta.** Tuotos on tarkistettava luonnos; asian hoitava vastaa kanteen sisällöstä ja jättämisestä.
-- **Ei ennusta asian menestymistä eikä tuomion lopputulosta.** Kuvaa vaatimuksen vahvuudet ja riskit tasapuolisesti, ei voittotodennäköisyyttä.
-- **Ei vahvista vanhentumisaikoja, toimivaltasäännöksiä tai OK 5:2 §:n sanamuotoa muistista.** Määräajat ja prosessisäännökset ovat ehdottomia ja haetaan lähteestä.
-- **Ei vahvista aineellista oikeusperustetta muistinvaraisesti.** Sopimus-, vahingonkorvaus- ym. säännökset ja oikeuskäytäntö tarkistetaan lähteestä.
-- **Ei ratkaise, onko kanne paras tie.** Sovinnon, tuomioistuinsovittelun ja välimiesmenettelyn punninta jää asiakkaan ja asiamiehen arvioon.
-- **Ei laadi summaarisen (riidattoman) asian kevyempää menettelyä** ilman erillistä tarkistusta — tämä skill keskittyy riitaiseen kanteeseen.
+## What this skill does NOT do
+- **Does not replace the responsibility of the agent or advocate.** The output is a draft that needs checking; the person handling the matter is responsible for the content of the action and for filing it.
+- **Does not predict whether the case will succeed or what the judgment will be.** It describes the strengths and risks of the claim even-handedly, not the probability of winning.
+- **Does not confirm limitation periods, provisions on jurisdiction or the wording of OK 5:2 § from memory.** Time limits and procedural provisions are absolute and are taken from the source.
+- **Does not confirm the substantive legal ground from memory.** The provisions of contract law, the law of damages and so on, and the case law, are checked against the source.
+- **Does not decide whether an action is the best route.** Weighing a settlement, court-annexed mediation and arbitration is left to the client and the agent.
+- **Does not draft the lighter procedure for a summary (undisputed) matter** without a separate check — this skill concentrates on a contested action.
 
-## Jatka tästä
-- Näytön ja todistelun suunnittelu kanteen teemoille → /riidanratkaisu:todistelu
-- Aineellisen lain ja oikeuskäytännön tarkistus → /juristi:oikeustutkimus
-- Haastehakemuksen laaduntarkistus ennen jättämistä → /juristi:asiakirjan-tarkistus
-- Sopimusriidan tausta-asiakirjojen tarkistus → /sopimukset:sopimuksen-tarkistus
-- Arkaluonteisen aineiston anonymisointi → /tietosuoja:tietosuoja-arviointi
+## Continue from here
+- Planning the evidence for the themes of the action → /dispute-resolution:evidence
+- Checking the substantive law and the case law → /legal-core:legal-research
+- Quality-checking the application for a summons before filing → /legal-core:document-review
+- Checking the background documents in a contract dispute → /contracts:contract-review
+- Anonymising sensitive material → /data-protection:data-protection-assessment

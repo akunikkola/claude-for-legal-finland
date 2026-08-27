@@ -1,26 +1,27 @@
 ---
 name: guardianship-and-powers-of-attorney
 description: >
-  Edunvalvonta ja siihen varautuminen Suomessa (laki holhoustoimesta
-  442/1999 ja laki edunvalvontavaltuutuksesta 648/2007). Käytä tätä
-  skilliä, kun selvitetään täysi-ikäisen tai alaikäisen edunvalvonnan
-  tarvetta, laaditaan tai arvioidaan edunvalvontavaltuutusta tulevan
-  toimintakyvyttömyyden varalle, jäsennetään edunvalvojan tehtäviä ja
-  tilivelvollisuutta, tai arvioidaan eturistiriitaa ja edunvalvojan
-  sijaisen tarvetta. Triggeröi sanoista: edunvalvonta, edunvalvoja,
-  edunvalvontavaltuutus, valtuutus, holhous, vajaavaltainen,
-  toimintakyky, DVV, holhousviranomainen, edunvalvojan sijainen,
-  tilivelvollisuus, päämies.
+  Guardianship and planning ahead for it in Finland (laki holhoustoimesta
+  442/1999 and laki edunvalvontavaltuutuksesta 648/2007). Use this skill when
+  assessing whether an adult or a minor needs a guardian, drafting or
+  reviewing a continuing power of attorney against future incapacity,
+  structuring a guardian's duties and duty to account, or assessing a conflict
+  of interest and the need for a substitute guardian. Triggers on:
+  guardianship, guardian, continuing power of attorney, power of attorney,
+  legal incapacity, capacity to act, DVV, guardianship authority, substitute
+  guardian, duty to account, principal, edunvalvonta, edunvalvoja,
+  edunvalvontavaltuutus, valtuutus, holhous, vajaavaltainen, toimintakyky,
+  holhousviranomainen, edunvalvojan sijainen, tilivelvollisuus, päämies.
 ---
 
-# Edunvalvonta ja edunvalvontavaltuutus — varautuminen ja tehtävät
+# Guardianship and the continuing power of attorney — planning ahead and duties
 
-Tämä skill jäsentää edunvalvonnan ja ennakoivan varautumisen. Perheoikeuden
-kartta: `../marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md`.
+This skill sets out guardianship and planning ahead for it. The map of family law:
+`../marriage-and-division-of-property/references/family-and-inheritance-fundamentals.md`.
 
-> **Vastuuvapaus:** luonnokset ja jäsennykset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Vahvistamisen ja valvonnan tekee Digi- ja
-> väestötietovirasto (DVV) tai käräjäoikeus. Katso
+> **Disclaimer:** drafts and analyses are for review — not legal advice.
+> Confirmation and supervision are carried out by the Digital and Population
+> Data Services Agency (DVV) or by the käräjäoikeus. See
 > `family-and-inheritance/AGENTS.md`.
 
 ## Output language
@@ -33,82 +34,92 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the statute against the source
 
-Hae holhoustoimilain (442/1999) ja edunvalvontavaltuutuslain (648/2007)
-säännökset **`legal-core:legal-research`-skillillä**. Edunvalvojan
-kelpoisuutta, lupa-asioita ja valtuutuksen voimaantuloa koskeva käytäntö
-lähteestä. Muoto- ja menettelyvaatimukset aina laista.
+Retrieve the provisions of the Guardianship Services Act (holhoustoimilaki
+442/1999) and of the Act on Continuing Powers of Attorney
+(edunvalvontavaltuutuslaki 648/2007) with the **`legal-core:legal-research`
+skill**. Take the practice on a guardian's eligibility, on matters requiring
+authorisation and on the entry into force of a power of attorney from the
+source. Requirements as to form and procedure always from the statute.
 
-## Käsite-erottelu: nykyhetki vs. varautuminen
+## A distinction of concepts: the present as against planning ahead
 
-- **Edunvalvonta (442/1999)** on käytössä **nyt**, kun henkilö ei
-  itse kykene huolehtimaan asioistaan: tuomioistuin tai DVV määrää
-  edunvalvojan.
-- **Edunvalvontavaltuutus (648/2007)** on **ennakoiva**: toimintakykyinen
-  henkilö valtuuttaa itse luotettavan henkilön hoitamaan asioitaan
-  *siltä varalta*, että toimintakyky myöhemmin heikkenee. Valtuutus
-  vahvistetaan ja tulee voimaan vasta tarpeen ilmettyä.
+- **Guardianship (442/1999)** is in use **now**, where a person is unable to
+  look after their own affairs: a court or the DVV appoints a guardian.
+- **The continuing power of attorney (648/2007)** is **anticipatory**: a person
+  who still has capacity authorises a trusted person to look after their affairs
+  *in case* that capacity later declines. The power of attorney is confirmed and
+  takes effect only once the need has arisen.
 
-Selvitä aina kummasta on kyse — menettely ja asiakirja ovat eri.
+Always work out which of the two is in question — the procedure and the document
+are different.
 
-## Vaihe 1: Edunvalvontavaltuutus (ennakoiva)
+## Step 1: The continuing power of attorney (anticipatory)
 
-1. **Laadinta toimintakykyisenä**: valtuuttaja määrää, kuka hoitaa ja
-   mitä asioita (talous, omaisuus, terveyden- ja sairaanhoito,
-   muut henkilöä koskevat asiat). Voi antaa ohjeita ja rajoituksia.
-2. **Muoto**: määrämuotoinen, todistettava — `[tarkista muoto- ja
-   todistajavaatimukset lähteestä]`; muotovirhe voi estää vahvistamisen.
-3. **Voimaantulo**: valtuutus vahvistetaan DVV:ssä vasta, kun
-   valtuuttaja on tullut kykenemättömäksi hoitamaan asioitaan
-   (yleensä lääkärinlausunto) — ei automaattisesti allekirjoituksella.
-4. **Valvonta on kevyempää** kuin määrätyssä edunvalvonnassa, mutta
-   valtuutettu on tilivelvollinen edellytysten mukaan.
+1. **Drawing it up while still capable**: the principal determines who acts and
+   in which matters (finances, property, health care and medical treatment, other
+   matters concerning the person). The principal may give instructions and
+   restrictions.
+2. **Form**: subject to a prescribed form and requiring attestation — `[check the
+   requirements as to form and witnesses against the source]`; a defect of form
+   can prevent confirmation.
+3. **Entry into force**: the power of attorney is confirmed by the DVV only once
+   the principal has become unable to look after their affairs (usually a
+   medical certificate) — not automatically on signature.
+4. **Supervision is lighter** than in an appointed guardianship, but the attorney
+   is subject to a duty to account on the conditions that apply.
 
-## Vaihe 2: Edunvalvonnan tarve nyt (442/1999)
+## Step 2: The need for guardianship now (442/1999)
 
-1. **Tarpeen arviointi**: kykeneekö henkilö valvomaan etuaan ja
-   huolehtimaan itseään koskevista asioista. Lievemmät keinot ensin
-   (avustaminen, valtakirja) ennen edunvalvontaa.
-2. **Edunvalvojan määrääminen**: DVV tai käräjäoikeus; edunvalvojaksi
-   usein läheinen tai yleinen edunvalvoja. Toimintakelpoisuuden
-   rajoittaminen on viimesijaista ja porrastettua.
-3. **Alaikäisen edunvalvonta**: huoltajat ovat lähtökohtaisesti
-   alaikäisen edunvalvojia (omaisuuden hoito); merkittävä omaisuus
-   voi tuoda valvonta- ja lupavelvoitteita.
+1. **Assessing the need**: is the person able to safeguard their interests and to
+   look after matters concerning themselves. Less intrusive means first
+   (assistance, an ordinary power of attorney) before guardianship.
+2. **Appointing a guardian**: the DVV or the käräjäoikeus; the guardian is often
+   a close relative or a public guardian. Restricting a person's capacity to act
+   is a last resort and is applied in graduated steps.
+3. **Guardianship of a minor**: the custodians are in principle the guardians of
+   a minor (management of property); substantial property may bring supervision
+   and authorisation obligations.
 
-## Vaihe 3: Edunvalvojan tehtävät ja rajat
+## Step 3: The guardian's duties and their limits
 
-- **Tehtäväpiiri**: päämiehen omaisuuden ja etujen hoito; päämiestä on
-  kuultava ja hänen toiveensa otettava huomioon mahdollisuuksien mukaan.
-- **Luvanvaraiset toimet**: eräät merkittävät oikeustoimet (esim.
-  kiinteistön myynti, perinnönjako) edellyttävät DVV:n lupaa — tarkista
-  luvanvaraisuus lähteestä ennen toimea.
-- **Tilivelvollisuus**: omaisuusluettelo ja määräajoin vuositili
-  holhousviranomaiselle.
-- **Eturistiriita**: jos edunvalvoja ja päämies ovat vastapuolia (esim.
-  samassa kuolinpesässä), tarvitaan **edunvalvojan sijainen**. Tunnista
-  tämä erityisesti perinnönjaossa.
+- **Scope of duties**: managing the principal's property and interests; the
+  principal must be heard and the principal's wishes taken into account so far as
+  possible.
+- **Acts requiring authorisation**: certain significant legal acts (for example
+  the sale of real property, the distribution of an estate) require the DVV's
+  authorisation — check whether authorisation is required against the source
+  before acting.
+- **Duty to account**: an inventory of the property and, at set intervals, an
+  annual account to the guardianship authority.
+- **Conflict of interest**: where the guardian and the principal are on opposing
+  sides (for example in the same deceased person's estate), a **substitute
+  guardian** is needed. Watch for this particularly in the distribution of an
+  estate.
 
-## Vaihe 4: Kytkös perintöön ja perheasioihin
+## Step 4: The link to inheritance and family matters
 
-- Kuolinpesässä, jossa osakkaana on alaikäinen tai edunvalvonnassa
-  oleva, tarkista lupa- ja sijaistarpeet → `inheritance-and-wills`.
-- Edunvalvontavaltuutus on osa **jäämistö- ja varautumissuunnittelua**
-  testamentin ja mahdollisen hoitotahdon rinnalla.
+- In a deceased person's estate that has a minor or a person under guardianship
+  as a party, check the need for authorisation and for a substitute →
+  `inheritance-and-wills`.
+- The continuing power of attorney is part of **estate and contingency
+  planning**, alongside a will and any advance care directive.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista valtuutusta eikä määrää edunvalvojaa** — se kuuluu
-  DVV:lle ja käräjäoikeudelle.
-- **Ei arvioi lääketieteellistä toimintakykyä** — se on lääkärin asia.
-- **Ei vahvista muoto- tai todistajavaatimuksia muistista** — lähteestä.
-- **Ei ohita luvanvaraisuutta** merkittävissä oikeustoimissa.
-- **Ei sivuuta eturistiriitaa** — edunvalvojan sijainen tarvittaessa.
+- **Does not confirm a power of attorney and does not appoint a guardian** —
+  that is for the DVV and the käräjäoikeus.
+- **Does not assess medical capacity** — that is a matter for a doctor.
+- **Does not confirm requirements as to form or witnesses from memory** — from
+  the source.
+- **Does not bypass the requirement of authorisation** in significant legal acts.
+- **Does not set aside a conflict of interest** — a substitute guardian where
+  necessary.
 
-## Jatka tästä
+## Continue from here
 
-- Testamentti, lakiosa ja jäämistösuunnittelu → /perhe-ja-perinto:perinto-ja-testamentti
-- Alaikäisen huolto ja varojen hoito vanhempien kesken → /perhe-ja-perinto:lapsen-asema-ja-elatus
-- Edunvalvojan lupaa edellyttävä kiinteistön myynti → /kiinteistot-ja-asuminen:kiinteistokauppa
-- Säännöksen tai käytännön tarkistus → /juristi:oikeustutkimus
+- Wills, the compulsory share and estate planning → /family-and-inheritance:inheritance-and-wills
+- Custody of a minor and management of assets between the parents → /family-and-inheritance:child-status-and-maintenance
+- A sale of real property requiring the guardian's authorisation → /real-estate-and-housing:real-property-conveyance
+- Checking a provision or the practice → /legal-core:legal-research

@@ -1,73 +1,82 @@
-# Perintökaaren perusteet
+# Fundamentals of the Code of Inheritance
 
-Käsitteellinen kartta perimykseen, testamenttiin ja jäämistön käsittelyyn.
-**Perintökaaren (40/1965) nimi ja numero on varmistettu Finlexistä**; pykälien
-sanamuoto, määräajat ja lakiosan laskenta haetaan käytössä lähteestä
+A conceptual map of succession, wills and the administration of an estate.
+**The name and number of the Code of Inheritance (perintökaari 40/1965) have been
+verified in Finlex**; the wording of the sections, the time limits and the calculation
+of the compulsory share are taken from the source in use
 (`legal-core:legal-research`).
 
-## Perimysjärjestys (parenteeliperiaate)
+## The order of succession (the parentela principle)
 
-- **1. parenteeli — rintaperilliset.** Lapset perivät yhtä suurin osuuksin.
-  Edesmenneen lapsen tilalle tulevat tämän jälkeläiset (sijaantulo-oikeus,
-  rajoittamaton tässä parenteelissa).
-- **Leski.** Jos rintaperillisiä ei ole, eloonjäänyt puoliso perii. Lesken
-  asemaan kuuluu myös oikeus pitää jäämistö jakamattomana ja vähintään
-  hallintaoikeus puolisoiden yhteisenä kotina käytettyyn asuntoon
-  (edellytykset lähteestä).
-- **2. parenteeli — vanhemmat ja heidän jälkeläisensä** (sisarukset,
-  sisarusten lapset).
-- **3. parenteeli — isovanhemmat ja heidän lapsensa.**
-- **Valtio** viimesijaisena, jos perillisiä ei ole eikä testamenttia.
-- **Avopuolisolla ei ole lakimääräistä perintöoikeutta** — vain testamentilla.
+- **First parentela — the direct heirs.** Children inherit in equal shares. The
+  descendants of a predeceased child take that child's place (the right of
+  representation, unlimited within this parentela).
+- **The surviving spouse.** Where there are no direct heirs, the surviving spouse
+  inherits. The spouse's position also includes the right to keep the estate undivided
+  and at least a right of possession of the dwelling used as the spouses' joint home
+  (the conditions from the source).
+- **Second parentela — the parents and their descendants** (siblings, siblings'
+  children).
+- **Third parentela — the grandparents and their children.**
+- **The State** last of all, where there are no heirs and no will.
+- **A cohabiting partner has no statutory right of inheritance** — only under a will.
 
-## Testamentti
+## The will
 
-- **Muoto on määrämuoto.** Pääsääntö: kirjallinen, päivätty,
-  testamentintekijän allekirjoittama ja kahden esteettömän todistajan
-  yhtäaikaisesti oikeaksi todistama. Muotovirhe voi johtaa pätemättömyyteen.
-  Tarkista vaatimukset ja todistajan esteettömyys aina lähteestä.
-- **Tyypit.** Yleistestamentti (saaja tulee pesän osakkaaksi) ja
-  erityistestamentti eli legaatti (tietty esine tai määrä). Omistusoikeus-,
-  hallintaoikeus- ja tuotto-oikeustestamentti.
-- **Tulkinta.** Testamenttia tulkitaan testamentintekijän tahdon mukaan.
-- **Moite.** Perillinen voi moittia testamenttia määräajassa (muotovirhe,
-  kelpoisuuden puute, pakko, petollinen taivuttelu, erehdys) — `[tarkista
-  moiteaika]`.
+- **The form is prescribed.** As a rule: written, dated, signed by the testator and
+  attested simultaneously by two disqualification-free witnesses. A defect of form can
+  lead to invalidity. Always check the requirements and the disqualification of
+  witnesses against the source.
+- **Types.** A universal will (the beneficiary becomes a party to the estate) and a
+  specific will, that is a legacy (a particular object or amount). Wills conferring
+  ownership, a right of possession and a right to the yield.
+- **Interpretation.** A will is interpreted according to the testator's intention.
+- **Challenge.** An heir may contest a will within a time limit (defect of form, lack
+  of capacity, duress, fraudulent inducement, mistake) — `[check the period for
+  bringing a challenge]`.
 
-## Lakiosa
+## The compulsory share
 
-- **Rintaperillisen lakiosa = puolet lakimääräisestä perintöosasta.**
-  Pakottava: testamentti ei voi sitä sivuuttaa.
-- **Vaadittava aktiivisesti** lakiosailmoituksella testamentin saajalle
-  määräajassa — vaatimatta jättäminen voi menettää oikeuden.
-- **Ennakkoperintö ja lahjat** voidaan ottaa laskennassa huomioon
-  (mm. suosiolahja, henkivakuutus tietyin edellytyksin) — laskenta lähteestä.
+- **The compulsory share of a direct heir = half of the statutory share of the
+  inheritance.** Mandatory: a will cannot override it.
+- **It must be claimed actively**, by notice to the beneficiary under the will within a
+  time limit — failure to claim can result in loss of the right.
+- **An advancement on the inheritance and gifts** may be taken into account in the
+  calculation (among other things a gift made to favour one heir, and life assurance on
+  certain conditions) — the calculation from the source.
 
-## Pesän kulku
+## The course of an estate
 
-1. **Perunkirjoitus** määräajassa kuolemasta: perukirja luetteloi varat,
-   velat ja osakkaat ja toimii veroilmoituksena (`[tarkista määräaika]`).
-2. **Pesänselvitys**: velkojen selvittäminen ja maksaminen. Kuolinpesää
-   hallitsevat osakkaat yhdessä, ellei pesänselvittäjää määrätä.
-3. **Ositus** eloonjääneen puolison kanssa (jos puoliso) **ennen** jakoa.
-4. **Perinnönjako**: sopimusjako (osakkaiden yksimielisyys, muotovaatimus)
-   tai pesänjakajan toimittama jako. Jaon moite määräajassa.
+1. **The estate inventory** within a time limit running from the death: the deed of
+   estate inventory lists the assets, the debts and the parties to the estate, and
+   serves as the tax return (`[check the time limit]`).
+2. **Administration of the estate**: establishing and paying the debts. The estate is
+   administered jointly by the parties to it unless an estate administrator is
+   appointed.
+3. **The division of matrimonial property** with the surviving spouse (where there is a
+   spouse) **before** the distribution.
+4. **Distribution of the inheritance**: an agreed distribution (unanimity of the parties
+   to the estate, a formal requirement) or a distribution carried out by an estate
+   distributor. A challenge to the distribution within a time limit.
 
-## Kytkennät
+## Connections
 
-- **Ositus ennen perinnönjakoa** → `marriage-and-division-of-property`.
-- **Perintö- ja lahjavero** → `taxation`-plugari ja Verohallinto. Älä laske
-  veroja tässä.
-- **Alaikäinen tai toimintakyvytön osakas** → edunvalvonta
-  (`guardianship-and-powers-of-attorney`); eturistiriita voi vaatia
-  edunvalvojan sijaisen.
-- **Riidat** (testamentin tai jaon moite, pesänjakajan määräys) →
-  `dispute-resolution`.
+- **The division of matrimonial property before the distribution of the estate** →
+  `marriage-and-division-of-property`.
+- **Inheritance tax and gift tax** → the `taxation` domain and Verohallinto. Do not
+  calculate taxes here.
+- **A minor or incapacitated party to the estate** → guardianship
+  (`guardianship-and-powers-of-attorney`); a conflict of interest may require a
+  substitute guardian.
+- **Disputes** (contesting a will or a distribution, the appointment of an estate
+  distributor) → `dispute-resolution`.
 
-## Yleisimmät virhekäsitykset
+## The most common misconceptions
 
-- "Avopuoliso perii." — Ei peri ilman testamenttia.
-- "Testamentti syrjäyttää lapset kokonaan." — Lakiosa on pakottava.
-- "Testamentin voi tehdä vapaamuotoisesti." — Muoto on ehdoton.
-- "Perinnönjako voidaan tehdä ennen ositusta." — Ositus tulee ensin.
-- "Perintöveron voi arvioida tässä." — Verotus erikseen, lähteestä.
+- "A cohabiting partner inherits." — There is no inheritance without a will.
+- "A will can cut the children out entirely." — The compulsory share is mandatory.
+- "A will can be made in any form." — The form is absolute.
+- "The estate can be distributed before the division of matrimonial property." — The
+  division comes first.
+- "Inheritance tax can be estimated here." — Taxation is dealt with separately, from
+  the source.

@@ -1,22 +1,24 @@
 ---
 name: appeal-against-judgment
 description: >
-  Muutoksenhaku yleisen tuomioistuimen tuomioon oikeudenkäymiskaaren (4/1734) mukaan:
-  valitus käräjäoikeuden tuomiosta hovioikeuteen ja jatkokäsittelylupa, valitus
-  korkeimpaan oikeuteen ja valituslupa, tyytymättömyyden ilmoitus, määräajat ja
-  valituskirjelmän sisältö. Käytä tätä skilliä, kun käyttäjä hakee tai harkitsee muutosta
-  käräjäoikeuden tai hovioikeuden tuomioon riita-asiassa, laatii valitusta, kysyy
-  jatkokäsittelyluvasta, valitusluvasta tai valitusajasta.
+  Appealing against a judgment of a general court under the Code of Judicial Procedure
+  (oikeudenkäymiskaari 4/1734): an appeal from a judgment of the käräjäoikeus to the
+  hovioikeus and leave for continued consideration, an appeal to the Supreme Court and leave
+  to appeal, the notice of dissatisfaction, the time limits and the content of the appeal.
+  Use this skill when the user is appealing or considering an appeal against a judgment of
+  the käräjäoikeus or the hovioikeus in a civil case, is drafting an appeal, or asks about
+  leave for continued consideration (jatkokäsittelylupa), leave to appeal (valituslupa) or
+  the time limit for appealing.
 ---
 
-# Muutoksenhaku tuomioon (oikeudenkäymiskaari)
+# Appeal against a judgment (oikeudenkäymiskaari)
 
-Tämä skill auttaa hakemaan muutosta riita-asian tuomioon oikealla menettelyllä ja
-määräajassa. **Muutoksenhaku alkaa jo käräjäoikeudessa tyytymättömyyden ilmoituksella** —
-sen laiminlyönti voi estää valituksen, joten ajoitus on kriittinen.
+This skill helps to appeal against a judgment in a civil case by the right procedure and
+within the time limit. **An appeal begins already in the käräjäoikeus, with the notice of
+dissatisfaction** — failing to give it can bar the appeal, so the timing is critical.
 
-> **Vastuuvapaus:** luonnos/arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä arvio
-> menestymisestä. Katso `dispute-resolution/AGENTS.md`. Perusteet:
+> **Disclaimer:** a draft or assessment for review — not legal advice and not an assessment
+> of whether the case will succeed. See `dispute-resolution/AGENTS.md`. The fundamentals:
 > `../statement-of-claim/references/dispute-resolution-fundamentals.md`.
 
 ## Output language
@@ -29,44 +31,35 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista menettely, määräajat ja luvat lähteestä
-Hae oikeudenkäymiskaaren muutoksenhakusäännökset (käräjäoikeudesta hovioikeuteen: 25 luku ja
-jatkokäsittelylupa 25 a luku; KKO ja valituslupa 30 luku) **`legal-core:legal-research`-
-skillillä**. **Älä esitä määräaikoja tai lupaperusteita muistista** — hae ne ja merkitse
-lähde; jos et voi tarkistaa, merkitse `[tarkista määräaika / lupaperuste]`.
+## Check the procedure, the time limits and the grounds for leave against the source
+Retrieve the appeal provisions of the Code of Judicial Procedure (from the käräjäoikeus to the hovioikeus: chapter 25, and leave for continued consideration chapter 25 a; the KKO and leave to appeal chapter 30) with the **`legal-core:legal-research` skill**. **Do not state time limits or grounds for leave from memory** — retrieve them and record the source; if you cannot check them, mark `[check the time limit / ground for leave]`.
 
-## Vaihe 1: Tyytymättömyyden ilmoitus (käräjäoikeus)
-Käräjäoikeuden tuomioon haettaessa muutosta on yleensä ensin **ilmoitettava tyytymättömyyttä**
-määräajassa tuomion julistamisesta/antamisesta. Varmista tämä heti — ilman sitä valitusoikeus
-voi menettää. Tämän jälkeen alkaa valituksen määräaika.
+## Step 1: Notice of dissatisfaction (käräjäoikeus)
+When an appeal is brought against a judgment of the käräjäoikeus, **dissatisfaction must generally be announced first**, within a time limit running from the pronouncement or the giving of the judgment. Confirm this immediately — without it the right of appeal can be lost. The time limit for the appeal begins after that.
 
-## Vaihe 2: Valitus hovioikeuteen + jatkokäsittelylupa
-- Laadi **valitus** hovioikeudelle määräajassa: mihin tuomioon ja miltä osin haetaan muutosta, **mitä muutosta vaaditaan**, **perusteet** (miksi tuomio on virheellinen — näytön arviointi, lain soveltaminen, menettelyvirhe), sekä todistelu, johon vedotaan.
-- **Jatkokäsittelylupa (OK 25 a luku):** monissa asioissa hovioikeus tutkii asian täysimittaisesti vain, jos lupa myönnetään. Tunnista lupaperusteet (mm. muutoksen aihe, ennakkoratkaisuperuste, painava syy) ja perustele luvan edellytykset valituksessa.
+## Step 2: Appeal to the hovioikeus + leave for continued consideration
+- Draft the **appeal** to the hovioikeus within the time limit: which judgment is appealed against and in what respect, **what change is sought**, the **grounds** (why the judgment is wrong — the evaluation of the evidence, the application of the law, a procedural error), and the evidence relied on.
+- **Leave for continued consideration (OK chapter 25 a):** in many matters the hovioikeus examines the case in full only if leave is granted. Identify the grounds for leave (among others reason to change, the precedent ground, a weighty reason) and argue in the appeal that the conditions for leave are met.
 
-## Vaihe 3: Valitus korkeimpaan oikeuteen + valituslupa
-- KKO:hon valittaminen edellyttää pääsääntöisesti **valituslupaa (OK 30 luku)**. Lupa myönnetään rajoitetusti — keskeisin peruste on **ennakkopäätösperuste** (laki ei muualta selvä, oikeuskäytäntö epäyhtenäinen) tai muu painava syy.
-- Kohdista valituslupahakemus näihin perusteisiin; pelkkä tyytymättömyys lopputulokseen ei riitä.
+## Step 3: Appeal to the Supreme Court + leave to appeal
+- Appealing to the KKO requires **leave to appeal (OK chapter 30)** as a rule. Leave is granted sparingly — the central ground is the **precedent ground** (the law is not clear elsewhere, the case law is inconsistent) or another weighty reason.
+- Direct the application for leave to appeal at those grounds; mere dissatisfaction with the outcome is not enough.
 
-## Vaihe 4: Laadi kirjelmä ja tarkistuslista
-Tuota valitus-/valituslupakirjelmä ja **muutoksenhaun tarkistuslista** (tyytymättömyyden
-ilmoitus tehty, valitusaika lähteineen, jatkokäsittelylupa-/valituslupaperusteet,
-vaatimukset, perusteet, todistelu). Tuota asiakirja `docx`-skillillä (uusi) tai muokkaa
-olemassa olevaa `adeu`-MCP:llä. Merkitse `[varmista — määräaika ja lupaperuste tarkistettava]`.
+## Step 4: Draft the submission and the checklist
+Produce the appeal or application for leave to appeal and an **appeal checklist** (notice of dissatisfaction given, the time limit for appealing with its source, the grounds for leave for continued consideration or leave to appeal, the claims, the grounds, the evidence). Produce the document with the `docx` skill (new) or edit an existing one with the `adeu` MCP. Mark `[confirm — the time limit and the ground for leave: needs checking]`.
 
-## Raportoi
-Korosta määräaikojen ehdottomuutta ja lupakynnyksiä. Liitä lähteet (OK 25 / 25 a / 30 luku
-tarkistettuna, mahdollinen KKO-käytäntö). Älä esitä menestymisen todennäköisyyttä lopullisena.
+## Report
+Emphasise that the time limits are absolute and that the thresholds for leave are high. Attach the sources (OK chapters 25, 25 a and 30 as checked, and any KKO case law). Do not present the probability of success as final.
 
-## Mitä tämä skill EI tee
-- **Ei korvaa asiamiehen tai asianajajan vastuuta.** Valitus- ja valituslupakirjelmä on tarkistettava luonnos; muutoksenhausta ja sen ajoituksesta vastaa asian hoitava.
-- **Ei ennusta asian menestymistä eikä tuomion lopputulosta.** Ei arvioi, myönnetäänkö jatkokäsittelylupa tai valituslupa tai muutetaanko tuomiota — kuvaa perusteet tasapuolisesti.
-- **Ei vahvista valitusaikoja, tyytymättömyyden ilmoituksen määräaikaa eikä lupaperusteita muistista.** Määräajat ovat ehdottomia (laiminlyönti voi estää valituksen) ja haetaan lähteestä; tarkistamaton merkitään `[tarkista määräaika / lupaperuste]`.
-- **Ei seuraa tai laske määräaikoja kalenterista.** Ei korvaa asianvalvonnan ja määräaikaseurannan järjestämistä.
-- **Ei vahvista jatkokäsittelylupa- (OK 25 a) tai valituslupaperusteita (OK 30) muistinvaraisesti** — lupaperusteet ja niiden tulkinta tarkistetaan lähteestä.
-- **Ei arvioi tyytymättömyyden ilmoituksen tarvetta lopullisesti** ilman lähteestä tarkistettua menettelyä; väärä menettely voi menettää valitusoikeuden.
+## What this skill does NOT do
+- **Does not replace the responsibility of the agent or advocate.** The appeal and the application for leave to appeal are a draft that needs checking; the person handling the matter is responsible for the appeal and its timing.
+- **Does not predict whether the case will succeed or what the judgment will be.** It does not assess whether leave for continued consideration or leave to appeal will be granted or whether the judgment will be changed — it describes the grounds even-handedly.
+- **Does not confirm time limits for appealing, the time limit for the notice of dissatisfaction or the grounds for leave from memory.** The time limits are absolute (failing to observe one can bar the appeal) and are taken from the source; anything unchecked is marked `[check the time limit / ground for leave]`.
+- **Does not track or calculate time limits from a calendar.** It does not replace arranging proper case supervision and deadline monitoring.
+- **Does not confirm the grounds for leave for continued consideration (OK 25 a) or leave to appeal (OK 30) from memory** — the grounds for leave and their interpretation are checked against the source.
+- **Does not settle finally whether a notice of dissatisfaction is required** without the procedure being checked against the source; the wrong procedure can lose the right of appeal.
 
-## Jatka tästä
-- Muutoksenhaussa vedottavan todistelun suunnittelu → /riidanratkaisu:todistelu
-- Valitusajan, lupaperusteiden ja KKO-käytännön tarkistus → /juristi:oikeustutkimus
-- Valitus- tai valituslupakirjelmän laaduntarkistus ennen jättämistä → /juristi:asiakirjan-tarkistus
+## Continue from here
+- Planning the evidence relied on in the appeal → /dispute-resolution:evidence
+- Checking the time limit for appealing, the grounds for leave and KKO case law → /legal-core:legal-research
+- Quality-checking the appeal or application for leave to appeal before filing → /legal-core:document-review

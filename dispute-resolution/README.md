@@ -1,43 +1,45 @@
-# Riidanratkaisu
+# Dispute resolution
 
-Riita-asian ratkaiseminen yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734):
-vireillepano, todistelu ja muutoksenhaku.
+Resolving a civil case in the general courts (oikeudenkäymiskaari 4/1734):
+bringing an action, evidence and appeals.
 
-> **Luonnokset ja arviot ovat tarkistettavia – ei oikeudellista neuvontaa eikä arvio
-> menestymisestä.** Toimeksiannon hoitava asianajaja vastaa lopputuloksesta. Katso [`AGENTS.md`](AGENTS.md).
+> **Drafts and assessments are for review – not legal advice and not an assessment
+> of whether the case will succeed.** The advocate handling the engagement is responsible for the outcome. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **haastehakemus** | Riita-asian haastehakemuksen laatiminen ja tarkistus (OK 5:2 §): vaatimukset, perusteet, todisteet, kulut, toimivalta, prosessiosoite. Sisältää riidanratkaisun perusteiden referenssin. |
-| **todistelu** | Todistelun suunnittelu ja arviointi (OK 17 luku): näyttötaakka, todistuskeinot, todistusteemat, rajoitukset, todistelusuunnitelma. |
-| **muutoksenhaku-tuomioon** | Valitus hovioikeuteen (jatkokäsittelylupa, OK 25/25 a luku) ja korkeimpaan oikeuteen (valituslupa, OK 30 luku): tyytymättömyyden ilmoitus, määräajat, kirjelmät. |
-| **vahingonkorvaus** | Korvausvastuun yleiset opit (vahingonkorvauslaki 412/1974): vastuuperusteen rajanveto (sopimus/delikti/ankara vastuu), tuottamus, syy-yhteys, vahinkolajit ml. puhdas varallisuusvahinko, isännänvastuu, sovittelu ja vaatimuksen jäsennys. |
+| **statement-of-claim** | Drafting and checking an application for a summons (haastehakemus) in a civil case (OK 5:2 §): the claims, their grounds, the evidence, the costs, jurisdiction and the address for service. Includes the reference on the fundamentals of dispute resolution. |
+| **evidence** | Planning and assessing evidence (OK chapter 17): the burden of proof, the means of proof, the themes of proof, the restrictions, and the evidence plan. |
+| **appeal-against-judgment** | Appeal to the hovioikeus (leave for continued consideration, OK chapters 25 and 25 a) and to the Supreme Court (leave to appeal, OK chapter 30): the notice of dissatisfaction, the time limits, the written submissions. |
+| **damages** | The general doctrine of liability in damages (vahingonkorvauslaki 412/1974): drawing the line between the grounds of liability (contract, tort, strict liability), negligence, causation, the heads of damage including pure economic loss, vicarious liability, adjustment, and structuring the claim. |
 
-## Agentit
+## Agents
 
-| Agentti | Mitä tekee |
+| Agent | What it does |
 |---|---|
-| **vastapuoli** | Vastapuolen avustajan simulaattori: hyökkää kirjelmäluonnosta vastaan tosissaan (prosessiväitteet, näytön aukot, vaihtoehtoiset tapahtumainkulut, määräargumentit) ja palauttaa heikkoustaulukon + top 3 -korjaukset ennen jättämistä. Vain luku. |
+| **opposing-counsel** | A simulator of the opposing party's counsel: attacks a draft submission in earnest (procedural objections, gaps in the evidence, alternative accounts of events, arguments on quantum) and returns a table of weaknesses plus the top three fixes before filing. Read-only. |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (oik.ai/Finlex) varmistettu: **oikeudenkäymiskaari (4/1734)** – mm. haastehakemuksen
-sisältö (5:2 §) haettu sanatarkasti – ja **tuomioistuinlaki (673/2016)**. Aineellinen laki ja
-muut säädökset (mm. laki välimiesmenettelystä 967/1992) tarkistetaan `legal-core:legal-research`-skillillä.
+Verified against the source (oik.ai/Finlex): the **Code of Judicial Procedure
+(oikeudenkäymiskaari 4/1734)** – among other things the content of an application for a
+summons (5:2 §), retrieved verbatim – and the **Courts Act (tuomioistuinlaki 673/2016)**.
+The substantive law and other statutes (among them laki välimiesmenettelystä 967/1992)
+are checked with the `legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (prosessisäännökset, aineellinen laki ja KKO/hovioikeus-käytäntö) ja `document-review`.
-- **`contracts`-plugari** – sopimusriitojen aineellinen pohja.
-- **`data-protection`-plugari** – aineiston anonymisointi (PII Shield) ennen käsittelyä.
+- **`legal-core` domain** – `legal-research` (procedural provisions, substantive law and KKO and hovioikeus case law) and `document-review`.
+- **`contracts` domain** – the substantive basis of contract disputes.
+- **`data-protection` domain** – anonymising material (PII Shield) before processing.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install riidanratkaisu@agent-skills-for-finnish-law
+/plugin install dispute-resolution@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.

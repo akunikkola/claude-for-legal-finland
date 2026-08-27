@@ -1,12 +1,13 @@
-# Pohja: haastehakemus
+# Template: application for a summons
 
-Rakenteellinen luuranko riita-asian haastehakemukselle. Käyttävä skill:
-[`statement-of-claim`](../skills/statement-of-claim/SKILL.md) — pakollisten osien
-luettelo on varmistettu oikeudenkäymiskaaren 5 luvun 2 §:stä (ks. skill).
-Konventiot: [`references/template-standards.md`](../../references/template-standards.md).
+A structural skeleton for an application for a summons in a civil case. The skill that
+uses it: [`statement-of-claim`](../skills/statement-of-claim/SKILL.md) — the list of
+mandatory parts has been verified against chapter 5 section 2 of the Code of Judicial
+Procedure (see the skill).
+Conventions: [`references/template-standards.md`](../../references/template-standards.md).
 
-<!-- ohje: summaarinen (riidaton) asia voi noudattaa kevyempää menettelyä —
-     tarkista skillistä ennen tämän pohjan käyttöä. -->
+<!-- guidance: a summary (undisputed) matter may follow a lighter procedure —
+     check the skill before using this template. -->
 
 ## Output language
 
@@ -20,61 +21,61 @@ example `notice period (irtisanomisaika)`.
 
 ---
 
-**[Käräjäoikeuden nimi]** (pakollinen)
+**[Name of the käräjäoikeus]** (mandatory)
 
 ## HAASTEHAKEMUS
 
-**Asia:** [asian laatu, esim. velkomus / vahingonkorvaus]
+**Matter:** [the nature of the matter, for example debt recovery / damages]
 
-### Asianosaiset (pakollinen)
+### Parties (mandatory)
 
-- **Kantaja:** [nimi], [kotipaikka], [henkilö- tai y-tunnus]
-- **Kantajan asiamies ja prosessiosoite:** [asiamiehen nimi ja yhteystiedot;
-  postiosoite kutsuja ja ilmoituksia varten, puhelinnumero]
-- **Vastaaja:** [nimi], [kotipaikka], [yhteystiedot]
-  <!-- ohje: jos vastaajan yhteystietoja ei tiedetä, kerro tässä, mitä on
-       tehty niiden selvittämiseksi (pakollinen tieto). -->
+- **Plaintiff:** [name], [place of residence], [personal identity code or business ID]
+- **The plaintiff's agent and address for service:** [the agent's name and contact
+  details; a postal address for summonses and notices, telephone number]
+- **Defendant:** [name], [place of residence], [contact details]
+  <!-- guidance: if the defendant's contact details are not known, state here what
+       has been done to establish them (mandatory information). -->
 
-### Vaatimukset (pakollinen)
+### Claims (mandatory)
 
-1. [Yksilöity päävaatimus — esim. euromäärä ja korko; korkoperuste:
-   tarkista korkolaista oikeustutkimus-skillillä]
-2. [Mahdolliset sivuvaatimukset]
-3. Oikeudenkäyntikulujen korvaaminen [korkoineen] *(jos aiheellinen)*
+1. [The specified principal claim — for example a sum of money and interest; the
+   ground for the interest: check in the Interest Act with the legal-research skill]
+2. [Any ancillary claims]
+3. Compensation for the costs of the proceedings [with interest] *(where appropriate)*
 
-### Vaatimusten perusteet (pakollinen)
+### Grounds for the claims (mandatory)
 
-<!-- ohje: oikeustosiseikat eli seikat, joihin vaatimus välittömästi
-     perustuu — tapahtumat, sopimus, laiminlyönti. Lainkohdat lähteestä,
-     ei muistista. -->
+<!-- guidance: the legally operative facts, that is the facts on which the claim is
+     directly based — the events, the contract, the omission. The statutory
+     provisions from the source, not from memory. -->
 
-[Perusteet numeroituina kappaleina]
+[The grounds in numbered paragraphs]
 
-### Todisteet (pakollinen mahdollisuuksien mukaan)
+### Evidence (mandatory so far as possible)
 
-<!-- ohje: jokaiselle todisteelle TEEMA — mitä sillä aiotaan näyttää toteen. -->
+<!-- guidance: a THEME for every piece of evidence — what it is intended to prove. -->
 
-| Nro | Todiste | Teema |
+| No. | Evidence | Theme |
 |---|---|---|
-| K1 | [kirjallinen todiste] | [mitä näytetään toteen] |
-| HT1 | [henkilötodistelu: nimi, asema] | [mitä näytetään toteen] |
+| K1 | [documentary evidence] | [what is to be proved] |
+| HT1 | [oral evidence: name, position] | [what is to be proved] |
 
-### Toimivaltaperuste (pakollinen, jos ei ilmene muutoin)
+### Ground of jurisdiction (mandatory, if not otherwise apparent)
 
-[Miksi asia kuuluu tälle käräjäoikeudelle — tarkista oikeuspaikkasäännöt
-lähteestä oikeustutkimus-skillillä]
+[Why the matter belongs to this käräjäoikeus — check the rules on venue against the
+source with the legal-research skill]
 
-### Päiväys ja allekirjoitus (pakollinen)
+### Date and signature (mandatory)
 
-[Paikka ja päiväys]
+[Place and date]
 
-[Allekirjoitus — asianosainen tai laatija; laatijan ammatti ja asuinpaikka]
+[Signature — the party or the drafter; the drafter's occupation and place of residence]
 
-### Liitteet
+### Annexes
 
-- [kirjalliset todisteet numeroituina]
-- [valtakirja, jos asiamies]
+- [documentary evidence, numbered]
+- [power of attorney, if there is an agent]
 
 ---
 
-*Luonnos. Tarkistettava ennen käyttöä; ei oikeudellista neuvontaa.*
+*A draft. Needs checking before use; not legal advice.*

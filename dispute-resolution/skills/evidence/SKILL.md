@@ -1,66 +1,63 @@
 ---
 name: evidence
 description: >
-  Riita-asian todistelun suunnittelu ja arviointi oikeudenkäymiskaaren (4/1734) 17 luvun
-  mukaan: näyttötaakka, todistuskeinot (asiakirjat, todistajat, asiantuntijat, katselmus,
-  asianosaisen kuuleminen), todistusteemat ja todistelun rajoitukset. Käytä tätä skilliä,
-  kun käyttäjä suunnittelee todistelua, arvioi näyttöä tai näyttötaakkaa, kokoaa
-  todistelua oikeudenkäyntiin, miettii ketä kuullaan todistajana tai mitä asiakirjoja
-  esitetään, tai mainitsee todistelun, näytön, todistajan tai näyttötaakan.
+  Planning and assessing the evidence in a civil case under chapter 17 of the Code of
+  Judicial Procedure (oikeudenkäymiskaari 4/1734): the burden of proof, the means of proof
+  (documents, witnesses, experts, inspection, hearing a party), the themes of proof and the
+  restrictions on evidence. Use this skill when the user is planning evidence, assessing the
+  proof or the burden of proof, assembling evidence for a hearing, considering who should be
+  heard as a witness or which documents to put in, or mentions evidence, proof, a witness
+  (todistaja), the burden of proof (näyttötaakka) or todistelu.
 ---
 
-# Todistelu riita-asiassa (oikeudenkäymiskaari 17 luku)
+# Evidence in a civil case (oikeudenkäymiskaari chapter 17)
 
-Tämä skill auttaa suunnittelemaan ja arvioimaan todistelua riita-asiassa. Suomessa
-vallitsee **vapaa todistelu ja vapaa todistusharkinta** (oikeudenkäymiskaaren 17 luvun
-rajoituksin) — ratkaisevaa on, kuka kantaa näyttötaakan ja saadaanko teemat näytettyä toteen.
+This skill helps to plan and assess the evidence in a civil case. Finland applies
+**freedom of proof and free evaluation of evidence** (subject to the restrictions in
+chapter 17 of the Code of Judicial Procedure) — what decides the case is who carries the
+burden of proof and whether the themes can be proved.
 
-> **Vastuuvapaus:** arvio tarkistettavaksi — ei oikeudellista neuvontaa eikä arvio näytön
-> riittävyydestä lopullisesti. Katso `dispute-resolution/AGENTS.md`. Perusteet:
+> **Disclaimer:** an assessment for review — not legal advice and not a final assessment of
+> whether the evidence is sufficient. See `dispute-resolution/AGENTS.md`. The fundamentals:
 > `../statement-of-claim/references/dispute-resolution-fundamentals.md`.
 
-## Tarkista säännökset lähteestä
-Hae oikeudenkäymiskaaren 17 luvun säännökset (näyttötaakka, todistuskeinot, todistamis- ja
-hyödyntämiskiellot) **`legal-core:legal-research`-skillillä**. Älä esitä todistelun rajoituksia
-tai näyttökynnyksiä muistinvaraisesti.
+## Check the provisions against the source
+Retrieve the provisions of chapter 17 of the Code of Judicial Procedure (the burden of proof, the means of proof, the prohibitions on giving evidence and on using it) with the **`legal-core:legal-research` skill**. Do not state restrictions on evidence or standards of proof from memory.
 
-## Vaihe 1: Jäsennä riitaiset seikat ja näyttötaakka
-- Tunnista **riitaiset oikeustosiseikat** (mitkä seikat on näytettävä toteen).
-- Määritä **näyttötaakka:** pääsääntöisesti sillä osapuolella, joka seikkaan vetoaa. Tunnista, mitkä seikat ovat *sinun* näytettäviäsi ja mitkä vastapuolen.
-- Liitä jokaiseen seikkaan **todistusteema:** mitä halutaan näyttää toteen.
+## Step 1: Set out the contested facts and the burden of proof
+- Identify the **contested legally operative facts** (which facts have to be proved).
+- Determine **the burden of proof:** as a rule it rests on the party who relies on the fact. Identify which facts are *yours* to prove and which are the other side's.
+- Attach a **theme of proof** to each fact: what is to be proved.
 
-## Vaihe 2: Valitse todistuskeinot
-Käy läpi keinot ja kohdista ne teemoihin:
-- **Kirjalliset todisteet** — sopimukset, viestit, laskut, pöytäkirjat. Yksilöi ja merkitse mitä kukin todistaa.
-- **Todistajat** — keitä kuullaan ja mistä teemasta. Arvioi todistajan tietämys ja luotettavuus.
-- **Asiantuntijat** — kun tarvitaan erityisalan asiantuntemusta (esim. arvio, tekninen kysymys).
-- **Katselmus** — kohteen tarkastelu.
-- **Asianosaisen kuuleminen** todistelutarkoituksessa.
+## Step 2: Choose the means of proof
+Work through the means and match them to the themes:
+- **Documentary evidence** — contracts, messages, invoices, minutes. Identify each one and state what it proves.
+- **Witnesses** — who is to be heard and on which theme. Assess the witness's knowledge and reliability.
+- **Experts** — where specialist knowledge is needed (for example a valuation or a technical question).
+- **Inspection** — examination of the object.
+- **Hearing a party** for the purpose of proof.
 
-## Vaihe 3: Tarkista rajoitukset
-- **Todistamiskiellot** (esim. tietyt luottamukselliset suhteet, oikeudenkäyntiavustajan salassapito) ja **hyödyntämiskiellot** (lainvastaisesti hankittu näyttö) — tarkista OK 17 luvusta lähteestä.
-- **Salassapito ja henkilötiedot:** jos todisteissa on arkaluonteista tietoa, harkitse käsittelyn rajaamista (→ `data-protection`-plugari; anonymisointiin PII Shield).
+## Step 3: Check the restrictions
+- **Prohibitions on giving evidence** (for example certain confidential relationships, the confidentiality owed by counsel) and **prohibitions on using evidence** (evidence obtained unlawfully) — check these in OK chapter 17 against the source.
+- **Confidentiality and personal data:** if the evidence contains sensitive information, consider limiting the processing (→ the `data-protection` domain; PII Shield for anonymisation).
 
-## Vaihe 4: Kokoa todistelusuunnitelma
-Tuota taulukko: **riitainen seikka · näyttötaakka (kumpi) · todistusteema · todistuskeino(t)**.
-Tunnista aukot: onko jokaiselle näytettävälle seikalle todiste? Onko vastapuolen väitteille
-vastanäyttöä? Merkitse `[varmista — asianajajan arvioitava]` näytön riittävyyden osalta.
+## Step 4: Assemble the evidence plan
+Produce a table: **contested fact · burden of proof (which party) · theme of proof · means of proof**.
+Identify the gaps: does every fact to be proved have a piece of evidence? Is there counter-evidence to the other side's assertions? Mark `[confirm — requires the advocate's assessment]` as regards the sufficiency of the evidence.
 
-## Raportoi
-Tuota todistelusuunnitelma ja todisteluettelo (teemoineen) muotoon, jonka voi liittää
-haastehakemukseen tai valmisteluun. Liitä lähteet (OK 17 luku tarkistettuna, mahdollinen
-oikeuskäytäntö näyttökysymyksistä). Älä esitä lopputulosta tai näytön painoarvoa varmana.
+## Report
+Produce the evidence plan and the list of evidence (with the themes) in a form that can be attached to the application for a summons or used in the preparation. Attach the sources (OK chapter 17 as checked, and any case law on questions of proof). Do not present the outcome or the weight of the evidence as certain.
 
-## Mitä tämä skill EI tee
-- **Ei korvaa asiamiehen tai asianajajan vastuuta.** Todistelusuunnitelma on tarkistettava luonnos; näytön riittävyyden ja todistelutavan arvioi asian hoitava.
-- **Ei ennusta asian menestymistä eikä tuomion lopputulosta.** Ei arvioi näytön painoarvoa tai todistusharkinnan tulosta varmana — kuvaa vahvuudet ja aukot tasapuolisesti.
-- **Ei vahvista todistamis- ja hyödyntämiskieltoja, näyttökynnyksiä eikä prosessimääräaikoja muistista.** Ne ovat ehdottomia ja haetaan OK 17 luvusta lähteestä.
-- **Ei päätä näyttötaakan jakautumista lopullisesti.** Esittää lähtökohdan (seikkaan vetoava), mutta poikkeukset ja käännetty näyttötaakka tarkistetaan lähteestä.
-- **Ei arvioi todistajan uskottavuutta tai lausunnon totuudenmukaisuutta** — vain kohdistaa todistuskeinon teemaan.
-- **Ei hoida arkaluonteisen aineiston anonymisointia tai salassapidon rajaamista** itse; ohjaa erilliseen käsittelyyn.
+## What this skill does NOT do
+- **Does not replace the responsibility of the agent or advocate.** The evidence plan is a draft that needs checking; the sufficiency of the evidence and the manner of proof are assessed by the person handling the matter.
+- **Does not predict whether the case will succeed or what the judgment will be.** It does not assess the weight of the evidence or the result of the evaluation of evidence as certain — it describes the strengths and the gaps even-handedly.
+- **Does not confirm prohibitions on giving or using evidence, standards of proof or procedural time limits from memory.** These are absolute and are taken from OK chapter 17 from the source.
+- **Does not settle the allocation of the burden of proof finally.** It gives the starting point (the party relying on the fact), but the exceptions and any reversal of the burden are checked against the source.
+- **Does not assess a witness's credibility or the truthfulness of a statement** — it only matches the means of proof to the theme.
+- **Does not itself anonymise sensitive material or delimit confidentiality**; it directs that to separate handling.
 
-## Jatka tästä
-- Todisteluun perustuvan kanteen laatiminen → /riidanratkaisu:haastehakemus
-- Näyttökysymyksiä koskevan oikeuskäytännön ja OK 17 luvun tarkistus → /juristi:oikeustutkimus
-- Arkaluonteisten todisteiden anonymisointi ja käsittelyn rajaaminen → /tietosuoja:tietosuoja-arviointi
-- Sopimusriidan tausta-asiakirjojen tarkistus näyttöä varten → /sopimukset:sopimuksen-tarkistus
+## Continue from here
+- Drafting the action that rests on the evidence → /dispute-resolution:statement-of-claim
+- Checking the case law on questions of proof and OK chapter 17 → /legal-core:legal-research
+- Anonymising sensitive evidence and limiting its processing → /data-protection:data-protection-assessment
+- Checking the background documents in a contract dispute for evidential purposes → /contracts:contract-review

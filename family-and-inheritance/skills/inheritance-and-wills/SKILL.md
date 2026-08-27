@@ -1,26 +1,29 @@
 ---
 name: inheritance-and-wills
 description: >
-  Perimys, testamentti ja jäämistön käsittely Suomessa (perintökaari
-  40/1965). Käytä tätä skilliä, kun selvitetään perimysjärjestystä,
-  laaditaan tai tulkitaan testamenttia, arvioidaan rintaperillisen
-  lakiosaa, jäsennetään perunkirjoitusta tai perinnönjakoa, selvitetään
-  lesken asemaa, tai arvioidaan testamentin tai jaon moitetta.
-  Triggeröi sanoista: perintö, perillinen, rintaperillinen, perimys,
-  testamentti, lakiosa, perinnönjako, perunkirjoitus, perukirja,
-  pesänselvitys, pesänjakaja, leski, hallintaoikeus, jäämistö,
-  testamentin moite, rintaperillisen asema, parenteeli.
+  Succession, wills and the administration of a deceased person's estate in
+  Finland (perintökaari 40/1965). Use this skill when working out the order of
+  succession, drafting or interpreting a will, assessing the compulsory share
+  of a direct heir, structuring an estate inventory or a distribution of an
+  estate, clarifying the position of a surviving spouse, or assessing a
+  challenge to a will or to a distribution. Triggers on: inheritance, heir,
+  direct heir, succession, will, compulsory share, distribution of an estate,
+  estate inventory, deed of estate inventory, administration of an estate,
+  estate distributor, surviving spouse, right of possession, estate,
+  contesting a will, perintö, perillinen, rintaperillinen, testamentti,
+  lakiosa, perinnönjako, perunkirjoitus, perukirja, pesänjakaja, leski,
+  hallintaoikeus, jäämistö, testamentin moite, parenteeli.
 ---
 
-# Perintö ja testamentti — perimys, lakiosa ja jäämistön käsittely
+# Inheritance and wills — succession, the compulsory share and administering an estate
 
-Tämä skill jäsentää perimyksen, testamentin ja jäämistön käsittelyn.
-Perintöoikeuden käsitteet ja rakenne: `references/inheritance-code-fundamentals.md`
-— lue se tehtävän alussa.
+This skill sets out succession, wills and the administration of an estate.
+The concepts and structure of inheritance law are in
+`references/inheritance-code-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** luonnokset ja jäsennykset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Testamentin muoto, määräajat ja verot
-> tarkistetaan lähteestä; perintövero ei kuulu tähän. Katso
+> **Disclaimer:** drafts and analyses are for review — not legal advice.
+> The form of a will, the time limits and the taxes are checked against the
+> source; inheritance tax does not belong here. See
 > `family-and-inheritance/AGENTS.md`.
 
 ## Output language
@@ -33,90 +36,101 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki ja oikeuskäytäntö lähteestä
+## Check the statute and the case law against the source
 
-Hae perintökaaren (40/1965) säännökset **`legal-core:legal-research`-skillillä**.
-Testamentin tulkintaa, lakiosaa, lesken asemaa ja jaon moitetta
-koskeva KKO-käytäntö lähteestä. **Testamentin muotovaatimukset** (kirjallinen
-muoto ja kaksi esteetöntä todistajaa yhtä aikaa läsnä) tarkistetaan aina
-laista — muotovirhe voi tehdä testamentin pätemättömäksi.
+Retrieve the provisions of the Code of Inheritance (perintökaari 40/1965) with the
+**`legal-core:legal-research` skill**. Take KKO case law on the interpretation of
+wills, on the compulsory share, on the position of the surviving spouse and on
+challenges to a distribution from the source. **The formal requirements for a will**
+(written form and two disqualification-free witnesses present at the same time) are
+always checked against the statute — a defect of form can render a will void.
 
-> **Pohja:** [`templates/will.md`](../../templates/will.md) — testamentin luuranko muotomuistilistoineen (määrämuotoinen asiakirja).
+> **Template:** [`templates/will.md`](../../templates/will.md) — the skeleton of a will together with its checklist on form (a document subject to a prescribed form).
 
-## Vaihe 1: Perimysjärjestys ilman testamenttia
+## Step 1: The order of succession where there is no will
 
-1. **Parenteelit** (perintökaaren perimysjärjestys): ensin rintaperilliset
-   (lapset, sijaantulo lapsenlapsille), sitten vanhemmat ja sisarukset,
-   sitten isovanhemmat. Valtio viimesijaisena.
-2. **Lesken asema**: aviopuolison perintöoikeus, kun rintaperillisiä ei
-   ole; lesken oikeus pitää jäämistö jakamattomana ja **hallintaoikeus
-   yhteiseen kotiin** — tarkista edellytykset lähteestä.
-3. **Avopuolisolla ei ole perintöoikeutta** — vain testamentilla.
-   Tämä on yleinen väärinkäsitys; nosta se esiin.
+1. **The parentela classes** (the order of succession under the Code of
+   Inheritance): first the direct heirs (children, with grandchildren taking
+   their place), then the parents and siblings, then the grandparents. The State
+   last of all.
+2. **The position of the surviving spouse**: the spouse's right of inheritance
+   where there are no direct heirs; the spouse's right to keep the estate
+   undivided and the **right of possession of the joint home** — check the
+   conditions against the source.
+3. **A cohabiting partner has no right of inheritance** — only under a will.
+   This is a common misconception; raise it.
 
-## Vaihe 2: Testamentti
+## Step 2: The will
 
-- **Tarkoitus ja tyyppi**: yleisjälkisäädös vai erityisjälkisäädös
-  (legaatti); täysi omistusoikeus, hallintaoikeus (esim. leskelle) vai
-  tuotto-oikeus. Selvitä, mitä testamentintekijä tavoittelee.
-- **Muoto**: kirjallinen, päivätty, testamentintekijän allekirjoittama
-  ja **kahden esteettömän todistajan** samanaikaisesti oikeaksi
-  todistama — `[tarkista muotovaatimukset ja todistajan esteettömyys
-  lähteestä]`. Hätätilatestamentti on poikkeus omine edellytyksineen.
-- **Lakiosan huomioon ottaminen**: testamentti ei voi sivuuttaa
-  rintaperillisen lakiosaa (ks. vaihe 3); huomioi tämä laadinnassa.
-- **Pätemättömyys ja moite**: muotovirhe, testamentintekijän
-  kelpoisuus, pakko tai erehdys → moiteaika perillisellä `[tarkista]`.
+- **Purpose and type**: a universal disposition or a specific disposition (a
+  legacy); full ownership, a right of possession (for example to the surviving
+  spouse) or a right to the yield. Work out what the testator is trying to
+  achieve.
+- **Form**: written, dated, signed by the testator and attested by **two
+  disqualification-free witnesses** simultaneously — `[check the formal
+  requirements and the disqualification of witnesses against the source]`. An
+  emergency will is an exception with conditions of its own.
+- **Taking the compulsory share into account**: a will cannot override the
+  compulsory share of a direct heir (see step 3); allow for this in drafting.
+- **Invalidity and challenge**: a defect of form, the testator's capacity, duress
+  or mistake → the heir has a period in which to bring a challenge `[check]`.
 
-## Vaihe 3: Lakiosa
+## Step 3: The compulsory share
 
-- **Rintaperillisen lakiosa** on puolet lakimääräisestä perintöosasta —
-  pakottava, testamentista riippumaton.
-- **Lakiosaa on vaadittava** lakiosailmoituksella testamentin saajalle
-  määräajassa kuolemasta/tiedoksisaannista — `[tarkista määräaika]`;
-  vaatimatta jättäminen voi johtaa oikeuden menetykseen.
-- Lakiosan täydennys ja huomioon otettavat ennakkoperinnöt ja lahjat
-  (suosiolahja) — laskenta lähteestä.
+- **The compulsory share (lakiosa) of a direct heir** is half of the statutory
+  share of the inheritance — mandatory and independent of any will.
+- **The compulsory share must be claimed** by notice to the beneficiary under the
+  will within a time limit running from the death or from becoming aware of it —
+  `[check the time limit]`; failure to claim can result in loss of the right.
+- Supplementing the compulsory share, and the advancements and gifts to be taken
+  into account (a gift made to favour one heir) — the calculation from the source.
 
-## Vaihe 4: Pesänselvitys ja perunkirjoitus
+## Step 4: Administration of the estate and the estate inventory
 
-1. **Perunkirjoitus** on toimitettava määräajassa kuolemasta
-   (`[tarkista määräaika]`); perukirja luetteloi varat, velat ja
-   osakkaat ja toimii mm. veroilmoituksena Verohallinnolle.
-2. **Kuolinpesän osakkaat**: perilliset, yleistestamentin saajat ja
-   eloonjäänyt puoliso (ennen ositusta). Pesää hallitaan yhdessä,
-   ellei pesänselvittäjää määrätä.
-3. **Pesänselvitys**: velkojen selvittäminen ja maksu ennen jakoa.
+1. **The estate inventory (perunkirjoitus)** must be carried out within a time
+   limit running from the death (`[check the time limit]`); the deed of estate
+   inventory lists the assets, the debts and the parties to the estate, and
+   serves among other things as the tax return to Verohallinto.
+2. **The parties to the estate**: the heirs, the beneficiaries under a universal
+   disposition and the surviving spouse (before the division of matrimonial
+   property). The estate is administered jointly unless an estate administrator
+   is appointed.
+3. **Administration of the estate**: establishing and paying the debts before any
+   distribution.
 
-## Vaihe 5: Ositus ja perinnönjako
+## Step 5: Division of matrimonial property and distribution of the estate
 
-- **Kuolintapauksessa ensin ositus** eloonjääneen puolison kanssa
-  (→ `marriage-and-division-of-property`), **sitten perinnönjako** perillisten
-  kesken. Pidä vaiheet erillään.
-- Sopimusjako (osakkaiden yksimielisyys, muotovaatimus) tai
-  pesänjakajan toimittama jako riitatilanteessa.
-- Jaon moite määräajassa `[tarkista]`.
+- **On death the division of matrimonial property comes first**, with the
+  surviving spouse (→ `marriage-and-division-of-property`), **and the
+  distribution of the inheritance after it**, among the heirs. Keep the stages
+  apart.
+- An agreed distribution (unanimity of the parties to the estate, a formal
+  requirement) or a distribution carried out by an estate distributor where there
+  is a dispute.
+- A challenge to the distribution within a time limit `[check]`.
 
-## Vaihe 6: Verot
+## Step 6: Taxes
 
-- **Perintövero** ja mahdollinen lahjavero määräytyvät perukirjan ja
-  Verohallinnon mukaan — **älä laske perintöveroa tai esitä
-  veroluokkia ja rajoja muistista** → `taxation`-plugari ja Verohallinto.
+- **Inheritance tax** and any gift tax are determined on the basis of the deed of
+  estate inventory and by Verohallinto — **do not calculate inheritance tax and
+  do not state tax brackets and thresholds from memory** → the `taxation` domain
+  and Verohallinto.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista testamentin muotovaatimuksia tai määräaikoja muistista**
-  — laista tai `[tarkista]`.
-- **Ei laske perintöveroa** → `taxation`.
-- **Ei sivuuta lakiosaa** testamenttia laadittaessa.
-- **Ei toimi pesänjakajana eikä ratkaise jakoriitaa** — se kuuluu
-  pesänjakajalle ja tuomioistuimelle.
-- **Ei oleta avopuolisolle perintöoikeutta** — vain testamentilla.
+- **Does not confirm the formal requirements for a will or the time limits from memory**
+  — from the statute, or `[check]`.
+- **Does not calculate inheritance tax** → `taxation`.
+- **Does not override the compulsory share** when a will is drafted.
+- **Does not act as an estate distributor and does not settle a dispute over a
+  distribution** — that is for the estate distributor and the court.
+- **Does not assume a right of inheritance for a cohabiting partner** — only
+  under a will.
 
-## Jatka tästä
+## Continue from here
 
-- Jäämistöositus ja lesken tasinko → /perhe-ja-perinto:avioliitto-ja-ositus
-- Ennakoiva varautuminen: edunvalvontavaltuutus → /perhe-ja-perinto:edunvalvonta-ja-edunvalvontavaltuutus
-- Perintö- ja lahjavero → /verotus:verotusmenettely-ja-muutoksenhaku
-- Jakoriidan tai testamentin moite tuomioistuimessa → /riidanratkaisu:haastehakemus
-- Säännöksen tai KKO-käytännön tarkistus → /juristi:oikeustutkimus
+- The division of matrimonial property on death and the surviving spouse's equalisation payment → /family-and-inheritance:marriage-and-division-of-property
+- Planning ahead: the continuing power of attorney → /family-and-inheritance:guardianship-and-powers-of-attorney
+- Inheritance tax and gift tax → /taxation:tax-procedure-and-appeals
+- Contesting a distribution or a will before a court → /dispute-resolution:statement-of-claim
+- Checking a provision or KKO case law → /legal-core:legal-research
