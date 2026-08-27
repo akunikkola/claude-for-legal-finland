@@ -1,0 +1,176 @@
+name: Upstream drift
+
+# Watches the fork point. This is a hard fork - upstream prose is Finnish, this
+# fork's is English, and every path was renamed - so `git merge upstream/main`
+# will never be the right move again. But upstream still fixes STATUTE
+# REFERENCES, and a fork that silently cites a repealed act is the biggest
+# ongoing risk of forking (cf. MRL -> alueidenkäyttölaki, kaupparekisterilaki
+# 129/1979 -> 564/2023). So drift is surfaced instead of merged:
+#
+#   - changes confined to the statute registry are ported mechanically and land
+#     as a real pull request, because that file is language-independent;
+#   - anything else opens one issue per upstream head, with every changed path
+#     already mapped through scripts/rename-map.json onto its fork path.
+#
+# Cadence: weekly, not monthly like the Finlex säädösvahti. That check is
+# monthly because it makes 105 calls to an external site; this one is a single
+# fetch plus a local diff, so cost is not the constraint - staleness is. Weekly
+# bounds how long the fork can cite something upstream has already corrected to
+# seven days, at roughly 52 runs a year, most of them a one-line "no drift".
+# Daily would report nothing on most days and train maintainers to ignore it;
+# monthly would leave a known-wrong citation live for up to a month.
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"   # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          # The check diffs against the fork point and reads the tree at that
+          # commit. A shallow clone degrades to a warning rather than a failure,
+          # but then it reports nothing useful.
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Fetch upstream
+        run: |
+          # AGENTS.md is the single source of truth for the upstream URL.
+          upstream_url="$(node scripts/check-upstream-drift.mjs --upstream-url)"
+          git remote add upstream "$upstream_url" 2>/dev/null \
+            || git remote set-url upstream "$upstream_url"
+          git fetch --no-tags --quiet upstream
+
+      - name: Check drift
+        id: check
+        run: |
+          # Exit 1 means "there is drift", which is the expected outcome here
+          # and must not fail the job - the pull request or issue below is the
+          # real output. The report is captured BEFORE any porting, so the
+          # follow-up steps describe the drift and not the already-fixed tree.
+          node scripts/check-upstream-drift.mjs --json > drift.json || true
+          node scripts/check-upstream-drift.mjs > drift-report.txt || true
+
+          {
+            echo '## Upstream drift'
+            echo
+            echo '```'
+            cat drift-report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          node -e "
+            const d = require('./drift.json');
+            const rows = [
+              ['drift', Boolean(d.drift)],
+              ['auto_portable_only', Boolean(d.autoPortableOnly)],
+              ['unmapped', d.unmappedCount ?? 0],
+              ['base', (d.base ?? '').slice(0, 7)],
+              ['head', (d.head ?? '').slice(0, 7)],
+            ];
+            for (const [key, value] of rows) console.log(key + '=' + value);
+          " >> "$GITHUB_OUTPUT"
+
+      - name: Open a pull request for the statute registry
+        if: steps.check.outputs.drift == 'true' && steps.check.outputs.auto_portable_only == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{ steps.check.outputs.head }}
+        run: |
+          branch="upstream-drift/statutes-${HEAD_SHA}"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "$branch already exists - nothing to open."
+            exit 0
+          fi
+
+          # Ports upstream's statute entries and, because this range touches
+          # nothing else, advances the AGENTS.md provenance pointer in the same
+          # commit, exactly as the porting procedure requires.
+          node scripts/check-upstream-drift.mjs --port-statutes
+
+          if git diff --quiet; then
+            echo "Nothing changed after porting."
+            exit 0
+          fi
+
+          {
+            echo '```'
+            cat drift-report.txt
+            echo '```'
+            cat <<'BODY'
+
+          Upstream changed only the statute registry. That file is
+          language-independent - `scripts/check-statutes.mjs` matches its Finnish
+          names against Finlex page titles - so it is the one file that ports
+          mechanically. Only the statute entries were taken: this fork's own
+          description field and key naming are untouched.
+
+          `Last ported upstream commit` in `AGENTS.md` is advanced in the same
+          commit, because this range contains nothing else to port.
+
+          Review the numbers and names before merging. A wrong statute number
+          here propagates straight into legal output.
+          BODY
+          } > pr-body.md
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add tracking/statutes.json AGENTS.md
+          git commit -m "Port upstream statute registry to ${HEAD_SHA}"
+          git push --set-upstream origin "$branch"
+
+          gh pr create \
+            --title "Port upstream statute registry to ${HEAD_SHA}" \
+            --body-file pr-body.md
+
+      - name: Open an issue for prose drift
+        if: steps.check.outputs.drift == 'true' && steps.check.outputs.auto_portable_only != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_SHA: ${{ steps.check.outputs.base }}
+          HEAD_SHA: ${{ steps.check.outputs.head }}
+        run: |
+          title="Upstream drift: port ${BASE_SHA}..${HEAD_SHA}"
+
+          # One issue per upstream head. When upstream moves again a new issue
+          # appears and supersedes this one, so a weekly schedule cannot spam.
+          if gh issue list --state open --search "$title in:title" --json title \
+               --jq '.[].title' | grep -Fxq "$title"; then
+            echo "An issue is already open for ${HEAD_SHA}."
+            exit 0
+          fi
+
+          {
+            cat <<'INTRO'
+          Upstream moved. The paths below are already mapped through
+          `scripts/rename-map.json`. Anything marked NO MAPPING did not exist at
+          the fork point, so it needs a rename-map entry before it can be ported.
+
+          INTRO
+            echo '```'
+            cat drift-report.txt
+            echo '```'
+            cat <<'OUTRO'
+
+          Port by hand, then set `Last ported upstream commit` in `AGENTS.md` to
+          the new head **in the same commit**. That row is the only record of
+          where the fork stands.
+          OUTRO
+          } > issue-body.md
+
+          gh issue create --title "$title" --body-file issue-body.md

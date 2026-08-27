@@ -149,8 +149,9 @@ node scripts/generate-skills-md.mjs  # SKILLS.md
 Maintenance:
 
 ```bash
-node scripts/check-statutes.mjs      # monthly Finlex name check
-node scripts/citation-inventory.mjs  # every NNN/YYYY reference, grouped
+node scripts/check-statutes.mjs         # monthly Finlex name check
+node scripts/check-upstream-drift.mjs   # what changed upstream since the last port
+node scripts/citation-inventory.mjs     # every NNN/YYYY reference, grouped
 node scripts/apply-rename.mjs --dry-run
 ```
 
@@ -216,9 +217,35 @@ handled deliberately:
   commit** above, mapped through that table, and flags upstream paths that have no mapping yet.
 - Changes to `tracking/statutes.json` are language-independent and can be ported mechanically;
   prose changes are reviewed by hand.
+- `.github/workflows/upstream-drift.yml` runs the check weekly. A statute-only change opens a pull
+  request; anything else opens one issue per upstream head.
 
-When you port upstream work, update **Last ported upstream commit** in this table in the same
-commit. It is the only record of where the fork stands.
+### Porting procedure
+
+```bash
+git fetch upstream
+node scripts/check-upstream-drift.mjs
+```
+
+The report is ordered by signal, cheapest first.
+
+1. **Citations changed upstream** come first: statute numbers and case identifiers that upstream
+   added or removed. A changed citation is a legal-correctness problem even when the Finnish prose
+   around it is irrelevant here, so read this section even if you port nothing else.
+2. **Statute registry.** If the diff touches only `tracking/statutes.json`, run
+   `node scripts/check-upstream-drift.mjs --port-statutes`. It takes upstream's statute entries,
+   keeps this fork's own description and key naming, and — because that range contains nothing
+   else — advances **Last ported upstream commit** for you. Review the numbers before committing.
+3. **Everything else** is listed with its fork path already resolved. Port it by hand. A path marked
+   `NO MAPPING` did not exist at the fork point: decide where it belongs and add a rule to
+   `scripts/rename-map.json` before porting it, or it will be silently dropped every run from now on.
+
+Then update **Last ported upstream commit** in the table above **in the same commit as the port**.
+It is the only record of where the fork stands; a port that does not move it will be reported as
+drift forever.
+
+An absent or unfetched `upstream` remote is a warning, not a failure — the check is skipped rather
+than crashing a shallow CI clone.
 
 ---
 
