@@ -68,13 +68,15 @@ test('each neutral plugin.json has matching Claude and Codex manifests', () => {
 
     assert.equal(claudeManifest.name, neutral.name);
     assert.equal(claudeManifest.version, neutral.version);
-    assert.equal(claudeManifest.description, neutral.description);
-    assert.deepEqual(claudeManifest.author, neutral.author);
+    const stale = `${pluginRoot}: adapter is stale — plugin.json was edited without regenerating. Run: node scripts/generate-adapters.mjs`;
+
+    assert.equal(claudeManifest.description, neutral.description, stale);
+    assert.deepEqual(claudeManifest.author, neutral.author, stale);
 
     assert.equal(codexManifest.name, neutral.name);
     assert.equal(codexManifest.version, neutral.version);
-    assert.equal(codexManifest.description, neutral.description);
-    assert.deepEqual(codexManifest.author, neutral.author);
+    assert.equal(codexManifest.description, neutral.description, stale);
+    assert.deepEqual(codexManifest.author, neutral.author, stale);
     assert.equal(codexManifest.skills, './skills/');
     assert.equal(codexManifest.repository, REPOSITORY);
     assert.equal(codexManifest.license, 'MIT');

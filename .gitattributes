@@ -1,0 +1,28 @@
+# Line endings are normalised to LF in the repository and checked out
+# native on each platform.
+#
+# Without this, behaviour depends on each contributor's `core.autocrlf`,
+# which is per-machine and unstated. It happens to be benign today because
+# git normalises both sides when diffing, so CRLF differences are invisible
+# to `git diff`, `git status` and `git add` — the frequent
+# "LF will be replaced by CRLF" warning is git reporting that it is handling
+# the conversion, not a problem.
+#
+# But "happens to be configured correctly on the machines we tried" is not a
+# property worth relying on in a repository whose generated files are
+# regenerated and diffed as a correctness gate. This makes it deterministic.
+* text=auto eol=lf
+
+# Generated artifacts. Marked so a reviewer reading a diff knows not to edit
+# them by hand; regenerate with scripts/generate-adapters.mjs or
+# scripts/generate-skills-md.mjs instead.
+SKILLS.md                            linguist-generated=true
+.claude-plugin/marketplace.json      linguist-generated=true
+.agents/plugins/marketplace.json     linguist-generated=true
+*/.claude-plugin/plugin.json         linguist-generated=true
+*/.codex-plugin/plugin.json          linguist-generated=true
+*/.mcp.json                          linguist-generated=true
+*/skills/*/agents/openai.yaml        linguist-generated=true
+
+# Binary assets — never diffed or line-ending converted.
+*.png binary

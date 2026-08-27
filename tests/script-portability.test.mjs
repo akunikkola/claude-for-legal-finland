@@ -47,7 +47,14 @@ test('validate script accepts repository paths and CRLF frontmatter on Windows',
   }
 });
 
-test('skill index generator is idempotent on Windows paths', () => {
+// This asserts two different things, and the second is the one that usually
+// fails: that the generator RUNS on Windows paths, and that SKILLS.md is
+// currently up to date. A stale SKILLS.md — every translation branch has one
+// until the generators are re-run — fails here, so the message has to say so.
+// Named for what it checks rather than for the platform, because "Windows
+// paths" sent at least one person debugging path handling for what was simply
+// un-regenerated content.
+test('skill index is regenerated and stable', () => {
   const fixtureRoot = copyRepoFixture();
   const skillsPath = join(fixtureRoot, 'SKILLS.md');
   const before = readFileSync(skillsPath, 'utf8');
@@ -55,8 +62,14 @@ test('skill index generator is idempotent on Windows paths', () => {
   try {
     const result = runNodeScript('scripts/generate-skills-md.mjs', fixtureRoot);
 
-    assert.equal(result.status, 0, result.stdout + result.stderr);
-    assert.equal(normalizeEol(readFileSync(skillsPath, 'utf8')), normalizeEol(before));
+    assert.equal(result.status, 0, `generate-skills-md.mjs failed:\n${result.stdout}${result.stderr}`);
+    assert.equal(
+      normalizeEol(readFileSync(skillsPath, 'utf8')),
+      normalizeEol(before),
+      'SKILLS.md changed when regenerated, so the committed copy is stale. ' +
+        'This is NOT a Windows path problem: it means a SKILL.md description was ' +
+        'edited without re-running the generators. Run: node scripts/generate-skills-md.mjs',
+    );
   } finally {
     rmSync(fixtureRoot, { recursive: true, force: true });
   }
