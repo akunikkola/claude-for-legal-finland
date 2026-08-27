@@ -1,27 +1,36 @@
-# Lakikielen kirjoitussäännöt ja suomen kielen erityishuomiot
+# The writing rules of legal language and particular points about Finnish
 
-## Perusperiaatteet
+**The rules, wordings and examples below are Finnish and stay Finnish.** They
+govern how Finnish statutory text is written; an example rendered into English
+would no longer demonstrate anything.
 
-Lakikielen neljä kulmakiveä:
+## Basic principles
 
-1. **Yleiskielisyys** — laki kirjoitetaan kielellä, jota kansalaiset ymmärtävät
-2. **Tarkkuus** — jokainen sana valitaan harkiten, määritelmät ovat yksiselitteisiä
-3. **Yhdenmukaisuus** — samasta asiasta käytetään aina samaa termiä, ei synonyymeja
-4. **Selkeys** — lauserakenteet ovat loogisia ja helposti seurattavia
+The four cornerstones of legal language:
 
-## 3-3-3-sääntö
+1. **Yleiskielisyys** — an act is written in language the citizens understand
+2. **Tarkkuus** — every word is chosen with care, the definitions are unambiguous
+3. **Yhdenmukaisuus** — the same term is always used for the same thing, no synonyms
+4. **Selkeys** — the sentence structures are logical and easy to follow
 
-Selkeän lakitekstin nyrkkisääntö:
+## The 3-3-3 rule
 
-- Pykälässä enintään **3 momenttia**
-- Momentissa enintään **3 virkettä**
-- Virkkeessä enintään **3 lausetta**
+The rule of thumb for clear statutory text:
 
-Kun raja ylittyy, harkitse pykälän jakamista useammaksi pykäläksi tai momentiksi. Sääntö ei ole ehdoton, mutta sen noudattaminen tekee laista olennaisesti helpomman lukea ja ymmärtää.
+- At most **3 momenttia** in a section
+- At most **3 virkettä** in a subsection
+- At most **3 lausetta** in a sentence
 
-## Johdantokappaleen ja kohtien virkerakenne
+When the limit is exceeded, consider dividing the section into several sections
+or subsections. The rule is not absolute, but following it makes an act
+substantially easier to read and to understand.
 
-Kun momentissa on luettelo kohtia (1), 2), 3)...), johdantokappale ja kohdat muodostavat yhdessä **loogisen virkkeen**. Johdantokappale on ikään kuin virkkeen alku, joka jatkuu kunkin kohdan kautta:
+## The sentence structure of the introductory paragraph and the items
+
+When a subsection contains a list of items (1), 2), 3)...), the introductory
+paragraph and the items together form **one logical sentence**. The introductory
+paragraph is, as it were, the beginning of a sentence that continues through
+each item:
 
 ```
 Tässä laissa tarkoitetaan:              ← johdantokappale (päättyy kaksoispisteeseen)
@@ -30,9 +39,11 @@ Tässä laissa tarkoitetaan:              ← johdantokappale (päättyy kaksois
 3) toimielimellä kunnan...              ← viimeinen kohta (piste)
 ```
 
-Johdantokappaleen ja kunkin kohdan tulee muodostaa kieliopillisesti eheä kokonaisuus. Viimeisen kohdan edelle lisätään tarvittaessa sidesana (ja/tai/sekä/taikka).
+The introductory paragraph and each item must form a grammatically complete
+whole. A conjunction (ja/tai/sekä/taikka) is added before the last item where
+needed.
 
-## Numerot, luvut ja merkit lakitekstissä
+## Numbers, figures and symbols in statutory text
 
 | Sääntö | Esimerkki |
 |--------|-----------|
@@ -46,75 +57,78 @@ Johdantokappaleen ja kunkin kohdan tulee muodostaa kieliopillisesti eheä kokona
 | Päivämäärä HE:n perusteluissa | "1.6.2024" |
 | Järjestysnumeron perässä ei pistettä | "2 luku" (ei: "2. luku") |
 
-## Välimerkit johdantokappaleissa ja kohdissa
+## Punctuation in introductory paragraphs and items
 
-- Johdantokappale päättyy **kaksoispisteeseen**
-- Kohdat alkavat **pienellä alkukirjaimella**
-- Kohtien välissä **puolipiste** (;)
-- Viimeisen kohdan edellä tarvittaessa sidesana: **ja/tai/sekä/taikka**
-- Viimeinen kohta päättyy **pisteeseen**
-- **Alakohdat** (a, b, c...) noudattavat samaa logiikkaa kohtien sisällä
+- The introductory paragraph ends in **a colon**
+- The items begin **with a lower-case initial**
+- **A semicolon** (;) between the items
+- Where needed, a conjunction before the last item: **ja/tai/sekä/taikka**
+- The last item ends in **a full stop**
+- **The alakohdat** (a, b, c...) follow the same logic within the items
 
-## Lyhenteet
+## Abbreviations
 
-- Säädöstekstissä **ei käytetä lyhenteitä** (paitsi taulukoissa ja poikkeuksellisesti kirjainlyhenteitä)
-- Tunnetutkin lyhenteet (EU, YK) selitetään ensimmäisellä kerralla: "Euroopan unioni (EU)"
-- Säädösten nimikkeistä ei käytetä kirjainlyhenteitä lakitekstissä
-- HE:n perusteluissa lyhenteet sallitaan, kunhan ne selitetään ensin
+- **Abbreviations are not used** in statutory text (except in tables and,
+  exceptionally, letter abbreviations)
+- Even well-known abbreviations (EU, YK) are explained on first use: "Euroopan
+  unioni (EU)"
+- Letter abbreviations are not used for the titles of statutes in statutory text
+- In the reasoning of a government bill abbreviations are allowed, provided they
+  are explained first
 
-## Vakiintuneet lakikielen ilmaisut
+## Established expressions of legal language
 
-Näitä käytetään johdonmukaisesti:
+These are used consistently:
 
-- "Tässä laissa tarkoitetaan..." — määritelmien johdanto
-- "Tämä laki koskee..." — soveltamisalan määrittely
-- "Jollei muualla laissa toisin säädetä..." — poikkeusvaraus
-- "Sen mukaan kuin ... säädetään" — viittaus toiseen säädökseen
-- "...on velvollinen" / "...tulee" — velvoitteen asettaminen
+- "Tässä laissa tarkoitetaan..." — the introduction to the definitions
+- "Tämä laki koskee..." — defining the scope of application
+- "Jollei muualla laissa toisin säädetä..." — a reservation for exceptions
+- "Sen mukaan kuin ... säädetään" — a reference to another statute
+- "...on velvollinen" / "...tulee" — imposing an obligation
 
-## Passiivi ja aktiivi
+## The passive and the active
 
-Lakikielessä passiivi on tavallinen ja neutraali muoto:
+In legal language the passive is the ordinary, neutral form:
 - "Hakemuksesta päätetään kahden viikon kuluessa"
 
-Aktiivia käytetään, kun tekijä ja vastuu halutaan yksilöidä:
+The active is used when the actor and the responsibility are to be identified:
 - "Kunnan on varattava riittävät varat palvelun järjestämiseen"
 
 ---
 
-## Suomen kielen erityishuomiot juridisessa tekstissä
+## Particular points about Finnish in legal text
 
-### Yhdyssanat — yleisin virhe
+### Compound words — the commonest error
 
-Perusmuotoinen substantiivi + substantiivi on **aina** yhdyssana:
+A noun in the basic form + a noun is **always** a compound:
 - oikeusturva (ei: oikeus turva)
 - sopimuspuoli (ei: sopimus puoli)
 - hallintopäätös (ei: hallinto päätös)
 - voimaantulo (ei: voimaan tulo)
 
-Partisiippi-ilmaukset sen sijaan kirjoitetaan **erikseen**:
+Participle expressions, by contrast, are written **as two words**:
 - voimassa oleva (ei: voimassaoleva)
 - edellä mainittu (ei: edellämainittu)
 - läsnä oleva (ei: läsnäoleva)
 
-### Pilkutus
+### Punctuation
 
-- Sivulauseen edessä **aina** pilkku: "Ministeri totesi, että asia on käsitelty."
-- **mutta** ja **vaan** edellä aina pilkku
-- **ja, tai, sekä** edellä pilkku vain, kun molemmat lauseet ovat rakenteeltaan täydellisiä
-- Suomessa **ei** Oxford-pilkkua
+- **Always** a comma before a subordinate clause: "Ministeri totesi, että asia on käsitelty."
+- Always a comma before **mutta** and **vaan**
+- A comma before **ja, tai, sekä** only when both clauses are structurally complete
+- Finnish does **not** use the Oxford comma
 
-### Kirjoitusasu juridisissa termeissä
+### Spelling in legal terms
 
-- Lakien nimet pienellä: kuntalaki, rikoslaki, perustuslaki
-- Kansallisuudet ja kielet pienellä: suomalainen, ruotsin kieli
-- Desimaalierottimena pilkku: 3,5 prosenttia
-- Tuhaterotin on välilyönti: 100 000 euroa
+- The names of acts take a lower-case initial: kuntalaki, rikoslaki, perustuslaki
+- Nationalities and languages take a lower-case initial: suomalainen, ruotsin kieli
+- A comma as the decimal separator: 3,5 prosenttia
+- A space as the thousands separator: 100 000 euroa
 
-### Tyyli
+### Style
 
-- Vältä anglismeja: "implementoida" → "toteuttaa", "adressoida" → "käsitellä"
-- Vältä mahtipontisuutta ja turhaa juhlallisuutta
-- Suosi selkeitä ja lyhyitä virkkeitä
-- Vältä turhaa toistoa ja täytetekstiä
-- Pidä sanajärjestys luonnollisena — suomen sanajärjestys on vapaampi kuin englannin
+- Avoid anglicisms: "implementoida" → "toteuttaa", "adressoida" → "käsitellä"
+- Avoid grandiosity and unnecessary solemnity
+- Prefer clear, short sentences
+- Avoid needless repetition and filler
+- Keep the word order natural — Finnish word order is freer than English

@@ -1,88 +1,112 @@
-# Säädösten rakenne ja hierarkia
+# The structure and hierarchy of statutes
 
-## Säädöshierarkia
+**The Finnish terms and examples below stay Finnish.** They are the structural
+vocabulary of Finnish statutes and the forms in which references to them are
+written.
 
-Suomen oikeusjärjestyksen säädöshierarkia ylhäältä alas:
+## The hierarchy of statutes
 
-1. **Perustuslaki** (731/1999) — ylin kansallinen oikeuslähde
-2. **Tavalliset lait** — eduskunnan säätämät
-3. **Asetukset** — tasavallan presidentin, valtioneuvoston tai ministeriön antamat
-4. **Viranomaismääräykset** — virastojen ja laitosten antamat
+The hierarchy of statutes in the Finnish legal order, from the top down:
 
-EU-oikeus (asetukset, direktiivit) on osa Suomen oikeusjärjestystä ja sillä on etusija kansalliseen lakiin nähden ristiriitatilanteissa.
+1. **Perustuslaki** — the Constitution of Finland (731/1999), the highest
+   national source of law
+2. **Tavalliset lait** — ordinary acts passed by Eduskunta
+3. **Asetukset** — decrees issued by the President of the Republic, the
+   Government or a ministry
+4. **Viranomaismääräykset** — regulations issued by agencies and institutions
 
-## Yksittäisen säädöksen rakenne
+EU law (regulations, directives) is part of the Finnish legal order and takes
+precedence over national law where they conflict.
 
-Laki tai asetus rakentuu seuraavista osista tässä järjestyksessä:
+## The structure of an individual statute
 
-1. **Johtolause** — kertoo säädöksen antajan ja oikeusperustan
-2. **Alkusäännökset** — soveltamisala ja määritelmät
-3. **Asiasäännökset** — varsinainen normatiivinen sisältö (luvut, pykälät, momentit)
-4. **Siirtymäsäännökset** — miten vanhasta uuteen siirrytään
-5. **Voimaantulolauseke** — milloin laki tulee voimaan
-6. **Kumoamislauseke** — mitä vanhoja säädöksiä kumotaan
+An act or a decree is built from the following parts, in this order:
 
-## Säädöksen sisäinen hierarkia
+1. **Johtolause** — states who gave the statute and the legal basis for it
+2. **Alkusäännökset** — the scope of application and the definitions
+3. **Asiasäännökset** — the normative content itself (luvut, pykälät, momentit)
+4. **Siirtymäsäännökset** — how the move from the old to the new is made
+5. **Voimaantulolauseke** — when the act enters into force
+6. **Kumoamislauseke** — which older statutes are repealed
 
-Ylhäältä alas:
+## The internal hierarchy of a statute
 
-- **Osa** — suurimpien säädösten ylin jakso (roomalaiset numerot: I, II, III)
-- **Luku** — suurien säädösten jaksotusotsikko (esim. "7 luku — Kunnan hallinto")
-- **Väliotsikko** — lukujen sisäinen ryhmittely (kursiivilla, ei numeroida)
-- **Pykälä** (§) — säädöksen perusnumerointiyksikkö: 1 §, 2 §, 3 § ...
-- **Momentti** — pykälän alaosa (kappaleet pykälän sisällä)
-- **Kohta** — momentin alaosa, numeroidaan 1), 2), 3) ...
-- **Alakohta** — kohdan alaosa, merkitään a), b), c) ...
+From the top down:
 
-Esimerkki täydellisestä hierarkiasta: *kuntalain 7 luvun 58 §:n 2 momentin 3 kohdan a alakohta*.
+- **Osa** — the highest division in the largest statutes (roman numerals: I, II, III)
+- **Luku** — the dividing heading in large statutes (e.g. "7 luku — Kunnan hallinto")
+- **Väliotsikko** — grouping within a chapter (in italics, not numbered)
+- **Pykälä** (§) — the basic numbering unit of a statute: 1 §, 2 §, 3 § ...
+- **Momentti** — a subdivision of a section (the paragraphs within a section)
+- **Kohta** — a subdivision of a subsection, numbered 1), 2), 3) ...
+- **Alakohta** — a subdivision of an item, marked a), b), c) ...
 
-## Pykälien numerointi
+An example of the full hierarchy: *kuntalain 7 luvun 58 §:n 2 momentin 3 kohdan a alakohta*.
 
-Pykälien numerointiin on kaksi tapaa:
+## The numbering of sections
 
-1. **Juokseva numerointi** — pykälät numeroidaan yhdessä sarjassa koko säädöksen läpi (1 §, 2 §, 3 § ...). Käytetään useimmissa säädöksissä.
-2. **Luvuttainen numerointi** — pykälät numeroidaan luvuittain (1 luvun 1 §, 2 luvun 1 § ...). Käytetään laajoissa säädöksissä (esim. rikoslaki).
+There are two ways of numbering sections:
 
-**Luvuttaisen numeroinnin vaikutus viittauksiin:** Kun säädöksessä on luvuttainen pykälänumerointi, viittauksessa on mainittava myös luku: "rikoslain 21 luvun 1 §" (ei pelkästään "1 §").
+1. **Juokseva numerointi** — running numbering, where the sections are numbered
+   in a single series through the whole statute (1 §, 2 §, 3 § ...). Used in most
+   statutes.
+2. **Luvuttainen numerointi** — numbering by chapter, where the sections are
+   numbered within each chapter (1 luvun 1 §, 2 luvun 1 § ...). Used in extensive
+   statutes (e.g. rikoslaki).
 
-## Pykälien otsikot
+**The effect of chapter-based numbering on references:** when a statute numbers
+its sections by chapter, the reference must name the chapter too: "rikoslain 21
+luvun 1 §" (not simply "1 §").
 
-Pykälillä voi olla otsikot. Otsikot ovat:
+## The headings of sections
 
-- **Kursiivilla** painettuina
-- **Lyhyitä ja ytimekkäitä** — kuvaavat pykälän sisällön pääasian
-- Eivät ole osa normitekstiä, vaan palvelevat lukijaa sisällön löytämisessä
-- Otsikot helpottavat navigointia erityisesti laajoissa säädöksissä
+Sections may have headings. The headings are:
 
-## Lukujen otsikot
+- Printed **in italics**
+- **Short and to the point** — they describe the main thrust of the section
+- Not part of the normative text; they serve the reader in finding the content
+- They make navigation easier, particularly in extensive statutes
 
-Luvuille annetaan sisältöä kuvaavat otsikot. Vakiintuneita lukujen otsikoita ovat esimerkiksi:
+## The headings of chapters
 
-- "Yleiset säännökset" — ensimmäisen luvun otsikko (soveltamisala, määritelmät)
-- "Erinäiset säännökset" — viimeisten lukujen otsikko (sekalaiset tekniset säännökset)
-- "Voimaantulo" — voimaantuloa ja kumoamista koskevien säännösten otsikko
+Chapters are given headings that describe their content. Established chapter
+headings include, for example:
 
-## Säädöksen nimike
+- "Yleiset säännökset" — the heading of the first chapter (scope, definitions)
+- "Erinäiset säännökset" — the heading of the last chapters (miscellaneous
+  technical provisions)
+- "Voimaantulo" — the heading of the provisions on entry into force and repeal
 
-Säädöksen nimike (nimi) noudattaa vakiintuneita käytäntöjä:
+## The title of a statute
 
-- **Yhdyssananimike** (lyhyt ja vakiintunut): *kuntalaki, rikoslaki, kauppalaki, työsopimuslaki*
-- **Kuvaileva nimike**: *laki kunnan peruspalvelujen valtionosuudesta, laki holhoustoimesta*
-- Nimike kirjoitetaan **pienellä alkukirjaimella** (ellei virkkeen alussa)
-- Nimikkeessä ei käytetä lyhenteitä
-- Nimikkeen tulee olla mahdollisimman lyhyt mutta yksilöivä
+The title (the name) of a statute follows established practice:
 
-## Momentit yksityiskohtaisesti
+- **Yhdyssananimike** — a compound-word title, short and established:
+  *kuntalaki, rikoslaki, kauppalaki, työsopimuslaki*
+- **Kuvaileva nimike** — a descriptive title: *laki kunnan peruspalvelujen
+  valtionosuudesta, laki holhoustoimesta*
+- The title is written **with a lower-case initial** (unless at the start of a
+  sentence)
+- Abbreviations are not used in the title
+- The title should be as short as possible while still identifying the statute
 
-Momentti on pykälän sisäinen kappale. Momenttien ymmärtäminen on tärkeää, koska valtaosa lakien yksittäisistä normeista on ilmaistu juuri momenteissa.
+## Subsections in detail
 
-**Numerointi ja yksilöinti:**
-- Lakitekstissä momentteja **ei normaalisti numeroida** — momentit erottuvat toisistaan kappalejaolla
-- Kun momentteja numeroidaan (joissakin vanhemmissa säädöksissä), numero ja piste ovat momentin alussa: "2. Tämä on toinen momentti."
-- **Viittauksissa** momentit yksilöidään aina arabialaisilla numeroilla: "1 momentti", "2 momentti"
-- Finlexissä ja muissa sähköisissä lähteissä momenttien numerot eivät näy tekstissä
+A momentti is a paragraph within a section. Understanding momentit matters,
+because the great majority of the individual norms in an act are expressed in
+them.
 
-**Miten momentit näkyvät lakitekstissä (esimerkki):**
+**Numbering and identification:**
+- In statutory text the momentit are **not normally numbered** — they are
+  distinguished from one another by the paragraph break
+- Where they are numbered (in some older statutes), the number and a full stop
+  come at the start: "2. Tämä on toinen momentti."
+- **In references** the momentit are always identified with arabic numerals:
+  "1 momentti", "2 momentti"
+- In Finlex and other electronic sources the numbers of the momentit do not
+  appear in the text
+
+**How the momentit appear in statutory text (example):**
 
 ```
 7 §
@@ -95,9 +119,10 @@ Toimivallan siirtämisestä on tehtävä              ← 3 momentti
 hallintosäännössä erillinen määräys.
 ```
 
-**Logiikka:** Tyypillisesti 1 momentti ilmaisee pääsäännön, ja myöhemmät momentit sisältävät tarkennuksia, poikkeuksia tai lisäehtoja.
+**The logic:** typically the 1 momentti states the main rule, and the later
+momentit contain qualifications, exceptions or additional conditions.
 
-**Momentin taivutusmuodot viittauksissa:**
+**The inflected forms of momentti in references:**
 
 | Sija | Muoto | Esimerkki viittauksessa |
 |------|-------|------------------------|
@@ -107,7 +132,7 @@ hallintosäännössä erillinen määräys.
 | Elatiivi | momentista | 2 §:n 1 momentista poiketen |
 | Adessiivi | momentilla | 2 §:n 1 momentilla tarkoitetaan |
 
-**Sisäiset viittaukset saman pykälän momentteihin:**
+**Internal references to the momentit of the same section:**
 
 ```
 Tämän pykälän 2 momentissa tarkoitettu...
@@ -115,9 +140,10 @@ Edellä 1 momentissa säädettyä...
 Jäljempänä 3 momentissa tarkemmin määritelty...
 ```
 
-Huom: Sanoja "edellä" ja "jäljempänä" käytetään **vain** virkkeen alussa. Virkkeen sisällä ne ovat tarpeettomia.
+Note: the words `edellä` and `jäljempänä` are used **only** at the start of a
+sentence. Within a sentence they are unnecessary.
 
-**Viittaus momenttiin toisessa säädöksessä:**
+**A reference to a subsection in another statute:**
 
 ```
 kuntalain (410/2015) 58 §:n 2 momentissa säädetään...

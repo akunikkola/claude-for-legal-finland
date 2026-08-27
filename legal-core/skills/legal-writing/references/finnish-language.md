@@ -1,17 +1,20 @@
-# Juridisen suomen pikaohje
+# Quick guide to legal Finnish
 
-Tämä on **juridisen tekstin kielenhuollon pikaohje**. Kattavat yleiset
-oikeinkirjoitus- ja kielioppisäännöt (yhdyssanat, pilkutus, alkukirjaimet,
-lyhenteet, numerot, lauserakenne) ovat tämän plugarin omassa skillissä —
-lue [`../../finnish-language/SKILL.md`](../../finnish-language/SKILL.md), kun teet
-perusteellisen kielentarkistuksen. Tähän tiedostoon on koottu vain se, mikä
-on juridisessa tekstissä erityistä tai erityisen virhealtista.
+This is a **quick guide to language editing for legal text**. The comprehensive
+general rules of spelling and grammar (compound words, punctuation, initial
+capitals, abbreviations, numbers, sentence structure) are in this domain's own
+skill — read [`../../finnish-language/SKILL.md`](../../finnish-language/SKILL.md)
+when you do a thorough language check. This file collects only what is
+particular to legal text, or particularly prone to error in it.
+
+**The rules, word lists and examples below are Finnish and stay Finnish.** They
+describe how Finnish is written; translating an example would destroy it.
 
 ---
 
-## 1. Juridisen kielen yhdyssanat
+## 1. Compound words in legal language
 
-Nämä kirjoitetaan **aina** yhteen (yleisimmät tekoälyn erikseen kirjoittamat):
+These are **always** written as one word (the ones the model most often splits):
 
 - oikeusturva, oikeusperuste, oikeusjärjestys, oikeuskäytäntö, oikeusvaikutus
 - hallintopäätös, hallintomenettely, hallintolainkäyttö
@@ -23,73 +26,79 @@ Nämä kirjoitetaan **aina** yhteen (yleisimmät tekoälyn erikseen kirjoittamat
 - perusoikeus, perustuslaki
 - tietosuoja, tietoturva, tietojärjestelmä
 
-Huom. partisiippi-ilmaukset yleensä erikseen: *läsnä oleva*, *voimassa oleva*
-(mutta substantiivina: *voimassaolo*).
+Note that participle expressions are usually written as two words: *läsnä
+oleva*, *voimassa oleva* (but as a noun: *voimassaolo*).
 
-## 2. Alkukirjaimet juridiikassa
+## 2. Initial capitals in law
 
-- **Lakien nimet aina pienellä**: kuntalaki, työsopimuslaki, rikoslaki.
-- **Tuomioistuimet isolla erisnimenä**: Korkein oikeus, Helsingin hovioikeus;
-  **pienellä yleisnimenä**: käräjäoikeus, hallinto-oikeus.
-- **Viranomaiset isolla erisnimenä**: Verohallinto, Maahanmuuttovirasto,
-  Tietosuojavaltuutetun toimisto.
-- **EU-elimet isolla**: Euroopan parlamentti, Euroopan unionin neuvosto.
+- **The names of acts always take a lower-case initial**: kuntalaki,
+  työsopimuslaki, rikoslaki.
+- **Courts take a capital as proper names**: Korkein oikeus, Helsingin
+  hovioikeus; **lower case as common nouns**: käräjäoikeus, hallinto-oikeus.
+- **Authorities take a capital as proper names**: Verohallinto,
+  Maahanmuuttovirasto, Tietosuojavaltuutetun toimisto.
+- **EU institutions take a capital**: Euroopan parlamentti, Euroopan unionin
+  neuvosto.
 
-## 3. Pykälämerkinnät ja viivat
+## 3. Section notation and dashes
 
-- §-merkki ja numero aina yhdessä, taivutus kaksoispisteellä: 7 §:n, 7 §:ssä.
-- Pykälävälit **ajatusviivalla**: 2–4 § (ei yhdysmerkillä "2-4 §").
-- Järjestysnumeron perässä **ei pistettä** säädöstekstissä: "2 luku".
-- Säädösnumero suluissa ensimaininnalla: kuntalain (410/2015) 7 §:ssä.
-- Selittävä lisäys: "toimielin (jäljempänä lautakunta)".
+- The § symbol and the number always together, inflected with a colon: 7 §:n,
+  7 §:ssä.
+- Ranges of sections take **an en dash**: 2–4 § (not a hyphen, "2-4 §").
+- **No full stop** after an ordinal in statutory text: "2 luku".
+- The statute number in brackets on first mention: kuntalain (410/2015) 7 §:ssä.
+- An explanatory addition: "toimielin (jäljempänä lautakunta)".
 
-## 4. Numerot, päivämäärät ja lyhenteet tekstilajeittain
+## 4. Numbers, dates and abbreviations by text type
 
-| Asia | Säädösteksti | HE:n perustelut, sopimukset, muistiot |
+| Item | Säädösteksti | HE:n perustelut, sopimukset, muistiot |
 |---|---|---|
-| Luvut 1–10 | aina kirjaimin | kirjaimin juoksevassa tekstissä, numerot tarkoissa arvoissa |
-| Päivämäärä | "18 päivänä lokakuuta 2024" | 18.10.2024 |
-| Lyhenteet | ei käytetä (ks. `legal-language.md`) | sallittu, kun selitetty ensimaininnalla |
+| The numbers 1–10 | always in words | in words in running text, in figures for exact values |
+| Date | "18 päivänä lokakuuta 2024" | 18.10.2024 |
+| Abbreviations | not used (see `legal-language.md`) | permitted once explained on first mention |
 
-Kaikissa tekstilajeissa: tuhaterotin välilyönti (10 000), desimaalierotin
-pilkku (3,5 %), lyhenteiden taivutus kaksoispisteellä (EU:n, KKO:ssa).
+In every text type: a space as the thousands separator (10 000), a comma as the
+decimal separator (3,5 %), abbreviations inflected with a colon (EU:n, KKO:ssa).
 
-## 5. Passiivi ja vastuun yksilöinti
+## 5. The passive and identifying who is responsible
 
-Lakikielessä passiivi on tavallinen ja neutraali. Käytä **aktiivia, kun
-tekijä ja vastuu pitää yksilöidä** — sopimuksissa ja päätöksissä epäselvä
-tekijä on oikeudellinen riski, ei vain tyyliseikka: "Toimittaja vastaa..."
-eikä "Virheistä vastataan...". (Ks. `legal-language.md`.)
+In legal Finnish the passive is ordinary and neutral. Use **the active when the
+actor and the responsibility have to be identified** — in contracts and
+decisions an unclear actor is a legal risk, not merely a matter of style:
+"Toimittaja vastaa..." and not "Virheistä vastataan...". (See
+`legal-language.md`.)
 
-## 6. Tekoälyn tyypilliset virheet juridisessa suomessa
+## 6. The model's typical mistakes in legal Finnish
 
-- **Yhdyssanavirheet**: "hallinto päätös" → hallintopäätös.
-- **Anglismit**: implementoida → toteuttaa; adressoida → käsitellä, puuttua;
+- **Compound-word errors**: "hallinto päätös" → hallintopäätös.
+- **Anglicisms**: implementoida → toteuttaa; adressoida → käsitellä, puuttua;
   fasilitoida → mahdollistaa, edistää.
-- **Mahtipontisuus ja täyteteksti**: "Yhteenvetona voidaan todeta..." -johdattelut,
-  geneeriset loppukappaleet, saman asian toisto. Juridinen tyyli on asiallinen,
-  tiivis ja neutraali.
-- **Liian pitkät virkkeet** — yksi normi tai ehto virkettä kohden on hyvä lähtökohta.
-- **Liiallinen passiivi** — ks. kohta 5.
+- **Grandiosity and filler**: lead-ins of the "Yhteenvetona voidaan todeta..."
+  kind, generic closing paragraphs, repetition of the same point. Legal style is
+  matter-of-fact, terse and neutral.
+- **Sentences that are too long** — one norm or one condition per sentence is a
+  good starting point.
+- **Excessive use of the passive** — see item 5.
 
-## 7. Oikolukujärjestys juridiselle tekstille
+## 7. The order of proofreading for a legal text
 
-1. **Yhdyssanat** — erityisesti kohdan 1 lista.
-2. **Pykälämerkinnät** — §-taivutukset, ajatusviivat, säädösnumerot (kohta 3).
-3. **Pilkutus** — sivulauseet (että, jos, kun, joka) ja päälauseiden väli;
-   ei Oxford-pilkkua.
-4. **Alkukirjaimet** — kohta 2.
-5. **Numerot ja lyhenteet** — tekstilajin mukaan (kohta 4).
-6. **Tyyli** — anglismit, mahtipontisuus, virkepituus, passiivi.
+1. **Compound words** — particularly the list in item 1.
+2. **Section notation** — the § inflections, the en dashes, the statute numbers
+   (item 3).
+3. **Punctuation** — subordinate clauses (että, jos, kun, joka) and the boundary
+   between main clauses; no Oxford comma.
+4. **Initial capitals** — item 2.
+5. **Numbers and abbreviations** — according to the text type (item 4).
+6. **Style** — anglicisms, grandiosity, sentence length, the passive.
 
-Perusteellinen tarkistus ja säännöt yksityiskohtineen:
+A thorough check and the rules in detail:
 [`../../finnish-language/SKILL.md`](../../finnish-language/SKILL.md).
 
-## 8. Viitteet
+## 8. References
 
 - Kielitoimiston ohjepankki: https://kielitoimistonohjepankki.fi/
 - Kielitoimiston sanakirja: https://www.kielitoimistonsanakirja.fi/
 - Iso suomen kielioppi: https://kaino.kotus.fi/visk/etusivu.php
 
-Epäselvissä tapauksissa tarkista kirjoitusasu ja taivutus Kielitoimiston
-sanakirjasta.
+Where a case is unclear, check the spelling and the inflection in
+Kielitoimiston sanakirja.
