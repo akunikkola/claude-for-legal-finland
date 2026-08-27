@@ -1,24 +1,37 @@
 <!doctype html>
 <!--
-  OG-jakokuvien lähde (og-image.png ja og-image-en.png).
+  Source for the OG share cards (og-image-en.png and og-image.png).
 
-  Kun tilastot muuttuvat (plugarit, skillit, agentit, säädösrekisteri):
-  1. Päivitä alla olevan <script>-lohkon stats-taulukot (FI + EN).
-  2. Renderöi molemmat kuvat headless-Chromella repojuuresta:
+  English is the default landing page, so the EN card is the default render here too;
+  the Finnish card is rendered from the #fi fragment.
 
+  When the stats change (domains, skills, subagents, statute registry):
+  1. Update the stats tables in the <script> block below (EN + FI).
+  2. Render both images with headless Chrome or Edge from the repository root:
+
+     # macOS / Linux (Chrome)
      CHROME='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
      "$CHROME" --headless --disable-gpu --window-size=1200,630 --hide-scrollbars \
-       --virtual-time-budget=8000 --screenshot=docs/og-image.png \
+       --virtual-time-budget=8000 --screenshot=docs/og-image-en.png \
        "file://$PWD/docs/og-source.html"
      "$CHROME" --headless --disable-gpu --window-size=1200,630 --hide-scrollbars \
-       --virtual-time-budget=8000 --screenshot=docs/og-image-en.png \
-       "file://$PWD/docs/og-source.html#en"
+       --virtual-time-budget=8000 --screenshot=docs/og-image.png \
+       "file://$PWD/docs/og-source.html#fi"
 
-  3. Päivitä samat luvut myös docs/index.html- ja docs/en/index.html-sivuille
-     (statistiikkalohko, og:image:alt ja "Lähteet ja ylläpito" -lista).
+     # Windows (Edge), from the repository root in PowerShell
+     $EDGE = 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
+     & $EDGE --headless --disable-gpu --window-size=1200,630 --hide-scrollbars `
+       --virtual-time-budget=8000 --screenshot="$PWD\docs\og-image-en.png" `
+       "file:///$($PWD -replace '\\','/')/docs/og-source.html"
+     & $EDGE --headless --disable-gpu --window-size=1200,630 --hide-scrollbars `
+       --virtual-time-budget=8000 --screenshot="$PWD\docs\og-image.png" `
+       "file:///$($PWD -replace '\\','/')/docs/og-source.html#fi"
 
-  Fontit ladataan Google Fontsista (Inter + JetBrains Mono) — renderöinti
-  vaatii verkkoyhteyden.
+  3. Update the same figures on docs/index.html (EN) and docs/fi/index.html (FI):
+     the stats block, og:image:alt and the "Sources & upkeep" list.
+
+  Fonts are loaded from Google Fonts (Inter + JetBrains Mono), so rendering needs
+  a network connection.
 -->
 <html>
 <head>
@@ -79,7 +92,7 @@
   <div class="card">
     <div class="head">
       <svg class="gh" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-      <div class="repo"><span class="owner">akunikkola/</span>agent-skills-for-finnish-law</div>
+      <div class="repo"><span class="owner">ragmha/</span>agent-skills-for-finnish-law</div>
     </div>
     <div class="badge">§</div>
     <div class="headline" id="headline"></div>
@@ -87,13 +100,13 @@
     <div class="stats" id="stats"></div>
   </div>
   <script>
-    const fi = location.hash !== '#en';
+    const fi = location.hash === '#fi';
     document.getElementById('headline').innerHTML = fi
-      ? 'Suomalainen vastine Anthropicin<br><span class="hl">”Claude for Legal”</span> -lisäosalle.'
-      : 'A Finnish counterpart to Anthropic’s<br><span class="hl">“Claude for Legal”</span>.';
+      ? 'Agent Skills -skillit<br><span class="hl">suomalaiseen oikeustyöhön</span>.'
+      : 'Agent Skills for<br><span class="hl">Finnish legal work</span>.';
     const stats = fi
-      ? [['24','plugaria'],['78','skilliä'],['6','agenttia'],['105','säädöstä']]
-      : [['24','plugins'],['78','skills'],['6','agents'],['105','statutes']];
+      ? [['24','oikeudenalaa'],['78','skilliä'],['6','aliagenttia'],['105','säädöstä']]
+      : [['24','domains'],['78','skills'],['6','subagents'],['105','statutes']];
     document.getElementById('stats').innerHTML =
       stats.map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
   </script>

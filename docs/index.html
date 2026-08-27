@@ -1,30 +1,69 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claude for Legal Finland — 24 plugaria suomalaiseen oikeustyöhön</title>
-<meta name="description" content="Suomalainen vastine Anthropicin Claude for Legal -lisäosalle: avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. Reaaliaikainen lähdetarkastus, kolmiportainen varmuusmerkintä ja human-in-the-loop. 24 plugaria, 78 skilliä.">
-<!-- Open Graph / sosiaalisen median jakokortti -->
+<title>Agent Skills for Finnish Law — 24 practice-area domains, 78 skills</title>
+<meta name="description" content="Open-source Agent Skills for Finnish legal work: 24 practice-area domains, 78 skills, 6 subagents and 105 statutes verified against Finlex. Vendor-neutral — works in any harness that reads the Agent Skills format.">
+<!-- Open Graph / social share card -->
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fi_FI">
-<meta property="og:locale:alternate" content="en_US">
-<meta property="og:site_name" content="Claude for Legal Finland">
-<meta property="og:url" content="https://akunikkola.github.io/agent-skills-for-finnish-law/">
-<meta property="og:title" content="Claude for Legal Finland — suomalainen vastine Claude for Legalille">
-<meta property="og:description" content="Avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. Reaaliaikainen lähdetarkastus, kolmiportainen varmuusmerkintä ja human-in-the-loop. 24 plugaria, 78 skilliä.">
-<meta property="og:image" content="https://akunikkola.github.io/agent-skills-for-finnish-law/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:site_name" content="Agent Skills for Finnish Law">
+<meta property="og:url" content="https://ragmha.github.io/agent-skills-for-finnish-law/">
+<meta property="og:title" content="Agent Skills for Finnish Law">
+<meta property="og:description" content="Open-source Agent Skills for Finnish legal work: 24 practice-area domains, 78 skills, 6 subagents and 105 statutes verified against Finlex. Works in any harness that reads the Agent Skills format.">
+<meta property="og:image" content="https://ragmha.github.io/agent-skills-for-finnish-law/og-image-en.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Claude for Legal Finland — 24 plugaria, 78 skilliä, 6 agenttia, 105 varmistettua säädöstä">
+<meta property="og:image:alt" content="Agent Skills for Finnish Law — 24 domains, 78 skills, 6 subagents, 105 verified statutes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Claude for Legal Finland — suomalainen vastine Claude for Legalille">
-<meta name="twitter:description" content="Avoimen lähdekoodin skillit, agentit ja suojaukset oikeudellisen alan ammattilaiselle. 24 plugaria, 78 skilliä, kaikki säädökset varmistettu Finlexistä.">
-<meta name="twitter:image" content="https://akunikkola.github.io/agent-skills-for-finnish-law/og-image.png">
-<link rel="alternate" hreflang="fi" href="https://akunikkola.github.io/agent-skills-for-finnish-law/">
-<link rel="alternate" hreflang="en" href="https://akunikkola.github.io/agent-skills-for-finnish-law/en/">
-<link rel="alternate" hreflang="x-default" href="https://akunikkola.github.io/agent-skills-for-finnish-law/">
+<meta name="twitter:title" content="Agent Skills for Finnish Law">
+<meta name="twitter:description" content="Open-source Agent Skills for Finnish legal work: 24 domains, 78 skills, 6 subagents, 105 statutes verified against Finlex.">
+<meta name="twitter:image" content="https://ragmha.github.io/agent-skills-for-finnish-law/og-image-en.png">
+<link rel="canonical" href="https://ragmha.github.io/agent-skills-for-finnish-law/">
+<link rel="alternate" hreflang="en" href="https://ragmha.github.io/agent-skills-for-finnish-law/">
+<link rel="alternate" hreflang="fi" href="https://ragmha.github.io/agent-skills-for-finnish-law/fi/">
+<link rel="alternate" hreflang="x-default" href="https://ragmha.github.io/agent-skills-for-finnish-law/">
+<script>
+/* Language routing — progressive enhancement over the plain links in the toggle.
+   Rules, in order:
+     1. An explicit choice (?lang= from the toggle, or one stored earlier) always wins and is
+        never overridden by browser-language detection.
+     2. With no stored choice, a Finnish-language browser is sent to the Finnish page.
+     3. Detection only ever sends EN -> FI, never FI -> EN, so a shared /fi/ link is never
+        bounced away and no redirect loop is possible.
+   With JavaScript disabled none of this runs and the toggle is still a working link. */
+(function () {
+  var KEY = 'aslf-lang', PAGE = 'en', ALT = 'fi', ALT_URL = 'fi/';
+  function store(v) { try { window.localStorage.setItem(KEY, v); } catch (e) {} }
+  function read() { try { return window.localStorage.getItem(KEY); } catch (e) { return null; } }
+
+  var params = new URLSearchParams(window.location.search);
+  var explicit = params.get('lang');
+
+  if (explicit === 'en' || explicit === 'fi') {
+    store(explicit);
+    params.delete('lang');
+    var q = params.toString();
+    try {
+      window.history.replaceState(null, '', window.location.pathname + (q ? '?' + q : '') + window.location.hash);
+    } catch (e) {}
+    if (explicit === ALT) { window.location.replace(ALT_URL); }
+    return;
+  }
+
+  var chosen = read();
+  if (chosen === PAGE) { return; }
+  if (chosen === ALT) { window.location.replace(ALT_URL); return; }
+
+  var langs = navigator.languages || [navigator.language || ''];
+  for (var i = 0; i < langs.length; i++) {
+    if (/^fi\b/i.test(langs[i] || '')) { window.location.replace(ALT_URL); return; }
+  }
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -71,7 +110,20 @@
   .langtoggle a,.langtoggle span{display:block;padding:6px 13px;border-radius:999px;letter-spacing:.05em;line-height:1}
   .langtoggle .on{background:var(--lime);color:var(--ink)}
   .langtoggle a{color:var(--ink-soft);transition:background .15s ease,color .15s ease}
-  .langtoggle a:hover{background:var(--lime-soft);color:var(--ink)}
+  .langtoggle a:hover,.langtoggle a:focus-visible{background:var(--lime-soft);color:var(--ink);outline:none}
+
+  /* Unofficial-translation banner */
+  .xlate{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ink);
+    border-radius:12px;padding:16px 20px;margin-bottom:18px;box-shadow:var(--shadow-s);
+    font-size:13.5px;color:var(--ink-soft);line-height:1.55}
+  .xlate .hd{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-family:var(--mono);
+    font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+  .xlate .hd .ic{color:var(--ink)}
+  .xlate b{color:var(--ink);font-weight:600}
+  .xlate code{font-family:var(--mono);font-size:12px;background:var(--card-2);
+    border:1px solid var(--line-2);padding:1px 5px;border-radius:5px;color:var(--ink)}
+  .xlate a{border-bottom:1px solid var(--lime);color:var(--ink);font-weight:500}
+  .xlate a:hover{background:var(--lime-soft)}
 
   /* ── Hero / repo card ── */
   header{padding:40px 0 18px}
@@ -82,19 +134,19 @@
   .rc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
   .repopath{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .repopath .gh{width:30px;height:30px;color:var(--ink)}
-  .repopath h1{font-size:clamp(25px,4.3vw,40px);font-weight:500;letter-spacing:-.02em;line-height:1.05}
+  .repopath h1{font-size:clamp(22px,3.9vw,36px);font-weight:500;letter-spacing:-.02em;line-height:1.05}
   .repopath h1 .owner{color:var(--ink-faint);font-weight:400}
   .repopath h1 .name{color:var(--ink);font-weight:700}
   .glyph{width:64px;height:64px;border-radius:18px;background:var(--lime);flex:none;
     display:flex;align-items:center;justify-content:center;
-    box-shadow:0 6px 16px -4px rgba(169,221,43,.6);transform:rotate(0deg)}
+    box-shadow:0 6px 16px -4px rgba(169,221,43,.6)}
   .glyph span{font-size:38px;font-weight:700;color:var(--ink);line-height:1}
   .tagline{margin-top:26px;font-size:clamp(22px,3vw,30px);font-weight:600;
-    letter-spacing:-.015em;line-height:1.18;max-width:none}
+    letter-spacing:-.015em;line-height:1.18}
   .tagline .brk{display:inline}
   @media(max-width:560px){.tagline .brk{display:none}}
   .hl{background:linear-gradient(transparent 62%, var(--lime) 62%);padding:0 .06em}
-  .lead{margin-top:14px;font-size:17px;color:var(--ink-soft);max-width:56ch}
+  .lead{margin-top:14px;font-size:17px;color:var(--ink-soft);max-width:60ch}
   .metarow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
   .chip{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.02em;
     padding:5px 11px;border-radius:999px;background:var(--lime);color:var(--ink)}
@@ -124,6 +176,11 @@
     color:var(--ink);background:var(--lime);padding:4px 10px;border-radius:7px}
   .head h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.015em}
   .head .rule{flex:1;height:1px;background:var(--line)}
+  .intro{font-size:14.5px;color:var(--ink-soft);max-width:74ch;margin:-14px 0 22px;line-height:1.55}
+  .intro code{font-family:var(--mono);font-size:12.5px;background:var(--card-2);
+    border:1px solid var(--line-2);padding:1px 6px;border-radius:5px;color:var(--ink)}
+  .intro a{border-bottom:1px solid var(--lime);color:var(--ink);font-weight:500}
+  .intro a:hover{background:var(--lime-soft)}
 
   /* Mechanisms */
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
@@ -136,7 +193,7 @@
   .mech h3{font-size:16.5px;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
   .mech p{font-size:14px;color:var(--ink-soft);line-height:1.5}
 
-  /* Plugins */
+  /* Domains */
   .group{margin-bottom:28px}
   .group-label{display:flex;align-items:center;gap:9px;margin-bottom:13px}
   .group-label .dot{width:8px;height:8px;border-radius:3px;background:var(--lime-deep)}
@@ -144,18 +201,18 @@
     text-transform:uppercase;color:var(--ink-soft)}
   .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px 18px;
-    box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
-    position:relative}
+    box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
   .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:var(--lime-deep)}
-  .card .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:7px}
-  .card h4{font-size:17px;font-weight:700;letter-spacing:-.01em}
+  .card .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:2px}
+  .card h4{font-size:16.5px;font-weight:700;letter-spacing:-.01em}
   .card .meta{font-family:var(--mono);font-size:11px;color:var(--ink-faint);white-space:nowrap;flex:none}
+  .card .slug{font-family:var(--mono);font-size:11.5px;color:#5d7a16;display:block;margin-bottom:9px;word-break:break-all}
   .card p{font-size:13.5px;color:var(--ink-soft);line-height:1.48}
   .laws{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
   .laws span{font-family:var(--mono);font-size:11px;color:#5d7a16;background:var(--lime-soft);
     padding:2px 8px;border-radius:6px}
 
-  /* Agents */
+  /* Subagents */
   .agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:13px}
   .agent{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;
     box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
@@ -165,8 +222,8 @@
     display:flex;align-items:center;justify-content:center;flex:none}
   .agent .ico .ic{color:var(--lime);width:19px;height:19px}
   .agent .nm b{font-size:16px;font-weight:700;letter-spacing:-.01em}
-  .agent .nm span{display:block;font-size:11px;font-family:var(--mono);letter-spacing:.05em;
-    text-transform:uppercase;color:var(--ink-faint);margin-top:1px}
+  .agent .nm span{display:block;font-size:11px;font-family:var(--mono);letter-spacing:.02em;
+    color:var(--ink-faint);margin-top:2px;word-break:break-all}
   .agent p{font-size:13.5px;color:var(--ink-soft);line-height:1.5}
 
   /* Flow */
@@ -174,41 +231,33 @@
   @media(max-width:880px){.flow{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:460px){.flow{grid-template-columns:1fr}}
   .step{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 15px;
-    box-shadow:var(--shadow-s);position:relative}
+    box-shadow:var(--shadow-s)}
   .step .n{width:24px;height:24px;border-radius:8px;background:var(--lime);color:var(--ink);
     font-family:var(--mono);font-size:12px;font-weight:700;display:flex;align-items:center;
     justify-content:center;margin-bottom:11px}
   .step b{font-size:14.5px;font-weight:600;display:block;letter-spacing:-.01em}
-  .step span{font-size:12px;color:var(--ink-soft);display:block;margin-top:3px;line-height:1.4}
+  .step span{font-size:12px;color:var(--ink-soft);display:block;margin-top:3px;line-height:1.4;
+    font-family:var(--mono);word-break:break-all}
   .step.human{background:var(--ink);border-color:var(--ink)}
-  .step.human b{color:#fff}.step.human span{color:#b9c1cb}
+  .step.human b{color:#fff}.step.human span{color:#b9c1cb;font-family:var(--sans)}
   .step.human .n{background:var(--lime)}
 
   /* Footer */
   footer{padding:42px 0 64px}
+  .harness{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
   .install{background:var(--ink);border-radius:var(--r);padding:22px 24px;overflow-x:auto;
-    box-shadow:var(--shadow-m);position:relative}
+    box-shadow:var(--shadow-m)}
   .install .label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
     color:#8b95a1;margin-bottom:12px;display:flex;align-items:center;gap:8px}
   .install .label .dotrow{display:flex;gap:5px}
   .install .label i{width:9px;height:9px;border-radius:50%;background:#3a4250;display:block}
   .install .label i:first-child{background:var(--lime)}
-  .install pre{font-family:var(--mono);font-size:13.5px;color:#e8ecf2;line-height:1.9;white-space:pre}
+  .install pre{font-family:var(--mono);font-size:12.5px;color:#e8ecf2;line-height:1.9;
+    white-space:pre-wrap;overflow-wrap:anywhere}
   .install .c{color:var(--lime)}
   .install .muted{color:#6b7480}
-  .walk{margin-top:18px;display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:center;
-    background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow-s)}
-  @media(max-width:720px){.walk{grid-template-columns:1fr;gap:18px}}
-  .walk-video{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--ink)}
-  .walk-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  .walk-steps h3{font-size:15.5px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:8px}
-  .walk-steps h3 .ic{color:var(--lime-deep)}
-  .walk-steps ol{list-style:none;display:flex;flex-direction:column;gap:9px;counter-reset:w}
-  .walk-steps li{counter-increment:w;font-size:13.5px;color:var(--ink-soft);line-height:1.45;display:flex;gap:11px;align-items:flex-start}
-  .walk-steps li::before{content:counter(w);flex:none;width:22px;height:22px;border-radius:7px;background:var(--lime);
-    color:var(--ink);font-family:var(--mono);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
-  .walk-steps li b{color:var(--ink);font-weight:600}
-  .walk-steps code{font-family:var(--mono);font-size:11.5px;background:var(--card-2);border:1px solid var(--line-2);padding:1px 6px;border-radius:5px;color:var(--ink);word-break:break-all}
+  .install p{font-size:12.5px;color:#9aa4b0;line-height:1.55;margin-top:12px}
+  .install p code{font-family:var(--mono);font-size:11.5px;color:#e8ecf2;word-break:break-all}
   .conn{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
     padding:20px 22px;box-shadow:var(--shadow-s)}
   .conn-title{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;
@@ -218,6 +267,7 @@
   .conn-item{padding-left:13px;border-left:2px solid var(--lime);display:flex;flex-direction:column;gap:3px}
   .conn-item b{font-size:14px;font-weight:700}
   .conn-item span{font-size:12.5px;color:var(--ink-soft);line-height:1.45}
+  .conn-item code{font-family:var(--mono);font-size:11.5px;color:var(--ink)}
   .foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
   @media(max-width:720px){.foot-grid{grid-template-columns:1fr}}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;
@@ -226,17 +276,17 @@
   .panel h3 .ic{color:var(--lime-deep)}
   .panel p{font-size:13.5px;color:var(--ink-soft);line-height:1.55}
   .panel code{font-family:var(--mono);font-size:12px;background:var(--card-2);border:1px solid var(--line-2);
-    padding:1px 6px;border-radius:5px;color:var(--ink)}
+    padding:1px 6px;border-radius:5px;color:var(--ink);word-break:break-all}
   .panel ul{list-style:none;display:flex;flex-direction:column;gap:8px}
   .panel li{font-size:13.5px;color:var(--ink-soft);display:flex;gap:9px;align-items:flex-start}
-  .panel li .ic{color:var(--lime-deep);margin-top:2px}
+  .panel li .ic{color:var(--lime-deep);margin-top:3px;flex:none}
   .panel a{border-bottom:1px solid var(--lime);font-weight:500}
   .panel a:hover{background:var(--lime-soft)}
   .notice{margin-top:18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--lime-deep);
     border-radius:12px;padding:18px 20px;font-size:13.5px;color:var(--ink-soft);line-height:1.55}
   .notice b{color:var(--ink);font-weight:600}
   .notice p+p{margin-top:12px}
-  .notice a{color:var(--ink);font-family:var(--mono);font-size:12.5px;border-bottom:1px solid var(--lime)}
+  .notice a{color:var(--ink);font-family:var(--mono);font-size:12.5px;border-bottom:1px solid var(--lime);word-break:break-all}
   .notice a:hover{background:var(--lime-soft)}
   .join{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:22px;
     flex-wrap:wrap;background:var(--lime-soft);border:1px solid #d7ec9a;border-radius:var(--r);padding:24px 26px}
@@ -247,6 +297,7 @@
   .btn.dark:hover{background:#23272e}
   .base{margin-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
     font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--ink-faint)}
+  .base a{border-bottom:1px solid var(--lime);color:var(--ink-soft)}
 
   .fade{opacity:0;transform:translateY(12px);animation:fade .6s cubic-bezier(.2,.7,.2,1) forwards}
   @keyframes fade{to{opacity:1;transform:none}}
@@ -259,54 +310,75 @@
 <header>
   <div class="wrap">
     <div class="langbar">
-      <div class="langtoggle"><span class="on">FI</span><a href="en/" hreflang="en">EN</a></div>
+      <nav class="langtoggle" aria-label="Language">
+        <span class="on" aria-current="page">EN</span>
+        <a href="fi/?lang=fi" hreflang="fi" lang="fi" rel="alternate" data-lang="fi">FI</a>
+      </nav>
     </div>
+
+    <div class="xlate">
+      <div class="hd">
+        <svg class="ic ic-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9s1.2-6.5 3.6-9z"/></svg>
+        Unofficial translation
+      </div>
+      <p>This English text is a <b>translation of Finnish legal material, provided for comprehension
+        only — the Finnish original governs.</b> Nothing here is legal advice. Statute names, statute
+        numbers (<code>55/2001</code>), court abbreviations (<code>KKO</code>, <code>KHO</code>,
+        <code>MAO</code>) and case identifiers (<code>KKO:2019:42</code>) are given in Finnish because
+        that is what is actually citable. Verify every reference against
+        <a href="https://www.finlex.fi/">Finlex</a> or oik.ai before relying on it. The pages are also
+        available <a href="fi/?lang=fi" hreflang="fi" lang="fi">suomeksi</a>.</p>
+    </div>
+
     <div class="repocard fade">
       <div class="rc-top">
         <div class="repopath">
           <svg class="gh" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          <h1><span class="owner">akunikkola/</span><span class="name">agent-skills-for-finnish-law</span></h1>
+          <h1><span class="owner">ragmha/</span><span class="name">agent-skills-for-finnish-law</span></h1>
         </div>
         <div class="glyph" aria-hidden="true"><span>§</span></div>
       </div>
 
-      <p class="tagline">Suomalainen vastine Anthropicin <br class="brk"><span class="hl">”Claude for Legal”</span> -lisäosalle.</p>
-      <p class="lead">Avoimen lähdekoodin skillit, agentit ja suojaukset, jotka tekevät Claudesta
-        tehokkaamman ja paremman apurin suomalaiselle oikeudellisen alan ammattilaiselle. Kaikki
-        ominaisuudet on rakennettu reaaliaikaisen lähdetarkastuksen ehdoilla, kolmiportaisella
-        varmuusmerkinnällä ja ihmisen tarkistusportilla (ns. ”human-in-the-loop”).</p>
+      <p class="tagline">Agent Skills for <span class="hl">Finnish legal work</span>, <br class="brk">on the terms of Finnish law.</p>
+      <p class="lead">Twenty-four practice-area domains of open-source skills, subagents and guardrails
+        for legal work in Finland — legal language, statute citation and real legal sources
+        (Finlex, oik.ai, KKO/KHO, HE). Every feature is built on checking the source rather than
+        recalling it, three-tier certainty labelling and a human review gate. Vendor-neutral: each
+        domain is a self-contained bundle that works in any harness reading the Agent Skills format.</p>
 
       <div class="metarow">
         <span class="chip">v1.2.0</span>
         <span class="chip ghost">MIT</span>
-        <span class="chip ghost">Finlex · oik.ai · laki.ai · KKO/KHO</span>
+        <span class="chip ghost">Agent Skills spec</span>
+        <span class="chip ghost">AGENTS.md</span>
+        <span class="chip ghost">Finlex · oik.ai · KKO/KHO · HE</span>
       </div>
 
       <div class="stats">
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></div>
-          <b>24</b><span>plugaria</span>
+          <b>24</b><span>practice-area domains</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18 14l.7 1.9L20.6 17l-1.9.7L18 19.6l-.7-1.9L15.4 17l1.9-.7z"/></svg></div>
-          <b>78</b><span>skilliä</span>
+          <b>78</b><span>skills</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="2.5"/><path d="M12 8V4.5"/><circle cx="12" cy="4" r="1.2"/><path d="M9.2 13h.01M14.8 13h.01"/></svg></div>
-          <b>6</b><span>agenttia</span>
+          <b>6</b><span>subagents</span>
         </div>
         <div class="stat">
           <div class="top"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M8.7 12l2.2 2.2 4.4-4.4"/></svg></div>
-          <b>105</b><span>säädöstä varmistettu</span>
+          <b>105</b><span>statutes verified</span>
         </div>
       </div>
 
       <div class="cta">
-        <a class="btn primary" href="https://github.com/akunikkola/agent-skills-for-finnish-law">
+        <a class="btn primary" href="https://github.com/ragmha/agent-skills-for-finnish-law">
           <svg class="ic ic-sm" viewBox="0 0 16 16" fill="currentColor" stroke="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          Avaa GitHubissa
+          Open on GitHub
         </a>
-        <a class="btn" href="#asennus">Asennus
+        <a class="btn" href="#install">Install
           <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </a>
       </div>
@@ -314,236 +386,263 @@
   </div>
 </header>
 
-<!-- ── MEKANISMIT ── -->
+<!-- ── MECHANISMS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">01</span><h2>Suoja syntyy mekanismeista</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">01</span><h2>Protection comes from mechanisms</h2><span class="rule"></span></div>
     <div class="grid4">
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H13l3 3v11.5c0 .8-.7 1.5-1.5 1.5h-9C4.7 20 4 19.3 4 18.5z"/><path d="M8 11h6M8 14.5h6M8 7.5h3"/></svg></div>
-        <h3>Lähteestä, ei muistista</h3>
-        <p>Säädökset ja oikeuskäytäntö haetaan Finlexistä sekä oikeuslähde-MCP:stä (oik.ai tai laki.ai). Jokainen repon säädösnumero on varmistettu lähteestä ennen julkaisua.</p>
+        <h3>From the source, not from memory</h3>
+        <p>Statutes and case law are fetched from Finlex and a legal-source MCP (oik.ai or laki.ai). Every statute number in the collection is verified against the source before release.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h10M4 12h10M4 18h6"/><path d="M17.5 16.5l2 2 3-3.5"/></svg></div>
-        <h3>Kolmiportainen varmuus</h3>
-        <p>Varmistettu · Tarkistettava · Älä käytä — jokainen viittaus ja laskelma kantaa varmuusmerkintänsä omalla rivillään.</p>
+        <h3>Three-tier certainty</h3>
+        <p>Verified · To be checked · Do not use. Every citation and every calculation carries its certainty label next to the number it supports, not in a blanket caveat at the end.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg></div>
-        <h3>Negatiivirajaus</h3>
-        <p>Jokainen skill kertoo, mitä se EI tee: ei kartelliapua, ei todisteiden hävitystä, ei keksittyjä pykäliä, ei rikoksen peittelyä.</p>
+        <h3>Negative scoping</h3>
+        <p>Every skill states what it does NOT do: no cartel help, no destroying evidence, no invented statutes, no covering up crime.</p>
       </div>
       <div class="mech">
         <div class="badge"><svg class="ic" viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.3"/><path d="M4 19c.5-3.3 2.9-5 6-5"/><path d="M14.5 15.5l2 2 4-4"/></svg></div>
-        <h3>Ihmisen tarkistusportti</h3>
-        <p>Jokainen tuotos on luonnos. Pätevä ihminen tarkistaa, päättää ja kantaa vastuun — työkalu nopeuttaa tarkistusta, ei korvaa sitä.</p>
+        <h3>Human review gate</h3>
+        <p>Every output is a draft. A qualified human checks, decides and bears responsibility — the tool speeds up review, it does not replace it.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── PLUGARIT ── -->
+<!-- ── DOMAINS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">02</span><h2>Plugarit oikeudenaloittain</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">02</span><h2>Domains by practice area</h2><span class="rule"></span></div>
+    <p class="intro">Each domain is a self-contained bundle at <code>&lt;domain&gt;/skills/*</code>, and the
+      monospace line on each card is the directory name you install or copy. Statute numbers shown
+      here are drawn from the 105 entries verified against Finlex in
+      <code>tracking/statutes.json</code>; they stay in Finnish because the Finnish identifier is what
+      is citable.</p>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Perusta — asenna aina</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Foundation — install this first</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>juristi</h4><span class="meta">9 skilliä · 2 agenttia</span></div>
-          <p>Lakikieli, oikeustutkimus, asiakirjan tarkistus, toimeksiannon haltuunotto, suomen kieli, käytäntöprofiili sekä selkokielistäjä ja oikeustapausten referointi.</p>
-          <div class="laws"><span>Finlex</span><span>oik.ai</span><span>150/1930</span></div></div>
+        <div class="card"><div class="row"><h4>Legal core</h4><span class="meta">9 skills · 2 subagents</span></div>
+          <code class="slug">legal-core</code>
+          <p>The cross-cutting base the practice-area domains lean on: legal writing, legal research, document review, engagement intake, Finnish-language checks, a house practice profile, plain-language explanation, case summarisation and tabular review.</p>
+          <div class="laws"><span>Finlex</span><span>oik.ai</span><span>150/1930</span><span>410/2015</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Liikejuridiikka</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Business law</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>sopimukset</h4><span class="meta">2 + agentti</span></div><p>Laatiminen lausekekirjastolla ja riskikäynti vihreä/keltainen/punainen; poikkeamat talon linjasta.</p><div class="laws"><span>OikTL 228/1929</span><span>KSL 38/1978</span></div></div>
-        <div class="card"><div class="row"><h4>yhtiöoikeus</h4><span class="meta">3 + agentti</span></div><p>Hallinto ja varojenjaon kaksoistesti, osakassopimukset, yritysjärjestelyt ja due diligence.</p><div class="laws"><span>OYL 624/2006</span><span>564/2023</span></div></div>
-        <div class="card"><div class="row"><h4>kilpailuoikeus</h4><span class="meta">3 skilliä</span></div><p>Kilpailunrajoitukset, yrityskauppavalvonta, compliance ja dawn raid -valmius.</p><div class="laws"><span>948/2011</span><span>SEUT 101–102</span></div></div>
-        <div class="card"><div class="row"><h4>pankki ja rahoitus</h4><span class="meta">3 skilliä</span></div><p>Rahoitussopimukset ja vakuudet, rahanpesun estäminen, arvopaperimarkkinat.</p><div class="laws"><span>622/1947</span><span>444/2017</span><span>MAR</span></div></div>
-        <div class="card"><div class="row"><h4>immateriaalioikeus</h4><span class="meta">3 skilliä</span></div><p>Tavaramerkki ja toiminimi, tekijänoikeus DSM-uudistuksineen, liikesalaisuudet.</p><div class="laws"><span>544/2019</span><span>404/1961</span><span>595/2018</span></div></div>
-        <div class="card"><div class="row"><h4>verotus</h4><span class="meta">3 skilliä</span></div><p>Verotusmenettely ja muutoksenhaku, yritysverotus, arvonlisäverotus.</p><div class="laws"><span>VML 1558/1995</span><span>EVL</span><span>AVL</span></div></div>
-        <div class="card"><div class="row"><h4>insolvenssi</h4><span class="meta">3 skilliä</span></div><p>Menettelyn valinta, konkurssi velkojan ja velallisen silmin, perintä ja ulosotto.</p><div class="laws"><span>120/2004</span><span>47/1993</span><span>705/2007</span></div></div>
+        <div class="card"><div class="row"><h4>Contracts</h4><span class="meta">2 skills · 1 subagent</span></div><code class="slug">contracts</code><p>Drafting from an annotated clause library, and clause-by-clause risk review graded green / yellow / red with flags for mandatory law and for adjustment of unfair terms.</p><div class="laws"><span>228/1929</span><span>355/1987</span><span>38/1978</span></div></div>
+        <div class="card"><div class="row"><h4>Company law</h4><span class="meta">3 skills · 1 subagent</span></div><code class="slug">company-law</code><p>Corporate governance and the two-pronged distribution test, shareholders’ agreements with a risk pass, and corporate transactions with a due-diligence checklist.</p><div class="laws"><span>624/2006</span><span>564/2023</span><span>389/1988</span></div></div>
+        <div class="card"><div class="row"><h4>Competition law</h4><span class="meta">3 skills</span></div><code class="slug">competition-law</code><p>Restrictive practices and abuse of dominance with a self-assessment framework, merger control including the standstill obligation, and compliance with dawn-raid readiness.</p><div class="laws"><span>948/2011</span><span>1077/2016</span><span>TFEU 101–102</span></div></div>
+        <div class="card"><div class="row"><h4>Banking &amp; finance</h4><span class="meta">3 skills</span></div><code class="slug">banking-and-finance</code><p>Financing agreements with covenants and collateral packages, anti-money-laundering compliance, and listed-company disclosure and insider administration.</p><div class="laws"><span>622/1947</span><span>444/2017</span><span>746/2012</span></div></div>
+        <div class="card"><div class="row"><h4>Intellectual property</h4><span class="meta">3 skills</span></div><code class="slug">intellectual-property</code><p>Trademarks and trade names with a likelihood-of-confusion assessment, copyright including the DSM reform and licensing, and trade secrets and infringement situations.</p><div class="laws"><span>544/2019</span><span>404/1961</span><span>595/2018</span></div></div>
+        <div class="card"><div class="row"><h4>Taxation</h4><span class="meta">3 skills</span></div><code class="slug">taxation</code><p>Tax procedure and appeals from rectification claim through to KHO, corporate taxation with group contributions and reorganisations, and value-added tax.</p><div class="laws"><span>1558/1995</span><span>360/1968</span><span>1501/1993</span></div></div>
+        <div class="card"><div class="row"><h4>Insolvency</h4><span class="meta">3 skills</span></div><code class="slug">insolvency</code><p>Assessing insolvency and choosing the procedure, bankruptcy proceedings from both the creditor and the debtor side, and debt collection, limitation and enforcement.</p><div class="laws"><span>120/2004</span><span>47/1993</span><span>705/2007</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Arki, perhe ja kuluttaja</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Everyday, family &amp; consumer</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>perhe- ja perintöoikeus</h4><span class="meta">4 skilliä</span></div><p>Avioehto ja ositus, lapsen huolto ja elatus, perintö, testamentti ja lakiosa sekä edunvalvonta. Lapsen etu ja turvallisuus edellä.</p><div class="laws"><span>AL 234/1929</span><span>PK 40/1965</span></div></div>
-        <div class="card"><div class="row"><h4>kuluttajaoikeus</h4><span class="meta">3 skilliä</span></div><p>Kuluttajakaupan virhevastuu, etämyynti ja peruuttaminen, kuluttajariita ja hyvä perintätapa. Pakottava kuluttajan hyväksi.</p><div class="laws"><span>KSL 38/1978</span><span>513/1999</span></div></div>
+        <div class="card"><div class="row"><h4>Family &amp; inheritance</h4><span class="meta">4 skills</span></div><code class="slug">family-and-inheritance</code><p>Marital property and its division, child status and maintenance, succession, wills and the forced share, plus guardianship and continuing powers of attorney. The child’s best interest and safety come first.</p><div class="laws"><span>234/1929</span><span>40/1965</span><span>775/2022</span><span>442/1999</span></div></div>
+        <div class="card"><div class="row"><h4>Consumer law</h4><span class="meta">3 skills</span></div><code class="slug">consumer-law</code><p>Defect liability in consumer sales, distance and off-premises selling with the right of withdrawal, and consumer disputes plus fair debt-collection practice. Mandatory in the consumer’s favour.</p><div class="laws"><span>38/1978</span><span>513/1999</span><span>8/2007</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Ihmiset ja työ</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>People &amp; work</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skilliä</span></div><p>Työsopimus, päättämisen riskiluokitus, yhteistoiminta ja muutosneuvottelut.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
-        <div class="card"><div class="row"><h4>ulkomaalaisoikeus</h4><span class="meta">3 skilliä</span></div><p>Työperusteiset luvat, työnantajan varmistusvastuu, EU- ja perheperusteinen oleskelu.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
+        <div class="card"><div class="row"><h4>Employment law</h4><span class="meta">3 skills</span></div><code class="slug">employment-law</code><p>Drafting and reviewing employment contracts, assessing both the ground and the procedure for termination, and co-operation and change negotiations. On the terms of mandatory law and collective agreements.</p><div class="laws"><span>55/2001</span><span>1333/2021</span><span>759/2004</span></div></div>
+        <div class="card"><div class="row"><h4>Immigration law</h4><span class="meta">3 skills</span></div><code class="slug">immigration-law</code><p>Work-based residence permits with availability consideration, the employer’s verification duties and sanctions, and EU and family-based residence through to citizenship.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Rikos ja riidat</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Crime &amp; disputes</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>riidanratkaisu</h4><span class="meta">4 + agentti</span></div><p>Haastehakemus, todistelu, muutoksenhaku ja vahingonkorvauksen yleiset opit.</p><div class="laws"><span>OK 4/1734</span><span>VahL 412/1974</span></div></div>
-        <div class="card"><div class="row"><h4>rikosprosessi</h4><span class="meta">3 skilliä</span></div><p>Esitutkinta ja pakkokeinot, syyte ja puolustus, asianomistajan vaatimukset.</p><div class="laws"><span>ROL 689/1997</span><span>ETL</span><span>PKL</span></div></div>
-        <div class="card"><div class="row"><h4>rikosoikeus</h4><span class="meta">3 skilliä</span></div><p>Aineellinen rikosoikeus: rikosvastuun perusteet, rikostyypit ja rangaistuksen määrääminen. Puolustuksen ja asianomistajan näkökulma.</p><div class="laws"><span>RL 39/1889</span></div></div>
+        <div class="card"><div class="row"><h4>Dispute resolution</h4><span class="meta">4 skills · 1 subagent</span></div><code class="slug">dispute-resolution</code><p>The statement of claim, planning and assessing evidence, appeal against judgment including leave to continue and leave to appeal, and the general doctrine of damages.</p><div class="laws"><span>673/2016</span><span>967/1992</span><span>412/1974</span></div></div>
+        <div class="card"><div class="row"><h4>Criminal procedure</h4><span class="meta">3 skills</span></div><code class="slug">criminal-procedure</code><p>Pre-trial investigation and coercive measures, the charge and the response, and the injured party’s claims including criminal-injuries compensation. On the terms of the presumption of innocence.</p><div class="laws"><span>689/1997</span><span>805/2011</span><span>806/2011</span></div></div>
+        <div class="card"><div class="row"><h4>Criminal law</h4><span class="meta">3 skills</span></div><code class="slug">criminal-law</code><p>Substantive criminal law: the general prerequisites of criminal liability, the elements of the principal offences, and sentencing, forfeiture and limitation. Serves defence, injured party and compliance.</p><div class="laws"><span>39/1889</span><span>754/2010</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Julkinen sektori ja sääntely</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Public sector &amp; regulation</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>hallinto-oikeus</h4><span class="meta">3 + agentti</span></div><p>Hallintopäätös, muutoksenhaku, julkisuus ja tietopyynnöt — salassapitoarvio agenttina.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
-        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skilliä</span></div><p>Suunnittelu ja menettelyt, tarjouspyyntö ja tarjous molemmin puolin, MAO-muutoksenhaku.</p><div class="laws"><span>1397/2016</span></div></div>
-        <div class="card"><div class="row"><h4>lainvalmistelu</h4><span class="meta">4 skilliä</span></div><p>Lainkirjoittajan opas, HELO, prosessiopas ja lakikieli — varmistetuin johtolausein.</p><div class="laws"><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
-        <div class="card"><div class="row"><h4>lausunnot</h4><span class="meta">1 skilli</span></div><p>Lausunto lakiehdotukseen 7-vaiheisella työnkululla, vaikutusarviointi mukana.</p><div class="laws"><span>Lausuntopalvelu.fi</span></div></div>
-        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skilliä</span></div><p>Käsittelyn arviointi ja DPIA, selosteet, rekisteröidyn pyynnöt sekä PII Shield -anonymisointi.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
-        <div class="card"><div class="row"><h4>tekoälysääntely</h4><span class="meta">3 skilliä</span></div><p>AI Actin riskiluokittelu, velvoitteet roolin mukaan, määräajat ja FRIA — deterministinen MCP.</p><div class="laws"><span>(EU) 2024/1689</span></div></div>
-        <div class="card"><div class="row"><h4>kaksikielisyys (FI/SV)</h4><span class="meta">2 skilliä</span></div><p>Oikeuskielen kääntäminen vakiintunein termein virallisista lähteistä sekä kielelliset oikeudet ja viranomaisen velvoitteet.</p><div class="laws"><span>Kielilaki 423/2003</span><span>PL 17 §</span></div></div>
+        <div class="card"><div class="row"><h4>Administrative law</h4><span class="meta">3 skills · 1 subagent</span></div><code class="slug">administrative-law</code><p>Drafting and reviewing administrative decisions, appeals — rectification claim and administrative appeal — and public access to documents plus information requests.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
+        <div class="card"><div class="row"><h4>Public procurement</h4><span class="meta">3 skills</span></div><code class="slug">public-procurement</code><p>Planning and choice of procedure with threshold values, tender documents and a conforming bid, and the award decision, procurement rectification and appeal to the Market Court.</p><div class="laws"><span>1397/2016</span><span>1398/2016</span><span>1531/2011</span></div></div>
+        <div class="card"><div class="row"><h4>Legislative drafting</h4><span class="meta">4 skills</span></div><code class="slug">legislative-drafting</code><p>The legislative drafter’s manual (structure, language, cross-references, enacting clause), the government-bill guidelines (HELO), the drafting-process guide, and the legal-language guide to symbols and inflection.</p><div class="laws"><span>731/1999</span><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
+        <div class="card"><div class="row"><h4>Legislative consultation</h4><span class="meta">1 skill</span></div><code class="slug">legislative-consultation</code><p>Writing a reasoned consultation statement on a bill or draft act, with impact assessment from the respondent’s point of view. Suits municipalities, agencies, associations and companies.</p><div class="laws"><span>Lausuntopalvelu.fi</span><span>HE</span></div></div>
+        <div class="card"><div class="row"><h4>Data protection</h4><span class="meta">3 skills</span></div><code class="slug">data-protection</code><p>Assessing processing and running a DPIA, privacy notices and the record of processing activities, and responding to data-subject requests.</p><div class="laws"><span>(EU) 2016/679</span><span>1050/2018</span><span>759/2004</span></div></div>
+        <div class="card"><div class="row"><h4>AI regulation</h4><span class="meta">3 skills</span></div><code class="slug">ai-regulation</code><p>AI Act risk classification, obligations by role and risk class, and deadlines, penalties, the GPAI threshold and the fundamental-rights impact assessment (FRIA). Backed by an open deterministic MCP.</p><div class="laws"><span>(EU) 2024/1689</span></div></div>
+        <div class="card"><div class="row"><h4>Bilingual legal language</h4><span class="meta">2 skills</span></div><code class="slug">bilingual-legal-language</code><p>Finnish–Swedish support: translating legal language with established terminology from official sources, and language rights plus the authority’s linguistic obligations. Terms are never invented; an official translation comes from an authorised translator.</p><div class="laws"><span>423/2003</span><span>1086/2003</span><span>424/2003</span></div></div>
       </div>
     </div>
 
     <div class="group">
-      <div class="group-label"><span class="dot"></span><h3>Omaisuus ja ympäristö</h3></div>
+      <div class="group-label"><span class="dot"></span><h3>Property &amp; environment</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>kiinteistöt ja asuminen</h4><span class="meta">4 skilliä</span></div><p>Kiinteistö- ja asuntokauppa virheineen, taloyhtiö, vuokrasopimukset.</p><div class="laws"><span>MK 540/1995</span><span>AOYL 1599/2009</span></div></div>
-        <div class="card"><div class="row"><h4>ympäristö ja kaavoitus</h4><span class="meta">3 skilliä</span></div><p>Ympäristöluvat ja valvonta, kaavoitus ja uusi rakentamislupa, ympäristövastuut ja -DD.</p><div class="laws"><span>YSL 527/2014</span><span>751/2023</span><span>LVV 2026</span></div></div>
+        <div class="card"><div class="row"><h4>Real estate &amp; housing</h4><span class="meta">4 skills</span></div><code class="slug">real-estate-and-housing</code><p>The formal requirements of a real-property conveyance with registration and defect liability, residential-property sale, the housing company’s maintenance responsibility and administration, and residential and commercial leases.</p><div class="laws"><span>540/1995</span><span>843/1994</span><span>1599/2009</span><span>481/1995</span></div></div>
+        <div class="card"><div class="row"><h4>Environment &amp; planning</h4><span class="meta">3 skills</span></div><code class="slug">environment-and-planning</code><p>Environmental permits and supervision, land-use planning and construction under the reformed acts, and environmental liability plus environmental DD in transactions.</p><div class="laws"><span>527/2014</span><span>132/1999</span><span>751/2023</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── AGENTIT ── -->
+<!-- ── SUBAGENTS ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">03</span><h2>Agentit — delegoitavat työvaiheet</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">03</span><h2>Subagents — delegable work steps</h2><span class="rule"></span></div>
     <div class="agents">
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></div><div class="nm"><b>Lähdetarkastaja</b><span>juristi</span></div></div><p>Olettaa jokaisen viittauksen vääräksi, kunnes lähde todistaa toisin. Palauttaa varmistustaulukon korjausehdotuksineen — ajetaan jokaiselle ulos lähtevälle asiakirjalle.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div class="nm"><b>Määräaikaskanneri</b><span>juristi</span></div></div><p>Skannaa aineiston kaikki määräajat, laskee varovaisuusperiaatteella molemmilla lähtöpäivillä ja nostaa kiireellisimmät ensin. Kalenterivastuu jää ihmiselle.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M5 7v8c0 1.5 3 3 7 3s7-1.5 7-3V7"/></svg></div><div class="nm"><b>Vastapuoli</b><span>riidanratkaisu</span></div></div><p>Vastapuolen avustajan simulaattori: hyökkää kirjelmääsi vastaan tosissaan ja palauttaa heikkoustaulukon, vahvuudet ja top 3 -korjaukset ennen jättämistä.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="nm"><b>Aineistokartoittaja</b><span>yhtiöoikeus</span></div></div><p>Inventoi datahuoneen DD-alueittain, tuottaa aukkolistan valmiina tietopyyntönä ja punaiset liput priorisointia varten. Inventaario — ei oikeudellinen arvio.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12.5l2 2 4-4"/></svg></div><div class="nm"><b>Poikkeamatarkastaja</b><span>sopimukset</span></div></div><p>Vertaa luonnosta talon riskilinjauksiin lauseke lausekkeelta ja osoittaa eskaloitavat. Pysähtyy, jos mittatikkua ei ole — ei keksi markkinakäytäntöä.</p></div>
-      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M12 9v3M12 15h.01"/></svg></div><div class="nm"><b>Salassapitoarvioija</b><span>hallinto-oikeus</span></div></div><p>Valmistelee julkisuusarvion kohta kohdalta säännösperusteineen ja tuottaa peittoehdotuksen. Osittainen julkisuus pääsääntönä; viranhaltija päättää.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg></div><div class="nm"><b>Source checker</b><span>legal-core/agents/source-checker.md</span></div></div><p>Assumes every citation is wrong until the source proves otherwise. Returns a verification table with fix suggestions — run it on every document that goes out.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div class="nm"><b>Deadline scanner</b><span>legal-core/agents/deadline-scanner.md</span></div></div><p>Scans every deadline in the material, calculates them cautiously from both possible start dates, and surfaces the most urgent first. Calendar responsibility stays with the human.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M5 7v8c0 1.5 3 3 7 3s7-1.5 7-3V7"/></svg></div><div class="nm"><b>Opposing counsel</b><span>dispute-resolution/agents/opposing-counsel.md</span></div></div><p>A simulator of the other side’s counsel: attacks your brief in earnest and returns a weakness table, your strengths and the top three fixes before you file.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div class="nm"><b>Material mapper</b><span>company-law/agents/material-mapper.md</span></div></div><p>Inventories the data room by DD area, produces a gap list ready to send as an information request, and red flags for prioritisation. An inventory — not a legal assessment.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 12.5l2 2 4-4"/></svg></div><div class="nm"><b>Deviation checker</b><span>contracts/agents/deviation-checker.md</span></div></div><p>Compares a draft against the house risk policy clause by clause and points out what to escalate. Stops if there is no yardstick — it does not invent “market practice”.</p></div>
+      <div class="agent"><div class="top"><div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M12 9v3M12 15h.01"/></svg></div><div class="nm"><b>Confidentiality assessor</b><span>administrative-law/agents/confidentiality-assessor.md</span></div></div><p>Prepares a public-access assessment point by point with statutory grounds and produces a redaction proposal. Partial disclosure as the rule; the official decides.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ── TYÖNKULKU ── -->
+<!-- ── WORKFLOW ── -->
 <section>
   <div class="wrap">
-    <div class="head"><span class="tag">04</span><h2>Aineistosta ihmisen päätökseen</h2><span class="rule"></span></div>
+    <div class="head"><span class="tag">04</span><h2>From the material to a human decision</h2><span class="rule"></span></div>
     <div class="flow">
-      <div class="step"><div class="n">1</div><b>Aineisto sisään</b><span>hiljaisen latauksen protokolla</span></div>
-      <div class="step"><div class="n">2</div><b>Määräajat</b><span>maaraaikaskanneri + toimeksianto</span></div>
-      <div class="step"><div class="n">3</div><b>Substanssi</b><span>oikeudenalan skillit + oikeustutkimus</span></div>
-      <div class="step"><div class="n">4</div><b>Vastapaine</b><span>vastapuoli · poikkeamatarkastaja</span></div>
-      <div class="step"><div class="n">5</div><b>Viitteet</b><span>lahdetarkastaja varmistaa</span></div>
-      <div class="step human"><div class="n">6</div><b>Ihminen päättää</b><span>tarkistaa, hyväksyy, vastaa</span></div>
+      <div class="step"><div class="n">1</div><b>Material in</b><span>engagement-intake</span></div>
+      <div class="step"><div class="n">2</div><b>Deadlines</b><span>deadline-scanner</span></div>
+      <div class="step"><div class="n">3</div><b>Substance</b><span>legal-research + domain skills</span></div>
+      <div class="step"><div class="n">4</div><b>Counter-pressure</b><span>opposing-counsel · deviation-checker</span></div>
+      <div class="step"><div class="n">5</div><b>Citations</b><span>source-checker</span></div>
+      <div class="step human"><div class="n">6</div><b>The human decides</b><span>checks, approves, takes responsibility</span></div>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer id="asennus">
+<footer id="install">
   <div class="wrap">
-    <div class="head"><span class="tag">05</span><h2>Asennus ja käyttöönotto</h2><span class="rule"></span></div>
-    <div class="install">
-      <div class="label"><span class="dotrow"><i></i><i></i><i></i></span> claude code · cowork</div>
-<pre><span class="c">/plugin</span> marketplace add akunikkola/agent-skills-for-finnish-law
-<span class="c">/plugin</span> install juristi@agent-skills-for-finnish-law   <span class="muted"># + oman alan plugarit</span></pre>
-    </div>
+    <div class="head"><span class="tag">05</span><h2>Installation &amp; onboarding</h2><span class="rule"></span></div>
+    <p class="intro">The collection targets the <a href="https://agentskills.io/specification.md">Agent Skills
+      specification</a> and the <a href="https://agents.md">AGENTS.md convention</a>. Claude Code and
+      Codex are two supported harnesses, not a premise — any harness that reads the Agent Skills
+      format can use these bundles directly, with no plugin system required.</p>
 
-    <div class="walk">
-      <div class="walk-video">
-        <iframe src="https://www.youtube-nocookie.com/embed/7Sm70ejp9dI" title="Claude for Legal Finland – asennus työpöytäsovelluksessa" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="harness">
+      <div class="install">
+        <div class="label"><span class="dotrow"><i></i><i></i><i></i></span> claude code</div>
+<pre><span class="c">/plugin</span> marketplace add ragmha/agent-skills-for-finnish-law
+<span class="c">/plugin</span> install legal-core@agent-skills-for-finnish-law</pre>
+        <p>Add your practice-area domains the same way, for example <code>employment-law@agent-skills-for-finnish-law</code>.</p>
       </div>
-      <div class="walk-steps">
-        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 20h8M12 17v3"/></svg> Asennus työpöytäsovelluksessa (Cowork)</h3>
-        <ol>
-          <li>Avaa <b>työpöytäsovellus</b></li>
-          <li>Siirry <b>Cowork</b>-välilehdelle</li>
-          <li>Avaa <b>Customize</b></li>
-          <li>Valitse <b>Add plugin</b></li>
-          <li>Valitse <b>Add marketplace</b> ja liitä <code>akunikkola/agent-skills-for-finnish-law</code></li>
-        </ol>
+
+      <div class="install">
+        <div class="label"><span class="dotrow"><i></i><i></i><i></i></span> codex</div>
+<pre>node scripts/generate-adapters.mjs
+codex plugin marketplace add .
+codex plugin add legal-core@agent-skills-for-finnish-law</pre>
+        <p>If a domain’s <code>mcp.json</code> declares the <code>oik-ai</code> server, check it with <code>codex mcp list --json</code> and sign in with <code>codex mcp login oik-ai</code>.</p>
+      </div>
+
+      <div class="install">
+        <div class="label"><span class="dotrow"><i></i><i></i><i></i></span> any other harness</div>
+<pre>cp -r &lt;domain&gt;/skills/* &lt;harness-skills-dir&gt;/</pre>
+        <p><code>SKILL.md</code> is plain Agent Skills format with no vendor extensions. If the harness supports MCP, point it at <code>&lt;domain&gt;/mcp.json</code>.</p>
       </div>
     </div>
 
     <div class="conn">
-      <div class="conn-title">Liittimet (MCP)</div>
+      <div class="conn-title">Connectors (MCP)</div>
       <div class="conn-items">
-        <div class="conn-item"><b>oik.ai / laki.ai</b><span>Suomen oikeuslähteet: Finlex, oikeuskäytäntö ja esityöt. Vaatii tilin (OAuth).</span></div>
-        <div class="conn-item"><b>Adeu</b><span>Word-asiakirjojen (.docx) muokkaus natiiveina jälkimuutoksina (Track Changes) – luonnoksen redline. Paikallinen, ei tiliä.</span></div>
-        <div class="conn-item"><b>EU AI Act MCP</b><span>Deterministinen tekoälyasetuksen riskiluokittelu (tekoälysääntely-plugari). Paikallinen, ei tiliä.</span></div>
+        <div class="conn-item"><b>oik.ai / laki.ai</b><span>Finnish legal sources: Finlex, case law and preparatory works (HE). Account required (OAuth).</span></div>
+        <div class="conn-item"><b>Adeu</b><span>Edit Word (.docx) documents as native tracked changes — redline a draft. Local, no account.</span></div>
+        <div class="conn-item"><b>EU AI Act MCP</b><span>Deterministic AI Act risk classification, used by the <code>ai-regulation</code> domain. Local, no account.</span></div>
       </div>
     </div>
 
     <div class="foot-grid">
       <div class="panel">
-        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg> Organisaatiokäyttöön</h3>
-        <p>Ennen tuotantokäyttöä: aineistolinjaus, käsittelysopimus (GDPR 28 art), anonymisointi
-          työnkulkuna (PII Shield) ja nimetty tarkistusketju — <code>references/firm-adoption.md</code>.
-          Talon tapa kirjataan <code>kaytantoprofiili</code>-skillillä; pilotointi esimerkkiaineistoilla,
-          joissa on arviointikriteerit.</p>
+        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg> For organisations</h3>
+        <p>Before production use: a data policy, a processing agreement (GDPR Art. 28), anonymisation
+          as a workflow and a named review chain — see
+          <code>references/firm-adoption.md</code>. House conventions are recorded with the
+          <code>practice-profile</code> skill in <code>legal-core</code>, and the shared source,
+          liability and security lines live in <code>references/</code> at the repository root.</p>
       </div>
       <div class="panel">
-        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M8 7h8M8 11h6"/></svg> Lähteet ja ylläpito</h3>
+        <h3><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M8 7h8M8 11h6"/></svg> Sources &amp; upkeep</h3>
         <ul>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="https://github.com/akunikkola/agent-skills-for-finnish-law">github.com/akunikkola/agent-skills-for-finnish-law</a></li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Releaset: plugarikohtaiset ZIPit (v0.1.0–v1.2.0)</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Säädösvahti: kuukausittain 105/105 täsmää Finlexiin</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Viittausauditointi: 137 säädösnumeroa ja ratkaisutunnukset tarkistettu lähteestä 7/2026</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Codex-yhteensopivuus: sama kokoelma myös OpenAI Codexissa (<code>CODEX.md</code>)</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI-validaattori jokaisessa muutoksessa</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="https://github.com/ragmha/agent-skills-for-finnish-law">github.com/ragmha/agent-skills-for-finnish-law</a></li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Statute watch — <code>scripts/check-statutes.mjs</code> re-checks all 105 registry entries against their Finlex page titles</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Citation gate — 136 distinct statute numbers pinned in <code>references/citation-snapshot.json</code> and diffed on every change</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>One vendor-neutral source, harness adapters generated from it — see <code>AGENTS.md</code></li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI runs the validator, the generated-file check and the test suite on every change</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>A fork of <a href="https://github.com/akunikkola/agent-skills-for-finnish-law">akunikkola/agent-skills-for-finnish-law</a>, translated to English and de-vendored</li>
         </ul>
       </div>
     </div>
 
     <div class="join">
       <div class="join-text">
-        <h3>Osallistu hankkeeseen</h3>
-        <p>Avoin yhteisöhanke – kuka tahansa on tervetullut mukaan joko sisällöntuottajana (omat skillit ja plugarit, joista on ollut todistettavaa hyötyä työssäsi) tai hankkeen tukijana.</p>
+        <h3>Get involved</h3>
+        <p>An open community project — everyone is welcome, whether as a contributor of skills that have proven useful in your own work, or by reporting a citation that no longer matches its source.</p>
       </div>
       <div class="join-cta">
-        <a class="btn dark" href="https://github.com/akunikkola/agent-skills-for-finnish-law/blob/main/CONTRIBUTING.md">
+        <a class="btn dark" href="https://github.com/ragmha/agent-skills-for-finnish-law/blob/main/CONTRIBUTING.md">
           <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/></svg>
-          Tuota sisältöä
+          Contribute
         </a>
-        <a class="btn" href="mailto:aku@wearelegit.ai?subject=Claude%20for%20Legal%20Finland%20%E2%80%93%20tuki%2Fsponsorointi">
-          <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 21s-6.7-4.35-9.1-8.5C1.2 9.3 2.7 5.5 6.2 5.5c1.9 0 3.1 1.1 3.8 2.1.7-1 1.9-2.1 3.8-2.1 3.5 0 5 3.8 3.3 7C18.7 16.65 12 21 12 21z"/></svg>
-          Tue hanketta
+        <a class="btn" href="https://github.com/ragmha/agent-skills-for-finnish-law/issues">
+          <svg class="ic ic-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v5M12 16h.01"/></svg>
+          Report an issue
         </a>
       </div>
     </div>
 
     <div class="notice">
-      <p><b>Jokainen tuotos on tarkistettava luonnos. Kyse ei ole oikeudellisesta neuvonnasta,
-        eikä tämä kokoelma tai sen sisältämät ominaisuudet korvaa juristia.</b> Vastuun
-        lopputuloksesta kantaa aina käyttäjä, ja käyttöä suositellaan ainoastaan kouluttautuneille
-        oikeudellisen alan ammattilaisille. Plugarit on rakennettu tämän mukaisesti: laki ja
-        oikeuskäytäntö tarkistetaan lähteestä eikä muistista, jokaiseen viittaukseen tulee
-        lähdemerkintä, jurisdiktio-oletukset pidetään näkyvissä, ja ennen kuin mitään lähetetään tai
-        allekirjoitetaan, asian varmistaa ihminen. Suojan tuottavat mekanismit — lähteen varmistus,
-        kolmiportainen varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen
-        tarkistusportti. Mekanismit on koottu tiedostoihin <a href="https://github.com/akunikkola/agent-skills-for-finnish-law/blob/main/references/citation-style.md">references/citation-style.md</a>
-        ja <a href="https://github.com/akunikkola/agent-skills-for-finnish-law/blob/main/references/liability-and-security.md">references/liability-and-security.md</a>.</p>
-      <p>Tämä on yhteisön avoin hanke, ei viranomais-, lakiasiain- tai asianajopalvelu, eikä se
-        edusta minkään organisaation virallista oikeudellista kantaa. Kuka tahansa voi kontribuoida
-        hankkeeseen omat skill-tiedostonsa ja plugarinsa, joista on ollut todistettavaa hyötyä
-        omassa työssä.</p>
+      <p><b>Every output is a draft for review. This is not legal advice, and neither this collection
+        nor its features replace a lawyer.</b> The user always bears responsibility for the outcome,
+        and use is recommended only for trained legal professionals. The skills are built
+        accordingly: law and case law are checked against the source rather than from memory, every
+        citation carries a source mark, jurisdiction assumptions are kept visible, and before
+        anything is sent or signed a human verifies it. Protection comes from mechanisms — source
+        verification, three-tier certainty labelling, premise checking, negative scoping and the
+        human review gate. The mechanisms are collected in <a href="https://github.com/ragmha/agent-skills-for-finnish-law/blob/main/references/citation-style.md">references/citation-style.md</a>
+        and <a href="https://github.com/ragmha/agent-skills-for-finnish-law/blob/main/references/liability-and-security.md">references/liability-and-security.md</a>.</p>
+      <p>This is an open community project — not an authority, legal or attorney service — and it does
+        not represent any organisation’s official legal position. Anyone can contribute their own
+        skill files that have proven useful in their own work.</p>
     </div>
 
     <div class="base">
       <span>MIT © 2026 Aku Nikkola</span>
-      <span>Suomalainen vastine Anthropicin claude-for-legalille</span>
+      <span>Agent Skills for Finnish law · <a href="fi/?lang=fi" hreflang="fi" lang="fi">suomeksi</a></span>
     </div>
   </div>
 </footer>
 
+<script>
+/* Record an explicit language choice before navigating, so the preference survives even when the
+   target page comes from cache. The ?lang= parameter on the href is the fallback for middle-click
+   and "open in new tab", where this handler never runs. */
+(function () {
+  var links = document.querySelectorAll('a[data-lang], a[hreflang="fi"], a[hreflang="en"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+      var v = this.getAttribute('data-lang') || this.getAttribute('hreflang');
+      if (v === 'en' || v === 'fi') {
+        try { window.localStorage.setItem('aslf-lang', v); } catch (e) {}
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
