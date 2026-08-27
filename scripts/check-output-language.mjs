@@ -174,6 +174,35 @@ for (const [path, category] of declared) {
   for (const { re, what } of patterns) {
     if (!re.test(text)) err(path, `${category}: ${what}`);
   }
+
+  // Placement, for templates only.
+  //
+  // Presence is not enough here. A template is a skeleton that gets filled in
+  // and then sent — to a seller, an authority, or a court. An "Output language:
+  // drafts are produced in English by default" heading sitting inside the
+  // document body travels with it and is read as part of the filing.
+  //
+  // This was fixed by hand once, in four templates, and nothing stopped it
+  // coming back: a translation branch based on the pre-fix text reintroduced it
+  // in two of them while this gate still reported green, because the block was
+  // present — just in the wrong place. Presence was the only thing measured.
+  //
+  // Every template separates its authoring preamble from the document body with
+  // a horizontal rule. The declaration is authoring guidance, so it belongs
+  // above that line.
+  if (/(^|\/)templates\//.test(path)) {
+    const lines = text.split('\n');
+    const blockAt = lines.findIndex((l) => /output language/i.test(l));
+    const bodyAt = lines.findIndex((l) => /^---\s*$/.test(l));
+
+    if (bodyAt !== -1 && blockAt > bodyAt) {
+      err(
+        path,
+        `${category}: the output-language declaration is inside the document body ` +
+          `(line ${blockAt + 1}, body starts at line ${bodyAt + 1}) — it would be sent with the filled-in document`,
+      );
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------

@@ -1,23 +1,22 @@
-name: Säädösvahti
+name: Statute watch
 
-# Tarkistaa kuukausittain, että repon varmistetut säädökset ovat yhä
-# Finlexissä odotetuilla nimillään (tracking/statutes.json). Nimen
-# muutos kaataa ajon → issue/ilmoitus kertoo, mikä plugari on
-# vanhentumassa. Vrt. MRL → alueidenkäyttölaki, kaupparekisterilaki
-# 129/1979 → 564/2023.
+# Checks monthly that the statutes this repository has verified still carry the
+# expected names in Finlex (tracking/statutes.json). A changed name fails the
+# run, and the resulting notification says which domain is going stale.
+# Compare MRL → alueidenkäyttölaki, and kaupparekisterilaki 129/1979 → 564/2023.
 
 on:
   schedule:
-    - cron: "0 6 1 * *"   # kuukauden 1. päivä klo 06 UTC
+    - cron: "0 6 1 * *"   # 1st of the month at 06:00 UTC
   workflow_dispatch:
 
 jobs:
-  tarkista:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: "24"
-      - name: Tarkista säädösten nimet Finlexistä
+      - name: Check statute names against Finlex
         run: node scripts/check-statutes.mjs

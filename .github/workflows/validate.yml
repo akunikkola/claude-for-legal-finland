@@ -1,9 +1,9 @@
-name: Validoi plugarit
+name: Validate
 
-# Ajaa rakenne- ja laatuvalidaattorin jokaisessa pushissa ja pull requestissa.
-# Portti estää markkinapaikan rikkovat virheet (frontmatter, marketplace-
-# yhtenäisyys, kuolleet linkit, siirrettävyys, Cowork-validaattorin numero-
-# pilkku-ansa) ennen kuin ne päätyvät käyttäjien asennuksiin.
+# Runs the structure and quality gates on every push and pull request.
+# The gate blocks errors that break the marketplace — frontmatter, consistency
+# between the manifests, dead links, portability, and the Cowork validator's
+# digit-comma trap — before they reach a user's installation.
 
 on:
   push:
@@ -23,25 +23,25 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Validoi rakenne ja frontmatter
+      - name: Validate structure and frontmatter
         run: node scripts/validate.mjs
 
-      - name: Tarkista repon invariantit
+      - name: Check repository invariants
         run: node scripts/check-invariants.mjs
 
-      - name: Tarkista siirrettävyys (skillien viittaukset pysyvät domainin sisällä)
+      - name: Check portability (skill references stay inside the domain)
         run: node scripts/check-portability.mjs
 
-      - name: Tarkista tuotoskielen ilmoitukset
+      - name: Check output-language declarations
         run: node scripts/check-output-language.mjs
 
-      - name: Tarkista turvamekanismien eheys
+      - name: Check safety mechanisms are intact
         run: node scripts/check-safety-mechanisms.mjs
 
-      - name: Tarkista viittausten eheys
+      - name: Check citation integrity
         run: node scripts/check-citations.mjs
 
-      - name: Tarkista kuvaukset
+      - name: Check descriptions
         run: node scripts/check-descriptions.mjs
 
       # Offline only. The trigger evals themselves make real model calls and
@@ -49,14 +49,14 @@ jobs:
       - name: Check eval scenarios resolve
         run: node evals/check-scenarios.mjs
 
-      - name: Tarkista että generoidut tiedostot ovat ajan tasalla
+      - name: Check that generated files are up to date
         run: bash scripts/check-generated.sh
 
-      - name: Aja Node-testit
+      - name: Run Node tests
         run: node --test tests/*.test.mjs
 
   portability-tests:
-    name: Node-testit (windows-latest)
+    name: Node tests (windows-latest)
     runs-on: windows-latest
     steps:
       - name: Checkout
@@ -67,5 +67,5 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Aja Node-testit
+      - name: Run Node tests
         run: node --test tests/*.test.mjs

@@ -338,13 +338,36 @@ for (const entry of readJSON(join(ROOT, 'marketplace.json')).plugins) {
 }
 
 // ---------------------------------------------------------------------------
+// 9. Every command AGENTS.md documents must actually exist
+//
+// AGENTS.md named scripts/check-upstream-drift.mjs as *the* drift-detection
+// command while that file lived only on an unmerged branch. Anyone following
+// the documented procedure got MODULE_NOT_FOUND — and the drift bridge is what
+// carries upstream's legal corrections into this fork, so the one procedure
+// that must not silently be a no-op was exactly the one that was.
+//
+// This is the same shape as every other finding here: a rule stated in prose
+// with nothing checking it. The check is cheap and generalises to any future
+// command the documentation grows.
+// ---------------------------------------------------------------------------
+
+for (const ref of new Set(agentsMd.match(/scripts\/[a-z0-9-]+\.(?:mjs|sh)/g) ?? [])) {
+  if (!existsSync(join(ROOT, ref))) {
+    fail(
+      'documented command',
+      `AGENTS.md documents ${ref}, which does not exist — a documented command that is absent is worse than an undocumented one`,
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Report
 // ---------------------------------------------------------------------------
 
 console.log('\nrepository invariants');
 console.log('  rules checked: fork provenance, statute registry, statute watch, rename map,');
 console.log('                 subagent naming, stale domain slugs, practice-profile heading,');
-console.log('                 guardrail references, pointer shims\n');
+console.log('                 guardrail references, pointer shims, documented commands\n');
 
 for (const f of failures) console.log(`  ✗  ${f.rule}: ${f.detail}`);
 

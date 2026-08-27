@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Environment and planning -plugaria Suomen oikeuden tehtävään."
+      "Use Environment and planning for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

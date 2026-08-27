@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Public procurement -plugaria Suomen oikeuden tehtävään."
+      "Use Public procurement for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

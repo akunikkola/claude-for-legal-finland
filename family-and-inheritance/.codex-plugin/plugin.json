@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Family and inheritance law -plugaria Suomen oikeuden tehtävään."
+      "Use Family and inheritance law for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

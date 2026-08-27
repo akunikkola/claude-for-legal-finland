@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Real estate and housing -plugaria Suomen oikeuden tehtävään."
+      "Use Real estate and housing for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

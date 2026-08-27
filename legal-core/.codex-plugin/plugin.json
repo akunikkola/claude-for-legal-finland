@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Legal core -plugaria Suomen oikeuden tehtävään."
+      "Use Legal core for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

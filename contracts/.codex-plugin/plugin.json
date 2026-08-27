@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Contracts -plugaria Suomen oikeuden tehtävään."
+      "Use Contracts for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

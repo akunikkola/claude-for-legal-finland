@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Consumer law -plugaria Suomen oikeuden tehtävään."
+      "Use Consumer law for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

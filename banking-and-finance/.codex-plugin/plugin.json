@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Banking and finance -plugaria Suomen oikeuden tehtävään."
+      "Use Banking and finance for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

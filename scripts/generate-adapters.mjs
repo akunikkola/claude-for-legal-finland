@@ -1,24 +1,24 @@
 #!/usr/bin/env node
-// Generoi harnessikohtaiset adapterit neutraaleista lähteistä.
-// Aja: node scripts/generate-adapters.mjs
+// Generates the harness-specific adapters from the neutral sources.
+// Run: node scripts/generate-adapters.mjs
 //
-// LÄHTEET (käsin kirjoitetut, harnessista riippumattomat):
+// SOURCES (hand-written, harness-independent):
 //   marketplace.json
-//   <plugari>/plugin.json
-//   <plugari>/mcp.json
+//   <domain>/plugin.json
+//   <domain>/mcp.json
 //
-// ADAPTERIT (generoituja — älä muokkaa käsin):
+// ADAPTERS (generated — do not edit by hand):
 //   .claude-plugin/marketplace.json
 //   .agents/plugins/marketplace.json
-//   <plugari>/.claude-plugin/plugin.json
-//   <plugari>/.codex-plugin/plugin.json
-//   <plugari>/.mcp.json                          (Claude Coden löytökuori)
-//   <plugari>/skills/<skill>/agents/openai.yaml  (vain MCP:tä tarvitsevat)
+//   <domain>/.claude-plugin/plugin.json
+//   <domain>/.codex-plugin/plugin.json
+//   <domain>/.mcp.json                          (Claude Code discovery shim)
+//   <domain>/skills/<skill>/agents/openai.yaml  (only those that need MCP)
 //
-// MCP standardoi protokollan, ei tiedostonimeä. Neutraali osa on skeema —
-// mcpServers-kartta, jonka merkinnät ovat joko stdio tai http — ja se on
-// mcp.json:ssa. .mcp.json on olemassa vain siksi, että Claude Code etsii
-// juuri sen nimistä tiedostoa plugarin juuresta, joten se generoidaan.
+// MCP standardises the protocol, not a filename. The neutral part is the schema
+// — an mcpServers map whose entries are either stdio or http — and that lives in
+// mcp.json. .mcp.json exists only because Claude Code looks for that exact
+// filename at the domain root, so it is generated rather than authored.
 
 import {
   existsSync,
@@ -303,7 +303,7 @@ for (const entry of marketplace.plugins) {
       category: CATEGORY,
       capabilities: hasMcp ? ['Skills', 'MCP'] : ['Skills'],
       defaultPrompt: [
-        truncate(`Käytä ${entry.displayName || entry.name} -plugaria Suomen oikeuden tehtävään.`, 120),
+        truncate(`Use ${entry.displayName || entry.name} for a task under Finnish law.`, 120),
       ],
     },
   };
@@ -337,4 +337,4 @@ for (const entry of marketplace.plugins) {
 
 writeJSON('.claude-plugin/marketplace.json', claudeMarketplace);
 writeJSON('.agents/plugins/marketplace.json', codexMarketplace);
-console.log(`Adapterit generoitu: ${codexMarketplace.plugins.length} plugaria.`);
+console.log(`Adapters generated: ${codexMarketplace.plugins.length} domains.`);

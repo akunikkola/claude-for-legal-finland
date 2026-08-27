@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Company law -plugaria Suomen oikeuden tehtävään."
+      "Use Company law for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

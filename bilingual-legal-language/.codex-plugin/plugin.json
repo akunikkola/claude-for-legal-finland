@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Bilingual legal language (FI/SV) -plugaria Suomen oikeuden tehtävään."
+      "Use Bilingual legal language (FI/SV) for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"

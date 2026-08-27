@@ -1,7 +1,7 @@
 {
   "name": "agent-skills-for-finnish-law",
   "displayName": "Agent Skills for Finnish Law",
-  "description": "Avoimen lähdekoodin skillit ja plugarit, jotka auttavat juristeja ja muita oikeudellisten asioiden parissa työskenteleviä Suomessa hyödyntämään Claudea – suomalaisen oikeuden, lakikielen ja oikeuslähteiden (Finlex, oik.ai, KKO/KHO, HE) ehdoilla. Suomalainen vastine Anthropicin claude-for-legal-kokoelmalle.",
+  "description": "Open-source Agent Skills that help lawyers and others working on legal matters in Finland put an AI agent to work on the terms of Finnish law, Finnish legal language and Finnish legal sources (Finlex, oik.ai, KKO/KHO, HE). Statute references are verified against the source rather than recalled from memory.",
   "owner": {
     "name": "Aku Nikkola"
   },

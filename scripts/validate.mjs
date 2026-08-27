@@ -11,11 +11,12 @@
 //  - kuolleet suhteelliset markdown-linkit (.md-tiedostoissa)
 //  - näkymättömät / harhaanjohtavat unicode-merkit (zero-width, bidi, kyrilliset homoglyfit)
 //
-// Lähde on neutraali marketplace.json ja <plugari>/plugin.json; Claude- ja
-// Codex-manifestit ovat generoituja adaptereita (scripts/generate-adapters.mjs).
+// The source is the neutral marketplace.json and <domain>/plugin.json; the
+// Claude and Codex manifests are generated adapters
+// (scripts/generate-adapters.mjs).
 //
-// Tämä portti on "henkivakuutus": se ei korvaa lähdekuria, vaan estää
-// markkinapaikan rikkovat ja hiljaa hajoavat virheet ennen julkaisua.
+// This gate is a safety net: it does not replace discipline at the source, it
+// stops marketplace-breaking and silently-degrading errors before release.
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { basename, join, dirname, relative, resolve } from 'node:path';
@@ -56,8 +57,9 @@ function readJSON(file) {
   }
 }
 
-// Jäsennys on jaettu lib.mjs:ssä (sama toteutus generaattoreissa ja testeissä);
-// tämä kääre raportoi puuttuvan tai sulkemattoman frontmatterin virheenä.
+// Parsing is shared in lib.mjs (the same implementation is used by the
+// generators and the tests); this wrapper reports missing or unterminated
+// frontmatter as an error.
 function parseFrontmatter(file) {
   const fm = parseFrontmatterText(readFileSync(file, 'utf8'));
   if (fm.error === 'missing') {
@@ -224,19 +226,19 @@ for (const md of walkMd(ROOT)) {
 }
 
 // ---------------------------------------------------------------------------
-// Raportti
+// Report
 // ---------------------------------------------------------------------------
 
-console.log(`\nagent-skills-for-finnish-law — validaattori`);
-console.log(`  plugareita: ${pluginNames.length}, skillejä: ${skillCount}\n`);
+console.log(`\nagent-skills-for-finnish-law — validator`);
+console.log(`  domains: ${pluginNames.length}, skills: ${skillCount}\n`);
 
 for (const w of warnings) console.log(`  ⚠︎  ${w.file}: ${w.msg}`);
 for (const e of errors) console.log(`  ✗  ${e.file}: ${e.msg}`);
 
 if (errors.length === 0) {
-  console.log(`\n✓ Validaattori vihreä${warnings.length ? ` (${warnings.length} varoitus(ta))` : ''}.\n`);
+  console.log(`\n✓ Validator green${warnings.length ? ` (${warnings.length} warning(s))` : ''}.\n`);
   process.exit(0);
 } else {
-  console.log(`\n✗ ${errors.length} virhe(ttä), ${warnings.length} varoitus(ta).\n`);
+  console.log(`\n✗ ${errors.length} error(s), ${warnings.length} warning(s).\n`);
   process.exit(1);
 }

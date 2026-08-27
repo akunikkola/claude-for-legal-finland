@@ -26,7 +26,7 @@
       "MCP"
     ],
     "defaultPrompt": [
-      "Käytä Data protection -plugaria Suomen oikeuden tehtävään."
+      "Use Data protection for a task under Finnish law."
     ]
   },
   "mcpServers": "./.mcp.json"
