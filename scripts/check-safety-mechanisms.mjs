@@ -31,35 +31,66 @@ const SKIP = new Set(['node_modules', 'docs', 'dist', '.git']);
 // Each mechanism matches its Finnish and English forms with one regex, so the
 // count is invariant under translation. Adding a language variant here is how
 // you teach the gate a new phrasing — do not add a second mechanism for it.
+//
+// Boundaries are Unicode-aware ((?<!\p{L}) … (?!\p{L}) with the u flag) rather
+// than \b. This is not stylistic: \b is defined against [A-Za-z0-9_], so it
+// never fires next to a Finnish ä or ö. With \b, `Älä käytä` and `VIHREÄ` were
+// invisible to the gate whose entire job is proving those markers survive —
+// while `KELTAINEN` and `PUNAINEN` matched, which is why nobody noticed.
+// Deleting every GREEN risk marker in the repository would have passed.
+//
+// Word stems are matched with an explicit \p{L}* rather than a trailing
+// boundary, because a trailing boundary rejects the word's own inflections.
+// `human (review|approv)\b` matched "human review" but not "human reviews",
+// "human reviewer", "human approval" or "human approves" — so translating
+// `ihminen tarkistaa` into the most natural English silently dropped the count
+// and failed the gate that exists to protect it. Correct English must not be
+// the thing that breaks this.
+const NOT_LETTER_BEFORE = '(?<!\\p{L})';
+const NOT_LETTER_AFTER = '(?!\\p{L})';
+const STEM = '\\p{L}*';
+
 const MECHANISMS = [
   {
     id: 'disclaimer',
     // Vastuuvapaus: / Disclaimer:
-    re: /\b(vastuuvapaus|disclaimer)\s*[::]/gi,
+    re: new RegExp(`${NOT_LETTER_BEFORE}(vastuuvapaus|disclaimer)\\s*[::]`, 'giu'),
     what: 'disclaimer line',
   },
   {
     id: 'certainty-flag',
     // [tarkista] [varmista — ...] [muistinvarainen — ...] [mallin laskelma — ...]
     // [check] [confirm — ...] [from memory — ...] [model calculation — ...]
-    re: /\[(?:tarkista|varmista|muistinvarainen|mallin laskelma|check|confirm|from memory|model calculation)\b[^\]]*\]/gi,
+    re: new RegExp(
+      `\\[(?:tarkista|varmista|muistinvarainen|mallin laskelma|check|confirm|from memory|model calculation)${NOT_LETTER_AFTER}[^\\]]*\\]`,
+      'giu',
+    ),
     what: 'inline certainty flag',
   },
   {
     id: 'risk-colour',
-    re: /\b(VIHREÄ|KELTAINEN|PUNAINEN|GREEN|YELLOW|RED)\b/g,
+    re: new RegExp(
+      `${NOT_LETTER_BEFORE}(VIHREÄ|KELTAINEN|PUNAINEN|GREEN|YELLOW|RED)${NOT_LETTER_AFTER}`,
+      'gu',
+    ),
     what: 'risk colour marker',
   },
   {
     id: 'certainty-tier',
     // Varmistettu / Tarkistettava / Älä käytä -> Verified / Needs checking / Do not use
-    re: /\b(varmistettu|tarkistettava|älä käytä|ala kayta|verified|needs checking|do not use)\b/gi,
+    re: new RegExp(
+      `${NOT_LETTER_BEFORE}(varmistettu|tarkistettava|älä käytä|ala kayta|verified|needs checking|do not use)${NOT_LETTER_AFTER}`,
+      'giu',
+    ),
     what: 'three-tier certainty marker',
   },
   {
     id: 'human-review-gate',
     // "ihminen tarkistaa", "human reviews", "requires a lawyer's assessment"
-    re: /\b(ihminen (tarkistaa|vastaa|hyväksyy)|human (review|approv)|juristin (arvioitava|tarkistettava)|lawyer'?s assessment)\b/gi,
+    re: new RegExp(
+      `${NOT_LETTER_BEFORE}(ihminen (tarkista|vasta|hyväksy)${STEM}|human (review|approv)${STEM}|juristin (arvioitava|tarkistettava)|lawyer'?s assessment)`,
+      'giu',
+    ),
     what: 'human-review gate',
   },
 ];
