@@ -1,10 +1,12 @@
-# Valtiosopimustaustainen hallituksen esitys
+# A treaty-derived government bill
 
-## Yleiskatsaus
+## Overview
 
-Valtiosopimustaustaista hallituksen esitystä käytetään, kun hallituksen esitys pohjautuu kansainväliseen sopimukseen, jota Suomen on ratifioitava tai muutoin hyväksyttävä. Näitä voivat olla EU:n sopimukset, YK:n sopimukset, bilateraaliset sopimukset tai muut kansainväliset sopimukset.
+The treaty-derived form of government bill is used when a bill is based on an international agreement that Finland has to ratify or otherwise approve. These may be EU agreements, UN agreements, bilateral agreements or other international agreements.
 
-## Koko rakenne
+> The structural outline below is the **Finnish template** a drafter copies into the bill. The part titles stay in Finnish; the guidance around them is English.
+
+## The full structure
 
 ```
 SISÄLLYS
@@ -39,275 +41,275 @@ Asetusluonnos / Asetusluonnokset
 Muut liitteet (sopimuksen teksti, allekirjoitusasiakirjat)
 ```
 
-## Perustelujen yksityiskohtainen opas
+## A detailed guide to the reasoning
 
-### 1 Asian tausta ja valmistelu
+### 1 Asian tausta ja valmistelu — background and preparation
 
-Valtiosopimustaustaisen esityksen tausta-osiossa käsitellään sekä sopimuksen syntyvaiheita että kansallista valmistelutyötä.
+In a treaty-derived bill the background part deals both with how the agreement came about and with the national preparation work.
 
-#### 1.1 Tausta
+#### 1.1 Tausta — background
 
-Taustassa kerrotaan:
-- Sopimuksen syntyvaiheet ja neuvotteluprosessi
-- Miksi sopimus on tarpeen
-- Suomen intressit sopimuksen osalta
-- Hallitusohjelmaan sisältyvät asiaa koskevat linjaukset
-- Muut kansainväliset velvoitteet sopimukseen liittyen
+The background states:
+- How the agreement came about and the negotiation process
+- Why the agreement is needed
+- Finland's interests as regards the agreement
+- The policy statements in the Government Programme bearing on the matter
+- Other international obligations relating to the agreement
 
-**Sisällytä seuraavat kohdat:**
-- Sopimuksen syntytarina (missä kontekstissa sopimus on neuvoteltu)
-- Kansainvälisen organisaation rooli (jos relevantti)
-- Suomen roolit ja intressit sopimuksesta neuvottelussa
-- Sopimuksen strateginen merkitys Suomelle
-- Hallitusohjelman näkemykset asiasta
+**Include the following:**
+- The story of how the agreement arose (in what context it was negotiated)
+- The role of the international organisation (where relevant)
+- Finland's roles and interests in negotiating the agreement
+- The strategic significance of the agreement for Finland
+- The views in the Government Programme on the matter
 
-**Vihje**: Tausta-osiossa on osoitettava, miksi sopimuksen ratifiointi on tärkeä Suomelle ja miksi se edistää hallituksen tavoitteita.
+**Tip**: the background part must show why ratifying the agreement is important for Finland and why it advances the Government's objectives.
 
-#### 1.2 Valmistelu
+#### 1.2 Valmistelu — preparation
 
-Valmistelu-osiossa kuvataan sopimuksen valmistelua ja kansallista valmistelutyötä.
+The preparation part describes the preparation of the agreement and the national preparation work.
 
-##### Sopimuksen valmistelu
+##### Sopimuksen valmistelu — the preparation of the agreement
 
-- Sopimuksen neuvotteluprosessin kulku
-- Suomen rooli neuvotteluissa
-- Allekirjoitusprosessi
-- Sopimuksen mukaantulo
-- Muut sopimukseen liittyvät formaalit prosessit
+- The course of the negotiation process for the agreement
+- Finland's role in the negotiations
+- The signature process
+- The agreement's coming into effect
+- The other formal processes relating to the agreement
 
-##### Kansallinen valmistelu
+##### Kansallinen valmistelu — the national preparation
 
-- Kansallisen täytäntöönpanolain valmistelu
-- Valmistelun johtavat tahot
-- Osallistuneet ministeriöt ja asiantuntijat
-- Lausuntokierrokset ja asiantuntijayhteistyö
+- The preparation of the national implementing act
+- The bodies leading the preparation
+- The ministries and experts who took part
+- The consultation rounds and the co-operation with experts
 
-### 2 Sopimuksen tavoitteet ja pääasiallinen sisältö
+### 2 Sopimuksen tavoitteet ja pääasiallinen sisältö — the objectives and main content of the agreement
 
-Tämä osio käsittelee sopimuksen tavoitteita ja sisältöä.
+This part deals with the objectives and the content of the agreement.
 
-**Sisältö:**
-- Sopimuksen yleiset tavoitteet
-- Sopimuksen pääasialliset säännökset
-- Sopimuksen soveltamisala
-- Sopimukseen liittyvät pöytäkirjat tai muut lisäasiakirjat
+**Content:**
+- The general objectives of the agreement
+- The main provisions of the agreement
+- The scope of application of the agreement
+- The protocols or other supplementary instruments relating to the agreement
 
-**Kirjoitusohjeet:**
-- Selitä sopimuksen tavoitteet selkeästi
-- Kuvaile sopimuksen pääasiallisia säännöksiä
-- Osoita, mitä sopimus edellyttää Suomelta
-- Käytä sopimuksessa käytettyjä termejä johdonmukaisesti
+**Drafting instructions:**
+- Explain the objectives of the agreement clearly
+- Describe the main provisions of the agreement
+- Show what the agreement requires of Finland
+- Use the terms used in the agreement consistently
 
-**Erityiskohdat:**
-- Kansainväliset sopimukset voivat sisältää pöytäkirjoja tai liitteitä
-- Jotkut sopimukset ovat avoimia liittymiksille, toiset eivät
-- Sopimuksissa voi olla erilaisia ratifiointi- ja hyväksymismenettelyjä
+**Particular points:**
+- International agreements may contain protocols or annexes
+- Some agreements are open to accession and others are not
+- Agreements may have different procedures for ratification and approval
 
-### 3 Nykytila ja sen arviointi
+### 3 Nykytila ja sen arviointi — the current state and its assessment
 
-Nykytila-osiossa kuvataan, miten Suomelle ja sen lainsäädännölle vaikuttaa, että sopimus ei ole vielä voimassa.
+The current-state part describes how Finland and its legislation are affected by the agreement not yet being in force.
 
-**Sisältö:**
-- Nykyisen lainsäädännön puutteet sopimukseen nähden
-- Mitä muutoksia sopimus edellyttää
-- Onko nykyinen lainsäädäntö sopimuksen kanssa ristiriidassa
-- Missä osissa muutoksia tarvitaan
+**Content:**
+- The shortcomings of the legislation in force as against the agreement
+- What changes the agreement requires
+- Whether the legislation in force conflicts with the agreement
+- In which parts changes are needed
 
-**Kirjoitusohjeet:**
-- Vertaa nykyistä lainsäädäntöä sopimukseen
-- Tunnista puutteet ja poikkeamat
-- Osoita, mitkä osat nykyisestä lainsäädännöstä säilyvät
-- Osoita, mitkä osat muuttuvat
+**Drafting instructions:**
+- Compare the legislation in force with the agreement
+- Identify the shortcomings and the divergences
+- Show which parts of the legislation in force are retained
+- Show which parts change
 
-### 4 Ehdotukset ja niiden vaikutukset
+### 4 Ehdotukset ja niiden vaikutukset — the proposals and their impacts
 
-#### 4.1 Keskeiset ehdotukset
+#### 4.1 Keskeiset ehdotukset — the key proposals
 
-Valtiosopimustaustaisen esityksen ehdotuksissa tulee selkeästi osoittaa, miten ehdotukset toteutuvat sopimukseen.
+The proposals in a treaty-derived bill must show clearly how they implement the agreement.
 
-**Kirjoitusohjeet:**
-- Esitä ehdotukset sopimukseen viitaten
-- Ryhmittele ehdotukset loogisesti
-- Selitä, miten ehdotukset noudattavat sopimusta
-- Käytä sopimuksessa käytettyjä termejä
+**Drafting instructions:**
+- Present the proposals with reference to the agreement
+- Group the proposals logically
+- Explain how the proposals comply with the agreement
+- Use the terms used in the agreement
 
-**Erityiskohdat:**
-- Jotkut sopimukset edellyttävät tarkkoja säännöksiä
-- Jotkut sopimukset antavat liikkumavaraa täytäntöönpanossa
-- Jotkut sopimukset edellyttävät väliaikaistoimia ennen voimaantuloa
+**Particular points:**
+- Some agreements require precise provisions
+- Some agreements leave a margin of discretion in implementation
+- Some agreements require interim measures before entry into force
 
-#### 4.2 Pääasialliset vaikutukset
+#### 4.2 Pääasialliset vaikutukset — the main impacts
 
-Vaikutuksissa tulee käsitellä sopimuksesta aiheutuvat vaikutukset.
+The account of the impacts must deal with the impacts arising from the agreement.
 
-**Sisältö:**
-- Vaikutus eri osapuoliin (kunnat, yritykset, kansalaiset jne.)
-- Hallinnolliset vaikutukset
-- Taloudelliset vaikutukset
-- Sosiaaliset vaikutukset
-- Vaikutukset kansainvälisiin suhteisiin
+**Content:**
+- The effect on the different parties (municipalities, businesses, citizens and so on)
+- Administrative impacts
+- Economic impacts
+- Social impacts
+- Impacts on international relations
 
-**Huomio**: Kansainvälisten sopimusten vaikutukset voivat olla merkittäviä myös muille maiille. Mainitse, miten muut maat ovat vaikutuksista selviytyneet tai mitä vaikutuksia on odotettavissa.
+**Note**: the impacts of international agreements may be significant for other countries too. Say how other countries have coped with the impacts, or what impacts are to be expected.
 
-### 5 Muut toteuttamisvaihtoehdot
+### 5 Muut toteuttamisvaihtoehdot — other implementation options
 
-#### 5.1 Vaihtoehdot
+#### 5.1 Vaihtoehdot — the alternatives
 
-Vaihtoehdoissa voidaan käsitellä eri toteutustapoja sopimuksen vaatimuksissa.
+The alternatives may deal with different ways of implementing the requirements of the agreement.
 
-**Vaihtoehdoina voidaan esittää:**
-- Erilaisia täytäntöönpanokeinoja
-- Eri tasoiset toteutukset (minimivaatimukset vai laajempi)
-- Erilaiset siirtymäajat
-- Erilaiset soveltamiskohdat
+**The alternatives that may be presented:**
+- Different means of implementation
+- Implementation at different levels (the minimum requirements, or something wider)
+- Different transitional periods
+- Different points of application
 
-**Kirjoitusohjeet:**
-- Osoita, mitkä vaihtoehdot ovat sopimuksen mukaisia
-- Perustele, miksi valittu vaihtoehto on parempi
-- Käytä objektiivia kieltä
+**Drafting instructions:**
+- Show which alternatives comply with the agreement
+- Justify why the chosen alternative is better
+- Use objective language
 
-#### 5.2 Muiden maiden ratifiointi ja toteutus
+#### 5.2 Muiden maiden ratifiointi ja toteutus — ratification and implementation in other countries
 
-Tässä alaluvussa voidaan verrata Suomen ratkaisua muiden maiden ratkaisuihin.
+This sub-part may compare Finland's solution with the solutions of other countries.
 
-**Sisältö:**
-- Miten muut maat ovat ratifioineet sopimuksen
-- Eroavaisuudet eri maiden toteutuksissa
-- Mitä oppia muiden ratkaisuista
-- Perusteet Suomen valinnalle
+**Content:**
+- How other countries have ratified the agreement
+- The differences between the implementations in different countries
+- What can be learned from the solutions of others
+- The grounds for Finland's choice
 
-**Kirjoitusohjeet:**
-- Esitä muiden maiden ratkaisut objektiivisesti
-- Mainitse ainakin pari muuta maata (vertailun vuoksi)
-- Perustele, miksi Suomi valitsee oman ratkaisunsa
+**Drafting instructions:**
+- Present the solutions of other countries objectively
+- Mention at least a couple of other countries (for the sake of comparison)
+- Justify why Finland chooses its own solution
 
-### 6 Lausuntopalaute
+### 6 Lausuntopalaute — consultation feedback
 
-Lausuntopalaute käsitellään samalla tavalla kuin perusrakenteen esityksessä.
+The consultation feedback is dealt with in the same way as in a bill with the basic structure.
 
-**Huomio:** Jos sopimus on käsitelty kansainvälisessä foorumissa, mainitse näiden foorumeissa saadut kannanotot ja neuvottelutulokset.
+**Note:** if the agreement has been dealt with in an international forum, mention the positions taken and the negotiated outcomes in those forums.
 
-### 7 Säännöskohtaiset perustelut
+### 7 Säännöskohtaiset perustelut — section-by-section reasoning
 
-Säännöskohtaiset perustelut kirjoitetaan samalla tavalla kuin perusrakenteen esityksessä, mutta viittaukset sopimukseen ovat erityisen tärkeitä.
+The section-by-section reasoning is written in the same way as in a bill with the basic structure, but the references to the agreement are especially important.
 
-**Kirjoitusohjeet:**
-- Viittaa sopimuksen asiaankuuluviin artikloihin tai säännöksiin
-- Selitä, miten kotimainen sääntely toteutuu sopimuksen vaatimukset
-- Osoita poikkeamat sopimuksesta, jos niitä on
-- Käytä sopimuksessa käytettyjä termejä
+**Drafting instructions:**
+- Refer to the relevant articles or provisions of the agreement
+- Explain how the domestic regulation meets the requirements of the agreement
+- Show any divergences from the agreement
+- Use the terms used in the agreement
 
-### 8 Lakia alemman asteinen sääntely
+### 8 Lakia alemman asteinen sääntely — regulation below the level of an act
 
-Lakia alemman asteinen sääntely käsitellään samalla tavalla kuin perusrakenteen esityksessä.
+Regulation below the level of an act is dealt with in the same way as in a bill with the basic structure.
 
-**Huomio**: Sopimuksissa voi olla määräyksiä täytäntöönpanoasetuksista tai muista alemman tason säädöksistä. Mainitse, jos sopimus velvoittaa antamaan alemman asteisen sääntelyn.
+**Note**: agreements may contain provisions on implementing decrees or other lower-level rules. Say so if the agreement obliges lower-level regulation to be issued.
 
-### 9 Voimaantulo
+### 9 Voimaantulo — entry into force
 
-Voimaantulo on kriittinen osio valtiosopimustaustaisten esitysten kohdalla.
+Entry into force is a critical part in a treaty-derived bill.
 
-**Sisältö:**
-- Sopimuksen voimaantulo-olosuhteet
-- Sopimuksen voimaantulopäivä (tai kunhan sopimus tulee voimaan)
-- Kotimaisen lainsäädännön voimaantuloaika
-- Yhteydet sopimukseen
+**Content:**
+- The conditions for the agreement's entry into force
+- The date of entry into force of the agreement (or the point at which it enters into force)
+- The time of entry into force of the domestic legislation
+- The connections with the agreement
 
-**Kirjoitusohjeet:**
-- Selitä sopimuksen voimaantuloedellytykset
-- Määrittele, milloin sopimus tulee voimaan
-- Määrittele, milloin kotimainen lainsäädäntö tulee voimaan
-- Huomioi siirtymäajat ja erityiset määräykset
+**Drafting instructions:**
+- Explain the conditions for the agreement's entry into force
+- Define when the agreement enters into force
+- Define when the domestic legislation enters into force
+- Take account of transitional periods and any special provisions
 
-**Erityiskohdat:**
-- Monille sopimuksille on ominaisuutta, että ne tulevat voimaan tietyn ajan kuluttua viimeisen ratifikaation jälkeen
-- Jotkut sopimukset vaativat tietyn määrän ratifikointeja ennen voimaantuloa
-- Jotkut sopimukset voivat tulla voimaan eri aikoina eri maiden osalta
+**Particular points:**
+- Many agreements have the feature that they enter into force a certain time after the last ratification
+- Some agreements require a certain number of ratifications before entry into force
+- Some agreements may enter into force at different times for different countries
 
-### 10 Toimeenpano ja seuranta
+### 10 Toimeenpano ja seuranta — implementation and monitoring
 
-Toimeenpano-osio käsitellään samalla tavalla kuin perusrakenteen esityksessä, mutta huomioidaan sopimukseen liittyvät raportointivaatimukset.
+The implementation part is dealt with in the same way as in a bill with the basic structure, but the reporting requirements relating to the agreement are taken into account.
 
-**Erityiskohdat:**
-- Sopimuksissa usein vaaditaan raportointia sopimuksen valvontaelimelle
-- Seuranta-indikaattorit määritellään usein sopimuksessa
-- Arviointipäivät määritetään usein sopimuksessa
+**Particular points:**
+- Agreements often require reporting to the body supervising the agreement
+- The monitoring indicators are often defined in the agreement
+- The evaluation dates are often set in the agreement
 
-### 11 Suhde muihin esityksiin
+### 11 Suhde muihin esityksiin — the relationship to other bills
 
-#### 11.1 Esityksen riippuvuus muista esityksistä
+#### 11.1 Esityksen riippuvuus muista esityksistä — the bill's dependence on other bills
 
-- Liittyykö esitys muihin kansainvälisten sopimusten ratifiointihankkeihin?
-- Onko esitys riippuvainen muista samanaikaisista esityksistä?
-- Edellyttääkö sopimuksen voimaantulo muiden sopimusten hyväksymistä?
+- Does the bill relate to other projects to ratify international agreements?
+- Is the bill dependent on other bills being dealt with at the same time?
+- Does the agreement's entry into force require other agreements to be approved?
 
-#### 11.2 Suhde talousarvioesitykseen
+#### 11.2 Suhde talousarvioesitykseen — the relationship to the budget proposal
 
-- Vaikuttaako sopimuksen ratifiointi ja täytäntöönpano julkisiin menoihin?
-- Tarvitaanko uusia määrärahoja?
+- Do the ratification and implementation of the agreement affect public expenditure?
+- Are new appropriations needed?
 
-### 12 Suhde perustuslakiin ja säätämisjärjestys
+### 12 Suhde perustuslakiin ja säätämisjärjestys — the relationship to the Constitution and the legislative procedure
 
-Tämä osio on erityisen tärkeä valtiosopimustaustaisten esitysten kohdalla.
+This part is especially important in a treaty-derived bill.
 
-**Sisältö:**
-- Sopimuksen ja perustuslain välinen suhde
-- Perustuslain mukainen säätämisjärjestys
-- Mahdolliset perustusoikeuksiin vaikuttavat puolet
-- Eduskunnan hyväksyntä (jos vaaditaan)
+**Content:**
+- The relationship between the agreement and the Constitution
+- The legislative procedure under the Constitution
+- Any aspects affecting fundamental rights
+- The approval of Eduskunta (where that is required)
 
-**Kirjoitusohjeet:**
-- Osoita sopimuksen perustuslainmukaisuus
-- Mainitse mahdolliset perustusoikeuksiin vaikuttavat näkökulmat
-- Selitä, vaatiiko sopimus eduskunnan hyväksyntää
-- Selitä säätämisjärjestys
+**Drafting instructions:**
+- Show that the agreement complies with the Constitution
+- Mention any aspects affecting fundamental rights
+- Explain whether the agreement requires the approval of Eduskunta
+- Explain the legislative procedure
 
 ---
 
-## Erityishuomioita valtiosopimustaustaisten esitysten kohdalla
+## Particular points on treaty-derived bills
 
-### Sopimustyypit
+### Types of agreement
 
-Kansainväliset sopimukset voivat olla:
-- **Kahdenvälisiä**: Kahden maan välisiä sopimuksia
-- **Moninaisvälisiä**: Useiden maiden välisiä sopimuksia
-- **YK:n sopimuksia**: Yhdistyneiden kansakuntien puitteissa neuvoituja sopimuksia
-- **EU:n sopimuksia**: Euroopan unionin osittain neuvoituja sopimuksia (vaikka EU myös seikkailee Euroopan neuvostoon)
-- **Muita kansainvälisen organisaation sopimuksia**: Esim. UNESCO:n, WHO:n, ILO:n sopimuksia
+International agreements may be:
+- **Bilateral**: agreements between two countries
+- **Multilateral**: agreements between several countries
+- **UN agreements**: agreements negotiated within the framework of the United Nations
+- **EU agreements**: agreements negotiated in part by the European Union. (The Finnish source adds a parenthetical here — "vaikka EU myös seikkailee Euroopan neuvostoon" — which is garbled and should be checked against HELO.)
+- **Agreements of other international organisations**: for example agreements of UNESCO, WHO or ILO
 
-### Ratifiointimenettelyt
+### Ratification procedures
 
-Eri sopimuksilla voi olla erilaisia ratifiointimenettelyjä:
-- **Yksinkertainen ratifiointi**: Pääministeri allekirjoittaa sopimuksen ilman erityistä hyväksyntää
-- **Eduskunnan hyväksyntä**: Sopimus vaatii eduskunnan hyväksyntää ennen ratifiointia
-- **Säädöslain vaatimus**: Sopimus vaatii uuden lain tai lainmuutoksen
+Different agreements may have different ratification procedures:
+- **Simple ratification**: the agreement is signed without any special approval
+- **Approval by Eduskunta**: the agreement requires the approval of Eduskunta before ratification
+- **A statutory requirement**: the agreement requires a new act or an amendment to an act
 
-Perustuslaki määrää, mitkä sopimukset vaativat eduskunnan hyväksyntää.
+The Constitution determines which agreements require the approval of Eduskunta.
 
-### Sopimuksen teksti liitteessä
+### The text of the agreement as an annex
 
-Sopimuksen teksti liitetään hallituksen esitykseen liitteeksi. Tämä on tärkeä dokumentti, jota lukijat voivat viitata.
+The text of the agreement is attached to the government bill as an annex. This is an important document that readers can refer to.
 
-### Sopimuksen voimaantuloedellytykset
+### The conditions for the agreement's entry into force
 
-Monissa sopimuksissa voimaantulo ei ole automaattinen. Esimerkiksi sopimus voi tulla voimaan vasta, kun tietty määrä maita on ratifioinut sen. Tämä tulee selittää selkeästi.
+In many agreements entry into force is not automatic. For example, an agreement may enter into force only once a certain number of countries have ratified it. This must be explained clearly.
 
-### Eduskunnan hyväksyntä
+### The approval of Eduskunta
 
-Jos sopimus vaatii eduskunnan hyväksyntää, ponsissa tulee viitata eduskunnan hyväksyntälain säädöksiin. Tyypillisesti ponsissa sanotaan:
+If an agreement requires the approval of Eduskunta, the ponsi must refer to the provisions of the act approving it. The ponsi typically says:
 
 "Edellä mainitulla perusteella esitamme, että Eduskunta hyväksyisi allekirjoitetun... sopimuksen."
 
-### Kansainvälisen sopimuksen tulkinta
+### Interpreting an international agreement
 
-Kansainvälisiä sopimuksia tulkitaan eri tavalla kuin kotimaisia lakeja. Tärkeitä tulkintasääntöjä löytyy Wienin sopimuksesta kansainvälisten sopimusten oikeudesta.
+International agreements are interpreted differently from domestic acts. The important rules of interpretation are in the Vienna Convention on the Law of Treaties.
 
-### Varauma (Reservation)
+### Reservations
 
-Jotkut sopimukset sallivat varaumia (reservations), joiden avulla maa voi varata oikeudet poiketa tietyistä sopimuksen säännöksistä. Jos Suomi käyttää varaumia, tämä tulee selittää esityksessä.
+Some agreements permit reservations, by which a country may reserve the right to derogate from certain provisions of the agreement. If Finland makes reservations, this must be explained in the bill.
 
 ---
 
-## Esimerkkejä valtiosopimustaustaista esityksistä
+## Examples of treaty-derived bills
 
-Esimerkkejä valtiosopimustaustaista hallituksen esityksistä löytyy Finlex-palvelusta, jossa hallituksen esitykset ovat saatavilla.
+Examples of treaty-derived government bills can be found in the Finlex service, where government bills are available.

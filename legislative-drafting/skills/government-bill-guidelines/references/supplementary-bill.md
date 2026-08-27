@@ -1,35 +1,37 @@
-# Täydentävät hallituksen esitykset ja rinnakkaistekstit
+# Supplementary government bills and parallel texts
 
-## Yleiskatsaus
+## Overview
 
-Täydentäviä hallituksen esityksiä ja rinnakkaistekstejä käytetään lainsäädännön muuttamiseen ja täydentämiseen. Nämä ovat erityisiä muoto, joita käytetään silloin, kun ollaan muuttamassa jo olemassa olevaa lainsäädäntöä tai kun hallituksen esityksen rakenne eroaa perusrakenteesta.
+Supplementary government bills and parallel texts (rinnakkaistekstit) are used in amending and supplementing legislation. These are particular forms, used when legislation already in existence is being amended or when the structure of a government bill differs from the basic structure.
 
-## Täydentävät hallituksen esitykset
+> The example texts below are **Finnish model text** a drafter adapts. They stay in Finnish; the guidance around them is English.
 
-### Määritelmä
+## Supplementary government bills
 
-Täydentävä hallituksen esitys on esitys, joka täydentää aiemmin käsiteltyä asiaa tai hallituksen antaman lain täytäntöönpanoa.
+### Definition
 
-### Käyttötapaukset
+A supplementary government bill is a bill that supplements a matter already dealt with, or the implementation of an act given by the Government.
 
-Täydentävät esitykset voidaan lähettää:
+### When they are used
 
-1. **Aiemman hallituksen esityksen täydentämiseen**
-   - Aiemmassa esityksessä ilmaantuneet puutteet
-   - Aiemman lain soveltamisessa havaitut epäselvyydet
-   - Teknisiä korjauksia
+Supplementary bills may be submitted:
 
-2. **Eduskunnan antaman lain täytäntöönpanoon**
-   - Täytäntöönpanoon tarvittava lainsäädäntö
-   - Koordinointilainsäädäntö
+1. **To supplement an earlier government bill**
+   - Shortcomings that emerged in the earlier bill
+   - Ambiguities observed in applying the earlier act
+   - Technical corrections
 
-3. **Lain täydentämiseen ja täydentäviin säädöksiin**
-   - Uusia säännöksiä vanhojen rinnalle
-   - Poistettujen säännösten korvaajat
+2. **To implement an act passed by Eduskunta**
+   - The legislation needed for implementation
+   - Co-ordinating legislation
 
-### Rakenne
+3. **To supplement an act and for supplementary statutes**
+   - New provisions alongside the old ones
+   - Replacements for provisions that have been removed
 
-Täydentävien esitysten rakenne voidaan mukauttaa tilanteen mukaan, mutta yleensä noudatetaan seuraavaa rakennetta:
+### Structure
+
+The structure of a supplementary bill may be adapted to the situation, but the following structure is generally followed:
 
 ```
 SISÄLLYS
@@ -63,56 +65,56 @@ LIITE / LIITTEET
 Rinnakkaisteksti / Rinnakkaistekstit
 ```
 
-### Kirjoitusohjeet
+### Drafting instructions
 
-#### Tausta-osio
+#### The background part
 
-Taustassa on selkeästi osoitettava:
-- Mihin aiempaan hallituksen esitykseen tai lakiin esitys liittyy
-- Miksi täydennys on tarpeellinen
-- Mitä puutteita tai ongelmia havaittu
+The background must show clearly:
+- Which earlier government bill or act the bill relates to
+- Why the supplement is necessary
+- What shortcomings or problems have been observed
 
-**Esimerkki** (havainnollistava malli, tunnus paikkamerkki):
+**Example** (an illustrative model; the identifier is a placeholder):
 "Hallitus antoi eduskunnalle esityksen HE n/vvvv vp koskien kuluttajansuojalakia. Lakia säädettäessä ilmaantui kuitenkin muutamia teknisiä puutteita, joita tämä esitys korjaa. Lisäksi soveltamiskäytännössä havaitut ongelmat vaativat selkeyttävää lainsäädäntöä."
 
-#### Nykytila-osio
+#### The current-state part
 
-Nykytila-osiossa käsitellään:
-- Aiemman lain tai esityksen vaikutukset käytännössä
-- Ilmaantuneet ongelmat tai puutteet
-- Tarpeet täydennyslainsäädännölle
+The current-state part deals with:
+- The effects of the earlier act or bill in practice
+- The problems or shortcomings that have emerged
+- The need for supplementary legislation
 
-**Esimerkki:**
+**Example:**
 "Lain voimaantulosta on kulunut 18 kuukautta. Käytännön soveltamisessa ilmaantui, että pykälän 5 säännökset eivät ole riittävän selkeät ja johtavat soveltajien keskuudessa eri tulkintoihin. Lisäksi lakiin lisätyt säännökset 8 a § vaativat teknisiä korjauksia."
 
-#### Ehdotukset-osio
+#### The proposals part
 
-Ehdotuksissa tulee selkeästi osoittaa:
-- Mitkä muutokset tehdään aiempaan lakiin
-- Miksi muutokset ovat tarpeellisia
-- Miten muutokset ratkaisevat ilmaantuneet ongelmat
+The proposals must show clearly:
+- Which changes are made to the earlier act
+- Why the changes are necessary
+- How the changes resolve the problems that have emerged
 
-**Esimerkki:**
+**Example:**
 "Ehdotetaan, että 5 § muutetaan siten, että tuottajien velvoitteista käytetään selkeämpiä termejä. Tämä ratkaisee käytännön soveltamisongelmia."
 
-## Rinnakkaistekstit
+## Parallel texts
 
-### Määritelmä
+### Definition
 
-Rinnakkaisteksti on asiakirja, joka näyttää vanhan ja uuden lainsäädännön rinnakkain. Se auttaa hahmottamaan tekemät muutokset selkeästi.
+A parallel text is a document showing the old and the new legislation side by side. It helps in seeing clearly the changes that have been made.
 
-### Tarkoitus
+### Purpose
 
-Rinnakkaistekstejä käytetään:
-- Hallituksen esitysten liitteissä
-- Eduskunnassa keskustelun apuvälineenä
-- Lainsäädännön muutoksien ymmärtämisessä
+Parallel texts are used:
+- In the annexes to government bills
+- In Eduskunta as an aid to debate
+- In understanding changes to legislation
 
-### Rakenne
+### Structure
 
-Rinnakkaistekstissä vanhan ja uuden tekstin esittäminen:
+Presenting the old and the new text in a parallel text:
 
-**Vaihtoehto 1: Pystysuuntainen jako**
+**Option 1: a vertical split**
 
 ```
 ┌─────────────────────────────┬──────────────────────────────┐
@@ -127,7 +129,7 @@ Rinnakkaistekstissä vanhan ja uuden tekstin esittäminen:
 └─────────────────────────────┴──────────────────────────────┘
 ```
 
-**Vaihtoehto 2: Alleviivaus**
+**Option 2: underlining**
 
 ```
 Vanhat osat esitetään normaalina tekstinä.
@@ -139,37 +141,37 @@ Esimerkki:
 24/7*."
 ```
 
-### Kirjoitusohjeet
+### Drafting instructions
 
-#### Selkeyden varmistaminen
+#### Ensuring clarity
 
-- Käytä johdonmukaista merkintätapaa muutoksiin
-- Merkitse selkeästi poistetut, lisätyt ja muutetut kohdat
-- Käytä värejä tai merkintöjä, jos mahdollista
+- Use a consistent notation for the changes
+- Mark clearly the passages removed, added and amended
+- Use colours or markers where possible
 
-#### Muutosmerkit
+#### Change markers
 
-Yleisiä merkintöjä:
-- **Poistettu:** Teksti ___yliviivattuna___ tai [poistettu]
-- **Lisätty:** Teksti *lihavoidulla* tai [lisätty] tai <u>alleviivatulla</u>
-- **Muutettu:** Koko muutettu teksti näkyy uusilla merkinnöillä
+Common notations:
+- **Removed:** text ___struck through___ or [poistettu]
+- **Added:** text in *bold* or [lisätty] or <u>underlined</u>
+- **Amended:** the whole amended text appears with the new notation
 
-#### Pituuden hallinta
+#### Managing the length
 
-- Rinnakkaistekstin tulee pysyä kohtuullisen mittaisena
-- Erittäin pitkissä laeissa voidaan käyttää osittaisia rinnakkaistekstejä
-- Pienille muutoksille rinnakkaisteksti voi olla lyhyempi
+- A parallel text should stay a reasonable length
+- In very long acts, partial parallel texts may be used
+- For small changes a parallel text may be shorter
 
-### Esimerkki rinnakkaistekstistä
+### An example of a parallel text
 
-**Vanha versio:**
+**The old version:**
 ```
 Pykälä 10 - Rekisteröinti
 Asiakas rekisteröityy palveluun antamalla perusasiat.
 Rekisteröintiin tarvitaan nimi, osoite ja sähköpostiosoite.
 ```
 
-**Uusi versio:**
+**The new version:**
 ```
 Pykälä 10 - Rekisteröinti
 Asiakas rekisteröityy palveluun antamalla perusasiat.
@@ -177,7 +179,7 @@ Rekisteröintiin tarvitaan nimi, osoite ja sähköpostiosoite.
 Lisäksi voidaan pyytää puhelinnumeroa varmistusviesteille.
 ```
 
-**Rinnakkaisteksti:**
+**The parallel text:**
 ```
 Pykälä 10 - Rekisteröinti
 
@@ -191,125 +193,125 @@ Rekisteröintiin tarvitaan nimi, osoite ja sähköpostiosoite.
 *Lisäksi voidaan pyytää puhelinnumeroa varmistusviesteille.*
 ```
 
-## Täydentävien esitysten osiot yksityiskohtaisesti
+## The parts of a supplementary bill in detail
 
-### 1 Asian tausta ja valmistelu
+### 1 Asian tausta ja valmistelu — background and preparation
 
-#### 1.1 Tausta
+#### 1.1 Tausta — background
 
-Tassa tulee selkeästi osoittaa aiemman hallituksen esityksen tai lain tausta ja täydennyksen tarve.
+This must show clearly the background of the earlier government bill or act and the need for the supplement.
 
-**Sisällytä seuraavat kohdat:**
-- Viite aiempaan hallituksen esitykseen tai lakiin
-- Aiemman esityksen tavoitteet
-- Miksi täydennys on tarpeellinen
-- Aiemman lain vaikutukset käytännössä
+**Include the following:**
+- A reference to the earlier government bill or act
+- The objectives of the earlier bill
+- Why the supplement is necessary
+- The effects of the earlier act in practice
 
-**Esimerkki** (havainnollistava malli, tunnus paikkamerkki):
+**Example** (an illustrative model; the identifier is a placeholder):
 "Hallitus antoi eduskunnalle esityksen HE n/vvvv vp koskien opetuslainsäädännön muuttamista. Lakia säädettäessä eduskunta hyväksyi sen pääosin hallituksen ehdotuksella. Laki tuli voimaan 1.1.2020. Käytännön soveltamisessa on kuitenkin ilmaantunut muutamia seikkaisia tulkintaongelmia, jotka vaativat selkeyttävää lainsäädäntöä."
 
-#### 1.2 Valmistelu
+#### 1.2 Valmistelu — preparation
 
-Valmistelu-osiossa kuvataan täydentävän esityksen valmistelua.
+The preparation part describes the preparation of the supplementary bill.
 
-**Sisällytä:**
-- Valmistelun aloitus ja kesto
-- Osallistuneet tahot
-- Lausuntokierros
-- Asiaan liittyvät tapahtumat ja ilmaantuneet ongelmat
+**Include:**
+- When the preparation began and how long it took
+- The parties who took part
+- The consultation round
+- The events bearing on the matter and the problems that emerged
 
-### 2 Nykytila ja sen arviointi
+### 2 Nykytila ja sen arviointi — the current state and its assessment
 
-Tässä osiossa analysoidaan aiemman lain toimivuus ja ilmaantuneet puutteet.
+This part analyses how the earlier act has worked and the shortcomings that have emerged.
 
-**Sisällytä:**
-- Aiemman lain vaikutukset ensimmäisen toimintavuoden jälkeen
-- Käytännössä ilmaantuneet ongelmat
-- Soveltajien antamat palauteet
-- Oikeustapauksista ilmaantuneet tulkintaongelmat
-- Tilastot tai muut todisteaineistot ongelmista
+**Include:**
+- The effects of the earlier act after the first year of operation
+- The problems that emerged in practice
+- The feedback given by those applying the act
+- The problems of interpretation arising from court cases
+- Statistics or other evidence of the problems
 
-**Esimerkki:**
+**Example:**
 "Laki on ollut voimassa nyt 18 kuukautta. Soveltajat ovat raportoineet, että pykälän 7 säännökset ovat epäselviä. Korkeimman hallinto-oikeuden päätöksessä [KHO:VVVV:NN — korvaa todellisella, Finlexistä tarkistetulla ratkaisulla] todettiin, että säännöksiä tulkittiin eri tavoin eri alueilla. Lisäksi kauppa- ja teollisuusministeriö on saanut 127 kysymystä säännösten tulkinnasta."
 
-> **Esimerkki on havainnollistava malli, ei oikea ratkaisu.** Ratkaisutunnukset, HE-numerot ja luvut tässä osiossa ovat keksittyjä paikkamerkkejä. Korvaa ne aina Finlexistä tarkistetuilla todellisilla viittauksilla — älä kopioi näitä sellaisenaan hallituksen esitykseen.
+> **The example is an illustrative model, not a real decision.** The case identifiers, HE numbers and figures in this part are invented placeholders. Always replace them with real references checked in Finlex — do not copy these into a government bill as they stand.
 
-### 3 Tavoitteet
+### 3 Tavoitteet — objectives
 
-Tavoitteet-osiossa määritellään, mitä täydentävällä lainsäädännöllä pyritään saavuttamaan.
+The objectives part defines what the supplementary legislation is meant to achieve.
 
-**Tavoitteet voivat olla:**
-- Selkeyden lisääminen
-- Epäselvyyksien ratkaiseminen
-- Teknisten virheiden korjaaminen
-- Käytännön soveltamisongelmien ratkaiseminen
+**The objectives may be:**
+- Increasing clarity
+- Resolving ambiguities
+- Correcting technical errors
+- Resolving problems in applying the act in practice
 
-**Esimerkki:**
+**Example:**
 "Tavoitteena on selkeyteen pykälän 7 säännökset siten, että soveltajille ei jää tulkintavaraa. Tavoitteena on myös varmistaa, että kaikilla alueilla sovelletaan lakeja yhtenäisesti."
 
-### 4 Ehdotukset ja niiden vaikutukset
+### 4 Ehdotukset ja niiden vaikutukset — the proposals and their impacts
 
-#### 4.1 Keskeiset ehdotukset
+#### 4.1 Keskeiset ehdotukset — the key proposals
 
-Ehdotuksissa tulee selkeästi osoittaa, mitkä muutokset tehdään aiempaan lakiin.
+The proposals must show clearly which changes are made to the earlier act.
 
-**Sisällytä:**
-- Mitkä pykälät muutetaan
-- Mitkä pykälät lisätään
-- Mitkä pykälät poistetaan
-- Miten ehdotukset ratkaisevat ilmaantuneet ongelmat
+**Include:**
+- Which sections are amended
+- Which sections are added
+- Which sections are removed
+- How the proposals resolve the problems that have emerged
 
-**Esimerkki:**
+**Example:**
 "Ehdotetaan, että pykälä 7 muutetaan seuraavasti:
 - Lisätään tarke, jonka mukaan 'palvelu' tarkoittaa tässä laissa..."
 - Poistetaan epäselvä kielto, joka on aiheuttanut tulkintaongelmia
 - Lisätään selventävä säännös 7 a §, joka käsittelee erityistapauksia"
 
-#### 4.2 Pääasialliset vaikutukset
+#### 4.2 Pääasialliset vaikutukset — the main impacts
 
-Vaikutuksissa käsitellään, miten muutokset vaikuttavat osapuoliin.
+The account of the impacts deals with how the changes affect the parties.
 
-**Sisällytä:**
-- Vaikutus soveltajiin
-- Vaikutus kansalaisiin ja yrityksiin
-- Hallinnolliset vaikutukset
-- Kustannusvaikutukset
+**Include:**
+- The effect on those applying the act
+- The effect on citizens and businesses
+- Administrative impacts
+- Cost impacts
 
-### 5 Muut toteuttamisvaihtoehdot
+### 5 Muut toteuttamisvaihtoehdot — other implementation options
 
-Tässä osiossa esitetään harkittuja vaihtoehtoja, joita ei ehdotettu.
+This part sets out the alternatives that were considered but not proposed.
 
-**Vaihtoehdoina voivat olla:**
-- Erilaisten säännösten muotoilut
-- Vain osittaiset muutokset
-- Tulkintaohjeet ilman lainsäädäntöä
-- Odottaminen ennen lainsäädäntöä
+**The alternatives may be:**
+- Different formulations of the provisions
+- Partial changes only
+- Guidance on interpretation without legislation
+- Waiting before legislating
 
-### 6 Lausuntopalaute
+### 6 Lausuntopalaute — consultation feedback
 
-Lausuntopalaute-osiossa käsitellään saadut lausunnot.
+The consultation feedback part deals with the statements received.
 
-**Sisällytä:**
-- Lausuntojen saajat
-- Keskeisiä huomautuksia
-- Vastaukset huomautuksiin
+**Include:**
+- Those who received the request for statements
+- The key observations
+- The responses to the observations
 
-### 7 Säännöskohtaiset perustelut
+### 7 Säännöskohtaiset perustelut — section-by-section reasoning
 
-Säännöskohtaiset perustelut kirjoitetaan normaalisti, mutta viittaukset aiempaan lakiin ja esitykseen ovat tärkeitä.
+The section-by-section reasoning is written as usual, but the references to the earlier act and bill are important.
 
-**Sisällytä:**
-- Viite aiemman lain pykälään
-- Miksi muutos on tarpeellinen
-- Miten muutos toimii käytännössä
+**Include:**
+- A reference to the section of the earlier act
+- Why the change is necessary
+- How the change works in practice
 
-**Esimerkki:**
+**Example:**
 "Pykälä 7 (muutettu)
 Pykälää ehdotetaan muutettavaksi siten, että poistetaan soveltamisessa ilmaantuneet epäselvyydet. Aiemmassa esityksessä HE n/vvvv vp todettiin, että 'palvelu' tarkoittaa... Käytännössä on kuitenkin ilmaantunut, että soveltajat tulkitsevat termiä eri tavoin. Ehdotetun muutoksen tarkoituksena on selkeyteen säännöstä lisäämällä tarkempi määritelmä."
 
-## Rinnakkaistekstien muodot
+## The forms of a parallel text
 
-### Muoto 1: Pystysuuntainen jako
+### Form 1: a vertical split
 
 ```
 ┌──────────────┬──────────────┐
@@ -319,18 +321,18 @@ Pykälää ehdotetaan muutettavaksi siten, että poistetaan soveltamisessa ilmaa
 └──────────────┴──────────────┘
 ```
 
-**Käyttötapaus:** Selkeät erot vanhaan ja uuteen tekstiin
+**When used:** where the differences between the old and the new text are clear
 
-**Edut:**
-- Helppo vertailla
-- Selkeä rakenne
-- Visuaalisesti helppo lukea
+**Advantages:**
+- Easy to compare
+- A clear structure
+- Visually easy to read
 
-**Haitat:**
-- Voi olla pitkä
-- Vaikea tulostaa kapeille sivuille
+**Disadvantages:**
+- May be long
+- Hard to print on narrow pages
 
-### Muoto 2: Alleviivaus
+### Form 2: underlining
 
 ```
 Vanhat osat säilyvät normaalina.
@@ -338,18 +340,18 @@ ___Poistetut__ osat yliviivattuna.
 *Uudet osat* lihavoidulla.
 ```
 
-**Käyttötapaus:** Pienet muutokset tekstiin
+**When used:** small changes to the text
 
-**Edut:**
-- Kompakti
-- Helppo tulostaa
-- Näyttää muutokset kontekstissa
+**Advantages:**
+- Compact
+- Easy to print
+- Shows the changes in context
 
-**Haitat:**
-- Isot muutokset voivat tehdä tekstistä sekavaa
-- Värit tai merkit voivat hävitä tulostuksessa
+**Disadvantages:**
+- Large changes may make the text confusing
+- Colours or markers may be lost in printing
 
-### Muoto 3: Uusi versio kokonaisuudessaan
+### Form 3: the new version in full
 
 ```
 Pykälä näytetään kokonaan uudella tekstillä.
@@ -357,42 +359,42 @@ Viitattavissa on, että pykälä on muuttunut, mutta
 vanhan version hakeminen vaatii erillisen dokumentin.
 ```
 
-**Käyttötapaus:** Pienille teksteille tai hyvin muuttuneille pykälille
+**When used:** for short texts or for sections that have changed a great deal
 
-**Edut:**
-- Selkeä lopullinen muoto
-- Helppoa lukea
+**Advantages:**
+- A clear final form
+- Easy to read
 
-**Haitat:**
-- Vanhan ja uuden välisen eron näkeminen vaikea
-- Ei parhaiden käytäntöjen mukainen
+**Disadvantages:**
+- Hard to see the difference between the old and the new
+- Not in line with best practice
 
-## Huomioita täydentävien esitysten kirjoittamisessa
+## Points on writing supplementary bills
 
-### Aiemman esityksen viittaaminen
+### Referring to the earlier bill
 
-- Ole selkeä viittauksissa aiempaan esitykseen tai lakiin
-- Käytä viitteestä yleistä muotoa (esim. "HE n/vvvv vp" tai "Laki valtion liikennelain muuttamisesta")
+- Be clear in the references to the earlier bill or act
+- Use the standard form of the reference (for example "HE n/vvvv vp" or "Laki valtion liikennelain muuttamisesta")
 
-### Ongelmakohtien dokumentointi
+### Documenting the problem areas
 
-- Dokumentoi selkeästi, mitä ongelmia käytännössä ilmaantunut
-- Käytä konkreettisia esimerkkejä
-- Viittaa oikeustapauksiin tai tilastoihin, jos saatavilla
+- Document clearly what problems have emerged in practice
+- Use concrete examples
+- Refer to court cases or statistics where they are available
 
-### Selkeyden varmistaminen
+### Ensuring clarity
 
-- Varmista, että lukija ymmärtää, miten uudet ehdotukset ratkaisevat ongelmat
-- Käytä selkeitä perusteluja
-- Osoita, miten muutokset parantavat tilannetta
+- Make sure the reader understands how the new proposals resolve the problems
+- Use clear reasoning
+- Show how the changes improve the situation
 
-### Rakenteen sopeutus
+### Adapting the structure
 
-- Täydentävissä esityksissä rakennetta voidaan sopivasti mukauttaa
-- Esimerkiksi "Nykytila" -osion voi nimetä "Lain toimivuuden arviointi" tai "Käytännön soveltamisen ongelmat"
+- In supplementary bills the structure may be adapted as appropriate
+- For example the "Nykytila" part may be named "Lain toimivuuden arviointi" or "Käytännön soveltamisen ongelmat"
 
 ---
 
-## Esimerkkejä täydentävistä esityksistä
+## Examples of supplementary bills
 
-Esimerkkejä täydentävistä hallituksen esityksistä löytyy Finlex-palvelusta käyttämällä hakusanoja "täydentävä" tai "täydentävät esitykset" hallituksen esityksien hakemistossa.
+Examples of supplementary government bills can be found in the Finlex service, by searching the index of government bills for "täydentävä" or "täydentävät esitykset".
