@@ -1,20 +1,53 @@
 #!/usr/bin/env node
-// Citation-integrity gate.
+// Citation-integrity gate - checks both directions.
 //
 //   node scripts/check-citations.mjs --snapshot   # record the current state
 //   node scripts/check-citations.mjs              # verify against the snapshot
 //
 // Translation is the point at which a statute number, case identifier or
-// preparatory-works reference can silently disappear or mutate. A dropped
-// `55/2001` does not look like an error - the surrounding English prose reads
-// perfectly well - so nothing else in this repository would catch it.
+// preparatory-works reference can silently disappear, mutate - or be invented.
+// Neither failure looks like an error: the surrounding English prose reads
+// perfectly well either way, and a fabricated `999/2099` is indistinguishable
+// from a real statute number to anyone who is not holding Finlex open. Nothing
+// else in this repository would catch either one.
 //
-// This is a per-file multiset comparison: for every markdown file, the set of
-// citation tokens and how many times each occurs must be identical before and
-// after translation. It deliberately says nothing about the prose.
+// Both directions are measured against references/citation-snapshot.json, a
+// per-file multiset of citation tokens taken before translation. The gate
+// deliberately says nothing about the prose.
+//
+// LOST - always an error
+//   A token the snapshot recorded for a file occurs fewer times there now.
+//   Something was dropped or rewritten.
+//
+// ADDED - graded, because a gate that cries wolf gets ignored
+//   A token occurs in a file the snapshot did not record it for. Translation
+//   legitimately moves citations between files and legitimately repeats a
+//   number already used elsewhere, so severity depends on whether the number
+//   itself is new to the repository:
+//
+//     - the token exists somewhere else in the snapshot         WARNING
+//       it moved or was reused; the number was already here
+//     - the token is new to the snapshot but is listed in
+//       tracking/statutes.json                                  WARNING
+//       a statute someone verified against Finlex
+//     - the token appears in neither                            ERROR
+//       nothing in this repository has ever cited it, so the most likely
+//       explanation is that a translator invented it
+//
+// A token the snapshot already records for a file is not reported when it now
+// occurs MORE often there. Repeating a citation cannot introduce a new number,
+// and English routinely spells out a reference where the Finnish inflected a
+// short form - counting that as an addition would be pure noise.
 //
 // A file that is renamed between snapshot and check is followed through
 // scripts/rename-map.json, so the gate survives a path migration.
+//
+// Known blind spot: PATTERNS below only recognise years 1900-2099, so pre-1900
+// statutes - rikoslaki 39/1889, oikeudenkaari 4/1734 - are invisible to the
+// gate in BOTH directions. Widening the year range would be correct, but every
+// such token is by definition absent from the current snapshot, so it would
+// land as a wave of false "invented" errors until the snapshot is retaken.
+// Close it together with the next deliberate re-snapshot, not before.
 
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -22,7 +55,11 @@ import { join, relative } from 'node:path';
 import { ROOT, readJSON } from './lib.mjs';
 
 const SNAPSHOT = 'references/citation-snapshot.json';
+const STATUTES = 'tracking/statutes.json';
 const SKIP = new Set(['node_modules', 'docs', 'dist', '.git']);
+
+// How many warnings to print before collapsing the rest into a count.
+const MAX_WARNINGS_SHOWN = 25;
 
 // Citation forms that must survive translation untouched.
 const PATTERNS = [
@@ -91,6 +128,21 @@ function collect() {
   return files;
 }
 
+/**
+ * Statute numbers someone has verified against Finlex, from tracking/statutes.json.
+ * A citation new to the snapshot but present here is far more likely to be a real
+ * statute the translation pulled in than an invention, so it is only a warning.
+ */
+function verifiedStatutes() {
+  const path = join(ROOT, STATUTES);
+  if (!existsSync(path)) return new Set();
+  const registry = readJSON(path);
+  // The registry keeps its Finnish keys (see AGENTS.md); accept English ones too
+  // so a future rename of the registry cannot silently disarm this cross-check.
+  const entries = registry.saadokset ?? registry.statutes ?? [];
+  return new Set(entries.map((entry) => entry.numero ?? entry.number).filter(Boolean));
+}
+
 // ---------------------------------------------------------------------------
 // Snapshot mode
 // ---------------------------------------------------------------------------
@@ -156,6 +208,35 @@ if (existsSync(mapPath)) {
 }
 
 const problems = [];
+const warnings = [];
+
+// Every citation token the repository was known to use, and where it came from.
+// A token that is absent from this set has never been cited here, which is what
+// separates "this moved" from "someone made this up".
+const knownTokens = new Map();
+for (const [oldPath, counts] of Object.entries(snapshot.files)) {
+  const nowPath = renamed.get(oldPath) ?? oldPath;
+  for (const token of Object.keys(counts)) {
+    if (!knownTokens.has(token)) knownTokens.set(token, []);
+    knownTokens.get(token).push(nowPath);
+  }
+}
+
+// Snapshot expectations keyed by the path the file lives at now, so live files
+// with no snapshot entry at all can be told apart from renamed ones.
+const expectedByLivePath = new Map();
+for (const [oldPath, counts] of Object.entries(snapshot.files)) {
+  const nowPath = renamed.get(oldPath) ?? oldPath;
+  const merged = expectedByLivePath.get(nowPath) ?? {};
+  for (const [token, count] of Object.entries(counts)) {
+    merged[token] = (merged[token] || 0) + count;
+  }
+  expectedByLivePath.set(nowPath, merged);
+}
+
+const verified = verifiedStatutes();
+
+// --- direction 1: citations that were lost ---------------------------------
 
 for (const [oldPath, expected] of Object.entries(snapshot.files)) {
   const nowPath = renamed.get(oldPath) ?? oldPath;
@@ -180,17 +261,79 @@ for (const [oldPath, expected] of Object.entries(snapshot.files)) {
   }
 }
 
+// --- direction 2: citations that were added --------------------------------
+//
+// A number nobody wrote before translation is the dangerous case: a fabricated
+// `999/2099` reads exactly like a real statute. Grade it by whether the number
+// itself is new to the repository, so that moved citations stay warnings.
+
+for (const [path, actual] of Object.entries(live)) {
+  const expected = expectedByLivePath.get(path);
+
+  for (const token of Object.keys(actual)) {
+    // Already cited in this file before translation. A higher count is not an
+    // addition - it cannot introduce a number that was not already here.
+    if (expected?.[token]) continue;
+
+    const origins = knownTokens.get(token);
+
+    if (origins) {
+      const [first] = origins;
+      const elsewhere = origins.length > 1 ? ` and ${origins.length - 1} other file(s)` : '';
+      warnings.push({
+        file: path,
+        msg: `citation "${token}" is new to this file (snapshot had it in ${first}${elsewhere})`,
+      });
+      continue;
+    }
+
+    if (verified.has(token)) {
+      warnings.push({
+        file: path,
+        msg: `citation "${token}" is new to the snapshot but is a verified statute in ${STATUTES}`,
+      });
+      continue;
+    }
+
+    problems.push({
+      file: path,
+      msg: `citation "${token}" appears nowhere in the snapshot and is not in ${STATUTES} — invented?`,
+    });
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Report
+// ---------------------------------------------------------------------------
+
 console.log('\ncitation-integrity gate');
 console.log(`  snapshot taken ${snapshot.takenAt} · ${Object.keys(snapshot.files).length} files\n`);
 
 for (const p of problems) console.log(`  ✗  ${p.file}: ${p.msg}`);
 
+if (problems.length > 0 && warnings.length > 0) console.log('');
+
+for (const w of warnings.slice(0, MAX_WARNINGS_SHOWN)) console.log(`  !  ${w.file}: ${w.msg}`);
+if (warnings.length > MAX_WARNINGS_SHOWN) {
+  console.log(`  !  … and ${warnings.length - MAX_WARNINGS_SHOWN} more moved citation(s).`);
+}
+
 if (problems.length === 0) {
-  console.log('\n✓ Every citation present before translation is still present.\n');
+  console.log(
+    `\n✓ Every citation present before translation is still present, and no citation was invented.`,
+  );
+  if (warnings.length > 0) {
+    console.log(
+      `  ${warnings.length} citation(s) moved between files or were reused — review, but not a failure.`,
+    );
+  }
+  console.log('');
   process.exit(0);
 }
 
-console.log(`\n✗ ${problems.length} citation(s) lost or altered.`);
-console.log('  A statute number or case identifier must survive translation exactly.');
-console.log('  If a change is intentional, re-snapshot and explain it in the commit.\n');
+console.log(`\n✗ ${problems.length} citation problem(s).`);
+console.log('  A statute number or case identifier must survive translation exactly,');
+console.log('  and a number this repository has never cited must not appear from nowhere.');
+console.log('  Verify against Finlex. If a change is intentional, re-snapshot and say why');
+console.log('  in the commit; if a statute is genuinely new, add it to tracking/statutes.json.\n');
 process.exit(1);
