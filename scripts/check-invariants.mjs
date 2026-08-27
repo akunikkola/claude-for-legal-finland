@@ -184,29 +184,27 @@ for (const rel of ls('*/agents/*.md')) {
 // missed all 24 and no gate noticed. A pointer file naming a directory that no
 // longer exists sends a reader nowhere.
 //
-// Severity is split deliberately. A stale slug in a hand-maintained pointer or
-// subagent file is an ERROR: nobody else is going to fix it. A stale
-// `domain:skill` cross-reference inside a SKILL.md is a WARNING while the
-// translation is in flight, because the per-domain translation sessions own
-// those files and are remapping the slugs as they go. Failing on them here
-// would either block CI for the length of the translation or force a
-// tree-wide edit that collides with every running session.
+// Severity was split while the translation was in flight: a stale slug in a
+// hand-maintained pointer or subagent file was an ERROR, because nobody else was
+// going to fix it, while a stale `domain:skill` cross-reference inside a
+// SKILL.md was only a WARNING, because the per-domain translation sessions owned
+// those files and were remapping the slugs as they went. Failing on them then
+// would either have blocked CI for the length of the translation or forced a
+// tree-wide edit that collided with every running session.
 //
-// Once translation lands, delete the `inSkillFile` branch and let both fail.
+// The translation has landed: all 24 domains are English and the warning
+// reported zero hits before this branch was removed. Both forms now fail.
 // ---------------------------------------------------------------------------
 
 const oldDomains = renameMap.paths
   .filter((p) => !p.from.includes('/') && !p.to.includes('/'))
   .map((p) => p.from);
 
-let staleInSkills = 0;
-
 for (const rel of ls('*.md')) {
   // The rename map and the fork-provenance section legitimately name old paths.
   if (rel === 'scripts/rename-map.json' || rel === 'AGENTS.md') continue;
 
   const text = readFileSync(join(ROOT, rel), 'utf8');
-  const inSkillFile = /\/skills\/.+\/SKILL\.md$/.test(rel) || /\/references\/.+\.md$/.test(rel);
 
   for (const old of oldDomains) {
     // Only flag it as a path or an identifier, not as ordinary Finnish prose:
@@ -214,8 +212,7 @@ for (const rel of ls('*.md')) {
     const asPath = new RegExp(`\\b${old}/`);
     const asSlug = new RegExp(`\\b${old}:[a-z-]`);
     if (asPath.test(text) || asSlug.test(text)) {
-      if (inSkillFile) staleInSkills++;
-      else fail('stale domain slug', `${rel} references the pre-rename domain '${old}'`);
+      fail('stale domain slug', `${rel} references the pre-rename domain '${old}'`);
       break;
     }
   }
@@ -230,23 +227,26 @@ for (const rel of ls('*.md')) {
 // some domains. Nothing else couples 24 files to one string, and nothing else
 // would notice it breaking.
 //
-// Severity is split for the same reason as the stale-slug rule below.
+// Severity was split while the translation was in flight:
 //
 //   ERROR   — a domain uses a heading that is NEITHER pinned form. That is the
 //             real defect (a typo, a drifted spelling), it is detectable in a
 //             single file, and whoever wrote it can fix it.
-//   WARNING — both pinned forms coexist. That is the expected mid-migration
-//             state while 24 domains are translated on separate branches.
+//   WARNING — both pinned forms coexist. That was the expected mid-migration
+//             state while 24 domains were translated on separate branches.
 //
-// The distinction matters: requiring all 24 to agree makes the rule
+// The distinction mattered: requiring all 24 to agree makes the rule
 // unsatisfiable on any individual translation branch. It goes red the moment
 // the first domain is translated and stays red until the last one merges, so
 // every session sees a failure it did not cause and cannot fix. A gate that is
 // red for reasons outside the committer's control trains people to work around
 // it, which is the exact failure the gate exists to prevent.
 //
-// Promote the coexistence warning to an error in the same commit that deletes
-// the `inSkillFile` branch below, when the whole tree is English.
+// The translation has landed: all 24 domains carry HEADING_EN and the
+// coexistence warning reported zero hits before it was promoted. A split now
+// means real drift, so it fails. HEADING_FI is kept as an accepted spelling
+// only so that the error message can name it; if a domain reverts to it, the
+// split check below is what catches the disagreement.
 // ---------------------------------------------------------------------------
 
 const HEADING_FI = '## Käytäntöprofiili (valinnainen)';
@@ -284,6 +284,13 @@ for (const entry of readJSON(join(ROOT, 'marketplace.json')).plugins) {
 const headingSplit = headingSeen.size > 1
   ? [...headingSeen.entries()].map(([h, files]) => `'${h}' in ${files.length}`).join(', ')
   : null;
+
+if (headingSplit) {
+  fail(
+    'practice profile heading',
+    `domains disagree on the heading (${headingSplit}) — practice-profile writes under one exact string, expected '${HEADING_EN}'`,
+  );
+}
 
 // ---------------------------------------------------------------------------
 // 8. No skill may point at a vendor pointer shim for guardrail content
@@ -338,20 +345,6 @@ console.log('\nrepository invariants');
 console.log('  rules checked: fork provenance, statute registry, statute watch, rename map,');
 console.log('                 subagent naming, stale domain slugs, practice-profile heading,');
 console.log('                 guardrail references, pointer shims\n');
-
-if (staleInSkills > 0) {
-  console.log(
-    `  ⚠︎  ${staleInSkills} skill/reference file(s) still contain a pre-rename domain slug.\n` +
-      '      Owned by the per-domain translation sessions; escalate to an error once translation lands.\n',
-  );
-}
-
-if (headingSplit) {
-  console.log(
-    `  ⚠︎  practice-profile heading is mid-migration (${headingSplit}).\n` +
-      '      Expected while domains are translated on separate branches; escalate to an error once translation lands.\n',
-  );
-}
 
 for (const f of failures) console.log(`  ✗  ${f.rule}: ${f.detail}`);
 
