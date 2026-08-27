@@ -44,6 +44,11 @@ jobs:
       - name: Tarkista kuvaukset
         run: node scripts/check-descriptions.mjs
 
+      # Offline only. The trigger evals themselves make real model calls and
+      # must never run in CI — see evals/README.md.
+      - name: Check eval scenarios resolve
+        run: node evals/check-scenarios.mjs
+
       - name: Tarkista että generoidut tiedostot ovat ajan tasalla
         run: bash scripts/check-generated.sh
 

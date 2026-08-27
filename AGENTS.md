@@ -130,6 +130,7 @@ node scripts/check-output-language.mjs
 node scripts/check-safety-mechanisms.mjs
 node scripts/check-citations.mjs
 node scripts/check-descriptions.mjs
+node evals/check-scenarios.mjs            # every eval scenario resolves to a real domain and skill
 bash scripts/check-generated.sh           # regenerate and fail if the tree drifted
 node --test tests/*.test.mjs              # note: `node --test tests/` fails; the glob is required
 ```
@@ -137,7 +138,9 @@ node --test tests/*.test.mjs              # note: `node --test tests/` fails; th
 No dependencies. Node standard library only — there is deliberately no `package.json`, so a
 reviewer can clone and run the checks without installing anything.
 
-CI runs exactly these, so locally green means green in CI.
+CI runs exactly these, so locally green means green in CI. The trigger evals themselves
+(`bash evals/run-trigger-tests.sh`) are the deliberate exception: each scenario is a real model
+call, so they are run by hand and never in CI.
 
 Generators:
 
@@ -194,8 +197,13 @@ existed. Run both.
 6. Regenerate: `bash scripts/check-generated.sh`.
 7. Verify: `node scripts/validate.mjs`, `node scripts/check-portability.mjs` and
    `node --test tests/*.test.mjs`.
-8. If you changed a `description`, run the trigger evals (`evals/`). They cost real model calls and
-   are not in CI, but a badly worded description loses the skill silently.
+8. If the skill is new or renamed, add or update its scenario in
+   [`evals/scenarios.json`](evals/scenarios.json) and run `node evals/check-scenarios.mjs`. That
+   check is offline and in CI; it exists because a scenario pointing at a skill that no longer
+   exists never triggers and never fails either.
+9. If you changed a `description`, run the trigger evals (`bash evals/run-trigger-tests.sh`, see
+   [`evals/README.md`](evals/README.md)). They cost real model calls and are not in CI, but a badly
+   worded description loses the skill silently.
 
 ---
 

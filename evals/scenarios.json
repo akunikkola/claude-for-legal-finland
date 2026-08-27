@@ -1,80 +1,322 @@
 {
-  "kuvaus": "Triggeritestien skenaariot: prompt ja skill, jonka odotetaan triggeröityvän, kun plugari on ladattu --plugin-dir-lipulla. Ajo: bash evals/run-trigger-tests.sh. tunnettu_hukka = skenaario, jonka tiedetään ohittavan skillin headless-tilassa (kesäkuun 2026 evaluointi) — raportoidaan varoituksena, ei virheenä.",
-  "skenaariot": [
+  "description": "Trigger-test scenarios: a realistic user request and the skill expected to fire once the domain is loaded. Run: bash evals/run-trigger-tests.sh. Validate offline: node evals/check-scenarios.mjs. prompt is English; prompt_fi is the Finnish variant, present for at least one scenario per domain because descriptions keep Finnish legal terms as secondary keywords and those have to keep triggering too. known_miss = a scenario known to skip the skill in headless mode — reported as a warning, not a failure.",
+  "scenarios": [
     {
-      "id": "pikakorjaus-viittaus",
-      "plugari": "juristi",
-      "odotettu_skill": "juristi",
-      "prompt": "Korjaa tämä viittaus oikeaan muotoon: \"kuntalain 410/2015 pykälässä 7 sanotaan, että...\"",
-      "huomio": "Regressiovahti: ohitti skillin kesäkuussa 2026, minkä jälkeen kuvaukseen lisättiin pikatehtävälause. Jos tämä hukkuu taas, kuvausmuutos ei riitä."
+      "id": "quick-fix-citation",
+      "domain": "legal-core",
+      "expected_skill": "legal-writing",
+      "prompt": "Fix this reference into the correct form: \"section 7 of the Local Government Act 410/2015 says that...\"",
+      "prompt_fi": "Korjaa tämä viittaus oikeaan muotoon: \"kuntalain 410/2015 pykälässä 7 sanotaan, että...\"",
+      "note": "Regression guard: this skipped the skill in June 2026, after which a short-task sentence was added to the description. If it misses again, a description tweak is not enough."
     },
     {
-      "id": "asiakirja-mista-aloitan",
-      "plugari": "juristi",
-      "odotettu_skill": "toimeksianto",
-      "prompt": "Sain tänään postissa haasteen käräjäoikeudesta. Mistä aloitan?",
-      "tunnettu_hukka": true,
-      "huomio": "Tunnettu headless-hukka: malli vastaa suoraan skilliä kutsumatta. Interaktiivisessa käytössä triggeröityy paremmin. Vaarallisin hukka — toimeksianto kartoittaa määräajat ensin."
+      "id": "document-arrived-where-to-start",
+      "domain": "legal-core",
+      "expected_skill": "engagement-intake",
+      "prompt": "A summons from the district court arrived in the post today. Where do I start?",
+      "prompt_fi": "Sain tänään postissa haasteen käräjäoikeudesta. Mistä aloitan?",
+      "known_miss": true,
+      "note": "Known headless miss: the model answers directly instead of calling the skill. Triggers more reliably in interactive use. The most dangerous miss in the suite — engagement-intake maps the deadlines first, and a direct answer can burn an appeal window. The domain AGENTS.md is the backstop."
     },
     {
-      "id": "pykalan-sisalto-lahteesta",
-      "plugari": "juristi",
-      "odotettu_skill": "oikeustutkimus",
-      "prompt": "Mitä työsopimuslain 3 luvun 5 § sanoo kilpailukiellosta? Tarkista voimassa oleva sanamuoto."
+      "id": "statute-wording-from-source",
+      "domain": "legal-core",
+      "expected_skill": "legal-research",
+      "prompt": "What does chapter 3 section 5 of the Employment Contracts Act say about non-compete clauses? Check the wording currently in force.",
+      "prompt_fi": "Mitä työsopimuslain 3 luvun 5 § sanoo kilpailukiellosta? Tarkista voimassa oleva sanamuoto."
     },
     {
-      "id": "selkokielistys-asiakkaalle",
-      "plugari": "juristi",
-      "odotettu_skill": "selkokielistaja",
-      "prompt": "Selitä tämä sopimusehto asiakkaalleni selkokielellä: \"Sopijapuoli vastaa välillisistä vahingoista vain, mikäli vahinko on aiheutettu törkeällä huolimattomuudella tai tahallisesti.\""
+      "id": "plain-language-for-client",
+      "domain": "legal-core",
+      "expected_skill": "plain-language",
+      "prompt": "Explain this contract term to my client in everyday language: \"A party is liable for indirect damage only where the damage was caused by gross negligence or intentionally.\""
     },
     {
-      "id": "ratkaisun-referointi",
-      "plugari": "juristi",
-      "odotettu_skill": "oikeustapaus-referointi",
-      "prompt": "Referoi korkeimman oikeuden tuore ennakkopäätös työsuhteen purkamisesta ja poimi siitä ratio decidendi omaa juttuamme varten."
+      "id": "summarise-precedent",
+      "domain": "legal-core",
+      "expected_skill": "case-summarization",
+      "prompt": "Summarise the Supreme Court's recent precedent on summary dismissal of an employment relationship and pull out the ratio decidendi for our own matter."
     },
     {
-      "id": "lausunnon-tarkistus",
-      "plugari": "juristi",
-      "odotettu_skill": "asiakirjan-tarkistus",
-      "prompt": "Tarkista tämä lausuntoluonnos ennen kuin lähetän sen ministeriölle — etsi riskit ja aukot."
+      "id": "check-draft-before-sending",
+      "domain": "legal-core",
+      "expected_skill": "document-review",
+      "prompt": "Go over this draft opinion before I send it to the ministry — find the risks and the gaps."
     },
     {
-      "id": "koeaikapurku",
-      "plugari": "tyooikeus",
-      "odotettu_skill": "tyosuhteen-paattaminen",
-      "prompt": "Työnantajani purki työsuhteeni koeajalla tekstiviestillä ilman perusteluja. Oliko tämä laillista?"
+      "id": "compare-contract-portfolio",
+      "domain": "legal-core",
+      "expected_skill": "tabular-review",
+      "prompt": "We have twelve supplier agreements. Put the termination and liability terms side by side, one row per agreement, and show me where each cell comes from."
     },
     {
-      "id": "nda-riskit",
-      "plugari": "sopimukset",
-      "odotettu_skill": "sopimuksen-tarkistus",
-      "prompt": "Käy tämä salassapitosopimus läpi ja kerro, mitkä ehdot ovat meille riskialttiita."
+      "id": "government-bill-structure",
+      "domain": "legislative-drafting",
+      "expected_skill": "government-bill-guidelines",
+      "prompt": "I have to write a government bill for the ministry. What does the general part have to contain and in what order?",
+      "prompt_fi": "Minun pitää kirjoittaa ministeriölle hallituksen esitys. Mitä yleisperusteluihin kuuluu ja missä järjestyksessä?"
     },
     {
-      "id": "testamentti-lakiosa",
-      "plugari": "perhe-ja-perinto",
-      "odotettu_skill": "perinto-ja-testamentti",
-      "prompt": "Haluan laatia testamentin, jossa lapseni saavat vain lakiosansa ja loput menee puolisolleni."
+      "id": "statutory-text-typography",
+      "domain": "legislative-drafting",
+      "expected_skill": "legal-language-guide",
+      "prompt": "In statutory text, how do I write the section sign, subsection numbers, percentages and euro amounts correctly?"
     },
     {
-      "id": "rakennuslupavalitus",
-      "plugari": "hallinto-oikeus",
-      "odotettu_skill": "muutoksenhaku",
-      "prompt": "Kunta hylkäsi rakennuslupahakemukseni. Miten ja missä ajassa voin valittaa päätöksestä?"
+      "id": "municipal-consultation-statement",
+      "domain": "legislative-consultation",
+      "expected_skill": "consultation-statement-assistant",
+      "prompt": "Our municipality has to give an opinion on the ministry's draft bill by the end of the month. Help me analyse the proposal and write the statement.",
+      "prompt_fi": "Kuntamme pitää antaa lausunto ministeriön lakiluonnoksesta kuun loppuun mennessä. Auta analysoimaan ehdotus ja kirjoittamaan lausunto."
     },
     {
-      "id": "konserniavustus",
-      "plugari": "verotus",
-      "odotettu_skill": "yritysverotus",
-      "prompt": "Miten konserniavustus käsitellään emoyhtiön ja tytäryhtiön verotuksessa?"
+      "id": "nda-risk-pass",
+      "domain": "contracts",
+      "expected_skill": "contract-review",
+      "prompt": "Go through this non-disclosure agreement and tell me which terms are risky for us.",
+      "prompt_fi": "Käy tämä salassapitosopimus läpi ja kerro, mitkä ehdot ovat meille riskialttiita."
     },
     {
-      "id": "ai-act-riskiluokka",
-      "plugari": "tekoalysaantely",
-      "odotettu_skill": "tekoaly-luokittelu",
-      "prompt": "Onko rekrytoinnin esikarsintaan käyttämämme tekoälyjärjestelmä korkean riskin järjestelmä EU:n tekoälyasetuksen mukaan?"
+      "id": "draft-service-agreement",
+      "domain": "contracts",
+      "expected_skill": "contract-drafting",
+      "prompt": "Draft a service agreement for a Finnish customer: scope, pricing, liability cap and termination."
+    },
+    {
+      "id": "applicant-scoring-dpia",
+      "domain": "data-protection",
+      "expected_skill": "data-protection-assessment",
+      "prompt": "We are planning a system that scores job applicants automatically. Do we need an impact assessment and what is our lawful basis?",
+      "prompt_fi": "Suunnittelemme järjestelmää, joka pisteyttää työnhakijat automaattisesti. Tarvitaanko vaikutustenarviointi ja mikä on käsittelyperuste?"
+    },
+    {
+      "id": "former-employee-data-request",
+      "domain": "data-protection",
+      "expected_skill": "data-subject-requests",
+      "prompt": "A former employee has asked for everything we hold on them. How do I answer and by when?"
+    },
+    {
+      "id": "ai-act-risk-class",
+      "domain": "ai-regulation",
+      "expected_skill": "ai-classification",
+      "prompt": "Is the AI system we use to pre-screen job applicants a high-risk system under the EU AI Act?",
+      "prompt_fi": "Onko rekrytoinnin esikarsintaan käyttämämme tekoälyjärjestelmä korkean riskin järjestelmä EU:n tekoälyasetuksen mukaan?"
+    },
+    {
+      "id": "ai-act-timeline-and-fines",
+      "domain": "ai-regulation",
+      "expected_skill": "ai-compliance",
+      "prompt": "When do the AI Act obligations start to apply to us and how large can the penalties be?"
+    },
+    {
+      "id": "probation-dismissal-by-text",
+      "domain": "employment-law",
+      "expected_skill": "termination-of-employment",
+      "prompt": "My employer ended my employment during the trial period by text message and gave no reasons. Was that lawful?",
+      "prompt_fi": "Työnantajani purki työsuhteeni koeajalla tekstiviestillä ilman perusteluja. Oliko tämä laillista?"
+    },
+    {
+      "id": "planned-layoffs-procedure",
+      "domain": "employment-law",
+      "expected_skill": "change-negotiations",
+      "prompt": "We are planning to lay off thirty people at the plant. What does the co-operation procedure require and what are the time limits?"
+    },
+    {
+      "id": "building-permit-refused",
+      "domain": "administrative-law",
+      "expected_skill": "administrative-appeal",
+      "prompt": "The municipality rejected my building permit application. How and within what time can I challenge the decision?",
+      "prompt_fi": "Kunta hylkäsi rakennuslupahakemukseni. Miten ja missä ajassa voin valittaa päätöksestä?"
+    },
+    {
+      "id": "journalist-document-request",
+      "domain": "administrative-law",
+      "expected_skill": "public-access-and-information-requests",
+      "prompt": "A journalist has asked our agency for a document that contains a company's pricing. Do we have to hand it over?"
+    },
+    {
+      "id": "suing-over-unpaid-invoice",
+      "domain": "dispute-resolution",
+      "expected_skill": "statement-of-claim",
+      "prompt": "Our client wants to take a supplier to the district court over an unpaid invoice. What has to go into the application for a summons?",
+      "prompt_fi": "Asiakkaamme haluaa haastaa toimittajan käräjäoikeuteen maksamattomasta laskusta. Mitä haastehakemukseen kuuluu?"
+    },
+    {
+      "id": "lost-in-district-court",
+      "domain": "dispute-resolution",
+      "expected_skill": "appeal-against-judgment",
+      "prompt": "We lost in the district court. By when do we have to declare dissatisfaction and will we need leave for continued consideration?"
+    },
+    {
+      "id": "incorporating-a-company",
+      "domain": "company-law",
+      "expected_skill": "corporate-governance",
+      "prompt": "We are incorporating a limited company and I need the articles of association plus the paperwork for the first board meeting.",
+      "prompt_fi": "Perustamme osakeyhtiötä ja tarvitsen yhtiöjärjestyksen sekä ensimmäisen hallituksen kokouksen asiakirjat."
+    },
+    {
+      "id": "founder-equity-terms",
+      "domain": "company-law",
+      "expected_skill": "shareholders-agreement",
+      "prompt": "Three founders are splitting the equity. Draft the terms on vesting, leaver clauses and drag along."
+    },
+    {
+      "id": "cannot-pay-next-month",
+      "domain": "insolvency",
+      "expected_skill": "insolvency-assessment",
+      "prompt": "Our company will not be able to pay its invoices next month. What are the options — restructuring, bankruptcy or a voluntary arrangement?",
+      "prompt_fi": "Yrityksemme ei pysty maksamaan laskujaan ensi kuussa. Mitkä ovat vaihtoehdot: yrityssaneeraus, konkurssi vai vapaaehtoinen järjestely?"
+    },
+    {
+      "id": "old-invoice-still-unpaid",
+      "domain": "insolvency",
+      "expected_skill": "debt-collection",
+      "prompt": "A customer still has not paid an invoice from two years ago. How do I stop it becoming time-barred and what can I charge for chasing it?"
+    },
+    {
+      "id": "new-product-name-clearance",
+      "domain": "intellectual-property",
+      "expected_skill": "trademarks-and-trade-names",
+      "prompt": "We want to launch a product under a new name. How do I check that it can be registered and that it does not clash with an existing mark?",
+      "prompt_fi": "Haluamme lanseerata tuotteen uudella nimellä. Miten tarkistan rekisteröitävyyden ja sekaannusvaaran aiempaan merkkiin?"
+    },
+    {
+      "id": "departing-employee-took-customer-list",
+      "domain": "intellectual-property",
+      "expected_skill": "trade-secrets",
+      "prompt": "A departing employee took our customer list and pricing model with them. What can we do about it?"
+    },
+    {
+      "id": "group-contribution-treatment",
+      "domain": "taxation",
+      "expected_skill": "corporate-taxation",
+      "prompt": "How is a group contribution treated in the taxation of the parent company and the subsidiary?",
+      "prompt_fi": "Miten konserniavustus käsitellään emoyhtiön ja tytäryhtiön verotuksessa?"
+    },
+    {
+      "id": "reassessment-after-audit",
+      "domain": "taxation",
+      "expected_skill": "tax-procedure-and-appeals",
+      "prompt": "After a tax audit we received a reassessment decision with a punitive increase. How do we challenge it and by when?"
+    },
+    {
+      "id": "cleaning-services-tender",
+      "domain": "public-procurement",
+      "expected_skill": "procurement-planning",
+      "prompt": "Our agency is putting cleaning services out to tender for four years. Which procedure should we use and is the EU threshold exceeded?",
+      "prompt_fi": "Virastomme kilpailuttaa siivouspalvelut neljäksi vuodeksi. Mikä hankintamenettely valitaan ja ylittyykö EU-kynnysarvo?"
+    },
+    {
+      "id": "lost-tender-comparison-wrong",
+      "domain": "public-procurement",
+      "expected_skill": "award-decision-and-remedies",
+      "prompt": "We lost a tender and the comparison of bids looks wrong. Is there still time to take this to the Market Court?"
+    },
+    {
+      "id": "client-called-for-questioning",
+      "domain": "criminal-procedure",
+      "expected_skill": "pre-trial-investigation-and-coercive-measures",
+      "prompt": "My client has been called in for questioning as a suspect next week. How do we prepare and what are their rights?",
+      "prompt_fi": "Päämiestäni on kutsuttu ensi viikolla kuulusteluun epäiltynä. Miten valmistaudumme ja mitkä ovat hänen oikeutensa?"
+    },
+    {
+      "id": "embezzlement-or-fraud",
+      "domain": "criminal-law",
+      "expected_skill": "principal-offences",
+      "prompt": "An employee moved company funds into their own account over two years. Is that embezzlement or fraud, and does the aggravated form apply?",
+      "prompt_fi": "Työntekijä siirsi yhtiön varoja omalle tililleen kahden vuoden ajan. Onko kyse kavalluksesta vai petoksesta ja täyttyykö törkeä tekomuoto?"
+    },
+    {
+      "id": "plant-expansion-permit",
+      "domain": "environment-and-planning",
+      "expected_skill": "environmental-permits-and-supervision",
+      "prompt": "We are expanding production at the plant. Does that need a new environmental permit or an amendment to the existing one?",
+      "prompt_fi": "Laajennamme laitoksen tuotantoa. Vaatiiko se uuden ympäristöluvan vai nykyisen luvan muuttamisen?"
+    },
+    {
+      "id": "moisture-damage-after-purchase",
+      "domain": "real-estate-and-housing",
+      "expected_skill": "real-property-conveyance",
+      "prompt": "We bought a detached house last spring and moisture damage has now come to light. What can we do against the seller?",
+      "prompt_fi": "Ostimme omakotitalon viime keväänä ja nyt on paljastunut kosteusvaurio. Mitä keinoja meillä on myyjää kohtaan?"
+    },
+    {
+      "id": "tenant-in-arrears",
+      "domain": "real-estate-and-housing",
+      "expected_skill": "lease-agreements",
+      "prompt": "The tenant is three months behind on rent. Can I end the tenancy and how is that done?"
+    },
+    {
+      "id": "buying-a-competitor",
+      "domain": "competition-law",
+      "expected_skill": "merger-control",
+      "prompt": "We are buying a competitor. Does the deal have to be notified to the competition authority and when can we close?",
+      "prompt_fi": "Ostamme kilpailijan. Pitääkö yrityskauppa ilmoittaa KKV:lle ja milloin kaupan voi panna täytäntöön?"
+    },
+    {
+      "id": "fixed-resale-price",
+      "domain": "competition-law",
+      "expected_skill": "restrictive-practices",
+      "prompt": "Can we require our resellers to stick to a fixed retail price?"
+    },
+    {
+      "id": "loan-covenants-and-security",
+      "domain": "banking-and-finance",
+      "expected_skill": "financing-and-collateral",
+      "prompt": "We are negotiating a loan facility. Go through the covenants and the security package — a business mortgage and a guarantee.",
+      "prompt_fi": "Neuvottelemme lainajärjestelystä. Käy läpi kovenantit ja vakuuspaketti: yrityskiinnitys ja takaus."
+    },
+    {
+      "id": "are-we-an-obliged-entity",
+      "domain": "banking-and-finance",
+      "expected_skill": "anti-money-laundering",
+      "prompt": "Is our accounting firm an obliged entity, and what does knowing the customer require in practice?"
+    },
+    {
+      "id": "hiring-a-developer-from-abroad",
+      "domain": "immigration-law",
+      "expected_skill": "work-based-residence-permits",
+      "prompt": "We are hiring a developer from India. Which residence permit should they apply for and what attachments are needed?",
+      "prompt_fi": "Palkkaamme kehittäjän Intiasta. Mitä oleskelulupaa hänen tulee hakea ja mitä liitteitä tarvitaan?"
+    },
+    {
+      "id": "will-leaving-statutory-share",
+      "domain": "family-and-inheritance",
+      "expected_skill": "inheritance-and-wills",
+      "prompt": "I want to make a will where my children get only their statutory share and the rest goes to my spouse.",
+      "prompt_fi": "Haluan laatia testamentin, jossa lapseni saavat vain lakiosansa ja loput menee puolisolleni."
+    },
+    {
+      "id": "separating-with-a-small-child",
+      "domain": "family-and-inheritance",
+      "expected_skill": "child-status-and-maintenance",
+      "prompt": "We are separating and have a four-year-old. How do we agree on custody, where the child lives, contact and maintenance?"
+    },
+    {
+      "id": "washing-machine-broke-down",
+      "domain": "consumer-law",
+      "expected_skill": "consumer-sales-liability",
+      "prompt": "A washing machine I bought eight months ago has broken down. The shop says the warranty has run out — what are my rights?",
+      "prompt_fi": "Kahdeksan kuukautta sitten ostamani pesukone hajosi. Kauppa sanoo takuun päättyneen. Mitkä ovat oikeuteni?"
+    },
+    {
+      "id": "webshop-return-after-20-days",
+      "domain": "consumer-law",
+      "expected_skill": "distance-selling-and-withdrawal",
+      "prompt": "A customer wants to return an item bought from our webshop twenty days ago. Do we have to accept it?"
+    },
+    {
+      "id": "swedish-term-for-contract",
+      "domain": "bilingual-legal-language",
+      "expected_skill": "legal-translation",
+      "prompt": "For a bilingual contract I need the established Swedish equivalents for \"osakeyhtiölaki\" and \"yhtiöjärjestys\".",
+      "prompt_fi": "Tarvitsen kaksikieliseen sopimukseen vakiintuneet ruotsinkieliset vastineet termeille \"osakeyhtiölaki\" ja \"yhtiöjärjestys\"."
+    },
+    {
+      "id": "resident-wants-service-in-swedish",
+      "domain": "bilingual-legal-language",
+      "expected_skill": "language-rights-and-obligations",
+      "prompt": "A resident wants to deal with our bilingual municipality in Swedish. What are we obliged to provide and in which language must the decision be issued?"
     }
   ]
 }
