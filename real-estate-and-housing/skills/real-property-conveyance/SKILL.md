@@ -1,28 +1,31 @@
 ---
 name: real-property-conveyance
 description: >
-  Kiinteistön kauppa Suomessa maakaaren (540/1995) mukaan. Käytä tätä
-  skilliä, kun käyttäjä valmistelee tai tarkistaa kiinteistön, määräalan
-  tai määräosan kauppaa tai esisopimusta, laatii kauppakirjaa, selvittää
-  lainhuutoa, kiinnityksiä tai rasituksia, arvioi kaupan jälkeen
-  ilmennyttä virhettä (kosteusvaurio, kaavapoikkeama, rasitus) tai laatii
-  reklamaatiota tai vaatimuskirjettä. Triggeröi sanoista: kiinteistökauppa,
-  kauppakirja, määräala, kaupanvahvistaja, lainhuuto, kiinnitys,
-  panttikirja, rasitustodistus, esisopimus, käsiraha, salainen virhe,
-  hinnanalennus, kaupan purku, kuntotarkastus, omakotitalo.
+  Sale of real property in Finland under the Code of Real Estate (maakaari
+  540/1995). Use this skill when the user is preparing or reviewing a sale or a
+  pre-contract for real property, a parcel or an undivided share, drafting a
+  deed of sale (kauppakirja), sorting out registration of title (lainhuuto),
+  mortgages or encumbrances, assessing a defect that emerged after the sale
+  (moisture damage, a discrepancy against the town plan, an encumbrance), or
+  drafting a notice of defect or a letter of claim. Triggers on: sale of real
+  property, conveyance, deed of sale, parcel, public purchase witness,
+  registration of title, mortgage, mortgage deed, certificate of encumbrances,
+  pre-contract, earnest money, latent defect, price reduction, rescission of
+  the sale, condition survey, detached house, kiinteistökauppa, lainhuuto,
+  kaupanvahvistaja.
 ---
 
-# Kiinteistökauppa — määrämuoto, kirjaukset ja virhevastuu
+# Sale of real property — prescribed form, registrations and defect liability
 
-Tämä skill jäsentää kiinteistökaupan valmistelun, toteutuksen ja
-virhetilanteet maakaaren (540/1995) mukaan. Perusteet ja
-kiinteistö/asunto-osake-rajanveto: `references/real-property-fundamentals.md` —
-lue se tehtävän alussa. Jos kohde onkin asunto-osake →
-`residential-property-sale`-skill.
+This skill structures the preparation and execution of a sale of real property, and defect
+situations, under the Code of Real Estate (maakaari 540/1995). Fundamentals and the line between
+real property and housing-company shares: `references/real-property-fundamentals.md` — read it at
+the start of the task. If the object turns out to be housing-company shares →
+the `residential-property-sale` skill.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Kaupanvahvistus, allekirjoitukset ja kirjaamishakemukset
-> ovat ihmisen vastuulla. Katso `real-estate-and-housing/AGENTS.md`.
+> **Disclaimer:** the drafts are for review — not legal advice. Confirmation of the sale by a
+> public purchase witness, signatures and applications for registration are the human's
+> responsibility. See `real-estate-and-housing/AGENTS.md`.
 
 ## Output language
 
@@ -34,93 +37,89 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the law from the source
 
-Hae maakaaren säännökset (muotovaatimus, virheet, määräajat,
-kirjaamisvelvollisuudet) **`legal-core:legal-research`-skillillä** ja KKO:n
-virhe- ja reklamaatiokäytäntö lähteestä. Varainsiirtoveron prosentti ja
-ilmoitusvelvollisuus → `taxation` ja vero.fi `[tarkista]`.
+Retrieve the provisions of the Code of Real Estate (the formal requirement, defects, time limits,
+registration obligations) **with the `legal-core:legal-research` skill**, and the KKO case law on
+defects and notices of defect from the source. The rate of transfer tax and the obligation to file
+→ `taxation` and vero.fi `[check]`.
 
-## Vaihe 1: Kohteen ja taustojen selvitys
+## Stage 1: Establishing the object and its background
 
-1. **Mikä myydään?** Koko kiinteistö, määräala vai määräosa;
-   vuokraoikeus rakennuksineen on eri instrumentti (kirjattava
-   erityinen oikeus). Sekamuodot esiin.
-2. **Asiakirjojen hankintalista** (referenssissä): lainhuuto- ja
-   rasitustodistus, kiinteistörekisteriote, kaavaote,
-   rakennusluvat — skill ei näe rekistereitä, ihminen hankkii MML:stä
-   ja kunnasta.
-3. **Rasitukset ja oikeudet**: kiinnitykset ja panttikirjat (kenen
-   hallussa?), kirjatut erityiset oikeudet, rasitteet,
-   yhteisalueosuudet, tieoikeudet.
-4. **Kaava ja luvat**: käyttötarkoitus, rakennusoikeus, luvattomat
-   rakennelmat → `environment-and-planning:land-use-planning-and-construction`;
-   pilaantuneen maaperän riski → `environment-and-planning:environmental-liability`.
+1. **What is being sold?** The whole property, a parcel (määräala) or an undivided share
+   (määräosa); a leasehold together with the buildings on it is a different instrument (a special
+   right that must be registered). Flag hybrid forms.
+2. **List of documents to obtain** (in the reference): certificate of title and certificate of
+   encumbrances, extract from the real estate register, extract from the town plan, building
+   permits — the skill cannot see the registers; a human obtains them from Maanmittauslaitos and
+   the municipality.
+3. **Encumbrances and rights**: mortgages and mortgage deeds (who holds them?), registered special
+   rights, easements, shares in joint areas, road rights.
+4. **Planning and permits**: the purpose of use, the permitted building volume, unauthorised
+   structures → `environment-and-planning:land-use-planning-and-construction`; the risk of
+   contaminated soil → `environment-and-planning:environmental-liability`.
 
-## Vaihe 2: Kauppakirjan laatiminen
+## Stage 2: Drafting the deed of sale
 
-- **Määrämuoto on ehdoton**: kirjallinen kauppakirja, jonka
-  kaupanvahvistaja vahvistaa kaikkien allekirjoittajien läsnä ollessa —
-  tai kauppa MML:n **sähköisessä kaupankäyntijärjestelmässä**
-  (molemmat vahvistettu laista). Vähimmäissisältö (luovutustarkoitus,
-  kiinteistö, osapuolet, kauppahinta) lähteestä — puute kaataa kaupan.
-- **Esisopimus** on myös määrämuotoinen; vapaamuotoinen "varaus" ei
-  sido — käsirahan ja sopimussakon vaikutukset lähteestä.
-- **Keskeiset ehdot**: omistus- ja hallintaoikeuden siirtyminen,
-  kauppahinnan maksu ja vakuusjärjestelyt (panttikirjojen luovutus),
-  vaaranvastuun siirtyminen, kohteen kunto ja tehdyt selvitykset
-  (kuntotarkastusraportti yksilöitynä), vastuunjako tiedossa olevista
-  vioista, irtaimiston erittely (verovaikutus), viivästysseuraamukset.
-- **Vastuunrajoitusehto**: yksilöimätön "siinä kunnossa kuin se on"
-  -ehto ei riitä rajaamaan myyjän virhevastuuta — rajoituksen on
-  oltava yksilöity (tarkista edellytykset lähteestä). Älä laadi
-  näennäisrajoitusta.
+- **The prescribed form is absolute**: a written deed of sale confirmed by a public purchase
+  witness (kaupanvahvistaja) in the presence of all signatories — or a sale in the **electronic
+  conveyancing system** of Maanmittauslaitos (both confirmed from the Act). The minimum content
+  (the intention to convey, the property, the parties, the purchase price) from the source — an
+  omission sinks the sale.
+- **A pre-contract** is likewise subject to the prescribed form; an informal "reservation" is not
+  binding — the effects of earnest money and of a contractual penalty from the source.
+- **Key terms**: the passing of ownership and possession, payment of the purchase price and
+  security arrangements (delivery of the mortgage deeds), the passing of risk, the condition of the
+  object and the investigations carried out (the condition survey report specifically identified),
+  the allocation of responsibility for known defects, an itemisation of movables (tax effect), and
+  the consequences of delay.
+- **Limitation of liability clause**: an unspecified "as is" term is not enough to limit the
+  seller's liability for defects — the limitation must be specific (check the conditions from the
+  source). Do not draft a limitation that only appears to be one.
 
-## Vaihe 3: Kaupan jälkeen — kirjaukset
+## Stage 3: After the sale — registrations
 
-- **Lainhuoto** haettava määräajassa kaupasta `[aika — tarkista
-  lähteestä]`; sähköisessä kaupassa vireilletulo automaattinen.
-- Panttikirjojen siirto ja uudet kiinnitykset; varainsiirtoveron
-  suorittaminen lainhuudon edellytyksenä.
-- Laadi kirjausten tarkistuslista päivämäärineen →
-  `legal-core:engagement-intake` (määräaikataulukko).
+- **Registration of title (lainhuuto)** must be applied for within the time limit from the sale
+  `[time limit — check from the source]`; in an electronic sale the matter becomes pending
+  automatically.
+- Transfer of the mortgage deeds and new mortgages; payment of transfer tax is a condition for
+  registration of title.
+- Draw up a checklist of the registrations with their dates → `legal-core:engagement-intake`
+  (a table of time limits).
 
-## Vaihe 4: Virhetilanne
+## Stage 4: A defect situation
 
-1. **Tunnista virhetyyppi** (käsitteet vahvistettu laista):
-   **laatuvirhe** (kunto; myös salainen virhe — kynnys ja
-   merkittävyysvaatimus lähteestä), **vallintavirhe** (kaava/luvat),
-   **oikeudellinen virhe** (omistus/rasitukset).
-2. **Vastuuanalyysi**: myyjän tiedonantovelvollisuus vs. ostajan
-   ennakkotarkastusvelvollisuus; kuntotarkastuksen
-   lisätutkimuskehotusten merkitys; välittäjän vastuu (1074/2000)
-   erikseen.
-3. **Reklamaatio heti**: kohtuullinen aika + ehdoton takaraja
-   `[tarkista lähteestä]`. Sisältö: virhe yksilöitynä, havainnot ja
-   selvitykset, vaatimus (alustavanakin) ja varauma täydentämisestä.
-4. **Seuraamukset**: hinnanalennus (laskentatapa lähteestä),
-   vahingonkorvaus (tuottamus; salaisessa virheessä ei korvausta —
-   tarkista), purku (olennaisuuskynnys korkea). Riitautus →
-   `dispute-resolution:statement-of-claim`.
+1. **Identify the type of defect** (the concepts are confirmed from the Act): a **quality defect**
+   (condition; including a latent defect — the threshold and the materiality requirement from the
+   source), a **defect in dominion** (planning or permits), a **legal defect** (ownership or
+   encumbrances).
+2. **Liability analysis**: the seller's duty to disclose versus the buyer's duty of pre-purchase
+   inspection; the significance of recommendations for further investigation in a condition survey;
+   the estate agent's liability (1074/2000) separately.
+3. **Give notice of the defect at once**: a reasonable time plus an absolute long-stop period
+   `[check from the source]`. Content: the defect specifically identified, the observations and
+   investigations, the claim (even in preliminary form) and a reservation as to supplementing it.
+4. **Remedies**: price reduction (method of calculation from the source), damages (fault; in the
+   case of a latent defect there is no compensation — check), rescission (a high materiality
+   threshold). Litigation → `dispute-resolution:statement-of-claim`.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista kauppaa eikä korvaa kaupanvahvistajaa** — määrämuoto
-  täyttyy vain laissa säädetyllä tavalla.
-- **Ei näe rekistereitä** (lainhuuto, rasitukset, kaava) — se laatii
-  hankintalistan, ihminen hankkii otteet.
-- **Ei arvioi rakennusteknistä kuntoa** — kuntotarkastus kuuluu
-  asiantuntijalle; skill jäsentää raportin oikeudellisen merkityksen.
-- **Ei vahvista määräaikoja tai veroprosentteja muistista** —
-  lähteestä tai `[tarkista]`.
-- **Ei avusta vikojen salaamisessa** — kieltäydy ja kerro virhe- ja
-  petosvastuuriski.
+- **It does not confirm the sale and does not replace the public purchase witness** — the
+  prescribed form is satisfied only in the manner laid down in the Act.
+- **It cannot see the registers** (title, encumbrances, town plan) — it draws up the list of
+  documents to obtain; a human obtains the extracts.
+- **It does not assess the structural condition of a building** — a condition survey belongs to a
+  specialist; the skill sets out the legal significance of the report.
+- **It does not confirm time limits or tax rates from memory** — from the source or `[check]`.
+- **It does not assist in concealing defects** — refuse, and explain the risk of liability for the
+  defect and for fraud.
 
-## Jatka tästä
+## Continue from here
 
-- Kohde onkin asunto-osake → /kiinteistot-ja-asuminen:asuntokauppa
-- Kaava-, lupa- tai pilaantumiskysymys → /ymparisto-ja-kaavoitus:kaavoitus-ja-rakentaminen
-- Säännöksen tai KKO-käytännön tarkistus → /juristi:oikeustutkimus
-- Virheriidan vieminen tuomioistuimeen → /riidanratkaisu:haastehakemus
-- Varainsiirtovero ja luovutusvoitto → /verotus:verotusmenettely-ja-muutoksenhaku
-- Kauppakirjan kieliasu ja rakenne → /juristi:asiakirjan-tarkistus
+- The object turns out to be housing-company shares → /real-estate-and-housing:residential-property-sale
+- A planning, permit or contamination question → /environment-and-planning:land-use-planning-and-construction
+- Checking a provision or KKO case law → /legal-core:legal-research
+- Taking a defect dispute to court → /dispute-resolution:statement-of-claim
+- Transfer tax and capital gains → /taxation:tax-procedure-and-appeals
+- The language and structure of the deed of sale → /legal-core:document-review

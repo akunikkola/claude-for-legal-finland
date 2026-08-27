@@ -1,29 +1,28 @@
 ---
 name: lease-agreements
 description: >
-  Asuin- ja liikehuoneiston vuokrasuhteet Suomessa (laki asuinhuoneiston
-  vuokrauksesta 481/1995 ja laki liikehuoneiston vuokrauksesta 482/1995).
-  Käytä tätä skilliä, kun käyttäjä laatii tai tarkistaa vuokrasopimusta,
-  arvioi vuokrankorotuksen, vakuuden, irtisanomisen tai purkamisen
-  edellytyksiä, käsittelee vuokrarästejä, häiriötilannetta tai häätöä,
-  tai vertaa asuin- ja liikehuoneiston vuokrauksen eroja. Triggeröi
-  sanoista: vuokrasopimus, vuokralainen, vuokranantaja, vuokrankorotus,
-  vuokravakuus, irtisanomisaika, vuokrasopimuksen purku, häätö,
-  vuokrarästi, määräaikainen vuokrasopimus, liiketilan vuokra,
-  alivuokraus, jälleenvuokraus.
+  Residential and commercial leases in Finland (the Act on Residential Leases,
+  laki asuinhuoneiston vuokrauksesta 481/1995, and the Act on Commercial
+  Leases, laki liikehuoneiston vuokrauksesta 482/1995). Use this skill when the
+  user is drafting or reviewing a lease, assessing the conditions for a rent
+  increase, a security deposit, termination with notice or summary termination,
+  dealing with rent arrears, a nuisance situation or an eviction, or comparing
+  the differences between residential and commercial leases. Triggers on:
+  lease, tenancy agreement, tenant, landlord, rent increase, rent security
+  deposit, notice period, termination of lease, eviction, rent arrears,
+  fixed-term lease, commercial premises rent, subletting, vuokrasopimus,
+  vuokralainen, häätö.
 ---
 
-# Vuokrasopimukset — asuin- ja liikehuoneistot
+# Leases — residential and commercial premises
 
-Tämä skill jäsentää vuokrasuhteen elinkaaren molemmista näkökulmista
-(vuokranantaja ja vuokralainen). **Ensimmäinen rajanveto:
-asuinhuoneisto (AHVL 481/1995) vai liikehuoneisto (LHVL 482/1995)** —
-käyttötarkoitus ratkaisee, ja lakien pakottavuus eroaa olennaisesti.
-Perusteet: `../real-property-conveyance/references/real-property-fundamentals.md`.
+This skill sets out the life cycle of a tenancy from both perspectives (landlord and tenant). **The
+first distinction: is it a residential unit (AHVL 481/1995) or business premises (LHVL 482/1995)?**
+— the purpose of use decides, and the extent to which the two acts are mandatory differs
+substantially. Fundamentals: `../real-property-conveyance/references/real-property-fundamentals.md`.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa. AHVL sisältää pakottavia säännöksiä vuokralaisen suojaksi —
-> niiden vastainen ehto on tehoton. Katso
+> **Disclaimer:** the drafts are for review — not legal advice. The Act on Residential Leases
+> contains mandatory provisions protecting the tenant — a term contrary to them is ineffective. See
 > `real-estate-and-housing/AGENTS.md`.
 
 ## Output language
@@ -33,80 +32,72 @@ Drafts are produced in **English by default**. If the user asks for Finnish, pro
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki lähteestä
+## Check the law from the source
 
-Hae AHVL:n/LHVL:n säännökset (irtisanomisajat, vakuuden enimmäismäärä,
-purkuperusteet, korotusmenettely) **`legal-core:legal-research`-skillillä**
-— älä muistista. Tarkista kummasta laista on kyse ja mikä on
-pakottavaa: AHVL suojaa vuokralaista laajasti, LHVL on pitkälti
-tahdonvaltainen.
+Retrieve the provisions of AHVL and LHVL (notice periods, the maximum amount of the security
+deposit, grounds for summary termination, the procedure for a rent increase) **with the
+`legal-core:legal-research` skill** — not from memory. Check which of the two acts applies and what
+is mandatory: AHVL protects the tenant extensively, LHVL is largely non-mandatory.
 
-## Sopimuksen laatiminen
+## Drafting the agreement
 
-Käy ainakin nämä läpi (molemmissa sopimustyypeissä):
+Work through at least these (in both types of agreement):
 
-1. **Osapuolet ja kohde** — huoneisto, kunto sovittuna
-   (alkukatselmus + valokuvat suositeltava), avaimet, autopaikat ja
-   varastot erikseen.
-2. **Sopimuksen kesto** — toistaiseksi voimassa oleva vai
-   määräaikainen. Määräaikainen sitoo molempia koko kauden —
-   ennenaikaisen päättämisen seuraamukset ja poikkeukset lähteestä.
-   Ketjutetut lyhyet määräaikaiset asumisessa: peruste tarkistettava.
-3. **Vuokra ja korotusehto** — korotusmekanismi sovittava
-   täsmällisesti (indeksi, prosentti, tasokorotus + ilmoitusmenettely);
-   ilman ehtoa korotus vaatii sopimista tai lain menettelyn —
-   lähteestä. Indeksiehdon sallittavuus tarkistetaan.
-4. **Vakuus** — AHVL:ssä enimmäismäärä `[tarkista lähteestä]`;
-   vakuuden kohdistus (kaikki sopimusvelvoitteet vs. vain vuokra) ja
-   palautusaika kirjataan.
-5. **Kunnossapito ja muutostyöt** — AHVL:n olettama vs. sovittu;
-   liiketiloissa vastuunjako ja kuntoluokitus sovitaan vapaammin.
-6. **Liikehuoneiston erityisehdot** — käyttötarkoitus ja
-   kilpailusuoja, ALV-status (hakeutuminen → `taxation:value-added-tax`),
-   ylläpitovuokran erittely, ali- ja jälleenvuokrausoikeus,
-   lunastus-/jatko-optiot, sopimussakko.
+1. **Parties and the object** — the unit, its condition as agreed (an initial inspection plus
+   photographs is recommended), keys, and parking spaces and storage separately.
+2. **Term of the agreement** — valid until further notice or fixed-term. A fixed term binds both
+   parties for the whole period — the consequences of early termination and the exceptions from the
+   source. Chained short fixed terms in housing: the basis needs checking.
+3. **Rent and the increase clause** — the increase mechanism must be agreed precisely (index,
+   percentage, step increase plus the notification procedure); without a clause an increase
+   requires agreement or the statutory procedure — from the source. Whether an index clause is
+   permissible is checked.
+4. **Security deposit** — AHVL has a maximum amount `[check from the source]`; what the security
+   covers (all contractual obligations versus rent only) and the time for its return are recorded.
+5. **Maintenance and alterations** — the AHVL default rule versus what has been agreed; in business
+   premises the division of responsibility and the condition classification are agreed more freely.
+6. **Special terms for business premises** — the purpose of use and protection against competing
+   uses, VAT status (registration → `taxation:value-added-tax`), an itemisation of the maintenance
+   rent, the right to sublet and to assign, redemption and extension options, and contractual
+   penalties.
 
-## Vuokrasuhteen aikana
+## During the tenancy
 
-- **Korotukset**: noudata sovittua mekanismia ja ilmoitusaikoja;
-  yksipuolinen korotus ilman ehtoa ei sido.
-- **Huoneiston kunto ja korjaukset**: ilmoitusvelvollisuus,
-  vuokranalennus käyttöhaitasta (edellytykset lähteestä),
-  vuokranantajan pääsy huoneistoon.
-- **Häiriöt ja laiminlyönnit**: dokumentointi (varoitus!) ennen
-  järeämpiä keinoja.
+- **Increases**: follow the agreed mechanism and the notification periods; a unilateral increase
+  without a clause is not binding.
+- **Condition of the unit and repairs**: the duty to notify, a rent reduction for loss of amenity
+  (the conditions from the source), and the landlord's access to the unit.
+- **Nuisance and defaults**: documentation (a warning!) before heavier measures.
 
-## Päättäminen — valitse oikea keino
+## Ending the tenancy — choose the right remedy
 
-| Keino | Milloin | Huomio |
+| Remedy | When | Note |
 |---|---|---|
-| **Irtisanominen** | toistaiseksi voimassa oleva | irtisanomisajat lähteestä (AHVL: pituus riippuu osapuolesta ja kestosta); asuinhuoneistossa vuokranantajan irtisanomiselle hyvän tavan vaatimukset ja vuokralaisen suoja — lähteestä |
-| **Purkaminen** | olennainen sopimusrikkomus (rästit, häiriö, käyttötarkoituksen vastaisuus) | purkuperusteet lähteestä; **varoitus yleensä ensin** — ilman sitä purku kaatuu |
-| **Määräajan päättyminen** | määräaikainen | ei jatkamisvelvollisuutta; hiljainen jatkuminen sovittava/estettävä |
-| **Häätö** | vuokralainen ei poistu | tuomio + ulosotto → `insolvency:debt-collection` ja `dispute-resolution:statement-of-claim`; omatoiminen häätö on kielletty |
+| **Termination with notice** | valid until further notice | notice periods (irtisanomisaika) from the source (AHVL: the length depends on the party and on the duration); for a residential unit there are good-practice requirements for the landlord's notice and protection for the tenant — from the source |
+| **Summary termination** | a material breach of contract (arrears, nuisance, use contrary to the agreed purpose) | grounds for summary termination from the source; **a warning is usually required first** — without one the summary termination fails |
+| **Expiry of the fixed term** | fixed-term | no obligation to renew; tacit continuation must be agreed or prevented |
+| **Eviction** | the tenant does not leave | a judgment plus enforcement → `insolvency:debt-collection` and `dispute-resolution:statement-of-claim`; self-help eviction is prohibited |
 
-Rästitilanteessa jäsennä kokonaisuus: maksusuunnitelma vs. purku,
-vakuuden käyttö, perintä — ja asumisneuvonnan mahdollisuus
-asuinvuokrissa.
+In an arrears situation, set out the whole picture: a payment plan versus summary termination, use
+of the security, collection — and the possibility of housing advice in residential tenancies.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei laadi AHVL:n pakottavien säännösten vastaisia ehtoja** —
-  tehoton ehto kerrotaan, ei piiloteta sopimukseen.
-- **Ei vahvista irtisanomisaikoja, vakuusrajoja tai indeksiehtojen
-  sallittavuutta muistista** — lähteestä tai `[tarkista]`.
-- **Ei toteuta häätöä eikä omatoimisia keinoja** (lukkojen vaihto,
-  irtaimiston pidätys) — täytäntöönpano kuuluu ulosotolle.
-- **Ei ota kantaa vuokratasoon** — markkinavuokra ei ole
-  oikeuskysymys.
-- **Ei käsittele maanvuokraa** (maanvuokralaki) — eri laki; nosta
-  esiin jos kohde on maapohja.
+- **It does not draft terms contrary to the mandatory provisions of AHVL** — an ineffective term is
+  pointed out, not hidden in the agreement.
+- **It does not confirm notice periods, security deposit limits or the permissibility of index
+  clauses from memory** — from the source or `[check]`.
+- **It does not carry out an eviction and does not use self-help remedies** (changing the locks,
+  retaining the tenant's property) — enforcement belongs to the enforcement authority.
+- **It does not take a view on the level of rent** — the market rent is not a legal question.
+- **It does not deal with land leases** (maanvuokralaki) — a different act; raise the point if the
+  object is land.
 
-## Jatka tästä
+## Continue from here
 
-- Vuokrarästien perintä ja häädön täytäntöönpano → /insolvenssi:saatavien-perinta
-- Purku- tai häätöriita tuomioistuimessa → /riidanratkaisu:haastehakemus
-- Taloyhtiön ja osakkaan suhde vuokrakohteessa → /kiinteistot-ja-asuminen:asunto-osakeyhtio
-- Liiketilan ALV-hakeutuminen → /verotus:arvonlisaverotus
-- Säännöksen tarkistus lähteestä → /juristi:oikeustutkimus
-- Sopimusluonnoksen kieliasu ja rakenne → /juristi:asiakirjan-tarkistus
+- Collection of rent arrears and enforcement of an eviction → /insolvency:debt-collection
+- A summary termination or eviction dispute in court → /dispute-resolution:statement-of-claim
+- The relationship between the housing company and the shareholder in a let unit → /real-estate-and-housing:housing-company
+- VAT registration for business premises → /taxation:value-added-tax
+- Checking a provision from the source → /legal-core:legal-research
+- The language and structure of a draft agreement → /legal-core:document-review

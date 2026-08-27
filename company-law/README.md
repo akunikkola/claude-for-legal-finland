@@ -1,49 +1,53 @@
-# Yhtiöoikeus
+# Company law
 
-Suomen yhtiöoikeus yrityksen elinkaaren keskeisiin tilanteisiin: perustaminen ja
-hallinto, johdon vastuu ja varojenjako, osakassopimukset sekä yritysjärjestelyt.
-Osakeyhtiölain (624/2006) ehdoilla.
+Finnish company law for the key situations in a company's life cycle: incorporation and governance,
+directors' duties and liability, distribution of assets, shareholders' agreements and corporate
+transactions. On the terms of the Limited Liability Companies Act (osakeyhtiölaki 624/2006).
 
-> **Luonnokset ja vaiheistukset ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Yhtiöoikeudelliset toimet ja rekisteri-ilmoitukset tekee ihminen; veroseikat
-> veroasiantuntijalle. Katso [`AGENTS.md`](AGENTS.md).
+> **Drafts and sequencing plans are for review – not legal advice.**
+> Corporate acts and register filings are made by a human; tax points go to a tax specialist.
+> See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **yhtion-hallinto** | Osakeyhtiön perustaminen, yhtiökokous, hallituksen ja toimitusjohtajan tehtävät ja vastuu, varojenjaon kaksoistesti (tase + maksukyky) ja vähemmistönsuoja. Sisältää yhtiöoikeuden perusteiden referenssin (OYL:n varmistettu lukukartta). |
-| **osakassopimus** | Osakassopimuksen laatiminen ja riskitarkistus: päätöksenteko, luovutusrajoitukset, vesting ja leaver-ehdot, drag/tag, kilpailukielto, deadlock, exit – ja suhde yhtiöjärjestykseen. |
-| **yritysjarjestelyt** | Yritysjärjestelyn jäsennys: osakekauppa vs. liiketoimintakauppa, oikeudellinen due diligence, sulautuminen ja jakautuminen (OYL 16–17 luku), suostumukset, yrityskauppavalvonta ja kaupparekisteri-ilmoitukset. |
+| **corporate-governance** | Incorporating a limited company, the general meeting, the duties and liability of the board and the managing director, the two-part distributable-funds test (balance sheet plus solvency) and minority protection. Includes the company-law fundamentals reference (a verified chapter map of osakeyhtiölaki 624/2006). |
+| **shareholders-agreement** | Drafting a shareholders' agreement and reviewing its risks: decision-making, transfer restrictions, vesting and leaver terms, drag and tag, non-compete, deadlock, exit – and the relationship to the articles of association. |
+| **corporate-transactions** | Structuring a corporate transaction: share deal versus business deal, legal due diligence, merger and demerger (OYL chapters 16–17), consents, merger control and trade register filings. |
 
-## Agentit
+## Agents
 
-| Agentti | Mitä tekee |
+| Agent | What it does |
 |---|---|
-| **aineistokartoittaja** | Datahuoneen inventoija: luokittelee aineiston DD-alueittain, tuottaa aukkolistan (valmis tietopyyntöpohja) ja punaisten lippujen listan (change of control, riidat, ristiriidat) juristin priorisoitavaksi. Inventaario, ei oikeudellinen arvio. Vain luku. |
+| **material-mapper** | Data-room inventory: classifies material by due diligence area, produces a gap list (a ready-made information request template) and a red-flag list (change of control, disputes, inconsistencies) for a lawyer to prioritise. An inventory, not a legal assessment. Read only. |
 
-## Perustana varmistetut säädökset
+## The verified statutes it rests on
 
-Lähteestä (Finlex) varmistettu: **osakeyhtiölaki (624/2006)** lukurakenteineen ja
-keskeisine periaatteineen (1:5, 1:7, 1:8, 13:2), **kaupparekisterilaki (564/2023)**
-(korvasi vanhan 129/1979), **kilpailulaki (948/2011)**, **laki avoimesta yhtiöstä ja
-kommandiittiyhtiöstä (389/1988)**, **osuuskuntalaki (421/2013)** ja **tilintarkastuslaki
-(1141/2015)**. Pykälätason sisällöt tarkistetaan käytössä `legal-core:legal-research`-skillillä.
+Confirmed from the source (Finlex): the **Limited Liability Companies Act (osakeyhtiölaki
+624/2006)** with its chapter structure and core principles (1:5, 1:7, 1:8, 13:2), the **Trade
+Register Act (kaupparekisterilaki 564/2023)** (which replaced the old act 129/1979), the
+**Competition Act (kilpailulaki 948/2011)**, the **Partnerships Act (laki avoimesta yhtiöstä ja
+kommandiittiyhtiöstä 389/1988)**, the **Co-operatives Act (osuuskuntalaki 421/2013)** and the
+**Auditing Act (tilintarkastuslaki 1141/2015)**. Section-level content is checked in use with the
+`legal-core:legal-research` skill.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (lain ja oikeuskäytännön tarkistus),
-  `document-review` ja `engagement-intake`.
-- **`contracts`-plugari** – yleinen sopimusmekaniikka (osakassopimus ja kauppakirja
-  ovat sopimuksia: OikTL 228/1929, kohtuullistaminen 36 §).
-- **`employment-law`-plugari** – liikkeen luovutus ja henkilöstö yritysjärjestelyissä.
-- **`insolvency`-plugari** – maksukykytesti ja läheisyys maksukyvyttömyyteen.
+- **The `legal-core` domain** – `legal-research` (checking statutes and case law),
+  `document-review` and `engagement-intake`.
+- **The `contracts` domain** – general contract mechanics (a shareholders' agreement and a sale
+  and purchase agreement are contracts: the Contracts Act (oikeustoimilaki 228/1929), adjustment
+  under section 36).
+- **The `employment-law` domain** – transfer of undertaking and personnel in corporate
+  transactions.
+- **The `insolvency` domain** – the solvency test and proximity to insolvency.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install yhtiooikeus@agent-skills-for-finnish-law
+/plugin install company-law@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.

@@ -1,123 +1,124 @@
-# Yhtiöoikeuden perusteet
+# Company law fundamentals
 
-**Vahvistettu lähteestä (Finlex, 2026-06):** alla mainitut säädösnumerot,
-osakeyhtiölain lukurakenne ja sanatarkat periaatesäännökset on tarkistettu
-Finlexistä. Pykälätason sisällöt, määräajat ja menettelyvaatimukset
-tarkistetaan aina käyttöhetkellä `legal-core:legal-research`-skillillä.
+**Confirmed from the source (Finlex, 2026-06):** the statute numbers listed below, the chapter
+structure of the Limited Liability Companies Act and the verbatim statements of principle have been
+checked in Finlex. Section-level content, time limits and procedural requirements are always checked
+at the time of use with the `legal-core:legal-research` skill.
 
-## Keskeiset säädökset
+## Key statutes
 
-- **Osakeyhtiölaki (624/2006, "OYL")** — osakeyhtiön perustaminen, hallinto,
-  rahoitus, varojenjako, rakennejärjestelyt ja vastuu.
-- **Kaupparekisterilaki (564/2023)** — rekisteröinti ja ilmoitukset
-  (Patentti- ja rekisterihallitus). **Korvasi vanhan kaupparekisterilain
-  (129/1979)** — älä viittaa vanhaan voimassa olevana.
-- **Laki avoimesta yhtiöstä ja kommandiittiyhtiöstä (389/1988)** —
-  henkilöyhtiöt.
-- **Osuuskuntalaki (421/2013)** — osuuskunnat.
-- **Tilintarkastuslaki (1141/2015)** — tilintarkastusvelvollisuus ja
-  tilintarkastajan asema.
-- **Kilpailulaki (948/2011)** — mm. yrityskauppavalvonta.
-- **Toiminimilaki (128/1979)** — yhtiön nimi.
+- **Limited Liability Companies Act (osakeyhtiölaki 624/2006, "OYL")** — incorporation,
+  governance, financing, distribution of assets, structural transactions and liability of a
+  limited liability company.
+- **Trade Register Act (kaupparekisterilaki 564/2023)** — registration and filings
+  (Patentti- ja rekisterihallitus, PRH). **It replaced the old trade register act
+  (kaupparekisterilaki 129/1979)** — do not cite the old one as being in force.
+- **Partnerships Act (laki avoimesta yhtiöstä ja kommandiittiyhtiöstä 389/1988)** —
+  partnerships.
+- **Co-operatives Act (osuuskuntalaki 421/2013)** — co-operatives.
+- **Auditing Act (tilintarkastuslaki 1141/2015)** — the obligation to have an audit and the
+  position of the auditor.
+- **Competition Act (kilpailulaki 948/2011)** — among other things merger control.
+- **Trade Name Act (toiminimilaki 128/1979)** — the company's name.
 
-## Yritysmuodot lyhyesti
+## Company forms in brief
 
-| Muoto | Sääntely | Vastuu | Tyypillinen käyttö |
+| Form | Governed by | Liability | Typical use |
 |---|---|---|---|
-| Yksityinen osakeyhtiö (oy) | OYL | rajoittuu sijoitettuun pääomaan | yleisin yhtiömuoto; ei vähimmäisosakepääomaa (vaatimus poistettu 2019) |
-| Julkinen osakeyhtiö (oyj) | OYL | rajoitettu | listautuvat ja suuret yhtiöt; vähimmäisosakepääoma 80 000 € (vahvistettu) |
-| Avoin yhtiö (ay) | 389/1988 | yhtiömiehet henkilökohtaisesti | pienyritykset, ammatinharjoitus |
-| Kommandiittiyhtiö (ky) | 389/1988 | vastuunalainen henkilökohtaisesti, äänetön panoksellaan | mm. rahastorakenteet |
-| Osuuskunta | 421/2013 | rajoitettu | jäsentaloudet, yhteisomistus |
-| Yksityinen elinkeinonharjoittaja ("toiminimi") | ei yhteisölakia | henkilökohtainen | pienin muoto — ei erillinen oikeushenkilö |
+| Private limited company (oy) | OYL | limited to the capital invested | the most common form; no minimum share capital (the requirement was removed in 2019) |
+| Public limited company (oyj) | OYL | limited | listed and large companies; minimum share capital 80 000 € (confirmed) |
+| General partnership (ay) | 389/1988 | partners personally liable | small businesses, professional practice |
+| Limited partnership (ky) | 389/1988 | general partner personally liable, silent partner up to their contribution | among other things fund structures |
+| Co-operative | 421/2013 | limited | member economies, joint ownership |
+| Private trader ("toiminimi") | no entity statute | personal | the smallest form — not a separate legal person |
 
-## Osakeyhtiölain lukukartta (vahvistettu Finlexistä)
+## Chapter map of the Limited Liability Companies Act (confirmed from Finlex)
 
-| Luku | Sisältö |
+| Chapter | Content |
 |---|---|
-| 1 | Toiminnan keskeiset periaatteet ja lain soveltaminen |
-| 2 | Osakeyhtiön perustaminen |
-| 3 | Osakkeet |
-| 4 | Arvo-osuusjärjestelmään kuuluvat osakkeet |
-| 5 | Yhtiökokous |
-| 6 | Osakeyhtiön johto ja edustaminen |
-| 7 | Tilintarkastus ja erityinen tarkastus |
-| 8 | Oma pääoma, tilinpäätös, toimintakertomus ja konserni |
-| 9 | Osakeanti |
-| 10 | Optio- ja muut erityiset oikeudet osakkeisiin |
-| 11 | Osakepääoman korottaminen |
-| 12 | Pääomalaina |
-| 13 | Varojen jakaminen |
-| 14 | Osakepääoman alentaminen |
-| 15 | Yhtiön omat osakkeet |
-| 16 | Sulautuminen |
-| 17 | Jakautuminen |
-| 17 a | Rajat ylittävät järjestelyt (lisätty lailla 1337/2022) |
-| 18 | Vähemmistöosakkeiden lunastaminen |
-| 19 | Yritysmuodon muuttaminen |
-| 20 | Yhtiön purkaminen |
-| 21 | Päätöksen moite |
-| 22 | Vahingonkorvaus |
-| 23 | Vaikutusvallan väärinkäyttöön perustuva lunastusvelvollisuus ja purkaminen |
-| 24 | Riitojen ratkaiseminen |
-| 25 | Rangaistussäännökset |
+| 1 | Core principles of the company's activities and application of the Act |
+| 2 | Incorporation of a limited liability company |
+| 3 | Shares |
+| 4 | Shares in the book-entry system |
+| 5 | The general meeting |
+| 6 | Management and representation of the company |
+| 7 | Audit and special audit |
+| 8 | Equity, financial statements, the annual report and the group |
+| 9 | Share issue |
+| 10 | Options and other special rights entitling to shares |
+| 11 | Increase of share capital |
+| 12 | Capital loan |
+| 13 | Distribution of assets |
+| 14 | Reduction of share capital |
+| 15 | The company's own shares |
+| 16 | Merger |
+| 17 | Demerger |
+| 17 a | Cross-border transactions (added by act 1337/2022) |
+| 18 | Redemption of minority shares |
+| 19 | Change of company form |
+| 20 | Dissolution of the company |
+| 21 | Challenge of a resolution |
+| 22 | Liability in damages |
+| 23 | Obligation to redeem and dissolution based on abuse of influence |
+| 24 | Resolution of disputes |
+| 25 | Penal provisions |
 
-## OYL 1 luvun periaatteet (sanamuodot vahvistettu Finlexistä)
+## The principles in OYL chapter 1 (wordings confirmed from Finlex)
 
-Nämä periaatteet ohjaavat koko lain tulkintaa:
+These principles guide the interpretation of the whole Act:
 
-- **Oikeushenkilöllisyys ja rajoitettu vastuu** — yhtiö on osakkeenomistajista
-  erillinen oikeushenkilö; osakkeenomistajat eivät vastaa henkilökohtaisesti
-  yhtiön velvoitteista.
-- **Toiminnan tarkoitus (1:5)** — toiminnan tarkoituksena on *"tuottaa voittoa
-  osakkeenomistajille, jollei yhtiöjärjestyksessä määrätä toisin"*.
-- **Yhdenvertaisuus (1:7)** — *"Kaikki osakkeet tuottavat yhtiössä yhtäläiset
-  oikeudet, jollei yhtiöjärjestyksessä määrätä toisin."* Toimielin ei saa
-  tehdä päätöstä, joka tuottaa epäoikeutettua etua osakkaalle tai muulle
-  toisen osakkaan tai yhtiön kustannuksella.
-- **Johdon tehtävä (1:8)** — johdon on *"huolellisesti toimien edistettävä
-  yhtiön etua"* (huolellisuus- ja lojaliteettivelvollisuus).
-- **Tahdonvaltaisuus** — yhtiöjärjestyksessä voidaan laajalti määrätä toisin,
-  mutta ei vastoin pakottavia säännöksiä (mm. velkojiensuoja,
-  vähemmistönsuoja, yhdenvertaisuus).
+- **Legal personality and limited liability** — the company is a legal person separate from its
+  shareholders; shareholders are not personally liable for the company's obligations.
+- **Purpose of the activities (1:5)** — the purpose of the activities is *"to generate profit for
+  the shareholders, unless otherwise provided in the articles of association"*.
+- **Equal treatment (1:7)** — *"All shares carry equal rights in the company, unless otherwise
+  provided in the articles of association."* A governing body may not take a decision that confers
+  an unjustified benefit on a shareholder or another person at the expense of another shareholder
+  or of the company.
+- **The duty of management (1:8)** — management must *"promote the interests of the company with
+  due care"* (a duty of care and a duty of loyalty).
+- **Non-mandatory character** — the articles of association may provide otherwise on a wide range
+  of matters, but not contrary to mandatory provisions (among others protection of creditors,
+  minority protection and equal treatment).
 
-## Varojenjaon kaksoistesti
+## The two-part distributable-funds test
 
-1. **Tasetesti** — jako perustuu viimeksi vahvistettuun (tilintarkastettuun)
-   tilinpäätökseen ja jakokelpoisiin varoihin (OYL 13 luku).
-2. **Maksukykytesti (OYL 13:2, sanamuoto vahvistettu)** — varoja ei saa
-   jakaa, *"jos jaosta päätettäessä tiedetään tai pitäisi tietää yhtiön
-   olevan maksukyvytön tai jaon aiheuttavan maksukyvyttömyyden"*.
+1. **The balance-sheet test** — a distribution is based on the most recently adopted (audited)
+   financial statements and on the distributable funds (OYL chapter 13).
+2. **The solvency test (OYL 13:2, wording confirmed)** — assets may not be distributed *"if, at
+   the time the distribution is decided on, it is known or ought to be known that the company is
+   insolvent or that the distribution will cause insolvency"*.
 
-Molempien on täytyttävä jokaisessa jakomuodossa: osinko, vapaan oman pääoman
-(SVOP) palautus, omien osakkeiden hankinta, alentaminen. Laiton jako →
-palautusvelvollisuus ja mahdollinen vahingonkorvaus- ja rikosvastuu.
+Both must be satisfied in every form of distribution: dividend, repayment from the reserve for
+invested unrestricted equity (SVOP), acquisition of own shares, reduction of capital. An unlawful
+distribution → an obligation to return the assets and possible liability in damages and criminal
+liability.
 
-## Toimielimet
+## Governing bodies
 
-- **Yhtiökokous (5 luku)** — ylin päättävä elin: tilinpäätöksen
-  vahvistaminen, voitonjako, hallituksen valinta, yhtiöjärjestyksen muutos
-  (määräenemmistö), suunnatut annit ym. Päätösvaatimukset (enemmistö /
-  määräenemmistö) tarkistetaan lähteestä.
-- **Hallitus (6 luku)** — pakollinen toimielin: yleistoimivalta, yhtiön
-  edustaminen, kirjanpidon ja varainhoidon valvonnan järjestäminen.
-- **Toimitusjohtaja (6 luku)** — valinnainen: juokseva hallinto hallituksen
-  ohjeiden mukaan.
-- **Tilintarkastaja (7 luku + 1141/2015)** — velvollisuus riippuu kokorajoista
-  (tarkista voimassa olevat rajat lähteestä).
+- **The general meeting (chapter 5)** — the supreme decision-making body: adoption of the financial
+  statements, distribution of profit, election of the board, amendment of the articles of
+  association (qualified majority), directed issues and so on. Decision requirements (simple
+  majority or qualified majority) are checked from the source.
+- **The board of directors (chapter 6)** — a mandatory body: general competence, representation of
+  the company, organising the supervision of the accounts and of asset management.
+- **The managing director (chapter 6)** — optional: day-to-day administration in accordance with
+  the board's instructions.
+- **The auditor (chapter 7 and act 1141/2015)** — the obligation depends on size thresholds (check
+  the thresholds in force from the source).
 
-## Rekisterit ja viranomaiset
+## Registers and authorities
 
-- **PRH / kaupparekisteri** (564/2023) — perustaminen, muutosilmoitukset,
-  edustamisoikeudet, tilinpäätösten julkistaminen. Tosiasialliset
-  edunsaajat ilmoitetaan rekisteriin.
-- **YTJ (ytj.fi)** — yritys- ja yhteisötietojärjestelmä, Y-tunnus.
-- **Verohallinto** — rekisteröinnit (ennakkoperintä, ALV, työnantaja).
+- **PRH / the trade register** (564/2023) — incorporation, notifications of change, rights of
+  representation, publication of financial statements. Beneficial owners are notified to the
+  register.
+- **YTJ (ytj.fi)** — the business information system, the business ID (Y-tunnus).
+- **Verohallinto** — registrations (prepayment register, VAT, employer register).
 
-## Tyypilliset riskipisteet
+## Typical risk points
 
-- Varojenjako ilman maksukykyarviota tai dokumentointia.
-- Lähipiiritoimet ja yhdenvertaisuuden loukkaus (1:7).
-- Hallituksen päätösten dokumentoimattomuus → vastuuriski (22 luku).
-- Yhtiöjärjestyksen ja osakassopimuksen ristiriita.
-- Kaupparekisteritietojen (edustaminen, edunsaajat) vanhentuminen.
+- A distribution of assets without a solvency assessment or without documentation.
+- Related-party transactions and infringement of equal treatment (1:7).
+- Board decisions that are not documented → liability risk (chapter 22).
+- A conflict between the articles of association and a shareholders' agreement.
+- Trade register data (representation, beneficial owners) becoming out of date.

@@ -1,112 +1,112 @@
 ---
 name: housing-company
 description: >
-  Asunto-osakeyhtiön hallinto ja osakkaan asema Suomessa
-  asunto-osakeyhtiölain (1599/2009) mukaan. Käytä tätä skilliä, kun
-  käyttäjä selvittää kunnossapitovastuun jakoa yhtiön ja osakkaan
-  välillä, suunnittelee tai arvioi osakkaan muutostyötä, valmistelee
-  yhtiökokousta tai moittii sen päätöstä, arvioi vastikeperusteita tai
-  -rästejä, hallituksen tai isännöitsijän vastuuta, lunastuslauseketta
-  tai huoneiston ottamista yhtiön hallintaan. Triggeröi sanoista:
-  taloyhtiö, asunto-osakeyhtiö, kunnossapitovastuu, vastuunjakotaulukko,
-  muutostyöilmoitus, yhtiökokous, yhtiövastike, hoitovastike,
-  pääomavastike, putkiremontti, yhtiöjärjestys, lunastuslauseke,
-  hallintaanotto, isännöitsijä, päätöksen moite.
+  Governance of a Finnish housing company and the position of a shareholder
+  under the Limited Liability Housing Companies Act (asunto-osakeyhtiölaki
+  1599/2009). Use this skill when the user is working out the division of
+  maintenance liability between the company and a shareholder, planning or
+  assessing an alteration by a shareholder, preparing a general meeting or
+  challenging one of its resolutions, assessing the basis for or arrears of the
+  company charge, the liability of the board or the manager, a redemption
+  clause, or taking a flat into the company's possession. Triggers on: housing
+  company, taloyhtiö, asunto-osakeyhtiö, maintenance liability, division of
+  responsibility table, notice of alteration, general meeting, company charge,
+  maintenance charge, capital charge, pipe renovation, articles of association,
+  redemption clause, taking into possession, manager, challenge of a
+  resolution.
 ---
 
-# Asunto-osakeyhtiö — kunnossapito, muutostyöt ja hallinto
+# Housing company — maintenance, alterations and governance
 
-Tämä skill jäsentää taloyhtiön ja osakkaan suhteen
-asunto-osakeyhtiölain (1599/2009) mukaan. Perusteet:
-`../real-property-conveyance/references/real-property-fundamentals.md`. Yhtiöoikeuden
-yleiset opit (johdon vastuu, kokousmenettely) ovat sukua
-osakeyhtiölle → `company-law:corporate-governance`, mutta AOYL on oma
-lakinsa — älä sovella OYL:ää suoraan.
+This skill sets out the relationship between the housing company and the shareholder under the
+Limited Liability Housing Companies Act (asunto-osakeyhtiölaki 1599/2009). Fundamentals:
+`../real-property-conveyance/references/real-property-fundamentals.md`. The general doctrines of
+company law (liability of management, meeting procedure) are related to those of a limited liability
+company → `company-law:corporate-governance`, but the Limited Liability Housing Companies Act is an
+act of its own — do not apply osakeyhtiölaki directly.
 
-> **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. Yhtiön päätökset tekevät sen toimielimet.
-> Katso `real-estate-and-housing/AGENTS.md`.
+> **Disclaimer:** assessments and drafts are for review — not legal advice. The company's decisions
+> are made by its governing bodies. See `real-estate-and-housing/AGENTS.md`.
 
-## Tarkista laki JA yhtiöjärjestys
+## Check the Act AND the articles of association
 
-Hae AOYL:n säännökset **`legal-core:legal-research`-skillillä** — ja
-muista, että **yhtiöjärjestys voi poiketa lain olettamasäännöksistä**
-(mm. kunnossapitovastuu, vastikeperusteet, lunastuslauseke). Analyysi
-ilman yhtiöjärjestystä on puolivalmis: pyydä se käyttäjältä äläkä
-oleta sisältöä.
+Retrieve the provisions of the Act **with the `legal-core:legal-research` skill** — and remember
+that **the articles of association (yhtiöjärjestys) may depart from the default provisions of the
+Act** (among other things maintenance liability, the basis of the charge, and a redemption clause).
+An analysis without the articles of association is half-finished: ask the user for them and do not
+assume their contents.
 
-## Kunnossapitovastuun jako
+## The division of maintenance liability
 
-1. **Lähtökohta (AOYL, olettama)**: yhtiö vastaa rakenteista,
-   eristeistä ja perusjärjestelmistä (lämmitys, sähkö, vesi, ilmanvaihto);
-   osakas huoneiston sisäosista — tarkka jako ja rajatapaukset
-   (märkätilat, ikkunat, parvekkeet) lähteestä ja yhtiöjärjestyksestä.
-2. **Yhtiöjärjestyspoikkeamat** ensin; Kiinteistöliiton
-   vastuunjakotaulukko on vakiintunut apuväline muttei laki — erottele.
-3. **Ilmoitusvelvollisuus**: osakkaan ilmoitettava viasta yhtiölle;
-   yhtiön ilmoitukset osakkaalle töistä.
-4. **Kustannusriidat**: yhtiön teettämä työ osakkaan vastuualueella ja
-   päinvastoin; osakkaan oikeus teettää yhtiön viivyttelemä työ —
-   edellytykset lähteestä. Tasoparannukset vs. perustaso.
+1. **The starting point (the Act, default rule)**: the company is responsible for the structures,
+   the insulation and the basic systems (heating, electricity, water, ventilation); the shareholder
+   is responsible for the interior of the flat — the exact division and the borderline cases (wet
+   rooms, windows, balconies) from the source and from the articles of association.
+2. **Departures in the articles of association** first; the division of responsibility table
+   published by Kiinteistöliitto is an established aid but it is not law — keep the two apart.
+3. **Duty to notify**: the shareholder must notify the company of a fault; the company must notify
+   the shareholder of works.
+4. **Cost disputes**: work commissioned by the company within the shareholder's area of
+   responsibility and vice versa; the shareholder's right to carry out work the company has delayed
+   — the conditions from the source. Improvements above the basic standard versus the basic
+   standard.
 
-## Osakkaan muutostyöt
+## Alterations by a shareholder
 
-- **Ilmoitus etukäteen** yhtiölle töistä, jotka voivat vaikuttaa
-  yhtiön tai toisen osakkaan vastuulla oleviin osiin; yhtiön oikeus
-  asettaa ehtoja ja valvoa (kustannukset osakkaan) — menettely
-  lähteestä.
-- Kielto-/ehtoperusteet: vahinko tai haitta yhtiölle/osakkaille;
-  luvanvaraisuus (rakentamislupa → `environment-and-planning`).
-- Dokumentointi: muutostyörekisteri ja merkitys tulevassa kaupassa
-  (isännöitsijäntodistus).
+- **Advance notice** to the company of works that may affect parts for which the company or another
+  shareholder is responsible; the company's right to impose conditions and to supervise (at the
+  shareholder's cost) — the procedure from the source.
+- Grounds for prohibition or for conditions: damage or nuisance to the company or to shareholders;
+  the need for a permit (a building permit → `environment-and-planning`).
+- Documentation: the register of alterations, and its significance in a future sale (the manager's
+  certificate).
 
-## Yhtiökokous ja päätöksenteko
+## The general meeting and decision-making
 
-- **Toimivalta**: yhtiökokous päättää laajakantoisista (remontit,
-  vastikkeet, yhtiöjärjestysmuutokset — enemmistövaatimukset
-  lähteestä); hallitus juoksevista.
-- **Yhdenvertaisuus** on AOYL:n ydinperiaate: päätös ei saa tuottaa
-  epäoikeutettua etua osakkaalle toisen kustannuksella — tyypilliset
-  kipupisteet: hissin jälkiasennuksen kustannustenjako,
-  vastikeperusteen muutos, vain osaa palveleva remontti.
-- **Päätöksen moite**: virheellinen menettely tai sisältö →
-  moitekanne määräajassa `[tarkista lähteestä]`; mitättömyys erikseen.
-- Kokouskutsut, etäosallistuminen ja pöytäkirjat — vaatimukset
-  lähteestä.
+- **Competence**: the general meeting decides on matters of wide significance (renovations,
+  charges, amendments to the articles of association — the majority requirements from the source);
+  the board decides on day-to-day matters.
+- **Equal treatment** is a core principle of the Act: a decision must not confer an unjustified
+  benefit on one shareholder at the expense of another — the typical flashpoints are the allocation
+  of the cost of retrofitting a lift, a change in the basis of the charge, and a renovation that
+  serves only some.
+- **Challenge of a resolution**: defective procedure or content → an action to challenge within the
+  time limit `[check from the source]`; nullity is a separate matter.
+- Notices of meeting, remote participation and minutes — the requirements from the source.
 
-## Vastikkeet ja maksuvaikeudet
+## Charges and payment difficulties
 
-- Vastikeperusteet yhtiöjärjestyksestä (hoito- ja pääomavastike;
-  käyttökorvaukset erikseen).
-- **Hallintaanotto**: huoneiston ottaminen yhtiön hallintaan
-  (vastikerästit, häiriö) — varoitusmenettely, määräajat ja kesto
-  lähteestä; vuokraus yhtiön lukuun. Raskain keino — käy kevyemmät
-  ensin.
-- Rästien perintä → `insolvency:debt-collection`.
+- The bases of the charges come from the articles of association (maintenance charge and capital
+  charge; usage-based payments separately).
+- **Taking a flat into the company's possession**: taking possession of a flat (arrears of the
+  charge, nuisance) — the warning procedure, the time limits and the duration from the source;
+  letting the flat for the company's account. It is the heaviest remedy — go through the lighter
+  ones first.
+- Collection of arrears → `insolvency:debt-collection`.
 
-## Hallituksen ja isännöitsijän vastuu
+## Liability of the board and the manager
 
-Huolellisuusvelvollisuus ja vahingonkorvausvastuu (AOYL:n omat
-säännökset — lähteestä); tyypilliset riskit: kunnossapidon laiminlyönti,
-yhdenvertaisuuden loukkaus, puutteellinen valmistelu. Dokumentoitu
-päätöksenteko on paras suoja — sama oppi kuin
-`company-law:corporate-governance`-skillissä.
+The duty of care and liability in damages (the Act has its own provisions — from the source); the
+typical risks are neglect of maintenance, infringement of equal treatment, and inadequate
+preparation. Documented decision-making is the best protection — the same lesson as in the
+`company-law:corporate-governance` skill.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tulkitse yhtiöjärjestystä näkemättä sitä** — pyytää sen aina.
-- **Ei vahvista vastuunjakoa sitovasti** rajatapauksissa —
-  `[varmista — juristin arvioitava]`; viime kädessä tuomioistuin.
-- **Ei tee rakennusteknistä arviota** vaurioista tai korjaustavoista.
-- **Ei vahvista enemmistövaatimuksia, moiteaikoja tai
-  hallintaanoton määräaikoja muistista** — lähteestä.
-- **Ei laadi näennäisperusteluja** yhdenvertaisuutta loukkaavalle
-  päätökselle — riski kerrotaan, ei piiloteta.
+- **It does not interpret the articles of association without seeing them** — it always asks for
+  them.
+- **It does not confirm the division of liability in a binding way** in borderline cases —
+  `[confirm — requires a lawyer's assessment]`; ultimately it is for a court.
+- **It does not make a structural assessment** of damage or of methods of repair.
+- **It does not confirm majority requirements, periods for challenging a resolution or the time
+  limits for taking a flat into possession from memory** — from the source.
+- **It does not draft sham reasoning** for a decision that infringes equal treatment — the risk is
+  stated, not hidden.
 
-## Jatka tästä
+## Continue from here
 
-- Asunnon kauppaan liittyvä yhtiötieto → /kiinteistot-ja-asuminen:asuntokauppa
-- Huoneiston vuokraus → /kiinteistot-ja-asuminen:vuokrasopimukset
-- Säännöksen tai KKO-käytännön tarkistus → /juristi:oikeustutkimus
-- Vastikerästien perintä → /insolvenssi:saatavien-perinta
-- Moitekanteen vieminen tuomioistuimeen → /riidanratkaisu:haastehakemus
+- Housing-company information relevant to a sale of a dwelling → /real-estate-and-housing:residential-property-sale
+- Letting a flat → /real-estate-and-housing:lease-agreements
+- Checking a provision or KKO case law → /legal-core:legal-research
+- Collection of charge arrears → /insolvency:debt-collection
+- Taking an action to challenge a resolution to court → /dispute-resolution:statement-of-claim
