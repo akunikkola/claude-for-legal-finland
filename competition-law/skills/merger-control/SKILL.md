@@ -1,29 +1,33 @@
 ---
 name: merger-control
 description: >
-  Yrityskauppavalvonta Suomessa ja EU:ssa (kilpailulaki 948/2011 4 luku,
-  EU:n sulautuma-asetus). Käytä tätä skilliä, kun käyttäjä arvioi,
-  pitääkö yrityskauppa ilmoittaa KKV:lle tai komissiolle, valmistelee
-  yrityskauppailmoitusta, suunnittelee kaupan aikataulua
-  täytäntöönpanokiellon kanssa, arvioi sitoumusten tarvetta tai
-  gun jumping -riskiä, tai vastaa viranomaisen tietopyyntöihin
-  yrityskauppatutkinnassa. Triggeröi sanoista: yrityskauppailmoitus,
-  liikevaihtorajat, KKV-ilmoitus, täytäntöönpanokielto, gun jumping,
-  ensi vaihe, toinen vaihe, sitoumukset, yrityskaupan kielto,
-  sulautuma-asetus, EUMR, liitännäisrajoitukset.
+  Merger control in Finland and the EU (Chapter 4 of the Competition Act
+  kilpailulaki 948/2011; the EU Merger Regulation). Use this skill when
+  the user is assessing whether a concentration must be notified to KKV
+  or to the Commission, preparing a merger notification, planning the
+  transaction timetable around the prohibition on implementation,
+  assessing the need for commitments or the risk of gun jumping, or
+  responding to an authority's requests for information in a merger
+  investigation. Triggers on: merger notification, turnover thresholds,
+  KKV notification, prohibition on implementation, gun jumping, first
+  phase, second phase, commitments, prohibition of a concentration,
+  Merger Regulation, EUMR, ancillary restraints, yrityskauppailmoitus,
+  liikevaihtorajat, täytäntöönpanokielto.
 ---
 
-# Yrityskauppavalvonta — ilmoitus, menettely ja täytäntöönpanokielto
+# Merger control — notification, procedure and the prohibition on implementation
 
-Tämä skill jäsentää yrityskauppavalvonnan kilpailulain (948/2011)
-4 luvun (otsikko vahvistettu) ja EU:n sulautuma-asetuksen mukaan.
-Perusteet: `../restrictive-practices/references/competition-law-fundamentals.md`.
-Transaktion kokonaisuus (DD, kauppakirja, closing) →
-`company-law:corporate-transactions`; tämä skill kattaa kilpailuosion.
+This skill structures merger control under Chapter 4 of the Competition
+Act (kilpailulaki 948/2011; heading confirmed) and the EU Merger
+Regulation. Fundamentals:
+`../restrictive-practices/references/competition-law-fundamentals.md`.
+The transaction as a whole (DD, sale and purchase agreement, closing) →
+`company-law:corporate-transactions`; this skill covers the competition
+part.
 
-> **Vastuuvapaus:** arviot ja luonnokset ovat tarkistettavia — ei
-> oikeudellista neuvontaa. **Liikevaihtorajat muuttuivat viimeksi 2023 —
-> älä käytä muistinvaraisia rajoja.** Katso `competition-law/AGENTS.md`.
+> **Disclaimer:** assessments and drafts are for review — not legal
+> advice. **The turnover thresholds last changed in 2023 — do not use
+> thresholds from memory.** See `competition-law/AGENTS.md`.
 
 ## Output language
 
@@ -35,91 +39,100 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista rajat ja menettely lähteestä
+## Check the thresholds and the procedure from the source
 
-Hae kilpailulain 4 luvun säännökset ja **voimassa olevat
-liikevaihtorajat** **`legal-core:legal-research`-skillillä** ja KKV:n
-ohjeista `[tarkista]`. EU-tason rajat sulautuma-asetuksesta
-(EUR-Lex). KKV:n ratkaisukäytäntö ja MAO/KHO-linjaukset lähteestä.
+Fetch the provisions of Chapter 4 of the Competition Act and the
+**turnover thresholds in force** with the
+**`legal-core:legal-research` skill** and from KKV's guidance `[check]`.
+The EU-level thresholds from the Merger Regulation (EUR-Lex). KKV's
+decision-making practice and the lines taken by MAO and KHO from the
+source.
 
-## Vaihe 1: Ilmoitusvelvollisuuden arviointi
+## Step 1: Assessing the duty to notify
 
-1. **Onko kyse yrityskaupasta?** Määräysvallan hankinta, liiketoiminnan
-   hankinta, yhteisyritys (täyden toiminnan kriteeri) — määritelmät
-   lähteestä; myös vähemmistöosuus voi tuoda tosiasiallisen
-   määräysvallan.
-2. **Liikevaihtorajat**: osapuolten liikevaihdot lasketaan
-   konsernitasolla; laskentasäännöt (mihin liikevaihto kohdistetaan,
-   ostajan ryhmä, myyjän osalta vain kohde) lähteestä. **Jos rajoja ei
-   ole haettu lähteestä tässä istunnossa, älä kirjoita tuotokseen
-   mitään euromääräistä rajalukua — ei edes `[tarkista]`-varauksella.**
-   Muistinvarainen luku on todennäköisesti vanhentunut (rajat muuttuivat
-   2023 olennaisesti alaspäin), ja varauksellakin esitetty vanha luku
-   ohjaa lukijan väärään johtopäätökseen. Kirjoita sen sijaan:
-   "voimassa olevat rajat: kilpailulain 22 § — hae lähteestä ennen
-   johtopäätöstä". Älä esitä johtopäätöstä "ilmoitusvelvollisuus
-   täyttyy / ei täyty" ennen kuin rajat on tarkistettu.
-3. **EU vai KKV?** Sulautuma-asetuksen rajat ylittävä kauppa
-   komissiolle (one stop shop); siirtomekanismit molempiin suuntiin —
-   tarkista myös komission nykyinen siirtokäytäntö raja-arvot
-   alittavissa kaupoissa lähteestä.
-4. **Rajat alittuvat?** Dokumentoi arvio. Huomaa, että muu
-   kilpailuoikeus (mm. tietojenvaihto valmistelussa) soveltuu silti.
+1. **Is this a concentration?** Acquisition of control, acquisition of a
+   business, a joint venture (the full-function criterion) — the
+   definitions from the source; a minority shareholding may also confer
+   de facto control.
+2. **Turnover thresholds**: the parties' turnovers are calculated at
+   group level; the calculation rules (what the turnover is attributed
+   to, the acquirer's group, and on the seller's side only the target)
+   from the source. **If the thresholds have not been fetched from the
+   source in this session, do not write any euro-denominated threshold
+   figure into the output — not even with a `[check]` caveat.** A figure
+   from memory is likely to be out of date (the thresholds moved
+   substantially downwards in 2023), and an old figure presented even
+   with a caveat leads the reader to the wrong conclusion. Write instead:
+   "thresholds in force: section 22 of the Competition Act — fetch from
+   the source before concluding". Do not state a conclusion that "the
+   duty to notify is / is not triggered" before the thresholds have been
+   checked.
+3. **EU or KKV?** A concentration exceeding the Merger Regulation
+   thresholds goes to the Commission (one-stop shop); referral
+   mechanisms run in both directions — also check the Commission's
+   current referral practice for below-threshold deals from the source.
+4. **Thresholds not met?** Document the assessment. Note that the rest of
+   competition law (among other things information exchange during
+   preparation) still applies.
 
-## Vaihe 2: Ilmoituksen valmistelu
+## Step 2: Preparing the notification
 
-- **Sisältö**: osapuolet ja ryhmät, kaupan rakenne, relevantit
-  markkinat ja osuudet, päällekkäisyydet (horisontaaliset) ja
-  kytkennät (vertikaaliset/konglomeraatti), tehokkuusperustelut —
-  ilmoituskaavan vaatimukset KKV:n ohjeista.
-- **Esivaiheen yhteydenpito** KKV:hen ennen muodollista ilmoitusta —
-  suositeltava isoissa tai ongelmallisissa kaupoissa.
-- Markkinatietojen kokoaminen: sisäiset dokumentit (huom. ne voidaan
-  pyytää — strategiapaperien kieli!), asiakas- ja kilpailijalistat.
+- **Content**: the parties and their groups, the structure of the deal,
+  the relevant markets and shares, overlaps (horizontal) and links
+  (vertical/conglomerate), efficiency arguments — the requirements of
+  the notification form from KKV's guidance.
+- **Pre-notification contact** with KKV before the formal notification —
+  advisable in large or problematic deals.
+- Gathering market information: internal documents (note that these can
+  be requested — mind the language of strategy papers!), customer and
+  competitor lists.
 
-## Vaihe 3: Menettely ja aikataulu
+## Step 3: Procedure and timetable
 
-- **Käsittelyvaiheet**: ensi vaihe ja jatkokäsittely (toinen vaihe) —
-  määräajat ja niiden pidennysperusteet lähteestä `[tarkista]`;
-  kello pysähtyy puutteellisilla tiedoilla.
-- **Täytäntöönpanokielto**: kauppaa ei saa panna täytäntöön ennen
-  hyväksyntää — **gun jumping** -riski kattaa myös ennenaikaisen
-  määräysvallan käytön ja kilpailijatiedon vaihdon ennen clearancea.
-  Laadi clean team -järjestelyt ja integraation valmistelun
-  pelisäännöt (mitä saa / ei saa tehdä ennen closingia).
-- **Sitoumukset**: jos kauppa estää kilpailua, sitoumusneuvottelut
-  (divestoinnit ensisijaisia) — ajoitus ja menettely lähteestä.
-- **Kielto**: MAO voi KKV:n esityksestä kieltää kaupan — harvinaista
-  mutta mahdollista; muutoksenhaku KHO:hon.
-- Kauppakirjan ehdollisuus: clearance closing-ehtona →
-  `company-law:corporate-transactions`.
+- **Procedural phases**: the first phase and further examination (the
+  second phase) — the time limits and the grounds for extending them
+  from the source `[check]`; the clock stops if the information is
+  incomplete.
+- **Prohibition on implementation**: the concentration may not be put
+  into effect before approval — the **gun jumping** risk also covers
+  exercising control prematurely and exchanging competitor information
+  before clearance. Set up clean-team arrangements and ground rules for
+  integration planning (what may and may not be done before closing).
+- **Commitments**: if the concentration would impede competition,
+  commitment negotiations (divestitures come first) — the timing and
+  procedure from the source.
+- **Prohibition**: MAO may, on KKV's proposal, prohibit the
+  concentration — rare but possible; appeal lies to KHO.
+- Conditionality of the sale and purchase agreement: clearance as a
+  closing condition → `company-law:corporate-transactions`.
 
-## Liitännäisrajoitukset
+## Ancillary restraints
 
-Kauppaan liittyvät kilpailukiellot ja muut liitännäisrajoitukset
-(myyjän kilpailukielto, rekrytointikiellot, toimitussopimukset)
-arvioidaan suoraan liitännäisrajoitusperiaatteiden mukaan — kestot ja
-laajuudet komission tiedonannosta `[tarkista]`; ylimenevä osa on
-tavallista kilpailunrajoitusarviointia → `restrictive-practices`.
+Non-compete obligations and other restraints ancillary to the deal (the
+seller's non-compete, no-poach clauses, supply agreements) are assessed
+directly under the ancillary-restraints principles — durations and scope
+from the Commission notice `[check]`; anything going beyond that is
+ordinary assessment of a restriction of competition →
+`restrictive-practices`.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei vahvista liikevaihtorajoja tai käsittelyaikoja muistista** —
-  lähteestä tai `[tarkista]`.
-- **Ei jätä ilmoitusta** — luonnokset menevät ihmiselle ja
-  asiamiehelle.
-- **Ei ennusta clearancea** — markkinavaikutusarvio on
-  `[varmista — kilpailujuristin arvioitava]`; ekonometria
-  ekonomisteille.
-- **Ei avusta täytäntöönpanokiellon kiertämisessä** — gun jumping
-  -riski kerrotaan, ei kierretä.
-- **Ei kata ulkomaisten investointien seurantaa** (FDI) eikä
-  ulkomaisia tukia koskevaa asetusta (FSR) syvällisesti — nosta
-  tarve esiin ja ohjaa asiantuntijalle.
+- **Does not confirm turnover thresholds or review periods from
+  memory** — from the source or `[check]`.
+- **Does not file the notification** — drafts go to a human and to
+  counsel.
+- **Does not predict clearance** — an assessment of market effects is
+  `[confirm — requires a competition lawyer's assessment]`; econometrics
+  are for economists.
+- **Does not assist in circumventing the prohibition on implementation** —
+  the gun jumping risk is explained, not circumvented.
+- **Does not cover foreign investment screening** (FDI) or the Foreign
+  Subsidies Regulation (FSR) in depth — raise the need and refer to a
+  specialist.
 
-## Jatka tästä
+## Continue from here
 
-- Sopimusten ja yhteistyön kilpailuarvio → /kilpailuoikeus:kilpailunrajoitukset
-- Integraation valmistelun pelisäännöt → /kilpailuoikeus:kilpailu-compliance
-- Transaktion kokonaisuus ja kauppakirja → /yhtiooikeus:yritysjarjestelyt
-- Säännöksen tai ratkaisukäytännön tarkistus → /juristi:oikeustutkimus
+- Competition assessment of agreements and co-operation → /competition-law:restrictive-practices
+- Ground rules for integration planning → /competition-law:competition-compliance
+- The transaction as a whole and the sale and purchase agreement → /company-law:corporate-transactions
+- Checking a provision or the case law → /legal-core:legal-research

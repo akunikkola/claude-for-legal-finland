@@ -1,80 +1,87 @@
-# Verotuksen perusteet
+# Tax fundamentals
 
-**Vahvistettu lähteestä (Finlex, 2026-06):** alla mainitut säädösnumerot ja
-erikseen mainitut pykäläotsikot on tarkistettu Finlexistä. Verokannat,
-euromäärät, korot ja määräajat **muuttuvat vuosittain** — ne haetaan aina
-käyttöhetkellä lähteestä (Finlex, vero.fi) eikä tästä tiedostosta.
+**Verified from the source (Finlex, 2026-06):** the statute numbers listed below
+and the section headings specifically mentioned have been checked in Finlex. Tax
+rates, euro amounts, interest rates and time limits **change annually** — they are
+always fetched from the source at the time of use (Finlex, vero.fi), not from this
+file.
 
-## Keskeiset säädökset
+## Key statutes
 
-- **Laki verotusmenettelystä (1558/1995, "VML")** — tuloverotuksen
-  menettely: ilmoittaminen, verotuksen toimittaminen, veronkorotus,
-  muutoksenhaku. Avainpykälät (otsikot vahvistettu): 28 § veron
-  kiertäminen, 29 § peitelty osinko, 31 § siirtohinnoitteluoikaisu,
-  32 § veronkorotus, 64 § oikaisuvaatimuksen määräaika.
-- **Laki oma-aloitteisten verojen verotusmenettelystä (768/2016, "OVML")**
-  — mm. arvonlisäveron ja työnantajasuoritusten menettely.
-- **Tuloverolaki (1535/1992, "TVL")** — henkilöverotus, tulolajit
-  (ansio/pääoma), yleinen ja rajoitettu verovelvollisuus.
-- **Laki elinkeinotulon verottamisesta (360/1968, "EVL")** —
-  elinkeinotoiminnan tulos: tulojen veronalaisuus, menojen
-  vähennyskelpoisuus, jaksottaminen, yritysjärjestelyt (52–52 a §).
-- **Arvonlisäverolaki (1501/1993, "AVL")** — liiketoiminnan muodossa
-  tapahtuvan myynnin arvonlisäverotus.
-- **Ennakkoperintälaki (1118/1996)** — ennakonpidätys ja ennakonkanto.
-- **Varainsiirtoverolaki (931/1996)** — kiinteistöjen ja arvopaperien
-  luovutukset.
-- **Perintö- ja lahjaverolaki (378/1940)** — perinnöt ja lahjat,
-  sukupolvenvaihdoshuojennus.
-- **Laki konserniavustuksesta verotuksessa (825/1986)** — konserniavustus.
-- **Laki Verohallinnosta (503/2010)** — viranomaisorganisaatio.
+- **Act on Assessment Procedure (laki verotusmenettelystä 1558/1995, "VML")** —
+  the procedure in income taxation: reporting, carrying out the assessment, the
+  punitive tax increase, appeals. Key sections (headings confirmed): 28 tax
+  avoidance, 29 disguised dividend, 31 transfer pricing adjustment, 32 punitive
+  tax increase, 64 the time limit for a request for rectification.
+- **Act on the Assessment Procedure for Self-Assessed Taxes (laki
+  oma-aloitteisten verojen verotusmenettelystä 768/2016, "OVML")** — among other
+  things the procedure for value added tax and employer contributions.
+- **Income Tax Act (tuloverolaki 1535/1992, "TVL")** — personal taxation, the
+  categories of income (earned/capital), unlimited and limited tax liability.
+- **Business Income Tax Act (laki elinkeinotulon verottamisesta 360/1968,
+  "EVL")** — the result of business activity: taxability of income,
+  deductibility of expenditure, timing, reorganisations (sections 52–52 a).
+- **Value Added Tax Act (arvonlisäverolaki 1501/1993, "AVL")** — value added tax
+  on sales made in the form of business activity.
+- **Prepayment Act (ennakkoperintälaki 1118/1996)** — withholding and prepayment.
+- **Transfer Tax Act (varainsiirtoverolaki 931/1996)** — transfers of real
+  property and securities.
+- **Inheritance and Gift Tax Act (perintö- ja lahjaverolaki 378/1940)** —
+  inheritances and gifts, the business succession relief.
+- **Act on Group Contributions in Taxation (laki konserniavustuksesta
+  verotuksessa 825/1986)** — the group contribution.
+- **Act on the Finnish Tax Administration (laki Verohallinnosta 503/2010)** —
+  the authority's organisation.
 
-## Toimijat ja instituutiot
+## Actors and institutions
 
-- **Verohallinto** — verotuksen toimittaminen, ennakkoratkaisut, ohjaus
-  (vero.fi syventävät ohjeet = Verohallinnon kanta, ei laki).
-- **Verotuksen oikaisulautakunta** — oikaisuvaatimusten käsittely
-  (muutoksenhaun pakollinen ensiaste tuloverotuksessa).
-- **Keskusverolautakunta (KVL)** — ennakkoratkaisut periaatteellisesti
-  merkittävissä asioissa; valitus suoraan KHO:hon.
-- **Hallinto-oikeudet ja KHO** — verovalitukset; KHO:n
-  vuosikirjaratkaisut (KHO:2025:NN) ohjaavat tulkintaa voimakkaasti.
-- **Veronsaajien oikeudenvalvontayksikkö (VOVA)** — käyttää veronsaajien
-  puhevaltaa; voi hakea muutosta myös verovelvollisen eduksi tehtyyn
-  ratkaisuun.
+- **Verohallinto** — carrying out the assessment, advance rulings, guidance (the
+  in-depth guidance on vero.fi = Verohallinto's position, not law).
+- **The Assessment Adjustment Board (verotuksen oikaisulautakunta)** — handles
+  requests for rectification (the mandatory first instance of appeal in income
+  taxation).
+- **Central Tax Board (KVL)** — advance rulings in matters of general
+  significance; appeal lies directly to KHO.
+- **The administrative courts and KHO** — tax appeals; KHO's yearbook decisions
+  (KHO:2025:NN) steer the interpretation strongly.
+- **Tax Recipients' Legal Services Unit (VOVA)** — exercises the tax recipients'
+  right to be heard; may also appeal against a decision made in the taxpayer's
+  favour.
 
-## Verolajien pikakartta
+## Quick map of the taxes
 
-| Verolaji | Laki | Menettely | Tyypillinen ammattilaiskysymys |
+| Tax | Act | Procedure | Typical professional question |
 |---|---|---|---|
-| Tuloverotus (henkilö) | TVL | VML | tulolaji, luovutusvoitot, vähennykset |
-| Elinkeinoverotus | EVL | VML | vähennyskelpoisuus, jaksotus, järjestelyt |
-| Arvonlisävero | AVL | OVML | vähennysoikeus, kv-kauppa, kiinteistöt |
-| Ennakkoperintä | 1118/1996 | OVML | palkka vs. työkorvaus |
-| Varainsiirtovero | 931/1996 | oma | osake- ja kiinteistökaupat |
-| Perintö- ja lahjavero | 378/1940 | oma | sukupolvenvaihdos, arvostus |
+| Income taxation (individual) | TVL | VML | category of income, capital gains, deductions |
+| Business taxation | EVL | VML | deductibility, timing, reorganisations |
+| Value added tax | AVL | OVML | right of deduction, cross-border trade, real property |
+| Prepayment | 1118/1996 | OVML | wages vs. work compensation |
+| Transfer tax | 931/1996 | own | share and property transactions |
+| Inheritance and gift tax | 378/1940 | own | business succession, valuation |
 
-## Muutoksenhaun portaat (tuloverotus)
+## The tiers of appeal (income taxation)
 
-1. **Oikaisuvaatimus** verotuksen oikaisulautakunnalle (määräaika VML
-   64 §:stä — tarkista voimassa oleva aika lähteestä).
-2. **Valitus hallinto-oikeuteen** oikaisulautakunnan päätöksestä.
-3. **Valituslupa ja valitus KHO:hon.**
-4. Rinnakkaiset välineet: **täydentävä verotuspäätös**, Verohallinnon
-   **oma-aloitteinen oikaisu**, **ennakkoratkaisu** ennen toteutusta.
+1. **Request for rectification** to the Assessment Adjustment Board (the time
+   limit from VML section 64 — check the period in force from the source).
+2. **Appeal to the administrative court** against the Board's decision.
+3. **Leave to appeal and appeal to KHO.**
+4. Parallel instruments: a **supplementary assessment decision**, Verohallinto's
+   **own-initiative rectification**, and an **advance ruling** before
+   implementation.
 
-Veron täytäntöönpano ei lähtökohtaisesti lykkäänny muutoksenhaussa —
-**täytäntöönpanon kielto tai keskeytys** on haettava erikseen (tarkista
-edellytykset lähteestä).
+Enforcement of a tax is as a starting point not postponed by an appeal — a
+**prohibition or suspension of enforcement** must be applied for separately
+(check the conditions from the source).
 
-## Yleiset riskipisteet
+## General risk points
 
-- Luvut tai määräajat muistista — verovuoden arvo voi olla eri.
-- Verohallinnon ohjeen ja lain sekoittaminen — ohje voi muuttua tai
-  kumoutua KHO:ssa.
-- Järjestelyn liiketaloudellisten perusteiden ohuus → VML 28 §.
-- Osakaslainat, alihintaiset luovutukset ja muut osakkaan edut →
-  VML 29 § peitelty osinko.
-- Konsernin sisäiset hinnat ilman dokumentaatiota → VML 31 §.
-- Ilmoituspuutteet → veronkorotus (VML 32 §) — oma-aloitteinen
-  korjaaminen lieventää.
+- Figures or time limits from memory — the value for the tax year may be
+  different.
+- Confusing Verohallinto's guidance with the Act — the guidance may change or be
+  overturned by KHO.
+- Thin business reasons for an arrangement → VML section 28.
+- Shareholder loans, transfers at undervalue and other benefits to a shareholder
+  → VML section 29 disguised dividend.
+- Intra-group prices without documentation → VML section 31.
+- Reporting defects → punitive tax increase (VML section 32) — voluntary
+  correction is a mitigating factor.

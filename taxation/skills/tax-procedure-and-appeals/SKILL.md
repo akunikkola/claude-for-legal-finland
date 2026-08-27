@@ -1,28 +1,32 @@
 ---
 name: tax-procedure-and-appeals
 description: >
-  Verotusmenettely ja muutoksenhaku verotukseen Suomessa (laki
-  verotusmenettelystä 1558/1995). Käytä tätä skilliä, kun käyttäjä on saanut
-  verotuspäätöksen, jälkiverotus- tai veronkorotuspäätöksen tai
-  verotarkastuskertomuksen ja harkitsee muutoksenhakua, laatii
-  oikaisuvaatimusta verotuksen oikaisulautakunnalle tai valitusta
-  hallinto-oikeuteen tai KHO:hon, valmistelee ennakkoratkaisuhakemusta
-  (Verohallinto tai keskusverolautakunta), tai vastaa Verohallinnon
-  selvityspyyntöön tai kuulemiskirjeeseen. Triggeröi sanoista:
-  verotuspäätös, oikaisuvaatimus, verovalitus, jälkiverotus, veronkorotus,
-  verotarkastus, selvityspyyntö, ennakkoratkaisu, KVL, veronsaajien
-  oikeudenvalvontayksikkö, täytäntöönpanon keskeytys.
+  Tax procedure and appeals against taxation in Finland (the Act on
+  Assessment Procedure, laki verotusmenettelystä 1558/1995). Use this
+  skill when the user has received an assessment decision, a
+  reassessment or punitive tax increase decision or a tax audit report
+  and is considering an appeal, is drafting a request for rectification
+  to the Assessment Adjustment Board or an appeal to the administrative
+  court or to KHO, is preparing an advance ruling application
+  (Verohallinto or the Central Tax Board), or is responding to a request
+  for information or a hearing letter from Verohallinto. Triggers on:
+  assessment decision, request for rectification, tax appeal,
+  reassessment, punitive tax increase, tax audit, request for
+  information, advance ruling, KVL, Tax Recipients' Legal Services Unit,
+  suspension of enforcement, oikaisuvaatimus, verovalitus,
+  ennakkoratkaisu.
 ---
 
-# Verotusmenettely ja muutoksenhaku
+# Tax procedure and appeals
 
-Tämä skill jäsentää verotusmenettelyn vaiheet ja laatii muutoksenhaun
-asiakirjaluonnokset. Perusteet ja muutoksenhaun portaat:
-`references/tax-fundamentals.md` — lue se tehtävän alussa.
+This skill structures the stages of tax procedure and drafts the appeal
+documents. The fundamentals and the tiers of appeal:
+`references/tax-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei veroneuvontaa.
-> Määräajat ja euromäärät haetaan lähteestä; kalenterivastuu ja
-> ilmoitusvastuu ovat ihmisellä. Katso `taxation/AGENTS.md`.
+> **Disclaimer:** drafts are for review — not tax advice. Time limits
+> and euro amounts are fetched from the source; responsibility for the
+> calendar and for reporting rests with a human. See
+> `taxation/AGENTS.md`.
 
 ## Output language
 
@@ -34,92 +38,105 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Tarkista laki ja määräajat lähteestä
+## Check the Act and the time limits from the source
 
-Hae VML:n (1558/1995) sovellettavat säännökset ja **erityisesti
-määräajat** (oikaisuvaatimus VML 64 §, valitusajat, Verohallinnon
-muutosvaltuudet) **`legal-core:legal-research`-skillillä**. Verovuosi
-ratkaisee sovellettavan version — tarkista, minkä vuoden verotuksesta on
-kyse. KHO:n vuosikirjakäytäntö haetaan lähteestä tunnuksineen.
+Fetch the applicable provisions of VML (1558/1995) and **especially the
+time limits** (request for rectification VML section 64, appeal periods,
+Verohallinto's powers to amend) with the
+**`legal-core:legal-research` skill**. The tax year determines which
+version applies — check which year's assessment is at issue. KHO's
+yearbook case law is fetched from the source, with identifiers.
 
-## Vaihe 1: Tilannekuva
+## Step 1: Situation assessment
 
-Selvitä ennen toimenpiteitä:
+Establish before taking any action:
 
-- **Mikä päätös ja miltä verovuodelta?** Säännönmukainen verotus,
-  verotuksen oikaisu verovelvollisen vahingoksi, veronkorotus,
-  ennakkoratkaisu — kullakin oma muutoksenhakupolku.
-- **Missä vaiheessa prosessi on?** Selvityspyyntö/kuuleminen (vielä
-  vaikutettavissa ennen päätöstä!), päätös annettu, valitusaika
-  kulumassa `[mallin laskelma — tarkista]`.
-- **Intressi ja näyttö** — riidanalainen euromäärä, käytettävissä oleva
-  dokumentaatio, Verohallinnon perustelujen heikot kohdat.
-- **Täytäntöönpano** — erääntyykö vero muutoksenhausta huolimatta;
-  tarvitaanko täytäntöönpanon kielto/keskeytys (edellytykset lähteestä).
+- **Which decision, and for which tax year?** Regular assessment,
+  reassessment to the taxpayer's detriment, punitive tax increase, an
+  advance ruling — each has its own appeal route.
+- **What stage is the process at?** A request for information or hearing
+  (still open to influence before the decision!), the decision issued,
+  the appeal period running `[model calculation — check]`.
+- **The interest at stake and the evidence** — the euro amount in
+  dispute, the documentation available, and the weak points in
+  Verohallinto's reasoning.
+- **Enforcement** — does the tax fall due despite the appeal; is a
+  prohibition or suspension of enforcement needed (the conditions from
+  the source).
 
-## Vaihe 2: Vastaus selvityspyyntöön tai kuulemiseen
+## Step 2: Responding to a request for information or a hearing
 
-Tehokkain vaikuttamisen paikka on **ennen päätöstä**:
+The most effective point of influence is **before the decision**:
 
-- Vastaa täsmällisesti kysyttyyn; älä avaa uusia rintamia.
-- Dokumentoi tosiseikat liitteillä; erottele tosiseikat ja oikeudellinen
-  arvio.
-- Liiketaloudelliset perusteet näkyviin, jos järjestelyä epäillään
-  veron kiertämiseksi (VML 28 §) tai peitellyksi osingoksi (VML 29 §).
-- Veronkorotusriski (VML 32 §): oma-aloitteinen virheen korjaaminen ja
-  myötävaikutus lieventävät — nosta tämä esiin.
+- Answer precisely what was asked; do not open new fronts.
+- Document the facts with annexes; keep the facts and the legal
+  assessment apart.
+- Make the business reasons visible if the arrangement is suspected of
+  being tax avoidance (VML section 28) or a disguised dividend (VML
+  section 29).
+- The risk of a punitive tax increase (VML section 32): voluntary
+  correction of the error and co-operation are mitigating factors —
+  raise this.
 
-## Vaihe 3: Oikaisuvaatimus
+## Step 3: Request for rectification
 
-Laadi rakenteella:
+Draft it with this structure:
 
-1. **Päätös, johon haetaan muutosta** (verovuosi, päätöspäivä, tunnus).
-2. **Vaatimukset** — täsmällisesti euroina ja veroperusteina.
-3. **Perusteet** — tosiseikat, näyttö, oikeudellinen arviointi
-   (säännökset + KHO-käytäntö lähteestä, kolmiportainen varmuusmerkintä).
-4. **Liitteet** ja valtuutus.
+1. **The decision being challenged** (tax year, date of decision,
+   reference).
+2. **The claims** — precisely, in euros and by reference to the basis of
+   assessment.
+3. **The grounds** — facts, evidence, legal assessment (provisions +
+   KHO case law from the source, with three-tier certainty marking).
+4. **Annexes** and the authorisation.
 
-Muista: oikaisulautakunta on pakollinen ensiaste tuloverotuksessa —
-suoraan hallinto-oikeuteen ei pääsääntöisesti voi valittaa. VOVA voi
-hakea muutosta myös verovelvollisen eduksi tehtyyn päätökseen —
-varaudu vastapuoleen.
+Remember: the Assessment Adjustment Board is a mandatory first instance
+in income taxation — as a rule you cannot appeal directly to the
+administrative court. VOVA may also appeal against a decision made in
+the taxpayer's favour — be prepared for an opposing party.
 
-## Vaihe 4: Valitus hallinto-oikeuteen ja KHO:hon
+## Step 4: Appeal to the administrative court and to KHO
 
-- Hallintoprosessin yleiset opit: `administrative-law:administrative-appeal`
-  (808/2019). Tämä skill tuo verospesifit osat: vaatimusten
-  veroperusteinen yksilöinti, näyttötaakan jako, KHO:n
-  valituslupaperusteet verotuksessa.
-- KVL:n ennakkoratkaisusta valitetaan suoraan KHO:hon.
+- The general doctrine of administrative procedure:
+  `administrative-law:administrative-appeal` (808/2019). This skill adds
+  the tax-specific parts: specifying the claims by reference to the
+  basis of assessment, the allocation of the burden of proof, and the
+  grounds for leave to appeal to KHO in tax matters.
+- An advance ruling by KVL is appealed directly to KHO.
 
-## Ennakkoratkaisu — epävarmuuden hallinta etukäteen
+## Advance ruling — managing uncertainty in advance
 
-Kun verokohtelu on tulkinnanvarainen ja toteutus edessä:
+Where the tax treatment is open to interpretation and implementation
+lies ahead:
 
-- **Verohallinnon ennakkoratkaisu** — yksittäisen verovelvollisen asia.
-- **KVL:n ennakkoratkaisu** — periaatteellisesti merkittävät kysymykset.
-- Hakemuksen ydin: **täsmällinen kysymys, täydellinen tosiseikasto ja
-  suunniteltu toteutus** — ennakkoratkaisu sitoo vain kuvatuissa
-  olosuhteissa. Laadi hakemus niin, ettei olennaista jää kertomatta;
-  puutteellinen tosiseikasto vie sitovuuden.
+- **An advance ruling from Verohallinto** — a matter for an individual
+  taxpayer.
+- **An advance ruling from KVL** — questions of general significance.
+- The core of the application: **a precise question, a complete
+  statement of facts and the planned implementation** — an advance
+  ruling binds only in the circumstances described. Draft the
+  application so that nothing material is left out; an incomplete
+  statement of facts destroys its binding effect.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei laske veron määrää sitovasti** eikä täytä veroilmoituksia —
-  laskelmat ovat `[mallin laskelma — tarkista]`.
-- **Ei vahvista määräaikoja, korkoja tai euromääriä muistista** —
-  lähteestä tai `[tarkista verovuoden arvo — vero.fi]`.
-- **Ei takaa lopputulosta** — vain sitova ennakkoratkaisu sitoo
-  Verohallintoa.
-- **Ei avusta tulojen salaamisessa tai ilmoitusvelvollisuuden
-  kiertämisessä** — ks. AGENTS.md negatiivirajaus.
-- **Ei jätä hakemuksia tai valituksia** — ihminen allekirjoittaa ja
-  vastaa määräajoista.
+- **Does not calculate the amount of tax with binding effect** and does
+  not complete tax returns — calculations are
+  `[model calculation — check]`.
+- **Does not confirm time limits, interest rates or euro amounts from
+  memory** — from the source or `[check the value for the tax year —
+  vero.fi]`.
+- **Does not guarantee an outcome** — only a binding advance ruling
+  binds Verohallinto.
+- **Does not assist with concealing income or evading the duty to
+  report** — see the negative scope in AGENTS.md.
+- **Does not file applications or appeals** — a human signs and is
+  responsible for the time limits.
 
-## Jatka tästä
+## Continue from here
 
-- Säännöksen tai KHO-ratkaisun tarkistus lähteestä → /juristi:oikeustutkimus
-- Aineellinen yritysverokysymys riidan taustalla → /verotus:yritysverotus
-- ALV-kysymys riidan taustalla → /verotus:arvonlisaverotus
-- Hallintoprosessin yleiset vaatimukset → /hallinto-oikeus:muutoksenhaku
-- Oikaisuvaatimuksen kieliasu ja rakenne → /juristi:asiakirjan-tarkistus
+- Checking a provision or a KHO decision from the source → /legal-core:legal-research
+- The substantive corporate tax question behind the dispute → /taxation:corporate-taxation
+- The VAT question behind the dispute → /taxation:value-added-tax
+- General requirements of administrative procedure → /administrative-law:administrative-appeal
+- The language and structure of the request for rectification → /legal-core:document-review

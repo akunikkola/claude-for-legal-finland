@@ -2,7 +2,7 @@
   "name": "taxation",
   "displayName": "Verotus",
   "version": "0.1.0",
-  "description": "Suomen verotus ammattilaisille: verotusmenettely ja muutoksenhaku (VML 1558/1995), yritysverotus (EVL 360/1968) yritysjärjestelyineen sekä arvonlisäverotus (AVL 1501/1993). Verokannat ja euromäärät aina lähteestä — ei muistista.",
+  "description": "Finnish taxation for professionals: tax procedure and appeals (VML 1558/1995), corporate taxation (EVL 360/1968) including reorganisations, and value added tax (AVL 1501/1993). Tax rates and euro amounts always from the source — never from memory.",
   "author": {
     "name": "Aku Nikkola"
   }

@@ -1,116 +1,123 @@
 ---
 name: restrictive-practices
 description: >
-  Kiellettyjen kilpailunrajoitusten ja määräävän markkina-aseman
-  väärinkäytön arviointi Suomen ja EU:n kilpailuoikeuden mukaan
-  (kilpailulaki 948/2011, SEUT 101 ja 102 artikla). Käytä tätä skilliä,
-  kun käyttäjä arvioi sopimuksen, yhteistyön tai menettelytavan
-  kilpailuoikeudellista sallittavuutta: jakelusopimus, hinnoitteluehto,
-  kilpailijayhteistyö, tietojenvaihto, toimialajärjestön toiminta,
-  yksinoikeudet, alennusjärjestelmät tai määräävän aseman kysymykset –
-  tai kun epäillään kartellia tai harkitaan leniencyä tai
-  vahingonkorvauskannetta. Triggeröi sanoista: kartelli,
-  kilpailunrajoitus, määrähinnoittelu, RPM, tietojenvaihto, määräävä
-  markkina-asema, ryhmäpoikkeus, leniency, seuraamusmaksu, KKV,
-  kilpailuoikeudellinen vahingonkorvaus.
+  Assessment of prohibited restrictive practices and abuse of a dominant
+  market position under Finnish and EU competition law
+  (kilpailulaki 948/2011; SEUT Article 101 and Article 102). Use this
+  skill when the user is assessing whether an agreement, a co-operation
+  or a practice is permissible under competition law: a distribution
+  agreement, a pricing term, co-operation with a competitor, information
+  exchange, trade-association activity, exclusivity, rebate schemes or
+  questions of dominance — or when a cartel is suspected, or leniency or
+  a damages claim is being considered. Triggers on: cartel, restrictive
+  practices, restriction of competition, resale price maintenance, RPM,
+  information exchange, dominant market position, block exemption,
+  leniency, penalty payment, KKV, competition-law damages,
+  kilpailunrajoitus, määräävä markkina-asema, seuraamusmaksu.
 ---
 
-# Kilpailunrajoitukset — kiellot, itsearviointi ja seuraamukset
+# Restrictions of competition — prohibitions, self-assessment and sanctions
 
-Tämä skill jäsentää kilpailunrajoitusten arvioinnin kilpailulain
-(948/2011) 2 luvun ja SEUT 101–102 artiklan mukaan. Perusteet,
-rikkomustyypit ja seuraamuskartta:
-`references/competition-law-fundamentals.md` — lue se tehtävän alussa.
+This skill structures the assessment of restrictions of competition under
+Chapter 2 of the Competition Act (kilpailulaki 948/2011) and SEUT
+Articles 101–102. The fundamentals, the infringement types and the map of
+sanctions: `references/competition-law-fundamentals.md` — read it at the
+start of the task.
 
-> **Vastuuvapaus:** arviot ovat tarkistettavia — ei oikeudellista
-> neuvontaa. Katso `competition-law/AGENTS.md` — erityisesti ehdoton
-> negatiivirajaus: kartelliavustusta ei anneta, laillinen polku on
-> lopettaminen ja leniency.
+> **Disclaimer:** assessments are for review — not legal advice. See
+> `competition-law/AGENTS.md` — in particular the absolute negative
+> scope: no cartel assistance is given; the lawful path is to stop and
+> consider leniency.
 
-## Tarkista laki ja ryhmäpoikkeukset lähteestä
+## Check the Act and the block exemptions from the source
 
-Hae kilpailulain säännökset **`legal-core:legal-research`-skillillä** ja
-**voimassa olevat ryhmäpoikkeusasetukset raja-arvoineen EUR-Lexistä**
-— ne uudistuvat määräajoin. Ratkaisukäytäntö (MAO, KHO,
-EU-tuomioistuin, komissio) lähteestä tunnuksineen.
+Fetch the provisions of the Competition Act with the
+**`legal-core:legal-research` skill** and the **block exemption
+regulations in force, with their thresholds, from EUR-Lex** — they are
+renewed periodically. Case law (MAO, KHO, the Court of Justice of the
+European Union, the Commission) from the source, with identifiers.
 
-## Vaihe 1: Jäsennä järjestely
+## Step 1: Structure the arrangement
 
-1. **Suhde**: kilpailijoiden välinen (horisontaalinen), eri
-   portaiden välinen (vertikaalinen) vai yksipuolinen menettely?
-2. **Kauppavaikutus**: rajoittuuko Suomeen vai onko EU-kauppavaikutus
-   (→ SEUT rinnalle)?
-3. **Markkinat alustavasti**: tuote- ja maantieteelliset markkinat,
-   osapuolten asema — tarkka markkinamäärittely vasta jos tarpeen.
+1. **Relationship**: between competitors (horizontal), between different
+   levels of trade (vertical), or unilateral conduct?
+2. **Effect on trade**: is it confined to Finland, or is there an effect
+   on trade within the EU (→ SEUT applies alongside)?
+3. **Markets, provisionally**: product and geographic markets, the
+   parties' positions — a precise market definition only if needed.
 
-## Vaihe 2: Horisontaaliset järjestelyt
+## Step 2: Horizontal arrangements
 
-- **Paljaat rajoitukset** (hinnat, jako, tarjouskartelli,
-  tuotannonrajoitus) ovat kiellettyjä tarkoituksensa perusteella —
-  ei tehokkuuspuolustusta käytännössä. Jos tällainen paljastuu:
-  ohjaa lopettamiseen ja leniency-harkintaan, älä jatkamiseen.
-- **Tietojenvaihto**: arvioi tiedon luonne (hinnat ja aikeet vs.
-  historiallinen aggregoitu tilasto), tuoreus, yksilöitävyys ja
-  vaihtotapa (suora, järjestö, hub-and-spoke) — rajat suuntaviivoista
-  lähteestä.
-- **Sallittu yhteistyö**: T&K, erikoistuminen, yhteishankinnat,
-  standardointi — ryhmäpoikkeusten ja suuntaviivojen edellytyksin
-  (markkinaosuusrajat lähteestä). Yhteistarjoukset →
+- **Naked restrictions** (prices, market sharing, bid rigging, output
+  restriction) are prohibited by object — in practice there is no
+  efficiency defence. If one comes to light: steer towards stopping it
+  and considering leniency, not towards continuing.
+- **Information exchange**: assess the nature of the information (prices
+  and intentions vs. historical aggregated statistics), how recent it
+  is, whether it is individualised, and the channel (direct, through an
+  association, hub-and-spoke) — the limits from the guidelines, from the
+  source.
+- **Permitted co-operation**: R&D, specialisation, joint purchasing,
+  standardisation — on the conditions in the block exemptions and the
+  guidelines (market-share thresholds from the source). Joint tenders →
   `public-procurement:tender-documents-and-bids`.
 
-## Vaihe 3: Vertikaaliset järjestelyt
+## Step 3: Vertical arrangements
 
-- **Kovat rajoitukset**: jälleenmyyntihinnan määrääminen (RPM),
-  absoluuttinen aluesuoja, verkkomyynnin tosiasiallinen esto —
-  vievät ryhmäpoikkeuksen ja ovat lähtökohtaisesti kiellettyjä.
-  Enimmäis- ja suositushinnat eri asia — rajat lähteestä.
-- **Ryhmäpoikkeuksen itsearviointi**: markkinaosuusrajat ja
-  poissuljetut ehdot voimassa olevasta vertikaaliasetuksesta
-  `[tarkista]`; dokumentoi arvio.
-- Tyypilliset lausekkeet: yksinmyynti, valikoiva jakelu,
-  kilpailukielto (kesto!), pariteettilausekkeet — käy lauseke
-  kerrallaan (kytkös `contracts:contract-review`-metodiin).
+- **Hardcore restrictions**: resale price maintenance (RPM), absolute
+  territorial protection, effectively blocking online sales — these
+  remove the block exemption and are prohibited as a starting point.
+  Maximum and recommended prices are a different matter — the limits
+  from the source.
+- **Self-assessment under the block exemption**: market-share thresholds
+  and excluded terms from the vertical block exemption regulation in
+  force `[check]`; document the assessment.
+- Typical clauses: exclusive distribution, selective distribution,
+  non-compete (duration!), parity clauses — go through them one clause
+  at a time (linked to the `contracts:contract-review` method).
 
-## Vaihe 4: Määräävä markkina-asema
+## Step 4: Dominant market position
 
-1. **Onko asema määräävä?** Markkinamäärittely + osuudet + muut
-   tekijät; Suomessa huomioi myös kilpailulain erityissäännökset
-   (mm. päivittäistavarakauppa — tarkista lähteestä).
-2. **Onko menettely väärinkäyttöä?** Saalistushinnoittelu,
-   uskollisuusalennukset, sitominen, toimituskielto,
-   marginaalipuristus — arviointikehikot oikeuskäytännöstä lähteestä.
-3. Määräävässä asemassa olevan **erityinen vastuu**: myös tavallinen
-   kaupallinen ehto voi olla kielletty — riskimerkintä matalammalle.
+1. **Is the position dominant?** Market definition + shares + other
+   factors; in Finland also take account of the special provisions of
+   the Competition Act (among others the grocery trade — check from the
+   source).
+2. **Is the conduct abusive?** Predatory pricing, loyalty rebates,
+   tying, refusal to supply, margin squeeze — the assessment frameworks
+   from case law, from the source.
+3. The **special responsibility** of a dominant undertaking: even an
+   ordinary commercial term may be prohibited — set the risk marking
+   lower.
 
-## Vaihe 5: Seuraamukset ja yksityisoikeudellinen täytäntöönpano
+## Step 5: Sanctions and private enforcement
 
-- Seuraamuskartta referenssissä: seuraamusmaksu, pätemättömyys,
-  korjaustoimenpiteet, liitännäisseuraukset.
-- **Leniency**: vapautuminen/alentaminen (laissa vahvistettu) —
-  ensimmäisen paljastajan etu, nopeus ratkaisee; menettely KKV:n
-  ohjeista `[tarkista]`.
-- **Vahingonkorvaus (1077/2016)**: kantajan ja vastaajan asetelmat —
-  rikkomuspäätöksen sitovuus, ylihinnan arviointi ja siirtäminen,
-  vanhentumisajat lähteestä. Kanne yleisessä tuomioistuimessa →
-  `dispute-resolution:statement-of-claim`.
+- The map of sanctions is in the reference: penalty payment, invalidity,
+  remedies, ancillary consequences.
+- **Leniency**: immunity or reduction (as provided in the Act) — the
+  advantage goes to the first to come forward, speed decides; the
+  procedure from KKV's guidance `[check]`.
+- **Damages (1077/2016)**: the positions of claimant and defendant — the
+  binding effect of an infringement decision, assessing and passing on
+  the overcharge, limitation periods from the source. A claim goes to
+  the general courts → `dispute-resolution:statement-of-claim`.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei avusta kartellissa tai sen peittelyssä** — ehdoton
-  kieltäytyminen; laillinen polku kerrotaan (AGENTS.md).
-- **Ei vahvista markkinaosuusrajoja, seuraamusprosentteja tai
-  vanhentumisaikoja muistista** — lähteestä tai `[tarkista]`.
-- **Ei tee ekonometristä markkina- tai vahinkoanalyysiä** — se
-  jäsentää oikeudellisen kehikon; kvantifiointi ekonomisteille.
-- **Ei anna "clearancea"** — itsearvio ei sido viranomaista; aidosti
-  epävarmoissa keskustelu KKV:n kanssa.
-- **Ei korvaa yrityskauppa-arviota** — se on oma menettelynsä →
-  `merger-control`.
+- **Does not assist with a cartel or with concealing one** — an absolute
+  refusal; the lawful path is set out (AGENTS.md).
+- **Does not confirm market-share thresholds, sanction percentages or
+  limitation periods from memory** — from the source or `[check]`.
+- **Does not carry out econometric market or damages analysis** — it
+  structures the legal framework; quantification is for economists.
+- **Does not give a "clearance"** — a self-assessment does not bind the
+  authority; where genuinely uncertain, discuss it with KKV.
+- **Does not replace a merger assessment** — that is a procedure of its
+  own → `merger-control`.
 
-## Jatka tästä
+## Continue from here
 
-- Yrityskaupan ilmoitusvelvollisuus → /kilpailuoikeus:yrityskauppavalvonta
-- Compliance-ohjelma ja tarkastusvalmius → /kilpailuoikeus:kilpailu-compliance
-- Jakelusopimuksen lausekkeiden muotoilu → /sopimukset:sopimuksen-laatiminen
-- Säännöksen tai ratkaisukäytännön tarkistus → /juristi:oikeustutkimus
-- Vahingonkorvauskanne tuomioistuimessa → /riidanratkaisu:haastehakemus
+- Duty to notify a merger → /competition-law:merger-control
+- Compliance programme and inspection readiness → /competition-law:competition-compliance
+- Drafting the clauses of a distribution agreement → /contracts:contract-drafting
+- Checking a provision or the case law → /legal-core:legal-research
+- A damages claim before a court → /dispute-resolution:statement-of-claim

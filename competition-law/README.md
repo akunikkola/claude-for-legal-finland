@@ -1,47 +1,49 @@
-# Kilpailuoikeus
+# Competition law
 
-Suomen ja EU:n kilpailuoikeus yritysten ja niiden neuvonantajien työhön:
-kielletyt kilpailunrajoitukset ja määräävän aseman väärinkäyttö,
-yrityskauppavalvonta sekä compliance ja tarkastuksiin varautuminen.
+Finnish and EU competition law for undertakings and their advisers: prohibited
+restrictions of competition and abuse of a dominant position, merger control, and
+compliance and preparing for inspections.
 
-> **Arviot ja luonnokset ovat tarkistettavia – ei oikeudellista neuvontaa.**
-> Kartelliavustusta ei anneta missään muodossa; laillinen polku epäilyttävässä
-> tilanteessa on menettelyn lopettaminen ja leniency-harkinta. Raja-arvot ja
-> prosentit haetaan aina lähteestä. Katso [`AGENTS.md`](AGENTS.md).
+> **Assessments and drafts are for review – not legal advice.**
+> No cartel assistance is given in any form; the lawful path in a suspicious
+> situation is to stop the conduct and consider leniency. Thresholds and
+> percentages are always fetched from the source. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **kilpailunrajoitukset** | Kilpailulain (948/2011) 2 luvun kiellot ja SEUT 101–102: horisontaaliset ja vertikaaliset rajoitukset, ryhmäpoikkeusten itsearviointi, määräävän aseman väärinkäyttö, seuraamukset ja leniency sekä kilpailuoikeudelliset vahingonkorvaukset (1077/2016). Sisältää kilpailuoikeuden perusteiden referenssin. |
-| **yrityskauppavalvonta** | Kilpailulain 4 luku: ilmoitusvelvollisuuden arviointi (liikevaihtorajat lähteestä), ilmoituksen valmistelu, käsittelyvaiheet ja sitoumukset, täytäntöönpanokielto (gun jumping) sekä EU-tason (sulautuma-asetus) ja KKV:n toimivallanjako. |
-| **kilpailu-compliance** | Compliance-ohjelman rakentaminen, kilpailijakontaktien ja tietojenvaihdon pelisäännöt (ml. toimialajärjestöt ja tarjousyhteistyö), KKV:n/komission tarkastukseen (dawn raid) varautuminen ja toimintaohje sekä kilpailuneutraliteetti (4 a luku, otsikko vahvistettu). |
+| **restrictive-practices** | The prohibitions in Chapter 2 of the Competition Act (kilpailulaki 948/2011) and SEUT Articles 101–102: horizontal and vertical restrictions, self-assessment under the block exemptions, abuse of a dominant position, sanctions and leniency, and competition-law damages (1077/2016). Includes the competition-law fundamentals reference. |
+| **merger-control** | Chapter 4 of the Competition Act: assessing the duty to notify (turnover thresholds from the source), preparing the notification, the procedural phases and commitments, the prohibition on implementation (gun jumping), and the division of competence between the EU level (the Merger Regulation) and KKV. |
+| **competition-compliance** | Building a compliance programme, ground rules for competitor contacts and information exchange (including trade associations and bidding co-operation), preparing for and handling a KKV or Commission inspection (a dawn raid), and competitive neutrality (Chapter 4 a, heading confirmed). |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (Finlex) varmistettu: **kilpailulaki (948/2011)** lukurakenteineen –
-2 luku kielletyt kilpailunrajoitukset, 4 luku yrityskauppavalvonta, 4 a luku
-kilpailun tasapuolisuuden turvaaminen julkisen ja yksityisen elinkeinotoiminnan
-välillä, 5 luku menettely; laissa säädetty seuraamusmaksusta vapautuminen ja
-alentaminen (leniency) – sekä **laki kilpailuoikeudellisista vahingonkorvauksista
-(1077/2016)**. EU-taso: SEUT 101–102 artikla, sulautuma-asetus ja
-ryhmäpoikkeusasetukset (EUR-Lex; voimassa olevat versiot tarkistetaan käytössä).
+Verified from the source (Finlex): the **Competition Act (kilpailulaki 948/2011)**
+and its chapter structure – Chapter 2 prohibited restrictions of competition,
+Chapter 4 merger control, Chapter 4 a safeguarding a level playing field between
+public and private business activity, Chapter 5 procedure; immunity from and
+reduction of the penalty payment (leniency) as provided in the Act – and the **Act
+on Competition Law Damages (laki kilpailuoikeudellisista vahingonkorvauksista
+1077/2016)**. EU level: SEUT Articles 101–102, the Merger Regulation and the block
+exemption regulations (EUR-Lex; the versions in force are checked in use).
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (MAO:n, KHO:n ja EU-tuomioistuimen
-  käytäntö) ja `engagement-intake`.
-- **`company-law`-plugari** – yrityskauppavalvonta osana yritysjärjestelyä.
-- **`public-procurement`-plugari** – tarjouskartellit ja tarjousyhteistyön rajat.
-- **`contracts`-plugari** – jakelu-, lisenssi- ja yhteistyösopimusten
-  lausekkeet.
-- **`criminal-procedure`-plugari** – tarjouskartellien mahdollinen rikosulottuvuus.
+- **`legal-core` domain** – `legal-research` (case law of MAO, KHO and the Court of
+  Justice of the European Union) and `engagement-intake`.
+- **`company-law` domain** – merger control as part of a corporate transaction.
+- **`public-procurement` domain** – bid rigging and the limits of bidding
+  co-operation.
+- **`contracts` domain** – clauses in distribution, licence and co-operation
+  agreements.
+- **`criminal-procedure` domain** – the possible criminal dimension of bid rigging.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install kilpailuoikeus@agent-skills-for-finnish-law
+/plugin install competition-law@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.

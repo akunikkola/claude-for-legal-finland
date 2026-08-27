@@ -1,79 +1,78 @@
-# Kilpailuoikeuden perusteet
+# Competition law fundamentals
 
-**Vahvistettu lähteestä (Finlex, 2026-06):** kilpailulain (948/2011)
-lukurakenne ja se, että laissa säädetään seuraamusmaksusta
-vapautumisesta ja sen alentamisesta (leniency), on tarkistettu
-Finlexistä; samoin laki kilpailuoikeudellisista vahingonkorvauksista
-(1077/2016). Raja-arvot, prosentit ja ryhmäpoikkeusten yksityiskohdat
-tarkistetaan aina käyttöhetkellä lähteestä (Finlex, KKV, EUR-Lex).
+**Verified from the source (Finlex, 2026-06):** the chapter structure of the
+Competition Act (kilpailulaki 948/2011), and the fact that the Act provides
+for immunity from and reduction of the penalty payment (leniency), have been
+checked in Finlex; likewise the Act on Competition Law Damages
+(laki kilpailuoikeudellisista vahingonkorvauksista 1077/2016). Thresholds,
+percentages and the details of the block exemptions are always checked from the
+source at the time of use (Finlex, KKV, EUR-Lex).
 
-## Säädöspohja
+## Statutory basis
 
-- **Kilpailulaki (948/2011)** — lukurakenne (vahvistettu):
-  - 2 luku: **Kielletyt kilpailunrajoitukset**
-  - 3 luku: Kiellettyjä kilpailunrajoituksia koskevat toimenpiteet
-    (ml. seuraamusmaksu ja siitä vapautuminen/alentaminen)
-  - 4 luku: **Yrityskauppavalvonta**
-  - 4 a luku: **Kilpailun tasapuolisuuden turvaaminen julkisen ja
-    yksityisen elinkeinotoiminnan välillä** (ns. kilpailuneutraliteetti)
-  - 5 luku: Menettely (ml. tarkastukset)
-- **SEUT 101 artikla** — kilpailua rajoittavien sopimusten ja
-  menettelytapojen kielto; **SEUT 102 artikla** — määräävän
-  markkina-aseman väärinkäytön kielto. Soveltuvat rinnakkain
-  kansallisen lain kanssa, kun kauppavaikutus täyttyy.
-- **EU:n sulautuma-asetus** — EU-laajuiset yrityskaupat komissiolle.
-- **Ryhmäpoikkeusasetukset ja suuntaviivat** (vertikaaliset sopimukset,
-  horisontaalinen yhteistyö, T&K, erikoistuminen, de minimis) —
-  voimassa olevat versiot ja raja-arvot EUR-Lexistä.
-- **Laki kilpailuoikeudellisista vahingonkorvauksista (1077/2016)** —
-  yksityisoikeudellinen täytäntöönpano.
+- **Competition Act (kilpailulaki 948/2011)** — chapter structure (confirmed):
+  - Chapter 2: **Prohibited restrictions of competition**
+  - Chapter 3: Measures concerning prohibited restrictions of competition
+    (including the penalty payment and immunity from or reduction of it)
+  - Chapter 4: **Merger control**
+  - Chapter 4 a: **Safeguarding a level playing field between public and
+    private business activity** (competitive neutrality)
+  - Chapter 5: Procedure (including inspections)
+- **SEUT Article 101** — the prohibition on agreements and practices that
+  restrict competition; **SEUT Article 102** — the prohibition on abuse of a
+  dominant market position. They apply alongside national law where the effect
+  on trade is met.
+- **The EU Merger Regulation** — EU-wide concentrations go to the Commission.
+- **Block exemption regulations and guidelines** (vertical agreements,
+  horizontal co-operation, R&D, specialisation, de minimis) — the versions in
+  force and their thresholds from EUR-Lex.
+- **Act on Competition Law Damages (laki kilpailuoikeudellisista
+  vahingonkorvauksista 1077/2016)** — private enforcement.
 
-## Toimijat
+## The actors
 
-- **Kilpailu- ja kuluttajavirasto (KKV)** — tutkinta, tarkastukset,
-  yrityskauppavalvonta, esitykset seuraamusmaksusta; suuntaviivat.
-- **Markkinaoikeus (MAO)** — seuraamusmaksun määrääminen KKV:n
-  esityksestä, yrityskauppakieltojen käsittely; jatkovalitus KHO:hon.
-- **Euroopan komissio (DG COMP)** — EU-tason asiat; toimivallanjako
-  ja asioiden siirrot KKV:n kanssa.
-- **Yleiset tuomioistuimet** — kilpailuoikeudelliset
-  vahingonkorvauskanteet (1077/2016).
+- **Finnish Competition and Consumer Authority (KKV)** — investigations,
+  inspections, merger control, proposals for a penalty payment; guidelines.
+- **Market Court (MAO)** — imposes the penalty payment on KKV's proposal and
+  handles the prohibition of concentrations; further appeal to KHO.
+- **European Commission (DG COMP)** — EU-level matters; the division of
+  competence and case referrals with KKV.
+- **The general courts** — competition-law damages claims (1077/2016).
 
-## Rikkomustyypit pikakartalla
+## Quick map of infringement types
 
-| Tyyppi | Esimerkkejä | Vakavuus |
+| Type | Examples | Seriousness |
 |---|---|---|
-| **Kartelli** (horisontaalinen paljas rajoitus) | hinnoista sopiminen, markkinoiden/asiakkaiden jako, tarjouskartelli, tuotannon rajoittaminen | vakavin; tarkoitukseen perustuva kielto — vaikutuksia ei tarvitse näyttää |
-| **Kielletty tietojenvaihto** | tulevat hinnat, kapasiteetti, strategiat kilpailijoiden kesken (myös toimialajärjestössä tai hub-and-spoke) | usein kartellin esiaste |
-| **Vertikaaliset rajoitukset** | määrähinnoittelu (RPM), absoluuttinen aluesuoja, verkkomyynnin estot | RPM käytännössä aina kielletty; muut ryhmäpoikkeuksen itsearvioinnilla |
-| **Määräävän aseman väärinkäyttö** | saalistushinnoittelu, yksinostovelvoitteet, sitominen, toimituksista kieltäytyminen, marginaalipuristus | edellyttää määräävää asemaa relevanteilla markkinoilla |
-| **Kilpailuneutraliteetin loukkaus** (4 a luku) | julkisyhteisön elinkeinotoiminnan alihinnoittelu tai kirjanpidon eriyttämättömyys | KKV:n neuvottelu- ja kieltotoimivalta |
+| **Cartel** (horizontal naked restriction) | price fixing, sharing out markets or customers, bid rigging, output restriction | the most serious; prohibited by object — effects need not be shown |
+| **Prohibited information exchange** | future prices, capacity, strategies between competitors (including within a trade association or hub-and-spoke) | often the precursor to a cartel |
+| **Vertical restrictions** | resale price maintenance (RPM), absolute territorial protection, blocking online sales | RPM is in practice always prohibited; the others by self-assessment under the block exemption |
+| **Abuse of a dominant position** | predatory pricing, exclusive purchasing obligations, tying, refusal to supply, margin squeeze | requires a dominant position on the relevant market |
+| **Breach of competitive neutrality** (Chapter 4 a) | underpricing of a public body's business activity, or failure to separate accounts | KKV has powers to negotiate and to prohibit |
 
-## Seuraamuskartta
+## Map of sanctions
 
-1. **Seuraamusmaksu** — MAO määrää KKV:n esityksestä; enimmäismäärä
-   sidottu liikevaihtoon `[prosentti — tarkista lähteestä]`; myös
-   menettelyrikkomuksista ja toimialayhdistyksille.
-2. **Leniency** — seuraamusmaksusta vapautuminen (ensimmäinen
-   paljastaja) tai alentaminen (laissa, vahvistettu) — edellytykset ja
-   menettely KKV:n ohjeista.
-3. **Pätemättömyys** — kielletty ehto on mitätön; voi kaataa
-   sopimuskokonaisuuden.
-4. **Vahingonkorvaus (1077/2016)** — täysi korvaus ylihinnasta ja
-   muusta vahingosta; rikkomuspäätöksen sitovuus, ylihinnan
-   siirtäminen (passing-on) ja vanhentuminen lähteestä.
-5. **Rakenteelliset ja toimintaa koskevat korjaustoimenpiteet**;
-   väliaikaismääräykset.
-6. **Liiketoimintakielto** ja hankintamenettelyistä sulkeminen
-   (→ `public-procurement`) liitännäisseurauksina — edellytykset
-   lähteestä.
+1. **Penalty payment** — MAO imposes it on KKV's proposal; the maximum is tied
+   to turnover `[percentage — check from the source]`; also for procedural
+   infringements and for trade associations.
+2. **Leniency** — immunity from the penalty payment (the first to come forward)
+   or a reduction (provided in the Act, confirmed) — the conditions and the
+   procedure from KKV's guidance.
+3. **Invalidity** — a prohibited term is void; it may bring down the contract as
+   a whole.
+4. **Damages (1077/2016)** — full compensation for the overcharge and other
+   loss; the binding effect of an infringement decision, passing-on of the
+   overcharge and limitation from the source.
+5. **Structural and behavioural remedies**; interim measures.
+6. **Business prohibition** and exclusion from procurement procedures
+   (→ `public-procurement`) as ancillary consequences — the conditions from the
+   source.
 
-## Tyypilliset riskipisteet
+## Typical risk points
 
-- Toimialajärjestön kokoukset ja tilastoyhteistyö ilman pelisääntöjä.
-- "Benchmarkkaus" kilpailijan kanssa = tietojenvaihtoriski.
-- Jakelusopimuksen jälleenmyyntihintaehto (RPM) vakiopohjassa.
-- Yhteistarjous kilpailijan kanssa ilman välttämättömyysarviota.
-- Yrityskaupan valmistelussa kilpailijatiedon jakaminen ennen
-  clearancea (gun jumping + tietojenvaihto).
-- Raja-arvojen muistinvarainen käyttö — rajat muuttuivat 2023.
+- Trade-association meetings and statistical co-operation without ground rules.
+- "Benchmarking" with a competitor = an information-exchange risk.
+- A resale price clause (RPM) in a standard distribution agreement template.
+- A joint tender with a competitor without assessing whether it is necessary.
+- Sharing competitor information while preparing a merger, before clearance
+  (gun jumping + information exchange).
+- Using thresholds from memory — the thresholds changed in 2023.

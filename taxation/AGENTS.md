@@ -1,69 +1,70 @@
-# Verotus — jaetut suojaukset ja toimintaperiaatteet
+# Taxation — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** verodoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** tax doctrine belongs in SKILL.md and the references. These safeguards are the life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Veroanalyysit, oikaisuvaatimus- ja ennakkoratkaisuhakemusluonnokset sekä laskelmat ovat
-**tarkistettavia luonnoksia** — ei veroneuvontaa eikä veroilmoituksen sisältö. Vastuu
-ilmoittamisesta ja veroseuraamuksista on verovelvollisella; merkittävät kannanotot
-`[varmista — veroasiantuntijan arvioitava]`.
+Tax analyses, draft requests for rectification and advance ruling applications, and
+calculations are **drafts for review** — not tax advice, and not the content of a tax
+return. Responsibility for reporting and for tax consequences lies with the taxpayer;
+mark any significant position `[confirm — requires a tax specialist's assessment]`.
 
-## Verokannat, rajat ja prosentit AINA lähteestä
+## Tax rates, thresholds and percentages ALWAYS from the source
 
-Verotuksen luvut muuttuvat **vuosittain**: verokannat, euromääräiset rajat, vähennysten
-enimmäismäärät, viivästys- ja huojennuskorot, alarajat. **Älä koskaan esitä lukua,
-prosenttia tai euromäärää muistista.** Hae voimassa oleva arvo lähteestä (Finlex,
-vero.fi:n syventävät ohjeet) ja merkitse verovuosi, jota luku koskee. Jos lähdettä ei
-voi tarkistaa: `[tarkista verovuoden arvo — vero.fi]`. Sama koskee määräaikoja
-(oikaisuvaatimus, valitus, ilmoitukset).
+The figures in taxation change **annually**: tax rates, euro thresholds, maximum
+deductions, late-payment and relief interest, lower limits. **Never state a figure, a
+percentage or a euro amount from memory.** Fetch the value in force from the source
+(Finlex, the in-depth guidance on vero.fi) and record the tax year the figure applies
+to. If the source cannot be checked: `[check the value for the tax year — vero.fi]`.
+The same applies to time limits (request for rectification, appeal, returns).
 
-## Verosuunnittelu on sallittua — veron kiertäminen ei
+## Tax planning is permitted — tax avoidance is not
 
-Raja kulkee laissa: **VML 28 § (veron kiertäminen)** ja **VML 29 § (peitelty osinko)**
-(pykäläotsikot vahvistettu lähteestä). Kun järjestelyn pääasiallinen tarkoitus on
-veroedun saaminen ilman liiketaloudellisia perusteita, nosta VML 28 §:n riski esiin.
-**Negatiivirajaus:** älä avusta tulojen salaamisessa, tekaistuissa järjestelyissä,
-kuittikaupassa tai ilmoitusvelvollisuuden kiertämisessä — kieltäydy ja ohjaa
-lailliseen vaihtoehtoon (ennakkoratkaisu, avoin ilmoittaminen, oma-aloitteinen
-korjaaminen).
+The line is drawn in the Act: **VML section 28 (tax avoidance)** and **VML section 29
+(disguised dividend)** (the section headings are confirmed from the source). Where the
+main purpose of an arrangement is to obtain a tax benefit without business reasons,
+raise the risk under VML section 28. **Negative scope:** do not assist with concealing
+income, with sham arrangements, with trading in receipts or with evading the duty to
+report — refuse, and steer towards the lawful alternative (an advance ruling, open
+reporting, voluntary correction).
 
-## Epävarmuudessa ennakkoratkaisu, ei arvaus
+## Where uncertain, an advance ruling — not a guess
 
-Kun verokohtelu on aidosti tulkinnanvarainen ja taloudellisesti merkittävä, ehdota
-**ennakkoratkaisun** hakemista (Verohallinto tai keskusverolautakunta) ennen
-toteutusta. Sitova ennakkoratkaisu on ainoa varma tapa — skillin arvio ei sido
-Verohallintoa.
+Where the tax treatment is genuinely open to interpretation and economically
+significant, propose applying for an **advance ruling (ennakkoratkaisu)** (from
+Verohallinto or the Central Tax Board) before implementation. A binding advance ruling
+is the only certain route — this skill's assessment does not bind Verohallinto.
 
-## Lähteestä, ei muistista — KHO ja KVL mukaan lukien
+## From the source, not from memory — including KHO and KVL
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-vero-oikeuskäytäntö (KHO:n vuosikirjaratkaisut, KVL:n ennakkoratkaisut) lähteestä.
-Vero-oikeudessa oikeuskäytäntö täsmentää lakia poikkeuksellisen paljon — älä referoi
-ratkaisuja muistista. Vero.fi:n syventävät ohjeet ovat Verohallinnon kanta, eivät
-laki — erottele nämä.
+Check the provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex)
+and the tax case law (KHO's yearbook decisions, KVL's advance rulings) from the
+source. In tax law, case law refines the statute to an exceptional degree — do not
+summarise decisions from memory. The in-depth guidance on vero.fi is Verohallinto's
+position, not law — keep the two apart.
 
-## Kokonaiskuva: vero ei elä tyhjiössä
+## The whole picture: tax does not live in a vacuum
 
-Veroratkaisu kytkeytyy kirjanpitoon (kirjanpitolaki), yhtiöoikeuteen (varojenjaon
-laillisuus ennen verokohtelua → `company-law`) ja sopimuksiin. Tarkista molemmat
-päät: yhtiöoikeudellisesti laiton jako ei muutu lailliseksi edullisella
-verokohtelulla. Kansainvälisissä tilanteissa muista verosopimukset ja EU-oikeus —
-kansallinen säännös ei yksin ratkaise.
+A tax outcome is connected to accounting (kirjanpitolaki), to company law (the
+lawfulness of a distribution of assets comes before its tax treatment →
+`company-law`) and to contracts. Check both ends: a distribution that is unlawful as a
+matter of company law does not become lawful through favourable tax treatment. In
+cross-border situations remember the tax treaties and EU law — a national provision
+does not decide the matter on its own.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the collection's shared source standard [`references/citation-style.md`](../references/citation-style.md): the three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision says without having checked the decision from the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (a GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation verolinjaukset, konsernirakenne ja vakiokäytännöt voi tallentaa tähän
-otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi, vaan kysy
-käyttäjältä.
+The organisation's tax policies, group structure and standard practices can be stored
+here under the heading `## Practice profile`. Empty by default — do not invent, ask
+the user.

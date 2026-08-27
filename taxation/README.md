@@ -1,50 +1,56 @@
-# Verotus
+# Taxation
 
-Suomen verotus oikeudellisen ja taloushallinnon ammattilaisen työhön:
-verotusmenettely ja muutoksenhaku, yritysverotus yritysjärjestelyineen sekä
-arvonlisäverotus.
+Finnish taxation for legal and finance professionals: tax procedure and appeals,
+corporate taxation including reorganisations, and value added tax.
 
-> **Analyysit ja luonnokset ovat tarkistettavia – ei veroneuvontaa.**
-> Verokannat, euromäärät ja määräajat muuttuvat vuosittain, joten ne haetaan aina
-> lähteestä eikä muistista. Aidosti tulkinnanvaraisessa asiassa oikea väline on
-> sitova ennakkoratkaisu. Katso [`AGENTS.md`](AGENTS.md).
+> **Analyses and drafts are for review – not tax advice.**
+> Tax rates, euro amounts and time limits change annually, so they are always
+> fetched from the source and never from memory. Where a matter is genuinely
+> open to interpretation, the right instrument is a binding advance ruling.
+> See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **verotusmenettely-ja-muutoksenhaku** | Verotusmenettely (VML 1558/1995): ilmoittamisvelvollisuus, veronkorotus, oikaisuvaatimus verotuksen oikaisulautakunnalle, valitus hallinto-oikeuteen ja KHO:hon sekä ennakkoratkaisut (Verohallinto/KVL). Sisältää verotuksen perusteiden referenssin. |
-| **yritysverotus** | Elinkeinoverotus (EVL 360/1968): tulon veronalaisuus ja menon vähennyskelpoisuus, konserniavustus (825/1986), yritysjärjestelyjen veroneutraalisuus (EVL 52–52 a §), peitelty osinko (VML 29 §), siirtohinnoittelu (VML 31 §) ja veron kiertämisen riskiarvio (VML 28 §). |
-| **arvonlisaverotus** | Arvonlisäverotus (AVL 1501/1993): verovelvollisuus, vähennysoikeus, käännetty verovelvollisuus, kansainvälisen kaupan perustilanteet ja kiinteistöjen erityiskysymykset – verokannat aina lähteestä. |
+| **tax-procedure-and-appeals** | Tax procedure (VML 1558/1995): the duty to report, the punitive tax increase, a request for rectification to the Assessment Adjustment Board, an appeal to the administrative court and to KHO, and advance rulings (Verohallinto/KVL). Includes the tax fundamentals reference. |
+| **corporate-taxation** | Business taxation (EVL 360/1968): taxability of income and deductibility of expenditure, group contribution (825/1986), tax neutrality of reorganisations (EVL sections 52–52 a), disguised dividend (VML section 29), transfer pricing (VML section 31) and the tax-avoidance risk assessment (VML section 28). |
+| **value-added-tax** | Value added tax (AVL 1501/1993): liability to tax, the right of deduction, the reverse charge, the basic situations in international trade, and the special questions around real property – tax rates always from the source. |
 
-## Perustana varmistetut säädökset
+## Statutes verified as the basis
 
-Lähteestä (Finlex) varmistettu: **laki verotusmenettelystä (1558/1995)** –
-pykäläotsikot 28 § veron kiertäminen, 29 § peitelty osinko, 31 §
-siirtohinnoitteluoikaisu, 32 § veronkorotus, 64 § oikaisuvaatimuksen määräaika –
-**laki elinkeinotulon verottamisesta (360/1968)** ml. yritysjärjestelysäännökset
-(52–52 a §), **arvonlisäverolaki (1501/1993)**, **tuloverolaki (1535/1992)**,
-**laki oma-aloitteisten verojen verotusmenettelystä (768/2016)**,
-**varainsiirtoverolaki (931/1996)**, **perintö- ja lahjaverolaki (378/1940)**,
-**ennakkoperintälaki (1118/1996)**, **laki konserniavustuksesta verotuksessa
-(825/1986)** ja **laki Verohallinnosta (503/2010)**. Pykälätason sisällöt ja
-vuosittaiset arvot tarkistetaan käytössä `legal-core:legal-research`-skillillä ja
-vero.fi:stä.
+Verified from the source (Finlex): the **Act on Assessment Procedure (laki
+verotusmenettelystä 1558/1995)** – section headings 28 tax avoidance, 29
+disguised dividend, 31 transfer pricing adjustment, 32 punitive tax increase,
+64 the time limit for a request for rectification – the **Business Income Tax
+Act (laki elinkeinotulon verottamisesta 360/1968)** including the provisions on
+reorganisations (sections 52–52 a), the **Value Added Tax Act
+(arvonlisäverolaki 1501/1993)**, the **Income Tax Act (tuloverolaki
+1535/1992)**, the **Act on the Assessment Procedure for Self-Assessed Taxes
+(laki oma-aloitteisten verojen verotusmenettelystä 768/2016)**, the **Transfer
+Tax Act (varainsiirtoverolaki 931/1996)**, the **Inheritance and Gift Tax Act
+(perintö- ja lahjaverolaki 378/1940)**, the **Prepayment Act (ennakkoperintälaki
+1118/1996)**, the **Act on Group Contributions in Taxation (laki
+konserniavustuksesta verotuksessa 825/1986)** and the **Act on the Finnish Tax
+Administration (laki Verohallinnosta 503/2010)**. Section-level content and the
+annual figures are checked in use with the `legal-core:legal-research` skill and
+from vero.fi.
 
-## Liittyy
+## Related
 
-- **`legal-core`-plugari** – `legal-research` (KHO:n vero-oikeuskäytäntö) ja
+- **`legal-core` domain** – `legal-research` (KHO's tax case law) and
   `document-review`.
-- **`company-law`-plugari** – varojenjaon yhtiöoikeudellinen laillisuus ja
-  yritysjärjestelyjen yhtiöoikeudellinen menettely.
-- **`administrative-law`-plugari** – verovalitus on hallintoprosessia (808/2019).
-- **`insolvency`-plugari** – verovelat maksukyvyttömyydessä.
+- **`company-law` domain** – the company-law lawfulness of a distribution of
+  assets, and the company-law procedure for reorganisations.
+- **`administrative-law` domain** – a tax appeal is administrative procedure
+  (808/2019).
+- **`insolvency` domain** – tax debts in insolvency.
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install verotus@agent-skills-for-finnish-law
+/plugin install taxation@agent-skills-for-finnish-law
 ```
 
-oik.ai-konnektori: katso juuren [QUICKSTART.md](../QUICKSTART.md).
+oik.ai connector: see [QUICKSTART.md](../QUICKSTART.md) at the repository root.

@@ -1,74 +1,78 @@
-# Pankki ja rahoitus — jaetut suojaukset ja toimintaperiaatteet
+# Banking and finance — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** rahoitusoikeusdoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** finance-law doctrine belongs in SKILL.md and the references. These safeguards are the life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Sopimus-, vakuus- ja compliance-luonnokset ovat **tarkistettavia luonnoksia** — ei
-oikeudellista neuvontaa, ei sijoitusneuvontaa eikä luottopäätöksiä. Merkitse
-tulkinnanvaraiset `[varmista — rahoitusjuristin arvioitava]`.
+Draft agreements, collateral documents and compliance material are **drafts for
+review** — not legal advice, not investment advice and not credit decisions. Mark
+anything open to interpretation `[confirm — requires a finance lawyer's assessment]`.
 
-## Toimiluvanvaraisuus tarkistetaan ensin
+## Whether an authorisation is required is checked first
 
-Moni rahoitustoiminta on **toimiluvanvaraista tai rekisteröintiä edellyttävää**
-(luottolaitokset 610/2014, maksulaitokset, sijoituspalvelut, joukkorahoitus,
-kuluttajaluotonantajat). Kun käyttäjä suunnittelee rahoitustoimintaa, selvitä ensin
-luvan tai rekisteröinnin tarve Finanssivalvonnan ohjeista ja laista — luvattoman
-toiminnan harjoittaminen on rangaistavaa. Älä suunnittele rakennetta, jonka
-tarkoitus on kiertää toimilupavaatimus.
+Much financial activity **requires an authorisation or registration** (credit
+institutions 610/2014, payment institutions, investment services, crowdfunding,
+consumer credit providers). When the user is planning financial activity, first
+establish whether an authorisation or registration is needed, from Finanssivalvonta's
+guidance and from the Act — carrying on unauthorised activity is a criminal offence.
+Do not design a structure whose purpose is to circumvent an authorisation
+requirement.
 
-## EU-sääntely on tässä ensisijaista
+## EU regulation comes first here
 
-Rahoitusmarkkinasääntely on EU-vetoisinta oikeutta: MAR (markkinoiden väärinkäyttö),
-MiFID II, esiteasetus, AML-paketti (ml. asetukset ja EU:n rahanpesuviranomainen
-AMLA), DORA, Basel-kehikko. Kansallinen laki täydentää — tarkista aina molemmat
-tasot ja **sääntelyn voimassa oleva versio lähteestä** (EUR-Lex, Finanssivalvonta).
-Sääntely muuttuu nopeasti; muistinvarainen tieto on tässä erityisen epäluotettavaa.
+Financial market regulation is the most EU-driven area of law: MAR (market abuse),
+MiFID II, the Prospectus Regulation, the AML package (including the regulations and
+the EU anti-money laundering authority AMLA), DORA, the Basel framework. National law
+supplements it — always check both levels and **the version of the regulation in
+force, from the source** (EUR-Lex, Finanssivalvonta). The regulation changes quickly;
+information from memory is particularly unreliable here.
 
-## Sisäpiiritieto — käsittele kuin kuumaa rautaa
+## Inside information — handle it like a hot iron
 
-Jos tehtävässä esiintyy mahdollista sisäpiiritietoa (listayhtiön julkistamaton
-olennainen tieto), nosta MAR-velvoitteet heti esiin: julkistaminen tai lykkääminen,
-sisäpiiriluettelot, kaupankäyntirajoitukset. **Älä koskaan avusta sisäpiiritiedon
-väärinkäytössä tai ilmaisemisessa** — ehdoton negatiivirajaus, kuten myös
-markkinoiden manipulointi ja rahanpesun toteuttaminen.
+If possible inside information appears in the task (undisclosed material information
+concerning a listed company), raise the MAR obligations immediately: disclosure or
+delay, insider lists, trading restrictions. **Never assist in the misuse or unlawful
+disclosure of inside information** — an absolute negative scope, as are market
+manipulation and carrying out money laundering.
 
-## Rahanpesusääntely koskee myös juristeja
+## Anti-money laundering regulation applies to lawyers too
 
-Oikeudelliset palveluntarjoajat ovat eräissä toimeksiannoissa (mm. kiinteistö- ja
-yrityskaupat, varojen hallinnointi) **itse ilmoitusvelvollisia** (444/2017).
-Muistuta tästä, kun toimeksianto kuuluu soveltamisalaan: asiakkaan tuntemistiedot,
-selonotto ja ilmoitus epäilyttävästä liiketoimesta — ja **paljastamiskielto**
-(asiakkaalle ei kerrota ilmoituksesta).
+Legal service providers are, in certain engagements (among others real property and
+company transactions, and the management of assets), **themselves obliged entities**
+(444/2017). Point this out when an engagement falls within the scope: customer due
+diligence information, the obligation to obtain information, and reporting a
+suspicious transaction — and the **prohibition on disclosure** (the customer is not
+told about the report).
 
-## Heikomman suoja erottelee säännöstöt
+## Protection of the weaker party separates the regimes
 
-Kuluttajaluotoissa kuluttajansuojalain luottosäännökset ovat pakottavia
-(korkokatto, hyvä luotonantotapa — rajat lähteestä); yritysrahoituksessa
-sopimusvapaus on laajempi mutta kohtuullistaminen (OikTL 36 §) ja takaajan suoja
-(361/1999: yksityistakaajan pakottava suoja) rajoittavat. Tunnista osapuolen
-asema ennen ehtojen laatimista.
+In consumer credit the credit provisions of the Consumer Protection Act are mandatory
+(the interest rate cap, good lending practice — the limits from the source); in
+corporate finance there is wider freedom of contract, but adjustment (OikTL section
+36) and the protection of a guarantor (361/1999: the mandatory protection of a private
+guarantor) set limits. Identify the party's position before drafting the terms.
 
-## Lähteestä, ei muistista
+## From the source, not from memory
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-EU-sääntely EUR-Lexistä; Finanssivalvonnan määräykset ja ohjeet (MOK) ovat
-sitovaa alemman tason sääntelyä — erottele laki, Fivan määräys ja Fivan ohje.
-Viitekorot, korkokatot ja kynnysarvot aina lähteestä `[tarkista]`.
+Check the provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex)
+and the EU regulation from EUR-Lex; Finanssivalvonta's regulations and guidelines
+(MOK) are binding lower-level regulation — keep the Act, a Fiva regulation and Fiva
+guidance apart. Reference rates, interest rate caps and thresholds always from the
+source `[check]`.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the collection's shared source standard [`references/citation-style.md`](../references/citation-style.md): the three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision says without having checked the decision from the source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (a GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation rahoitusrakenne, vakiosopimuspohjat ja compliance-linjaukset voi
-tallentaa tähän otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi,
-vaan kysy käyttäjältä.
+The organisation's financing structure, standard agreement templates and compliance
+policies can be stored here under the heading `## Practice profile`. Empty by
+default — do not invent, ask the user.

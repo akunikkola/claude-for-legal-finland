@@ -1,109 +1,117 @@
 ---
 name: financing-and-collateral
 description: >
-  Rahoitussopimukset ja vakuudet Suomen oikeuden mukaan. Käytä tätä
-  skilliä, kun käyttäjä laatii tai tarkistaa velkakirjaa, lainasopimusta
-  tai rahoitussopimusta kovenantteineen, suunnittelee tai arvioi
-  vakuuksia (pantti, kiinteistöpanttioikeus, yrityskiinnitys, takaus,
-  vierasvelkapanttaus, saatavien panttaus), arvioi eräännyttämistä tai
-  kovenanttirikkomusta, tai jäsentää konsernin rahoitus- ja
-  vakuusrakennetta. Triggeröi sanoista: velkakirja, lainasopimus,
-  kovenantti, eräännyttäminen, cross default, pantti, panttaus,
-  yrityskiinnitys, takaus, omavelkainen takaus, vierasvelkapanttaus,
-  vakuusagentti, syndikoitu laina, viivästyskorko, negative pledge.
+  Finance agreements and collateral under Finnish law (velkakirjalaki
+  622/1947; takauslaki 361/1999; korkolaki 633/1982). Use this skill when
+  the user is drafting or reviewing a promissory note, a loan agreement or
+  a finance agreement with covenants, is planning or assessing security
+  (a pledge, a real property pledge, a business mortgage, a guarantee, a
+  third-party pledge, a pledge of receivables), is assessing acceleration
+  or a breach of covenant, or is structuring a group's financing and
+  collateral. Triggers on: promissory note, loan agreement, covenant,
+  acceleration, cross default, pledge, business mortgage, guarantee,
+  absolute guarantee, third-party pledge, security agent, syndicated
+  loan, default interest, negative pledge, velkakirja, takaus,
+  yrityskiinnitys, kovenantti.
 ---
 
-# Rahoitus ja vakuudet — sopimukset, vakuuspaketti ja riskit
+# Financing and collateral — agreements, the collateral package and the risks
 
-Tämä skill jäsentää rahoitussopimukset ja vakuusjärjestelyt. Perusteet,
-vakuuskartta ja riskipisteet: `references/finance-fundamentals.md` — lue
-se tehtävän alussa.
+This skill structures finance agreements and collateral arrangements.
+The fundamentals, the collateral map and the risk points:
+`references/finance-fundamentals.md` — read it at the start of the task.
 
-> **Vastuuvapaus:** luonnokset ovat tarkistettavia — ei oikeudellista
-> neuvontaa eikä luotto- tai sijoituspäätöksiä. Katso
-> `banking-and-finance/AGENTS.md` — mm. toimiluvanvaraisuus tarkistetaan
-> ensin, jos käyttäjä itse antaa luottoja.
+> **Disclaimer:** drafts are for review — not legal advice and not credit
+> or investment decisions. See `banking-and-finance/AGENTS.md` — among
+> other things, whether an authorisation is required is checked first if
+> the user is themselves granting credit.
 
-## Tarkista laki lähteestä
+## Check the Act from the source
 
-Hae velkakirjalain (622/1947), korkolain (633/1982) ja takauslain
-(361/1999) säännökset **`legal-core:legal-research`-skillillä**;
-viitekorko ja kuluttajaluottojen rajat `[tarkista — Suomen
-Pankki/lähde]`. KKO:n vakuus- ja takauskäytäntö lähteestä.
+Fetch the provisions of the Promissory Notes Act (velkakirjalaki
+622/1947), the Interest Act (korkolaki 633/1982) and the Act on
+Guarantees and Third-Party Pledges (takauslaki 361/1999) with the
+**`legal-core:legal-research` skill**; the reference rate and the limits
+on consumer credit `[check — Suomen Pankki/source]`. KKO's case law on
+security and guarantees from the source.
 
-## Vaihe 1: Rakenteen jäsennys
+## Step 1: Structuring the arrangement
 
-- **Osapuolet ja roolit**: velallinen, velkoja(t), takaajat,
-  pantinantajat — konsernissa myös se, kuka saa vastikkeen
-  (ylävakuudet ja OYL:n lähipiiri-/varojenjakokytkös →
-  `company-law:corporate-governance`).
-- **Heikomman suoja**: kuluttaja (KSL:n pakottavat luottosäännökset)
-  tai **yksityistakaaja/yksityinen pantinantaja** (361/1999 pakottava
-  suoja: tiedonanto ennen sitoumusta, ilmoitukset velan hoidosta,
-  vastuurajaukset — yksityiskohdat lähteestä). Laiminlyönti voi
-  kaataa vakuuden.
-- **Velkakirjatyyppi**: tavallinen vs. juokseva — siirtokelpoisuus ja
-  väiteoikeudet eroavat (622/1947, lähteestä).
+- **Parties and roles**: the debtor, the creditor(s), the guarantors, the
+  pledgors — in a group also who receives the consideration (upstream
+  security and the connection to related-party and distribution rules in
+  OYL → `company-law:corporate-governance`).
+- **Protection of the weaker party**: a consumer (the mandatory credit
+  provisions of KSL) or a **private guarantor or private pledgor**
+  (361/1999 mandatory protection: information before the commitment,
+  notifications about the servicing of the debt, limitations of
+  liability — the details from the source). A failure here can bring the
+  security down.
+- **Type of promissory note**: ordinary or negotiable — transferability
+  and the right to raise defences differ (622/1947, from the source).
 
-## Vaihe 2: Lainadokumentaatio
+## Step 2: Loan documentation
 
-Käy ainakin nämä läpi (laadinnassa ja tarkistuksessa):
+Work through at least these (both when drafting and when reviewing):
 
-1. **Taloudelliset ehdot** — korko (viitekorko + marginaali; koron
-   muutosmekanismi), maksuohjelma, ennenaikainen takaisinmaksu ja sen
-   kulut, viivästyskorko (633/1982 — määrä lähteestä).
-2. **Kovenantit** — mitoita rikkomusseuraamukset portaittain (waiver,
-   neuvottelu, marginaalikorotus, eräännytys); määrittele
-   laskentaperusteet täsmällisesti (mihin tilinpäätösstandardiin
-   sidottu).
-3. **Eräännyttämisperusteet** — maksuviivästys, kovenanttirikkomus,
-   olennainen haitallinen muutos (MAC), ristiineräännyttäminen —
-   kohtuullisuusarvio (OikTL 36 §) erityisesti laajoissa
-   MAC/cross default -ehdoissa.
-4. **Tiedonanto- ja muut velvoitteet** — raportointi, negative pledge,
-   omistuksenmuutos (change of control).
-5. **Siirrettävyys** — velkojan siirto-oikeus, velallisen suostumus.
+1. **Financial terms** — interest (reference rate + margin; the
+   mechanism for changing the rate), the repayment schedule, early
+   repayment and its costs, default interest (633/1982 — the amount from
+   the source).
+2. **Covenants** — calibrate the consequences of a breach in stages
+   (waiver, negotiation, margin increase, acceleration); define the
+   calculation basis precisely (which accounting standard it is tied
+   to).
+3. **Grounds for acceleration** — payment default, breach of covenant, a
+   material adverse change (MAC), cross-default — assess reasonableness
+   (OikTL section 36) especially in wide MAC and cross-default clauses.
+4. **Information and other undertakings** — reporting, negative pledge,
+   change of control.
+5. **Transferability** — the creditor's right to transfer, the debtor's
+   consent.
 
-## Vaihe 3: Vakuuspaketti
+## Step 3: The collateral package
 
-1. **Valitse vakuudet** vakuuskartasta (referenssi) kohteen ja
-   velallisen mukaan; tarkista päällekkäisyydet ja aukot.
-2. **Julkivarmistus kuntoon** — pantin sitovuus sivullisia kohtaan
-   edellyttää oikeaa perustamistapaa (traditio, kirjaus, denuntiaatio)
-   — tämä on vakuusjuridiikan yleisin virhe; vaatimukset lähteestä.
-3. **Etuoikeusjärjestys** — vakuuksien keskinäinen järjestys ja
-   yrityskiinnityksen asema konkurssissa (1578/1992 → `insolvency`).
-4. **Takaisinsaantiriski** — vakuus vanhasta velasta tai lähellä
-   maksukyvyttömyyttä (758/1991) → `insolvency:insolvency-assessment`.
-5. **Vakuusagentti ja syndikaatti** — agentin valtuudet,
-   päätöksentekokynnykset, vakuuksien jakaminen.
+1. **Select the security** from the collateral map (the reference)
+   according to the asset and the debtor; check for overlaps and gaps.
+2. **Get the perfection right** — a pledge binds third parties only if it
+   is created in the correct way (delivery, registration, notice to the
+   debtor) — this is the most common error in security law; the
+   requirements from the source.
+3. **Order of priority** — the ranking between the securities and the
+   position of a business mortgage in bankruptcy (1578/1992 →
+   `insolvency`).
+4. **Recovery risk** — security given for an old debt or close to
+   insolvency (758/1991) → `insolvency:insolvency-assessment`.
+5. **Security agent and syndicate** — the agent's authority, the
+   decision-making thresholds, the sharing of security.
 
-## Vaihe 4: Häiriötilanne
+## Step 4: A distress situation
 
-Kovenanttirikkomus tai maksuviivästys: tosiasiat ensin (onko rikkomus
-todella tapahtunut laskentaperusteen mukaan), sitten porras
-(waiver-pyyntö ja -dokumentaatio, standstill, uudelleenjärjestely) —
-ja jos velallinen on maksukyvytön, koko paketti →
-`insolvency:insolvency-assessment` (velkojan näkökulma: vakuuksien
-realisointi vs. saneeraus).
+A breach of covenant or a payment default: the facts first (has a breach
+actually occurred on the agreed calculation basis), then the escalation
+ladder (a waiver request and its documentation, a standstill, a
+restructuring) — and if the debtor is insolvent, the whole package →
+`insolvency:insolvency-assessment` (from the creditor's perspective:
+realising the security vs. restructuring).
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei tee luottopäätöksiä eikä arvioi luottokelpoisuutta** — se
-  jäsentää juridiikan.
-- **Ei vahvista viitekorkoja, korkokattoja tai etuoikeusjärjestystä
-  muistista** — lähteestä tai `[tarkista]`.
-- **Ei ohita yksityistakaajan tai kuluttajan pakottavaa suojaa** —
-  tehoton ehto kerrotaan, ei piiloteta.
-- **Ei suunnittele toimilupavaatimuksen kiertämistä** — luvanvaraisuus
-  selvitetään ensin (AGENTS.md).
-- **Ei korvaa vero- tai kirjanpitoarviota** (korkovähennysrajoitukset
-  → `taxation:corporate-taxation`).
+- **Does not make credit decisions and does not assess
+  creditworthiness** — it structures the law.
+- **Does not confirm reference rates, interest rate caps or the order of
+  priority from memory** — from the source or `[check]`.
+- **Does not override the mandatory protection of a private guarantor or
+  a consumer** — an ineffective term is pointed out, not hidden.
+- **Does not design ways around an authorisation requirement** — whether
+  an authorisation is required is established first (AGENTS.md).
+- **Does not replace a tax or accounting assessment** (interest deduction
+  limitations → `taxation:corporate-taxation`).
 
-## Jatka tästä
+## Continue from here
 
-- Sopimusmekaniikka ja kohtuullistaminen → /sopimukset:sopimuksen-tarkistus
-- Konsernin varojenjako- ja lähipiirikysymykset → /yhtiooikeus:yhtion-hallinto
-- Velallisen maksukyvyttömyys ja takaisinsaanti → /insolvenssi:maksukyvyttomyysarvio
-- Kiinteistövakuuden kirjaukset → /kiinteistot-ja-asuminen:kiinteistokauppa
-- Säännöksen tai KKO-käytännön tarkistus → /juristi:oikeustutkimus
+- Contract mechanics and adjustment → /contracts:contract-review
+- Group distribution and related-party questions → /company-law:corporate-governance
+- The debtor's insolvency and recovery → /insolvency:insolvency-assessment
+- Registration of real property security → /real-estate-and-housing:real-property-conveyance
+- Checking a provision or KKO case law → /legal-core:legal-research
