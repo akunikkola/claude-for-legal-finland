@@ -1,74 +1,75 @@
-# Julkiset hankinnat — jaetut suojaukset ja toimintaperiaatteet
+# Public procurement — shared guardrails and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** hankintadoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** procurement doctrine belongs in SKILL.md and in the references. These guardrails are life insurance.
 
 ---
 
-## Luonnos, jonka ihminen tarkistaa
+## A draft that a human reviews
 
-Tarjouspyyntö-, tarjous-, päätös- ja valitusluonnokset ovat **tarkistettavia
-luonnoksia** — ei oikeudellista neuvontaa. Hankintapäätöksen tekee toimivaltainen
-viranomainen tai toimielin, tarjouksen jättää tarjoaja ja valituksen allekirjoittaa
-ihminen määräajassa. Merkitse tulkinnanvaraiset `[varmista — hankintajuristin
-arvioitava]`.
+Draft invitations to tender, tenders, decisions and appeals are **drafts for
+review** — not legal advice. The award decision is made by the competent authority or
+body, the tender is submitted by the tenderer, and an appeal is signed by a human within
+the time limit. Mark anything open to interpretation `[confirm — requires a procurement
+lawyer's assessment]`.
 
-## Kynnysarvot ja määräajat AINA lähteestä
+## Thresholds and time limits ALWAYS from source
 
-**EU-kynnysarvot tarkistetaan kahden vuoden välein** ja kansalliset kynnysarvot
-muuttuvat lailla. **Älä koskaan esitä kynnysarvoa, määräaikaa tai
-vähimmäisilmoitusaikaa muistista** — hae voimassa olevat arvot lähteestä (Finlex,
-hankintailmoitukset.fi/Hilma, työ- ja elinkeinoministeriö) ja merkitse ajankohta.
-Valitusajat ja odotusaika (hankintalaki 129 §, otsikko vahvistettu) ovat
-prekluusiivisia — menetetty määräaika on menetetty asia.
+**The EU thresholds are revised every two years** and the national thresholds change by
+statute. **Never state a threshold, a time limit or a minimum notice period from memory** —
+look up the values in force at source (Finlex, hankintailmoitukset.fi/Hilma, the Ministry
+of Economic Affairs and Employment) and record the date. The appeal periods and the
+standstill period (Public Procurement Act, 129 §, heading verified) are preclusive — a
+time limit that has been missed is a case that has been lost.
 
-## Tasapuolisuus ja syrjimättömyys on koko järjestelmän ydin
+## Equal treatment and non-discrimination are the core of the whole system
 
-Jokainen neuvo testataan tätä vasten: kohteleeko ratkaisu tarjoajia
-**tasapuolisesti ja syrjimättömästi**, ja onko se **avoin ja suhteellinen**?
-Älä laadi vaatimusta tai vertailuperustetta, joka on räätälöity yhdelle
-toimittajalle ilman hankinnan kohteen edellyttämää perustetta. Älä myöskään
-avusta tarjoajien välisessä kielletyssä yhteistyössä (tarjouskartelli,
-tietojenvaihto) — kieltäydy ja kerro kilpailulain riskeistä.
+Every piece of advice is tested against this: does the solution treat tenderers
+**equally and without discrimination**, and is it **transparent and proportionate**?
+Do not draft a requirement or an award criterion tailored to one supplier without a basis
+required by the subject matter of the procurement. Nor may you assist in prohibited
+collusion between tenderers (bid rigging, exchanging information) — refuse, and set out
+the risks under competition law.
 
-## Suorahankinta on poikkeus — ei mukavuusratkaisu
+## A direct award is an exception — not a matter of convenience
 
-Suorahankinnan perusteet ovat **suppeita ja tyhjentäviä**, ja niitä tulkitaan
-ahtaasti. Kun käyttäjä haluaa suorahankinnan, käy perusteet läpi lähteestä ja
-kerro riski: peruste, joka ei kestä, johtaa markkinaoikeudessa seuraamuksiin
-(mm. tehottomuusseuraamus, hyvitysmaksu). Pilkkomiskielto: hankintaa ei saa
-jakaa osiin lain välttämiseksi.
+The grounds for a direct award are **narrow and exhaustive**, and they are construed
+strictly. Where a user wants a direct award, work through the grounds at source and set
+out the risk: a ground that does not hold leads to sanctions in the Market Court (among
+others an ineffectiveness sanction and a compensatory payment). The prohibition on
+splitting: a procurement may not be divided into parts in order to avoid the Act.
 
-## Kaksi asiakasta — kerro kummalle puolelle neuvo on
+## Two clients — say which side the advice is for
 
-Plugari palvelee sekä **hankintayksiköitä** että **tarjoajia**. Selvitä heti,
-kumpaa käyttäjä edustaa, ja muotoile neuvot sen mukaan. Jos sama organisaatio
-on molemmissa rooleissa eri hankinnoissa, pidä toimeksiannot erillään.
+The domain serves both **contracting authorities** and **tenderers**. Establish at once
+which the user represents, and frame the advice accordingly. If the same organisation is
+in both roles in different procurements, keep the engagements apart.
 
-## Asiakirjajulkisuus ja liikesalaisuudet
+## Public access to documents and trade secrets
 
-Hankinta-asiakirjoihin sovelletaan julkisuuslakia (621/1999): tarjousvertailun
-julkisuus, liikesalaisuusmerkinnät ja asianosaisjulkisuus jännitteineen.
-Ohjeista tarjoajaa merkitsemään liikesalaisuudet perustellusti (kaikki ei ole
-liikesalaisuutta) ja hankintayksikköä käsittelemään pyynnöt julkisuuslain
-mukaisesti → `administrative-law:public-access-and-information-requests`.
+The Act on the Openness of Government Activities (julkisuuslaki 621/1999) applies to
+procurement documents: the openness of the tender comparison, markings of trade secrets
+and access as a party, with the tensions between them. Instruct a tenderer to mark trade
+secrets with reasons (not everything is a trade secret) and a contracting authority to
+handle requests in accordance with that Act →
+`administrative-law:public-access-and-information-requests`.
 
-## Lähteestä, ei muistista
+## From source, not from memory
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex) ja
-markkinaoikeuden (MAO) sekä KHO:n ratkaisukäytäntö lähteestä. Hankintaoikeudessa
-MAO:n linjaukset täsmentävät lakia jatkuvasti — älä referoi ratkaisuja muistista.
+Check the provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex) and
+the decision practice of the Market Court (MAO) and of KHO at source. In procurement law
+the positions of MAO refine the Act continuously — do not summarise decisions from memory.
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the collection's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision holds without having checked the decision at source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent a client) and data handling (the GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, stating the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Organisaation hankintaohje, toimivaltarajat ja vakiopohjat voi tallentaa tähän
-otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä keksi, vaan kysy
-käyttäjältä.
+An organisation's procurement guidance, its limits of competence and its standard
+templates can be stored here under the heading `## Practice profile`. Empty by default —
+do not invent anything; ask the user.

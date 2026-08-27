@@ -1,102 +1,99 @@
-# Julkisten hankintojen perusteet
+# Fundamentals of public procurement
 
-**Vahvistettu lähteestä (Finlex, 2026-06):** alla mainitut säädösnumerot ja
-erikseen mainitut pykäläotsikot on tarkistettu Finlexistä. Kynnysarvot,
-määräajat ja vähimmäisilmoitusajat **muuttuvat** — ne haetaan aina
-käyttöhetkellä lähteestä (Finlex, Hilma, työ- ja elinkeinoministeriö).
+**Verified at source (Finlex, 2026-06):** the statute numbers given below and the section
+headings specifically mentioned have been checked in Finlex. The thresholds, the time
+limits and the minimum notice periods **change** — they are always taken from the source
+at the time of use (Finlex, Hilma, the Ministry of Economic Affairs and Employment).
 
-## Keskeiset säädökset
+## The key statutes
 
-- **Laki julkisista hankinnoista ja käyttöoikeussopimuksista (1397/2016,
-  "hankintalaki")** — yleislaki: soveltamisala, menettelyt, tarjousten
-  käsittely, päätös, muutoksenhaku.
-- **Laki vesi- ja energiahuollon, liikenteen ja postipalvelujen alalla
-  toimivien yksiköiden hankinnoista ja käyttöoikeussopimuksista
-  (1398/2016, "erityisalojen hankintalaki")** — verkostotoimialat;
-  väljemmät menettelysäännöt.
-- **Laki julkisista puolustus- ja turvallisuushankinnoista (1531/2011)**
-  — oma soveltamisalansa.
-- Liitännäiset: julkisuuslaki (621/1999) asiakirjajulkisuuteen,
-  kuntalaki (410/2015) kunnan päätöksentekoon, kilpailulaki (948/2011)
-  tarjoajien kiellettyyn yhteistyöhön, rikoslain virkarikossäännökset.
+- **Act on Public Procurement and Concession Contracts (laki julkisista hankinnoista ja
+  käyttöoikeussopimuksista 1397/2016, "hankintalaki")** — the general act: scope,
+  procedures, handling of tenders, the decision, appeals.
+- **Act on Procurement and Concession Contracts of Entities Operating in the Water,
+  Energy, Transport and Postal Services Sectors (1398/2016, the special sectors
+  procurement act)** — the network sectors; more flexible procedural rules.
+- **Act on Public Defence and Security Procurement (laki julkisista puolustus- ja
+  turvallisuushankinnoista 1531/2011)** — its own scope of application.
+- Related: the Act on the Openness of Government Activities (julkisuuslaki 621/1999) for
+  access to documents, the Local Government Act (kuntalaki 410/2015) for municipal
+  decision-making, the Competition Act (kilpailulaki 948/2011) for prohibited collusion
+  between tenderers, and the provisions of the Criminal Code on offences in office.
 
-EU-tausta: hankintadirektiivit ja EU-tuomioistuimen käytäntö ohjaavat
-tulkintaa; EU-kynnysarvot vahvistetaan komission asetuksella kahden
-vuoden välein.
+The EU background: the procurement directives and the case law of the Court of Justice of
+the European Union guide interpretation; the EU thresholds are confirmed by Commission
+regulation every two years.
 
-## Periaatteet (koko järjestelmän testi)
+## The principles (the test for the whole system)
 
-1. **Tasapuolisuus ja syrjimättömyys** — kaikkia tarjoajia kohdellaan
-   samoin; kansallisuus- tai paikkakuntasuosinta kielletty.
-2. **Avoimuus** — ilmoittaminen, asiakirjojen julkisuus, perustellut
-   päätökset.
-3. **Suhteellisuus** — vaatimukset oikeassa suhteessa hankinnan
-   kohteeseen ja arvoon.
+1. **Equal treatment and non-discrimination** — all tenderers are treated in the same
+   way; favouring a nationality or a locality is prohibited.
+2. **Transparency** — publication, access to documents, reasoned decisions.
+3. **Proportionality** — the requirements are in proportion to the subject matter and the
+   value of the procurement.
 
-Jokainen vaatimus, vertailuperuste ja menettelyratkaisu testataan näitä
-vasten.
+Every requirement, award criterion and procedural choice is tested against these.
 
-## Soveltamisala ja kynnysarvot
+## Scope of application and thresholds
 
-- **Hankintayksiköt**: valtio, kunnat ja kuntayhtymät (ja hyvinvointialueet),
-  julkisoikeudelliset laitokset, ja muut laissa määritellyt — tarkista
-  rajatapaukset (esim. julkista tukea saava hankinta) lähteestä.
-- **Kynnysarvot**: kansalliset kynnysarvot ja EU-kynnysarvot määräävät,
-  sovelletaanko lakia ja kumpaa menettelysäännöstöä. **Voimassa olevat
-  euromäärät haetaan aina lähteestä** (Finlex/Hilma/TEM) — älä koskaan
-  muistista.
-- **Ennakoitu arvo**: koko sopimuskauden arvo optioineen, ilman
-  arvonlisäveroa. **Pilkkomiskielto**: hankintaa ei saa jakaa eriin tai
-  laskea poikkeuksellisin menetelmin lain välttämiseksi.
-- Kynnysarvon alle jäävät **pienhankinnat** eivät kuulu lain
-  menettelysääntöjen piiriin, mutta periaatteet ja hankintayksikön omat
-  ohjeet koskevat niitäkin.
+- **Contracting authorities**: the state, municipalities and joint municipal authorities
+  (and the wellbeing services counties), bodies governed by public law, and others
+  defined in the Act — check the borderline cases (for example a procurement receiving
+  public support) at source.
+- **Thresholds**: the national thresholds and the EU thresholds determine whether the Act
+  applies and which set of procedural rules governs. **The euro amounts in force are
+  always taken from the source** (Finlex/Hilma/the Ministry) — never from memory.
+- **Estimated value**: the value of the whole contract period with its options, excluding
+  VAT. **The prohibition on splitting**: a procurement may not be divided into lots or
+  calculated by exceptional methods in order to avoid the Act.
+- Procurements falling below the threshold are **small procurements** and are outside the
+  procedural rules of the Act, but the principles and the contracting authority's own
+  guidance apply to them too.
 
-## Menettelyt pikakartalla
+## The procedures at a glance
 
-| Menettely | Tyypillinen käyttö |
+| Procedure | Typical use |
 |---|---|
-| Avoin menettely | oletus; kaikki halukkaat voivat tarjota |
-| Rajoitettu menettely | kaksivaiheinen: osallistumishakemus → valitut tarjoavat |
-| Neuvottelumenettely / kilpailullinen neuvottelumenettely | monimutkaiset hankinnat; käyttöedellytykset lähteestä |
-| Innovaatiokumppanuus | uuden ratkaisun kehittäminen ja hankinta |
-| Puitejärjestely | toistuvat hankinnat; kesto- ja käyttörajat lähteestä |
-| Dynaaminen hankintajärjestelmä | sähköinen, jatkuvasti avoin |
-| Suorahankinta | **poikkeus** — perusteet suppeita ja tyhjentäviä, tulkitaan ahtaasti |
+| Open procedure | the default; anyone interested may tender |
+| Restricted procedure | two stages: request to participate → those selected tender |
+| Negotiated procedure / competitive dialogue | complex procurements; the conditions for use from the source |
+| Innovation partnership | developing and acquiring a new solution |
+| Framework arrangement | recurring procurements; the limits on duration and use from the source |
+| Dynamic purchasing system | electronic, continuously open |
+| Direct award | **an exception** — the grounds are narrow and exhaustive, and are construed strictly |
 
-## Prosessin kaari
+## The arc of the process
 
-1. Tarpeen määrittely ja **markkinakartoitus** (tekninen vuoropuhelu
-   sallittua — tasapuolisesti).
-2. Menettelyn valinta ja hankinta-asiakirjojen laadinta.
-3. **Hankintailmoitus Hilmassa** (hankintailmoitukset.fi); EU-hankinnoissa
-   TED. Ilmoittamatta jättäminen on vakavimpia virheitä.
-4. Tarjousten vastaanotto ja **soveltuvuuden tarkistus** (poissulkemis-
-   perusteet: pakolliset ja harkinnanvaraiset — lähteestä; rikosrekisteri-
-   otteet EU-hankinnoissa).
-5. **Tarjousten vertailu** ilmoitetuilla perusteilla — vain niillä.
-6. **Hankintapäätös perusteluineen (123 §, otsikko vahvistettu)** ja
-   tiedoksianto valitusosoituksineen.
-7. **Odotusaika (129 §)** EU-hankinnoissa ennen sopimusta (128 §).
-8. Sopimuskausi: muutosten rajat ja option käyttö — lähteestä.
+1. Defining the need and the **market consultation** (technical dialogue is permitted —
+   on equal terms).
+2. Choosing the procedure and drawing up the procurement documents.
+3. **The contract notice in Hilma** (hankintailmoitukset.fi); in EU procurements, TED.
+   Failing to publish is one of the most serious errors.
+4. Receipt of tenders and **checking suitability** (the exclusion grounds: mandatory and
+   discretionary — from the source; extracts from the criminal record in EU procurements).
+5. **Comparison of the tenders** on the criteria announced — and only on those.
+6. **The award decision with its reasons (123 §, heading verified)** and its notification
+   with the appeal instructions.
+7. **The standstill period (129 §)** in EU procurements before the contract (128 §).
+8. The contract period: the limits on amendments and the use of options — from the source.
 
-## Oikeussuojakeinot
+## The remedies
 
-- **Hankintaoikaisu (132–133 §, otsikot vahvistettu)** — hankintayksikkö
-  korjaa itse, omasta aloitteesta tai vaatimuksesta.
-- **Valitus markkinaoikeuteen (146 §, otsikko vahvistettu)** —
-  valitusajat lähteestä; seuraamuksina mm. päätöksen kumoaminen,
-  kielto, hyvitysmaksu, tehottomuusseuraamus ja sopimuskauden
-  lyhentäminen (edellytykset lähteestä).
-- Jatkovalitus KHO:hon (valituslupa).
-- Puhtaasti sopimuskauden riidat → yleinen riitaprosessi.
+- **Procurement rectification (132–133 §, headings verified)** — the contracting
+  authority corrects the matter itself, on its own initiative or on request.
+- **An appeal to the Market Court (146 §, heading verified)** —
+  the appeal periods from the source; the sanctions include annulment of the decision,
+  a prohibition, a compensatory payment, an ineffectiveness sanction and the shortening
+  of the contract period (the conditions from the source).
+- A further appeal to KHO (leave to appeal).
+- Purely contract-period disputes → the ordinary civil procedure.
 
-## Tyypilliset virheet
+## Typical errors
 
-- Kynnysarvon alitus pilkkomalla tai arvioimalla väärin.
-- Yhdelle toimittajalle räätälöity tekninen eritelmä.
-- Soveltuvuusvaatimusten ja vertailuperusteiden sekoittaminen.
-- Vertailu perusteilla, joita ei ilmoitettu tarjouspyynnössä.
-- Suorahankinta ilman kestävää perustetta.
-- Puutteelliset päätösperustelut tai odotusajan laiminlyönti.
-- Olennainen sopimusmuutos ilman uutta kilpailutusta.
+- Falling below the threshold by splitting, or by estimating wrongly.
+- A technical specification tailored to one supplier.
+- Confusing the suitability requirements with the award criteria.
+- Comparing on criteria that were not announced in the invitation to tender.
+- A direct award without a sustainable ground.
+- Inadequate reasons for the decision, or neglect of the standstill period.
+- A material amendment to the contract without a new call for tenders.
