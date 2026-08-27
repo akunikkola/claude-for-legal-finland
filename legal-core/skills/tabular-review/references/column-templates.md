@@ -1,150 +1,156 @@
-# Sarakemallit asiakirjatyypeittäin
+# Column templates by document type
 
-Lähtökohtaiset vertailusarakkeet `tabular-review`-skillin **Tila A:lle**
-(monidokumenttivertailu, rivi per asiakirja). Mallit ovat **lähtökohta, eivät
-kaava** — räätälöi aineiston ja toimeksiannon mukaan. Jokainen solu saa silti
-aina **arvon, lähteen ja luottamustason**, ja puuttuva tieto merkitään
-`ei mainittu`.
+Starting comparison columns for **Mode A** of the `tabular-review` skill
+(multi-document comparison, one row per document). The templates are a
+**starting point, not a formula** — tailor them to the material and the
+engagement. Every cell still always gets a **value, a source and a confidence
+level**, and missing information is marked `not mentioned`.
 
-> **Lainkohtaviitteet ovat suuntaa-antavia kiinnekohtia**, jotka kertovat *miksi
-> sarake on olennainen ja mistä sen pätevyyttä tarkistetaan* — eivät
-> valmiita arvioita. Säädösten ja pykälien voimassaolo ja sisältö tarkistetaan
-> aina `legal-research`-skillillä (oik.ai/Finlex). Pätevyysarvio on tason 2
-> kysymys (ks. SKILL.md, Vaihe 3), ei tason 1 poiminta.
+> **The references to provisions are indicative points of reference** that say
+> *why the column matters and where its validity is checked* — they are not
+> ready-made assessments. Whether a statute or a section is in force, and what
+> it says, is always checked with the `legal-research` skill (oik.ai/Finlex).
+> An assessment of validity is a level 2 question (see SKILL.md, Stage 3), not a
+> level 1 extraction.
 
 ---
 
-## Yleissarakkeet (lähes mikä tahansa sopimus)
+## General columns (almost any contract)
 
-Aloita näistä ja lisää tyyppikohtaiset sarakkeet perään.
+Start from these and add the type-specific columns after them.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Osapuolet | Sopijapuolet ja roolit (esim. vuokranantaja/vuokralainen) |
-| Kohde | Mitä sopimus koskee |
-| Voimaantulo ja kesto | Alkupäivä; määräaikainen vai toistaiseksi; päättymispäivä |
-| Irtisanominen / purku | Irtisanomisaika ja -perusteet; purkuperusteet |
-| Sovellettava laki ja riidanratkaisu | Lainvalinta; tuomioistuin vai välimiesmenettely; paikkakunta |
-| Vastuunrajoitus | Vastuun yläraja (cap); poissuljetut vahinkolajit |
-| Sopimussakko | Määrä ja laukaiseva rikkomus |
-| Salassapito | Onko; kesto |
+| Parties | The contracting parties and their roles (e.g. lessor/lessee) |
+| Subject matter | What the contract concerns |
+| Entry into force and term | Start date; fixed-term or until further notice; end date |
+| Termination with notice / summary termination | Notice period and grounds; grounds for summary termination |
+| Governing law and dispute resolution | Choice of law; court or arbitration; venue |
+| Limitation of liability | Cap on liability; excluded heads of damage |
+| Contractual penalty | Amount and the breach that triggers it |
+| Confidentiality | Whether there is one; duration |
 
 ---
 
-## Vuokrasopimukset
+## Leases
 
-Asuinhuoneisto: laki asuinhuoneiston vuokrauksesta (481/1995). Liikehuoneisto:
-laki liikehuoneiston vuokrauksesta (482/1995). Huomaa pakottavuus erityisesti
-asuinhuoneiston vuokrauksessa.
+Residential premises: laki asuinhuoneiston vuokrauksesta (481/1995). Business
+premises: laki liikehuoneiston vuokrauksesta (482/1995). Note that these are
+mandatory in particular for the lease of residential premises.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Vuokra | Määrä ja maksukausi |
-| Vuokra-aika | Määräaikainen (päättymispäivä) vai toistaiseksi |
-| Irtisanomisaika | Vuokralaisen ja vuokranantajan ajat erikseen |
-| Vakuus | Määrä ja muoto |
-| Indeksi- tai korotusehto | Korotuksen peruste ja mekanismi |
-| Kunnossapitovastuu | Jako vuokranantajan ja vuokralaisen kesken |
-| Jälleenvuokraus / siirto | Sallittu, kielletty vai luvanvarainen |
-| Käyttötarkoitus | Sallittu käyttö (liikehuoneistossa olennainen) |
+| Rent | Amount and payment period |
+| Term of the lease | Fixed-term (end date) or until further notice |
+| Notice period | The lessee's and the lessor's periods separately |
+| Security | Amount and form |
+| Index or escalation clause | The basis and the mechanism of the increase |
+| Maintenance liability | The division between lessor and lessee |
+| Subletting / assignment | Permitted, prohibited or subject to consent |
+| Permitted use | The use allowed (material for business premises) |
 
 ---
 
-## Työsopimukset
+## Employment contracts
 
-Työsopimuslaki (55/2001). Kilpailukielto: 3 luvun 5 §; korvausvelvollisuutta
-muutettiin lailla 1018/2021 (työnantajan korvattava kilpailukiellon ajalta;
-enintään 6 kk → vähintään 40 % palkasta, yli 6 kk → vähintään 60 %).
-Korvauksen ja keston lainmukaisuus on tason 2 arvio.
+Employment Contracts Act (työsopimuslaki 55/2001). Non-competition: chapter 3
+section 5; the obligation to pay compensation was amended by act 1018/2021 (the
+employer must pay compensation for the period of the non-competition
+undertaking; up to 6 months → at least 40 % of pay, over 6 months → at least
+60 %). Whether the compensation and the duration are lawful is a level 2
+assessment.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Sopimustyyppi | Toistaiseksi vai määräaikainen; määräaikaisuuden peruste |
-| Koeaika | Pituus; ehdot |
-| Irtisanomisaika | Sopimuksen mukainen tai TES-/lakiperusteinen viittaus |
-| Kilpailukielto | Onko; kesto; korvaus; maantieteellinen/toiminnallinen ala |
-| Salassapito | Onko; ulottuuko työsuhteen jälkeen |
-| Työaika | Muoto (kokoaika/osa-aika/joustot) |
-| Palkka | Määrä ja peruste; mahdollinen bonusjärjestelmä |
-| Sovellettava TES | Mihin työehtosopimukseen viitataan |
+| Type of contract | Until further notice or fixed-term; the ground for the fixed term |
+| Probationary period | Length; conditions |
+| Notice period | As agreed, or a reference to the collective agreement (TES) or to the act |
+| Non-competition | Whether there is one; duration; compensation; geographical and functional scope |
+| Confidentiality | Whether there is one; whether it extends beyond the employment |
+| Working time | The form (full-time/part-time/flexible arrangements) |
+| Pay | Amount and basis; any bonus scheme |
+| Applicable TES | Which collective agreement is referred to |
 
 ---
 
-## Toimittaja- ja palvelusopimukset sekä salassapitosopimukset (NDA)
+## Supplier and service agreements, and non-disclosure agreements (NDA)
 
-Yleinen sopimusoikeus; kuluttajakaupassa ks. `consumer-law`-plugari.
-Henkilötietojen käsittelyssä tarkista tietosuojaliite (DPA) →
-`data-protection`-plugari.
+General contract law; for consumer sales see the `consumer-law` domain. Where
+personal data is processed, check the data processing annex (DPA) →
+the `data-protection` domain.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Sopimuskausi | Kesto; automaattinen jatkuminen |
-| Irtisanominen | Irtisanomisaika; irtisanominen olennaisen rikkomuksen perusteella |
-| Vastuunrajoitus | Cap (esim. 12 kk:n maksut); poissuljetut vahingot |
-| Sopimussakko / sanktiot | Määrä ja peruste |
-| Palvelutaso (SLA) | Mitattavat tasot ja hyvitykset |
-| IPR | Omistus ja käyttöoikeudet |
-| Salassapidon kesto | Vuosina; ulottuvuus |
-| Henkilötiedot | Onko DPA-liite; käsittelijän rooli |
-| Sovellettava laki ja riidanratkaisu | Lainvalinta; tuomioistuin/välimies; paikka |
+| Contract period | Duration; automatic renewal |
+| Termination | Notice period; termination for material breach |
+| Limitation of liability | Cap (e.g. 12 months' fees); excluded losses |
+| Contractual penalty / sanctions | Amount and basis |
+| Service level (SLA) | The measurable levels and the credits |
+| IPR | Ownership and rights of use |
+| Duration of confidentiality | In years; scope |
+| Personal data | Whether there is a DPA annex; the processor's role |
+| Governing law and dispute resolution | Choice of law; court or arbitration; venue |
 
 ---
 
-## Osakassopimukset (SHA)
+## Shareholders' agreements (SHA)
 
-Osakeyhtiölaki (624/2006) taustalla; osakassopimus sitoo osapuolia, ei
-sido yhtiötä samalla tavalla kuin yhtiöjärjestys — suhde yhtiöjärjestykseen on
-tarkistettava.
+Limited Liability Companies Act (osakeyhtiölaki 624/2006) in the background; a
+shareholders' agreement binds the parties, and does not bind the company in the
+same way as the articles of association — the relationship to the articles
+needs checking.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Omistusosuus | Osakemäärä ja prosentti |
-| Lunastuslauseke | Laukaisevat tilanteet; hinnoittelu |
-| Myötämyynti (tag) / myyntipakko (drag) | Onko; kynnys; ehdot |
-| Etuosto-oikeus | Onko; menettely |
-| Päätösvalta | Määräenemmistöä vaativat asiat |
-| Kilpailukielto | Onko; kesto |
-| Osingonjakopolitiikka | Sovittu periaate |
-| Riidanratkaisu | Yleensä välimiesmenettely; sääntö ja paikka |
+| Shareholding | Number of shares and percentage |
+| Redemption clause | The situations that trigger it; pricing |
+| Tag-along / drag-along | Whether there is one; threshold; conditions |
+| Right of first refusal | Whether there is one; procedure |
+| Decision-making powers | The matters requiring a qualified majority |
+| Non-competition | Whether there is one; duration |
+| Dividend policy | The principle agreed |
+| Dispute resolution | Usually arbitration; the rules and the venue |
 
 ---
 
-## Kiinteistö- ja asuntokaupat
+## Real property and housing transactions
 
-Kiinteistö: maakaari (540/1995). Asunto-osake: asuntokauppalaki (843/1994).
-Laatuvirhe- ja reklamaatiosäännöt poikkeavat näiden välillä — tarkista.
+Real property: Code of Real Estate (maakaari 540/1995). Shares in a housing
+company: asuntokauppalaki (843/1994). The rules on defects in quality and on
+notice of defect differ between the two — check which applies.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Kohde | Kiinteistö-/osaketunnus; pinta-ala |
-| Kauppahinta | Määrä; maksuehdot |
-| Hallinnan luovutus | Ajankohta |
-| Vastuu virheistä | Laatuvirhevastuu; vastuunrajoitukset |
-| Reklamaatioaika | Sovittu tai lakiperusteinen |
-| Rasitteet ja kiinnitykset | Luettelo; lähde (lainhuuto-/rasitustodistus) |
-| Vallintaoikeus | Rajoitukset |
-| Liitteet | Kuntotarkastus, isännöitsijäntodistus yms. |
+| Subject matter | Property or share identifier; area |
+| Purchase price | Amount; payment terms |
+| Transfer of possession | Date |
+| Liability for defects | Liability for defects in quality; limitations of liability |
+| Time limit for notice of defect | As agreed or under statute |
+| Encumbrances and mortgages | List; source (title and encumbrance certificate) |
+| Right of disposal | Restrictions |
+| Annexes | Condition survey, house manager's certificate and the like |
 
 ---
 
-## Hallintopäätökset (erä)
+## Administrative decisions (a batch)
 
-Hallintolaki (434/2003). Keskeistä: päätöksen perusteleminen (45 §) ja
-muutoksenhakuohjeen liittäminen. Näiden **puuttuminen** on itsessään löydös.
+Administrative Procedure Act (hallintolaki 434/2003). What matters: the giving
+of reasons for the decision (45 §) and the attachment of appeal instructions.
+The **absence** of either is itself a finding.
 
-| Sarake | Mitä poimitaan |
+| Column | What is extracted |
 |---|---|
-| Päätöksen tekijä | Viranomainen ja toimielin |
-| Asia | Mitä päätös koskee |
-| Ratkaisu | Lopputulos (myönnetty/hylätty/jätetty tutkimatta) |
-| Perustelut | Onko asialliset perustelut (kyllä / ei / puutteelliset) |
-| Sovelletut säännökset | Mainitut lainkohdat |
-| Muutoksenhakuohje | Onko; oikaisuvaatimus vai valitus; mihin |
-| Määräaika | Muutoksenhaun määräaika |
-| Tiedoksisaanti | Päivä ja tapa |
+| Maker of the decision | The authority and the body |
+| Matter | What the decision concerns |
+| Decision | The outcome (granted/refused/not examined) |
+| Reasons | Whether there are proper reasons (yes / no / inadequate) |
+| Provisions applied | The provisions cited |
+| Appeal instructions | Whether they are there; request for rectification or appeal; to whom |
+| Time limit | The time limit for appeal |
+| Service | Date and method |
 
 ---
 
-*Lisää tarvittaessa uusia tyyppejä samalla kaavalla: yleissarakkeet + tyypin
-omat vertailukohdat + lainkohtakiinnekohta, jonka voimassaolo tarkistetaan
-lähteestä.*
+*Add new types as needed on the same pattern: the general columns + the points
+of comparison specific to the type + a reference to a provision, whose force is
+checked in the source.*
