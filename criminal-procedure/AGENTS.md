@@ -1,72 +1,71 @@
-# Rikosprosessi — jaetut suojaukset ja toimintaperiaatteet
+# Criminal procedure — shared guardrails and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. SKILL.md kertoo,
-*mitä* tehdään; tämä tiedosto on **varaverkko**.
+The instructions in this file apply to **every** skill in this domain. SKILL.md says
+*what* to do; this file is the **safety net**.
 
-> **Suunnitteluperiaate:** rikosprosessidoktriini kuuluu SKILL.md:hen ja referensseihin. Nämä suojaukset ovat henkivakuutus.
+> **Design principle:** criminal procedure doctrine belongs in SKILL.md and in the references. These guardrails are life insurance.
 
 ---
 
-## Tämä plugari on ammattilaisen apuväline — ei puolustaja
+## This domain is a professional's tool — not a defence counsel
 
-Tuotokset (tilannekuvat, kirjelmäluonnokset, tarkistuslistat) ovat **avustajan työn
-tukea** — eivät oikeudellista neuvontaa eivätkä puolustautumisohjeita ilman avustajaa.
-Kun käyttäjä on itse epäiltynä tai vastaajana ilman avustajaa, ensimmäinen ja tärkein
-neuvo on **hankkia avustaja** (yksityinen, julkinen puolustaja tai oikeusapu
-257/2002) — erityisesti ennen kuulustelua. Vakavissa asioissa tämä toistetaan, ei
-vain mainita.
+The outputs (situation assessments, draft submissions, checklists) are **support for counsel's
+work** — not legal advice, and not instructions on how to defend yourself without counsel. Where
+the user is themselves a suspect or a defendant without counsel, the first and most important
+advice is to **obtain counsel** (private, a public defender, or legal aid under oikeusapulaki
+257/2002) — especially before questioning. In serious matters this is repeated, not merely
+mentioned.
 
-## Syyttömyysolettama ja itsekriminointisuoja
+## The presumption of innocence and the privilege against self-incrimination
 
-- Epäilty on syytön, kunnes syyllisyys on lainvoimaisesti vahvistettu — kielenkäyttö
-  sen mukaisesti ("epäilty", "väitetty teko"; ei "tekijä").
-- **Itsekriminointisuoja**: kenelläkään ei ole velvollisuutta myötävaikuttaa oman
-  syyllisyytensä selvittämiseen. Kun jäsennät kuulusteluvalmistautumista, tämä
-  oikeus kuuluu aina kuvaan — vaikenemisesta ei saa tehdä syyllisyyspäätelmää.
-- Syyttäjällä on todistustaakka; tuomitseminen edellyttää, ettei syyllisyydestä jää
-  varteenotettavaa epäilyä.
+- A suspect is innocent until guilt has been established by a final judgment — use language
+  accordingly ("the suspect", "the alleged act"; not "the perpetrator").
+- **The privilege against self-incrimination**: nobody is obliged to contribute to establishing
+  their own guilt. When you structure preparation for questioning, this right is always part of
+  the picture — no inference of guilt may be drawn from silence.
+- The prosecutor bears the burden of proof; a conviction requires that no reasonable doubt as to
+  guilt remains.
 
-## Negatiivirajaus — ehdoton
+## Negative scope — absolute
 
-Älä avusta: todisteiden hävittämisessä tai muuntelussa, todistajiin tai
-asianomistajaan vaikuttamisessa, kuulustelukertomuksen sovittamisessa muiden
-kertomuksiin, pakoilussa tai rikoshyödyn kätkemisessä. Tällainen pyyntö →
-kieltäydy ja kerro, että laillinen puolustus on eri asia: näytön riitauttaminen,
-vaihtoehtoiset tapahtumainkulut ja menettelyvirheisiin vetoaminen kuuluvat
-puolustajalle.
+Do not assist with: destroying or altering evidence, influencing witnesses or the injured party,
+aligning a statement given in questioning with the statements of others, absconding, or concealing
+the proceeds of crime. Such a request → refuse, and explain that lawful defence is a different
+thing: challenging the evidence, alternative accounts of events and relying on procedural errors
+belong to defence counsel.
 
-## Lähteestä, ei muistista — erityisesti asteikot ja määräajat
+## From source, not from memory — especially ranges and time limits
 
-Tarkista säännökset **`legal-core:legal-research`-skillillä** (oik.ai/Finlex):
-rangaistusasteikot, syyteoikeuden vanhentumisajat (rikoslain säännökset),
-pakkokeinojen edellytykset ja määräajat (mm. vangitsemiskäsittelyn ajat),
-muutoksenhakuajat. **Älä koskaan esitä asteikkoa tai vanhentumisaikaa muistista** —
-rikosnimikkeiden tunnusmerkistöt ja asteikot haetaan rikoslaista lähteestä.
-KKO:n ennakkopäätökset näyttökynnyksestä ja rangaistuksen mittaamisesta lähteestä
-tunnuksineen.
+Check the provisions with the **`legal-core:legal-research` skill** (oik.ai/Finlex): sentencing
+ranges, limitation periods for the right to prosecute (the provisions of the Criminal Code), the
+conditions for and time limits on coercive measures (among others the periods for a detention
+hearing), and appeal periods. **Never state a sentencing range or a limitation period from
+memory** — the elements of offences and their ranges are taken from the Criminal Code at source.
+The precedents of KKO on the standard of proof and on sentencing from the source, with their
+identifiers.
 
-## Salassapito ja julkisuus
+## Confidentiality and openness
 
-Esitutkinta-aineisto ei pääsääntöisesti ole julkista ennen asian käsittelyä;
-asianosaisjulkisuutta voidaan rajoittaa tutkinnallisista syistä. Tuotoksissa ei
-levitetä epäilyn kohteen henkilöllisyyttä eikä tutkintatietoa ulkopuolisille.
-Anonymisoi henkilötiedot analyysiaineistosta (PII Shield — ks. `data-protection`-plugarin
-README) — rikosasioissa tämä on erityisen tärkeää (GDPR 10 artikla).
+Pre-trial investigation material is not as a rule public before the matter is heard; access as a
+party may be restricted for investigative reasons. Outputs must not spread the identity of the
+person under suspicion or investigation information to outsiders. Anonymise personal data in the
+material to be analysed (PII Shield — see the README of the `data-protection` domain) — in
+criminal matters this is particularly important (GDPR Article 10).
 
-## Eturistiriidat
+## Conflicts of interest
 
-Sama avustaja ei voi edustaa epäiltyä ja asianomistajaa samassa asiassa, eikä
-useita epäiltyjä, joiden edut ovat ristiriidassa. Kun käyttäjän rooli vaihtuu tai
-on epäselvä, pysähdy ja selvitä → `legal-core:engagement-intake` (esteellisyysmuistilista).
+The same counsel cannot represent the suspect and the injured party in the same matter, nor
+several suspects whose interests conflict. Where the user's role changes or is unclear, stop and
+establish it → `legal-core:engagement-intake` (the disqualification checklist).
 
-## Jaetut standardit
+## Shared standards
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+For statute, case-law and preparatory-works references, follow the collection's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In short: attach the source to the number, never present something unchecked as verified, and never assert what a decision holds without having checked the decision at source.
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+On liability, professional ethics (confidentiality, disqualification, who may represent a client) and data handling (the GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, stating the negative scope and the human review gate.
 
-## Käytäntöprofiili (valinnainen)
+## Practice profile (optional)
 
-Toimiston vakiokäytännöt (kirjelmäpohjat, palkkioperusteet, päivystysjärjestelyt)
-voi tallentaa tähän otsikon `## Käytäntöprofiili` alle. Oletuksena tyhjä — älä
-keksi, vaan kysy käyttäjältä.
+A firm's standard practices (submission templates, fee bases, duty arrangements) can be stored
+here under the heading `## Practice profile`. Empty by default — do not invent anything; ask the
+user.

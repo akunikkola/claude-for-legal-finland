@@ -1,88 +1,87 @@
-# Rikosprosessin perusteet
+# Fundamentals of criminal procedure
 
-**Vahvistettu lähteestä (Finlex, 2026-06):** alla mainitut säädösnumerot on
-tarkistettu Finlexistä, samoin ROL:n 5 b luvun (tuomioesitys) olemassaolo.
-Tunnusmerkistöt, rangaistusasteikot, vanhentumisajat ja pakkokeinojen
-edellytykset tarkistetaan aina käyttöhetkellä
-`legal-core:legal-research`-skillillä — ei tästä tiedostosta eikä muistista.
+**Verified at source (Finlex, 2026-06):** the statute numbers given below have been
+checked in Finlex, as has the existence of chapter 5 b of ROL (the judgment proposal).
+The elements of offences, the sentencing ranges, the limitation periods and the
+conditions for coercive measures are always checked at the time of use with the
+`legal-core:legal-research` skill — not from this file and not from memory.
 
-## Keskeiset säädökset
+## The key statutes
 
-- **Rikoslaki (39/1889, "RL")** — rikosnimikkeet ja tunnusmerkistöt,
-  rangaistuksen määräämisen yleiset säännökset, vanhentuminen.
-- **Esitutkintalaki (805/2011, "ETL")** — esitutkinnan toimittaminen,
-  asianosaisten asema ja oikeudet, kuulustelut, loppulausunto.
-- **Pakkokeinolaki (806/2011, "PKL")** — kiinniottaminen, pidättäminen,
-  vangitseminen, matkustuskielto, etsinnät, takavarikko,
-  salaiset pakkokeinot.
-- **Laki oikeudenkäynnistä rikosasioissa (689/1997, "ROL")** —
-  syyteoikeus, haastehakemus, vastaus, pääkäsittely, tuomioesitys
-  (5 b luku), asianomistajan vaatimukset.
-- **Oikeudenkäymiskaari (4/1734, "OK")** — todistelu (17 luku) ja
-  yleiset prosessisäännöt soveltuvin osin.
-- **Oikeusapulaki (257/2002)** — julkinen oikeusapu; ROL:n säännökset
-  puolustajan ja asianomistajan avustajan määräämisestä.
-- **Vahingonkorvauslaki (412/1974)** ja **rikosvahinkolaki (1204/2005)**
-  — vahingonkorvaus ja valtion korvaus rikoksen uhrille.
-- **Laki lähestymiskiellosta (898/1998)**.
+- **Criminal Code (rikoslaki 39/1889, "RL")** — the offences and their elements, the
+  general provisions on sentencing, limitation.
+- **Pre-Trial Investigation Act (esitutkintalaki 805/2011, "ETL")** — the conduct of the
+  investigation, the position and rights of the parties, questioning, the closing statement.
+- **Coercive Measures Act (pakkokeinolaki 806/2011, "PKL")** — apprehension, arrest,
+  detention, travel ban, searches, seizure,
+  covert coercive measures.
+- **Criminal Procedure Act (laki oikeudenkäynnistä rikosasioissa 689/1997, "ROL")** —
+  the right to prosecute, the application for a summons, the response, the main hearing,
+  the judgment proposal (chapter 5 b), the injured party's claims.
+- **Code of Judicial Procedure (oikeudenkäymiskaari 4/1734, "OK")** — evidence
+  (chapter 17) and the general rules of procedure as applicable.
+- **Legal Aid Act (oikeusapulaki 257/2002)** — public legal aid; the provisions of ROL on
+  appointing a defender and counsel for the injured party.
+- **Tort Liability Act (vahingonkorvauslaki 412/1974)** and **Criminal Injuries Act
+  (rikosvahinkolaki 1204/2005)** — damages and state compensation for the victim of an offence.
+- **Restraining Order Act (laki lähestymiskiellosta 898/1998)**.
 
-## Prosessin kaari
+## The arc of the process
 
 ```
-Rikosilmoitus → esitutkinta (poliisi; tutkinnanjohtaja) → loppulausunnot
-  → syyteharkinta (syyttäjä) → syyte / syyttämättäjättäminen /
-  rajoittaminen → (tuomioesitys 5 b luku) → käräjäoikeuden pääkäsittely
-  (tai kirjallinen menettely) → tuomio → hovioikeus
-  (jatkokäsittelylupa osassa asioita) → KKO (valituslupa)
+Report of an offence → pre-trial investigation (police; head of investigation) → closing
+  statements → consideration of charges (prosecutor) → charge / non-prosecution /
+  restriction → (judgment proposal, chapter 5 b) → main hearing in the district court
+  (or written procedure) → judgment → court of appeal
+  (leave for continued consideration in some matters) → KKO (leave to appeal)
 ```
 
-Sakkomenettely (summaarinen) kulkee omaa polkuaan vähäisissä asioissa.
+The summary penal order procedure follows its own path in minor matters.
 
-## Roolit
+## The roles
 
-- **Tutkinnanjohtaja** (poliisi; eräissä asioissa syyttäjä) johtaa
-  esitutkintaa; **syyttäjällä** on syyteharkinta ja syytteen ajaminen.
-- **Epäilty / vastaaja** — oikeus avustajaan kaikissa vaiheissa,
-  itsekriminointisuoja, oikeus saada tieto epäilystä.
-- **Asianomistaja** — rikoksen uhri: oikeus avustajaan ja tukihenkilöön
-  (edellytykset lähteestä), yksityisoikeudelliset vaatimukset,
-  toissijainen syyteoikeus.
-- **Puolustaja / oikeudenkäyntiavustaja** — kelpoisuus ja määrääminen
-  ROL:n ja oikeusapulain mukaan.
+- **The head of investigation** (police; in certain matters the prosecutor) directs the
+  investigation; **the prosecutor** has the consideration of charges and the conduct of
+  the prosecution.
+- **The suspect / defendant** — the right to counsel at every stage, the privilege
+  against self-incrimination, the right to be told of the suspicion.
+- **The injured party** — the victim of the offence: the right to counsel and to a
+  support person (the conditions from the source), civil claims, the secondary right to
+  prosecute.
+- **Defence counsel / counsel in the proceedings** — eligibility and appointment under
+  ROL and the Legal Aid Act.
 
-## Prosessiperiaatteet
+## The principles of the process
 
-- **Syyttömyysolettama** ja **itsekriminointisuoja** (ks. AGENTS.md).
-- **In dubio pro reo** — epäselvässä näyttötilanteessa vastaajan eduksi;
-  tuomitseminen edellyttää, ettei varteenotettavaa epäilyä jää.
-- **Syytesidonnaisuus** — tuomioistuin saa tuomita vain syytteessä
-  kuvatusta teosta.
-- **Esitutkinnan tasapuolisuus** — myös epäillyn puolesta puhuvat seikat
-  on selvitettävä; epäillyllä oikeus pyytää tutkintatoimia.
-- **Suhteellisuus ja vähimmän haitan periaate** pakkokeinoissa.
+- **The presumption of innocence** and the **privilege against self-incrimination** (see AGENTS.md).
+- **In dubio pro reo** — where the evidence is unclear, in the defendant's favour; a
+  conviction requires that no reasonable doubt remains.
+- **Being bound by the charge** — the court may convict only of the act described in the charge.
+- **Impartiality of the investigation** — the facts speaking for the suspect must also be
+  established; the suspect has the right to request investigative measures.
+- **Proportionality and the principle of least harm** in coercive measures.
 
-## Pakkokeinojen kartta
+## The map of coercive measures
 
-| Pakkokeino | Päättäjä | Huomio |
+| Coercive measure | Who decides | Note |
 |---|---|---|
-| Kiinniottaminen | poliisi | lyhytaikainen; ajat lähteestä |
-| Pidättäminen | pidättämiseen oikeutettu virkamies | edellytykset ja ajat lähteestä |
-| Vangitseminen | tuomioistuin | vaatimuksen käsittelyajat ja uudelleenkäsittely lähteestä |
-| Matkustuskielto, tehostettu matkustuskielto | vaihtelee | vangitsemisen vaihtoehto |
-| Yleinen/erityinen kotietsintä, paikanetsintä | vaihtelee; kotirauhan ydinalue korostetusti suojattu | etsintävaltuutettu eräissä tilanteissa |
-| Takavarikko ja jäljentäminen | vaihtelee | hyödynnettävyys ja salassapito erikseen |
-| Salaiset pakkokeinot (telekuuntelu ym.) | pääosin tuomioistuin | edellytykset tiukkoja; ilmoitusvelvollisuudet lähteestä |
+| Apprehension | the police | short-term; the periods from the source |
+| Arrest | an official entitled to arrest | the conditions and periods from the source |
+| Detention | the court | the periods for hearing the application and for a re-hearing from the source |
+| Travel ban, enhanced travel ban | varies | an alternative to detention |
+| General or special house search, search of premises | varies; the core of domestic peace is particularly protected | a search representative in certain situations |
+| Seizure and copying | varies | admissibility and confidentiality are separate questions |
+| Covert coercive measures (telecommunications interception and others) | mainly the court | the conditions are strict; the duties to notify from the source |
 
-Pakkokeinoja koskevat päätökset ja niiden lainmukaisuus voidaan saattaa
-tuomioistuimen arvioitavaksi — keinot (mm. vangitsemisasian
-uudelleenkäsittely, etsinnän saattaminen tuomioistuimen tutkittavaksi)
-lähteestä.
+Decisions on coercive measures and their lawfulness can be brought before a court for
+assessment — the remedies (among others the re-hearing of a detention matter, bringing a
+search before a court) from the source.
 
-## Tyypilliset riskipisteet
+## Typical points of risk
 
-- Kuulusteluun meno ilman avustajaa ja ilman valmistautumista.
-- Loppulausunnon ohittaminen — se on tehokas vaikutuspaikka ennen
-  syyteharkintaa.
-- Asianomistajan korvausvaatimusten esittämättä jättäminen ajoissa.
-- Muistinvaraiset asteikot, vanhentumisajat tai määräajat.
-- Tutkintatiedon vuotaminen ulkopuolisille.
+- Going to questioning without counsel and without preparation.
+- Passing over the closing statement — it is an effective place to have an effect before
+  the consideration of charges.
+- Failing to put forward the injured party's claims for compensation in time.
+- Sentencing ranges, limitation periods or time limits taken from memory.
+- Leaking investigation information to outsiders.
