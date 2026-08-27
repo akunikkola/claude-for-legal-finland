@@ -1,68 +1,68 @@
-# Lainvalmistelu — jaetut suojaukset ja toimintaperiaatteet
+# Legislative drafting — shared safeguards and operating principles
 
-Tämän tiedoston ohjeet koskevat **jokaista** tämän plugarin skilliä. Yksittäinen skill (`skills/<nimi>/SKILL.md`) kertoo, *mitä* tehdään; tämä tiedosto on **varaverkko**, joka estää tyypilliset virheet riippumatta siitä, mikä skill on käynnissä.
+The instructions in this file apply to **every** skill in this domain. An individual skill (`skills/<name>/SKILL.md`) says *what* to do; this file is the **safety net** that prevents the typical mistakes regardless of which skill is running.
 
-> **Suunnitteluperiaate:** oikea toiminta kuuluu SKILL.md:hen, ei tänne. Jos skillin oikea lopputulos riippuu siitä, että jokin tämän tiedoston suojaus pelastaa virheen, vie tieto SKILL.md:hen. Nämä suojaukset ovat henkivakuutus, eivät ensisijainen mekanismi.
-
----
-
-## Mitä tämä plugari tekee — ja mitä ei
-
-Tämä plugari auttaa **säädösvalmistelussa**: säädöstekstin ja hallituksen esityksen laatimisessa, rakenteessa, lakikielessä ja valmisteluprosessin hahmottamisessa. Ohjeet perustuvat virallisiin lähteisiin (Lainkirjoittajan opas, Hallituksen esitysten laatimisohjeet HELO, Lainvalmistelun prosessiopas).
-
-**Ei korvaa virallista valmistelua.** Tuotokset ovat valmistelevia luonnoksia, jotka valmistelusta vastaava virkamies ja ministeriö tarkistavat ja joista he vastaavat. Älä esitä luonnosta valmiina säädöksenä tai virallisena kantana.
+> **Design principle:** correct behaviour belongs in SKILL.md, not here. If a skill's correct outcome depends on a safeguard in this file rescuing an error, move the knowledge into SKILL.md. These safeguards are life insurance, not the primary mechanism.
 
 ---
 
-## Ajantasaisuuden pakko — tarkista muutettava laki lähteestä
+## What this domain does — and what it does not
 
-Säädösmuutosta laadittaessa on tunnettava **voimassa oleva** sanamuoto täsmälleen. Mallin muisti vanhenee ja sekoittaa pykäliä.
+This domain assists with **legislative drafting**: writing statutory text and a government bill (hallituksen esitys), its structure, legal language, and mapping out the preparation process. The instructions are based on official sources (Lainkirjoittajan opas, the government bill drafting instructions HELO, and Lainvalmistelun prosessiopas).
 
-- Kun käytettävissä on **oik.ai- tai Finlex-MCP**, hae muutettavan lain voimassa oleva teksti sieltä ennen muutosehdotuksen laatimista. Tarkista pykälän, momentin ja kohdan tarkka sanamuoto ja numerointi.
-- Selvitä **seurannaismuutokset**: mihin muihin säännöksiin muutos vaikuttaa (viittaukset, määritelmät). Hae ne lähteestä.
-- Tarkista, onko lakiin jo tehty muutoksia, jotka vaikuttavat numerointiin tai sisältöön (esim. lisätyt a-pykälät).
-- Jos lähdettä ei voi tarkistaa, merkitse muutettava sanamuoto `[muistinvarainen — tarkista Finlexistä]` äläkä esitä sitä varmistettuna.
+**Does not replace official preparation.** The outputs are preparatory drafts that the official responsible for the preparation and the ministry check and are answerable for. Do not present a draft as a finished statute or as an official position.
 
 ---
 
-## Lähdemerkintä ja viittausten täsmällisyys
+## The currency requirement — check the statute being amended against the source
 
-- Liitä provenienssimerkintä jokaiseen säädösviittaukseen: `(kuntalaki 410/2015, 7 §, Finlex)`.
-- Erota selvästi **virallisen ohjeen sääntö** (Lainkirjoittajan opas / HELO) ja **oma sovellus tai ehdotus**.
-- Älä keksi säädösnumeroita, pykälänumeroita tai HE-numeroita. Jos et tiedä etkä voi tarkistaa, sano se.
+When drafting an amendment to a statute you must know the **wording in force** exactly. The model's memory goes stale and confuses sections.
 
----
-
-## Lakikieli ja säädöskielen vaatimukset
-
-Säädöskieli on tarkkaa ja yhdenmukaista. Noudata Lainkirjoittajan oppaan ja lakikielen ohjeita (skillit `legislative-drafting-manual`, `legal-language-guide`):
-
-- Yleiskielisyys, tarkkuus, yhdenmukaisuus, selkeys.
-- Samasta asiasta aina sama termi — ei synonyymeja.
-- §-merkki ja numero aina yhdessä; taivutus kaksoispisteellä (§:n, §:ssä).
-- Numerot, prosentit, rahayksiköt ja mittayksiköt säädöskielen ohjeen mukaan.
-- Virkettä ei aloiteta numerolla.
-
-Tarkemmat säännöt: kyseisten skillien `references/`-tiedostot.
+- When the **oik.ai or Finlex MCP** is available, retrieve the text in force of the statute being amended from there before drafting the amendment. Check the exact wording and numbering of the section, subsection and paragraph.
+- Establish the **consequential amendments**: which other provisions the change affects (cross-references, definitions). Retrieve them from the source.
+- Check whether the statute has already been amended in ways that affect numbering or content (for example inserted a-sections).
+- If the source cannot be checked, mark the wording being amended `[from memory — verify in Finlex]` and do not present it as verified.
 
 ---
 
-## Vaikutusten arviointi ja perustelut
+## Source attribution and precision of references
 
-Hallituksen esityksessä perustelut ja vaikutusten arviointi ovat olennaisia (HELO). Kun laadit perusteluja:
-
-- Erota **kuvaus voimassa olevasta oikeudesta**, **ehdotettu muutos** ja **muutoksen perustelu**.
-- Älä esitä arvioituja vaikutuksia (taloudelliset, viranomais-, ympäristö-, yhdenvertaisuus- ym.) varmistettuina lukuina, jos ne ovat arvioita — merkitse `[arvio — varmistettava]`.
-- Nosta esiin perustuslailliset ja EU-oikeudelliset kytkennät, jos ne ovat relevantteja, äläkä käsittele asiaa pelkästään kansallisena, kun EU-tausta vaikuttaa.
+- Attach a provenance note to every statutory reference: `(kuntalaki 410/2015, 7 §, Finlex)`.
+- Draw a clear distinction between a **rule from the official guidance** (Lainkirjoittajan opas / HELO) and **your own application or proposal**.
+- Do not invent statute numbers, section numbers or HE numbers. If you do not know and cannot check, say so.
 
 ---
 
-## Jaetut standardit
+## Legal language and the requirements of statutory language
 
-Säädös-, oikeuskäytäntö- ja esityöviittauksissa noudata markkinapaikan jaettua lähdestandardia [`references/citation-style.md`](../references/citation-style.md): kolmiportainen varmuusmerkintä (Varmistettu / Tarkistettava / Älä käytä), lähdehierarkia ja ratkaisutunnusten oikeat muodot. Lyhyesti: kiinnitä lähde numeroon, älä esitä tarkistamatonta varmistettuna, äläkä koskaan väitä ratkaisun sisältöä ilman että olet tarkistanut ratkaisun lähteestä.
+Statutory language is precise and consistent. Follow Lainkirjoittajan opas and the legal-language instructions (skills `legislative-drafting-manual` and `legal-language-guide`):
 
-Vastuusta, ammattietiikasta (salassapito, esteellisyys, kuka saa edustaa) ja tietojenkäsittelystä (GDPR 28 art käsittelysopimus, anonymisointi ennen analyysiä): [`references/liability-and-security.md`](../references/liability-and-security.md). **Pelkkä disclaimer ei ole suoja** — suojan tuottavat lähteen varmistus, varmuusmerkintä, premissien tarkistus, negatiivirajaus ja ihmisen tarkistusportti.
+- Standard language, precision, consistency, clarity.
+- Always the same term for the same thing — no synonyms.
+- The § symbol and the number always together; inflected with a colon (§:n, §:ssä).
+- Numbers, percentages, monetary units and units of measurement per the statutory-language guidance.
+- A sentence never begins with a numeral.
 
-## Käytäntöprofiili (valinnainen)
+More detailed rules: the `references/` files of those skills.
 
-Jos valmistelevalla taholla (ministeriö, virasto) on omia vakiokäytäntöjä tai mallipohjia, ne voidaan tallentaa tähän tiedostoon otsikon `## Käytäntöprofiili` alle, ja skillit lukevat ne. Oletuksena tämä on tyhjä — älä keksi käytäntöjä, vaan kysy käyttäjältä, kun sellaista tarvitaan.
+---
+
+## Impact assessment and reasoning
+
+In a government bill the reasoning and the impact assessment are essential (HELO). When you draft the reasoning:
+
+- Separate the **description of the law in force**, the **proposed change** and the **justification for the change**.
+- Do not present estimated impacts (economic, administrative, environmental, equality and so on) as verified figures when they are estimates — mark them `[estimate — must be confirmed]`.
+- Bring out the constitutional and EU-law connections where they are relevant, and do not treat the matter as purely national when an EU background bears on it.
+
+---
+
+## Shared standards
+
+For statutory, case-law and preparatory-works references, follow the marketplace's shared source standard [`references/citation-style.md`](../references/citation-style.md): three-tier certainty marking (Verified / Needs checking / Do not use), the source hierarchy and the correct forms of case identifiers. In brief: attach the source to the number, never present something unchecked as verified, and never assert the content of a decision without having checked the decision against the source.
+
+On liability, professional ethics (confidentiality, disqualification, who may represent) and data handling (GDPR Article 28 processing agreement, anonymisation before analysis): [`references/liability-and-security.md`](../references/liability-and-security.md). **A disclaimer alone is not protection** — protection comes from source verification, certainty marking, checking the premises, stating the negative scope and the human review gate.
+
+## Practice profile (optional)
+
+If the preparing body (a ministry or an agency) has its own standard practices or templates, they can be recorded in this file under the heading `## Practice profile`, and the skills will read them. By default this is empty — do not invent practices; ask the user when one is needed.

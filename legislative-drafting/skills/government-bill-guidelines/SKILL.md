@@ -1,11 +1,11 @@
 ---
 name: government-bill-guidelines
-description: Hallituksen esitysten laatimisohjeet (HELO) - Opas hallituksen esitysten kirjoittamiseen. Sisältää ohjeet perusrakenteen, EU-taustaisten, valtiosopimustaustaisten ja muiden hallituksen esitysten laatimiseen.
+description: Guidance for writing a Finnish government bill (hallituksen esitys) under the official drafting instructions HELO. Covers the standard reasoning structure from background and preparation through current state and objectives and proposals and their impacts to consultation feedback and section-by-section reasoning and entry into force and the relationship to perustuslaki 731/1999, plus the model structures for EU-derived and treaty-derived and multi-source and supplementary bills, the ponsi, the parallel text (rinnakkaisteksti) and draft decrees. Use when drafting or reviewing an HE for Eduskunta. The bill submitted to Eduskunta must be in Finnish or Swedish.
 ---
 
-# Hallituksen esitysten laatimisohjeet (HELO)
+# Hallituksen esitysten laatimisohjeet (HELO) — government bill drafting instructions
 
-**Opas hyvien esitysten kirjoittamiseen**
+**A guide to writing good government bills**
 
 ## Output language
 
@@ -17,28 +17,28 @@ state plainly that the English text is a working translation only.
 Keep the Finnish term alongside the English one for legally operative concepts on first use, for
 example `notice period (irtisanomisaika)`.
 
-## Yleiskatsaus
+## Overview
 
-Hallituksen esitysten laatimisohjeet (HELO) on oikeusministeriön julkaisema kattava opas hallituksen esitysten kirjoittamiseen. Opas on tarkoitettu kaikille hallituksen esitysten valmistelusta vastaaville viranomaisille ja niiden avustajille.
+Hallituksen esitysten laatimisohjeet (HELO) is a comprehensive guide to writing government bills, published by the Ministry of Justice. It is intended for every authority responsible for preparing government bills and for those assisting them.
 
-## Hallituksen esityksen määritelmä
+## What a government bill is
 
-Hallituksen esitys on asiakirja, jossa esitetään lainvalmistelutyön tulokset ja johtopäätökset. Se kirjoitetaan hyvällä yleiskielellä ja sisältää vain päätöksentekoon tarvittavat tiedot.
+A government bill (hallituksen esitys) is a document setting out the results and conclusions of the legislative preparation work. It is written in good standard language and contains only the information needed for the decision.
 
-### Hallituksen esityksen keskeisiä ominaisuuksia
+### Key characteristics of a government bill
 
-- **Asiakirja**: Hallituksen esitys on virallinen asiakirja, joka esitetään eduskunnalle
-- **Lainvalmistelun tulos**: Se sisältää lainvalmisteluprosessin tulokset ja päätelmät
-- **Selkeä kieli**: Kirjoitetaan ymmärrettävää yleiskieltä käyttäen
-- **Välttämätön tieto**: Sisältää vain päätöksentekoon välttämättömät tiedot
-- **Perusteltu**: Jokainen ehdotus perustellaan asianmukaisesti
-- **Strukturoitu**: Noudattaa hyväksi todettua rakennetta
+- **A document**: a government bill is an official document submitted to Eduskunta
+- **The result of legislative preparation**: it contains the results and conclusions of the preparation process
+- **Clear language**: written in intelligible standard language
+- **Necessary information**: contains only the information essential for the decision
+- **Reasoned**: every proposal is properly justified
+- **Structured**: follows a proven structure
 
-## Hallituksen esityksen rakenne
+## The structure of a government bill
 
-Hallituksen esitys koostuu seuraavista pääosista:
+A government bill consists of the following main parts:
 
-### Esityksen pääasiallinen sisältö
+### The main content of the bill
 
 ```
 SISÄLLYS
@@ -63,182 +63,182 @@ SISÄLLYS
 └─ Muut liitteet
 ```
 
-## Hallituksen esityksen nimen muodostaminen
+## Forming the title of a government bill
 
-Hallituksen esitykselle annetaan nimi, joka ilmaisee pääosin kahta tai useampaa lakikokonaisuutta:
+A government bill is given a title that expresses, in the main, two or more legislative wholes:
 
-**Esimerkkejä:**
+**Examples (Finnish model titles, reproduced as in the source):**
 - "Hallituksen esitys eduskunnalle laaiksi valtion rahoituksesta elokulletutuusuille edistämiseen"
 - "Hallituksen esitys eduskunnalle laaiksi riskosain, pakkokeiolain 10 luvun ja poliisain 5 luvun muuttamisesta"
 
-## Perusperiaatteet hallituksen esitystä kirjoittaessa
+## Basic principles for writing a government bill
 
-### Kieli ja tyyli
+### Language and style
 
-- Käytä selkeää ja ymmärrettävää yleiskieltä
-- Vältä turhaa juridista termistöä
-- Pyri lyhyisiin, selkeihin lauseisiin
-- Älä käytä tarpeetonta tekniikkaa tai toistuvia rakenteita
+- Use clear and intelligible standard language
+- Avoid unnecessary legal terminology
+- Aim for short, clear sentences
+- Do not use unnecessary technical detail or repetitive structures
 
-### Sisällön valinta
+### Choosing the content
 
-- Sisällytä vain päätöksentekoon välttämättömät tiedot
-- Poista turha informaatio
-- Kohdista sisältö hallitukselle ja eduskunnalle
-- Käytä selkeitä esimerkkejä
+- Include only the information essential for the decision
+- Remove superfluous information
+- Address the content to the Government and to Eduskunta
+- Use clear examples
 
-### Perustelut
+### Reasoning
 
-- Jokainen ehdotus perustetaan asiaankuuluville perusteille
-- Perustelut peräytyvät yhdessä ehdotuksen kanssa
-- Käytä empiiristä näyttöä, jos saatavilla
-- Viittaa relevantilla kansainväliseen lainsäädäntöön
+- Every proposal is grounded on the relevant justification
+- The reasoning follows the proposal
+- Use empirical evidence where it is available
+- Refer to relevant international legislation
 
-## Hallituksen esitystyypit ja niiden rakenteet
+## Types of government bill and their structures
 
-Hallituksen esityksillä voi olla erilaisia rakenteita riippuen niiden pohjasta:
+Government bills may have different structures depending on what they are based on:
 
-### 1. Perusrakenteinen esitys
-Yksinkertainen rakenne, jota käytetään useimmissa tapauksissa.
+### 1. A bill with the basic structure
+The simple structure used in most cases.
 
-**Katso:** `references/basic-structure.md`
+**See:** `references/basic-structure.md`
 
-### 2. EU-taustainen esitys
-Käytetään, kun hallituksen esitys pohjautuu EU-direktiiviin tai -asetukseen.
+### 2. An EU-derived bill
+Used when the government bill is based on an EU directive or regulation.
 
-**Katso:** `references/eu-derived.md`
+**See:** `references/eu-derived.md`
 
-### 3. Valtiosopimustaustainen esitys
-Käytetään, kun hallituksen esitys pohjautuu kansainväliseen sopimukseen tai muuhun valtiosopimukseen.
+### 3. A treaty-derived bill
+Used when the government bill is based on an international agreement or another treaty.
 
-**Katso:** `references/treaty-derived.md`
+**See:** `references/treaty-derived.md`
 
-### 4. Monitaustainen esitys
-Käytetään, kun hallituksen esityksellä on useita pohjia.
+### 4. A multi-source bill
+Used when a government bill has several bases.
 
-### 5. Täydentävä esitys
-Käytetään, kun esitys täydentää aiemmin käsiteltyä asiaa.
+### 5. A supplementary bill
+Used when the bill supplements a matter already under consideration.
 
-**Katso:** `references/supplementary-bill.md`
+**See:** `references/supplementary-bill.md`
 
-## Mallirakenteet
+## Model structures
 
-Hallituksen esityksen rakenteiden yleiskatsaus ja valinnan perusteet löytyvät tästä dokumentista:
+An overview of the structures of a government bill and the grounds for choosing between them is in this document:
 
-**Katso:** `references/model-structures.md`
+**See:** `references/model-structures.md`
 
-## Hakemistot ja viitemateriaali
+## Indexes and reference material
 
-### Perusrakenne
-Yksityiskohtainen opas perusrakenteisen hallituksen esityksen laaditaan varten, sisältäen kaikkien osioiden selitykset ja ohjeet:
+### The basic structure
+A detailed guide to drawing up a government bill with the basic structure, containing the explanation of and instructions for every part:
 
-- 1 Asian tausta ja valmistelu
-- 2 Nykytila ja sen arviointi
-- 3 Tavoitteet
-- 4 Ehdotukset ja niiden vaikutukset
-- 5 Muut toteuttamisvaihtoehdot
-- 6 Lausuntopalaute
-- 7 Säännöskohtaiset perustelut
-- 8 Lakia alemman asteinen sääntely
-- 9 Voimaantulo
-- 10 Toimeenpano ja seuranta
-- 11 Suhde muihin esityksiin
-- 12 Suhde perustuslakiin ja säätämisjärjestys
+- 1 Asian tausta ja valmistelu — background and preparation
+- 2 Nykytila ja sen arviointi — the current state and its assessment
+- 3 Tavoitteet — objectives
+- 4 Ehdotukset ja niiden vaikutukset — the proposals and their impacts
+- 5 Muut toteuttamisvaihtoehdot — other implementation options
+- 6 Lausuntopalaute — consultation feedback
+- 7 Säännöskohtaiset perustelut — section-by-section reasoning
+- 8 Lakia alemman asteinen sääntely — regulation below the level of an act
+- 9 Voimaantulo — entry into force
+- 10 Toimeenpano ja seuranta — implementation and monitoring
+- 11 Suhde muihin esityksiin — the relationship to other bills
+- 12 Suhde perustuslakiin ja säätämisjärjestys — the relationship to the Constitution and the legislative procedure
 
-**Katso:** `references/basic-structure.md`
+**See:** `references/basic-structure.md`
 
-### EU-taustainen hallituksen esitys
+### An EU-derived government bill
 
-Kun hallituksen esitys pohjautuu EU-säädökseen (direktiivi tai asetus), käytetään muunnettua rakennetta, joka sisältää erityisiä osioita EU-kontekstista:
+When a government bill is based on an EU instrument (a directive or a regulation), a modified structure is used that includes particular parts on the EU context:
 
-- EU-säädöksen valmistelu
-- Hallituksen esityksen valmistelu
-- EU-säädöksen tavoitteet ja pääasiallinen sisältö
-- Ehdotukset ja niiden vaikutukset EU-kontekstissa
+- The preparation of the EU instrument
+- The preparation of the government bill
+- The objectives and main content of the EU instrument
+- The proposals and their impacts in the EU context
 
-**Katso:** `references/eu-derived.md`
+**See:** `references/eu-derived.md`
 
-### Valtiosopimustaustainen hallituksen esitys
+### A treaty-derived government bill
 
-Kun hallituksen esitys pohjautuu valtiosopimukseen tai muuhun kansainväliseen sopimukseen, käytetään erityistä rakennetta:
+When a government bill is based on a treaty or another international agreement, a particular structure is used:
 
-- Sopimuksen valmistelu
-- Sopimuksen hyväksymisprosessi
-- Sopimuksen ratifiointi ja voimaantulo
+- The preparation of the agreement
+- The process for approving the agreement
+- Ratification and entry into force of the agreement
 
-**Katso:** `references/treaty-derived.md`
+**See:** `references/treaty-derived.md`
 
-## Tärkeät ohjeet
+## Important guidance
 
-### Lisätiedot lainvalmisteluista
+### Further information on legislative preparation
 
-Lisätietoa lainvalmisteluun liittyvistä ohjeista ja prosesseista saa:
+Further information on the instructions and processes relating to legislative preparation is available at:
 
 - **Lainvalmistelun oppaat**: http://lainvalmistelu.finlex.fi/
 - **Säädösvalmistelun kuulemisohjeet**: http://kuulemisohjeet.finlex.fi/
-- **Lainkirjoittaja opas**: http://lainkirjoittaja.finlex.fi/
+- **Lainkirjoittajan opas**: http://lainkirjoittaja.finlex.fi/
 
-### Rinnakkaisteksti
+### The parallel text (rinnakkaisteksti)
 
-Rinnakkaisteksti näyttää vanhan ja uuden sääntelyn rinnakkain. Se auttaa hahmottamaan tekemät muutokset.
+The parallel text shows the old and the new regulation side by side. It helps the reader see the changes made.
 
-### Asetusluonnokset
+### Draft decrees
 
-Jos hallituksen esityksessä ehdotetaan asetuksen antamista, esitykseen liitetään asetusluonnos.
+If the government bill proposes that a decree be issued, a draft decree is attached to the bill.
 
-### Muut liitteet
+### Other annexes
 
-Hallituksen esitykseen voidaan liittää muita tarpeellisia dokumentteja, kuten:
-- Vaikutusarviot
-- Lausuntokooste
-- Kansainvälisen lainsäädännön vertailut
-- Taloudellisia analyysejä
+Other necessary documents may be attached to a government bill, such as:
+- Impact assessments
+- A summary of the consultation statements
+- Comparisons with international legislation
+- Economic analyses
 
-## Käytännön vinkkejä
+## Practical tips
 
-### Kirjoittaminen selkeästi
+### Writing clearly
 
-- Aloita konkreettisesta asiasta ja etene yleisempiin seikkoihin
-- Käytä aktiivista puhemuotoa, kun se on mahdollista
-- Jaa pitkät kappaleet pienempiin kokonaisuuksiin
-- Käytä väliotsikoita selkeyden parantamiseksi
+- Start from the concrete and move to the more general
+- Use the active voice where possible
+- Break long paragraphs into smaller units
+- Use subheadings to improve clarity
 
-### Perustelujen kirjoittaminen
+### Writing the reasoning
 
-- Perustelut on kirjoitettava siten, että ne ovat helposti ymmärrettäviä
-- Vältä liian teknisiä termejä
-- Käytä konkreettisia esimerkkejä
-- Viittaa relevanttiin oikeuskäytäntöön ja tutkimukseen, kun se on perusteltua
+- The reasoning must be written so that it is easy to understand
+- Avoid overly technical terms
+- Use concrete examples
+- Refer to relevant case law and research where it is warranted
 
-### Lausuntopalaute
+### Consultation feedback
 
-- Yhteenveti lausunnoista ja vastaukset niihin kuuluvat hallituksen esitykseen
-- Kirjoita konstruktiivinen ja objektiivinen vastaus
-- Kiinnitä huomiota merkittäviin huomautuksiin ja teräviin kritiikkeihin
+- A summary of the consultation statements and the responses to them belong in the government bill
+- Write a constructive and objective response
+- Pay attention to significant observations and to sharp criticism
 
-## Viitemateriaalit
+## Reference material
 
-- Hallituksen esitysten laatimisohjeet (HELO) - Oikeusministeriö
-- Lainvalmistelun oppaat - Finlex
-- Lainkirjoittaja - Finlex
+- Hallituksen esitysten laatimisohjeet (HELO) — Oikeusministeriö
+- Lainvalmistelun oppaat — Finlex
+- Lainkirjoittaja — Finlex
 
 ---
 
-**Huomio**: Tämä opas perustuu Hallituksen esitysten laatimisohjeisiin (HELO), jotka ovat oikeusministeriön virallinen ohjeisto. Ohjeet päivittyvät säännöllisesti, joten tarkista aina viimeisin versio virallisesta lähteestä.
+**Note**: this guide is based on Hallituksen esitysten laatimisohjeet (HELO), the official instructions of the Ministry of Justice. The instructions are updated regularly, so always check the latest version from the official source.
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei korvaa virallista lainvalmistelua eikä ministeriön vastuuta.** Tuotos on valmisteleva HE-luonnos, jonka valmisteleva virkamies ja ministeriö tarkistavat ja josta he vastaavat.
-- **Ei vahvista HE-numeroita, säädösnumeroita eikä muutettavan lain sanamuotoa muistista.** Voimassa oleva teksti ja tunnukset haetaan Finlexistä.
-- **Ei tuota varmennettuja vaikutusarvioita** (taloudelliset, viranomais-, ympäristö-, yhdenvertaisuusvaikutukset); arviot on merkittävä arvioiksi ja varmistettava erikseen.
-- **Ei laadi säädöstekstiä eli itse lakiehdotusta**; se kuuluu lainkirjoittajan oppaan piiriin. HELO koskee esityksen perusteluja ja rakennetta.
-- **Ei ratkaise sitovasti suhdetta perustuslakiin tai säätämisjärjestystä** eikä korvaa perustuslakivaliokunnan arviota.
-- **Ei kokoa eikä referoi todellista lausuntopalautetta** puolestasi; lausuntoyhteenveto perustuu tosiasiallisiin annettuihin lausuntoihin.
+- **Does not replace official legislative preparation or the ministry's responsibility.** The output is a preparatory HE draft that the official responsible for the preparation and the ministry check and are answerable for.
+- **Does not confirm HE numbers, statute numbers or the wording of the statute being amended from memory.** The text in force and the identifiers are retrieved from Finlex.
+- **Does not produce verified impact assessments** (economic, administrative, environmental or equality impacts); estimates must be marked as estimates and confirmed separately.
+- **Does not draft the statutory text, that is the draft act itself**; that falls within Lainkirjoittajan opas. HELO covers the reasoning and the structure of the bill.
+- **Does not settle the relationship to the Constitution or the legislative procedure in any binding way** and does not replace the assessment of the Constitutional Law Committee.
+- **Does not collect or summarise actual consultation feedback** on your behalf; the summary of statements is based on the statements actually given.
 
-## Jatka tästä
+## Continue from here
 
-- Esitykseen liitettävän lakiehdotuksen rakenne, johtolause ja siirtymäsäännökset → /lainvalmistelu:lainkirjoittajan-opas
-- Perustelutekstin merkit, lyhenteet ja säädösviittausten muoto → /lainvalmistelu:lakikieli-opas
-- Lausuntopalaute-osion sijoittaminen ja lausuntokierroksen kulku → /lainvalmistelu:lainvalmistelun-prosessiopas
-- Annettujen lausuntojen jäsentäminen ja niihin vastaaminen → /lausunnot:lausuntoapuri
-- Nykytila-osion voimassa olevan oikeuden ja oikeuskäytännön tarkistus → /juristi:oikeustutkimus
+- The structure, enacting formula and transitional provisions of the draft act attached to the bill → /legislative-drafting:legislative-drafting-manual
+- Symbols, abbreviations and the form of statutory references in the reasoning → /legislative-drafting:legal-language-guide
+- Placing the consultation-feedback part and the course of the consultation round → /legislative-drafting:legislative-process-guide
+- Structuring the statements given and responding to them → /legislative-consultation:consultation-statement-assistant
+- Checking the law in force and the case law for the current-state part → /legal-core:legal-research

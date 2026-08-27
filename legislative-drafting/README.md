@@ -1,33 +1,33 @@
-# Lainvalmistelu
+# Legislative drafting
 
-Säädösvalmistelun apuri suomalaiseen lainsäädäntötyöhön: säädöstekstin ja hallituksen
-esityksen laatiminen, rakenne, lakikieli ja valmisteluprosessi. Skillit perustuvat
-virallisiin oppaisiin.
+An assistant for statutory preparation in Finnish legislative work: writing statutory text
+and a government bill (hallituksen esitys), structure, legal language and the preparation
+process. The skills are based on the official guides.
 
-> **Jokainen tuotos on valmisteleva luonnos, jonka valmistelusta vastaava taho
-> tarkistaa – ei virallinen säädös eikä oikeudellinen kanta.** Katso [`AGENTS.md`](AGENTS.md).
+> **Every output is a preparatory draft for the body responsible for the preparation to
+> check – not an official statute and not a legal position.** See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Lähde | Mitä tekee |
+| Skill | Source | What it does |
 |---|---|---|
-| **lainkirjoittajan-opas** | Lainkirjoittajan opas | Säädösten laadinta: säädösten lajit, rakenne, lakikieli, viittaaminen ja johtolause. |
-| **hallituksen-esityksen-laatimisohjeet** | HELO | Hallituksen esitysten kirjoittaminen: perusrakenne, mallirakenteet, EU-taustaiset, valtiosopimustaustaiset ja täydentävät esitykset. |
-| **lainvalmistelun-prosessiopas** | Lainvalmistelun prosessiopas | Valmisteluprosessi aloitteesta voimaantuloon: esivalmistelu, perusvalmistelu, lausuntomenettely, jatkovalmistelu, päätöksenteko ja eduskunta, täytäntöönpano. |
-| **lakikieli-opas** | – | Lakikielen merkit ja taivutusmuodot: pykälänmerkki, numerot, prosentit, mitta- ja rahayksiköt, välimerkit ja lyhenteet säädöstekstissä. |
+| **legislative-drafting-manual** | Lainkirjoittajan opas | Drafting statutes: types of statute, structure, legal language, cross-referencing and the enacting formula (johtolause). |
+| **government-bill-guidelines** | HELO | Writing a government bill: the basic structure, model structures, EU-derived bills, treaty-derived bills and supplementary bills. |
+| **legislative-process-guide** | Lainvalmistelun prosessiopas | The preparation process from initiative to entry into force: preliminary preparation, basic preparation, the consultation round, further preparation, decision-making and Parliament, and implementation. |
+| **legal-language-guide** | – | Symbols and inflected forms in statutory language: the section symbol, numbers, percentages, units of measurement and monetary units, punctuation and abbreviations in statutory text. |
 
-## Tietolähteet (`.mcp.json`)
+## Data sources (`mcp.json`)
 
-- **oik.ai** (`https://oik.ai/mcp`) – säädösvalmistelussa muutettavan lain voimassa olevan
-  sanamuodon ja seurannaismuutosten tarkistamiseen sekä relevantin oikeuskäytännön hakuun.
-  Vaatii oik.ai-tilin (OAuth liitettäessä).
+- **oik.ai** (`https://oik.ai/mcp`) – for checking the wording in force of the statute being
+  amended and its consequential amendments during drafting, and for retrieving the relevant
+  case law. Requires an oik.ai account (OAuth when connecting).
 
-## Asennus
+## Installation
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
-/plugin install lainvalmistelu@agent-skills-for-finnish-law
+/plugin install legislative-drafting@agent-skills-for-finnish-law
 ```
 
-Suositus: asenna myös `legal-core`-plugari, joka tarjoaa läpileikkaavan oikeustutkimuksen
-(`legal-research`) ja asiakirjan tarkistuksen.
+Recommended: also install the `legal-core` domain, which provides cross-cutting legal
+research (`legal-research`) and document review.

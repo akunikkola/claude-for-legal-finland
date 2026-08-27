@@ -1,138 +1,143 @@
 ---
 name: legislative-process-guide
-description: "Opas lainsäädännön valmisteluprosessista Suomessa. Sisältää kaikki vaiheet aloitteesta lain saattamiseen voimaan, mukaan lukien esivalmistelun, perusvalmistelun, lausuntomenettelyn ja jatkovalmistelun prosessit."
+description: Guide to the Finnish legislative preparation process from initiative to entry into force, following Lainvalmistelun prosessiopas. Covers preliminary preparation (esivalmistelu), basic preparation (perusvalmistelu), the consultation round (lausuntomenettely), further preparation including the Council of Regulatory Impact Analysis and the legal scrutiny of statutes, Government decision-making, the two readings in Eduskunta, confirmation of the act by the President under perustuslaki 731/1999, and implementation and monitoring. Use when phasing or scheduling a legislative project, when working out what has to be ready at which stage, or when placing an HE in the process.
 ---
 
-# Lainvalmistelun prosessiopas
+# Lainvalmistelun prosessiopas — the legislative process guide
 
-Tämä skill kuvaa lainvalmistelun kulun Suomessa Lainvalmistelun
-prosessioppaan (https://lainvalmistelu.finlex.fi/) mukaisesti: kuka tekee,
-mitä tehdään ja mitä kustakin vaiheesta syntyy. Käytä sitä hankkeen
-vaiheistamiseen, aikataulutukseen ja sen hahmottamiseen, mitä missäkin
-vaiheessa pitää olla valmiina.
+This skill describes how legislative preparation proceeds in Finland,
+following Lainvalmistelun prosessiopas (https://lainvalmistelu.finlex.fi/):
+who does what, what is done, and what each stage produces. Use it to phase
+and schedule a project and to work out what has to be ready at which
+stage.
 
-## Lähtökohdat
+## Starting points
 
-- Lainsäädäntövaltaa käyttää eduskunta (perustuslaki 731/1999). Lait
-  valmistellaan ministeriöissä, ja valmistelun laatu ratkaisee pitkälti
-  lopputuloksen laadun.
-- Kuuleminen on osa hyvää lainvalmistelua: sidosryhmillä on mahdollisuus
-  lausua kantansa valmistelun aikana, ei vasta eduskuntakäsittelyssä.
-- EU-säädöksen kansallinen täytäntöönpano kulkee saman prosessin läpi;
-  liikkumavara ja täytäntöönpanon määräajat selvitetään valmistelussa.
+- Legislative power is exercised by Eduskunta (Constitution of Finland,
+  perustuslaki 731/1999). Acts are prepared in the ministries, and the
+  quality of the preparation largely determines the quality of the result.
+- Consultation is part of good legislative preparation: stakeholders have the
+  opportunity to state their position during the preparation, not only once
+  the matter is before Eduskunta.
+- National implementation of an EU instrument goes through the same process;
+  the margin of discretion and the implementation deadlines are established
+  during the preparation.
 
-## Prosessin yleiskatsaus
+## Overview of the process
 
 ```
-Aloite → 1 Esivalmistelu → 2a Perusvalmistelu (virkatyö) / 2b (valmisteluelin)
-  → 3 Lausuntomenettely → 4 Jatkovalmistelu → 5 Valtioneuvoston päätöksenteko
-  → 6 Eduskuntakäsittely → 7 Lain vahvistaminen → julkaisu säädöskokoelmassa
-  → Täytäntöönpano ja seuranta
+Initiative → 1 Preliminary preparation → 2a Basic preparation (in-house) / 2b (preparatory body)
+  → 3 Consultation round → 4 Further preparation → 5 Government decision-making
+  → 6 Consideration in Eduskunta → 7 Confirmation of the act → publication in the statute book
+  → Implementation and monitoring
 ```
 
-## Prosessin päävaiheet
+## The main stages of the process
 
-### 1. Esivalmistelu
+### 1. Preliminary preparation
 
-Kootaan tieto ongelmasta ja nykytilasta, arvioidaan hankkeen tarve ja
-suunnitellaan hanke. Päävaiheet: tavoitteen tai ongelman määrittäminen →
-alustava kartoitus → sidosryhmien näkemykset → päätös esivalmistelun
-käynnistämisestä → esivalmistelun tekeminen → näkemykset tuloksista →
-päätös hankkeen asettamisesta.
+Information on the problem and the current state is gathered, the need for a
+project is assessed and the project is planned. Main steps: defining the
+objective or the problem → an initial survey → the views of stakeholders →
+the decision to start preliminary preparation → carrying out the preliminary
+preparation → views on the results → the decision to set up the project.
 
-[Katso yksityiskohtainen ohje: Esivalmistelu](references/preliminary-preparation.md)
+[See the detailed guidance: Preliminary preparation](references/preliminary-preparation.md)
 
-### 2a–2b. Perusvalmistelu
+### 2a–2b. Basic preparation
 
-Työläin vaihe: tietopohja, ratkaisuvaihtoehdot, vaikutusten arviointi ja
-HE-luonnoksen kirjoittaminen. Tehdään virkatyönä (2a) tai
-valmisteluelimessä, kuten työryhmässä tai komiteassa (2b). Päävaiheet:
-valmistelun organisointi → tietopohjan kokoaminen → kuulemiset →
-ratkaisuvaihtoehdot ja vaikutusten arviointi → linjaukset → HE-luonnoksen
-laatiminen → luonnoksen hyväksyminen lausuntokierrokselle.
+The most laborious stage: the evidence base, the alternative solutions, the
+impact assessment and writing the draft government bill. Carried out either
+as in-house official work (2a) or in a preparatory body such as a working
+group or a committee (2b). Main steps: organising the preparation → assembling
+the evidence base → consultations → alternative solutions and impact
+assessment → the policy choices → drafting the government bill → approving the
+draft for the consultation round.
 
-[Katso yksityiskohtainen ohje: Perusvalmistelu](references/basic-preparation.md)
+[See the detailed guidance: Basic preparation](references/basic-preparation.md)
 
-### 3. Lausuntomenettely
+### 3. The consultation round
 
-HE-luonnoksesta pyydetään kirjalliset lausunnot; pyyntö ja lausunnot ovat
-julkisia. Päävaiheet: päätös lausuntomenettelystä → lausuntopyynnön
-valmistelu → kääntäminen → pyynnön lähettäminen ja julkaisu → lausuntojen
-antaminen → läpikäynti ja tiivistelmä → palautteen julkaiseminen → päätös
-valmistelun jatkamisesta.
+Written statements are requested on the draft government bill; both the
+request and the statements are public. Main steps: the decision on the
+consultation procedure → preparing the request for statements → translation →
+sending and publishing the request → the giving of statements → going through
+them and summarising them → publishing the feedback → the decision to continue
+the preparation.
 
-[Katso yksityiskohtainen ohje: Lausuntomenettely](references/consultation-round.md)
+[See the detailed guidance: The consultation round](references/consultation-round.md)
 
-### 4. Jatkovalmistelu
+### 4. Further preparation
 
-Esitys viimeistellään palautteen pohjalta: sisältöpäätös, mahdollinen
-lainsäädännön arviointineuvoston käsittely (varaa noin neljä viikkoa),
-kääntäminen, oikeusministeriön laintarkastus, tekninen viimeistely ja
-esittelylistat.
+The bill is finalised on the basis of the feedback: the decision on content,
+any consideration by the Council of Regulatory Impact Analysis (allow about
+four weeks), translation, the legal scrutiny of statutes at the Ministry of
+Justice, technical finalisation and the presentation lists.
 
-[Katso yksityiskohtainen ohje: Jatkovalmistelu](references/further-preparation.md)
+[See the detailed guidance: Further preparation](references/further-preparation.md)
 
-### 5. Valtioneuvoston päätöksenteko
+### 5. Government decision-making
 
-Valtioneuvoston yleisistunto päättää hallituksen esityksen antamisesta
-eduskunnalle. Taloudellisesti merkittävät asiat käsitellään sitä ennen
-raha-asiainvaliokunnassa.
+The plenary session of the Government decides on submitting the government
+bill to Eduskunta. Matters of economic significance are considered before that
+in the Finance Committee of the Government.
 
-### 6. Eduskuntakäsittely
+### 6. Consideration in Eduskunta
 
-Lakiehdotus käsitellään täysistunnossa **kahdessa käsittelyssä**:
-lähetekeskustelun jälkeen asia menee valiokuntaan, jonka mietinnön pohjalta
-ensimmäisessä käsittelyssä päätetään lakiehdotuksen sisällöstä ja toisessa
-käsittelyssä sen hyväksymisestä tai hylkäämisestä. Eduskunnan vastaus
-toimitetaan valtioneuvostolle.
+A legislative proposal is considered in plenary session in **two readings**:
+after the preliminary debate the matter goes to a committee, and on the basis
+of the committee report the first reading decides on the content of the
+proposal and the second reading decides whether to approve or reject it. The
+reply of Eduskunta is transmitted to the Government.
 
-### 7. Lain vahvistaminen
+### 7. Confirmation of the act
 
-**Tasavallan presidentti vahvistaa** eduskunnan hyväksymän lain
-(perustuslaki 731/1999, 77 §). Laki julkaistaan Suomen säädöskokoelmassa.
+**The President of the Republic confirms** the act passed by Eduskunta
+(perustuslaki 731/1999, 77 §). The act is published in the Statute Book of
+Finland.
 
-[Katso yksityiskohtainen ohje: Valtioneuvoston päätöksenteko ja eduskuntakäsittely](references/decision-making-and-parliament.md)
+[See the detailed guidance: Government decision-making and consideration in Eduskunta](references/decision-making-and-parliament.md)
 
-## Täytäntöönpano ja seuranta
+## Implementation and monitoring
 
-Lain tultua voimaan huolehditaan toimeenpanosta (ohjeistus, koulutus,
-tietojärjestelmät, viestintä) ja seurataan vaikutuksia sekä mahdollisia
-korjaustarpeita.
+Once the act has entered into force, implementation is taken care of
+(guidance, training, information systems, communication) and the impacts and
+any need for correction are monitored.
 
-[Katso yksityiskohtainen ohje: Täytäntöönpano ja seuranta](references/implementation.md)
+[See the detailed guidance: Implementation and monitoring](references/implementation.md)
 
-## Mistä hanke saa alkunsa
+## Where a project originates
 
-- **Hallitusohjelma** — hallituksen poliittiset tavoitteet
-- **EU-säädös** — täytäntöönpanoa edellyttävä direktiivi tai asetus
-- **Eduskunnan lausuma** — eduskunnan edellyttämä valmistelu
-- **Kansalaisaloite** — vähintään 50 000 allekirjoitusta
-- **Tuomioistuinratkaisut** — kansallinen tai EU-oikeuskäytäntö paljastaa muutostarpeen
-- **Viranomaisten ja sidosryhmien aloitteet** — soveltamisessa havaitut ongelmat
+- **The Government Programme** — the Government's political objectives
+- **An EU instrument** — a directive or regulation requiring implementation
+- **A statement by Eduskunta** — preparation required by Eduskunta
+- **A citizens' initiative** — at least 50 000 signatures
+- **Court decisions** — national or EU case law reveals a need for change
+- **Initiatives by authorities and stakeholders** — problems observed in application
 
-## Hyödyllisiä lähteitä
+## Useful sources
 
 - **Lainvalmistelun prosessiopas**: https://lainvalmistelu.finlex.fi/
-- **Säädösvalmistelun kuulemisopas** — kuulemisen ohjeistus
-- **Hallituksen esitysten laatimisohjeet (HELO)** — ks. skill
+- **Säädösvalmistelun kuulemisopas** — guidance on consultation
+- **Hallituksen esitysten laatimisohjeet (HELO)** — see the skill
   `government-bill-guidelines`
-- **Lainkirjoittajan opas** — ks. skill `legislative-drafting-manual`
-- **Hankeikkuna** — valtioneuvoston hanketietopalvelu
-- **Otakantaa.fi** ja **Lausuntopalvelu.fi** — kuulemisen palvelut
-- **Finlex** — säädökset ja esityöt
+- **Lainkirjoittajan opas** — see the skill `legislative-drafting-manual`
+- **Hankeikkuna** — the Government's project information service
+- **Otakantaa.fi** and **Lausuntopalvelu.fi** — the consultation services
+- **Finlex** — statutes and preparatory works
 
-## Mitä tämä skill EI tee
+## What this skill does NOT do
 
-- **Ei korvaa virallista lainvalmistelua eikä ministeriön vastuuta.** Tuotos on valmisteleva prosessihahmotelma, josta valmisteleva virkamies ja ministeriö vastaavat.
-- **Ei vahvista hankenumeroita, HE-numeroita eikä säädösnumeroita muistista**, eikä korvaa hankkeen tilatietoa valtioneuvoston Hankeikkunasta.
-- **Ei laadi varsinaista säädöstekstiä tai HE:n perusteluja**; se kuvaa prosessin vaiheet, ei lopputuotetta.
-- **Ei aseta sitovia määräaikoja eikä korvaa lausuntoaikoja** koskevia kuulemisohjeen vaatimuksia tai aikataulupäätöksiä.
-- **Ei tee poliittisia tai sisällöllisiä linjausvalintoja** hankkeesta käyttäjän puolesta.
-- **Ei korvaa laintarkastuksen, oikeudellisen tarkastelun tai käännöstyön** muodollisia vaiheita, vaan ainoastaan kuvaa, missä kohtaa ne sijoittuvat.
+- **Does not replace official legislative preparation or the ministry's responsibility.** The output is a preparatory outline of the process, for which the official responsible for the preparation and the ministry are answerable.
+- **Does not confirm project numbers, HE numbers or statute numbers from memory**, and does not replace the status information on a project in the Government's Hankeikkuna service.
+- **Does not draft the statutory text itself or the reasoning of a government bill**; it describes the stages of the process, not the end product.
+- **Does not set binding deadlines and does not replace** the requirements of the consultation guidance on consultation periods or decisions on scheduling.
+- **Does not make political or substantive policy choices** about a project on the user's behalf.
+- **Does not replace the formal stages of legal scrutiny, legal review or translation**; it only describes where they sit.
 
-## Jatka tästä
+## Continue from here
 
-- Säädöstekstin laatiminen perusvalmistelu- ja jatkovalmisteluvaiheessa → /lainvalmistelu:lainkirjoittajan-opas
-- HE-luonnoksen rakenne ja perustelut perusvalmistelussa → /lainvalmistelu:hallituksen-esityksen-laatimisohjeet
-- Lausuntomenettelyn lausuntojen jäsentäminen ja niihin vastaaminen → /lausunnot:lausuntoapuri
-- Esivalmistelun nykytila-arviota varten voimassa olevan oikeuden tarkistus → /juristi:oikeustutkimus
+- Drafting the statutory text during basic preparation and further preparation → /legislative-drafting:legislative-drafting-manual
+- The structure and reasoning of the draft government bill during basic preparation → /legislative-drafting:government-bill-guidelines
+- Structuring the statements from the consultation round and responding to them → /legislative-consultation:consultation-statement-assistant
+- Checking the law in force for the current-state assessment in preliminary preparation → /legal-core:legal-research
