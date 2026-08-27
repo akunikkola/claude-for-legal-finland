@@ -1,197 +1,199 @@
-# Viittaaminen säädöksiin ja määräyksiin
+# Referring to statutes and regulations
 
-Kun säädöksessä viitataan muihin säädöksiin tai määräyksiin, viittaaminen tulee tehdä selkeästi, tarkasti ja johdonmukaisesti käyttäen vakiintuneita muotoja.
+When a statute refers to other statutes or regulations, the reference must be made clearly, precisely and consistently, using the established forms.
 
-## Viittaamisen tarkoitus
+> The model references in the code blocks below stay in Finnish. They are text a drafter copies into a Finnish statute, not an illustration to be translated.
 
-Viittauksilla säädöksiin tai määräyksiin:
+## The purpose of referring
 
-- Osoitetaan säädösten väliset suhteet
-- Annetaan lukijalle mahdollisuus tutustua asiaa koskeviin muihin säädöksiin
-- Ylläpidetään oikeusjärjestelmän koherenssia
-- Vältetään turhaa toistoa
+References to statutes or regulations:
 
-## Viittaamisen periaatteet
+- Show the relationships between statutes
+- Allow the reader to consult the other statutes bearing on the matter
+- Maintain the coherence of the legal order
+- Avoid needless repetition
 
-### Tarkkuus
+## The principles of referring
 
-Viittaus tulee tehdä tarkasti, jotta lukija pystyy löytämään viitatun kohdan ilman ongelmia:
+### Precision
 
-- Säädöksen nimi ja numero
-- Pykälän numero
-- Momentin numero (jos tarpeen)
-- Kohdan numero (jos tarpeen)
+A reference must be made precisely, so that the reader can find the passage referred to without difficulty:
 
-### Selkeys
+- The name and number of the statute
+- The section number
+- The subsection number (where needed)
+- The paragraph number (where needed)
 
-Viittaus tulee tehdä selkeästi. Lukija saa ymmärtää, mitä säädöstä tai kohdan osaa viitataan:
+### Clarity
 
-- Käytetään vakiintuneita muotoja
-- Vältetään epäselvyyttä
-- Viittaus on helppo löytää
+A reference must be made clearly. The reader must be able to understand which statute or which part of it is being referred to:
 
-### Johdonmukaisuus
+- The established forms are used
+- Ambiguity is avoided
+- The reference is easy to find
 
-Samaan säädökseen viitattaessa käytetään aina samaa muotoa ja merkintätapaa:
+### Consistency
 
-- Säädöksen nimi on aina samanlainen
-- Numerointi on yhdenmukainen
-- Muoto on vakiintunut
+The same form and notation are always used when referring to the same statute:
 
-## Viittausten muodot
+- The name of the statute is always the same
+- The numbering is uniform
+- The form is the established one
 
-### Viittaus säädökseen kokonaisuutena
+## The forms of reference
 
-Kun viitataan säädökseen kokonaisuutena:
+### A reference to a statute as a whole
+
+When referring to a statute as a whole:
 
 ```
 Kunnan hallinnosta säädetään kuntalain (410/2015) mukaisesti.
 ```
 
-Tai:
+Or:
 
 ```
 Kuten kuntalain (410/2015) 1 §:ssä säädetään...
 ```
 
-### Viittaus pykälään
+### A reference to a section
 
-Kun viitataan säädöksen pykälään:
+When referring to a section of a statute:
 
 ```
 Kuntalain (410/2015) 2 §:ssä säädetään lain soveltamisalasta.
 ```
 
-Tai lyhyemmin:
+Or more briefly:
 
 ```
 Kuntalain 2 §:ssä säädetään...
 ```
 
-### Viittaus momenttiin
+### A reference to a subsection
 
-Kun viitataan pykälän tiettyyn momenttiin:
+When referring to a particular subsection of a section:
 
 ```
 Kuntalain (410/2015) 2 §:n 1 momentissa säädetään...
 ```
 
-Tai:
+Or:
 
 ```
 Kuntalain 2 §:n 2 momentissa mainitaan...
 ```
 
-### Viittaus useampaan pykälään
+### A reference to several sections
 
-Kun viitataan useaan pykälään:
+When referring to several sections:
 
 ```
 Kuntalain (410/2015) 2–4 §:ssä säädetään...
 ```
 
-Tai:
+Or:
 
 ```
 Kuntalain (410/2015) 2, 3 ja 4 §:ssä säädetään...
 ```
 
-### Viittaus useampaan momenttiin
+### A reference to several subsections
 
-Kun viitataan useaan momenttiin samassa pykälässä:
+When referring to several subsections within the same section:
 
 ```
 Kuntalain (410/2015) 2 §:n 1 ja 2 momentissa säädetään...
 ```
 
-## Säädösten merkintätavat
+## Ways of citing statutes
 
-### Täydellinen merkintä
+### The full citation
 
-Säädöksen täydellinen merkintä sisältää:
+The full citation of a statute contains:
 
-- Säädöksen nimen (esim. "kuntalaki")
-- Säädöksen numeron (esim. "410/2015")
-- Pykälän numeron (esim. "2 §")
-- Momentin numeron, jos tarpeen (esim. "1 momentissa")
+- The name of the statute (for example "kuntalaki")
+- The number of the statute (for example "410/2015")
+- The section number (for example "2 §")
+- The subsection number where needed (for example "1 momentissa")
 
-Esimerkki:
+Example:
 ```
 Kuntalain (410/2015) 2 §:n 1 momentissa säädetään...
 ```
 
-### Lyhennetty merkintä
+### The shortened citation
 
-Kun säädökseen on jo viitattu täydellisesti, seuraavista viitatuksista voidaan käyttää lyhennettyä muotoa:
+Once a statute has been cited in full, the shortened form may be used in subsequent references:
 
 ```
 Kuntalain 2 §:ssä säädetään...
 Kuntalain 3 §:ssä säädetään...
 ```
 
-Tai vielä lyhyemmin:
+Or shorter still:
 
 ```
 2 §:ssä säädetään...
 3 §:ssä säädetään...
 ```
 
-## Erityisiä viittaustapauksita
+## Particular cases of referring
 
-### Viittaus säädösten kokonaisuuteen
+### A reference to a body of statutory provisions
 
-Kun viitataan säädösten ryhmään tai kokonaisuuteen:
+When referring to a group or body of provisions:
 
 ```
 Kuntalain (410/2015) säännösten mukaisesti...
 Sosiaalihuoltolain (1301/2014) säännöksien mukaisesti...
 ```
 
-### Viittaus säädösten voimaantulosta
+### A reference to the entry into force of a statute
 
-Kun viitataan säädösten voimaantulosäännöksiin:
+When referring to the entry-into-force provisions of a statute:
 
 ```
 Kuntalain (410/2015) voimaantulosta säädetään sen 145 §:ssä.
 ```
 
-### Viittaus muutoksiin ja kumoamisiin
+### A reference to amendments and repeals
 
-Kun viitataan säädöksen muutoksiin:
+When referring to amendments to a statute:
 
 ```
 Kuntalakia (410/2015) muutettiin lailla kuntalain muuttamisesta (419/2021).
 ```
 
-Kun viitataan säädöksen kumoamisiin:
+When referring to repeals of a statute:
 
 ```
 Laki X kumoaa kuntalain (410/2015) 2 §:n.
 ```
 
-### Viittaus siirtymäsäännöksiin
+### A reference to transitional provisions
 
-Kun viitataan siirtymäsäännöksiin:
+When referring to transitional provisions:
 
 ```
 Siirtymäsäännösten mukaisesti...
 Voimaantulosäännösten mukaisesti...
 ```
 
-## Viittaamisen vakiintuneita ilmaisuja
+## Established expressions used in references
 
-### Yleisimmät vakiilmaisut viittauksissa
+### The most common standard expressions in references
 
-- **"...säädöksessä säädetään"** - Kun kerrotaan mitä säädöksessä säädetään
-- **"...mukaisesti"** - Kun viitataan jonkin säädöksen mukaisesti toimimiseen
-- **"...nojalla"** - Kun viitataan jonkin säädöksen antavan oikeusperusteen
-- **"...perusteella"** - Kun viitataan jonkin säädöksen antavan perusteen
-- **"...määräyksiä noudattaen"** - Kun tulee noudattaa joitain säädöksiä
-- **"kuten ... säädetään"** - Kun verrataan toisiin säädöksiin
-- **"edellä mainitussa"** - Kun viitataan aiemmin mainittuun
-- **"jäljempänä"** - Kun viitataan myöhemmin esitettävään
+- **"...säädöksessä säädetään"** — when stating what a statute lays down
+- **"...mukaisesti"** — when referring to acting in accordance with a statute
+- **"...nojalla"** — when referring to a statute as providing the legal basis
+- **"...perusteella"** — when referring to a statute as providing the ground
+- **"...määräyksiä noudattaen"** — when certain provisions must be complied with
+- **"kuten ... säädetään"** — when comparing with other statutes
+- **"edellä mainitussa"** — when referring to something mentioned earlier
+- **"jäljempänä"** — when referring to something set out later
 
-### Esimerkkejä vakiilmaisu jen käytöstä
+### Examples of the standard expressions in use
 
 ```
 Kuntalain (410/2015) 2 §:ssä säädetään lain soveltamisalasta.
@@ -209,72 +211,72 @@ Kuten kuntalain (410/2015) 2 §:ssä säädetään...
 Edellä mainitussa kuntalain 2 §:ssä säädetään...
 ```
 
-## Viittaamisen väärinymmärrysvaarat
+## Where a reference can be misunderstood
 
-### Vaarallisia virheitä
+### Dangerous mistakes
 
-- **Epätarkka viittaus**: "Kuntalain mukaisesti" (mikä pykälä?)
-- **Väärä merkintä**: "Kuntalain 2" (puuttuu § ja voi sekoittaa lukuun)
-- **Epäselvä viittaus**: "Aiemmin säädetyn mukaisesti" (mihin säädökseen viitataan?)
-- **Puutteellinen viittaus**: "2 §:ssä" (mikä laki?)
+- **An imprecise reference**: "Kuntalain mukaisesti" (which section?)
+- **Wrong notation**: "Kuntalain 2" (the § is missing and it may be confused with a chapter)
+- **An unclear reference**: "Aiemmin säädetyn mukaisesti" (which statute is being referred to?)
+- **An incomplete reference**: "2 §:ssä" (which act?)
 
-### Oikeat muodot
+### The correct forms
 
-- **Tarkka viittaus**: "Kuntalain (410/2015) 2 §:ssä säädetään..."
-- **Oikea merkintä**: "Kuntalain (410/2015) 2 §" tai "kuntalain 2 §"
-- **Selkeä viittaus**: "Kuntalain (410/2015) 2 §:ssä tarkoitettavan kunnan hallinnosta..."
-- **Täydellinen viittaus**: "Kunnan hallinnosta säädetään kuntalain (410/2015) 2 §:ssä"
+- **A precise reference**: "Kuntalain (410/2015) 2 §:ssä säädetään..."
+- **Correct notation**: "Kuntalain (410/2015) 2 §" or "kuntalain 2 §"
+- **A clear reference**: "Kuntalain (410/2015) 2 §:ssä tarkoitettavan kunnan hallinnosta..."
+- **A complete reference**: "Kunnan hallinnosta säädetään kuntalain (410/2015) 2 §:ssä"
 
-## Viittaamisen tarkistuslistaa
+## A checklist for references
 
-Kun kirjoitat viittauksia säädöksiin, tarkista seuraavat:
+When you write references to statutes, check the following:
 
-- [ ] Säädöksen nimi on oikea
-- [ ] Säädöksen numero on oikea (esim. 410/2015)
-- [ ] Pykälän numero on oikea (esim. 2 §)
-- [ ] Momentin numero on oikea, jos viitataan momenttiin
-- [ ] Merkintätapa on vakiintunut (esim. "2 §:ssä", ei "par. 2")
-- [ ] Viittaus on selkeä ja tarkka
-- [ ] Kielioppi on oikea
-- [ ] Johdonmukaisuus on säilynyt muiden viittauksien kanssa
+- [ ] The name of the statute is correct
+- [ ] The number of the statute is correct (for example 410/2015)
+- [ ] The section number is correct (for example 2 §)
+- [ ] The subsection number is correct, where a subsection is referred to
+- [ ] The notation is the established one (for example "2 §:ssä", not "par. 2")
+- [ ] The reference is clear and precise
+- [ ] The grammar is correct
+- [ ] Consistency with the other references has been maintained
 
-## EU-säädöksiin viittaaminen
+## Referring to EU instruments
 
-EU-säädöksiin viitataan seuraavasti:
+References to EU instruments are made as follows.
 
-### Direktiivin viittaus
+### Referring to a directive
 
-Lissabonin sopimuksen jälkeinen tunnusmuoto on `(EU) 2016/1148`; vanhemmissa
-direktiiveissä tunnus on muotoa `95/46/EY`.
+The post-Lisbon form of the identifier is `(EU) 2016/1148`; in older directives
+the identifier takes the form `95/46/EY`.
 
 ```
 Direktiivissä (EU) 2016/1148 säädetään...
 ```
 
-Tai täydellisellä nimellä ensimmäisellä viittauskerralla:
+Or with the full title on the first reference:
 
 ```
 Euroopan parlamentin ja neuvoston direktiivissä (EU) 2016/1148 säädetään...
 ```
 
-### Asetuksen viittaus
+### Referring to a regulation
 
 ```
 EU:n asetuksessa (EU) 2016/679 määrätään...
 ```
 
-Tai:
+Or:
 
 ```
 Asetuksessa (EU) 2016/679 määrätään...
 ```
 
-### Tuomioistuimen päätökseen viittaaminen
+### Referring to a judgment of the Court
 
 ```
 Euroopan unionin tuomioistuimen tuomiossa C-123/45 todetaan...
 ```
 
-## Lukulähde
+## Source consulted
 
-Lainkirjoittajan opas, Oikeusministeriö. Jakso 19: Säädöksiin ja määräyksiin viittaaminen.
+Lainkirjoittajan opas, Oikeusministeriö. Section 19: Säädöksiin ja määräyksiin viittaaminen.

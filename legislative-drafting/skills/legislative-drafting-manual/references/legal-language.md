@@ -1,90 +1,92 @@
-# Lakikieli
+# Lakikieli — statutory language
 
-Lakikielellä on erityisiä vaatimuksia ja periaatteita, jotka erottavat sen muusta kirjallisesta kielestä. Lakikielen tarkoituksena on olla selkeää, tarkkaa ja yhdenmukaisesti muotoiltua.
+Statutory language has particular requirements and principles that set it apart from other written language. Its purpose is to be clear, precise and consistently formulated.
 
-## Lakikielen periaatteet
+> The subject of this file is **Finnish** statutory language. The standard expressions, definition structures and model provisions below stay in Finnish: they are the rule, not an illustration of it.
 
-### Yleiskielisyys
+## The principles of statutory language
 
-Lakia kirjoitetaan yleiskielellä, joka on ymmärrettävää laajalle lukijakunnal.
+### Standard language
 
-- Käytetään tavallisia, arkipäivän sanoja asiantuntijaistuntavia termejä ensisijaisesti
-- Lauserakenne on yksinkertaista ja suora
-- Vältetään turhia mutkitteluja ja poikkeavia ilmaisuja
+An act is written in standard language, intelligible to a wide readership.
 
-Yleiskielisyys ei tarkoita epämuodollisuutta. Lakikieli on muodollista ja tarkkaa, mutta silti ymmärrettävää.
+- Ordinary, everyday words are used in preference to specialist terms
+- The sentence structure is simple and direct
+- Needless convolutions and unusual expressions are avoided
 
-### Hyvä kielenkäyttö
+Standard language does not mean informality. Statutory language is formal and precise, but still intelligible.
 
-Lakikielelle on oleellista hyvä kielenkäyttö. Tämä tarkoittaa:
+### Good usage
 
-- Lauserakenteet ovat oikeat ja loogisia
-- Kielioppi on virheettömä
-- Sanajärjestys on selvä ja selkeä
-- Pilkkujen käyttö on johdonmukaista
+Good usage is essential to statutory language. This means:
 
-### Tarkkuus
+- The sentence structures are correct and logical
+- The grammar is faultless
+- The word order is plain and clear
+- Comma use is consistent
 
-Lakikielelle on oleellista tarkkuus. Jokainen sana on valittu tarkkaan:
+### Precision
 
-- Termit määritellään tarkasti
-- Sama käsite merkitään aina samalla sanalla
-- Ilmaisut ovat yksiselitteisiä
-- Väärinymmärtämisen mahdollisuus on minimoitu
+Precision is essential to statutory language. Every word is chosen carefully:
 
-### Yhdenmukaisuus
+- Terms are defined precisely
+- The same concept is always expressed by the same word
+- Expressions are unambiguous
+- The possibility of misunderstanding is minimised
 
-Samaa käsitettä käytetään aina samalla tavalla säädöksessä ja yhdenmukaisuuden säilyttämiseksi myös muissa säädöksissä.
+### Consistency
 
-- Termit ovat yhdenmukaisia
-- Rakenteet toistuvat johdonmukaisesti
-- Stilistiikka on yhtenäinen
+The same concept is always used in the same way within a statute and, to preserve consistency, in other statutes too.
 
-## Säädösten ja määräysten vaihtimukset ja ominaisuudet
+- Terms are consistent
+- Structures recur consistently
+- The style is uniform
 
-### Lakia ja asetusta koskeva kieli
+## The requirements and characteristics of statutes and regulations
 
-Laissa ja asetuksessa käytettävä kieli on erityisen muodollista ja vaativaa. Seuraavat tekijät ovat tärkeitä:
+### The language of an act and a decree
 
-- Lauserakenteiden on oltava loogisia ja selviksi
-- Passiivi ja aktiivimuoto käytössä tarkoituksenmukaisesti
-- Verbit ovat yksinkertaisia ja selkeästi konjugoituja
+The language used in an act and in a decree is particularly formal and demanding. The following matter:
 
-### Lakikieleen kuuluvat ilmaisut
+- Sentence structures must be logical and clear
+- The passive and the active voice are used as appropriate
+- Verbs are simple and clearly conjugated
 
-Lakikielelle on ominaisia vakiintuneita ilmaisuja, joita käytetään lakiteksteissä:
+### Expressions belonging to statutory language
 
-**"Tämä laki voidaan kutsua..."** - Käytetään kun lakia kutsutaan nimellä
+Statutory language has its own established expressions, used in the text of an act:
 
-**"Tässä laissa tarkoitetaan..."** - Käytetään kun määritellään käsitteitä
+**"Tämä laki voidaan kutsua..."** — used when the act is given a name
 
-**"Ellei tästä laista muuta johdu" tai "Ellei siitä muuta johdu"** - Käytetään poikkeussäännöksiin
+**"Tässä laissa tarkoitetaan..."** — used when concepts are defined
 
-**"Jollei muuta säädetä"** - Käytetään koskemaan eri säädöksiä
+**"Ellei tästä laista muuta johdu"** or **"Ellei siitä muuta johdu"** — used in provisions creating exceptions
 
-**"Jonka mukaisesti"** - Käytetään viitattaessa toiseen säädökseen
+**"Jollei muuta säädetä"** — used to cover other statutes
 
-### Passiivi ja aktiivimuoto
+**"Jonka mukaisesti"** — used when referring to another statute
 
-Lakikielessa käytetään sekä passiivisia että aktiivisia muotoja tarkoituksenmukaisesti:
+### The passive and the active voice
 
-- **Passiivi** on tavallinen lakikielessa: "Hakemuksesta päätetään" (ei: "Viranomainen päättää hakemuksesta")
-- **Aktiivista** käytetään kun halutaan korostaa tekijää tai vastuuta
+Statutory language uses both passive and active forms as appropriate:
 
-Passiivi on neutraali ja sopii lakikielelle hyvin, koska se ei paljasta tekijän henkilöllisyyttä.
+- **The passive** is the ordinary choice in statutory language: "Hakemuksesta päätetään" (not: "Viranomainen päättää hakemuksesta")
+- **The active** is used where the aim is to emphasise the actor or the responsibility
 
-## Sanasto
+The passive is neutral and suits statutory language well, because it does not disclose the identity of the actor.
 
-### Samojen käsitteiden yhdenmukainen käyttö
+## Vocabulary
 
-Sama käsite tulee merkitä aina samalla sanalla. Esimerkiksi:
+### Consistent use of the same concepts
 
-- Jos käsitteelle on annettu määritelmä ("Tässä laissa tarkoitetaan henkilöllä..."), samaa sanaa käytetään koko lain läpi
-- Sama sana merkitsee aina samaa asiaa (ei vaihdella synonyymeihin)
+The same concept must always be expressed by the same word. For example:
 
-### Termien määrittely
+- Where a concept has been given a definition ("Tässä laissa tarkoitetaan henkilöllä..."), the same word is used throughout the act
+- The same word always denotes the same thing (there is no switching between synonyms)
 
-Termit määritellään selkeästi lain alussa olevassa määritelmäosassa. Määritelmän rakenne on seuraava:
+### Defining terms
+
+Terms are defined clearly in the definitions part at the beginning of the act. The structure of a definition is as follows:
 
 ```
 Tässä laissa tarkoitetaan:
@@ -92,56 +94,56 @@ Tässä laissa tarkoitetaan:
 2) termillä Y sitä, että...
 ```
 
-### Yleisesti tunnetut termit
+### Generally known terms
 
-Termit, joita käytetään yleisesti lain soveltajien keskuudessa, voidaan jättää määrittämättä. Kuitenkin mikä tahansa epävarmuus pitäisi poistaa selkeän määritelmän avulla.
+Terms in general use among those applying the act may be left undefined. Any uncertainty should nevertheless be removed by means of a clear definition.
 
-## Merkeistä ja taivutusmuodoista
+## Symbols and inflected forms
 
-### Pykälän merkintä
+### Marking a section
 
-Pykälä merkitään symbolilla §:
-- "1 §", "2 §" — luetaan järjestyslukuna: ensimmäinen pykälä, toinen pykälä
+A section is marked with the symbol §:
+- "1 §", "2 §" — read as ordinals: the first section, the second section
 
-Kun viitataan pykälään, käytetään tätä merkintää.
+This notation is used when referring to a section.
 
-### Momentista
+### The subsection
 
-Momentista käytetään ilmaisua "momentti":
-- "1 momentin" tai "1 momentissa" (lue: ensimmäisen momentin)
-- "2 momentin" (lue: toisen momentin)
+The subsection is referred to by the word "momentti":
+- "1 momentin" or "1 momentissa" (read: the first subsection)
+- "2 momentin" (read: the second subsection)
 
-### Konjunktiot
+### Conjunctions
 
-Konjunktiot ovat tärkeitä lakikielelle. Yleisimmät konjunktiot lakikielessa:
+Conjunctions matter in statutory language. The most common in Finnish statutory language:
 
-- **ja** - Yhdistää samanlaisia elementtejä
-- **tai** - Tarkoittaa vaihtoehtoisia vaihtoehtoja (ei eksklusiivia tai/joko-tai)
-- **sekä** - Käytetään myös "ja":n tapaan
-- **kuin** - Vertailevissa rakenteissa
-- **kuten** - Esimerkkiä johdettaessa
+- **ja** — joins similar elements
+- **tai** — denotes alternatives (not an exclusive either-or)
+- **sekä** — also used in the manner of "ja"
+- **kuin** — in comparative structures
+- **kuten** — when introducing an example
 
-### Sanajärjestys
+### Word order
 
-Lakikielessa noudatetaan loogista ja selkeää sanajärjestystä:
+Statutory language follows a logical and clear word order:
 
-- Pääsana tulee usein alussa
-- Määrittelyt ja lisätiedot tulevat perässä
-- Sääntö ilmaistaan usein ensin, sitten poikkeukset
+- The head word often comes first
+- Qualifications and further detail follow
+- The rule is often stated first, then the exceptions
 
-Esimerkki (looginen sanajärjestys):
+Example (logical word order):
 "Kunnan on varattava riittävät varat palvelun toimittamiseen."
-(Ei: "Palvelun toimittamiseen riittävät varat on varattava kunnan.")
+(Not: "Palvelun toimittamiseen riittävät varat on varattava kunnan.")
 
-## Sanojen määrittelemisestä
+## On defining words
 
-### Kun käytetään uusia tai epäselvän sanoja
+### Where new or unclear words are used
 
-Jos säädöksessä käytetään sanoja, joiden merkitys voi olla epäselvä, ne tulee määrittää selkeästi. Määritelmät sijoitetaan säädöksen alkuun olevaan määritelmä-osaan.
+If a statute uses words whose meaning may be unclear, they must be defined clearly. The definitions are placed in the definitions part at the beginning of the statute.
 
-### Määrittelyn rakenne
+### The structure of a definition
 
-Määritelmä kirjoitetaan seuraavasti:
+A definition is written as follows:
 
 ```
 Tässä laissa tarkoitetaan:
@@ -150,40 +152,40 @@ Tässä laissa tarkoitetaan:
 2) harjoittelulla sellaista toimintaa, jossa harjoitellaan pelastustoimintoja
 ```
 
-Määritelmien tulee olla:
-- Selkeitä ja täsmällisiä
-- Erottaa käsite muista samankaltaisista käsitteistä
-- Riittävän laajoja sisältämään kaikki oleellinen
+Definitions must be:
+- Clear and exact
+- Such that they distinguish the concept from other similar concepts
+- Wide enough to contain everything essential
 
-## Lakikielelle ominaiset ilmaisut
+## Expressions characteristic of statutory language
 
-### Tavallisia lakikielen vakiilmaisuja
+### Common standard expressions of statutory language
 
-- **"Tämä laki koskee..."** - Soveltamisalan määrittely
-- **"Tässä laissa tarkoitetaan..."** - Määritelmät
-- **"Ellei muuta säädetä..."** - Poikkeuksista kertominen
-- **"Jokaisen on..."** - Velvollisuuksien asettaminen
-- **"Jollei..."** - Vaihtoehtoisten tapausten käsittely
-- **"Kuten..."** - Esimerkkien antaminen
-- **"Ja siten..."** - Seurauksien ilmaiseminen
+- **"Tämä laki koskee..."** — defining the scope of application
+- **"Tässä laissa tarkoitetaan..."** — definitions
+- **"Ellei muuta säädetä..."** — stating exceptions
+- **"Jokaisen on..."** — imposing obligations
+- **"Jollei..."** — dealing with alternative cases
+- **"Kuten..."** — giving examples
+- **"Ja siten..."** — expressing consequences
 
-### Passiivissa käytettävät muodot
+### Forms used in the passive
 
-Passiivimuotoa käytetään silloin kun halutaan neutraali sävytys:
+The passive form is used where a neutral tone is wanted:
 
-- "Hakemuksesta päätetään kahden viikon kuluessa" (sen sijaan: "Viranomainen päättää...")
-- "Ilmoitus tulee tehdä kirjallisesti" (sen sijaan: "Hakija tekee ilmoituksen...")
+- "Hakemuksesta päätetään kahden viikon kuluessa" (instead of: "Viranomainen päättää...")
+- "Ilmoitus tulee tehdä kirjallisesti" (instead of: "Hakija tekee ilmoituksen...")
 
-## Kielelliset virheet, joita tulee välttää
+## Linguistic mistakes to avoid
 
-### Yleisiä virheitä lakikielessa
+### Common mistakes in statutory language
 
-- **Epätäsmällisyys**: "Noin 100 henkilöä" (määritä täsmällisesti)
-- **Monimerkityksisyys**: Sanan merkitys on epäselvä
-- **Epäjohdonmukaisuus**: Samaa asiaa kuvataan eri tavoin eri paikoissa
-- **Liiallinen passiivisuus**: Passiivista käytetään liikaa, mikä tekee tekstistä raskasta
-- **Pitkät ja mutkikkaat lauseet**: Väärät rakenteet vaikeuttavat ymmärtämistä
+- **Imprecision**: "Noin 100 henkilöä" (define it exactly)
+- **Ambiguity**: the meaning of a word is unclear
+- **Inconsistency**: the same thing is described differently in different places
+- **Excessive use of the passive**: overuse of the passive makes the text heavy
+- **Long and convoluted sentences**: faulty structures make comprehension harder
 
-## Lukulähde
+## Source consulted
 
-Lainkirjoittajan opas, Oikeusministeriö. Jakso 24: Lakikieli.
+Lainkirjoittajan opas, Oikeusministeriö. Section 24: Lakikieli.

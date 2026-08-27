@@ -1,50 +1,54 @@
-# Johtolause
+# Johtolause — the enacting formula
 
-Johtolause on säädöksen nimikkeen jälkeen, ennen pykäliä oleva virke, joka
-ilmoittaa säädöksen antajan, säätämisjärjestyksen ja asetuksissa
-oikeusperustan (valtuussäännöksen). Johtolause on tiukasti vakiomuotoinen —
-sitä ei muotoilla vapaasti.
+The johtolause is the sentence after the title of a statute and before the
+sections, stating who issues the statute, the legislative procedure and, in a
+decree, the legal basis (the authorising provision). The enacting formula is
+strictly standard in form — it is not drafted freely.
 
-Kaikki tämän tiedoston mallimuodot on varmistettu Suomen säädöskokoelmasta
-(Finlex); varmistuslähde mainitaan kunkin muodon kohdalla.
+Every model form in this file has been verified against the Statute Book of
+Finland (Finlex); the source is given with each form.
 
-## Mitä johtolause sisältää — ja mitä ei
+> The enacting formulas below are **model text a drafter copies into a Finnish
+> statute**. They stay in Finnish; only the surrounding explanation is English.
 
-Johtolause kertoo:
+## What the enacting formula contains — and what it does not
 
-1. **Säädöksen antajan** (eduskunta, valtioneuvosto, ministeriö, tasavallan presidentti)
-2. **Säätämisjärjestyksen**, jos se poikkeaa tavallisesta (perustuslainsäätämisjärjestys)
-3. **Asetuksissa oikeusperustan**: lain valtuussäännös, jonka nojalla asetus annetaan
-   (perustuslain 731/1999 mukaan asetuksen antaminen edellyttää laissa säädettyä valtuutta)
-4. **Muutossäädöksessä** sen, mitä säännöksiä muutetaan, lisätään tai kumotaan
+The enacting formula states:
 
-Johtolauseessa **ei** kerrota säädöksen voimaantulosta — siitä säädetään
-säädöksen lopussa voimaantulosäännöksessä.
+1. **The issuer of the statute** (Eduskunta, the Government, a ministry, the President of the Republic)
+2. **The legislative procedure**, where it departs from the ordinary one (the procedure for enacting constitutional law)
+3. **In a decree, the legal basis**: the authorising provision of the act under which the decree is issued
+   (under perustuslaki 731/1999, issuing a decree requires an authorisation laid down in an act)
+4. **In an amending statute**, which provisions are amended, added or repealed
 
-## Lain johtolause
+The enacting formula does **not** state when the statute enters into force —
+that is laid down at the end of the statute in the entry-into-force provision.
 
-### Uusi laki
+## The enacting formula of an act
+
+### A new act
 
 ```
 Eduskunnan päätöksen mukaisesti säädetään:
 ```
 
-Huomaa: nykymuodossa **ei** ole sanaa "seuraavasti". *(Varmistettu: kuntalaki
-410/2015, Finlex.)*
+Note: the current form does **not** contain the word "seuraavasti". *(Verified:
+kuntalaki 410/2015, Finlex.)*
 
-### Perustuslainsäätämisjärjestyksessä säädetty laki
+### An act enacted in the procedure for constitutional law
 
 ```
 Eduskunnan päätöksen mukaisesti, joka on tehty perustuslain 73 §:ssä
 määrätyllä tavalla, säädetään:
 ```
 
-*(Varmistettu: valmiuslaki 1552/2011, Finlex.)*
+*(Verified: valmiuslaki 1552/2011, Finlex.)*
 
-### Muutoslaki
+### An amending act
 
-Muutossäädöksen johtolause yksilöi muutettavat, lisättävät ja kumottavat
-säännökset ja päättyy sanaan "seuraavasti:". Rakenne:
+The enacting formula of an amending statute identifies the provisions being
+amended, added and repealed, and ends with the word "seuraavasti:". The
+structure:
 
 ```
 Eduskunnan päätöksen mukaisesti
@@ -53,24 +57,24 @@ kuin ne ovat [aiemmissa muutoslaeissa], sekä
 lisätään [lakiin uusi pykälä] seuraavasti:
 ```
 
-Verbit *muutetaan*, *lisätään* ja *kumotaan* aloittavat kukin oman
-osansa. "Sellaisena kuin se on" -lauseke mainitaan, jos muutettava säännös on
-jo aiemmin muutettu. *(Rakenne varmistettu: laki kuntalain muuttamisesta
+The verbs *muutetaan*, *lisätään* and *kumotaan* each begin their own part. The
+clause "sellaisena kuin se on" is included where the provision being amended has
+already been amended before. *(Structure verified: laki kuntalain muuttamisesta
 419/2021, Finlex.)*
 
-## Asetuksen johtolause
+## The enacting formula of a decree
 
-Asetuksen johtolauseessa mainitaan aina valtuussäännös: minkä lain ja
-pykälän nojalla asetus annetaan.
+The enacting formula of a decree always states the authorising provision: under
+which act and which section the decree is issued.
 
-### Valtioneuvoston asetus
+### A Government decree
 
 ```
 Valtioneuvoston päätöksen mukaisesti säädetään [lain nimi genetiivissä]
 ([numero/vuosi]) [valtuuspykälä]:n nojalla:
 ```
 
-Varmistettu esimerkki säädöskokoelmasta:
+A verified example from the statute book:
 
 ```
 Valtioneuvoston päätöksen mukaisesti säädetään mittayksiköistä ja
@@ -80,15 +84,15 @@ sekä 4 §:n 2 momentin nojalla:
 
 *(Valtioneuvoston asetus mittayksiköistä 1015/2014, Finlex.)*
 
-### Ministeriön asetus
+### A ministerial decree
 
 ```
 [Ministeriön] päätöksen mukaisesti säädetään [lain nimi genetiivissä]
 ([numero/vuosi]) [valtuuspykälä]:n nojalla:
 ```
 
-Varmistettu esimerkki — huomaa myös "sellaisena kuin se on" -lauseke, kun
-valtuuspykälää on muutettu:
+A verified example — note also the "sellaisena kuin se on" clause, used where
+the authorising section has been amended:
 
 ```
 Sosiaali- ja terveysministeriön päätöksen mukaisesti säädetään valtion
@@ -98,11 +102,11 @@ maksuperustelain (150/1992) 8 §:n nojalla, sellaisena kuin se on laissa
 
 *(Sosiaali- ja terveysministeriön asetus 1055/2024, Finlex.)*
 
-### Tasavallan presidentin asetus
+### A decree of the President of the Republic
 
-Sama rakenne kuin muissa asetuksissa: antaja + valtuussäännös. Ahvenanmaata
-koskevissa sopimusasetuksissa johtolauseeseen sisältyy myös maakunnan
-hallituksen suostumus:
+The same structure as in other decrees: the issuer plus the authorising
+provision. In treaty decrees concerning Åland, the enacting formula also
+includes the consent of the Government of Åland:
 
 ```
 Tasavallan presidentin päätöksen mukaisesti säädetään Ahvenanmaan
@@ -113,32 +117,34 @@ suostumuksella:
 
 *(Tasavallan presidentin asetus 1088/2024, Finlex.)*
 
-## Tyypilliset virheet
+## Typical mistakes
 
-- **"säädetään seuraavasti:" uudessa laissa** — vanhentunut muoto; uuden lain
-  johtolause päättyy "säädetään:". Sana "seuraavasti" kuuluu vain
-  muutossäädöksen johtolauseeseen.
-- **Valtuussäännös puuttuu asetuksesta** — asetuksen johtolauseessa on aina
-  mainittava laki ja pykälä, johon asetuksenantovaltuus perustuu.
-- **Kumottu valtuuslaki** — tarkista Finlexistä, että valtuussäännös on
-  voimassa ja oikea (pykälänumerointi on voinut muuttua). Älä viittaa
-  kumottuun säädökseen (esim. hallitusmuoto 94/1919 on kumottu perustuslailla
-  731/1999).
-- **Voimaantulotieto johtolauseessa** — voimaantulosta säädetään
-  voimaantulosäännöksessä, ei johtolauseessa.
-- **Vapaa muotoilu** — johtolause ei ole perusteluteksti. Se noudattaa
-  vakiomuotoa sanasta sanaan.
+- **"säädetään seuraavasti:" in a new act** — an outdated form; the enacting
+  formula of a new act ends "säädetään:". The word "seuraavasti" belongs only in
+  the enacting formula of an amending statute.
+- **The authorising provision is missing from a decree** — the enacting formula
+  of a decree must always state the act and the section on which the power to
+  issue the decree is based.
+- **A repealed authorising act** — check in Finlex that the authorising
+  provision is in force and correct (the section numbering may have changed). Do
+  not refer to a repealed statute (for example hallitusmuoto 94/1919 has been
+  repealed by perustuslaki 731/1999).
+- **Entry-into-force information in the enacting formula** — entry into force is
+  laid down in the entry-into-force provision, not in the enacting formula.
+- **Free drafting** — the enacting formula is not reasoning text. It follows the
+  standard form word for word.
 
-## Tarkistuslista
+## Checklist
 
-- [ ] Antaja oikein (eduskunta / valtioneuvosto / ministeriö / tasavallan presidentti)
-- [ ] Uusi laki: "Eduskunnan päätöksen mukaisesti säädetään:" — ei "seuraavasti"
-- [ ] Muutossäädös: muutetaan / lisätään / kumotaan -rakenne ja lopussa "seuraavasti:"
-- [ ] Asetus: valtuuslaki ja -pykälä mainittu, ja ne on tarkistettu Finlexistä
-- [ ] "Sellaisena kuin se on" -lausekkeet paikallaan, jos säännöksiä on muutettu
-- [ ] Säädösnumerot oikein ja voimassa (ei kumottuja säädöksiä)
+- [ ] The issuer is correct (Eduskunta / the Government / a ministry / the President of the Republic)
+- [ ] A new act: "Eduskunnan päätöksen mukaisesti säädetään:" — not "seuraavasti"
+- [ ] An amending statute: the muutetaan / lisätään / kumotaan structure, ending in "seuraavasti:"
+- [ ] A decree: the authorising act and section are stated and have been checked in Finlex
+- [ ] The "sellaisena kuin se on" clauses are in place where provisions have been amended
+- [ ] The statute numbers are correct and in force (no repealed statutes)
 
-## Lukulähde
+## Source consulted
 
-Lainkirjoittajan opas (Oikeusministeriö), johtolausetta koskeva jakso, sekä
-yllä mainitut säädökset Suomen säädöskokoelmasta (Finlex).
+Lainkirjoittajan opas (Oikeusministeriö), the section on the enacting formula,
+together with the statutes cited above from the Statute Book of Finland
+(Finlex).
