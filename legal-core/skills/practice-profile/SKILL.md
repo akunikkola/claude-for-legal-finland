@@ -35,8 +35,8 @@ place and does not have to be repeated in every prompt.
    it is needed.
 2. **The profile supplements, it does not replace.** The safeguard sections
    (disclaimer, source discipline, out-of-scope statements) are not edited or
-   weakened — the profile is written only under the `## Practice profile`
-   heading.
+   weakened — the profile is written only under the
+   `## Practice profile (optional)` heading.
 3. **No secrets in the profile.** Client names, information about live
    engagements and personal data are not stored — the profile is a
    configuration of a standing nature, not a matter folder (matter-specific
@@ -83,11 +83,13 @@ Ask only about the sections that are relevant to the organisation:
    an installation, the domain's directory; in development, the repository
    directory). If you cannot write to the domain's files, produce the profile
    content for the user to paste in.
-2. Write a structured profile into the `## Practice profile` section of each
-   relevant domain's `AGENTS.md`:
+2. Write a structured profile under the existing
+   `## Practice profile (optional)` heading in each relevant domain's
+   `AGENTS.md`. Write under the heading that is already there — do not add a
+   second one, and do not change its wording:
 
 ```markdown
-## Practice profile
+## Practice profile (optional)
 
 <!-- Updated: YYYY-MM-DD, updated by: NN -->
 
