@@ -1,82 +1,90 @@
-# Osallistuminen
+# Contributing
 
-Lyhyet ohjeet niille, jotka kirjoittavat tai muokkaavat tämän repon skillejä ja
-plugareita. Tämä ei ole tyyliopas, vaan ne periaatteet, jotka vaikuttavat eniten
-tuotoksen laatuun ja turvallisuuteen.
+Short instructions for anyone writing or editing the skills and domains in this repository. This is
+not a style guide; these are the principles that matter most to the quality and safety of the
+output.
 
-## Suunnitteluperiaate: SKILL.md koodaa oikean toiminnan, CLAUDE.md on varaverkko
+## Design principle: SKILL.md encodes the correct behaviour, AGENTS.md is the safety net
 
-Jokainen plugari sisältää kaksi ohjekerrosta:
+Each domain contains two layers of instructions:
 
-1. **`<plugari>/skills/<skill>/SKILL.md`** – mitä tämä skill tekee, vaihe vaiheelta.
-   Kapea, tehtäväkohtainen rakenne.
-2. **`<plugari>/AGENTS.md`** – jaetut suojaukset ja käytäntöprofiili. Lähdemerkintä,
-   ajantasaisuuden pakko, premissien tarkistus, vastuuvapaus, jurisdiktio näkyviin.
-   Laaja, plugaritason turvaverkko.
+1. **`<domain>/skills/<skill>/SKILL.md`** – what this skill does, step by step. A narrow,
+   task-specific structure.
+2. **`<domain>/AGENTS.md`** – shared guardrails and the practice profile. Source marking, the
+   requirement to be current, premise checking, the disclaimer, jurisdiction kept visible. A broad,
+   domain-level safety net.
 
-**Jos skillin oikea lopputulos riippuu siitä, että jokin CLAUDE.md-suojaus pelastaa
-virheen, jonka SKILL.md olisi tehnyt, se on suunnitteluvirhe.** Vie tieto SKILL.md:hen.
-Suojaus jää paikalleen henkivakuutuksena, mutta skill kantaa tarvitsemansa tiedon itse.
+**If a skill's correct outcome depends on an `AGENTS.md` guardrail rescuing a mistake that SKILL.md
+would have made, that is a design error.** Move the knowledge into SKILL.md. The guardrail stays in
+place as life insurance, but the skill carries the knowledge it needs itself.
 
-## Konkreettiset säännöt
+## Concrete rules
 
-- **Perustu aitoihin lähteisiin.** Tämän repon arvo on siinä, että ohjeet nojaavat
-  todellisiin suomalaisiin lähteisiin: Finlex, oik.ai, Lainkirjoittajan opas, HE:n
-  laatimisohjeet, Kielitoimiston ohjepankki, säädökset ja oikeuskäytäntö. Älä keksi
-  pykäliä, ratkaisutunnuksia tai sääntöjä. Merkitse lähde.
-- **Liitä provenienssimerkintä numeroon, älä kappaleeseen.** `[mallin laskelma —
-  tarkista]` luvun viereen; `(410/2015, 7 §, Finlex)` lainkohdan perään.
-- **Tarkista laki lähteestä, älä muistista.** Kun käytettävissä on oik.ai/Finlex-MCP,
-  käytä sitä. Muistinvaraiset väitteet merkitään selvästi.
-- **Vastuuvapaus pidetään.** Tuotos on aina tarkistettava luonnos; ihminen vastaa.
-- **Kieli kunnossa.** Suomenkieliset skillit noudattavat suomen kielen ja lakikielen
-  sääntöjä (ks. `legal-core`-plugarin `finnish-language`- ja `legal-core`-skillit).
+- **Rest on genuine sources.** The value of this repository is that its instructions rest on real
+  Finnish sources: Finlex, oik.ai, Lainkirjoittajan opas, the drafting instructions for government
+  bills, Kielitoimiston ohjepankki, statutes and case law. Do not invent sections, case identifiers
+  or rules. Mark the source.
+- **Attach the provenance marking to the number, not the paragraph.** `[model calculation — check]`
+  next to the figure; `(410/2015, 7 §, Finlex)` after the provision.
+- **Check the law against a source, not from memory.** Where the oik.ai/Finlex MCP is available,
+  use it. Claims made from memory are clearly marked.
+- **The disclaimer stays.** The output is always a draft that needs checking; human review
+  before use is mandatory, and the human carries responsibility for the result.
+- **Language.** Finnish-language skills follow the rules of Finnish usage and legal language (see
+  the `finnish-language` and `legal-writing` skills in the `legal-core` domain). Each
+  document-producing skill declares its output language; see
+  [`references/glossary.md`](references/glossary.md) and
+  [`references/output-language-matrix.md`](references/output-language-matrix.md).
+- **Follow the shared citation standard.** For statutory, case law and preparatory-works citations:
+  [`references/citation-style.md`](references/citation-style.md) (three-tier certainty marking,
+  source hierarchy, the forms of case identifiers, discipline in examples). Never assert the content
+  of a decision without checking it against the source.
 
-- **Noudata jaettua viittausstandardia.** Säädös-, oikeuskäytäntö- ja
-  esityöviittauksissa: [`references/citation-style.md`](references/citation-style.md)
-  (kolmiportainen varmuusmerkintä, lähdehierarkia, ratkaisutunnusten muodot,
-  esimerkkikuri). Älä koskaan väitä ratkaisun sisältöä ilman lähteestä tarkistusta.
+## Adding a skill
 
-## Skillin lisääminen
-
-1. Sijoita skill oikean plugarin alle: `<plugari>/skills/<nimi>/SKILL.md`.
-2. Kirjoita selkeä `description`-kenttä frontmatteriin: milloin skill triggeröidään
-   (suomalaiset triggerit, säädösnumerot, §-merkki, asiakirjatyypit). Frontmatterissa
-   **vain `name` ja `description`** – ei muita kenttiä. `name` = kebab-case = kansion nimi.
-3. Jaa yksityiskohdat tarvittaessa `references/`-tiedostoihin ja lue ne Read-työkalulla.
-4. Päivitä plugarin README ja tarvittaessa juuren `marketplace.json`.
-5. **Päivitä generoidut tiedostot:** `bash scripts/check-generated.sh` ajaa
-   molemmat generaattorit (`generate-skills-md.mjs` → `SKILLS.md`,
-   `generate-adapters.mjs` → Codex-manifestit) ja varmistaa, ettei mitään jäänyt
-   committaamatta. Älä muokkaa generoituja tiedostoja (`SKILLS.md`,
-   `.codex-plugin/plugin.json`, `agents/openai.yaml`) käsin.
-6. **Aja validaattori ja testit ennen pushia:**
+1. Put the skill under the right domain: `<domain>/skills/<name>/SKILL.md`.
+2. Write a clear `description` in the frontmatter: when the skill should trigger (Finnish triggers,
+   statute numbers, the `§` symbol, document types). The frontmatter may contain **only `name` and
+   `description`** – no other fields. `name` = kebab-case = the directory name.
+3. Split detail into `references/` files where necessary and read them on demand.
+4. Update the domain README and, if the set of domains changed, the root `marketplace.json`.
+5. **Update the generated files:** `bash scripts/check-generated.sh` runs both generators
+   (`generate-skills-md.mjs` → `SKILLS.md`, `generate-adapters.mjs` → the harness manifests) and
+   confirms that nothing was left uncommitted. Do not hand-edit generated files (`SKILLS.md`,
+   `.claude-plugin/`, `.codex-plugin/plugin.json`, `.mcp.json`, `agents/openai.yaml`).
+6. **Run the validator and the tests before pushing:**
    - `node scripts/validate.mjs`
    - `node scripts/check-invariants.mjs`
-   - `node scripts/check-portability.mjs` — jokaisen skillin viittausten on
-     ratkettava oman `<domain>/`-hakemistonsa sisällä; siirrettävyyden yksikkö on
-     koko domain-hakemisto, ei `skills/*`. `--report` tulostaa erittelyn siitä,
-     mihin viittaukset osuvat (skill / sisarskill / domain / repo).
+   - `node scripts/check-portability.mjs` — every skill's references must resolve
+     inside its own `<domain>/` directory; the unit of portability is the whole
+     domain directory, not `skills/*`. `--report` prints a breakdown of where the
+     references land (skill / sibling skill / domain / repository).
    - `node scripts/check-output-language.mjs`
    - `node scripts/check-safety-mechanisms.mjs`
    - `node scripts/check-citations.mjs`
    - `node scripts/check-descriptions.mjs`
    - `node evals/check-scenarios.mjs`
    - `node --test tests/*.test.mjs`
-7. **Jos muutit skillin `description`-kenttää**, aja triggeritestit
-   (`bash evals/run-trigger-tests.sh`, ks. [evals/README.md](evals/README.md)) —
-   kuvaus on skillin triggeröitymisen ainoa signaali, ja huono muotoilu
-   hukkaa skillin hiljaa. Huom: ajaa oikeita mallikutsuja (ei CI:hin).
-   Jos lisäsit tai uudelleennimesit skillin, päivitä myös
+7. **If you changed a skill's `description`**, run the trigger evals
+   (`bash evals/run-trigger-tests.sh`, see [evals/README.md](evals/README.md)) — the description is
+   the only signal a skill triggers on, and bad wording loses the skill silently. Note: this makes
+   real model calls, so it is not in CI. If you added or renamed a skill, also update
    [evals/scenarios.json](evals/scenarios.json).
-8. **Jos tilastot muuttuvat** (oikeudenala-, skilli- tai agenttimäärä,
-   säädösrekisterin koko, versio), päivitä katselmussivut
-   (`docs/index.html` (EN, oletus) + `docs/fi/index.html`) ja regeneroi
-   OG-jakokuvat — ohjeet ja renderöintikomennot: [docs/og-source.html](docs/og-source.html).
+8. **If the statistics change** (the number of domains, skills or subagents, the size of the statute
+   register, the version), update the overview pages (`docs/index.html` (EN, the default) and
+   `docs/fi/index.html`) and regenerate the OG share images — instructions and rendering commands:
+   [docs/og-source.html](docs/og-source.html).
 
-CI ajaa täsmälleen samat tarkistukset (`check-generated.sh` + validaattori +
-testit), joten paikallisesti vihreä tarkoittaa vihreää myös CI:ssä.
+CI runs exactly the same checks (the validator, the gates, `check-generated.sh` and the tests), so
+green locally means green in CI.
 
-## Lisenssi
+## Translation
 
-Osallistumalla hyväksyt, että työsi julkaistaan [MIT](LICENSE)-lisenssillä.
+The repository is being translated from Finnish to English.
+[`references/glossary.md`](references/glossary.md) is the binding translation contract: terminology,
+statute-name conventions, the do-not-translate list, certainty and risk markers, and the
+digit-comma trap. Read it before translating anything, and follow it rather than reinventing terms.
+
+## Licence
+
+By contributing you agree that your work is published under the [MIT](LICENSE) licence.

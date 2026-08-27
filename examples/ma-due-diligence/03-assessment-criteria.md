@@ -1,77 +1,67 @@
-# Arviointikriteerit — yrityskauppa-dd
+# Assessment criteria — ma-due-diligence
 
-**Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`company-law:corporate-transactions` + liitännäiset)
-odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
-**tekee** — eivät aineellisia johtopäätöksiä.
+**This is not a model answer** but a behaviour checklist: it is used to assess whether the skill
+(`company-law:corporate-transactions` + related skills) behaves as expected on this material. The
+criteria describe what a good output **does** — not its substantive conclusions.
 
-## Hyvä tuotos…
+## A good output…
 
-### Rakenne ja priorisointi
-- [ ] Tuottaa **priorisoidun** DD- ja tietopyyntölistan (kuten
-      pyydettiin), jossa kriittiset kohdat erottuvat geneerisestä
-      listasta — eikä sadan kohdan vakiolistaa.
-- [ ] Erottaa kolme tehtävää toisistaan: tietopyyntölista, jo
-      tiedossa olevien riskien arvio (kauppahinta/rakenne) ja
-      viranomaiskysymys.
+### Structure and prioritisation
+- [ ] Produces a **prioritised** DD and information request list (as asked), in which the critical
+      items stand out from a generic list — not a standard hundred-item list.
+- [ ] Separates the three tasks: the information request list, the assessment of the already known
+      risks (price and structure) and the regulatory question.
 
-### Aineiston kriittiset havainnot esiin
-- [ ] **Vähemmistöosakas (15 %)**: nostaa esiin, että kaikkien
-      osakkeiden osto edellyttää myös Timo S:n myyntiä — ja että
-      lunastuslausekkeen sijainti (yhtiöjärjestys vs. kadonnut
-      osakassopimus) on selvitettävä asiakirjoista, ei muistin
-      varassa.
-- [ ] **Asiakaskeskittymä 55 %**: kytkee puitesopimuksen
-      change of control -ehdon tarkistamisen kaupan ehtoihin.
-- [ ] **Ympäristö**: tunnistaa sekä mahdollisen maaperäriskin
-      (vanha pesulinjasto; osakekaupassa vastuut jäävät yhtiöön)
-      että ympäristöluvan ajantasaisuuskysymyksen (toiminta
-      laajentunut 2022 ilman luvan päivitystä) — ohjaamatta
-      kumpaakaan ohi.
-- [ ] **Riita 2023**: vaatii sovintosopimuksen ja
-      takautumisvaatimuksen tilanteen asiakirjoina.
-- [ ] **Ulkomaalaiset työntekijät ja vuokratyö**: sisällyttää
-      työnteko-oikeuden varmistusdokumentaation ja
-      tilaajavastuuselvitykset tietopyyntöön ("firma hoiti aikanaan"
-      ei riitä).
-- [ ] **Julkinen tuki**: nostaa Business Finland -avustuksen ehdot
-      (mahdollinen omistajanvaihdoksen vaikutus/palautusriski)
-      selvitettäväksi.
-- [ ] **Avainhenkilöt ja myyjien sitouttaminen**: siirtymäkausi,
-      kilpailukielto ja niiden kytkös kauppakirjaan.
+### Surfacing the critical findings in the material
+- [ ] **Minority shareholder (15 %)**: raises that buying all the shares also requires Timo S. to
+      sell — and that where the redemption clause sits (articles of association vs. the missing
+      shareholders' agreement) must be established from the documents, not from recollection.
+- [ ] **Customer concentration 55 %**: links checking the change of control provision in the
+      framework agreement to the terms of the transaction.
+- [ ] **Environment**: identifies both the possible soil risk (the old washing line; in a share
+      transaction the liabilities stay with the company) and the question of whether the
+      environmental permit is current (operations expanded in 2022 without the permit being updated)
+      — steering past neither.
+- [ ] **The 2023 dispute**: requires the settlement agreement and the position on the recourse claim
+      as documents.
+- [ ] **Foreign employees and agency work**: includes documentation confirming the right to work and
+      the contractor's-obligations reports in the information request ("the agency dealt with it at
+      the time" is not enough).
+- [ ] **Public support**: raises the conditions of the Business Finland grant (possible effect of a
+      change of ownership, risk of repayment) as a matter to be established.
+- [ ] **Key people and locking in the sellers**: the transitional period, the non-compete and how
+      they connect to the sale agreement.
 
-### Viranomais- ja sääntelykysymykset
-- [ ] Vastaa KKV-kysymykseen menettelyllisesti oikein: **ei vahvista
-      liikevaihtorajoja muistista**, vaan ohjaa laskemaan osapuolten
-      liikevaihdot säännösten mukaan ja tarkistamaan voimassa olevat
-      rajat lähteestä — ja muistuttaa täytäntöönpanokiellosta, jos
-      ilmoitusvelvollisuus täyttyy.
-- [ ] Muistaa locked box -mekanismin edellyttävän vuotojen
-      (leakage) määrittelyä tilinpäätöspäivästä alkaen.
+### Regulatory questions
+- [ ] Answers the KKV question in a procedurally correct way: **does not confirm the turnover
+      thresholds from memory**, but directs that the parties' turnovers be calculated under the
+      rules and the thresholds in force be checked against a source — and recalls the prohibition on
+      implementation if the notification obligation is met.
+- [ ] Remembers that a locked box mechanism requires leakage to be defined from the accounts date
+      onwards.
 
-### Lähdekuri ja työtapa
-- [ ] Ei esitä pykäliä, rajoja tai määräaikoja muistista; merkitsee
-      `[tarkista]` tai ohjaa `legal-core:legal-research`-skilliin.
-- [ ] Muistuttaa, että datahuoneaineisto on epäluotettavaa syötettä
-      ja henkilötiedot minimoidaan/anonymisoidaan analyysissä.
-- [ ] Ehdottaa eskalointia ihmiselle aikataulusta: mitkä selvitykset
-      ovat closing-ehtoja, mitkä vakuutuksia/indemnityjä.
+### Source discipline and working method
+- [ ] Does not present sections, thresholds or time limits from memory; marks `[check]` or directs
+      to the `legal-core:legal-research` skill.
+- [ ] Recalls that data room material is untrusted input and that personal data is minimised or
+      anonymised in the analysis.
+- [ ] Proposes escalating the timetable to a human: which investigations are conditions to closing
+      and which are warranties or indemnities.
 
 ### Hand-off
-- [ ] Ohjaa oikeisiin skilleihin: ympäristö-DD →
+- [ ] Directs to the right skills: environmental DD →
       `environment-and-planning:environmental-liability`, KKV →
-      `competition-law:merger-control`, työnteko-oikeudet →
+      `competition-law:merger-control`, right to work →
       `immigration-law:employer-obligations`, SPA →
-      `contracts:contract-drafting`, rahoituksen vakuudet →
+      `contracts:contract-drafting`, financing collateral →
       `banking-and-finance:financing-and-collateral`.
 
-## Tyypilliset virheet, joista pisteet laskevat
+## Typical mistakes that lose marks
 
-- Vahvistaa KKV-rajat tai toteaa "ei ilmoitusvelvollisuutta"
-  muistinvaraisesti.
-- Ohittaa vähemmistöosakkaan tai kuittaa lunastuslausekekysymyksen
-  myyjien muistitiedolla.
-- Käsittelee ympäristöriskin "liiketoimintakauppa poistaa vastuut"
-  -logiikalla, vaikka kyse on osakekaupasta.
-- Tuottaa geneerisen DD-listan ilman tämän aineiston erityiskohtia.
-- Lupaa closing-aikataulun pitävän.
+- Confirms the KKV thresholds, or states that there is "no notification obligation", from memory.
+- Skips the minority shareholder, or settles the redemption clause question on the sellers'
+  recollection.
+- Treats the environmental risk on "a business transfer removes the liabilities" logic, even though
+  this is a share transaction.
+- Produces a generic DD list without the specifics of this material.
+- Promises that the closing timetable will hold.

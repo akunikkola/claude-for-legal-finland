@@ -1,56 +1,52 @@
-# Kohdemuistio — Teräsosa Oy (Mika Rantalan muistiinpanot, 2.6.2026)
+# Target memorandum — Teräsosa Oy (Mika Rantala's notes, 2 June 2026)
 
-Epävirallinen, koottu johdon tapaamisista ja myyjän toimittamasta
-esittelymateriaalista. EI tarkistettu.
+Informal, compiled from management meetings and the presentation material supplied by the seller.
+NOT verified.
 
-## Liiketoiminta
+## The business
 
-- Alihankintakonepaja; CNC-koneistus ja hitsauskokoonpanot.
-- **Suurin asiakas n. 55 % liikevaihdosta** (pohjoismainen
-  laitevalmistaja, puitesopimus "uusittu pari vuotta sitten").
-  Myyjän mukaan suhde "erinomainen, henkilökohtainen luottamus".
-- Liikevaihto 2025 tilinpäätöksen mukaan 8,4 M€, EBITDA n. 1,1 M€.
-  Tilikausi = kalenterivuosi; tilinpäätös 2025 vahvistettu
-  yhtiökokouksessa maaliskuussa, tilintarkastettu.
+- Subcontract engineering workshop; CNC machining and welded assemblies.
+- **Largest customer approx. 55 % of turnover** (a Nordic equipment manufacturer, framework
+  agreement "renewed a couple of years ago"). According to the seller the relationship is
+  "excellent, personal trust".
+- Turnover in 2025 per the financial statements €8.4 million, EBITDA approx. €1.1 million. Financial
+  year = calendar year; the 2025 financial statements were adopted at the general meeting in March
+  and have been audited.
 
-## Omistus ja hallinto
+## Ownership and governance
 
-- Osakkaat: Veli-Matti K. 60 %, Juha K. 25 %, **Timo S. 15 %**
-  (entinen tuotantopäällikkö, lähtenyt yhtiöstä 2021 "vähän huonoissa
-  merkeissä"). Myyjäveljekset uskovat, että yhtiöjärjestyksessä on
-  lunastuslauseke — "tai sitten se oli siinä osakassopimuksessa,
-  pitää kaivaa".
-- Osakassopimus on olemassa (2014?), kukaan ei löytänyt
-  allekirjoitettua versiota vielä.
-- Hallitus = veljekset. Juha toimii myös tj:nä ilman kirjallista
-  tj-sopimusta.
-- **Avainhenkilöriski**: tuotannon "kaikki tietää" -henkilö on
-  työnjohtaja, joka täyttää 64 tänä vuonna.
+- Shareholders: Veli-Matti K. 60 %, Juha K. 25 %, **Timo S. 15 %** (former production manager, left
+  the company in 2021 "on somewhat bad terms"). The selling brothers believe there is a redemption
+  clause in the articles of association — "or maybe it was in that shareholders' agreement, we'll
+  have to dig it out".
+- A shareholders' agreement exists (2014?); nobody has yet found a signed version.
+- The board = the brothers. Juha also acts as managing director without a written managing
+  director's agreement.
+- **Key person risk**: the person in production who "knows everything" is a foreman who turns 64
+  this year.
 
-## Tiedossa olevat kysymysmerkit (Mikan lista)
+## Known question marks (Mika's list)
 
-1. Vuonna 2023 ollut **riita entisen asiakkaan kanssa**
-   toimitusvirheestä — myyjän mukaan "sovittiin", mutta sovinnon
-   ehtoja ei ole näytetty. Jotain mainittiin myös vakuutusyhtiön
-   takautumisvaatimuksesta.
-2. Halli on **omalla tontilla**; pihalla vanha pesulinjasto, jonka
-   "edellinen omistaja jätti joskus 90-luvulla". Veljesten mukaan
-   maaperää "ei ole koskaan tutkittu, ei ole ollut tarvetta".
-   Ympäristölupa on "jostain 2000-luvun alusta, ei sitä ole
-   päivitetty kun toiminta ei ole muuttunut" — paitsi että 2022
-   hankittiin toinen hitsauslinja ja maalaamo.
-3. Työntekijöistä 6 vuokratyöntekijöitä ja 3 ulkomaalaista
-   (myyjä: "luvat kunnossa, firma hoiti aikanaan").
-4. Yhtiö sai **Business Finlandin kehittämisavustusta 2024**
-   (n. 180 t€) automaatioinvestointiin — ehtoja ei ole katsottu.
-5. Veljekset haluavat jäädä "siirtymäajaksi" mutta eivät ole
-   yksimielisiä kuinka pitkäksi. Kilpailukiellosta ei ole puhuttu.
-6. Konsernin oma liikevaihto n. 95 M€. "Tarvitaanko KKV-ilmoitus,
-   kun kohde on näin pieni?"
+1. In 2023 there was a **dispute with a former customer** over a delivery defect — according to the
+   seller it was "settled", but the terms of the settlement have not been shown. Something was also
+   mentioned about a recourse claim from an insurance company.
+2. The hall is **on its own plot**; in the yard there is an old washing line that "the previous
+   owner left there sometime in the nineties". According to the brothers the soil "has never been
+   investigated, there has never been any need". The environmental permit is "from somewhere in the
+   early 2000s, it hasn't been updated because the operations haven't changed" — except that in 2022
+   a second welding line and a paint shop were acquired.
+3. Of the employees 6 are agency workers and 3 are foreign nationals (seller: "the permits are in
+   order, the agency dealt with it at the time").
+4. The company received a **Business Finland development grant in 2024** (approx. €180 000) for an
+   automation investment — the conditions have not been looked at.
+5. The brothers want to stay on "for a transitional period" but do not agree on how long. A
+   non-compete has not been discussed.
+6. The group's own turnover is approx. €95 million. "Do we need a KKV notification when the target
+   is this small?"
 
-## Aikataulu
+## Timetable
 
-- Datahuone auki vko 24, Q&A-prosessi sopimatta.
-- Tavoite: SPA-luonnos heinäkuussa, closing syyskuussa.
-- Rahoitus: pankki edellyttää "puhdasta DD-raporttia" ja
-  yrityskiinnityskelpoista vakuuspakettia.
+- Data room open in week 24; the Q&A process has not been agreed.
+- Target: draft SPA in July, closing in September.
+- Financing: the bank requires a "clean DD report" and a collateral package capable of supporting a
+  floating charge.

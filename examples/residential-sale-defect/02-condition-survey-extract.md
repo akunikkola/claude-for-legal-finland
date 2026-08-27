@@ -1,38 +1,40 @@
-# OTE — Kuntotarkastusraportti (asuntokauppaa varten), 12.1.2026
+# EXTRACT — Condition survey report (for a housing transaction), 12 January 2026
 
-Kohde: As Oy Satamapuisto, talo B, huoneisto B 14 (3h+k+s, 76,5 m²)
-Tilaaja: myyjä
-Tarkastaja: RKM Jouni Pelkonen, [yritys]
-Menetelmä: aistinvarainen ja rakennetta rikkomaton; pintakosteudenosoitin
+Property: As Oy Satamapuisto, building B, flat B 14 (3 rooms + kitchen + sauna, 76.5 m²)
+Commissioned by: the seller
+Surveyor: RKM Jouni Pelkonen, [company]
+Method: visual and non-destructive; surface moisture meter
 
-[– – sivut 1–6 puuttuvat otteesta – –]
+[– – pages 1–6 missing from the extract – –]
 
-## 7. Kylpyhuone
+## 7. Bathroom
 
-Kylpyhuone on uusittu osakkaan toimesta v. 2009 (tieto myyjältä;
-muutostyöilmoitusta ei esitetty tarkastajalle). Seinissä laatta,
-lattiassa laatta, lattiakaivo muovia.
+The bathroom was renovated by the shareholder in 2009 (information from the seller; no notice of
+alteration work was presented to the surveyor). Tiled walls, tiled floor, plastic floor drain.
 
-Pintakosteudenosoittimella havaittiin **kohonneita lukemia suihkun
-roiskealueella seinän alaosassa (välillä 70–95, vertailuarvo kuivalla
-alueella 40–55)**. Lukemat ovat suuntaa-antavia eivätkä osoita
-rakenteen kosteuspitoisuutta.
+The surface moisture meter showed **elevated readings in the shower splash zone at the base of the
+wall (range 70–95; reference value in a dry area 40–55)**. The readings are indicative and do not
+establish the moisture content of the structure.
 
-Silikonisaumoissa paikoin tummumaa ja irtoamaa. Lattiakaivon
-korokerenkaan tiiveyttä ei voitu todeta rakennetta avaamatta.
+Some darkening and detachment in the silicone joints. The tightness of the floor drain's raising
+ring could not be established without opening the structure.
 
-**Suositus: roiskealueen rakenteen kunnon selvittäminen
-rakenneavauksella (lisätutkimustarve). Märkätilan käyttöikä huomioiden
-(uusittu 2009, tekninen käyttöikä tyypillisesti 20–25 v) varautuminen
-saneeraukseen lähivuosina on suositeltavaa.**
+**Recommendation: establish the condition of the structure in the splash zone by opening it up
+(further investigation required). Given the service life of the wet room (renovated 2009, technical
+service life typically 20–25 years), preparing for refurbishment in the next few years is
+advisable.**
 
-## 8. Muut tilat
+> *The recommendation in the original Finnish, which is the operative wording:*
+> *"Suositus: roiskealueen rakenteen kunnon selvittäminen rakenneavauksella (lisätutkimustarve).*
+> *Märkätilan käyttöikä huomioiden (uusittu 2009, tekninen käyttöikä tyypillisesti 20–25 v)*
+> *varautuminen saneeraukseen lähivuosina on suositeltavaa."*
 
-Makuuhuoneen ikkunan tiivisteissä kulumaa. Eteisen parketissa
-tummentuma (n. 10 × 15 cm) ulko-oven edessä; pintakosteudenosoittimella
-ei poikkeavaa.
+## 8. Other rooms
 
-[– – ote päättyy – –]
+Wear in the seals of the bedroom window. Darkening in the hall parquet (approx. 10 × 15 cm) in front
+of the entrance door; nothing abnormal on the surface moisture meter.
 
-*Raportti perustuu tarkastushetken havaintoihin. Rakenteita ei avattu.
-Raportti ei ole takuu kohteen kunnosta.*
+[– – extract ends – –]
+
+*The report is based on observations at the time of the survey. Structures were not opened. The
+report is not a guarantee of the condition of the property.*

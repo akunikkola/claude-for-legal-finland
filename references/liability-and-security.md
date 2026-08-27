@@ -1,117 +1,108 @@
-# Vastuu, ammattietiikka ja tietoturva
+# Liability, professional ethics and information security
 
-**Versio 1.0 – 4.6.2026.** Tämä on koko `agent-skills-for-finnish-law`
--markkinapaikan jaettu vastuu- ja tietoturvastandardi. Se täydentää
-[`references/citation-style.md`](citation-style.md) -lähdestandardia.
+**Version 1.0 – 4 June 2026.** This is the shared liability and information-security standard for
+the whole `agent-skills-for-finnish-law` collection. It complements the source standard in
+[`references/citation-style.md`](citation-style.md).
 
-> **Lähtökohta: disclaimer ei ole suoja.** Loppuhuomautus "ei oikeudellista
-> neuvontaa" ei estä yhtäkään virhettä eikä siirrä yhtäkään vastuuta. Se kertoo
-> lukijalle aseman, mutta itse suojan tuottavat **mekanismit**, jotka on
-> rakennettu skilleihin ja näihin standardeihin. Tämä tiedosto kokoaa ne ja
-> kuvaa, mitä compliancea työkalujen käyttö edellyttää.
-
----
-
-## 1. Suojan kerrokset (tämä on se "enemmän kuin disclaimer")
-
-Jokainen tuotos kulkee viiden mekanismin läpi. Disclaimer on vasta kuudes,
-ja vähäisin.
-
-1. **Lähteen varmistus.** Säädös ja oikeuskäytäntö haetaan lähteestä (oik.ai/
-   Finlex), ei mallin muistista. Ks. plugarien `CLAUDE.md` ja
-   `legal-core:legal-research`.
-2. **Kolmiportainen varmuusmerkintä.** Jokainen väite on joko *Varmistettu*,
-   *Tarkistettava* tai *Älä käytä* – ja merkintä näkyy numeron vieressä.
-   Ks. [`citation-style.md`](citation-style.md).
-3. **Premissien tarkistus.** Käyttäjän esittämää virheellistä oikeudellista
-   faktaa ei oteta annettuna; olennainen premissi tarkistetaan ennen analyysiä.
-4. **Negatiivirajaus.** Jokainen skill kertoo osiossa *Mitä tämä skill EI tee*,
-   mihin se ei ota kantaa ja mitä se ei korvaa – tämä rajaa hallusinaatio- ja
-   vastuuriskiä konkreettisesti.
-5. **Ihmisen tarkistusportti.** Mitään ei lähetetä, jätetä tuomioistuimeen,
-   allekirjoiteta tai julkaista ennen kuin pätevä ihminen on tarkistanut ja
-   hyväksynyt sen ja kantaa ammatillisen vastuun lopputuloksesta.
-6. **Vastuuvapaus.** Merkitään tuotokseen – mutta vasta viidennen mekanismin
-   jälkeen, ei sen sijasta.
-
-**Suunnittelusääntö:** jos virhe pääsisi läpi ilman, että jokin mekanismi 1–5
-sen pysäyttää, vika on skillissä – korjaa skilli, älä luota disclaimeriin.
+> **Starting point: a disclaimer is not a protection.** A closing note saying "not legal advice"
+> prevents no error and transfers no liability. It tells the reader where they stand, but the
+> protection itself comes from the **mechanisms** built into the skills and into these standards.
+> This file collects them and describes what compliance the use of these tools requires.
 
 ---
 
-## 2. Ammattieettinen kerros
+## 1. The layers of protection (this is the "more than a disclaimer" part)
 
-Työkalut tuottavat luonnoksia; ammatillinen vastuu ja velvoitteet säilyvät
-käyttäjällä. Pääpiirteet (tarkista ajantasainen sääntely lähteestä):
+Every output passes through five mechanisms. The disclaimer is only the sixth, and the least of
+them.
 
-- **Salassapito.** Asianajajan salassapitovelvollisuus (laki asianajajista
-  496/1958 ja Asianajajaliiton tapaohjeet, hyvä asianajajatapa) ja muu
-  lakisääteinen salassapito sitovat riippumatta työkalusta. Asiakkaan
-  luottamuksellista tietoa ei viedä työkaluun, joka ei täytä luottamuksellisen
-  käsittelyn vaatimuksia. Ks. luku 3.
-- **Esteellisyys ja eturistiriita.** Työkalu ei tunnista toimeksiantojen
-  välisiä eturistiriitoja. Niiden arviointi kuuluu käyttäjälle.
-- **Kuka saa edustaa.** Oikeudenkäyntiasiamiehenä yleisessä tuomioistuimessa
-  toimiminen on rajattua (oikeudenkäymiskaari 4/1734, 15 luku): pääsääntöisesti
-  asianajaja, julkinen oikeusavustaja tai luvan saanut oikeudenkäyntiavustaja
-  (laki luvan saaneista oikeudenkäyntiavustajista 715/2011). Skillin tuottama
-  kirjelmäluonnos ei tee kenestäkään kelpoista asiamiestä.
-- **Ei-juristit.** Toisin kuin eräissä maissa, oikeudellisen neuvonnan
-  tarjoaminen tuomioistuimen ulkopuolella on Suomessa verraten vapaata, mutta
-  vastuu annetusta neuvosta säilyy. Ei-juristin tuottama luonnos ei ole
-  ammatillista oikeudellista neuvontaa eikä korvaa sitä.
-- **Hyvä lakimiestapa.** Tunnista epävarmuus avoimesti, älä esitä tulkintaa
-  varmempana kuin se on, ja ohjaa tarvittaessa pätevän asiantuntijan arvioon.
+1. **Source verification.** Statutes and case law are retrieved from a source (oik.ai/Finlex), not
+   from the model's memory. See each domain's `AGENTS.md` and `legal-core:legal-research`.
+2. **Three-tier certainty marking.** Every claim is either *Verified*, *Needs checking*
+   or *Do not use* — and the marking sits next to the number.
+   See [`citation-style.md`](citation-style.md).
+3. **Premise checking.** An incorrect legal fact stated by the user is not taken as given; a
+   material premise is checked before the analysis.
+4. **Negative scoping.** Every skill states, in a *What this skill does NOT do* section, what it
+   takes no position on and what it does not replace — this bounds hallucination and liability risk
+   concretely.
+5. **Human review gate.** Nothing is sent, filed with a court, signed or published until a
+   competent human has reviewed and approved it and carries professional responsibility for the
+   result.
+6. **Disclaimer.** Marked on the output — but only after the fifth mechanism, never instead of it.
 
----
-
-## 3. Tietojenkäsittely ja tietoturva
-
-Mandanttitietojen vieminen tekoälytyökaluun on henkilötietojen käsittelyä ja
-usein salassa pidettävän tiedon käsittelyä. Ennen kuin asiakirjoja syötetään:
-
-- **Käsittelysopimus (GDPR 28 art).** Jos henkilötietoja käsitellään ulkoisessa
-  työkalussa/pilvipalvelussa, palveluntarjoajan kanssa on oltava
-  henkilötietojen käsittelysopimus (DPA/AVV). Varmista myös tietojen
-  **säilytyskäytäntö** (esim. kuinka pitkään mallintarjoaja säilyttää
-  syötteet) ja mahdollinen tiedon siirto EU:n ulkopuolelle (siirtoperuste).
-- **Anonymisointi ensin.** Kun henkilötietojen ei tarvitse päätyä mallille,
-  anonymisoi ne paikallisesti ennen analyysiä. Suositeltu työkalu on
-  **PII Shield** (ks. `data-protection`-plugarin README): se korvaa henkilötiedot
-  paikkamerkeillä paikallisesti ja palauttaa ne jälkikäteen – henkilötieto ei
-  päädy API:hin asti. Tämä toteuttaa tietojen minimoinnin.
-- **Salassapito ja pilvi.** Arvioi erikseen, saako salassa pidettävää tai
-  arkaluonteista aineistoa (9–10 art) viedä työkaluun lainkaan. Epäselvässä
-  tilanteessa: älä vie – anonymisoi tai käsittele paikallisesti.
-- **Oikeudellinen sääntely:** EU:n tietosuoja-asetus (2016/679),
-  tietosuojalaki (1050/2018), työelämän tietosuoja (laki yksityisyyden suojasta
-  työelämässä 759/2004). Ks. `data-protection`-plugari. *Säädösnumerot tarkistettava
-  Finlexistä ennen lopullista käyttöä.*
+**Design rule:** if an error could get through without one of mechanisms 1–5 stopping it, the fault
+is in the skill — fix the skill, do not rely on the disclaimer.
 
 ---
 
-## 4. Tekoälyn läpinäkyvyys työkalusta itsestään
+## 2. The professional-ethics layer
 
-- Nämä plugarit ohjaavat yleiskäyttöistä tekoälyä (Claude). **Tuotokset ovat
-  tekoälyn tuottamia luonnoksia** – tee tämä näkyväksi, kun jaat tuotoksen
-  eteenpäin. EU:n tekoälyasetuksen (2024/1689) läpinäkyvyysvelvoite (50 art)
-  edellyttää, että käyttäjä tietää olevansa tekemisissä tekoälyn kanssa.
-- **Riskiluokka.** Juristin luonnostelun apuvälineenä työkalu ei lähtökohtaisesti
-  ole korkean riskin tekoälyjärjestelmä. Erityistilanteissa luokka voi muuttua –
-  esimerkiksi jos lainkäyttöviranomainen käyttää tekoälyä avustamaan oikeuden
-  soveltamisessa tosiseikkoihin (asetuksen liite III). Arvioi käyttötapa
-  tapauskohtaisesti `ai-regulation`-plugarilla; älä oleta luokkaa.
+The tools produce drafts; professional responsibility and obligations remain with the user. The
+main points (check the current rules against a source):
+
+- **Confidentiality.** An advocate's duty of confidentiality (Advocates Act, laki asianajajista
+  496/1958, and the Finnish Bar Association's code of conduct, hyvä asianajajatapa) and other
+  statutory confidentiality obligations bind regardless of the tool. A client's confidential
+  information is not taken into a tool that does not meet the requirements for confidential
+  processing. See section 3.
+- **Disqualification and conflicts of interest.** The tool does not detect conflicts of interest
+  between engagements. Assessing them is the user's responsibility.
+- **Who may act as counsel.** Acting as counsel in the general courts is restricted (Code of
+  Judicial Procedure, oikeudenkäymiskaari 4/1734, chapter 15): as a rule an advocate, a public
+  legal aid attorney or a licensed legal counsel (laki luvan saaneista oikeudenkäyntiavustajista
+  715/2011). A draft written submission produced by a skill does not make anyone eligible to act as
+  counsel.
+- **Non-lawyers.** Unlike in some countries, giving legal advice outside court is relatively
+  unrestricted in Finland, but responsibility for the advice given remains. A draft produced by a
+  non-lawyer is not professional legal advice and does not replace it.
+- **Good professional conduct.** Acknowledge uncertainty openly, do not present an interpretation
+  as more certain than it is, and refer the matter to a competent expert where necessary.
 
 ---
 
-## 5. Soveltaminen
+## 3. Data processing and information security
 
-- Plugarien `CLAUDE.md` viittaa tähän tiedostoon ja
-  [`citation-style.md`](citation-style.md):ään.
-- Kun tuotat merkittävän juridisen tuotoksen, varmista että mekanismit 1–5
-  ovat toteutuneet ennen kuin lisäät vastuuvapauden.
-- Tämä tiedosto ei ole oikeudellinen neuvo compliance-velvoitteista, vaan
-  käytännön muistilista. Organisaation oma tietosuoja- ja
-  ammattieettinen ohjeistus menee tämän edelle.
+Taking client data into an AI tool is processing of personal data and often processing of
+confidential information. Before documents are entered:
 
-*Päivitä versionumero ja päiväys, kun standardia muutetaan.*
+- **Processing agreement (GDPR Article 28).** If personal data is processed in an external
+  tool or cloud service, there must be a data processing agreement (DPA) with the provider. Also
+  confirm the **retention policy** (for example how long the model provider retains inputs) and any
+  transfer of data outside the EU (transfer basis).
+- **Anonymise first.** Where personal data does not need to reach the model, anonymise it locally
+  before analysis. The recommended tool is **PII Shield** (see the `data-protection` domain
+  README): it replaces personal data with placeholders locally and restores them afterwards — the
+  personal data never reaches the API. This implements data minimisation.
+- **Confidentiality and the cloud.** Assess separately whether confidential or sensitive material
+  (Articles 9 and 10) may be taken into the tool at all. Where it is unclear: do not take it in —
+  anonymise it or process it locally.
+- **Legal framework:** the General Data Protection Regulation (2016/679), the Data Protection Act
+  (tietosuojalaki 1050/2018) and privacy in working life (laki yksityisyyden suojasta työelämässä
+  759/2004). See the `data-protection` domain. *Statute numbers must be checked in Finlex before
+  final use.*
+
+---
+
+## 4. AI transparency about the tool itself
+
+- These domains steer a general-purpose AI assistant. **Outputs are AI-generated drafts** — make
+  this visible when you pass an output on. The transparency obligation in the EU AI Act
+  (asetus (EU) 2024/1689, Article 50) requires the user to know they are dealing with an AI.
+- **Risk class.** As an aid to a lawyer's drafting, the tool is not in principle a high-risk AI
+  system. In particular situations the class may change — for example where a judicial authority
+  uses AI to assist in applying the law to the facts (Annex III to the Regulation). Assess the use
+  case individually with the `ai-regulation` domain; do not assume the class.
+
+---
+
+## 5. Application
+
+- Each domain's `AGENTS.md` points at this file and at
+  [`citation-style.md`](citation-style.md).
+- When you produce a significant legal output, confirm that mechanisms 1–5 have actually run before
+  you add the disclaimer.
+- This file is not legal advice about compliance obligations; it is a practical checklist. Your
+  organisation's own data-protection and professional-ethics guidance takes precedence over it.
+
+*Update the version number and date when the standard changes.*

@@ -1,28 +1,23 @@
-# Muistio puhelusta — Pohjola Industri Oy / kohteen osto
+# Note of a call — Pohjola Industri Oy / acquisition of a target
 
-Soitto 2.6.2026, Pohjola Industri Oy:n talousjohtaja Mika Rantala.
+Call on 2 June 2026, Mika Rantala, CFO of Pohjola Industri Oy.
 
-Pohjola Industri (konepajakonserni, n. 240 htv) aikoo ostaa **Teräsosa
-Oy:n koko osakekannan**. Teräsosa on alihankintakonepaja Jyväskylässä,
-liikevaihto Mikan mukaan "jotain 8–9 miljoonaa", henkilöstöä 42.
-Myyjinä perustajaveljekset (60 % + 25 %) ja "joku entinen
-tuotantopäällikkö jolla on loput, ei olla oltu yhteydessä".
+Pohjola Industri (an engineering group, approx. 240 FTE) intends to buy **the entire share capital
+of Teräsosa Oy**. Teräsosa is a subcontract engineering workshop in Jyväskylä; turnover, according
+to Mika, "something like 8 to 9 million", 42 employees. The sellers are the founding brothers (60 %
+and 25 %) and "some former production manager who has the rest — we haven't been in touch".
 
-Aiesopimus on allekirjoitettu viime viikolla ("aika kevyt, yksinoikeus
-elokuun loppuun"). Kauppahinta-ajatus 6,2 M€, locked box -mekanismilla
-"koska tilinpäätös on tuore".
+A letter of intent was signed last week ("fairly light, exclusivity to the end of August"). The
+price idea is €6.2 million, on a locked box mechanism "because the accounts are recent".
 
-Mika haluaa, että teemme **oikeudellisen due diligencen nopeasti** —
-"closing pitäisi saada syyskuulle". Datahuone aukeaa ensi viikolla.
-Mika listasi puhelussa, mitä hän jo tietää (ks. kohdemuistio
-liitteenä) ja pyysi:
+Mika wants us to carry out **legal due diligence quickly** — "closing should happen in September".
+The data room opens next week. On the call Mika listed what he already knows (see the target
+memorandum, attached) and asked for:
 
-1. DD-tarkistuslista ja tietopyyntölista datahuonetta varten —
-   priorisoituna, "ei mitään sadan kohdan geneeristä listaa".
-2. Arvio siitä, mitkä jo tiedossa olevat asiat voivat vaikuttaa
-   kauppahintaan tai rakenteeseen.
-3. "Tarvitaanko joku kilpailuviranomaisjuttu? Joku mainitsi siitä
-   golfissa."
+1. A DD checklist and an information request list for the data room — prioritised, "not some generic
+   hundred-item list".
+2. An assessment of which of the known matters could affect the price or the structure.
+3. "Do we need some competition authority thing? Someone mentioned it at golf."
 
-Aikataulupaine kova. Mika lentää lomalle 18.6. ja haluaa tilannekuvan
-sitä ennen.
+The timetable is under pressure. Mika flies off on holiday on 18 June and wants a picture of the
+situation before then.

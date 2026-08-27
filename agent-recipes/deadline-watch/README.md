@@ -1,41 +1,40 @@
-# maaraaika-vahti — määräaikojen valvonta-agentti
+# deadline-watch — time-limit monitoring agent
 
-Valvoo määriteltyä aineisto- tai kalenterilähdettä oikeudellisista
-**määräajoista** ja nostaa lähestyvät määräajat varoituksina. Tyypillisiä:
-valitusaika (hallinto- ja yleiset tuomioistuimet), oikaisuvaatimusaika,
-kanteen vanhentuminen, muutoksenhaun jatkokäsittely-/valituslupa-aika,
-yhteistoimintalain neuvotteluajat ja rekisteröidyn pyynnön vastausaika (GDPR).
+Watches a defined document or calendar source for legal **time limits** and raises approaching
+deadlines as alerts. Typical ones: the appeal period (administrative and general courts), the period
+for a request for rectification, limitation of an action, the period for leave to appeal or for
+continued consideration, the negotiation periods under the Act on Co-operation within Undertakings,
+and the response time for a data subject request (GDPR).
 
-> **Tämä on keittokirja, ei valmis tuote.** Ks. [`../README.md`](../README.md)
-> tietoturvamalli (lukija/analysoija/kirjoittaja) ja vastuurajaukset.
+> **This is a cookbook, not a finished product.** See [`../README.md`](../README.md) for the
+> security model (reader/analyser/writer) and the scope of liability.
 
-## Ohjaustapahtuma (esimerkki)
+## Control event (example)
 
-`Tarkista määräajat aineistosta <polku/lähde> päivään <YYYY-MM-DD>, kynnys: <päiviä ennen>`
+`Check the time limits in <path/source> up to <YYYY-MM-DD>, threshold: <days before>`
 
-## Tasot
+## Tiers
 
-| Taso | Tehtävä | Oikeudet |
+| Tier | Task | Permissions |
 |---|---|---|
-| `aineisto-lukija` | Lukee asiakirjat/kalenterimerkinnät, poimii päivämäärät, tiedoksiantopäivät, asianumerot. Palauttaa JSONin. | `Read`, `Grep` |
-| `maaraaika-laskija` | Laskee määräajat poimituista päivistä; tarkistaa määräaikasäännöt oik.ai/Finlexistä (lukuoikeus). | MCP-luku |
-| `varoitus-kirjoittaja` | Kirjoittaa varoituslistan ja seurantamerkinnät. Ainoa `Write`-taso. | `Write` |
+| `material-reader` | Reads the documents and calendar entries, extracts dates, dates of service and case numbers. Returns JSON. | `Read`, `Grep` |
+| `deadline-calculator` | Calculates the time limits from the extracted dates; checks the time-limit rules in oik.ai/Finlex (read access). | MCP read |
+| `alert-writer` | Writes the alert list and the follow-up entries. The only `Write` tier. | `Write` |
 
-## Mitä tämä EI tee
+## What this does NOT do
 
-- **Ei laske sitovia määräpäiviä.** Lasketut päivät ovat johtolankoja, jotka
-  ihmisen on vahvistettava asiakirjasta ja säännöksestä. Tiedoksiantopäivä,
-  pyhäpäiväsiirto ja erityislain poikkeus voivat muuttaa lopputuloksen.
-- **Ei tee oikeudellista arviota** muutoksenhaun edellytyksistä tai
-  menestymisestä.
-- **Ei korvaa toimiston määräaikajärjestelmää** eikä asianajajan vastuuta
-  määräaikojen seurannasta.
-- **Ei lähetä mitään ulos** ilman ihmisen hyväksyntää.
+- **It does not calculate binding deadlines.** The calculated dates are leads that a human must
+  confirm from the document and from the provision. The date of service, a public-holiday shift and
+  an exception in a special act can all change the result.
+- **It makes no legal assessment** of the conditions for an appeal or its prospects of success.
+- **It does not replace the firm's time-limit system** or the lawyer's responsibility for monitoring
+  time limits.
+- **It sends nothing out** without human approval.
 
-## Käyttöönotto
+## Adoption
 
-1. Sovita konnektorit (DMS/kalenteri) omiin järjestelmiisi.
-2. Aseta tarkistusrytmi ja kynnys (montako päivää ennen varoitetaan).
-3. Tee oma evaluaatio testiaineistolla ennen tuotantokäyttöä.
-4. Varmista mandanttitietojen käsittelyn lainmukaisuus
+1. Adapt the connectors (DMS and calendar) to your own systems.
+2. Set the review rhythm and the threshold (how many days ahead to warn).
+3. Run your own evaluation on test material before production use.
+4. Confirm the lawfulness of processing client data
    ([`../../references/liability-and-security.md`](../../references/liability-and-security.md)).

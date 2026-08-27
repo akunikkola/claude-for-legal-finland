@@ -1,114 +1,106 @@
-# Viittaus- ja lähdestandardi
+# Citation and source standard
 
-**Versio 1.0 – 4.6.2026.** Tämä on koko `agent-skills-for-finnish-law`
--markkinapaikan **jaettu, sitova lähdestandardi.** Jokaisen plugarin
-`CLAUDE.md` viittaa tähän, ja jokainen skill noudattaa tätä, kun se viittaa
-säädökseen, oikeuskäytäntöön tai esitöihin.
+**Version 1.0 – 4 June 2026.** This is the **shared, binding source standard** for the whole
+`agent-skills-for-finnish-law` collection. Every domain's `AGENTS.md` points at this file, and
+every skill follows it when it cites a statute, case law or preparatory works.
 
-> **Periaate:** lähteen varmistus ja epävarmuuden näkyväksi tekeminen ovat
-> tämän kokoelman tärkein suojaus – eivät disclaimerit. Pelkkä loppuhuomautus
-> "ei oikeudellista neuvontaa" ei suojaa ketään. Suojaa se, että jokainen
-> juridista painoa kantava väite on joko **tarkistettu lähteestä** tai
-> **merkitty selvästi tarkistettavaksi.**
+> **Principle:** source verification and making uncertainty visible are this collection's most
+> important protection — not disclaimers. A closing note saying "not legal advice" protects
+> nobody. What protects is that every claim carrying legal weight has either been **checked
+> against a source** or been **clearly marked as needing checking.**
 
-Yksityiskohtaiset suomen kielen ja pykäläviittausten säännöt ovat
-`legal-core`-plugarissa: [`legal-core/skills/legal-writing/references/citations.md`](../legal-core/skills/legal-writing/references/citations.md)
-ja [`.../sources.md`](../legal-core/skills/legal-writing/references/sources.md). Tämä
-tiedosto on niiden yläpuolella oleva **yhteinen minimistandardi**.
+Detailed rules for Finnish usage and section references live in the `legal-core` domain:
+[`legal-core/skills/legal-writing/references/citations.md`](../legal-core/skills/legal-writing/references/citations.md)
+and [`.../sources.md`](../legal-core/skills/legal-writing/references/sources.md). This file is the
+**common minimum standard** sitting above them.
 
 ---
 
-## 1. Kolmiportainen varmuusmerkintä (pakollinen)
+## 1. Three-tier certainty marking (mandatory)
 
-Jokainen juridista painoa kantava väite kuuluu yhteen kolmesta luokasta.
-Lukijan on nähtävä luokka **yhdellä silmäyksellä**, väitteen vierestä.
+Every claim carrying legal weight belongs to one of three classes. The reader must see the class
+**at a glance**, next to the claim.
 
-| Luokka | Milloin | Miten merkitään |
+| Class | When | How it is marked |
 |---|---|---|
-| **Varmistettu** | Lainkohta tai ratkaisu on haettu ja tarkistettu lähteestä (oik.ai/Finlex) tässä istunnossa. | Lähde numeron perään: `(kuntalaki 410/2015, 7 §, Finlex)` tai `(oik.ai)`. |
-| **Tarkistettava** | Uskottava mutta varmistamaton: muistinvarainen lainkohta, mallin laskema luku tai määräaika, tulkinta joka vaatii asiantuntijan. | Merkintä väitteen viereen: `[muistinvarainen — tarkista Finlexistä]`, `[mallin laskelma — tarkista]`, `[varmista — juristin arvioitava]`. |
-| **Älä käytä** | Ei voida tarkistaa eikä esittää varmana: keksitty ratkaisutunnus, säädös- tai HE-numero, lähteetön sitaatti. | **Ei tuoteta lainkaan.** Jos tieto on välttämätön, sano että se on tarkistettava, äläkä keksi tunnusta. |
+| **Verified** | The provision or decision has been retrieved and checked against a source (oik.ai/Finlex) in this session. | Source after the number: `(kuntalaki 410/2015, 7 §, Finlex)` or `(oik.ai)`. |
+| **Needs checking** | Plausible but unverified: a provision recalled from memory, a figure or time limit the model calculated, an interpretation that requires an expert. | Flag next to the claim: `[from memory — verify in Finlex]`, `[model calculation — check]`, `[confirm — requires a lawyer's assessment]`. |
+| **Do not use** | Cannot be checked and cannot be presented as certain: an invented case identifier, statute number or bill number, an unsourced quotation. | **Not produced at all.** If the information is essential, say that it must be checked — do not invent an identifier. |
 
-**Älä koskaan** esitä Tarkistettava-luokan tietoa Varmistettuna. Mieluummin
-yleinen muotoilu ("korkeimman oikeuden vakiintuneen käytännön mukaan…")
-kuin keksitty täsmällinen tunnus.
-
----
-
-## 2. Lähdehierarkia
-
-1. **Ensisijaiset, viralliset, tarkistettavat:** Finlex (ajantasainen
-   säädöskanta, alkuperäissäädökset, oikeuskäytäntö), oik.ai-MCP, Eduskunnan
-   verkkopalvelu (HE:t, valiokuntamietinnöt), tuomioistuinten omat julkaisut,
-   EUR-Lex (EU-säädökset), curia.europa.eu (EUT).
-2. **Toissijaiset, suuntaa antavat:** kirjallisuus, kommentaarit, artikkelit
-   – vain jos käyttäjä toimittaa lähteen tai lisensoitu live-haku vahvistaa sen.
-3. **Ei lähteeksi:** mallin muisti yksinään. Muistinvarainen tieto on aina
-   Tarkistettava-luokkaa (ks. kohta 1).
-
-**Tarkista aina, että säädös on voimassa** (ei kumottu/muutettu) ja että kyse
-on oikeasta, ajantasaisesta versiosta. Huomioi siirtymäsäännökset.
+**Never** present information in the Needs checking class as Verified. A general formulation
+("under the settled case law of the Supreme Court…") is better than an invented precise identifier.
 
 ---
 
-## 3. Viittausmuodot
+## 2. Source hierarchy
 
-**Säädökset**
-- Ensimaininnalla nimi + numero: *kuntalain (410/2015) 7 §:ssä*.
-- §-merkki ja numero **aina yhdessä**: `7 §` (ei "pykälä 7"); taivutus
-  kaksoispisteellä: `§:n`, `§:ssä`, `§:ään`.
-- Pykäläväli ajatusviivalla: `2–4 §` (ei yhdysviivalla). a-pykälät huomioiden.
-- Lakien nimet pienellä alkukirjaimella: *kuntalaki, rikoslaki*.
+1. **Primary, official, verifiable:** Finlex (consolidated statutes, original statutes, case law),
+   the oik.ai MCP, the Parliament of Finland's web service (government bills, committee reports),
+   the courts' own publications, EUR-Lex (EU legislation), curia.europa.eu (CJEU).
+2. **Secondary, indicative:** literature, commentaries, articles — only if the user supplies the
+   source or a licensed live search confirms it.
+3. **Not a source:** the model's memory alone. Information recalled from memory is always in the
+   Needs checking class (see section 1).
 
-**Oikeuskäytäntö** – ratkaisutunnus täsmällisesti:
-- Korkein oikeus: `KKO:VVVV:NN`. Korkein hallinto-oikeus: `KHO:VVVV:NN`
-  (vuosi nelinumeroisena, juokseva numero ilman etunollia).
-- Hovioikeus, markkinaoikeus, työtuomioistuin, vakuutusoikeus: kunkin
-  vakiintunut tunnusmuoto; jollei ennakkopäätösnumeroa, käytä diaarinumeroa
-  ja antopäivää.
-- Euroopan unionin tuomioistuin: asia `C-123/22`, tuomion antopäivä.
-- **Älä koskaan** liitä ratkaisuun väitettä sen sisällöstä, ellet ole
-  tarkistanut ratkaisua lähteestä. Tunnuksen olemassaolo ei riitä – saman
-  tunnuksen takana voi olla aivan toinen asia (yleisin hallusinaation muoto).
-
-**Esityöt**
-- Hallituksen esitys: `HE 268/2014 vp, s. 145` (vp = valtiopäivät, sivu jos
-  viitataan kohtaan).
-- Valiokuntamietinnöt vakiintuneella lyhenteellä (esim. `PeVL`, `LaVM`).
-
-**EU-säädökset**
-- Asetus: *asetus (EU) 2024/1689* (numero/vuosi unionin tyylin mukaan).
-- Direktiivi: *direktiivi (EU) 2019/790*. Mainitse kansallinen
-  täytäntöönpanolaki, jos sellainen on.
+**Always check that the statute is in force** (not repealed or amended) and that you have the
+correct, current version. Take transitional provisions into account.
 
 ---
 
-## 4. Esimerkkikuri (oppi sisarprojektista)
+## 3. Citation forms
 
-Saksalaisen sisarprojektin auditointi 3 228 ratkaisutunnuksesta paljasti, että
-noin 58 % oli väärään asiaan viittaavia, löytymättömiä tai
-varmistamattomia – ja **esimerkkiteksteihin upotetut tunnukset valuivat
-oikeisiin tuotoksiin.** Siksi:
+**Statutes**
+- On first mention, name + number: *kuntalain (410/2015) 7 §:ssä*.
+- The `§` symbol and the number **always together**: `7 §` (not "pykälä 7"); Finnish inflects with
+  a colon: `§:n`, `§:ssä`, `§:ään`. In English write `section 7` or `7 §` — never `§7`.
+- A range of sections takes an en dash: `2–4 §` (not a hyphen). Account for a-sections.
+- Finnish statute names take a lower-case initial: *kuntalaki, rikoslaki*.
 
-- **Reference- ja malliteksteissä käytä ilmiselviä paikkamerkkejä:**
-  `KKO:VVVV:NN`, `KHO:VVVV:NN`, `HE n/vvvv vp`, `[säädös x/vvvv]`.
-- Jos esimerkki näyttää oikealta tunnukselta, **merkitse koko esimerkki
-  keksityksi** ("havainnollistava malli, ei oikea ratkaisu").
-- Älä koskaan kirjoita malliesimerkkiin lausetta, joka väittää tietyn
-  todellisen ratkaisun sisällön ("ratkaisussa KKO:2024:15 todettiin, että…"),
-  ellei kyse ole tarkistetusta sitaatista. Käytä joko paikkamerkkiä tai
-  avointa muotoa "…ratkaisussa katsottiin, että…".
+**Case law** — the case identifier exactly:
+- Supreme Court: `KKO:YYYY:NN`. Supreme Administrative Court: `KHO:YYYY:NN` (four-digit year,
+  running number without leading zeros).
+- Court of appeal, Market Court, Labour Court, Insurance Court: each court's established identifier
+  form; where there is no precedent number, use the docket number and the date of the decision.
+- Court of Justice of the European Union: case `C-123/22` and the date of the judgment.
+- **Never** attach a claim about a decision's content unless you have checked the decision against
+  the source. The existence of an identifier is not enough — the same identifier may cover an
+  entirely different matter (the commonest form of hallucination).
+
+**Preparatory works**
+- Government bill: `HE 268/2014 vp, s. 145` (`vp` = parliamentary session; page where a specific
+  passage is cited).
+- Committee reports by their established abbreviation (e.g. `PeVL`, `LaVM`).
+
+**EU legislation**
+- Regulation: *asetus (EU) 2024/1689* (number/year in the Union's style).
+- Directive: *direktiivi (EU) 2019/790*. Name the national implementing act where there is one.
 
 ---
 
-## 5. Provenienssi numeroon, ei kappaleeseen
+## 4. Discipline in examples (a lesson from the sister project)
 
-Merkintä kuuluu **sen rivin viereen, jota se koskee** – ei kappaleen loppuun
-yleisenä varauksena. Lukija näkee yhdellä silmäyksellä, mikä on tarkistettua
-ja mikä päättelyä. Älä kerää kaikkia varauksia tekstin loppuun.
+An audit of 3 228 case identifiers in the German sister project found that roughly 58 % pointed to
+the wrong matter, could not be found, or were unverified — and **identifiers embedded in example
+texts leaked into real output.** Therefore:
+
+- **In reference material and model texts use obvious placeholders:** `KKO:YYYY:NN`,
+  `KHO:YYYY:NN`, `HE n/yyyy vp`, `[statute x/yyyy]`.
+- If an example looks like a real identifier, **mark the whole example as invented**
+  ("illustrative model, not a real decision").
+- Never write a sentence into a model example that asserts the content of a particular real
+  decision ("in KKO:2024:15 it was held that…") unless it is a checked quotation. Use either a
+  placeholder or an open formulation: "…it was held in that decision that…".
 
 ---
 
-*Päivitä versionumero ja päiväys, kun standardia muutetaan. Validaattori
-(`scripts/validate.mjs`) valvoo viittausten teknistä muotoa (mm.
-numero-pilkku-ansa); tämä tiedosto valvoo sisältöä ja varmuutta.*
+## 5. Provenance attaches to the number, not the paragraph
+
+The marking belongs **next to the line it applies to** — not at the end of the paragraph as a
+general caveat. The reader then sees at a glance what has been checked and what is inference. Do
+not collect all the caveats at the end of the text.
+
+---
+
+*Update the version number and date when the standard changes. The validator
+(`scripts/validate.mjs`) polices the technical form of citations (including the digit-comma trap);
+this file polices content and certainty.*

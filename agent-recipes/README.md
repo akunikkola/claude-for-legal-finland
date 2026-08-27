@@ -1,59 +1,53 @@
-# Agenttireseptit – taustalla ajettavat agentit suomalaiseen oikeustyöhön
+# Agent recipes – background agents for Finnish legal work
 
-Nämä ovat **keittokirjoja, eivät valmiita tuotteita.** Jokainen resepti on
-lähtökohta taustalla ajettavalle (headless/scheduled) agentille, joka nojaa
-samaan lähdekuriin ja samoihin suojauksiin kuin tämän repon plugarit. Sovita
-resepti omaan dokumenttienhallintaasi, kalenteriisi, ilmoituskanavaasi ja
-tarkistusrytmiisi – ilman tätä sovitusta reseptit eivät toimi, ja se on
-tarkoitus.
+These are **cookbooks, not finished products.** Each recipe is a starting point for a background
+(headless or scheduled) agent that rests on the same source discipline and the same guardrails as
+the domains in this repository. Adapt the recipe to your own document management, calendar,
+notification channel and review rhythm — without that adaptation the recipes do not work, and that
+is deliberate.
 
-| Agentti | Mitä valvoo | Leaf-agentit |
+| Agent | What it watches | Leaf agents |
 |---|---|---|
-| [`deadline-watch`](deadline-watch/) | Asiakirja-/kalenterilähde määräajoista (valitusaika, kanteen vanhentuminen, YT-ajat, GDPR-vastausaika) | aineisto-lukija · maaraaika-laskija · **varoitus-kirjoittaja** |
-| [`precedent-watch`](precedent-watch/) | Uudet KKO/KHO/MAO/TT/VakO-ratkaisut määritellyistä aiheista (oik.ai/Finlex-MCP) | ratkaisu-hakija · relevanssi-arvioija · **kooste-kirjoittaja** |
-| [`statute-watch`](statute-watch/) | Nimettyjen säädösten muutokset, voimaantulot ja vireillä olevat HE:t | saados-tarkkailija · vaikutus-analysoija · **raportti-kirjoittaja** |
-| [`citation-audit`](citation-audit/) | Tämän repon omat säädös- ja ratkaisuviittaukset (kumoutumiset, tunnuskollisiot, paikkamerkkikuri) — neljännesvuosittain | inventaarioskripti · lahdetarkastaja-erät · ihminen korjaa |
+| [`deadline-watch`](deadline-watch/) | A document or calendar source, for time limits (appeal period, limitation of an action, co-operation periods, GDPR response time) | material-reader · deadline-calculator · **alert-writer** |
+| [`precedent-watch`](precedent-watch/) | New KKO/KHO/MAO/TT/VakO decisions on defined subjects (oik.ai/Finlex MCP) | decision-fetcher · relevance-assessor · **digest-writer** |
+| [`statute-watch`](statute-watch/) | Changes to named statutes, entries into force and pending government bills | statute-monitor · impact-analyser · **report-writer** |
+| [`citation-audit`](citation-audit/) | This repository's own statutory and case references (repeals, identifier collisions, placeholder discipline) — quarterly | inventory script · `source-checker` batches · a human fixes |
 
-**Lihavoidulla** leaf-agentilla on ainoana `Write`-oikeus.
+The leaf agent in **bold** is the only one with `Write` permission.
 
-## Tietoturvamalli – oikeudelliset asiakirjat ovat epäluotettavaa syötettä
+## Security model – legal documents are untrusted input
 
-Asiakirja voi sisältää tekstiä, joka yrittää ohjata mallia ("ohita aiemmat
-ohjeet…"). Siksi jokainen resepti jakaa työn **kolmeen tasoon**, joilla on
-erilliset oikeudet:
+A document may contain text that tries to steer the model ("ignore previous instructions…"). Each
+recipe therefore splits the work into **three tiers** with separate permissions:
 
-1. **Lukija (reader)** koskee epäluotettavia asiakirjoja, ja sillä on vain
-   `Read`/`Grep` – ei MCP:tä, ei `Write`-oikeutta, ei verkkoa. Se palauttaa
-   pituusrajoitettua, jäsenneltyä JSONia. Asiakirjaan upotettu ohje on **dataa,
-   ei käskyä.**
-2. **Analysoija (analyzer)** saa lukijan JSONin, soveltaa käyttäjän
-   konfiguraation sääntöjä ja sillä voi olla MCP-**lukuoikeus** tarkistukseen
-   (oik.ai/Finlex). Ei `Write`-oikeutta.
-3. **Kirjoittaja (writer)** tuottaa lopullisen tulosteen ja on **ainoa**
-   taso, jolla on `Write`. Se ei koskaan näe raakoja asiakirjoja.
+1. **The reader** touches untrusted documents and has only `Read`/`Grep` – no MCP, no `Write`, no
+   network. It returns length-limited, structured JSON. An instruction embedded in a document is
+   **data, not a command.**
+2. **The analyser** receives the reader's JSON, applies the rules from the user's configuration and
+   may have MCP **read access** for verification (oik.ai/Finlex). No `Write`.
+3. **The writer** produces the final output and is the **only** tier with `Write`. It never sees the
+   raw documents.
 
-Orkestroija ei kirjoita eikä lue raakoja asiakirjoja – se vain välittää
-viestejä tasojen välillä. Nimetyt agentit eivät kutsu toisiaan suoraan, vaan
-lähettävät `handoff`-pyynnön, jonka tapahtumaväylä reitittää.
+The orchestrator neither writes nor reads raw documents – it only passes messages between the tiers.
+Named agents do not call each other directly; they send a `handoff` request that the event bus
+routes.
 
-## Vastuu ja salassapito
+## Liability and confidentiality
 
-Kaikki näiden agenttien tuottama on **tarkistettava luonnos** – ei
-oikeudellista neuvontaa. Agentti valvoo, poimii ja luonnostelee; **ihminen
-tarkistaa, varmistaa ja päättää.** Määräaikalaskelmat ovat johtolankoja, eivät
-sitovia päivämääriä – ks. kunkin reseptin "Mitä tämä EI tee".
+Everything these agents produce is **a draft that needs checking** – not legal advice. The agent
+watches, extracts and drafts; **a human review confirms and decides.** Time-limit calculations are
+leads, not binding dates – see each recipe's "What this does NOT do".
 
-Mandanttitietojen käsittelyssä noudata
-[`../references/liability-and-security.md`](../references/liability-and-security.md):
-henkilötietojen käsittelysopimus (GDPR 28 art), anonymisointi ennen analyysiä
-ja salassapidon arviointi ennen kuin aineistoa viedään mihinkään työkaluun.
+When processing client data, follow
+[`../references/liability-and-security.md`](../references/liability-and-security.md): the data
+processing agreement (GDPR Article 28), anonymisation before analysis, and the confidentiality
+assessment before material is taken into any tool.
 
-## Mitä saat ja mitä et
+## What you get and what you do not
 
-- **Saat:** toimivan manifestirakenteen, järkevät tietoturvatasot, lähdekuriin
-  nojaavat ohjeet ja esimerkin ohjaustapahtumista – sovitettuna suomalaisiin
-  lähteisiin (Finlex, oik.ai, KKO/KHO) ja suomalaiseen prosessioikeuteen.
-- **Et saa:** tuotantovalmista agenttia. Liitä konnektorit omiin järjestelmiisi,
-  määritä rytmi, konfiguroi ilmoitukset ja tee oma evaluaatio ennen kuin luotat
-  tulosteeseen.
-- **Et missään tapauksessa saa:** juristin korvaajaa.
+- **You get:** a working manifest structure, sensible security tiers, instructions that rest on
+  source discipline, and an example of the control events – adapted to Finnish sources (Finlex,
+  oik.ai, KKO/KHO) and Finnish procedural law.
+- **You do not get:** a production-ready agent. Connect the connectors to your own systems, define
+  the rhythm, configure the notifications and run your own evaluation before you trust the output.
+- **You certainly do not get:** a replacement for a lawyer.

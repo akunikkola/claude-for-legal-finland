@@ -1,53 +1,53 @@
-# Esimerkkiaineistot
+# Example fixtures
 
-Realistisia, **sotkuisia** harjoitusaineistoja, joilla plugareita voi kokeilla
-ja arvioida. Nämä eivät ole oppikirjatapauksia siistillä ratkaisuluonnoksella,
-vaan oikean toimeksiannon näköisiä työaineistoja: ristiriitaisia,
-epätäydellisiä ja juuri siksi hyödyllisiä.
+Realistic, **messy** practice material for trying out and evaluating the domains. These are not
+textbook cases with a tidy draft answer, but working material that looks like a real engagement:
+contradictory, incomplete, and useful precisely for that reason.
 
-## Laatustandardi
+## Quality standard
 
-- **Ei valmista ratkaisua, ei piilotettua mallivastausta.** Aineisto saa
-  herättää kysymyksiä, mutta se ei ratkaise niitä.
-- **Ei näkyviä paikkamerkkejä** itse aineistossa. Henkilöt, päivämäärät ja
-  numerot ovat keksittyjä mutta uskottavia.
-- **Ristiriidat siellä missä oikeissakin toimeksiannoissa:** päivämäärä,
-  muisti, tiedoksianto, laskutapa, toimivalta.
-- Aineisto on **fiktiivistä.** Yhtäläisyydet todellisiin henkilöihin tai
-  organisaatioihin ovat sattumaa. Säädös- ja ratkaisuviittaukset aineiston
-  sisällä voivat olla epätarkkoja – se on osa harjoitusta (tarkista lähteestä).
+- **No ready-made answer, no hidden model solution.** The material may raise questions, but it does
+  not resolve them.
+- **No visible placeholders** in the material itself. People, dates and figures are invented but
+  plausible.
+- **Contradictions where real engagements have them:** dates, recollection, service of documents,
+  method of calculation, competence.
+- The material is **fictional.** Any resemblance to real people or organisations is coincidental.
+  Statutory and case references inside the material may be inaccurate — that is part of the
+  exercise (check against the source).
 
-## Aineistot
+## The fixtures
 
-| Aineisto | Harjoittaa | Sopiva plugari |
+| Fixture | What it exercises | Relevant domains |
 |---|---|---|
-| [`fixed-term-employment-ending`](fixed-term-employment-ending/) | määräaikaisuuden peruste, koeaikapurku, irtisanomisaika, menettely | `employment-law`, `legal-core` |
-| [`residential-sale-defect`](residential-sale-defect/) | reklamaatio, virhetyypit, selonottovelvollisuus, taloyhtiön vastuu, välittäjän rooli | `real-estate-and-housing`, `legal-core` |
-| [`ma-due-diligence`](ma-due-diligence/) | DD-priorisointi, vähemmistöosakas, change of control, ympäristöriski, KKV-arvio | `company-law`, `competition-law`, `environment-and-planning` |
+| [`fixed-term-employment-ending`](fixed-term-employment-ending/) | the ground for a fixed term, summary termination during the trial period, notice period, procedure | `employment-law`, `legal-core` |
+| [`residential-sale-defect`](residential-sale-defect/) | notice of defect, types of defect, the buyer's duty to inspect, the housing company's liability, the agent's role | `real-estate-and-housing`, `legal-core` |
+| [`ma-due-diligence`](ma-due-diligence/) | DD prioritisation, minority shareholder, change of control, environmental risk, KKV assessment | `company-law`, `competition-law`, `environment-and-planning` |
 
-## Arviointikriteerit
+## Assessment criteria
 
-Jokaisessa aineistossa on `arviointikriteerit.md` – **käyttäytymislista,
-ei mallivastaus**. Se kuvaa, mitä hyvä tuotos *tekee* (nostaa ristiriidat
-esiin, merkitsee laskelmat tarkistettaviksi, ei vahvista pykäliä
-muistista), ei aineellista lopputulosta. Käytä sitä kahteen asiaan:
+Each fixture includes an `assessment-criteria.md` file – **a behaviour checklist, not a model
+answer**. It describes what a good output *does* (surfaces the contradictions, marks calculations as
+needing checking, does not confirm statutory provisions from memory), not the substantive outcome.
+Use it for two things:
 
-1. **Käyttöönoton pilotointi**: aja aineisto skillillä ja vertaa tuotosta
-   kriteereihin ennen kuin viet työkaluun oikeaa aineistoa
-   (ks. [`../references/firm-adoption.md`](../references/firm-adoption.md)).
-2. **Muutosten regressiotestaus**: skillin muokkauksen jälkeen sama ajo
-   kertoo, säilyikö käyttäytyminen.
+1. **Piloting an adoption**: run the fixture through a skill and compare the output against the
+   criteria before you put real material into the tool
+   (see [`../references/firm-adoption.md`](../references/firm-adoption.md)).
+2. **Regression-testing changes**: after editing a skill, the same run tells you whether the
+   behaviour survived.
 
-Älä anna kriteeritiedostoa mallille samassa istunnossa aineiston kanssa –
-se on arvioijan, ei arvioitavan, työkalu.
+Do not give the criteria file to the model in the same session as the material — it is the
+assessor's tool, not the assessed's.
 
-## Käyttö
+## Use
 
-Avaa aineiston kansio, anna tiedostot Claudelle ja pyydä esim.:
+Open a fixture folder, give the files to the agent and ask for example:
 
-- "Arvioi tämän koeaikapurun perusteet ja menettely" → `employment-law:termination-of-employment`
-- "Onko tämä määräaikaisuus pätevä?" → `employment-law:employment-contract`
-- "Tarkista tämä työsopimusote riskien varalta"
+- "Assess the grounds and the procedure for this summary termination during the trial period" →
+  `employment-law:termination-of-employment`
+- "Is this fixed term valid?" → `employment-law:employment-contract`
+- "Review this employment contract extract for risks"
 
-Huomaa ristiriidat aineistossa – hyvä tuotos nostaa ne esiin sen sijaan,
-että valitsisi yhden tulkinnan hiljaa.
+Note the contradictions in the material — a good output surfaces them instead of quietly picking
+one interpretation.

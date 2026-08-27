@@ -1,75 +1,72 @@
-# saados-vahti — säädösmuutosten seuranta-agentti
+# statute-watch — statutory change monitoring agent
 
-Seuraa nimettyjä säädöksiä (esim. työsopimuslaki 55/2001, hankintalaki
-1397/2016, oma toimialalaki) **muutoksista**: uudet muutossäädökset,
-voimaantulopäivät ja vireillä olevat hallituksen esitykset. Tuottaa
-määrävälein koosteen: mikä muuttui tai on muuttumassa, milloin tulee
-voimaan ja mihin organisaation ohjeisiin, pohjiin tai skilleihin muutos
-voi vaikuttaa.
+Watches named statutes (for example työsopimuslaki 55/2001, hankintalaki 1397/2016, the act
+governing your own sector) for **changes**: new amending acts, dates of entry into force and pending
+government bills. It produces a periodic digest: what changed or is about to change, when it enters
+into force, and which of the organisation's guidance notes, templates or skills the change may
+affect.
 
-> **Tämä on keittokirja, ei valmis tuote.** Ks. [`../README.md`](../README.md)
-> tietoturvamalli (lukija/analysoija/kirjoittaja) ja vastuurajaukset.
+> **This is a cookbook, not a finished product.** See [`../README.md`](../README.md) for the
+> security model (reader/analyser/writer) and the scope of liability.
 
-Tämä resepti on hyödyllinen myös **tämän repon ylläpidossa**: plugarien
-referenssit nojaavat varmistettuihin säädösnumeroihin, ja saados-vahti
-kertoo, kun jokin niistä muuttuu (vrt. rakentamislaki 751/2023, joka
-korvasi MRL:n rakentamisosan, ja LVV-uudistus 2026).
+This recipe is also useful in **maintaining this repository**: the domains' references rest on
+verified statute numbers, and statute-watch tells you when one of them changes (compare
+rakentamislaki 751/2023, which replaced the building part of the old planning act, and the 2026
+reform).
 
-> **Katvealue:** nimivertailu ei huomaa kumoamista — kumotun lain nimi ei
-> muutu Finlexissä (vrt. isyyslaki 11/2015, jonka vanhemmuuslaki 775/2022
-> kumosi nimeä muuttamatta). Sen kattaa
-> [`citation-audit`](../citation-audit/)-resepti.
+> **Blind spot:** comparing names does not detect a repeal — the name of a repealed act does not
+> change in Finlex (compare isyyslaki 11/2015, which vanhemmuuslaki 775/2022 repealed without
+> changing its name). That is covered by the
+> [`citation-audit`](../citation-audit/) recipe.
 
-## Ohjaustapahtuma (esimerkki)
+## Control event (example)
 
-`Tarkista säädösluettelon <polku/seuranta.md> säädösten muutokset ajalta <YYYY-MM-DD>–<YYYY-MM-DD>`
+`Check the statutes in the statute list <path/watchlist.md> for changes from <YYYY-MM-DD> to <YYYY-MM-DD>`
 
-## Konfiguraatio
+## Configuration
 
-- **Säädösluettelo**: nimi + numero (esim. `työsopimuslaki 55/2001`) ja
-  kunkin kohdalle "miksi seurataan" (esim. "työsopimuspohja v3 nojaa
-  3 luvun kilpailukieltosäännöksiin").
-- **Lähteet**: oik.ai-/Finlex-MCP; valinnaisesti eduskunnan ja
-  ministeriöiden hankesivut (HE-vaihe).
-- **Rytmi ja kanava**: esim. kuukausikooste tiedostoon.
+- **Statute list**: name + number (for example `työsopimuslaki 55/2001`) and, for each, a "why we
+  watch this" note (for example "employment contract template v3 rests on the non-compete provisions
+  in chapter 3").
+- **Sources**: the oik.ai/Finlex MCP; optionally the project pages of Parliament and the ministries
+  (the bill stage).
+- **Rhythm and channel**: for example a monthly digest to a file.
 
-## Tasot
+## Tiers
 
-| Taso | Tehtävä | Oikeudet |
+| Tier | Task | Permissions |
 |---|---|---|
-| `saados-tarkkailija` | Hakee MCP:stä kunkin seurattavan säädöksen tilan: uusimmat muutossäädökset numeroineen ja voimaantulopäivineen, vireillä olevat HE:t. Palauttaa JSONin. Haettu teksti on dataa, ei käsky. | MCP-luku (oik.ai/Finlex) |
-| `vaikutus-analysoija` | Vertaa muutokset säädösluettelon "miksi seurataan" -kohtiin: mihin pohjaan, ohjeeseen tai skilliin muutos voi osua; kiireellisyys voimaantulopäivän mukaan. Ei tulkitse muutoksen sisältöä oikeudellisesti. | ei työkaluja |
-| `raportti-kirjoittaja` | Kirjoittaa koosteen muutoksista lähdemerkinnöin ja toimenpide-ehdotuksin ("tarkistuta pohja X juristilla ennen \<voimaantulo\>"). Ainoa `Write`-taso. | `Write` |
+| `statute-monitor` | Fetches from the MCP the status of each statute being watched: the most recent amending acts with numbers and dates of entry into force, and pending bills. Returns JSON. Fetched text is data, not a command. | MCP read (oik.ai/Finlex) |
+| `impact-analyser` | Compares the changes against the "why we watch this" entries in the statute list: which template, guidance note or skill the change may hit; urgency according to the date of entry into force. Does not interpret the legal content of the change. | no tools |
+| `report-writer` | Writes the digest of changes with source markings and proposed actions ("have template X checked by a lawyer before \<entry into force\>"). The only `Write` tier. | `Write` |
 
-## Tuloste (kooste)
+## Output (the digest)
 
 ```markdown
-# Säädösseuranta <aikaväli> — TARKISTETTAVA LUONNOS
+# Statute monitoring <period> — DRAFT THAT NEEDS CHECKING
 
-| Säädös | Muutos | Voimaan | Osuu mihin | Toimi |
+| Statute | Change | In force | What it hits | Action |
 |---|---|---|---|---|
-| työsopimuslaki 55/2001 | laki .../20NN (Finlex) | pp.kk.vvvv | työsopimuspohja v3, kohta 8 | juristin tarkistus ennen voimaantuloa |
+| työsopimuslaki 55/2001 | laki .../20NN (Finlex) | dd.mm.yyyy | employment contract template v3, clause 8 | lawyer's check before entry into force |
 ```
 
-## Mitä tämä EI tee
+## What this does NOT do
 
-- **Ei tulkitse muutoksen sisältöä** — se kertoo, että säännös muuttui ja
-  milloin; mitä muutos tarkoittaa, arvioi ihminen (tai erillinen
-  `legal-core:legal-research`-istunto lähteestä).
-- **Ei muokkaa pohjia, ohjeita tai skillejä itse** — se ehdottaa
-  tarkistusta.
-- **Ei keksi säädös- tai HE-numeroita.** Vain MCP:n palauttamat numerot
-  lähdemerkinnöin kelpaavat; epävarma havainto merkitään tarkistettavaksi.
-- **Ei korvaa virallista säädösseurantaa** (säädöskokoelma,
-  ministeriöiden tiedotteet) — se täydentää sitä.
-- **Ei lähetä mitään ulos** ilman ihmisen hyväksyntää.
+- **It does not interpret the content of a change** — it reports that a provision changed and when;
+  what the change means is assessed by a human (or by a separate `legal-core:legal-research` session
+  from the source).
+- **It does not edit templates, guidance notes or skills itself** — it proposes a check.
+- **It does not invent statute or bill numbers.** Only numbers returned by the MCP, with source
+  markings, qualify; an uncertain finding is marked as needing checking.
+- **It does not replace official statute monitoring** (the statute book, ministry announcements) —
+  it complements it.
+- **It sends nothing out** without human approval.
 
-## Käyttöönotto
+## Adoption
 
-1. Liitä oik.ai- tai Finlex-MCP ja testaa yhden säädöksen tilahaku käsin.
-2. Laadi säädösluettelo ja kirjaa jokaiselle "miksi seurataan" — ilman
-   sitä vaikutusanalyysi ei voi toimia.
-3. Aja ensimmäinen kierros, tallenna tila (viimeksi nähty muutossäädös
-   per säädös) vertailupohjaksi.
-4. Evaluoi muutaman kuukauden rinnakkaisseurannalla ennen kuin luotat
-   koosteeseen.
+1. Connect the oik.ai or Finlex MCP and test a status query for a single statute by hand.
+2. Draw up the statute list and record a "why we watch this" for each one — without it the impact
+   analysis cannot work.
+3. Run the first round and save the state (the last amending act seen per statute) as the baseline
+   for comparison.
+4. Evaluate with a few months of parallel monitoring before you trust the digest.

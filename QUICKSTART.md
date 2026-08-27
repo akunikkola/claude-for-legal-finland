@@ -1,103 +1,121 @@
-# Pika-aloitus
+# Quick start
 
-Plugarit toimivat sekä **Claude Codessa** (terminaali) että **Claude Coworkissa**
-(työpöytäsovellus). Molemmissa käytetään samoja slash-komentoja; Coworkissa
-datakonnektorit (oik.ai) lisätään lisäksi asetuksista.
+The collection is vendor-neutral. Each domain is a self-contained Agent Skills bundle, so it works
+in any harness that reads the [Agent Skills format](https://agentskills.io/specification.md).
+Claude Code and Codex have generated adapters; anything else installs by copying skill directories.
 
-## 1. Lisää markkinapaikka
+Pick the section for your harness, then continue from **4. Attach the source connector**, which is
+the same for all of them.
+
+## 1. Claude Code
+
+Add the marketplace and install the domain:
 
 ```
 /plugin marketplace add ragmha/agent-skills-for-finnish-law
+/plugin install legal-core@agent-skills-for-finnish-law
 ```
 
-tai kehityskäytössä paikallisesta polusta:
+For local development, add the marketplace from a path instead:
 
 ```
-/plugin marketplace add /polku/agent-skills-for-finnish-law
+/plugin marketplace add /path/to/agent-skills-for-finnish-law
 ```
 
-## 2. Asenna plugari – valitse user scope
+When asked "this project / all projects", **choose user scope.** Otherwise the domain may not read
+files outside the project folder (a contract in Downloads, for instance). User scope gives no extra
+access to your files — it simply works from any folder.
 
+Then **restart Claude Code**: close it and open it again. The domain is not active until you do.
+
+## 2. Codex
+
+Generate the adapters, then add the marketplace from the repository root:
+
+```bash
+node scripts/generate-adapters.mjs
+codex plugin marketplace add .
+codex plugin add legal-core@agent-skills-for-finnish-law
 ```
-/plugin install juristi@agent-skills-for-finnish-law
+
+If the domain's `mcp.json` declares the `oik-ai` server, check its status and sign in:
+
+```bash
+codex mcp list --json
+codex mcp login oik-ai
 ```
 
-`legal-core` on läpileikkaava perusta, joka kannattaa asentaa aina. Sen päälle
-asennetaan oman alan plugarit samalla kaavalla
-(`<plugari>@agent-skills-for-finnish-law`): `legislative-drafting`, `legislative-consultation`,
-`contracts`, `employment-law`, `data-protection`, `ai-regulation`, `administrative-law`,
-`dispute-resolution`, `company-law`, `insolvency`, `intellectual-property`,
-`taxation`, `public-procurement`, `criminal-procedure`, `environment-and-planning`,
-`real-estate-and-housing`, `competition-law`, `banking-and-finance`,
-`immigration-law`, `family-and-inheritance`, `consumer-law`, `criminal-law` ja
-`bilingual-legal-language`.
-Koko luettelo skilleineen: [SKILLS.md](SKILLS.md).
+## 3. Any other harness
 
-Kun kysytään "this project / all projects", **valitse user scope.** Muuten plugari
-ei saa lukea projektikansion ulkopuolisia tiedostoja (esim. sopimusta Downloadsissa).
-User scope ei anna plugarille ylimääräistä pääsyä tiedostoihisi – se vain toimii
-mistä tahansa kansiosta.
+Copy `<domain>/skills/*` into the harness's skills directory. `SKILL.md` is plain Agent Skills
+format with no vendor extensions, so nothing else is required. If the harness supports MCP, point
+it at `<domain>/mcp.json`, which uses the standard `mcpServers` schema.
 
-## 3. Käynnistä uudelleen
+## Which domains to install
 
-- **Claude Code:** sulje ja avaa uudelleen.
-- **Cowork:** käynnistä sovellus uudelleen. **Tämä vaihe on pakollinen** – plugari
-  ei ole päällä ennen uudelleenkäynnistystä.
+`legal-core` is the cross-cutting foundation and is worth installing always. Install your own
+practice areas on top of it using the same pattern (`<domain>@agent-skills-for-finnish-law`):
+`legislative-drafting`, `legislative-consultation`, `contracts`, `employment-law`,
+`data-protection`, `ai-regulation`, `administrative-law`, `dispute-resolution`, `company-law`,
+`insolvency`, `intellectual-property`, `taxation`, `public-procurement`, `criminal-procedure`,
+`environment-and-planning`, `real-estate-and-housing`, `competition-law`, `banking-and-finance`,
+`immigration-law`, `family-and-inheritance`, `consumer-law`, `criminal-law` and
+`bilingual-legal-language`. The full list with skills: [SKILLS.md](SKILLS.md).
 
-## 4. Liitä lähdekonnektori (oik.ai tai laki.ai)
+## 4. Attach the source connector (oik.ai or laki.ai)
 
-`legal-core`-plugarin `legal-research`-skill hakee voimassa olevan lain ja
-oikeuskäytännön suomalaisesta oikeuslähde-MCP:stä. Tuettuna on **kaksi
-vaihtoehtoa – valitse jompikumpi** (tai mikä tahansa yhteensopiva Finlex-MCP):
+The `legal-research` skill in the `legal-core` domain retrieves the law in force and case law from a
+Finnish legal-source MCP. **Two options are supported — choose either** (or any compatible Finlex
+MCP):
 
-**Vaihtoehto A – oik.ai** (plugarien `.mcp.json`:n oletus)
+**Option A – oik.ai** (the default in each domain's `mcp.json`)
 
-- **Cowork / Claude Desktop / Claude.ai:** Asetukset → Connectors → Add custom
-  connector → URL `https://oik.ai/mcp` → kirjaudu (OAuth).
-- **Claude Code:** plugarin `.mcp.json` viittaa oik.ai:hin valmiiksi; hyväksy
-  konnektori ja kirjaudu pyydettäessä.
+- **Desktop and web clients:** Settings → Connectors → Add custom connector → URL
+  `https://oik.ai/mcp` → sign in (OAuth).
+- **Claude Code:** the domain's generated `.mcp.json` already points at oik.ai; accept the
+  connector and sign in when prompted.
 
-**Vaihtoehto B – laki.ai** (Finlex, hallituksen esitykset, KKO/KHO/HO/HAO/MAO/TT/VAKO
-ja Verohallinnon ohjeet; ilmainen tunnus syntyy ensimmäisellä kirjautumisella)
+**Option B – laki.ai** (Finlex, government bills, KKO/KHO/HO/HAO/MAO/TT/VAKO and Tax
+Administration guidance; a free account is created on first sign-in)
 
-- **Cowork / Claude Desktop / Claude.ai:** Asetukset → Connectors → Add custom
-  connector → URL `https://api.laki.ai/mcp/claude` → kirjaudu (OAuth).
-  Ohjeet: <https://laki.ai/fi/claude>.
-- **Claude Code:** korvaa plugarin `.mcp.json`:n `oik-ai`-konnektori tällä:
+- **Desktop and web clients:** Settings → Connectors → Add custom connector → URL
+  `https://api.laki.ai/mcp/claude` → sign in (OAuth). Instructions: <https://laki.ai/fi/claude>.
+- **Claude Code:** replace the `oik-ai` connector in the domain's `.mcp.json` with this:
 
   ```json
   "laki-ai": { "type": "http", "url": "https://api.laki.ai/mcp/claude" }
   ```
 
-Molemmat tuovat saman: ajantasaisen lain ja oikeuskäytännön lähteestä – vain
-työkalujen nimet eroavat, ja `legal-research`-skill osaa kummatkin. Ilman
-MCP-yhteyttä skillit toimivat yhä, mutta merkitsevät lakiviittaukset
-muistinvaraisiksi ja kehottavat tarkistamaan ne Finlexistä.
+Both bring the same thing: the law in force and case law from a source — only the tool names
+differ, and the `legal-research` skill handles either. Without an MCP connection the skills still
+work, but they mark statutory references as coming from memory and tell you to verify them in
+Finlex.
 
-**Paikalliset MCP:t (ei tiliä):** osa plugareista käyttää paikallisia, npx:llä käynnistyviä
-MCP-palvelimia, jotka eivät vaadi kirjautumista – **Adeu** (`@adeu/mcp-server`, Word-dokumenttien
-redlineäminen jälkimuutoksina) dokumenttiplugareissa ja **EU AI Act** (`@lexbeam-software/eu-ai-act-mcp`)
-`tekoälysääntely`-plugarissa. Ne vaativat koneelle Node.js:n.
+**Local MCP servers (no account):** some domains use local MCP servers launched with npx that need
+no sign-in — **Adeu** (`@adeu/mcp-server`, redlining Word documents as tracked changes) in the
+document domains, and **EU AI Act** (`@lexbeam-software/eu-ai-act-mcp`) in the `ai-regulation`
+domain. They require Node.js on the machine.
 
-## 5. Kokeile
+## 5. Try it
 
-- "Sain tämän asiakirjan, mitä teen?" → `engagement-intake` (määräaikaskannaus ensin)
-- "Tarkista tämä sopimus" → `document-review`
-- "Mitä kuntalaki sanoo toimivallan siirrosta? Onko KHO-käytäntöä?" → `legal-research`
-- "Korjaa tämän pykäläviittauksen muoto" → `legal-core`
-- "Laadi muutos kuntalain 7 §:ään ja sen perustelut HE-muotoon" → `legislative-drafting`
-- "Käy tämä osakassopimusluonnos läpi" → `shareholders-agreement`
-- "Asiakas ei maksa laskuja – mitä vaihtoehtoja?" → `debt-collection` / `insolvency-assessment`
+- "I have been sent this document, what do I do?" → `engagement-intake` (time-limit scan first)
+- "Review this contract" → `document-review`
+- "What does kuntalaki say about delegating powers? Is there KHO case law?" → `legal-research`
+- "Fix the form of this section reference" → `legal-core:legal-writing`
+- "Draft an amendment to 7 § of kuntalaki with reasoning in bill form" → `legislative-drafting`
+- "Go through this draft shareholders' agreement" → `shareholders-agreement`
+- "A client is not paying invoices — what are the options?" → `debt-collection` /
+  `insolvency-assessment`
 
-## Organisaatiokäyttöön
+## For organisational use
 
-Ennen kuin viet työkaluun asiakas- tai toimeksiantoaineistoa, käy läpi
-[käyttöönotto-opas](references/firm-adoption.md): aineistolinjaus,
-käsittelysopimus (GDPR 28 art), anonymisointi (PII Shield), tarkistusketju ja
-pilotointi [esimerkkiaineistoilla](examples/). Talon käytännöt
-kirjataan `legal-core:practice-profile`-skillillä.
+Before you put client or engagement material into the tool, work through the
+[adoption guide](references/firm-adoption.md): the material policy, the processing agreement
+(GDPR Article 28), anonymisation (PII Shield), the review chain and piloting with the
+[example fixtures](examples/). House practices are recorded with the
+`legal-core:practice-profile` skill.
 
-## Muista
+## Remember
 
-Jokainen tuotos on tarkistettava luonnos – ei oikeudellista neuvontaa. Ihminen
-vastaa lopputuloksesta.
+Every output is a draft that needs checking — not legal advice. The human is responsible for the
+result.

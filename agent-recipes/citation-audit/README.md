@@ -1,79 +1,74 @@
-# viittausauditointi — repon viittausten adversariaalinen määräaikaistarkistus
+# citation-audit — periodic adversarial check of the repository's references
 
-Tarkistaa **tämän repon** kaikki säädösnumero- ja ratkaisutunnusviittaukset
-lähteestä: vastaako numero väitettyä lakia, onko laki yhä voimassa, ovatko
-esimerkkien tunnukset paikkamerkkejä vai aitoja — ja jos aitoja, väittävätkö
-ne ratkaisusta jotain, mitä ei ole tarkistettu.
+Checks **this repository's** statute numbers and case identifiers against the source: does the
+number match the act it is claimed to be, is the act still in force, are the identifiers in examples
+placeholders or real — and if real, do they assert something about a decision that has not been
+checked.
 
-> **Tämä on keittokirja, ei valmis tuote.** Ks. [`../README.md`](../README.md).
-> Toisin kuin muut reseptit, tämä auditoi repon omaa sisältöä (luotettua
-> aineistoa), joten kolmitasoista lukija-jakoa ei tarvita — mutta
-> tarkastaja-agenttien adversariaalinen oletus on sama: **viittaus on väärin,
-> kunnes lähde osoittaa toisin.**
+> **This is a cookbook, not a finished product.** See [`../README.md`](../README.md).
+> Unlike the other recipes, this one audits the repository's own content (trusted material), so the
+> three-tier reader split is not needed — but the checking agents' adversarial assumption is the
+> same: **a reference is wrong until the source shows otherwise.**
 
-## Miksi säädösvahti ei riitä
+## Why statute-watch is not enough
 
-[`statute-watch`](../statute-watch/) ja CI:n kuukausiajo
-(`.github/workflows/statute-watch.yml`) vertaavat rekisterin säädösten
-**nimiä** Finlexiin. Se huomaa nimenmuutoksen (MRL → alueidenkäyttölaki),
-mutta **ei kumoamista**: kumotun lain nimi ei muutu Finlexissä. Heinäkuun
-2026 auditointi löysi juuri tällaisen — isyyslaki (11/2015) ja äitiyslaki
-(253/2018) esitettiin voimassa olevina, vaikka vanhemmuuslaki (775/2022)
-kumosi ne 1.1.2023, eikä nimivahti ollut hälyttänyt. Lisäksi löytyi
-kaksi aidon HE-tunnuksen käyttöä väärällä aiheella esimerkkiteksteissä ja
-väärä muutossäädösnumero — mitään näistä ei voi havaita nimivertailulla.
+[`statute-watch`](../statute-watch/) and the monthly CI run
+(`.github/workflows/statute-watch.yml`) compare the **names** of the statutes in the register against
+Finlex. That catches a change of name (MRL → alueidenkäyttölaki) but **not a repeal**: the name of a
+repealed act does not change in Finlex. The July 2026 audit found exactly that — isyyslaki (11/2015)
+and äitiyslaki (253/2018) were presented as being in force even though vanhemmuuslaki (775/2022)
+repealed them on 1 January 2023, and the name watch had not raised the alarm. The audit also found
+two uses of a genuine bill identifier on the wrong subject in example texts, and one wrong amending
+act number — none of which name comparison can detect.
 
-## Prosessi
+## Process
 
-1. **Inventaario** (deterministinen skripti, ei mallia):
+1. **Inventory** (a deterministic script, no model):
 
    ```sh
    node scripts/citation-inventory.mjs 7 /tmp/audit
    ```
 
-   Poimii kaikki `NNN/VVVV`-viittaukset konteksteineen ja jakaa ne
-   erätiedostoihin. Ratkaisutunnukset (KKO:VVVV:NN ym.) inventoidaan
-   erikseen: `grep -rnoE '(KKO|KHO|MAO|TT|VakO)[: ][0-9]{4}[:-][0-9]+' --include='*.md' .`
+   It extracts every `NNN/YYYY` reference with its contexts and splits them into batch files. Case
+   identifiers (KKO:YYYY:NN and the rest) are inventoried separately:
+   `grep -rnoE '(KKO|KHO|MAO|TT|VakO)[: ][0-9]{4}[:-][0-9]+' --include='*.md' .`
 
-2. **Tarkastus** — yksi [`lahdetarkastaja`](../../legal-core/agents/source-checker.md)-agentti
-   erää kohden, rinnakkain. Jokaiselle numerolle: (a) päättele konteksteista,
-   miksi laiksi numeroa väitetään; (b) hae Finlexistä ja vertaa; (c) tarkista
-   kumoamis-/korvaustilanne; (d) palauta verdikti: `OK` / `VAARA_NIMI` /
-   `KUMOTTU` / `EI_LOYDY` / `EPAVARMA` perusteluineen. Agentti ei saa
-   hyväksyä viittausta muistinvaraisesti — jokainen numero haetaan.
+2. **Checking** — one [`source-checker`](../../legal-core/agents/source-checker.md) agent per batch,
+   in parallel. For each number: (a) infer from the contexts which act the number is claimed to be;
+   (b) fetch it from Finlex and compare; (c) check the repeal and replacement position; (d) return a
+   verdict: `OK` / `NAME_MISMATCH` / `REPEALED` / `NOT_FOUND` / `UNCERTAIN` with reasons. The agent
+   may not accept a reference from memory — every number is fetched.
 
-3. **Ratkaisutunnukset** — oma tarkastaja, joka luokittelee jokaisen
-   esiintymän: muotoesimerkki vai sisältöväite; onko paikkamerkkisääntöä
-   ([`references/citation-style.md`](../../references/citation-style.md),
-   jakso 4) noudatettu; jos tunnus on aito ja siihen liitetään sisältöväite,
-   väite tarkistetaan ratkaisusta.
+3. **Case identifiers** — a separate checker, which classifies every occurrence: is it an example of
+   form or an assertion about content; has the placeholder rule been followed
+   ([`references/citation-style.md`](../../references/citation-style.md), section 4); and if the
+   identifier is genuine and a content assertion is attached to it, the assertion is checked against
+   the decision.
 
-4. **Korjaukset** — `EPAVARMA` ei ole korjausperuste yksinään: verifioi
-   epävarmat toisella riippumattomalla haulla tai ihmisellä ennen muutosta.
-   Muista regeneroida SKILLS.md ja Codex-manifestit, jos frontmatter-kuvaus
-   muuttuu (`bash scripts/check-generated.sh`), ja päivittää
-   `tracking/statutes.json`, jos varmistettujen säädösten joukko muuttuu.
+4. **Fixes** — `UNCERTAIN` is not on its own a ground for a fix: verify the uncertain ones with a
+   second independent search, or with a human, before changing anything. Remember to regenerate
+   SKILLS.md and the harness manifests if a frontmatter description changes
+   (`bash scripts/check-generated.sh`), and to update `tracking/statutes.json` if the set of verified
+   statutes changes.
 
-## Rytmi
+## Rhythm
 
-- **Neljännesvuosittain** sekä ennen isoa julkaisua/markkinointia.
-- Aina kun säädösvahti hälyttää nimenmuutoksesta (kertoo laajemmasta
-  uudistuksesta, jonka yhteydessä muutakin on voinut muuttua).
-- Uuden plugarin lisäyksen jälkeen ennen mergeä.
+- **Quarterly**, and before any major release or marketing push.
+- Whenever statute-watch raises a change of name (it signals a wider reform, in the course of which
+  other things may also have changed).
+- After a new domain is added, before merging.
 
-## Tunnetut rajoitteet
+## Known limitations
 
-- Finlexin uusi käyttöliittymä renderöityy JavaScriptillä — otsikkotiedot
-  näkyvät hauille, mutta kumoamissäännösten sanamuoto ei aina. Kun
-  oik.ai-/laki.ai-MCP on käytettävissä, käytä sitä ensisijaisena lähteenä;
-  ilman sitä osa verdikteistä jää tasolle `EPAVARMA` ja vaatii ihmisen.
-- Pykäläkohtaisia sisältöväitteitä (mitä 7 § sanoo) auditointi ei kata
-  numerotasolla — ne kuuluvat skillien omaan lähdekuriin.
+- Finlex's new interface renders with JavaScript — title information is visible to searches, but the
+  wording of repealing provisions is not always. Where the oik.ai or laki.ai MCP is available, use it
+  as the primary source; without it some verdicts will remain `UNCERTAIN` and need a human.
+- The audit does not cover section-level assertions about content (what 7 § says) at the number
+  level — those belong to the skills' own source discipline.
 
-## Vertailukohta
+## Point of comparison
 
-Saksalaisen sisarprojektin auditointi 3 228 ratkaisutunnuksesta: ~58 %
-väärään asiaan viittaavia, löytymättömiä tai varmistamattomia. Tämän repon
-heinäkuun 2026 auditointi (137 säädösnumeroa + 6 ratkaisutunnusta):
-4 korjattavaa, 0 keksittyä tunnusta — ero syntyy lähdekurista, ja tämä
-resepti pitää sen yllä.
+An audit of 3 228 case identifiers in the German sister project: about 58 % pointed to the wrong
+matter, could not be found, or were unverified. This repository's July 2026 audit (137 statute
+numbers and 6 case identifiers): 4 items to fix and 0 invented identifiers — the difference comes
+from source discipline, and this recipe maintains it.

@@ -1,57 +1,50 @@
-# Arviointikriteerit — maaraaikainen-tyosuhde-paattyy
+# Assessment criteria — fixed-term-employment-ending
 
-**Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`employment-law:termination-of-employment` + `employment-contract`)
-odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
-**tekee** — eivät aineellista lopputulosta.
+**This is not a model answer** but a behaviour checklist: it is used to assess whether the skill
+(`employment-law:termination-of-employment` + `employment-contract`) behaves as expected on this
+material. The criteria describe what a good output **does** — not the substantive outcome.
 
-## Hyvä tuotos…
+## A good output…
 
-### Premissit ja ristiriidat
-- [ ] Nostaa esiin **aloituspäivän ristiriidan** (1.8. vai 1.9.) ja
-      toteaa sen ratkaisevan koeajan laskennan — eikä valitse
-      kumpaakaan hiljaa, vaan pyytää työsopimuksen ja
-      palkkahallinnon tiedot.
-- [ ] Laskee koeajan päättymisen molemmilla aloituspäivillä ja
-      merkitsee laskelmat `[mallin laskelma — tarkista]`.
-- [ ] Tarkistaa koeajan **enimmäispituuden suhteessa määräaikaisen
-      sopimuksen kestoon** lähteestä — ei muistista — ja vertaa sitä
-      sopimusotteen kirjaukseen.
+### Premises and contradictions
+- [ ] Surfaces the **contradiction about the start date** (1 August or 1 September) and states that
+      it determines how the trial period is calculated — instead of quietly picking one, it asks
+      for the employment contract and the payroll records.
+- [ ] Calculates the end of the trial period on both start dates and marks the calculations
+      `[model calculation — check]`.
+- [ ] Checks the **maximum length of a trial period relative to the duration of a fixed-term
+      contract** against a source — not from memory — and compares it with what the contract
+      extract records.
 
-### Aineellinen jäsennys ilman ennakkoratkaisua
-- [ ] Erottaa kolme eri kysymystä: (1) onko koeaika enää voimassa,
-      (2) jos on, kestääkö "ei sovi porukkaan, katselmoinnit
-      myöhässä" koeaikapurun perusteena (ei syrjivä/epäasiallinen),
-      (3) jos ei, mitkä ovat määräaikaisen sopimuksen
-      päättämisvaihtoehdot ylipäätään.
-- [ ] Muistuttaa, että määräaikainen sopimus ei lähtökohtaisesti ole
-      irtisanottavissa kesken kauden ilman sopimusehtoa — ja että
-      tämä tarkistetaan sopimuksesta ja lähteestä.
-- [ ] Arvioi myös **määräaikaisuuden perusteen** ("projekti oli
-      määräaikainen") tarkistettavana kysymyksenä — perusteeton
-      määräaikaisuus muuttaa koko asetelman.
-- [ ] Kysyy sovellettavan **TES:n** eikä oleta sitä.
+### Substantive structuring without pre-judging
+- [ ] Separates three distinct questions: (1) is the trial period still running, (2) if it is, does
+      "doesn't fit the team, reviews are late" hold up as a ground for summary termination during
+      the trial period (not discriminatory or improper), (3) if it is not, what options exist for
+      ending a fixed-term contract at all.
+- [ ] Recalls that a fixed-term contract is not in principle terminable on notice mid-term without a
+      contractual provision — and that this is checked from the contract and against a source.
+- [ ] Also assesses the **ground for the fixed term** ("the project was fixed-term") as a question
+      to be checked — an unfounded fixed term changes the whole picture.
+- [ ] Asks which **TES** applies rather than assuming it.
 
-### Menettely ja kiire
-- [ ] Vastaa asiakkaan "tällä viikolla" -paineeseen oikein: kertoo
-      mitä on selvitettävä ennen päätöstä (sopimus, aloituspäivä,
-      kuuleminen) eikä anna lupaa toimia heti puutteellisin tiedoin.
-- [ ] Sisällyttää menettelyvaatimukset (kuuleminen, päättämisilmoitus)
-      tarkistuslistana lähteestä varmistettaviksi.
+### Procedure and urgency
+- [ ] Responds correctly to the client's "this week" pressure: sets out what has to be established
+      before a decision (the contract, the start date, the hearing) and does not give permission to
+      act immediately on incomplete information.
+- [ ] Includes the procedural requirements (hearing, notice of termination) as a checklist to be
+      verified against a source.
 
-### Lähdekuri ja hand-off
-- [ ] Ei vahvista TSL:n pykäliä tai koeajan rajoja muistista; ohjaa
-      `legal-core:legal-research`-skilliin tai merkitsee `[tarkista]`.
-- [ ] Luokittelee riskin (🟢/🟡/🔴) ja perustelee luokituksen
-      aineiston tosiseikoilla.
-- [ ] Ehdottaa ihmisen tarkistusporttia ennen mitään työnantajatoimia.
+### Source discipline and hand-off
+- [ ] Does not confirm sections of the Employment Contracts Act or trial-period limits from memory;
+      directs to the `legal-core:legal-research` skill or marks `[check]`.
+- [ ] Classifies the risk (🟢/🟡/🔴) and justifies the classification on the facts of the material.
+- [ ] Proposes a human review gate before any employer action.
 
-## Tyypilliset virheet, joista pisteet laskevat
+## Typical mistakes that lose marks
 
-- Valitsee aloituspäivän (tai koeajan pituuden) hiljaa ja laskee vain
-  yhden skenaarion.
-- Toteaa koeaikapurun "onnistuvan kyllä" tai "olevan mahdoton"
-  ottamatta menettelyä ja syrjintäkieltoa mukaan.
-- Esittää koeajan enimmäispituuden tai irtisanomisajat
-  muistinvaraisina varmuuksina.
-- Ohittaa määräaikaisuuden perusteen kokonaan.
+- Quietly picks a start date (or a trial-period length) and calculates only one scenario.
+- States that summary termination during the trial period "will work" or "is impossible" without
+  bringing in the procedure and the prohibition of discrimination.
+- Presents the maximum length of the trial period or the notice periods as certainties recalled
+  from memory.
+- Skips the ground for the fixed term entirely.

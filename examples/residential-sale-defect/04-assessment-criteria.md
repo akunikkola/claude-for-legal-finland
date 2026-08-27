@@ -1,65 +1,57 @@
-# Arviointikriteerit — asuntokauppa-virhe
+# Assessment criteria — residential-sale-defect
 
-**Tämä ei ole mallivastaus** vaan käyttäytymislista: näillä arvioidaan,
-toimiiko skill (`real-estate-and-housing:residential-property-sale` + `legal-core`)
-odotetusti tällä aineistolla. Kriteerit kuvaavat, mitä hyvä tuotos
-**tekee** — eivät sitä, mihin lopputulokseen sen pitää päätyä.
-Aineellinen arvio kuuluu tarkistavalle juristille.
+**This is not a model answer** but a behaviour checklist: it is used to assess whether the skill
+(`real-estate-and-housing:residential-property-sale` + `legal-core`) behaves as expected on this
+material. The criteria describe what a good output **does** — not the conclusion it has to reach.
+The substantive assessment belongs to the reviewing lawyer.
 
-## Hyvä tuotos…
+## A good output…
 
-### Kiireellisyys ja määräajat
-- [ ] Nostaa **reklamaation** ensimmäisten toimien joukkoon ja toteaa,
-      että aika lasketaan virheen havaitsemisesta — päivämäärät
-      merkitään `[mallin laskelma — tarkista]` eikä takarajaa esitetä
-      muistista, vaan se ohjataan hakemaan lähteestä.
-- [ ] Varoittaa **jatkamasta purkutöitä** ennen kuin myyjälle on
-      varattu tilaisuus tarkastaa tilanne ja vauriot on dokumentoitu
-      (todistelun turvaaminen).
+### Urgency and time limits
+- [ ] Puts the **notice of defect** among the first actions and states that time runs from discovery
+      of the defect — dates are marked `[model calculation — check]` and the deadline is not given
+      from memory but retrieved from a source.
+- [ ] Warns against **continuing the strip-out** before the seller has been given an opportunity to
+      inspect the situation and the damage has been documented (preserving the evidence).
 
-### Oikea säännöstö ja roolit
-- [ ] Tunnistaa kohteen **asunto-osakkeeksi** (ei kiinteistöksi) ja
-      soveltaa asuntokauppalakia maakaaren sijaan.
-- [ ] Erottaa kolme suhdetta: ostaja–myyjä (virhevastuu),
-      osakas–taloyhtiö (kunnossapitovastuun jako märkätilassa) ja
-      ostaja–välittäjä (tiedonanto esittelyssä) — eikä niputa niitä.
+### The right body of rules and the right roles
+- [ ] Identifies the property as a **housing company share** (not real property) and applies the
+      Housing Transactions Act rather than the Code of Real Estate.
+- [ ] Separates three relationships: buyer–seller (liability for defects), shareholder–housing
+      company (division of maintenance liability in a wet room) and buyer–estate agent (information
+      given at the viewing) — and does not conflate them.
 
-### Aineiston ristiriidat esiin
-- [ ] Nostaa esiin kuntotarkastuksen **lisätutkimustarve-maininnan**
-      ja sen jännitteen ostajan selonottovelvollisuuden kanssa — eikä
-      ratkaise jännitettä hiljaa kumpaankaan suuntaan.
-- [ ] Huomaa ristiriidan: myynti-ilmoitus "kylpyhuone uusittu 2009" +
-      todistuksen marginaalimerkintä **muutostyöilmoituksen
-      puuttumisesta**.
-- [ ] Huomaa, että isännöitsijäntodistuksessa putkiremontin
-      hankesuunnittelu on pidemmällä kuin välittäjän esittelyssä
-      kertoma ("vasta kartoitettu") — ja kytkee tämän taloudellisen
-      virheen / tiedonantovirheen arviointiin sekä välittäjän
-      vastuuseen.
+### Surfacing the contradictions in the material
+- [ ] Surfaces the condition survey's **further-investigation remark** and its tension with the
+      buyer's duty to inspect — and does not quietly resolve the tension either way.
+- [ ] Notices the contradiction: the sales listing "bathroom renovated 2009" against the margin note
+      on the certificate recording the **absence of a notice of alteration work**.
+- [ ] Notices that in the property manager's certificate the project planning for the pipework
+      refurbishment is further advanced than what the agent said at the viewing ("only surveyed") —
+      and connects this to the assessment of a financial defect or a defect in the information given
+      and to the agent's liability.
 
-### Lähdekuri ja varmuusmerkinnät
-- [ ] Ei vahvista yhtään pykälää, määräaikaa tai KKO-ratkaisua
-      muistista; ohjaa `legal-core:legal-research`-skilliin tai merkitsee
-      `[tarkista]`.
-- [ ] Esittää seuraamukset (hinnanalennus / vahingonkorvaus / purku)
-      vaihtoehtoina edellytyksineen — **ei lupaa lopputulosta** eikä
-      esitä purkukynnyksen ylittymistä varmana.
-- [ ] Erottelee taloyhtiön kunnossapitovastuulle mahdollisesti kuuluvan
-      osuuden (rakenteet) osakkaan/myyjän vastuista — ja toteaa, että
-      yhtiöjärjestys on tarkistettava ennen vastuunjakoa.
+### Source discipline and certainty markings
+- [ ] Does not confirm a single section, time limit or KKO decision from memory; directs to the
+      `legal-core:legal-research` skill or marks `[check]`.
+- [ ] Presents the remedies (price reduction / damages / rescission) as alternatives with their
+      conditions — **does not promise an outcome** and does not present the threshold for rescission
+      as certainly met.
+- [ ] Distinguishes the part that may fall to the housing company's maintenance liability
+      (structures) from the shareholder's and seller's liabilities — and states that the division
+      of liability needs checking against the articles of association first.
 
 ### Hand-off
-- [ ] Ehdottaa seuraavat askeleet oikeilla skilleillä (reklamaatioluonnos,
-      taloyhtiövastuu → `housing-company`, riitautus →
-      `dispute-resolution`) ja ihmisen tarkistusportin.
+- [ ] Proposes the next steps with the right skills (draft notice of defect, housing company
+      liability → `housing-company`, dispute → `dispute-resolution`) and a human review gate.
 
-## Tyypilliset virheet, joista pisteet laskevat
+## Typical mistakes that lose marks
 
-- Soveltaa maakaarta tai sekoittaa kiinteistön ja asunto-osakkeen
-  reklamaatioajat.
-- Esittää reklamaation takarajan tai hinnanalennuksen määrän
-  muistinvaraisena lukuna ilman lähdettä.
-- "Ratkaisee" jutun (esim. "kyseessä on selvä piilevä virhe, kauppa
-  puretaan") sen sijaan että jäsentäisi edellytykset tarkistettaviksi.
-- Ohittaa välittäjän roolin tai putkiremonttitiedon kokonaan.
-- Kehottaa jatkamaan purkua heti.
+- Applies the Code of Real Estate, or confuses the notice periods for real property and for a
+  housing company share.
+- Presents the deadline for the notice of defect, or the amount of a price reduction, as a figure
+  recalled from memory without a source.
+- "Decides" the case (for example "this is clearly a latent defect, the sale will be rescinded")
+  instead of structuring the conditions as matters to be checked.
+- Skips the agent's role or the pipework information entirely.
+- Advises carrying on with the strip-out immediately.
