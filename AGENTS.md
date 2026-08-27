@@ -4,9 +4,12 @@ Repository-wide guidance for coding agents and for any harness that loads these 
 Per-domain guidance lives in `<domain>/AGENTS.md` and, per the [AGENTS.md convention](https://agents.md),
 the closest file to the work wins.
 
-> **Status: translation in progress.** The skill content in this repository is currently Finnish
-> and is being translated to English. Until that lands, expect Finnish prose inside `SKILL.md`
-> bodies and `references/`. The structure, tooling and manifests are already vendor-neutral.
+> **Status: translated.** All 24 domains, their references, templates and subagents, and the
+> collection manifest are English. Finnish is retained deliberately and only where it carries
+> legal meaning: statute names and numbers, court abbreviations, case identifiers, authority
+> names, and legally operative terms glossed on first use. The three `language-exempt` skills
+> keep their Finnish and Swedish rules, examples and word lists, because translating a Finnish
+> spelling rule destroys it.
 
 ---
 
