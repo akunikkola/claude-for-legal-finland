@@ -1,51 +1,56 @@
-# Juristi – perusta
+# Legal core
 
-Läpileikkaava perusta suomalaiseen juridiseen työhön. Tämä plugari on pohja, johon
-käytäntöaluekohtaiset plugarit (lainvalmistelu, lausunnot, sopimukset, työoikeus,
-tietosuoja, hallinto-oikeus, riidanratkaisu) nojaavat.
+The cross-cutting foundation for Finnish legal work. This domain is the base that the
+practice-area domains (legislative drafting, consultation statements, contracts, employment law,
+data protection, administrative law, dispute resolution) build on.
 
-> **Jokainen tuotos on tarkistettava luonnos – ei oikeudellista neuvontaa.** Lopullisen
-> vastuun kantaa sitä käyttävä ihminen. Katso [`AGENTS.md`](AGENTS.md).
+> **Every output is a draft that needs checking – not legal advice.** Final responsibility rests
+> with the human who uses it. See [`AGENTS.md`](AGENTS.md).
 
-## Skillit
+## Skills
 
-| Skill | Mitä tekee |
+| Skill | What it does |
 |---|---|
-| **juristi** | Suomalaisen lakikielen ja lainsäädännön yleisapuri: säädösten rakenne, pykäläviittausten oikea muoto, lakikielen kirjoitussäännöt, sopimukset ja oikeuslähteet. Käynnistyy automaattisesti, kun työskennellään juridisen sisällön kanssa. |
-| **toimeksianto** | Uuden jutun aloitus ja aineiston haltuunotto: määräaikaskannaus ensin, toimeksiantohaastattelu, esteellisyysmuistilista ja juttukansion työtilarakenne. Sisältää hiljaisen latauksen protokollan – asiakirja ilman ohjetta otetaan haltuun määräajat edellä. |
-| **oikeustutkimus** | Hakee voimassa olevan lain ja oikeuskäytännön oik.ai-/Finlex-MCP:stä, lukee ne ja viittaa oikein. Estää muistinvaraiset ja keksityt pykälät ja ratkaisutunnukset. |
-| **asiakirjan-tarkistus** | Juridisen asiakirjan monivaiheinen laaduntarkistus suomalaisessa kontekstissa: konteksti, käytettävyys, kieli, rakenne, oikeellisuus (lähdetarkistus), täydellisyys, riski ja käyttövalmius. |
-| **suomen-kieli** | Suomen kielen oikeinkirjoitus-, kielioppi- ja tyyliohjeet (Kielitoimiston ohjepankki). Juristi-skill viittaa tähän kielenhuollossa. |
-| **kaytantoprofiili** | Kokoelman räätälöinti organisaatiolle: haastattelee talon käytännöt (pohjat, riskilinjaukset, TES:t, tarkistusketjut) ja kirjoittaa ne plugarien Käytäntöprofiili-osioihin, joita skillit lukevat. Suojauksia ei voi heikentää profiililla. |
-| **selkokielistaja** | Juridisen tekstin selittäminen selkeällä yleiskielellä maallikolle: pykälä, ehto tai päätös avataan asiakkaalle ymmärrettävään muotoon merkitystä vääristämättä – olennaiset ehdot, varaukset ja määräajat säilyttäen. Erottaa selityksen neuvonnasta. |
-| **oikeustapaus-referointi** | Tuomioistuinratkaisun jäsentäminen rakenteiseen muotoon (tunnistetiedot, oikeuskysymys, faktat, lopputulos, ratio decidendi, merkitys) ratkaisun varsinaisesta tekstistä – erottaa ration ja obiterin eikä referoi muistista tai otsikosta. |
-| **taulukkokatsaus** | Monen asiakirjan rinnakkaisvertailu (rivi per asiakirja) tai yhden asiakirjan rakenteinen poiminta taulukkona niin, että jokainen solu on lähteistetty asiakirjan kohtaan ja saa luottamustason; puuttuva tieto on "ei mainittu", ei tyhjä. Nostaa poikkeavat rivit ja puuttuvat kohdat. Sisältää suomalaiset sarakemallit asiakirjatyypeittäin (vuokra-, työ-, toimittaja-, osakassopimus, kiinteistökauppa, hallintopäätös). |
+| **legal-writing** | General assistant for Finnish legal language and legislation: the structure of statutes, the correct form of section references, the writing rules of legal Finnish, contracts and sources of law. Starts automatically when you work with legal content. |
+| **engagement-intake** | Opening a new matter and taking control of the material: deadline scan first, then the engagement interview, a disqualification checklist and the workspace structure for the matter folder. Includes the silent-upload protocol – a document arriving with no instruction is taken in deadlines first. |
+| **legal-research** | Retrieves the law in force and case law from the oik.ai/Finlex MCP, reads them and cites them correctly. Prevents sections and case identifiers recalled from memory or invented. |
+| **document-review** | Multi-stage quality review of a legal document in the Finnish context: context, usability, language, structure, correctness (source checking), completeness, risk and readiness for use. |
+| **finnish-language** | Finnish spelling, grammar and style guidance (Kielitoimiston ohjepankki). The legal-writing skill refers to this for language editing. |
+| **practice-profile** | Tailors the collection to an organisation: interviews the house practices (templates, risk positions, collective agreements, review chains) and writes them into the Practice profile sections of the domains, which the skills read. Safeguards cannot be weakened by a profile. |
+| **plain-language** | Explaining legal text to a lay reader in clear plain Finnish: a section, a term or a decision is opened up into a form the client can understand without distorting its meaning – preserving the material terms, reservations and deadlines. Separates explanation from advice. |
+| **case-summarization** | Structuring a court decision into a structured form (identifying details, legal question, facts, outcome, ratio decidendi, significance) from the actual text of the decision – separates ratio from obiter and does not summarise from memory or from the headnote. |
+| **tabular-review** | Side-by-side comparison of several documents (one row per document) or structured extraction from a single document as a table, so that every cell is sourced to a place in the document and carries a confidence level; missing information is "not mentioned", not blank. Surfaces outlier rows and missing items. Includes Finnish column templates by document type (lease, employment, supplier and shareholders' agreements, real property sale, administrative decision). |
 
-## Agentit
+## Agents
 
-| Agentti | Mitä tekee |
+| Agent | What it does |
 |---|---|
-| **lahdetarkastaja** | Adversariaalinen viitetarkastaja: poimii luonnoksen kaikki säädös-, pykälä- ja ratkaisuviittaukset, tarkistaa jokaisen lähteestä (oik.ai/Finlex) ja palauttaa tarkistustaulukon (✅ Varmistettu / ⚠️ Tarkistettava / ❌ Virhe) korjausehdotuksineen. Vain luku – ei muokkaa asiakirjaa. Aja jokaiselle ulos lähtevälle lausunnolle ja kirjelmälle. |
-| **maaraaikaskanneri** | Määräaikojen skannaaja aineistolle: poimii kaikki määräpäivät ja laskentaa vaativat ajat, laskee varovaisuusperiaatteella (150/1930), palauttaa määräaikataulukon lähtöpäiväristiriitoineen. Vain luku – kalenterivastuu jää ihmiselle. |
+| **source-checker** | Adversarial citation checker: extracts every statute, section and case reference in a draft, verifies each against the source (oik.ai/Finlex) and returns a verification table (✅ Verified / ⚠️ Needs checking / ❌ Error) with suggested corrections. Read-only – it does not edit the document. Run it on every statement and written submission that goes out. |
+| **deadline-scanner** | Deadline scanner for a body of material: extracts every due date and every period that needs calculating, calculates them on the cautious principle (150/1930), and returns a deadline table together with any conflicts in the start dates. Read-only – calendar responsibility stays with the human. |
 
-## Tietolähteet (`.mcp.json`)
+## Data sources (`.mcp.json`)
 
-- **oik.ai** (`https://oik.ai/mcp`) – suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö ohjelmallisesti. Vaatii oik.ai-tilin; liitettäessä OAuth-kirjautuminen.
-- **Adeu** ([`@adeu/mcp-server`](https://github.com/dealfluence/adeu)) – Word-dokumenttien (.docx) ei-tuhoava redlineäminen natiiveina jälkimuutoksina (Track Changes). `document-review` käyttää sitä olemassa olevan .docx:n lukemiseen ja korjausten viemiseen. Pyörii paikallisesti npx:llä, ei vaadi tiliä.
+- **oik.ai** (`https://oik.ai/mcp`) – Finnish case law and up-to-date legislation programmatically.
+  Requires an oik.ai account; OAuth sign-in when connecting.
+- **Adeu** ([`@adeu/mcp-server`](https://github.com/dealfluence/adeu)) – non-destructive redlining of
+  Word documents (.docx) as native tracked changes. `document-review` uses it to read an existing
+  .docx and write corrections into it. Runs locally via npx, no account required.
 
-- **laki.ai** (`https://api.laki.ai/mcp/claude`) – vaihtoehtoinen suomalainen oikeuslähde-MCP: Finlexin säädökset, hallituksen esitykset, oikeuskäytäntö (KKO, KHO, HO, HAO, MAO, TT, VAKO) ja Verohallinnon ohjeet. OAuth-kirjautuminen; ilmainen tunnus syntyy ensimmäisellä kirjautumisella. Ohjeet: <https://laki.ai/fi/claude>.
+- **laki.ai** (`https://api.laki.ai/mcp/claude`) – an alternative Finnish legal-source MCP: Finlex
+  statutes, government bills, case law (KKO, KHO, HO, HAO, MAO, TT, VAKO) and Verohallinto
+  guidance. OAuth sign-in; a free account is created on first sign-in. Instructions:
+  <https://laki.ai/fi/claude>.
 
-Käytä **joko oik.ai:ta tai laki.ai:ta** (tai muuta yhteensopivaa Finlex-MCP:tä) –
-`legal-research`-skill osaa molemmat. Konnektorin valinta ja asennus: juuren
-[QUICKSTART.md](../QUICKSTART.md).
+Use **either oik.ai or laki.ai** (or another compatible Finlex MCP) – the `legal-research` skill
+knows both. Choosing and installing a connector: [QUICKSTART.md](../QUICKSTART.md) at the root.
 
-## Asennus
+## Installation
 
-Lisää tämä repo markkinapaikkana ja ota plugari käyttöön Claude Codessa:
+Add this repository as a marketplace and enable the domain in Claude Code:
 
 ```
-/plugin marketplace add <repo-url tai polku>
-/plugin install juristi@agent-skills-for-finnish-law
+/plugin marketplace add <repo-url or path>
+/plugin install legal-core@agent-skills-for-finnish-law
 ```
 
-Liitä sen jälkeen oik.ai-konnektori (custom connector → URL `https://oik.ai/mcp` → kirjaudu).
+Then connect the oik.ai connector (custom connector → URL `https://oik.ai/mcp` → sign in).
