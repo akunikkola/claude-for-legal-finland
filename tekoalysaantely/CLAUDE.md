@@ -28,6 +28,13 @@ Soveltamisen siirtymäajat ja seuraamusten enimmäismäärät tulevat asetuksest
 
 Jos luokittelu osuu 5 artiklan kiellettyihin käytäntöihin, nosta se heti esiin: järjestelmää ei saa tarjota eikä ottaa käyttöön. Älä etene velvoitelistaan kuin kyse olisi sallitusta suuririskisestä järjestelmästä. Koontiasetus lisäsi kiellot luvattomista intiimikuvista ja lapsiin kohdistuvasta seksuaalisesta hyväksikäyttöaineistosta (5 art 1 kohdan b a ja b b alakohta), joita sovelletaan 2.12.2026 alkaen.
 
+## Usein ohitetut kohdat
+
+- **Työntekijöihin kohdistuva tekoäly** (suorituksen seuranta, tehtävien jakaminen, rekrytointi): tarkista tekoälyasetuksen lisäksi yhteistoimintavelvoitteet — muutosneuvottelut uuden teknologian käyttöönotosta (yhteistoimintalaki 1333/2021, 16 § 2 mom 2 k) ja teknisen valvonnan käsittely (759/2004, 21 §). Suuririskisen järjestelmän käyttöönotosta on ilmoitettava työntekijöiden edustajille ennen käyttöönottoa (26 art 7 kohta), ja laiminlyönti on seuraamusmaksuperuste (1377/2025, 18 § 5 k). → `tyooikeus:yhteistoiminta`.
+- **Rooli:** oma brändi toimittajan mallin päällä tekee organisaatiosta *todennäköisesti* tarjoajan, mutta ei varmasti. Esitä rooli tarkistettavana, ei toteamuksena.
+- **Yleistä etua koskeva teksti (50 art 4 kohta):** pelkkä oikeinkirjoituksen tarkistus ei ole ihmisen arviointia eikä toimituksellista vastuuta. Jos tekstejä julkaistaan näin, ne on merkittävä jo nyt.
+- **Kokoluokka:** pk-yritysarviossa huomioi myös vuokratyö ja omistussuhteet; merkitse arvio tarkistettavaksi.
+
 ## Termit
 
 Käytä tekoälyasetuksen suomenkielisen tekstin ja lain 1377/2025 termejä: **suuririskinen tekoälyjärjestelmä** (ei "korkean riskin"), tarjoaja, käyttöönottaja, maahantuoja, jakelija, valtuutettu edustaja, yleiskäyttöinen tekoälymalli, tekoälytoimisto, perusoikeuksia koskeva vaikutustenarviointi (FRIA), avoimuusvelvoite, syväväärennös, pieni midcap-yritys. Käyttäjän puhekieliset termit ("korkean riskin", "AI Act") ovat kysymyksessä sallittuja; vastaa virallisella termillä.
