@@ -114,6 +114,8 @@ arvioitava]`. Jos kyse on 6(3)-poikkeuksesta, perusta kanta `euaiact_assess_art6
 ## Jatka tästä
 
 - Kun riskiluokka ja rooli ovat selvillä, velvoitteet roolin mukaan → /tekoalysaantely:tekoaly-velvoitteet
+- Kaikki organisaation tekoälyjärjestelmät kerralla rekisteriksi → /tekoalysaantely:tekoaly-kartoitus
+- Avoimuusvelvoitteiden (50 art) toteutus ja ilmoitustekstit → /tekoalysaantely:tekoaly-avoimuus
 - Soveltamisen määräajat, sakkojen enimmäismäärät, GPAI-kynnys ja FRIA-tarve → /tekoalysaantely:tekoaly-vaatimustenmukaisuus
 - Rinnakkainen henkilötietojen käsittelyn, profiloinnin tai DPIA:n arvio → /tietosuoja:tietosuoja-arviointi
 - Kansallisen sääntelytilanteen ja viranomaisnimeämisten tarkistus → /juristi:oikeustutkimus

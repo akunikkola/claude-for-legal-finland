@@ -12,9 +12,24 @@ valvonnasta (1377/2025, voimassa 1.1.2026) osalta. Lähteet tarkistettu 11.10.20
 
 | Skill | Mitä tekee |
 |---|---|
+| **tekoaly-kartoitus** | Aloita tästä. Organisaation tekoälyjärjestelmien kartoitus ja tekoälyrekisteri: rooli, riskiluokka, valvova viranomainen ja priorisoitu toimenpidelista. |
+| **tekoaly-avoimuus** | 50 artiklan avoimuusvelvoitteet: chatbot-ilmoitus, synteettisen sisällön merkintä, syväväärennökset ja yleistä etua koskeva teksti. Ilmoitustekstien luonnokset. |
+| **tekoaly-hallintamalli** | Tekoälypolitiikka ja hallintamalli: roolit, tekoälylukutaito (4 art), elinkaari, käyttöönottajan prosessit (26 art), toimittajat ja henkilöstön käyttöohje. |
 | **tekoaly-luokittelu** | Riskiluokittelu (kielletty / suuririskinen / rajoitettu / minimaalinen), liitteen III kategoria, rooli, relevantit artiklat ja Suomessa valvova viranomainen. Sisältää AI Act -perusteiden referenssin ja Suomi-kerroksen (1377/2025). |
 | **tekoaly-velvoitteet** | Velvoitteet roolin (tarjoaja/käyttöönottaja) ja riskiluokan mukaan, kansalliset seuraamusmaksuperusteet rooleittain ja liitteen IV tekninen dokumentaatio. |
 | **tekoaly-vaatimustenmukaisuus** | Soveltamisen määräajat koontiasetuksen jälkeen, seuraamukset (99 art ja Suomen seuraamusmaksumenettely), GPAI:n systeemisen riskin kynnys (10²⁵ FLOPs) ja perusoikeuksia koskeva vaikutustenarviointi (FRIA, 27 art) DPIA-ristiviittauksineen. |
+
+## Pohjat (`pohjat/`)
+
+Rakenteelliset luurangot [mallipohjien standardin](../references/mallipohjat-standardi.md) mukaan.
+
+| Pohja | Käyttävä skill |
+|---|---|
+| [`tekoalyrekisteri.md`](pohjat/tekoalyrekisteri.md) | tekoaly-kartoitus |
+| [`tekoalyn-hallintamalli.md`](pohjat/tekoalyn-hallintamalli.md) | tekoaly-hallintamalli |
+| [`fria.md`](pohjat/fria.md) | tekoaly-vaatimustenmukaisuus |
+
+DPIA:n tekoälylisäosa on `tietosuoja`-plugarissa: [`dpia-tekoalylisaosa.md`](../tietosuoja/pohjat/dpia-tekoalylisaosa.md).
 
 ## Tietolähde (`.mcp.json`)
 

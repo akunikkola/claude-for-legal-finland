@@ -15,6 +15,12 @@ GDPR) ja kansallisen tietosuojalain (1050/2018) mukaan.
 | **tietosuojaseloste** | Tietosuojaseloste / informointi rekisteröidylle (13–14 art) ja sisäinen seloste käsittelytoimista (30 art). |
 | **rekisteroidyn-pyynnot** | Rekisteröidyn oikeuksien toteuttaminen ja tietopyyntöihin vastaaminen (15–22 art), kuukauden määräaika ja poikkeukset. |
 
+## Pohjat (`pohjat/`)
+
+| Pohja | Käyttävä skill |
+|---|---|
+| [`dpia-tekoalylisaosa.md`](pohjat/dpia-tekoalylisaosa.md) | tietosuoja-arviointi — DPIA:n lisäosa, kun käsittelyssä käytetään tekoälyä. Kytkeytyy `tekoalysaantely`-plugarin FRIA-pohjaan. |
+
 ## Perustana varmistetut säädökset
 
 Lähteestä (oik.ai/Finlex) varmistettu: **tietosuojalaki (1050/2018)** täsmentää ja

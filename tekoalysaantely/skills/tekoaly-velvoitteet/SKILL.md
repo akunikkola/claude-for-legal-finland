@@ -96,6 +96,7 @@ kansallisen lain 1377/2025 pykälien tarkistuksesta.
 ## Jatka tästä
 
 - Jos riskiluokka tai rooli on vielä auki, palaa luokitteluun → /tekoalysaantely:tekoaly-luokittelu
+- Käyttöönottajan prosessit osaksi organisaation hallintamallia → /tekoalysaantely:tekoaly-hallintamalli
 - Voimaantulon määräajat, sakkojen enimmäismäärät, GPAI-kynnys ja FRIA-tarve → /tekoalysaantely:tekoaly-vaatimustenmukaisuus
 - Rinnakkainen henkilötietojen käsittelyn, profiloinnin tai DPIA:n arvio → /tietosuoja:tietosuoja-arviointi
 - Kansallisen sääntelytilanteen ja viranomaisnimeämisten tarkistus → /juristi:oikeustutkimus

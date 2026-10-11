@@ -66,6 +66,17 @@ Käy läpi: lainmukaisuus, kohtuullisuus ja läpinäkyvyys; käyttötarkoitussid
 
 Tarkista myös **tietosuojavaltuutetun toimiston julkaisema lista** käsittelytoimista, jotka edellyttävät DPIA:ta. Jos DPIA tarvitaan, ohjaa sen rakenteeseen (kuvaus, tarpeellisuus ja oikeasuhtaisuus, riskit, toimenpiteet) ja muistuta mahdollisesta ennakkokuulemisesta (36 art), jos jäännösriski on korkea.
 
+**Tekoälyä käyttävä käsittely:** liitä DPIA:han tekoälylisäosa.
+
+> **Pohja:** [`pohjat/dpia-tekoalylisaosa.md`](../../pohjat/dpia-tekoalylisaosa.md) —
+> tekoälyn erityiskysymykset: tarjoajan tiedot, henkilötiedot elinkaaressa, automaattinen
+> päätöksenteko, vinoumat, avoimuus, tietoturva, säilytys ja suhde FRIA:han.
+
+Tekoälyasetus ei korvaa GDPR:ää, mutta se vaikuttaa DPIA:han: suuririskisen järjestelmän
+käyttöönottajan on tarvittaessa käytettävä tarjoajan antamia tietoja DPIA:ssa, ja
+perusoikeuksia koskevassa vaikutustenarvioinnissa (FRIA) voi ristiinviitata DPIA:han.
+Tarkista artiklat ja järjestelmän riskiluokka `tekoalysaantely`-plugarilla.
+
 ## Vaihe 5: Johtopäätös
 
 Tuota tiivis arvio:
@@ -88,4 +99,5 @@ Tuota tiivis arvio:
 - Informointiasiakirja ja seloste käsittelytoimista (30 art) → /tietosuoja:tietosuojaseloste
 - Rekisteröidyn esittämän pyynnön käsittely → /tietosuoja:rekisteroidyn-pyynnot
 - Profilointi ja automaattinen päätöksenteko tekoälyjärjestelmässä → /tekoalysaantely:tekoaly-luokittelu
+- Perusoikeuksia koskeva vaikutustenarviointi (FRIA) DPIA:n rinnalle → /tekoalysaantely:tekoaly-vaatimustenmukaisuus
 - Käsittelyperusteen pykälien ja kansallisten täsmennysten tarkistus → /juristi:oikeustutkimus

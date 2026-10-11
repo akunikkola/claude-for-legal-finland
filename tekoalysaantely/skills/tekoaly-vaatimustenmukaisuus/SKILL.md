@@ -84,11 +84,16 @@ sairausvakuutuksen riskinarviointi ja hinnoittelu) käyttöönottajat. Liitteen 
 (kriittinen infrastruktuuri) on vapautettu. Velvoite alkaa, kun liitteen III järjestelmiin
 aletaan soveltaa III lukua (hae päivä MCP:stä).
 
-Jos FRIA tarvitaan, ohjaa sen sisältöön: käyttöprosessin kuvaus, käytön kesto ja tiheys,
+> **Pohja:** [`pohjat/fria.md`](../../pohjat/fria.md) — FRIA:n luuranko 27 artiklan
+> 1 kohdan a–f alakohdan mukaan, DPIA-ristiviittaus ja ilmoitus markkinavalvontaviranomaiselle.
+
+Jos FRIA tarvitaan, käy sen sisältö läpi pohjan avulla: käyttöprosessin kuvaus, käytön kesto ja tiheys,
 vaikutuksen kohteena olevat henkilöryhmät, riskit perusoikeuksille, ihmisen valvonta ja
 toimenpiteet riskien toteutuessa. **Koontiasetuksen myötä FRIA:ssa voi ristiinviitata
 GDPR:n DPIA:n asiaankuuluviin jaksoihin tai sisällyttää niitä** (27 art 4 kohta), ja
-tekoälytoimiston kyselylomakemalli tukee tätä (27 art 5 kohta). Tee DPIA ja FRIA siis
+tekoälytoimiston kyselylomakemalli tukee tätä (27 art 5 kohta). Tuloksista on
+ilmoitettava markkinavalvontaviranomaiselle (27 art 3 kohta); Suomessa viranomainen
+määräytyy lain 1377/2025 3 §:n mukaan. Tee DPIA ja FRIA siis
 mieluummin yhdessä → `tietosuoja`-plugari. DVV:n VAHTI-materiaaleissa on FRIA-työkalu ja
 DPIA:n tekoälylisäkysymykset, joita voi käyttää rakenteen pohjana (kehittajille.suomi.fi).
 
@@ -104,11 +109,12 @@ valvova viranomainen ja kansallinen seuraamusmaksupykälä lain 1377/2025 mukaan
 - **Ei ennusta todellista seuraamusta.** `euaiact_calculate_penalty` antaa 99 art mukaisen **enimmäismäärän**, ei arviota viranomaisen tosiasiassa määräämästä sakosta.
 - **Ei arvaa kansallista menettelyä.** Valvojat ja seuraamusmaksun perusteet ovat laissa 1377/2025; jos pykälää ei ole tarkistettu Finlexistä tässä istunnossa, merkitse se `[muistinvarainen — tarkista Finlexistä]`.
 - **Ei kohtele ehdotuksia voimassa olevana lakina eikä voimassa olevaa lakia ehdotuksena.** Koontiasetus (EU) 2026/1744 on voimassa 27.7.2026 alkaen. Myöhemmät muutosehdotukset ovat suuntaa-antavia, kunnes ne on julkaistu EU:n virallisessa lehdessä.
-- **Ei kirjoita FRIA- tai DPIA-asiakirjaa valmiiksi.** Tunnistaa FRIA-velvollisuuden (27 art) ja ohjaa sen rakenteeseen, mutta varsinaisen arvioinnin laatiminen jää organisaatiolle.
+- **Ei kirjoita FRIA- tai DPIA-asiakirjaa valmiiksi.** Tunnistaa FRIA-velvollisuuden (27 art) ja täyttää pohjaa käyttäjän antamilla tiedoilla, mutta riskien arviointi ja hyväksyntä jäävät organisaatiolle.
 
 ## Jatka tästä
 
 - Jos riskiluokka on vielä auki, aloita luokittelusta → /tekoalysaantely:tekoaly-luokittelu
+- Koko organisaation tekoälyrekisteri ja priorisointi → /tekoalysaantely:tekoaly-kartoitus
 - Velvoitteiden täsmäkokoaminen roolin ja luokan mukaan sekä liite IV → /tekoalysaantely:tekoaly-velvoitteet
 - FRIA:n ja DPIA:n limittäisyys, profilointi ja automaattinen päätöksenteko → /tietosuoja:tietosuoja-arviointi
 - Kansallisten määräaikojen, viranomaisten ja täytäntöönpanon tarkistus → /juristi:oikeustutkimus
