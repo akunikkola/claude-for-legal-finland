@@ -85,7 +85,7 @@ Kaikki 24 plugaria ovat valmiita ja asennettavissa erikseen.
 | **[sopimukset](sopimukset/)** | Sopimusten laatiminen (rakenne, lausekekirjasto, sopimusoikeus) ja lausekekohtainen riskiarvio Suomen oikeuden mukaan. |
 | **[työoikeus](tyooikeus/)** | Työsopimus (työsopimuslaki 55/2001), päättämisen arviointi ja yhteistoiminta/muutosneuvottelut (yhteistoimintalaki 1333/2021). |
 | **[tietosuoja](tietosuoja/)** | Tietosuoja-asetus (GDPR) ja tietosuojalaki: käsittelyn arviointi ja DPIA, tietosuojaseloste, rekisteröidyn pyynnöt. |
-| **[tekoälysääntely](tekoalysaantely/)** | EU:n tekoälyasetus (AI Act): riskiluokittelu, velvoitteet, määräajat, seuraamukset, GPAI ja FRIA. Avoin, deterministinen EU AI Act -MCP. |
+| **[tekoälysääntely](tekoalysaantely/)** | EU:n tekoälyasetus (AI Act) koontiasetuksen 2026/1744 jälkeen: riskiluokittelu, Suomen valvojat (1377/2025), velvoitteet, määräajat, seuraamukset, GPAI ja FRIA. Avoin, deterministinen EU AI Act -MCP. |
 | **[hallinto-oikeus](hallinto-oikeus/)** | Hallintopäätös (hallintolaki 434/2003), muutoksenhaku (808/2019) ja asiakirjajulkisuus/tietopyynnöt (julkisuuslaki 621/1999). |
 | **[riidanratkaisu](riidanratkaisu/)** | Riita-asia yleisissä tuomioistuimissa (oikeudenkäymiskaari 4/1734): haastehakemus, todistelu, muutoksenhaku. |
 | **[yhtiöoikeus](yhtiooikeus/)** | Osakeyhtiölaki (624/2006): perustaminen ja hallinto, johdon vastuu, varojenjako, osakassopimukset, yritysjärjestelyt ja DD. |

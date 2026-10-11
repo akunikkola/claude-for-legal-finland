@@ -73,13 +73,13 @@ Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja 
 
 `/plugin install tekoalysaantely@claude-for-legal-finland` – [`./tekoalysaantely/`](./tekoalysaantely/)
 
-EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen: tekoälyjärjestelmän riskiluokittelu, velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.
+EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen koontiasetuksen (EU) 2026/1744 jälkeen: tekoälyjärjestelmän riskiluokittelu ja Suomessa valvova viranomainen (laki 1377/2025), velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.
 
 | Skill | Kuvaus |
 |---|---|
-| [`tekoaly-luokittelu`](tekoalysaantely/skills/tekoaly-luokittelu/SKILL.md) | Tekoälyjärjestelmän riskiluokittelu EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") mukaan: kielletty, korkea riski, rajoitettu riski (läpinäkyvyysvelvoitteet) vai minimaalinen riski. Käytä tätä skilliä, kun käyttäjä haluaa selvitt… |
-| [`tekoaly-vaatimustenmukaisuus`](tekoalysaantely/skills/tekoaly-vaatimustenmukaisuus/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) vaatimustenmukaisuuden tukitehtävät: soveltamisen määräajat ja siirtymäajat, seuraamusten (sakkojen) suuruus, GPAI-mallin systeemisen riskin kynnys (10^25 FLOPs) ja perusoikeusvaikutusten arviointi (FRIA, 27… |
-| [`tekoaly-velvoitteet`](tekoalysaantely/skills/tekoaly-velvoitteet/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) velvoitteiden selvittäminen roolin (tarjoaja/ käyttöönottaja) ja riskiluokan mukaan sekä korkean riskin järjestelmän teknisen dokumentaation (Annex IV) kokoaminen. Käytä tätä skilliä, kun tekoälyjärjestelmän… |
+| [`tekoaly-luokittelu`](tekoalysaantely/skills/tekoaly-luokittelu/SKILL.md) | Tekoälyjärjestelmän riskiluokittelu EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") mukaan: kielletty, suuririskinen (korkea riski), rajoitettu riski (avoimuusvelvoitteet) vai minimaalinen riski, sekä järjestelmää Suomessa valvova… |
+| [`tekoaly-vaatimustenmukaisuus`](tekoalysaantely/skills/tekoaly-vaatimustenmukaisuus/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) vaatimustenmukaisuuden tukitehtävät: soveltamisen määräajat ja siirtymäajat koontiasetuksen (Digital Omnibus) jälkeen, seuraamusten (sakkojen, seuraamusmaksun) suuruus, GPAI-mallin systeemisen riskin kynnys… |
+| [`tekoaly-velvoitteet`](tekoalysaantely/skills/tekoaly-velvoitteet/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) velvoitteiden selvittäminen roolin (tarjoaja/ käyttöönottaja) ja riskiluokan mukaan sekä suuririskisen (korkean riskin) järjestelmän teknisen dokumentaation (liite IV, Annex IV) kokoaminen. Käytä tätä skilli… |
 
 ## Työoikeus
 

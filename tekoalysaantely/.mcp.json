@@ -2,15 +2,15 @@
   "mcpServers": {
     "eu-ai-act": {
       "command": "npx",
-      "args": ["-y", "@lexbeam-software/eu-ai-act-mcp"],
+      "args": ["-y", "@lexbeam-software/eu-ai-act-mcp@^1.7.0"],
       "title": "EU AI Act",
-      "description": "Avoin (MIT), deterministinen MCP EU:n tekoälyasetukseen (asetus (EU) 2024/1689): riskiluokittelu, velvoitteet, määräajat, seuraamukset, GPAI-kynnys ja FRIA — EUR-Lex-pohjaisin sitaatein, ilman LLM:ää silmukassa. Pyörii paikallisesti npx:llä, ei vaadi tiliä."
+      "description": "Avoin (MIT), deterministinen MCP EU:n tekoälyasetukseen (asetus (EU) 2024/1689) koontiasetuksella (EU) 2026/1744 muutettuna: riskiluokittelu, järjestelmäarvio, velvoitteet, määräajat, seuraamukset, GPAI-kynnys ja FRIA — EUR-Lex-pohjaisin sitaatein, ilman LLM:ää silmukassa. Pyörii paikallisesti npx:llä (versio 1.7 tai uudempi), ei vaadi tiliä."
     },
     "oik-ai": {
       "type": "http",
       "url": "https://oik.ai/mcp",
       "title": "oik.ai",
-      "description": "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö. Tekoälysääntelyssä: tarkista kansallinen täytäntöönpano ja toimivaltaiset viranomaiset sekä mahdollinen täydentävä lainsäädäntö. Käyttö edellyttää oik.ai-tiliä (OAuth liitettäessä)."
+      "description": "Suomalainen oikeuskäytäntö ja ajantasainen lainsäädäntö. Tekoälysääntelyssä: lain eräiden tekoälyjärjestelmien valvonnasta (1377/2025) pykälät ja muu täydentävä kansallinen sääntely. Käyttö edellyttää oik.ai-tiliä (OAuth liitettäessä)."
     }
   },
   "recommendedCategories": [

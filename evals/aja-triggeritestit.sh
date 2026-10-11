@@ -41,9 +41,11 @@ for i in $(seq 0 $((count - 1))); do
   out=$(claude "${args[@]}" "$prompt" 2>/dev/null || true)
 
   # Ajovirhe (esim. 401-autentikointi) ei ole triggerihukka — keskeytä heti,
-  # muuten koko ajo raportoisi valheellisia hukkia.
-  if jq -e 'select(.type? == "result") | .is_error == true' <<<"$out" >/dev/null 2>&1 \
-     || grep -q "Failed to authenticate" <<<"$out"; then
+  # muuten koko ajo raportoisi valheellisia hukkia. Vuoromäärän täyttyminen
+  # (subtype error_max_turns) on odotettua: skill on jo ehditty kutsua, joten
+  # sitä ei lasketa ajovirheeksi.
+  if jq -e 'select(.type? == "result") | .is_error == true and .subtype != "error_max_turns"' <<<"$out" >/dev/null 2>&1 \
+     || grep -q -e "Failed to authenticate" -e '"error_status":401' <<<"$out"; then
     echo "  💥 $id — ajo epäonnistui (autentikointi/API-virhe), ei triggeritulos"
     echo "✗ Aja kirjautuneessa ympäristössä (claude toimii interaktiivisesti samassa terminaalissa)."
     exit 2
