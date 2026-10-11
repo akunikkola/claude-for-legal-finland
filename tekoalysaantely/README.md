@@ -28,6 +28,7 @@ Rakenteelliset luurangot [mallipohjien standardin](../references/mallipohjat-sta
 | [`tekoalyrekisteri.md`](pohjat/tekoalyrekisteri.md) | tekoaly-kartoitus |
 | [`tekoalyn-hallintamalli.md`](pohjat/tekoalyn-hallintamalli.md) | tekoaly-hallintamalli |
 | [`fria.md`](pohjat/fria.md) | tekoaly-vaatimustenmukaisuus |
+| [`tekoalyhankinnan-vaatimukset.md`](pohjat/tekoalyhankinnan-vaatimukset.md) | tekoaly-hallintamalli; julkisissa hankinnoissa myös `julkiset-hankinnat` |
 
 DPIA:n tekoälylisäosa on `tietosuoja`-plugarissa: [`dpia-tekoalylisaosa.md`](../tietosuoja/pohjat/dpia-tekoalylisaosa.md).
 
@@ -50,9 +51,18 @@ DPIA:n tekoälylisäosa on `tietosuoja`-plugarissa: [`dpia-tekoalylisaosa.md`](.
   tekoälylisäkysymykset
   ([kehittajille.suomi.fi](https://kehittajille.suomi.fi/palvelut/digiturva/tietoturva/tekoaly/tekoalyn-kayttoonoton-tyokalut)).
 
+## Taustalla ajettava seuranta ja harjoitusaineisto
+
+- Agenttiresepti [`tekoaly-vahti`](../agentti-reseptit/tekoaly-vahti/) vertaa
+  tekoälyrekisteriä lähestyviin määräaikoihin ja seuraa sääntely- ja ohjemuutoksia.
+- Harjoitusaineisto [`tekoaly-kartoitus-verkkokauppa`](../esimerkkiaineistot/tekoaly-kartoitus-verkkokauppa/)
+  arviointikriteereineen pilotointiin ja regressiotestaukseen.
+
 ## Liittyy
 
 - **`tietosuoja`-plugari** – tekoälyasetus ja GDPR ovat rinnakkaisia (profilointi, automaattiset päätökset, DPIA).
+- **`tyooikeus`-plugari** – yhteistoiminta, tekninen valvonta ja muutosneuvottelut tekoälyn käyttöönotossa.
+- **`julkiset-hankinnat`-plugari** – tekoälyjärjestelmän julkinen hankinta.
 - **`juristi`-plugari** – `oikeustutkimus` kansallisen kerroksen tarkistukseen.
 
 ## Asennus

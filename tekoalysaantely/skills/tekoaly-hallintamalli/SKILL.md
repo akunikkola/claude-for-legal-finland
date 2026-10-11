@@ -79,7 +79,9 @@ vastuuhenkilö ja menettely:
 - yhteistyö viranomaisten kanssa (12 kohta),
 - viranomaiskäyttöönottajilla rekisteröinti (8 kohta) ja tarvittaessa FRIA (27 art).
 
-**Toimittajat ja hankinnat:** pyydä käyttöohjeet (13 art) ja suuririskisistä järjestelmistä
+**Toimittajat ja hankinnat:** käytä pohjaa
+[`pohjat/tekoalyhankinnan-vaatimukset.md`](../../pohjat/tekoalyhankinnan-vaatimukset.md)
+toimittajavaatimuksiin ja tietopyyntöihin. Pyydä vähintään käyttöohjeet (13 art) ja suuririskisistä järjestelmistä
 EU-vaatimustenmukaisuusvakuutus ja rekisteröintitieto. Jos organisaatio on tarjoaja ja
 käyttää kolmannen osapuolen komponentteja tai malleja, 25 artiklan 4 kohta edellyttää
 kirjallista sopimusta tarvittavista tiedoista ja avusta. Huomaa olennaisen muutoksen riski
@@ -110,5 +112,6 @@ näkee, mistä se voi joustaa.
 - Avoimuusvelvoitteet ja ilmoitustekstit → /tekoalysaantely:tekoaly-avoimuus
 - Suuririskisen järjestelmän velvoitteet järjestelmäkohtaisesti → /tekoalysaantely:tekoaly-velvoitteet
 - FRIA ja määräajat → /tekoalysaantely:tekoaly-vaatimustenmukaisuus
-- Työntekijöiden informointi ja yhteistoiminta → /tyooikeus:yhteistoiminta
+- Työntekijöiden informointi, tekninen valvonta ja muutosneuvottelut tekoälyn käyttöönotossa → /tyooikeus:yhteistoiminta
+- Tekoälyjärjestelmän julkinen hankinta → /julkiset-hankinnat:hankinnan-suunnittelu
 - DPIA ja henkilötietojen käsittely → /tietosuoja:tietosuoja-arviointi
