@@ -3,7 +3,7 @@
 > Autogeneroitu `scripts/generate-skills-md.mjs`-skriptillä `.claude-plugin/marketplace.json`:sta
 > ja kunkin `SKILL.md`:n frontmatterista. Älä muokkaa käsin – aja skripti uudelleen.
 
-Markkinapaikalla on **24 plugaria** ja **78 skilliä**. Asennus: ks. [QUICKSTART.md](QUICKSTART.md).
+Markkinapaikalla on **24 plugaria** ja **81 skilliä**. Asennus: ks. [QUICKSTART.md](QUICKSTART.md).
 
 ## Juristi – perusta
 
@@ -61,7 +61,7 @@ Sopimusten laatiminen ja tarkistus Suomen oikeuden mukaan: sopimuksen rakenne ja
 
 `/plugin install tietosuoja@claude-for-legal-finland` – [`./tietosuoja/`](./tietosuoja/)
 
-Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.
+Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja tietosuojalain (1050/2018) mukaan: käsittelyn arviointi ja DPIA tekoälylisäosineen, tietosuojaseloste ja seloste käsittelytoimista sekä rekisteröidyn tietopyyntöihin vastaaminen.
 
 | Skill | Kuvaus |
 |---|---|
@@ -73,10 +73,13 @@ Henkilötietojen käsittelyn tietosuoja EU:n tietosuoja-asetuksen (2016/679) ja 
 
 `/plugin install tekoalysaantely@claude-for-legal-finland` – [`./tekoalysaantely/`](./tekoalysaantely/)
 
-EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) noudattaminen koontiasetuksen (EU) 2026/1744 jälkeen: tekoälyjärjestelmän riskiluokittelu ja Suomessa valvova viranomainen (laki 1377/2025), velvoitteet roolin ja riskiluokan mukaan sekä määräajat, seuraamukset, GPAI-kynnys ja perusoikeusvaikutusten arviointi (FRIA). Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.
+EU:n tekoälyasetuksen (asetus (EU) 2024/1689, AI Act) toteuttaminen koontiasetuksen (EU) 2026/1744 jälkeen: tekoälyjärjestelmien kartoitus ja rekisteri, riskiluokittelu ja Suomessa valvova viranomainen (laki 1377/2025), avoimuusvelvoitteet, hallintamalli ja tekoälylukutaito, velvoitteet, määräajat, seuraamukset, GPAI-kynnys ja FRIA. Nojaa avoimeen, deterministiseen EU AI Act -MCP:hen.
 
 | Skill | Kuvaus |
 |---|---|
+| [`tekoaly-avoimuus`](tekoalysaantely/skills/tekoaly-avoimuus/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) 50 artiklan avoimuusvelvoitteiden toteuttaminen: miten käyttäjälle kerrotaan tekoälyn kanssa asioinnista (chatbot, ääniavustaja, tekoälyagentti), miten tekoälyllä tuotettu sisältö merkitään koneellisesti lue… |
+| [`tekoaly-hallintamalli`](tekoalysaantely/skills/tekoaly-hallintamalli/SKILL.md) | Organisaation tekoälyn hallintamallin ja tekoälypolitiikan laatiminen EU:n tekoälyasetuksen (EU 2024/1689) toteuttamiseksi: periaatteet, roolit ja vastuut, tekoälylukutaito (4 art), järjestelmien elinkaari hankinnasta käytöstä poistoon, su… |
+| [`tekoaly-kartoitus`](tekoalysaantely/skills/tekoaly-kartoitus/SKILL.md) | Organisaation tekoälyjärjestelmien kartoitus ja tekoälyrekisterin kokoaminen EU:n tekoälyasetuksen (asetus (EU) 2024/1689) toteuttamisen lähtökohdaksi: mitä tekoälyä yrityksessä on käytössä, missä roolissa (tarjoaja tai käyttöönottaja), mi… |
 | [`tekoaly-luokittelu`](tekoalysaantely/skills/tekoaly-luokittelu/SKILL.md) | Tekoälyjärjestelmän riskiluokittelu EU:n tekoälyasetuksen (asetus (EU) 2024/1689, "AI Act") mukaan: kielletty, suuririskinen (korkea riski), rajoitettu riski (avoimuusvelvoitteet) vai minimaalinen riski, sekä järjestelmää Suomessa valvova… |
 | [`tekoaly-vaatimustenmukaisuus`](tekoalysaantely/skills/tekoaly-vaatimustenmukaisuus/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) vaatimustenmukaisuuden tukitehtävät: soveltamisen määräajat ja siirtymäajat koontiasetuksen (Digital Omnibus) jälkeen, seuraamusten (sakkojen, seuraamusmaksun) suuruus, GPAI-mallin systeemisen riskin kynnys… |
 | [`tekoaly-velvoitteet`](tekoalysaantely/skills/tekoaly-velvoitteet/SKILL.md) | Tekoälyasetuksen (EU 2024/1689) velvoitteiden selvittäminen roolin (tarjoaja/ käyttöönottaja) ja riskiluokan mukaan sekä suuririskisen (korkean riskin) järjestelmän teknisen dokumentaation (liite IV, Annex IV) kokoaminen. Käytä tätä skilli… |

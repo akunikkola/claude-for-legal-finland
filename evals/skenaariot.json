@@ -89,6 +89,24 @@
       "odotettu_skill": "tekoaly-luokittelu",
       "prompt": "Mikä viranomainen Suomessa valvoo rekrytointiin käyttämäämme tekoälytyökalua, ja onko se suuririskinen järjestelmä?",
       "huomio": "Regressiovahti: oikea vastaus nojaa lakiin 1377/2025 (tietosuojavaltuutettu, 3 § 2 mom 4 k), ei väitteeseen kansallisen sääntelyn keskeneräisyydestä."
+    },
+    {
+      "id": "ai-act-kartoitus",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-kartoitus",
+      "prompt": "Haluamme selvittää, mitä tekoälytyökaluja yrityksessämme ylipäätään on käytössä ja mitä tekoälyasetus niistä vaatii. Mistä aloitetaan?"
+    },
+    {
+      "id": "ai-act-avoimuus",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-avoimuus",
+      "prompt": "Verkkosivuillamme on tekoälychatbot ja markkinointi tekee kuvia tekoälyllä. Miten meidän pitää kertoa tekoälyn käytöstä?"
+    },
+    {
+      "id": "ai-act-hallintamalli",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-hallintamalli",
+      "prompt": "Tarvitsemme yritykselle tekoälypolitiikan ja vastuut, ja henkilöstön tekoälylukutaito pitäisi hoitaa kuntoon."
     }
   ]
 }
