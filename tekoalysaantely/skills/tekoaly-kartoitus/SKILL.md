@@ -82,6 +82,10 @@ Kutsu MCP:tä jokaiselle järjestelmälle. Kirjaa rekisteriin:
   yleistä etua koskeva teksti, tunteentunnistus. → `tekoaly-avoimuus`.
 - **Yleiskäyttöinen tekoälymalli?** Vain jos organisaatio itse tarjoaa mallia.
 - **Valvova viranomainen** lain 1377/2025 3–5 §:n mukaan (taulukko perusteissa).
+- **Kohdistuuko työntekijöihin?** Jos järjestelmä seuraa, arvioi tai ohjaa työntekijöitä,
+  merkitse yhteistoimintavelvoitteet (1333/2021 16 § 2 mom 2 k; 759/2004 21 §) ja
+  suuririskisessä järjestelmässä ilmoitus työntekijöiden edustajille ennen käyttöönottoa
+  (26 art 7 kohta; 1377/2025 18 § 5 k). → `tyooikeus:yhteistoiminta`.
 
 ### 5. Priorisoi
 Järjestä toimenpiteet sen mukaan, mitä sovelletaan jo ja mitä myöhemmin. Hae päivät

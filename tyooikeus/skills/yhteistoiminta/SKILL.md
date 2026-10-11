@@ -6,8 +6,10 @@ description: >
   määräajat ja soveltamisala. Käytä tätä skilliä, kun käyttäjä suunnittelee tai arvioi
   muutosneuvotteluja, henkilöstövaikutuksia, lomautuksia tai kollektiiviperusteisia
   irtisanomisia, kysyy YT-velvoitteista, neuvotteluvelvollisuudesta tai
-  yhteistoimintamenettelystä. Triggeröi kun mainitaan yhteistoiminta, YT-neuvottelut,
-  muutosneuvottelut, jatkuva vuoropuhelu tai neuvotteluesitys.
+  yhteistoimintamenettelystä, tai suunnittelee tekoälyn tai muun uuden teknologian
+  käyttöönottoa, joka vaikuttaa työntekijöihin. Triggeröi kun mainitaan yhteistoiminta,
+  YT-neuvottelut, muutosneuvottelut, jatkuva vuoropuhelu, neuvotteluesitys tai
+  henkilöstön kuuleminen tekoälyn käyttöönotossa.
 ---
 
 # Yhteistoiminta ja muutosneuvottelut (yhteistoimintalaki 1333/2021)
@@ -47,6 +49,40 @@ Keskeiset vaiheet (tarkista täsmälliset sisällöt ja määräajat lähteestä
 4. **Selvitys** neuvottelujen tuloksista ja päätöksistä.
 Vasta tämän jälkeen työnantaja voi tehdä päätöksen vähentämisestä → ks. `tyosuhteen-paattaminen`-skill.
 
+### 3. Tekoälyn ja muun uuden teknologian käyttöönotto
+Tekoälyn käyttöönotto työpaikalla voi käynnistää useita rinnakkaisia velvoitteita. Käy ne
+läpi erikseen, koska niillä on eri perusteet ja seuraamukset (tarkista pykälät lähteestä):
+
+- **Muutosneuvottelut:** uuden teknologian käyttöönotosta johtuvat, työntekijän asemaan
+  vaikuttavat olennaiset muutokset työtehtävissä, työmenetelmissä tai töiden
+  järjestelyissä kuuluvat muutosneuvotteluvelvoitteen piiriin (yhteistoimintalaki
+  1333/2021, 16 § 2 mom 2 k). Arvioi olennaisuus tapauskohtaisesti `[varmista —
+  työoikeusjuristin arvioitava]`.
+- **Vuoropuhelu ja tekninen valvonta:** jos tekoäly seuraa, mittaa tai analysoi
+  työntekijöitä, kyse voi olla teknisin menetelmin toteutetusta valvonnasta. Sen
+  tarkoitus, käyttöönotto ja menetelmät käsitellään vuoropuhelussa (1333/2021 12 § 3 k;
+  laki yksityisyyden suojasta työelämässä 759/2004, 21 §). Yhteistoimintalain
+  ulkopuolisessa yrityksessä työntekijöille on varattava tilaisuus tulla kuulluiksi ennen
+  päätöstä. Menettelyn jälkeen työnantajan on määriteltävä valvonnan tarkoitus ja
+  menetelmät ja tiedotettava niistä (759/2004, 21 § 2 mom).
+- **Kehittämissuunnitelma:** teknologisen kehityksen vaikutukset työyhteisöön ja
+  osaamistarpeisiin huomioidaan työyhteisön kehittämissuunnitelmassa (1333/2021, 9 §).
+  Tähän sopii myös tekoälylukutaidon kehittäminen (tekoälyasetus 4 art).
+- **Tekoälyasetuksen ilmoitus:** suuririskisen tekoälyjärjestelmän (esim. rekrytointi,
+  tehtävien jakaminen, suoriutumisen seuranta) käyttöönottajan on ilmoitettava
+  työntekijöiden edustajille ja asianomaisille työntekijöille ennen käyttöönottoa
+  (tekoälyasetus 26 art 7 kohta). Laiminlyönti on Suomessa seuraamusmaksuperuste
+  (laki 1377/2025, 18 § 5 k). Soveltamisen alkamispäivä tarkistetaan
+  `tekoalysaantely`-plugarista.
+- **Kielletty käytäntö:** tunteiden tunnistus työpaikalla on lähtökohtaisesti kielletty
+  (tekoälyasetus 5 art). Jos suunniteltu järjestelmä päättelee työntekijöiden tunteita,
+  pysäytä ja ohjaa luokitteluun.
+
+Tuota tällöin yhdistetty aikajana: vuoropuhelu tai kuuleminen → tarvittaessa
+muutosneuvottelut → tekoälyasetuksen ilmoitus → valvonnan määrittely ja tiedottaminen →
+käyttöönotto. DVV:n VAHTI-materiaaleissa on tukimateriaali tekoälyjärjestelmän
+yhteistoimintakäsittelyyn (kehittajille.suomi.fi), jota voi käyttää vertailukohtana.
+
 ## Työnkulku
 1. Selvitä: yrityksen henkilöstömäärä (soveltuuko laki?), suunniteltu toimenpide ja sen henkilöstövaikutukset, aikataulu, henkilöstön edustus.
 2. Hae sovellettavat säännökset ja määräajat `oikeustutkimus`-skillillä.
@@ -71,3 +107,5 @@ Tuota tarkistuslista ja aikajana lähdemerkinnöin. Korosta, että muutosneuvott
 - Henkilöstövaikutus kohdistuu työsopimusten ehtoihin (olennainen muutos) → /tyooikeus:tyosopimus
 - Yhteistoimintalain säännösten, määräaikojen tai oikeuskäytännön tarkistus lähteestä → /juristi:oikeustutkimus
 - Neuvotteluesityksen tai selvityksen laaduntarkistus ennen lähettämistä → /juristi:asiakirjan-tarkistus
+- Onko käyttöön otettava tekoäly kielletty tai suuririskinen, ja kuka sitä valvoo → /tekoalysaantely:tekoaly-luokittelu
+- Tekoälyn hallintamalli, käyttöönottajan prosessit ja tekoälylukutaito → /tekoalysaantely:tekoaly-hallintamalli

@@ -23,6 +23,7 @@ epätäydellisiä ja juuri siksi hyödyllisiä.
 |---|---|---|
 | [`maaraaikainen-tyosuhde-paattyy`](maaraaikainen-tyosuhde-paattyy/) | määräaikaisuuden peruste, koeaikapurku, irtisanomisaika, menettely | `tyooikeus`, `juristi` |
 | [`asuntokauppa-virhe`](asuntokauppa-virhe/) | reklamaatio, virhetyypit, selonottovelvollisuus, taloyhtiön vastuu, välittäjän rooli | `kiinteistot-ja-asuminen`, `juristi` |
+| [`tekoaly-kartoitus-verkkokauppa`](tekoaly-kartoitus-verkkokauppa/) | tekoälyrekisteri, kielletty tunteentunnistus, avoimuusvelvoitteet, rekrytointi suuririskisenä, YT ja tuottavuusseuranta, vanhentuneet premissit | `tekoalysaantely`, `tyooikeus`, `tietosuoja` |
 | [`yrityskauppa-dd`](yrityskauppa-dd/) | DD-priorisointi, vähemmistöosakas, change of control, ympäristöriski, KKV-arvio | `yhtiooikeus`, `kilpailuoikeus`, `ymparisto-ja-kaavoitus` |
 
 ## Arviointikriteerit

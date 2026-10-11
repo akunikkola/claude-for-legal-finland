@@ -83,8 +83,7 @@ Konventiot: [`references/mallipohjat-standardi.md`](../../references/mallipohjat
 
 ### 8. Toimittajat ja hankinnat (pakollinen)
 
-- Toimittajalta pyydettävät tiedot: [käyttöohjeet (13 art), vaatimustenmukaisuusvakuutus,
-  rekisteröinti, tietoturva, tietojen sijainti]
+- Toimittajalta pyydettävät tiedot: [pohja `tekoalyhankinnan-vaatimukset.md`]
 - Sopimusehdot: [tarvittaessa 25 art 4 kohdan kirjallinen sopimus — tarkista lähteestä]
 
 ### 9. Henkilöstön tekoälyn käyttöohje (pakollinen)

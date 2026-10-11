@@ -105,3 +105,4 @@ seikka ei voi olla molempia samassa roolissa.
 - Sopimusluonnoksen lausekkeet → /sopimukset:sopimuksen-laatiminen
 - Liikesalaisuusmerkintöjen perusteet → /immateriaalioikeus:liikesalaisuudet
 - Tarjouspyynnön tai tarjouksen kieliasu → /juristi:asiakirjan-tarkistus
+- Tekoälyjärjestelmän vaatimukset tarjouspyyntöön (`tekoalysaantely`-plugarin pohja `tekoalyhankinnan-vaatimukset.md`) → /tekoalysaantely:tekoaly-hallintamalli

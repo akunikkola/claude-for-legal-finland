@@ -107,6 +107,13 @@
       "plugari": "tekoalysaantely",
       "odotettu_skill": "tekoaly-hallintamalli",
       "prompt": "Tarvitsemme yritykselle tekoälypolitiikan ja vastuut, ja henkilöstön tekoälylukutaito pitäisi hoitaa kuntoon."
+    },
+    {
+      "id": "tekoaly-yt-kayttoonotto",
+      "plugari": "tyooikeus",
+      "odotettu_skill": "yhteistoiminta",
+      "prompt": "Otamme varastolla käyttöön tekoälyn, joka seuraa keräilijöiden tuottavuutta ja jakaa vuorot. Riittääkö, että kerromme siitä henkilöstöinfossa?",
+      "huomio": "Tarkistaa, että tekoälyn käyttöönotto (16 § 2 mom 2 k, 759/2004 21 §, tekoälyasetus 26 art 7 kohta) triggeröi yhteistoimintaskillin."
     }
   ]
 }

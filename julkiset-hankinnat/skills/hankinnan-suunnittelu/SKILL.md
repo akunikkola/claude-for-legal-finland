@@ -110,4 +110,4 @@ luonteen mukaan ja perustele valinta:
 - Päätös, odotusaika ja muutoksenhakuriski → /julkiset-hankinnat:hankintapaatos-ja-muutoksenhaku
 - Säännöksen tai MAO-käytännön tarkistus → /juristi:oikeustutkimus
 - Hankintasopimuksen lausekkeet → /sopimukset:sopimuksen-laatiminen
-- Tekoälyjärjestelmän hankinnan erityisvaatimukset → /tekoalysaantely:tekoaly-velvoitteet
+- Tekoälyjärjestelmän hankinnan erityisvaatimukset: luokittele ensin (/tekoalysaantely:tekoaly-luokittelu) ja käytä `tekoalysaantely`-plugarin pohjaa `tekoalyhankinnan-vaatimukset.md` → /tekoalysaantely:tekoaly-hallintamalli
