@@ -120,6 +120,10 @@
   .head h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.015em}
   .head .rule{flex:1;height:1px;background:var(--line)}
 
+  .intro{font-size:15.5px;color:var(--ink-soft);max-width:70ch;margin:-10px 0 22px;line-height:1.55}
+  .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:14.5px;font-weight:600}
+  .more:hover{text-decoration:underline}
+  a.chip:hover{background:#cff560}
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
   .mech{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
     padding:22px;box-shadow:var(--shadow-s);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
@@ -267,6 +271,7 @@
 
       <div class="metarow">
         <span class="chip">v1.2.0</span>
+        <a class="chip" href="#tekoaly">New: the AI Act for companies ↓</a>
         <span class="chip ghost">MIT</span>
         <span class="chip ghost">Finlex · oik.ai · laki.ai · case law</span>
       </div>
@@ -302,6 +307,22 @@
     </div>
   </div>
 </header>
+
+<!-- ── TEKOÄLYASETUS ── -->
+<section id="tekoaly">
+  <div class="wrap">
+    <div class="head"><span class="tag">NEW</span><h2>The AI Act for companies</h2><span class="rule"></span></div>
+    <p class="intro">A ready-made starter kit for implementing the EU AI Act in a Finnish company. Up to date with the Digital Omnibus on AI, Regulation (EU) 2026/1744, and Finland’s AI supervision act 1377/2025: application dates and supervisory authorities were checked against official sources in October 2026.</p>
+    <div class="grid4">
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h3>Start with an inventory</h3><p>Builds the company’s AI register: which AI is in use, in what role, at what risk level, who supervises it and what is most urgent.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></svg></div><h3>Transparency applies now</h3><p>Chatbot disclosure, labelling of AI-generated content, deepfakes and AI-written publications under Article 50 and Traficom’s guidance, with draft notice texts.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M8.7 12l2.2 2.2 4.4-4.4"/></svg></div><h3>Governance and AI literacy</h3><p>AI policy, responsibilities, staff AI literacy, deployer processes and supplier requirements. Linked to employee co-operation and workplace monitoring rules.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></div><h3>Templates, watcher, practice case</h3><p>Fill-in templates: AI register, governance model, FRIA, an AI add-on for the DPIA and procurement requirements. Plus a background AI watcher recipe and a practice case with grading criteria.</p></div>
+    </div>
+    <div class="laws"><span>(EU) 2024/1689</span><span>(EU) 2026/1744</span><span>1377/2025</span><span>YTL 1333/2021</span><span>GDPR</span></div>
+    <a class="more" href="https://github.com/akunikkola/claude-for-legal-finland/tree/main/tekoalysaantely">Open the tekoälysääntely plugin <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
 
 <!-- ── MECHANISMS ── -->
 <section>
@@ -370,7 +391,7 @@
     <div class="group">
       <div class="group-label"><span class="dot"></span><h3>People &amp; work</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skills</span></div><p>Employment contracts, termination risk grading, co-operation and change negotiations.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
+        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skills</span></div><p>Employment contracts, termination risk grading, co-operation and change negotiations — including AI rollouts.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
         <div class="card"><div class="row"><h4>ulkomaalaisoikeus</h4><span class="meta">3 skills</span></div><p>Work-based residence permits, the employer’s verification duty, EU and family-based residence.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
       </div>
     </div>
@@ -388,10 +409,10 @@
       <div class="group-label"><span class="dot"></span><h3>Public sector &amp; regulation</h3></div>
       <div class="cards">
         <div class="card"><div class="row"><h4>hallinto-oikeus</h4><span class="meta">3 + agent</span></div><p>Administrative decisions, appeals, transparency and information requests — secrecy assessment as an agent.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
-        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skills</span></div><p>Planning and procedures, the invitation to tender and the tender on both sides, appeals to the Market Court.</p><div class="laws"><span>1397/2016</span></div></div>
+        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skills</span></div><p>Planning and procedures, the invitation to tender and the tender on both sides, appeals to the Market Court, AI procurement requirements.</p><div class="laws"><span>1397/2016</span></div></div>
         <div class="card"><div class="row"><h4>lainvalmistelu</h4><span class="meta">4 skills</span></div><p>The legislative-drafting guide, HE drafting instructions, the process guide and legal language — with verified enacting clauses.</p><div class="laws"><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
         <div class="card"><div class="row"><h4>lausunnot</h4><span class="meta">1 skill</span></div><p>A statement on a bill via a 7-step workflow, with impact assessment.</p><div class="laws"><span>Lausuntopalvelu.fi</span></div></div>
-        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skills</span></div><p>Processing assessment and DPIA, privacy notices, data-subject requests, plus PII Shield anonymisation.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
+        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skills</span></div><p>Processing assessment and DPIA with an AI add-on, privacy notices, data-subject requests, plus PII Shield anonymisation.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
         <div class="card"><div class="row"><h4>tekoälysääntely</h4><span class="meta">6 skills</span></div><p>AI register, risk classification and Finnish supervisors, transparency duties, governance model and AI literacy, obligations, deadlines and FRIA — a deterministic MCP.</p><div class="laws"><span>(EU) 2024/1689</span><span>(EU) 2026/1744</span><span>1377/2025</span></div></div>
         <div class="card"><div class="row"><h4>kaksikielisyys (FI/SV)</h4><span class="meta">2 skills</span></div><p>Translating legal language with established terms from official sources, plus language rights and authority obligations.</p><div class="laws"><span>Language Act 423/2003</span><span>Constitution s. 17</span></div></div>
       </div>
@@ -485,7 +506,8 @@
         <ul>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="https://github.com/akunikkola/claude-for-legal-finland">github.com/akunikkola/claude-for-legal-finland</a></li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Releases: per-plugin ZIPs (v0.1.0–v1.2.0)</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Statute watch: monthly, 105/105 match Finlex</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Statute watch: monthly, 106/106 match Finlex</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agent recipes: five background watchers, including deadline, statute and AI watchers</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Citation audit: all 137 statute numbers and case ids verified against sources 7/2026</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Codex compatibility: the same collection works on OpenAI Codex (<code>CODEX.md</code>)</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI validator on every change</li>
