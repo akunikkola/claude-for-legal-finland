@@ -125,6 +125,11 @@
   .head h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.015em}
   .head .rule{flex:1;height:1px;background:var(--line)}
 
+  .intro{font-size:15.5px;color:var(--ink-soft);max-width:70ch;margin:-10px 0 22px;line-height:1.55}
+  .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:14.5px;font-weight:600}
+  .more:hover{text-decoration:underline}
+  a.chip:hover{background:#cff560}
+
   /* Mechanisms */
   .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
   .mech{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
@@ -278,6 +283,7 @@
 
       <div class="metarow">
         <span class="chip">v1.2.0</span>
+        <a class="chip" href="#tekoaly">Uutta: tekoälyasetus yrityksille ↓</a>
         <span class="chip ghost">MIT</span>
         <span class="chip ghost">Finlex · oik.ai · laki.ai · KKO/KHO</span>
       </div>
@@ -313,6 +319,22 @@
     </div>
   </div>
 </header>
+
+<!-- ── TEKOÄLYASETUS ── -->
+<section id="tekoaly">
+  <div class="wrap">
+    <div class="head"><span class="tag">UUTTA</span><h2>Tekoälyasetus yrityksille</h2><span class="rule"></span></div>
+    <p class="intro">Valmis aloituspaketti EU:n tekoälyasetuksen toteuttamiseen suomalaisessa yrityksessä. Ajan tasalla tekoälyä koskevasta koontiasetuksesta (EU) 2026/1744 ja Suomen valvontalaista 1377/2025: soveltamispäivät ja valvovat viranomaiset on tarkistettu virallisista lähteistä lokakuussa 2026.</p>
+    <div class="grid4">
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h3>Aloita kartoituksesta</h3><p>Kokoaa yrityksen tekoälyrekisterin: mitä tekoälyä on käytössä, missä roolissa, mikä riskiluokka, kuka valvoo ja mikä on kiireellisintä.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></svg></div><h3>Avoimuus on jo voimassa</h3><p>Chatbot-ilmoitukset, tekoälysisällön merkintä, syväväärennökset ja tekoälyllä tuotetut julkaisut 50 artiklan ja Traficomin ohjeen mukaan, ilmoitustekstien luonnoksineen.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3.2v4.6c0 4.5-3.2 7.6-8 9.2-4.8-1.6-8-4.7-8-9.2V6.2z"/><path d="M8.7 12l2.2 2.2 4.4-4.4"/></svg></div><h3>Hallintamalli ja lukutaito</h3><p>Tekoälypolitiikka, vastuut, henkilöstön tekoälylukutaito, käyttöönottajan prosessit ja toimittajavaatimukset. Kytkeytyy yhteistoimintaan ja tekniseen valvontaan.</p></div>
+      <div class="mech"><div class="badge"><svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></div><h3>Pohjat, vahti ja harjoitus</h3><p>Täytettävät pohjat: tekoälyrekisteri, hallintamalli, FRIA, DPIA:n tekoälylisäosa ja hankintavaatimukset. Lisäksi taustalla ajettava tekoälyvahti ja harjoitusaineisto arviointikriteereineen.</p></div>
+    </div>
+    <div class="laws"><span>(EU) 2024/1689</span><span>(EU) 2026/1744</span><span>1377/2025</span><span>YTL 1333/2021</span><span>GDPR</span></div>
+    <a class="more" href="https://github.com/akunikkola/claude-for-legal-finland/tree/main/tekoalysaantely">Avaa tekoälysääntely-plugari <svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
 
 <!-- ── MEKANISMIT ── -->
 <section>
@@ -381,7 +403,7 @@
     <div class="group">
       <div class="group-label"><span class="dot"></span><h3>Ihmiset ja työ</h3></div>
       <div class="cards">
-        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skilliä</span></div><p>Työsopimus, päättämisen riskiluokitus, yhteistoiminta ja muutosneuvottelut.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
+        <div class="card"><div class="row"><h4>työoikeus</h4><span class="meta">3 skilliä</span></div><p>Työsopimus, päättämisen riskiluokitus, yhteistoiminta ja muutosneuvottelut — myös tekoälyn käyttöönotossa.</p><div class="laws"><span>TSL 55/2001</span><span>YTL 1333/2021</span></div></div>
         <div class="card"><div class="row"><h4>ulkomaalaisoikeus</h4><span class="meta">3 skilliä</span></div><p>Työperusteiset luvat, työnantajan varmistusvastuu, EU- ja perheperusteinen oleskelu.</p><div class="laws"><span>301/2004</span><span>447/2016</span><span>359/2003</span></div></div>
       </div>
     </div>
@@ -399,10 +421,10 @@
       <div class="group-label"><span class="dot"></span><h3>Julkinen sektori ja sääntely</h3></div>
       <div class="cards">
         <div class="card"><div class="row"><h4>hallinto-oikeus</h4><span class="meta">3 + agentti</span></div><p>Hallintopäätös, muutoksenhaku, julkisuus ja tietopyynnöt — salassapitoarvio agenttina.</p><div class="laws"><span>434/2003</span><span>808/2019</span><span>621/1999</span></div></div>
-        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skilliä</span></div><p>Suunnittelu ja menettelyt, tarjouspyyntö ja tarjous molemmin puolin, MAO-muutoksenhaku.</p><div class="laws"><span>1397/2016</span></div></div>
+        <div class="card"><div class="row"><h4>julkiset hankinnat</h4><span class="meta">3 skilliä</span></div><p>Suunnittelu ja menettelyt, tarjouspyyntö ja tarjous molemmin puolin, MAO-muutoksenhaku, tekoälyhankinnan vaatimukset.</p><div class="laws"><span>1397/2016</span></div></div>
         <div class="card"><div class="row"><h4>lainvalmistelu</h4><span class="meta">4 skilliä</span></div><p>Lainkirjoittajan opas, HELO, prosessiopas ja lakikieli — varmistetuin johtolausein.</p><div class="laws"><span>Lainkirjoittajan opas</span><span>HELO</span></div></div>
         <div class="card"><div class="row"><h4>lausunnot</h4><span class="meta">1 skilli</span></div><p>Lausunto lakiehdotukseen 7-vaiheisella työnkululla, vaikutusarviointi mukana.</p><div class="laws"><span>Lausuntopalvelu.fi</span></div></div>
-        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skilliä</span></div><p>Käsittelyn arviointi ja DPIA, selosteet, rekisteröidyn pyynnöt sekä PII Shield -anonymisointi.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
+        <div class="card"><div class="row"><h4>tietosuoja</h4><span class="meta">3 skilliä</span></div><p>Käsittelyn arviointi ja DPIA tekoälylisäosineen, selosteet, rekisteröidyn pyynnöt sekä PII Shield -anonymisointi.</p><div class="laws"><span>GDPR</span><span>1050/2018</span></div></div>
         <div class="card"><div class="row"><h4>tekoälysääntely</h4><span class="meta">6 skilliä</span></div><p>Tekoälyrekisteri, riskiluokittelu ja Suomen valvojat, avoimuusvelvoitteet, hallintamalli ja tekoälylukutaito, velvoitteet, määräajat ja FRIA — deterministinen MCP.</p><div class="laws"><span>(EU) 2024/1689</span><span>(EU) 2026/1744</span><span>1377/2025</span></div></div>
         <div class="card"><div class="row"><h4>kaksikielisyys (FI/SV)</h4><span class="meta">2 skilliä</span></div><p>Oikeuskielen kääntäminen vakiintunein termein virallisista lähteistä sekä kielelliset oikeudet ja viranomaisen velvoitteet.</p><div class="laws"><span>Kielilaki 423/2003</span><span>PL 17 §</span></div></div>
       </div>
@@ -496,7 +518,8 @@
         <ul>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="https://github.com/akunikkola/claude-for-legal-finland">github.com/akunikkola/claude-for-legal-finland</a></li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Releaset: plugarikohtaiset ZIPit (v0.1.0–v1.2.0)</li>
-          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Säädösvahti: kuukausittain 105/105 täsmää Finlexiin</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Säädösvahti: kuukausittain 106/106 täsmää Finlexiin</li>
+          <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Agenttireseptit: viisi taustalla ajettavaa vahtia, mm. määräaika-, säädös- ja tekoälyvahti</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Viittausauditointi: 137 säädösnumeroa ja ratkaisutunnukset tarkistettu lähteestä 7/2026</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Codex-yhteensopivuus: sama kokoelma myös OpenAI Codexissa (<code>CODEX.md</code>)</li>
           <li><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>CI-validaattori jokaisessa muutoksessa</li>

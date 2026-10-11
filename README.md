@@ -7,6 +7,11 @@ juridisessa työssä: lakikieli, pykäläviittaukset ja oikeuslähteet
 
 **24 plugaria · 81 skilliä · 6 agenttia · kytkennät Finlexiin ja oik.ai:hin · [MIT](LICENSE)**
 
+> **Uutta lokakuussa 2026 — tekoälyasetus yrityksille.** [`tekoalysaantely`](tekoalysaantely/)
+> kattaa nyt tekoälyrekisterin, avoimuusvelvoitteet, hallintamallin ja tekoälylukutaidon sekä
+> FRIA-, DPIA- ja hankintapohjat. Ajan tasalla koontiasetuksesta (EU) 2026/1744 ja Suomen
+> valvontalaista 1377/2025.
+
 Kokoelma sisältää myös Codex-yhteensopivat manifestit ja repo-markkinapaikan.
 Ne generoidaan nykyisestä Claude-pluginmetadatasta komennolla
 `node scripts/generate-codex.mjs`, jotta sama skill-sisältö toimii sekä
