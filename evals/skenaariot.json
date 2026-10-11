@@ -75,6 +75,20 @@
       "plugari": "tekoalysaantely",
       "odotettu_skill": "tekoaly-luokittelu",
       "prompt": "Onko rekrytoinnin esikarsintaan käyttämämme tekoälyjärjestelmä korkean riskin järjestelmä EU:n tekoälyasetuksen mukaan?"
+    },
+    {
+      "id": "ai-act-omnibus-maaraaika",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-vaatimustenmukaisuus",
+      "prompt": "Siirtyikö luottopäätöksissä käyttämämme tekoälyjärjestelmän velvoitteiden voimaantulo Digital Omnibusin takia, ja tarvitaanko meille perusoikeusvaikutusten arviointi?",
+      "huomio": "Regressiovahti: vastauksen on kohdeltava koontiasetusta (EU) 2026/1744 voimassa olevana lakina, ei ehdotuksena."
+    },
+    {
+      "id": "ai-act-valvova-viranomainen",
+      "plugari": "tekoalysaantely",
+      "odotettu_skill": "tekoaly-luokittelu",
+      "prompt": "Mikä viranomainen Suomessa valvoo rekrytointiin käyttämäämme tekoälytyökalua, ja onko se suuririskinen järjestelmä?",
+      "huomio": "Regressiovahti: oikea vastaus nojaa lakiin 1377/2025 (tietosuojavaltuutettu, 3 § 2 mom 4 k), ei väitteeseen kansallisen sääntelyn keskeneräisyydestä."
     }
   ]
 }
